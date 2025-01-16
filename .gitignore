@@ -1,0 +1,15 @@
+
+# system files
+**/.DS_Store
+**/desktop.ini
+
+# hugo files
+/public
+/resources
+.hugo_build.lock
+
+# swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
