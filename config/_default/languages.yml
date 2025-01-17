@@ -17,6 +17,8 @@ en:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "The official Look Scanned blog - sharing our journey in web development, PDF processing techniques, and building privacy-first tools. Get technical insights, development updates, and learn how we're making document scanning effects accessible to everyone."
     homeInfoParams:
       Title: "Look Scanned Blog"
       Content: >
@@ -41,6 +43,8 @@ zh:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Look Scanned 官方博客 - 分享我们在网页开发、PDF 处理技术和构建隐私优先工具方面的历程。获取技术见解、开发动态，了解我们如何让文档扫描效果触手可及。"
     homeInfoParams:
       Title: "Look Scanned 博客"
       Content: >
@@ -66,6 +70,8 @@ zh-tw:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Look Scanned 官方部落格 - 分享我們在網頁開發、PDF 處理技術和打造重視隱私工具的歷程。獲取技術見解、開發動態，了解我們如何讓文件掃描效果觸手可及。"
     homeInfoParams:
       Title: "Look Scanned 部落格"
       Content: >
@@ -90,6 +96,8 @@ de:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Der offizielle Look Scanned Blog - Wir teilen unsere Erfahrungen in der Webentwicklung, PDF-Verarbeitungstechniken und der Entwicklung datenschutzorientierter Tools. Erhalten Sie technische Einblicke, Entwicklungsupdates und erfahren Sie, wie wir Dokument-Scan-Effekte für alle zugänglich machen."
     homeInfoParams:
       Title: "Look Scanned Blog"
       Content: >
@@ -114,6 +122,8 @@ es:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "El blog oficial de Look Scanned - Compartimos nuestra experiencia en desarrollo web, técnicas de procesamiento PDF y creación de herramientas centradas en la privacidad. Obtén información técnica, actualizaciones de desarrollo y descubre cómo hacemos que los efectos de escaneo sean accesibles para todos."
     homeInfoParams:
       Title: "Blog de Look Scanned"
       Content: >
@@ -138,6 +148,8 @@ fr:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Le blog officiel de Look Scanned - Nous partageons notre parcours dans le développement web, les techniques de traitement PDF et la création d'outils axés sur la confidentialité. Découvrez nos perspectives techniques, nos mises à jour de développement et apprenez comment nous rendons les effets de numérisation accessibles à tous."
     homeInfoParams:
       Title: "Blog Look Scanned"
       Content: >
@@ -162,6 +174,8 @@ it:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Il blog ufficiale di Look Scanned - Condividiamo il nostro percorso nello sviluppo web, nelle tecniche di elaborazione PDF e nella creazione di strumenti incentrati sulla privacy. Ottieni approfondimenti tecnici, aggiornamenti sullo sviluppo e scopri come rendiamo gli effetti di scansione accessibili a tutti."
     homeInfoParams:
       Title: "Blog di Look Scanned"
       Content: >
@@ -186,6 +200,8 @@ ja:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Look Scanned 公式ブログ - Web開発、PDF処理技術、プライバシー重視のツール開発における私たちの取り組みを共有します。技術的な洞察、開発アップデート、そしてスキャン効果を誰もが利用できるようにする方法をご紹介します。"
     homeInfoParams:
       Title: "Look Scanned ブログ"
       Content: >
@@ -210,6 +226,8 @@ ko:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Look Scanned 공식 블로그 - 웹 개발, PDF 처리 기술, 프라이버시 중심 도구 구축에 대한 우리의 여정을 공유합니다. 기술적 인사이트, 개발 업데이트를 얻고 문서 스캔 효과를 모두가 이용할 수 있게 만드는 방법을 알아보세요."
     homeInfoParams:
       Title: "Look Scanned 블로그"
       Content: >
@@ -234,6 +252,8 @@ ru:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Официальный блог Look Scanned - Делимся нашим опытом в веб-разработке, технологиях обработки PDF и создании инструментов с акцентом на конфиденциальность. Получайте технические знания, обновления разработки и узнайте, как мы делаем эффекты сканирования доступными для всех."
     homeInfoParams:
       Title: "Блог Look Scanned"
       Content: >
@@ -258,6 +278,8 @@ pt:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "O blog oficial do Look Scanned - Compartilhamos nossa jornada no desenvolvimento web, técnicas de processamento de PDF e construção de ferramentas focadas em privacidade. Obtenha insights técnicos, atualizações de desenvolvimento e saiba como tornamos os efeitos de digitalização acessíveis a todos."
     homeInfoParams:
       Title: "Blog do Look Scanned"
       Content: >
@@ -283,6 +305,8 @@ ar:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "المدونة الرسمية لـ Look Scanned - نشارك رحلتنا في تطوير الويب وتقنيات معالجة PDF وبناء أدوات تركز على الخصوصية. احصل على رؤى تقنية وتحديثات التطوير وتعرف على كيفية جعلنا تأثيرات المسح الضوئي متاحة للجميع."
     homeInfoParams:
       Title: "مدونة Look Scanned"
       Content: >
@@ -307,6 +331,8 @@ hi:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Look Scanned का आधिकारिक ब्लॉग - वेब विकास, PDF प्रसंस्करण तकनीकों और गोपनीयता-केंद्रित टूल्स के निर्माण में हमारी यात्रा को साझा करते हुए। तकनीकी अंतर्दृष्टि, विकास अपडेट प्राप्त करें और जानें कि हम स्कैनिंग प्रभावों को सभी के लिए कैसे सुलभ बना रहे हैं।"
     homeInfoParams:
       Title: "Look Scanned ब्लॉग"
       Content: >
@@ -331,6 +357,8 @@ tr:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Look Scanned resmi blogu - Web geliştirme, PDF işleme teknikleri ve gizlilik odaklı araçlar oluşturma konusundaki yolculuğumuzu paylaşıyoruz. Teknik içgörüler ve geliştirme güncellemeleri edinin, tarama efektlerini herkes için nasıl erişilebilir kıldığımızı öğrenin."
     homeInfoParams:
       Title: "Look Scanned Blogu"
       Content: >
@@ -355,6 +383,8 @@ nl:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "De officiële Look Scanned blog - We delen onze reis in webontwikkeling, PDF-verwerkingstechnieken en het bouwen van privacy-gerichte tools. Krijg technische inzichten, ontwikkelingsupdates en leer hoe we scan-effecten toegankelijk maken voor iedereen."
     homeInfoParams:
       Title: "Look Scanned Blog"
       Content: >
@@ -379,6 +409,8 @@ sv:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Den officiella Look Scanned-bloggen - Vi delar vår resa inom webbutveckling, PDF-behandlingstekniker och byggandet av integritetsfokuserade verktyg. Få tekniska insikter, utvecklingsuppdateringar och lär dig hur vi gör skanningseffekter tillgängliga för alla."
     homeInfoParams:
       Title: "Look Scanned Blogg"
       Content: >
@@ -403,6 +435,8 @@ pl:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Oficjalny blog Look Scanned - Dzielimy się naszą podróżą w rozwoju aplikacji webowych, technikach przetwarzania PDF i tworzeniu narzędzi zorientowanych na prywatność. Zdobądź techniczne wskazówki, aktualizacje rozwoju i dowiedz się, jak udostępniamy efekty skanowania dla wszystkich."
     homeInfoParams:
       Title: "Blog Look Scanned"
       Content: >
@@ -427,6 +461,8 @@ vi:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Blog chính thức của Look Scanned - Chia sẻ hành trình của chúng tôi trong phát triển web, kỹ thuật xử lý PDF và xây dựng công cụ đề cao quyền riêng tư. Nhận thông tin kỹ thuật, cập nhật phát triển và tìm hiểu cách chúng tôi làm cho hiệu ứng quét trở nên dễ tiếp cận với mọi người."
     homeInfoParams:
       Title: "Blog Look Scanned"
       Content: >
@@ -451,6 +487,8 @@ th:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "บล็อกทางการของ Look Scanned - แบ่งปันการเดินทางของเราในการพัฒนาเว็บ เทคนิคการประมวลผล PDF และการสร้างเครื่องมือที่เน้นความเป็นส่วนตัว รับข้อมูลเชิงเทคนิค อัปเดตการพัฒนา และเรียนรู้วิธีที่เราทำให้เอฟเฟกต์การสแกนเข้าถึงได้สำหรับทุกคน"
     homeInfoParams:
       Title: "บล็อก Look Scanned"
       Content: >
@@ -475,6 +513,8 @@ id:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Blog resmi Look Scanned - Berbagi perjalanan kami dalam pengembangan web, teknik pemrosesan PDF, dan pembuatan alat yang mengutamakan privasi. Dapatkan wawasan teknis, pembaruan pengembangan, dan pelajari bagaimana kami membuat efek pemindaian dapat diakses oleh semua orang."
     homeInfoParams:
       Title: "Blog Look Scanned"
       Content: >
@@ -500,6 +540,8 @@ he:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "הבלוג הרשמי של Look Scanned - משתפים את המסע שלנו בפיתוח אינטרנט, טכניקות עיבוד PDF ובניית כלים ממוקדי פרטיות. קבלו תובנות טכניות, עדכוני פיתוח ולמדו כיצד אנו הופכים אפקטים של סריקה לנגישים לכולם."
     homeInfoParams:
       Title: "בלוג Look Scanned"
       Content: >
@@ -524,6 +566,8 @@ ms:
       - name: Look Scanned
         url: https://lookscanned.io
   params:
+    author: "Look Scanned"
+    description: "Blog rasmi Look Scanned - Berkongsi perjalanan kami dalam pembangunan web, teknik pemprosesan PDF, dan pembinaan alat yang mengutamakan privasi. Dapatkan pandangan teknikal, kemas kini pembangunan, dan ketahui bagaimana kami menjadikan kesan imbasan mudah diakses oleh semua."
     homeInfoParams:
       Title: "Blog Look Scanned"
       Content: >
