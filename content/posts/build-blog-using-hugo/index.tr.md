@@ -1,6 +1,6 @@
 ---
 title: "Hugo Kullanarak Look Scanned Blogu Kurulumu"
-date: 2025-01-17
+date: "2025-01-17T14:22:31+08:00"
 description: "Statik site oluşturucu Hugo ile modern bir blog kurmanın ayrıntılı rehberi. Kurulumdan yayına kadar tüm adımlar, yapılandırma ve özelleştirme seçenekleri - başlangıç ve ileri seviye geliştiriciler için."
 tags: ["hugo", "blog", "web", "statik-site", "rehber"]
 ---
