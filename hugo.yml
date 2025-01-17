@@ -548,27 +548,3 @@ languages:
           👋 Selamat datang ke Blog Look Scanned!
 
           - 📚 [**Look Scanned**](https://lookscanned.io) ialah aplikasi ringan berasaskan pelayar yang mensimulasikan kesan PDF yang diimbas. Ia direka dengan mengutamakan privasi, membolehkan pembangun, pereka dan sesiapa sahaja menambah kesan imbasan yang autentik kepada PDF tanpa memerlukan perkakasan fizikal.
-  no:
-    languageName: Norsk
-    languageCode: no
-    title: Look Scanned Blogg
-    menu:
-      main:
-        - name: Arkiv
-          url: archives
-          weight: 5
-        - name: Søk
-          url: search
-          weight: 10
-        - name: Tagger
-          url: tags
-          weight: 15
-        - name: Look Scanned
-          url: https://lookscanned.io
-    params:
-      homeInfoParams:
-        Title: "Look Scanned Blogg"
-        Content: >
-          👋 Velkommen til Look Scanned Bloggen!
-
-          - 📚 [**Look Scanned**](https://lookscanned.io) er en lettvekts, nettleserbasert applikasjon som simulerer skannede PDF-effekter. Den er designet med personvern i tankene, og lar utviklere, designere og alle andre legge til autentiske skanneeffekter til PDF-er uten behov for fysisk maskinvare.
