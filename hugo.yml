@@ -25,6 +25,11 @@ params:
     URL: "https://github.com/lookscanned/lookscanned-blog/blob/main/content"
     appendFilePath: true # to append file path to Edit link
   ShowCodeCopyButtons: true
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
 
 outputs:
   home:
