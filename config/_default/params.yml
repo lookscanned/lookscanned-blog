@@ -3,6 +3,7 @@ author: "Look Scanned"
 ShowReadingTime: true
 ShowShareButtons: true
 ShowPostNavLinks: true
+ShowFullTextinRSS: true
 socialIcons:
   - name: other
     title: Look Scanned
