@@ -2,7 +2,9 @@
 
 [![Build and Deploy](https://github.com/lookscanned/lookscanned-blog/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/lookscanned/lookscanned-blog/actions/workflows/ci.yml)
 
-This repository contains the source code for the Look Scanned blog, built using Hugo and deployed to both Cloudflare Pages and GitHub Pages.
+This repository contains the source code for the Look Scanned Blog, built using Hugo and deployed to both Cloudflare Pages and GitHub Pages.
+
+[blog.lookscanned.io](https://blog.lookscanned.io)
 
 ## Features
 
