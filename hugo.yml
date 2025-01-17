@@ -20,7 +20,7 @@ params:
       url: "mailto:contact@lookscanned.io"
     - name: rss
       title: RSS
-      url: "/index.xml"
+      url: "index.xml"
   editPost:
     URL: "https://github.com/lookscanned/lookscanned-blog/blob/main/content"
     appendFilePath: true # to append file path to Edit link
