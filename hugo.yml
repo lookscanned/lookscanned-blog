@@ -26,6 +26,12 @@ params:
     appendFilePath: true # to append file path to Edit link
   ShowCodeCopyButtons: true
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 languages:
   en:
     languageCode: en
