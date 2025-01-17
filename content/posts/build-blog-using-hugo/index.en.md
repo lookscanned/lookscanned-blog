@@ -2,6 +2,7 @@
 title: "Building Look Scanned Blog with Hugo"
 date: "2025-01-17T14:22:31+08:00"
 description: "A comprehensive guide to building a modern blog using Hugo static site generator, covering installation, configuration, deployment, and customization tips for both beginners and experienced developers."
+summary: "A comprehensive guide to building a modern blog using Hugo static site generator, covering installation, configuration, deployment, and customization tips for both beginners and experienced developers."
 tags: ["hugo", "blog", "web", "static-site", "tutorial"]
 ---
 

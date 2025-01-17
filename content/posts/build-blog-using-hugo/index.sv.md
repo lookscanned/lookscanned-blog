@@ -2,6 +2,7 @@
 title: "Bygg en Look Scanned-blogg med Hugo"
 date: "2025-01-17T14:22:31+08:00"
 description: "En komplett guide för att bygga en modern blogg med Hugo som statisk sidgenerator. Vi går igenom allt från installation till driftsättning, med konfiguration och anpassningar - perfekt för både nybörjare och erfarna utvecklare."
+summary: "En komplett guide för att bygga en modern blogg med Hugo som statisk sidgenerator. Vi går igenom allt från installation till driftsättning, med konfiguration och anpassningar - perfekt för både nybörjare och erfarna utvecklare."
 tags: ["hugo", "blogg", "webb", "statisk-webbplats", "guide"]
 ---
 

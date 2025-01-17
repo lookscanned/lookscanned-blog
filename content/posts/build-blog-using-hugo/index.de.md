@@ -2,6 +2,7 @@
 title: "Erstellen eines Look Scanned Blogs mit Hugo"
 date: "2025-01-17T14:22:31+08:00"
 description: "Eine umfassende Anleitung zum Erstellen eines modernen Blogs mit dem Hugo Static Site Generator - von Installation über Konfiguration bis hin zu Deployment und Anpassung, geeignet für Einsteiger und erfahrene Entwickler."
+summary: "Eine umfassende Anleitung zum Erstellen eines modernen Blogs mit dem Hugo Static Site Generator - von Installation über Konfiguration bis hin zu Deployment und Anpassung, geeignet für Einsteiger und erfahrene Entwickler."
 tags: ["hugo", "blog", "web", "static-site", "anleitung"]
 ---
 
