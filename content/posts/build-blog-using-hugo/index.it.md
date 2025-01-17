@@ -2,6 +2,7 @@
 title: "Come Realizzare il Blog di Look Scanned con Hugo"
 date: 2025-01-17
 description: "Una guida completa alla creazione di un blog moderno utilizzando Hugo. Dall'installazione alla messa online, incluse configurazione e personalizzazione - adatta a sviluppatori di qualsiasi esperienza."
+tags: ["hugo", "blog", "web", "sito-statico", "tutorial"]
 ---
 
 ## Che cos'è Look Scanned?

@@ -2,6 +2,7 @@
 title: "Xây dựng Blog Look Scanned với Hugo"
 date: 2025-01-17
 description: "Hướng dẫn chi tiết cách tạo blog hiện đại sử dụng Hugo - công cụ tạo trang tĩnh. Bao gồm đầy đủ các bước từ cài đặt, cấu hình, tùy biến đến triển khai - phù hợp cho mọi trình độ lập trình."
+tags: ["hugo", "blog", "web", "trang-tĩnh", "hướng-dẫn"]
 ---
 
 ## Giới thiệu về Look Scanned

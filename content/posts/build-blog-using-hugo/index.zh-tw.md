@@ -2,6 +2,7 @@
 title: "使用 Hugo 打造 Look Scanned 部落格"
 date: 2025-01-17
 description: "這是一份完整的 Hugo 靜態網站產生器使用指南，從安裝、設定到部署，以及客製化技巧，適合各階段的開發者參考。"
+tags: ["hugo", "部落格", "網站", "靜態網站", "教學"]
 ---
 
 ## Look Scanned 是什麼？

@@ -2,6 +2,7 @@
 title: "Bikin Blog Look Scanned Pakai Hugo"
 date: 2025-01-17
 description: "Tutorial lengkap bikin blog kekinian dengan Hugo static site generator. Dari instalasi sampai deploy, plus konfigurasi dan kustomisasi - cocok buat developer pemula sampai pro."
+tags: ["hugo", "blog", "web", "situs-statis", "tutorial"]
 ---
 
 ## Apa itu Look Scanned?

@@ -2,6 +2,7 @@
 title: "Look Scanned Blog Opzetten met Hugo"
 date: 2025-01-17
 description: "Uitgebreide handleiding voor het opzetten van een moderne blog met Hugo, de statische sitegenerator. Van installatie tot deployment, inclusief configuratie en customization - voor developers van elk niveau."
+tags: ["hugo", "blog", "web", "statische-site", "handleiding"]
 ---
 
 ## Over Look Scanned

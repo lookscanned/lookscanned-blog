@@ -2,6 +2,7 @@
 title: "Sett opp en Look Scanned-blogg med Hugo"
 date: 2025-01-17
 description: "Full guide til å lage en moderne blogg med Hugo. Fra oppsett til deployment, inkludert konfig og tilpasninger - perfekt for utviklere uansett nivå."
+tags: ["hugo", "blogg", "web", "statisk-nettsted", "veiledning"]
 ---
 
 ## Hva er Look Scanned?

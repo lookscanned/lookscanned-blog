@@ -2,6 +2,7 @@
 title: "Tworzenie bloga Look Scanned z Hugo"
 date: 2025-01-17
 description: "Kompletny przewodnik po budowaniu nowoczesnego bloga przy użyciu generatora stron statycznych Hugo. Od instalacji po wdrożenie, wraz z konfiguracją i dostosowaniem - odpowiedni dla programistów na każdym poziomie."
+tags: ["hugo", "blog", "web", "strona-statyczna", "poradnik"]
 ---
 
 ## Czym jest Look Scanned?

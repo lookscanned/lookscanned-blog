@@ -2,6 +2,7 @@
 title: "使用 Hugo 搭建 Look Scanned 博客"
 date: 2025-01-17
 description: "一份使用 Hugo 静态网站生成器搭建现代博客的完整指南，涵盖了安装、配置、部署和自定义技巧，适合初学者和有经验的开发者。"
+tags: ["hugo", "博客", "网站", "静态站点", "教程"]
 ---
 
 ## Look Scanned 是什么？

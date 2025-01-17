@@ -2,6 +2,7 @@
 title: "Construindo o Blog do Look Scanned com Hugo"
 date: 2025-01-17
 description: "Um guia completo sobre como criar um blog moderno usando o gerador de sites estáticos Hugo. Da instalação à implantação, incluindo configurações e personalizações - um guia prático para desenvolvedores de todos os níveis."
+tags: ["hugo", "blog", "web", "site-estático", "tutorial"]
 ---
 
 ## Sobre o Look Scanned

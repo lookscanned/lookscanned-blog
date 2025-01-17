@@ -2,6 +2,7 @@
 title: "Cómo Crear un Blog con Hugo para Look Scanned"
 date: 2025-01-17
 description: "Guía completa para crear un blog moderno con el generador de sitios estáticos Hugo. Incluye instalación, configuración, despliegue y personalización, ideal tanto para principiantes como para desarrolladores experimentados."
+tags: ["hugo", "blog", "web", "sitio-estático", "tutorial"]
 ---
 
 ## ¿Qué es Look Scanned?
