@@ -1,0 +1,7 @@
+baseURL: https://blog.lookscanned.io/
+languageCode: en
+title: Look Scanned Blog
+theme: PaperMod
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
