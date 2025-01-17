@@ -1,6 +1,7 @@
 en:
   languageCode: en
   languageName: English
+  weight: 1
   title: Look Scanned Blog
   menu:
     main:
@@ -24,6 +25,7 @@ en:
         - 📚 [**Look Scanned**](https://lookscanned.io) is a lightweight, browser-based application that simulates scanned PDF effects. It's designed with privacy in mind, allowing developers, designers, and anyone else to add authentic scanning effects to PDFs without the need for physical hardware.
 zh:
   languageName: 简体中文
+  weight: 2
   title: Look Scanned 博客
   menu:
     main:
@@ -48,6 +50,7 @@ zh:
 zh-tw:
   languageCode: zh-TW
   languageName: 繁體中文
+  weight: 3
   title: Look Scanned 部落格
   menu:
     main:
@@ -71,6 +74,7 @@ zh-tw:
         - 📚 [**Look Scanned**](https://lookscanned.io) 是一個輕量級的網頁應用程式，可以模擬掃描PDF效果。它注重隱私保護，讓開發者、設計師和所有使用者無需實體硬體即可為PDF添加真實的掃描效果。
 de:
   languageName: Deutsch
+  weight: 10
   title: Look Scanned Blog
   menu:
     main:
@@ -94,6 +98,7 @@ de:
         - 📚 [**Look Scanned**](https://lookscanned.io) ist eine schlanke, browserbasierte Anwendung, die PDF-Scan-Effekte simuliert. Sie wurde mit Fokus auf Datenschutz entwickelt und ermöglicht es Entwicklern, Designern und allen anderen, authentische Scan-Effekte zu PDFs hinzuzufügen – ganz ohne physische Hardware.
 es:
   languageName: Español
+  weight: 4
   title: Blog de Look Scanned
   menu:
     main:
@@ -117,6 +122,7 @@ es:
         - 📚 [**Look Scanned**](https://lookscanned.io) es una aplicación ligera basada en navegador que simula efectos de PDF escaneado. Está diseñada pensando en la privacidad, permitiendo a desarrolladores, diseñadores y cualquier usuario añadir efectos de escaneo auténticos a PDFs sin necesidad de hardware físico.
 fr:
   languageName: Français
+  weight: 7
   title: Blog Look Scanned
   menu:
     main:
@@ -140,6 +146,7 @@ fr:
         - 📚 [**Look Scanned**](https://lookscanned.io) est une application légère basée sur navigateur qui simule des effets de PDF numérisé. Conçue dans le respect de la confidentialité, elle permet aux développeurs, designers et à tous les utilisateurs d'ajouter des effets de numérisation authentiques aux PDF sans matériel physique.
 it:
   languageName: Italiano
+  weight: 14
   title: Blog di Look Scanned
   menu:
     main:
@@ -163,6 +170,7 @@ it:
         - 📚 [**Look Scanned**](https://lookscanned.io) è un'applicazione leggera basata su browser che simula effetti di scansione PDF. È progettata pensando alla privacy, permettendo a sviluppatori, designer e chiunque altro di aggiungere autentici effetti di scansione ai PDF senza bisogno di hardware fisico.
 ja:
   languageName: 日本語
+  weight: 9
   title: Look Scanned ブログ
   menu:
     main:
@@ -186,6 +194,7 @@ ja:
         - 📚 [**Look Scanned**](https://lookscanned.io) は、スキャンしたPDFの効果をシミュレートするブラウザベースの軽量アプリケーションです。プライバシーを重視して設計されており、開発者やデザイナー、その他すべてのユーザーが物理的なハードウェアを必要とせずに、PDFに本物のスキャン効果を追加できます。
 ko:
   languageName: 한국어
+  weight: 13
   title: Look Scanned 블로그
   menu:
     main:
@@ -209,6 +218,7 @@ ko:
         - 📚 [**Look Scanned**](https://lookscanned.io)은 스캔된 PDF 효과를 시뮬레이션하는 경량 브라우저 기반 애플리케이션입니다. 개인정보 보호를 고려하여 설계되었으며, 개발자, 디자이너 및 모든 사용자가 물리적 하드웨어 없이도 PDF에 실제 스캔 효과를 추가할 수 있습니다.
 ru:
   languageName: Русский
+  weight: 11
   title: Блог Look Scanned
   menu:
     main:
@@ -232,6 +242,7 @@ ru:
         - 📚 [**Look Scanned**](https://lookscanned.io) - это легкое браузерное приложение, которое имитирует эффекты сканированных PDF. Оно разработано с учетом конфиденциальности, позволяя разработчикам, дизайнерам и всем желающим добавлять реалистичные эффекты сканирования в PDF без необходимости в физическом оборудовании.
 pt:
   languageName: Português
+  weight: 8
   title: Blog do Look Scanned
   menu:
     main:
@@ -256,6 +267,7 @@ pt:
 ar:
   languageDirection: rtl
   languageName: العربية
+  weight: 6
   title: مدونة Look Scanned
   menu:
     main:
@@ -279,6 +291,7 @@ ar:
         - 📚 [**Look Scanned**](https://lookscanned.io) هو تطبيق خفيف يعمل على المتصفح ويحاكي تأثيرات مسح PDF الضوئي. تم تصميمه مع مراعاة الخصوصية، مما يتيح للمطورين والمصممين وأي شخص آخر إضافة تأثيرات مسح ضوئي حقيقية إلى ملفات PDF دون الحاجة إلى أجهزة فعلية.
 hi:
   languageName: हिन्दी
+  weight: 5
   title: Look Scanned ब्लॉग
   menu:
     main:
@@ -302,6 +315,7 @@ hi:
         - 📚 [**Look Scanned**](https://lookscanned.io) एक हल्का, ब्राउज़र-आधारित एप्लिकेशन है जो स्कैन किए गए PDF प्रभावों का अनुकरण करता है। यह गोपनीयता को ध्यान में रखकर डिज़ाइन किया गया है, जो डेवलपर्स, डिज़ाइनर्स और अन्य सभी को बिना किसी भौतिक हार्डवेयर के PDF में प्रामाणिक स्कैनिंग प्रभाव जोड़ने की सुविधा देता है।
 tr:
   languageName: Türkçe
+  weight: 15
   title: Look Scanned Blogu
   menu:
     main:
@@ -325,6 +339,7 @@ tr:
         - 📚 [**Look Scanned**](https://lookscanned.io), taranmış PDF efektlerini simüle eden hafif, tarayıcı tabanlı bir uygulamadır. Gizlilik göz önünde bulundurularak tasarlanmış olup, geliştiricilerin, tasarımcıların ve diğer herkesin fiziksel donanıma ihtiyaç duymadan PDF'lere gerçek tarama efektleri eklemesine olanak tanır.
 nl:
   languageName: Nederlands
+  weight: 17
   title: Look Scanned Blog
   menu:
     main:
@@ -348,6 +363,7 @@ nl:
         - 📚 [**Look Scanned**](https://lookscanned.io) is een lichtgewicht, browser-gebaseerde applicatie die gescande PDF-effecten simuleert. Het is ontworpen met privacy in gedachten, waardoor ontwikkelaars, designers en iedereen authentieke scan-effecten aan PDF's kan toevoegen zonder fysieke hardware.
 sv:
   languageName: Svenska
+  weight: 20
   title: Look Scanned Blogg
   menu:
     main:
@@ -371,6 +387,7 @@ sv:
         - 📚 [**Look Scanned**](https://lookscanned.io) är en lättviktig, webbläsarbaserad applikation som simulerar inskannade PDF-effekter. Den är designad med integritet i åtanke och låter utvecklare, designers och alla andra lägga till autentiska skanningseffekter till PDF:er utan behov av fysisk hårdvara.
 pl:
   languageName: Polski
+  weight: 16
   title: Blog Look Scanned
   menu:
     main:
@@ -394,6 +411,7 @@ pl:
         - 📚 [**Look Scanned**](https://lookscanned.io) to lekka aplikacja przeglądarkowa, która symuluje efekty skanowania PDF. Została zaprojektowana z myślą o prywatności, umożliwiając programistom, projektantom i wszystkim innym dodawanie autentycznych efektów skanowania do plików PDF bez potrzeby posiadania fizycznego sprzętu.
 vi:
   languageName: Tiếng Việt
+  weight: 18
   title: Blog Look Scanned
   menu:
     main:
@@ -417,6 +435,7 @@ vi:
         - 📚 [**Look Scanned**](https://lookscanned.io) là một ứng dụng nhẹ, chạy trên trình duyệt cho phép mô phỏng hiệu ứng PDF được quét. Được thiết kế với việc bảo mật quyền riêng tư, cho phép các nhà phát triển, nhà thiết kế và bất kỳ ai thêm hiệu ứng quét chân thực vào PDF mà không cần thiết bị phần cứng.
 th:
   languageName: ไทย
+  weight: 19
   title: บล็อก Look Scanned
   menu:
     main:
@@ -440,6 +459,7 @@ th:
         - 📚 [**Look Scanned**](https://lookscanned.io) เป็นแอปพลิเคชันเบาๆ ที่ทำงานบนเบราว์เซอร์ซึ่งจำลองเอฟเฟกต์การสแกน PDF ออกแบบมาโดยคำนึงถึงความเป็นส่วนตัว ช่วยให้นักพัฒนา นักออกแบบ และทุกคนสามารถเพิ่มเอฟเฟกต์การสแกนที่เหมือนจริงลงใน PDF โดยไม่จำเป็นต้องใช้ฮาร์ดแวร์จริง
 id:
   languageName: Bahasa Indonesia
+  weight: 12
   title: Blog Look Scanned
   menu:
     main:
@@ -464,6 +484,7 @@ id:
 he:
   languageDirection: rtl
   languageName: עברית
+  weight: 22
   title: בלוג Look Scanned
   menu:
     main:
@@ -487,6 +508,7 @@ he:
         - 📚 [**Look Scanned**](https://lookscanned.io) הוא יישום קל משקל מבוסס דפדפן המדמה אפקטים של PDF סרוק. הוא תוכנן תוך התחשבות בפרטיות, ומאפשר למפתחים, מעצבים וכל אחד אחר להוסיף אפקטים אותנטיים של סריקה לקבצי PDF ללא צורך בחומרה פיזית.
 ms:
   languageName: Bahasa Melayu
+  weight: 21
   title: Blog Look Scanned
   menu:
     main:
