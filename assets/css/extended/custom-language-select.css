@@ -1,0 +1,9 @@
+.custom-language-select {
+  all: unset;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.custom-language-select-icon {
+  margin: auto 4px;
+}
