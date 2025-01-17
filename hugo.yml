@@ -37,6 +37,16 @@ languages:
     languageCode: en
     languageName: English
     title: Look Scanned Blog
+    menu:
+      main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Look Scanned Blog"
@@ -47,6 +57,16 @@ languages:
   zh:
     languageName: 简体中文
     title: Look Scanned 博客
+    menu:
+      main:
+        - name: 归档
+          url: archives
+          weight: 5
+        - name: 搜索
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Look Scanned 博客"
@@ -58,6 +78,16 @@ languages:
     languageCode: zh-TW
     languageName: 繁體中文
     title: Look Scanned 部落格
+    menu:
+      main:
+        - name: 歸檔
+          url: archives
+          weight: 5
+        - name: 搜尋
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Look Scanned 部落格"
@@ -68,6 +98,16 @@ languages:
   de:
     languageName: Deutsch
     title: Look Scanned Blog
+    menu:
+      main:
+        - name: Archiv
+          url: archives
+          weight: 5
+        - name: Suche
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Look Scanned Blog"
@@ -78,6 +118,16 @@ languages:
   es:
     languageName: Español
     title: Blog de Look Scanned
+    menu:
+      main:
+        - name: Archivo
+          url: archives
+          weight: 5
+        - name: Buscar
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Blog de Look Scanned"
@@ -88,6 +138,16 @@ languages:
   fr:
     languageName: Français
     title: Blog Look Scanned
+    menu:
+      main:
+        - name: Archives
+          url: archives
+          weight: 5
+        - name: Rechercher
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Blog Look Scanned"
@@ -98,6 +158,16 @@ languages:
   it:
     languageName: Italiano
     title: Blog di Look Scanned
+    menu:
+      main:
+        - name: Archivio
+          url: archives
+          weight: 5
+        - name: Cerca
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Blog di Look Scanned"
@@ -108,6 +178,16 @@ languages:
   ja:
     languageName: 日本語
     title: Look Scanned ブログ
+    menu:
+      main:
+        - name: アーカイブ
+          url: archives
+          weight: 5
+        - name: 検索
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Look Scanned ブログ"
@@ -118,6 +198,16 @@ languages:
   ko:
     languageName: 한국어
     title: Look Scanned 블로그
+    menu:
+      main:
+        - name: 아카이브
+          url: archives
+          weight: 5
+        - name: 검색
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Look Scanned 블로그"
@@ -128,6 +218,16 @@ languages:
   ru:
     languageName: Русский
     title: Блог Look Scanned
+    menu:
+      main:
+        - name: Архив
+          url: archives
+          weight: 5
+        - name: Поиск
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Блог Look Scanned"
@@ -138,6 +238,16 @@ languages:
   pt:
     languageName: Português
     title: Blog do Look Scanned
+    menu:
+      main:
+        - name: Arquivo
+          url: archives
+          weight: 5
+        - name: Pesquisar
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Blog do Look Scanned"
@@ -149,6 +259,16 @@ languages:
     languageDirection: rtl
     languageName: العربية
     title: مدونة Look Scanned
+    menu:
+      main:
+        - name: الأرشيف
+          url: archives
+          weight: 5
+        - name: بحث
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "مدونة Look Scanned"
@@ -159,6 +279,16 @@ languages:
   hi:
     languageName: हिन्दी
     title: Look Scanned ब्लॉग
+    menu:
+      main:
+        - name: पुरालेख
+          url: archives
+          weight: 5
+        - name: खोज
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Look Scanned ब्लॉग"
@@ -169,6 +299,16 @@ languages:
   tr:
     languageName: Türkçe
     title: Look Scanned Blogu
+    menu:
+      main:
+        - name: Arşiv
+          url: archives
+          weight: 5
+        - name: Ara
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Look Scanned Blogu"
@@ -179,6 +319,16 @@ languages:
   nl:
     languageName: Nederlands
     title: Look Scanned Blog
+    menu:
+      main:
+        - name: Archief
+          url: archives
+          weight: 5
+        - name: Zoeken
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Look Scanned Blog"
@@ -189,6 +339,16 @@ languages:
   sv:
     languageName: Svenska
     title: Look Scanned Blogg
+    menu:
+      main:
+        - name: Arkiv
+          url: archives
+          weight: 5
+        - name: Sök
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Look Scanned Blogg"
@@ -199,6 +359,16 @@ languages:
   pl:
     languageName: Polski
     title: Blog Look Scanned
+    menu:
+      main:
+        - name: Archiwum
+          url: archives
+          weight: 5
+        - name: Szukaj
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Blog Look Scanned"
@@ -209,6 +379,16 @@ languages:
   vi:
     languageName: Tiếng Việt
     title: Blog Look Scanned
+    menu:
+      main:
+        - name: Lưu trữ
+          url: archives
+          weight: 5
+        - name: Tìm kiếm
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Blog Look Scanned"
@@ -219,6 +399,16 @@ languages:
   th:
     languageName: ไทย
     title: บล็อก Look Scanned
+    menu:
+      main:
+        - name: คลังเก็บ
+          url: archives
+          weight: 5
+        - name: ค้นหา
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "บล็อก Look Scanned"
@@ -229,6 +419,16 @@ languages:
   id:
     languageName: Bahasa Indonesia
     title: Blog Look Scanned
+    menu:
+      main:
+        - name: Arsip
+          url: archives
+          weight: 5
+        - name: Cari
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Blog Look Scanned"
@@ -240,6 +440,16 @@ languages:
     languageDirection: rtl
     languageName: עברית
     title: בלוג Look Scanned
+    menu:
+      main:
+        - name: ארכיון
+          url: archives
+          weight: 5
+        - name: חיפוש
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "בלוג Look Scanned"
@@ -250,6 +460,16 @@ languages:
   ms:
     languageName: Bahasa Melayu
     title: Blog Look Scanned
+    menu:
+      main:
+        - name: Arkib
+          url: archives
+          weight: 5
+        - name: Cari
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Blog Look Scanned"
@@ -260,6 +480,16 @@ languages:
   no:
     languageName: Norsk
     title: Look Scanned Blogg
+    menu:
+      main:
+        - name: Arkiv
+          url: archives
+          weight: 5
+        - name: Søk
+          url: search
+          weight: 10
+        - name: Look Scanned
+          url: https://lookscanned.io
     params:
       homeInfoParams:
         Title: "Look Scanned Blogg"
