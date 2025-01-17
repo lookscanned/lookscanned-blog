@@ -45,6 +45,9 @@ languages:
         - name: Search
           url: search
           weight: 10
+        - name: Tags
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -65,6 +68,9 @@ languages:
         - name: 搜索
           url: search
           weight: 10
+        - name: 标签
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -86,6 +92,9 @@ languages:
         - name: 搜尋
           url: search
           weight: 10
+        - name: 標籤
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -106,6 +115,9 @@ languages:
         - name: Suche
           url: search
           weight: 10
+        - name: Tags
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -126,6 +138,9 @@ languages:
         - name: Buscar
           url: search
           weight: 10
+        - name: Etiquetas
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -146,6 +161,9 @@ languages:
         - name: Rechercher
           url: search
           weight: 10
+        - name: Tags
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -166,6 +184,9 @@ languages:
         - name: Cerca
           url: search
           weight: 10
+        - name: Tag
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -186,6 +207,9 @@ languages:
         - name: 検索
           url: search
           weight: 10
+        - name: タグ
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -206,6 +230,9 @@ languages:
         - name: 검색
           url: search
           weight: 10
+        - name: 태그
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -226,6 +253,9 @@ languages:
         - name: Поиск
           url: search
           weight: 10
+        - name: Теги
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -246,6 +276,9 @@ languages:
         - name: Pesquisar
           url: search
           weight: 10
+        - name: Tags
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -267,6 +300,9 @@ languages:
         - name: بحث
           url: search
           weight: 10
+        - name: الوسوم
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -287,6 +323,9 @@ languages:
         - name: खोज
           url: search
           weight: 10
+        - name: टैग
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -307,6 +346,9 @@ languages:
         - name: Ara
           url: search
           weight: 10
+        - name: Etiketler
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -327,6 +369,9 @@ languages:
         - name: Zoeken
           url: search
           weight: 10
+        - name: Tags
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -347,6 +392,9 @@ languages:
         - name: Sök
           url: search
           weight: 10
+        - name: Taggar
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -367,6 +415,9 @@ languages:
         - name: Szukaj
           url: search
           weight: 10
+        - name: Tagi
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -387,6 +438,9 @@ languages:
         - name: Tìm kiếm
           url: search
           weight: 10
+        - name: Thẻ
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -407,6 +461,9 @@ languages:
         - name: ค้นหา
           url: search
           weight: 10
+        - name: แท็ก
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -427,6 +484,9 @@ languages:
         - name: Cari
           url: search
           weight: 10
+        - name: Tag
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -448,6 +508,9 @@ languages:
         - name: חיפוש
           url: search
           weight: 10
+        - name: תגיות
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -468,6 +531,9 @@ languages:
         - name: Cari
           url: search
           weight: 10
+        - name: Tag
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
@@ -488,6 +554,9 @@ languages:
         - name: Søk
           url: search
           weight: 10
+        - name: Tagger
+          url: tags
+          weight: 15
         - name: Look Scanned
           url: https://lookscanned.io
     params:
