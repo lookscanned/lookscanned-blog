@@ -1,6 +1,8 @@
 displayFullLangName: true
 author: "Look Scanned"
 ShowReadingTime: true
+ShowShareButtons: true
+ShowPostNavLinks: true
 socialIcons:
   - name: other
     title: Look Scanned
