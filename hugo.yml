@@ -1,0 +1,85 @@
+baseURL: https://blog.lookscanned.io/
+languageCode: en
+title: Look Scanned Blog
+theme: PaperMod
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+
+params:
+  displayFullLangName: true
+
+languages:
+  en:
+    languageCode: en
+    languageName: English
+    title: Look Scanned Blog
+  zh:
+    languageName: 简体中文
+    title: Look Scanned 博客
+  zh-tw:
+    languageCode: zh-TW
+    languageName: 繁體中文
+    title: Look Scanned 部落格
+  de:
+    languageName: Deutsch
+    title: Look Scanned Blog
+  es:
+    languageName: Español
+    title: Blog de Look Scanned
+  fr:
+    languageName: Français
+    title: Blog Look Scanned
+  it:
+    languageName: Italiano
+    title: Blog di Look Scanned
+  ja:
+    languageName: 日本語
+    title: Look Scanned ブログ
+  ko:
+    languageName: 한국어
+    title: Look Scanned 블로그
+  ru:
+    languageName: Русский
+    title: Блог Look Scanned
+  pt:
+    languageName: Português
+    title: Blog do Look Scanned
+  ar:
+    languageDirection: rtl
+    languageName: العربية
+    title: مدونة Look Scanned
+  hi:
+    languageName: हिन्दी
+    title: Look Scanned ब्लॉग
+  tr:
+    languageName: Türkçe
+    title: Look Scanned Blogu
+  nl:
+    languageName: Nederlands
+    title: Look Scanned Blog
+  sv:
+    languageName: Svenska
+    title: Look Scanned Blogg
+  pl:
+    languageName: Polski
+    title: Blog Look Scanned
+  vi:
+    languageName: Tiếng Việt
+    title: Blog Look Scanned
+  th:
+    languageName: ไทย
+    title: บล็อก Look Scanned
+  id:
+    languageName: Bahasa Indonesia
+    title: Blog Look Scanned
+  he:
+    languageDirection: rtl
+    languageName: עברית
+    title: בלוג Look Scanned
+  ms:
+    languageName: Bahasa Melayu
+    title: Blog Look Scanned
+  no:
+    languageName: Norsk
+    title: Look Scanned Blogg
