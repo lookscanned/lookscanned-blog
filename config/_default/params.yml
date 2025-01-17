@@ -4,6 +4,7 @@ ShowReadingTime: true
 ShowShareButtons: true
 ShowPostNavLinks: true
 ShowFullTextinRSS: true
+ShowWordCount: true
 socialIcons:
   - name: other
     title: Look Scanned
