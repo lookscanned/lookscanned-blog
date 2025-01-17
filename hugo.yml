@@ -550,6 +550,7 @@ languages:
           - 📚 [**Look Scanned**](https://lookscanned.io) ialah aplikasi ringan berasaskan pelayar yang mensimulasikan kesan PDF yang diimbas. Ia direka dengan mengutamakan privasi, membolehkan pembangun, pereka dan sesiapa sahaja menambah kesan imbasan yang autentik kepada PDF tanpa memerlukan perkakasan fizikal.
   no:
     languageName: Norsk
+    languageCode: no
     title: Look Scanned Blogg
     menu:
       main:
