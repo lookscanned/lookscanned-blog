@@ -3,6 +3,7 @@ languageCode: en
 title: Look Scanned Blog
 theme: PaperMod
 hasCJKLanguage: true
+googleAnalytics: G-MZWHSVY30W
 
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
