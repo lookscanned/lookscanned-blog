@@ -1,0 +1,19 @@
+name: Save to Wayback Machine
+
+on:
+  push:
+
+jobs:
+  save:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Save to Wayback Machine
+      uses: JamieMagee/wayback@v2.1.0
+      with:
+        url: |-
+          https://lookscanned.io
+        saveErrors: false
+        saveOutlinks: true
+        saveScreenshot: true
