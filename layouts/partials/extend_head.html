@@ -11,10 +11,18 @@
     "prefetch": [
       {
         "where": {
-          "href_matches": "/*"
+          "or": [
+            {
+              "href_matches": "/*"
+            },
+            {
+              "href_matches": "https://lookscanned.io"
+            }
+          ]
         },
         "eagerness": "immediate"
       }
     ]
   }
 </script>
+<link rel="dns-prefetch" href="https://lookscanned.io/" />
