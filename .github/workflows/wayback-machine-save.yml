@@ -8,16 +8,15 @@ permissions:
 
 jobs:
   save:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: Save to Wayback Machine
-      uses: JamieMagee/wayback@v2.0.0
-      with:
-        url: |-
-          https://blog.lookscanned.io
-          https://blog.lookscanned.io/zh/
-        saveErrors: false
-        saveOutlinks: true
-        saveScreenshot: true
+      - name: Save to Wayback Machine
+        uses: JamieMagee/wayback@main
+        with:
+          url: |-
+            https://blog.lookscanned.io
+            https://blog.lookscanned.io/zh/
+          saveErrors: false
+          saveOutlinks: true
+          saveScreenshot: true
