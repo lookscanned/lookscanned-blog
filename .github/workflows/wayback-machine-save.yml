@@ -12,11 +12,9 @@ jobs:
 
     steps:
       - name: Save to Wayback Machine
-        uses: JamieMagee/wayback@main
+        uses: JamieMagee/wayback@2.0.0
         with:
-          url: |-
-            https://blog.lookscanned.io
-            https://blog.lookscanned.io/zh/
+          url: https://blog.lookscanned.io
           saveErrors: false
           saveOutlinks: true
           saveScreenshot: true
