@@ -4,8 +4,9 @@
 }
 
 .lang-select-dropdown-content {
+  --dropdown-transition-duration: 0.3s;
   top: 50px;
-  display: none;
+  visibility: hidden;
   position: absolute;
   background-color: var(--entry);
   border-radius: var(--radius);
@@ -15,6 +16,11 @@
   max-height: calc(min(20em, 100vh - 100px));
   overflow-y: auto;
   overflow-x: hidden;
+  opacity: 0;
+  transition: opacity var(--dropdown-transition-duration)
+      cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0s var(--dropdown-transition-duration);
+  pointer-events: none;
 }
 
 .lang-select-dropdown-content a {
@@ -29,11 +35,16 @@
 }
 
 .lang-select-dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: var(--code-bg);
 }
 
 .lang-select-dropdown:hover .lang-select-dropdown-content {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity var(--dropdown-transition-duration)
+      cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0s;
 }
 
 .lang-select-dropdown-trigger {
