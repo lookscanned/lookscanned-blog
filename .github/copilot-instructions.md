@@ -187,11 +187,38 @@ hugo --verbose  # Detailed error output
 
 ## Development Best Practices
 
+### Commit Message Conventions
+This repository follows **conventional commits** with a specific pattern for blog posts:
+
+**Standard conventional commits:**
+- `fix:` - Bug fixes
+- `feat:` - New features  
+- `style:` - Code style changes
+- `chore:` - Maintenance tasks (dependency updates, etc.)
+- `perf:` - Performance improvements
+- `ci:` - CI/CD changes
+- `refactor:` - Code refactoring
+
+**Blog post commits:**
+- `post:` - New blog post additions (e.g., `post: How to Convert Digital Files into Realistic Scanned Copies`)
+
+**Examples from commit history:**
+```
+post: Batch Convert PDFs and Documents into Scanned‑Looking PDFs with Look Scanned
+fix: add missing fr post Introduce Professional Signatures and Stamps Feature
+feat(comment): add giscus comment system
+style: enhance language select dropdown with transition effects  
+chore(deps): bump themes/PaperMod from ee1e0f3 to 5a46517
+perf: add cache header to image
+ci: add GitHub Actions workflow for Copilot setup steps
+```
+
 ### Making Changes
 1. **Always** initialize submodules first
 2. Test locally with `hugo server -D` before committing
 3. For content changes, consider impact across all 22 languages
 4. Clean builds recommended: `rm -rf public resources` before building
+5. Use appropriate commit message format based on change type
 
 ### Theme Customization
 - Override templates in `layouts/` directory
