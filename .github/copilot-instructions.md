@@ -1,5 +1,99 @@
 # Copilot Instructions for Look Scanned Blog
 
+## 📄 Look Scanned
+
+**Look Scanned** is a pure frontend web app that makes your PDFs and documents look scanned — instantly, without printers or scanners. Just upload, customize, and download in a few clicks.
+
+---
+
+### 🔒 Privacy First
+
+Your data stays on your device. Nothing is ever uploaded or stored on our servers. All processing happens securely in your browser.
+
+---
+
+### ⚡ Speed You Can Feel
+
+Powered by WebAssembly, Look Scanned works at lightning speed. Convert PDFs and documents into scanned-looking copies in seconds, without waiting.
+
+---
+
+### 🎨 Customization Made Simple
+
+Tweak rotation, blur, noise, brightness, contrast, borders, resolution, and more. Preview your document in real time — what you see is exactly what you get.
+
+---
+
+### 📂 Multi-Format Support
+
+Convert and scan more than just PDFs:
+
+* Images (JPG, PNG, etc.)
+* Word (DOCX)
+* PowerPoint (PPTX)
+* Excel (XLSX)
+* Markdown, HTML, TXT
+
+Preserve original formatting while giving your files the authentic scanned look.
+
+---
+
+### 📱 Mobile Friendly & Offline Ready
+
+Look Scanned works on all modern browsers and devices. After the first load, it even works **offline** — perfect for planes, tunnels, or no-internet zones.
+
+---
+
+### 🚀 Pro Features
+
+Unlock the full power of Look Scanned with **Pro**:
+
+* ✅ Unlimited Scanning — no limits on how many documents you process
+* ✅ Effortless Bulk Scanning — save time by processing multiple files at once
+* ✅ 100% Ad-Free Experience — distraction-free interface
+* ✅ Advanced PDF Tools — edit metadata, add watermarks, insert signatures & stamps
+* ✅ Seamless API Integration — automate scanning with a robust developer API
+* ✅ Priority Support & Early Access — your feedback drives our roadmap
+
+#### 💳 Pricing
+
+* **USD 1.99 / month** — flexible monthly billing
+* **USD 19.99 / year** — best value, save more
+
+---
+
+### 🔧 API Scan for Developers
+
+Automate your workflows with Look Scanned's developer-friendly **API**:
+
+* Customize rotation, blur, noise, brightness, borders, resolution, and more
+* Upload via presigned URLs, download via secure links
+* Webhook support for job status notifications
+* Compatible with TypeScript, Python, cURL, and more
+
+**Example config:**
+
+```json
+{
+  "config": {
+    "rotate": 1,
+    "rotate_var": 0.5,
+    "colorspace": "gray",
+    "blur": 0,
+    "noise": 0,
+    "border": false,
+    "brightness": 1.3,
+    "contrast": 1.3,
+    "resolution": 150,
+    "output_format": "image/jpeg"
+  }
+}
+```
+
+---
+
+👉 **Look Scanned = your privacy-first, instant, customizable PDF scanner in the browser.**
+
 ## Repository Overview
 
 This repository contains the **Look Scanned Blog**, a multilingual Hugo static site that serves as the official blog for Look Scanned - a privacy-focused browser application for creating realistic scanned PDF effects. The blog is deployed automatically to both Cloudflare Pages (primary) and GitHub Pages (secondary).
