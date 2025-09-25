@@ -22,11 +22,11 @@ Sebelum membahas caranya, mari kita pahami manfaat dari efek ini:
 
 Anda tidak memerlukan perangkat rumit untuk membuat efek scan. Berikut beberapa pilihan utama:
 
-- **Look Scanned**: Aplikasi web praktis untuk mengubah file PDF, gambar, DOCX, PPTX, Excel, Markdown, HTML, dan TXT menjadi dokumen yang tampak seperti hasil pemindaian asli.
+- **[Look Scanned](https://lookscanned.io)**: Aplikasi web praktis untuk mengubah file PDF, gambar, DOCX, PPTX, Excel, Markdown, HTML, dan TXT menjadi dokumen yang tampak seperti hasil pemindaian asli.
 - **Program Pengolah Gambar**: Aplikasi seperti Photoshop atau GIMP dapat membuat efek scan, namun memerlukan kemampuan teknis.
 - **Pemindaian Fisik**: Jika tersedia printer dan scanner, Anda bisa langsung mencetak dan memindai dokumen.
 
-Dalam panduan ini, kita akan fokus menggunakan **Look Scanned** karena praktis, cepat, dan gratis.
+Dalam panduan ini, kita akan fokus menggunakan **[Look Scanned](https://lookscanned.io)** karena praktis, cepat, dan gratis.
 
 ## Panduan Langkah demi Langkah Look Scanned
 
@@ -34,7 +34,7 @@ Ikuti langkah-langkah berikut untuk membuat efek scan:
 
 ### Mengakses Look Scanned
 
-Buka browser dan kunjungi [lookscanned.io](https://lookscanned.io). Look Scanned adalah aplikasi web serbaguna yang berfungsi di semua browser mobile dan desktop utama, sehingga Anda dapat dengan mudah menggunakannya di smartphone, tablet, atau komputer. Aplikasi juga bisa bekerja secara offline - setelah kunjungan pertama ke situs, Anda bisa menggunakannya tanpa koneksi internet.
+Buka browser dan kunjungi [lookscanned.io](https://lookscanned.io/scan). Look Scanned adalah aplikasi web serbaguna yang berfungsi di semua browser mobile dan desktop utama, sehingga Anda dapat dengan mudah menggunakannya di smartphone, tablet, atau komputer. Aplikasi juga bisa bekerja secara offline - setelah kunjungan pertama ke situs, Anda bisa menggunakannya tanpa koneksi internet.
 
 ### Mengunggah File
 

@@ -22,11 +22,11 @@ description = 'Look Scanned라는 무료 브라우저 기반 도구를 사용하
 
 스캔 효과를 만들기 위해 복잡한 도구가 필요하지는 않습니다. 주요 옵션은 다음과 같습니다:
 
-- **Look Scanned**: PDF, 이미지, DOCX, PPTX, Excel 파일, Markdown, HTML, TXT 등을 실제 스캔본처럼 변환할 수 있는 사용하기 쉬운 웹 도구입니다.
+- **[Look Scanned](https://lookscanned.io)**: PDF, 이미지, DOCX, PPTX, Excel 파일, Markdown, HTML, TXT 등을 실제 스캔본처럼 변환할 수 있는 사용하기 쉬운 웹 도구입니다.
 - **이미지 편집 소프트웨어**: Photoshop이나 GIMP 같은 프로그램으로 스캔과 유사한 효과를 적용할 수 있지만, 어느 정도의 전문 지식이 필요합니다.
 - **실제 스캔**: 프린터와 스캐너가 있다면 문서를 출력한 후 실제로 스캔하는 방법도 있습니다.
 
-이 가이드에서는 사용이 간편하고, 빠르며, 무료인 **Look Scanned**를 중심으로 설명하겠습니다.
+이 가이드에서는 사용이 간편하고, 빠르며, 무료인 **[Look Scanned](https://lookscanned.io)**를 중심으로 설명하겠습니다.
 
 ## Look Scanned 사용 단계
 
@@ -34,7 +34,7 @@ description = 'Look Scanned라는 무료 브라우저 기반 도구를 사용하
 
 ### Look Scanned 접속하기
 
-브라우저를 열고 [lookscanned.io](https://lookscanned.io)에 접속합니다. Look Scanned는 모든 주요 모바일 및 데스크톱 브라우저를 지원하는 다목적 웹 애플리케이션으로, 스마트폰, 태블릿, 컴퓨터에서 원활하게 사용할 수 있습니다. 또한 오프라인 기능을 지원하여 사이트를 한 번 방문한 후에는 인터넷 연결 없이도 계속 사용할 수 있습니다.
+브라우저를 열고 [lookscanned.io](https://lookscanned.io/scan)에 접속합니다. Look Scanned는 모든 주요 모바일 및 데스크톱 브라우저를 지원하는 다목적 웹 애플리케이션으로, 스마트폰, 태블릿, 컴퓨터에서 원활하게 사용할 수 있습니다. 또한 오프라인 기능을 지원하여 사이트를 한 번 방문한 후에는 인터넷 연결 없이도 계속 사용할 수 있습니다.
 
 ### 파일 업로드
 

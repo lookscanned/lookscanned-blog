@@ -22,11 +22,11 @@ Antes de explicar el proceso, veamos las razones por las que podrías necesitar 
 
 No necesitas herramientas complejas para crear un efecto de escaneo convincente. Estas son las principales opciones:
 
-- **Look Scanned**: Una herramienta web intuitiva que convierte PDFs, imágenes, archivos DOCX, PPTX, Excel, Markdown, HTML y TXT en documentos con apariencia de escaneado auténtico.
+- **[Look Scanned](https://lookscanned.io)**: Una herramienta web intuitiva que convierte PDFs, imágenes, archivos DOCX, PPTX, Excel, Markdown, HTML y TXT en documentos con apariencia de escaneado auténtico.
 - **Programas de edición de imágenes**: Aplicaciones como Photoshop o GIMP permiten aplicar efectos de escaneo, aunque requieren cierta experiencia técnica.
 - **Escaneo tradicional**: Si dispones de impresora y escáner, puedes imprimir el documento y escanearlo físicamente.
 
-En esta guía nos centraremos en **Look Scanned**, por su facilidad de uso, rapidez y gratuidad.
+En esta guía nos centraremos en **[Look Scanned](https://lookscanned.io)**, por su facilidad de uso, rapidez y gratuidad.
 
 ## Guía paso a paso de Look Scanned
 
@@ -34,7 +34,7 @@ Sigue estos pasos para lograr el efecto de escaneo:
 
 ### Acceder a Look Scanned
 
-Abre tu navegador y ve a [lookscanned.io](https://lookscanned.io). Look Scanned es una aplicación web versátil que funciona en todos los navegadores móviles y de escritorio principales, permitiéndote usarla sin problemas en tu teléfono, tablet u ordenador. La aplicación también funciona sin conexión: una vez que hayas visitado el sitio por primera vez, puedes seguir usándola incluso sin conexión a Internet.
+Abre tu navegador y ve a [lookscanned.io](https://lookscanned.io/scan). Look Scanned es una aplicación web versátil que funciona en todos los navegadores móviles y de escritorio principales, permitiéndote usarla sin problemas en tu teléfono, tablet u ordenador. La aplicación también funciona sin conexión: una vez que hayas visitado el sitio por primera vez, puedes seguir usándola incluso sin conexión a Internet.
 
 ### Subir el archivo
 

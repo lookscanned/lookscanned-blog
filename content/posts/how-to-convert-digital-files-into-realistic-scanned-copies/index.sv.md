@@ -22,11 +22,11 @@ Innan vi går in på själva metoden, låt oss titta på varför denna effekt ka
 
 Du behöver inga avancerade verktyg för att skapa en skanningseffekt. Här är de vanligaste alternativen:
 
-- **Look Scanned**: Ett användarvänligt webbverktyg som omvandlar PDF:er, bilder, DOCX, PPTX, Excel, Markdown, HTML och TXT-filer till naturtrogna inskannade dokument.
+- **[Look Scanned](https://lookscanned.io)**: Ett användarvänligt webbverktyg som omvandlar PDF:er, bilder, DOCX, PPTX, Excel, Markdown, HTML och TXT-filer till naturtrogna inskannade dokument.
 - **Bildredigeringsprogram**: Program som Photoshop eller GIMP kan skapa skanningseffekter, men kräver tekniskt kunnande.
 - **Fysisk skanning**: Om du har tillgång till skrivare och skanner kan du skriva ut och skanna dokumentet.
 
-I den här guiden fokuserar vi på **Look Scanned** eftersom det är enkelt att använda, snabbt och kostnadsfritt.
+I den här guiden fokuserar vi på **[Look Scanned](https://lookscanned.io)** eftersom det är enkelt att använda, snabbt och kostnadsfritt.
 
 ## Steg-för-steg-guide för Look Scanned
 
@@ -34,7 +34,7 @@ Följ dessa steg för att skapa en skanningseffekt:
 
 ### Komma igång med Look Scanned
 
-Öppna din webbläsare och gå till [lookscanned.io](https://lookscanned.io). Look Scanned är en flexibel webbapplikation som fungerar i alla större webbläsare, både på mobilen och datorn. Applikationen fungerar även offline - efter första besöket kan du använda den utan internetuppkoppling.
+Öppna din webbläsare och gå till [lookscanned.io](https://lookscanned.io/scan). Look Scanned är en flexibel webbapplikation som fungerar i alla större webbläsare, både på mobilen och datorn. Applikationen fungerar även offline - efter första besöket kan du använda den utan internetuppkoppling.
 
 ### Ladda upp fil
 

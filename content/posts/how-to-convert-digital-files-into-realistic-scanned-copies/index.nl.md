@@ -22,11 +22,11 @@ Voordat we de methode bespreken, bekijken we eerst waarom dit effect nuttig kan 
 
 Voor het maken van een scan-effect heeft u geen ingewikkelde programma's nodig. Dit zijn de belangrijkste opties:
 
-- **Look Scanned**: Een gebruiksvriendelijke online tool die PDF's, afbeeldingen, DOCX, PPTX, Excel, Markdown, HTML en TXT-bestanden omzet naar natuurgetrouwe gescande documenten.
+- **[Look Scanned](https://lookscanned.io)**: Een gebruiksvriendelijke online tool die PDF's, afbeeldingen, DOCX, PPTX, Excel, Markdown, HTML en TXT-bestanden omzet naar natuurgetrouwe gescande documenten.
 - **Beeldbewerkingsprogramma's**: Programma's zoals Photoshop of GIMP kunnen scan-effecten toevoegen, maar hiervoor is wel technische kennis vereist.
 - **Fysiek scannen**: Beschikt u over een printer en scanner, dan kunt u het document ook gewoon afdrukken en scannen.
 
-In deze handleiding richten we ons op **Look Scanned** vanwege het gebruiksgemak, de snelheid en het feit dat het gratis is.
+In deze handleiding richten we ons op **[Look Scanned](https://lookscanned.io)** vanwege het gebruiksgemak, de snelheid en het feit dat het gratis is.
 
 ## Stap-voor-stap handleiding voor Look Scanned
 
@@ -34,7 +34,7 @@ Volg deze stappen om een scan-effect te creëren:
 
 ### Toegang tot Look Scanned
 
-Open uw browser en ga naar [lookscanned.io](https://lookscanned.io). Look Scanned is een veelzijdige webapplicatie die werkt op alle belangrijke mobiele en desktop browsers, waardoor u het gemakkelijk kunt gebruiken op uw smartphone, tablet of computer. De applicatie werkt ook offline - na uw eerste bezoek aan de site kunt u het gebruiken zonder internetverbinding.
+Open uw browser en ga naar [lookscanned.io](https://lookscanned.io/scan). Look Scanned is een veelzijdige webapplicatie die werkt op alle belangrijke mobiele en desktop browsers, waardoor u het gemakkelijk kunt gebruiken op uw smartphone, tablet of computer. De applicatie werkt ook offline - na uw eerste bezoek aan de site kunt u het gebruiken zonder internetverbinding.
 
 ### Bestand uploaden
 

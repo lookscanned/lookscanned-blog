@@ -22,11 +22,11 @@ description = '學習如何使用 Look Scanned 這款免費的瀏覽器工具將
 
 製作掃描效果並不需要複雜的工具。以下是幾種常見的方案：
 
-- **Look Scanned**：一款方便的線上工具，可將 PDF、圖片、DOCX、PPTX、Excel 檔案、Markdown、HTML 和 TXT 等格式轉換成掃描風格的文件。
+- **[Look Scanned](https://lookscanned.io)**：一款方便的線上工具，可將 PDF、圖片、DOCX、PPTX、Excel 檔案、Markdown、HTML 和 TXT 等格式轉換成掃描風格的文件。
 - **影像處理軟體**：如 Photoshop 或 GIMP 等專業軟體可以加入掃描效果濾鏡，但需要一定的操作技巧與專業知識。
 - **實體掃描**：若手邊有印表機和掃描器，可以透過實際列印後再掃描的方式達成效果。
 
-本教學將主要介紹 **Look Scanned**，因為它操作容易、功能清楚且完全免費。
+本教學將主要介紹 **[Look Scanned](https://lookscanned.io)**，因為它操作容易、功能清楚且完全免費。
 
 ## 使用 Look Scanned 的詳細步驟
 
@@ -34,7 +34,7 @@ description = '學習如何使用 Look Scanned 這款免費的瀏覽器工具將
 
 ### 存取 Look Scanned
 
-開啟瀏覽器，存取 [lookscanned.io](https://lookscanned.io)。Look Scanned 是一個通用的網頁應用程式，支援所有主流行動裝置和桌面瀏覽器，讓您可以在手機、平板或電腦上無縫使用。該應用程式還支援離線使用——首次存取網站後，即使沒有網路連線也可以繼續使用。
+開啟瀏覽器，存取 [lookscanned.io](https://lookscanned.io/scan)。Look Scanned 是一個通用的網頁應用程式，支援所有主流行動裝置和桌面瀏覽器，讓您可以在手機、平板或電腦上無縫使用。該應用程式還支援離線使用——首次存取網站後，即使沒有網路連線也可以繼續使用。
 
 ### 上傳檔案
 

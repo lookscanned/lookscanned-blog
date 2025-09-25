@@ -552,3 +552,273 @@ ms:
         👋 Selamat datang ke Blog Look Scanned!
 
         - 📚 [**Look Scanned**](https://lookscanned.io) ialah aplikasi ringan berasaskan pelayar yang mensimulasikan kesan PDF yang diimbas. Ia direka dengan mengutamakan privasi, membolehkan pembangun, pereka dan sesiapa sahaja menambah kesan imbasan yang autentik kepada PDF tanpa memerlukan perkakasan fizikal.
+cs:
+  languageCode: cs
+  languageName: Čeština
+  weight: 23
+  title: Look Scanned Blog
+  menu:
+    main:
+      - name: Archiv
+        url: archives
+        weight: 5
+      - name: Hledat
+        url: search
+        weight: 10
+      - name: Štítky
+        url: tags
+        weight: 15
+      - name: Look Scanned
+        url: https://lookscanned.io
+  params:
+    description: "Oficiální blog Look Scanned – sdílíme naši cestu ve webovém vývoji, technikách zpracování PDF a budování nástrojů zaměřených na soukromí. Získejte technické poznatky, novinky z vývoje a zjistěte, jak zpřístupňujeme efekt skenování dokumentů všem."
+    homeInfoParams:
+      Title: "Look Scanned Blog"
+      Content: >
+        👋 Vítejte na Look Scanned Blogu!
+
+        - 📚 [**Look Scanned**](https://lookscanned.io) je lehká aplikace v prohlížeči, která simuluje efekty skenovaných PDF. Je navržena s důrazem na soukromí a umožňuje vývojářům, designérům i komukoli dalšímu přidávat autentické skenovací efekty do PDF bez fyzického hardwaru.
+
+hu:
+  languageCode: hu
+  languageName: Magyar
+  weight: 24
+  title: Look Scanned Blog
+  menu:
+    main:
+      - name: Archívum
+        url: archives
+        weight: 5
+      - name: Keresés
+        url: search
+        weight: 10
+      - name: Címkék
+        url: tags
+        weight: 15
+      - name: Look Scanned
+        url: https://lookscanned.io
+  params:
+    description: "A Look Scanned hivatalos blogja – webfejlesztési tapasztalatainkat, PDF-feldolgozási technikákat és adatvédelem-központú eszközök építését osztjuk meg. Szerezz technikai betekintést, fejlesztési híreket, és tudd meg, miként tesszük a szkennelési effekteket mindenki számára elérhetővé."
+    homeInfoParams:
+      Title: "Look Scanned Blog"
+      Content: >
+        👋 Üdv a Look Scanned Blogon!
+
+        - 📚 [**Look Scanned**](https://lookscanned.io) egy könnyű, böngészőalapú alkalmazás, amely szkennelt PDF-hatásokat szimulál. Adatvédelemre tervezve lehetővé teszi, hogy fejlesztők, designerek és bárki valósághű szkennelési effekteket adjon a PDF-ekhez fizikai hardver nélkül.
+
+ro:
+  languageCode: ro
+  languageName: Română
+  weight: 25
+  title: Blogul Look Scanned
+  menu:
+    main:
+      - name: Arhivă
+        url: archives
+        weight: 5
+      - name: Căutare
+        url: search
+        weight: 10
+      - name: Etichete
+        url: tags
+        weight: 15
+      - name: Look Scanned
+        url: https://lookscanned.io
+  params:
+    description: "Blogul oficial Look Scanned – împărtășim parcursul nostru în dezvoltare web, tehnici de procesare PDF și construirea de instrumente axate pe confidențialitate. Obține perspective tehnice, noutăți și află cum facem efectele de scanare accesibile tuturor."
+    homeInfoParams:
+      Title: "Blogul Look Scanned"
+      Content: >
+        👋 Bine ai venit pe Blogul Look Scanned!
+
+        - 📚 [**Look Scanned**](https://lookscanned.io) este o aplicație ușoară, bazată pe browser, care simulează efecte de PDF scanat. Proiectată cu atenție la confidențialitate, le permite dezvoltatorilor, designerilor și tuturor utilizatorilor să adauge efecte autentice fără hardware fizic.
+
+el:
+  languageCode: el
+  languageName: Ελληνικά
+  weight: 26
+  title: Ιστολόγιο Look Scanned
+  menu:
+    main:
+      - name: Αρχείο
+        url: archives
+        weight: 5
+      - name: Αναζήτηση
+        url: search
+        weight: 10
+      - name: Ετικέτες
+        url: tags
+        weight: 15
+      - name: Look Scanned
+        url: https://lookscanned.io
+  params:
+    description: "Επίσημο ιστολόγιο του Look Scanned – μοιραζόμαστε το ταξίδι μας στην ανάπτυξη ιστού, τεχνικές επεξεργασίας PDF και τη δημιουργία εργαλείων με επίκεντρο την ιδιωτικότητα. Αποκτήστε τεχνικές γνώσεις, ενημερώσεις ανάπτυξης και μάθετε πώς κάνουμε τα εφέ σάρωσης προσιτά σε όλους."
+    homeInfoParams:
+      Title: "Ιστολόγιο Look Scanned"
+      Content: >
+        👋 Καλώς ήρθατε στο Ιστολόγιο Look Scanned!
+
+        - 📚 Το [**Look Scanned**](https://lookscanned.io) είναι μια ελαφριά εφαρμογή στον περιηγητή που προσομοιώνει εφέ σαρωμένων PDF. Σχεδιασμένη με γνώμονα την ιδιωτικότητα, επιτρέπει σε προγραμματιστές, σχεδιαστές και όλους τους χρήστες να προσθέτουν αυθεντικά εφέ χωρίς φυσικό υλικό.
+
+uk:
+  languageCode: uk
+  languageName: Українська
+  weight: 27
+  title: Блог Look Scanned
+  menu:
+    main:
+      - name: Архів
+        url: archives
+        weight: 5
+      - name: Пошук
+        url: search
+        weight: 10
+      - name: Теги
+        url: tags
+        weight: 15
+      - name: Look Scanned
+        url: https://lookscanned.io
+  params:
+    description: "Офіційний блог Look Scanned – ділимося нашим досвідом у веб-розробці, технологіях обробки PDF та створенні інструментів із фокусом на приватність. Отримуйте технічні інсайти, новини розробки та дізнавайтеся, як ми робимо ефекти сканування доступними для всіх."
+    homeInfoParams:
+      Title: "Блог Look Scanned"
+      Content: >
+        👋 Ласкаво просимо до блогу Look Scanned!
+
+        - 📚 [**Look Scanned**](https://lookscanned.io) – це легкий веб-додаток, що імітує ефекти сканованих PDF. Створений із повагою до приватності, він дозволяє додавати автентичні ефекти без потреби у фізичному обладнанні.
+
+fil:
+  languageCode: fil
+  languageName: Filipino
+  weight: 28
+  title: Look Scanned Blog
+  menu:
+    main:
+      - name: Arkibo
+        url: archives
+        weight: 5
+      - name: Paghahanap
+        url: search
+        weight: 10
+      - name: Mga Tag
+        url: tags
+        weight: 15
+      - name: Look Scanned
+        url: https://lookscanned.io
+  params:
+    description: "Opisyal na blog ng Look Scanned – ibinabahagi namin ang aming paglalakbay sa web development, mga teknik sa pagproseso ng PDF, at pagbuo ng mga tool na inuuna ang privacy. Kumuha ng teknikal na kaalaman, mga update sa development, at alamin kung paano namin ginagawang abot-kaya sa lahat ang mga epekto ng pag-scan."
+    homeInfoParams:
+      Title: "Look Scanned Blog"
+      Content: >
+        👋 Maligayang pagdating sa Look Scanned Blog!
+
+        - 📚 Ang [**Look Scanned**](https://lookscanned.io) ay isang magaan na browser-based na app na nagsi-simulate ng mga efektong parang na-scan na PDF. Dinisenyo na may pokus sa privacy para makapagdagdag ng tunay na scan effects sa PDF nang walang physical na hardware.
+
+bn:
+  languageCode: bn
+  languageName: বাংলা
+  weight: 29
+  title: Look Scanned ব্লগ
+  menu:
+    main:
+      - name: সংরক্ষণাগার
+        url: archives
+        weight: 5
+      - name: অনুসন্ধান
+        url: search
+        weight: 10
+      - name: ট্যাগ
+        url: tags
+        weight: 15
+      - name: Look Scanned
+        url: https://lookscanned.io
+  params:
+    description: "Look Scanned-এর অফিসিয়াল ব্লগ — ওয়েব ডেভেলপমেন্ট, PDF প্রক্রিয়াকরণ কৌশল এবং গোপনীয়তা-কেন্দ্রিক টুল তৈরির অভিজ্ঞতা শেয়ার করি। টেকনিক্যাল ইনসাইট, ডেভেলপমেন্ট আপডেট জানুন এবং কীভাবে সবার জন্য স্ক্যানিং এফেক্ট সহজলভ্য করছি তা দেখুন।"
+    homeInfoParams:
+      Title: "Look Scanned ব্লগ"
+      Content: >
+        👋 Look Scanned ব্লগে স্বাগতম!
+
+        - 📚 [**Look Scanned**](https://lookscanned.io) একটি হালকা, ব্রাউজার-ভিত্তিক অ্যাপ যা স্ক্যান করা PDF-এর প্রভাব অনুকরণ করে। গোপনীয়তা বিবেচনায় রেখে তৈরি, যা ডেভেলপার, ডিজাইনার এবং সবার জন্য হার্ডওয়্যার ছাড়াই PDF-এ বাস্তবসম্মত স্ক্যানিং এফেক্ট যোগ করতে দেয়।
+
+ur:
+  languageCode: ur
+  languageName: اردو
+  languageDirection: rtl
+  weight: 30
+  title: Look Scanned بلاگ
+  menu:
+    main:
+      - name: محفوظات
+        url: archives
+        weight: 5
+      - name: تلاش
+        url: search
+        weight: 10
+      - name: ٹیگز
+        url: tags
+        weight: 15
+      - name: Look Scanned
+        url: https://lookscanned.io
+  params:
+    description: "Look Scanned کا آفیشل بلاگ — ہم ویب ڈیولپمنٹ، PDF پروسیسنگ تکنیکس اور پرائیویسی پر مبنی ٹولز بنانے کا سفر شیئر کرتے ہیں۔ تکنیکی بصیرت، ڈیولپمنٹ اپڈیٹس حاصل کریں اور جانیں کہ ہم اسکیننگ ایفیکٹس کو سب کے لیے کیسے قابلِ رسائی بناتے ہیں۔"
+    homeInfoParams:
+      Title: "Look Scanned بلاگ"
+      Content: >
+        👋 Look Scanned بلاگ میں خوش آمدید!
+
+        - 📚 [**Look Scanned**](https://lookscanned.io) ایک ہلکی، براؤزر پر مبنی ایپ ہے جو اسکین شدہ PDF کے اثرات کی نقل کرتی ہے۔ پرائیویسی کو مدِنظر رکھتے ہوئے ڈیزائن کی گئی، یہ ڈیولپرز، ڈیزائنرز اور ہر کسی کو بغیر فزیکل ہارڈویئر کے PDF میں مستند اسکیننگ ایفیکٹس شامل کرنے دیتی ہے۔
+
+sw:
+  languageCode: sw
+  languageName: Kiswahili
+  weight: 31
+  title: Blogu ya Look Scanned
+  menu:
+    main:
+      - name: Kumbukumbu
+        url: archives
+        weight: 5
+      - name: Tafuta
+        url: search
+        weight: 10
+      - name: Lebo
+        url: tags
+        weight: 15
+      - name: Look Scanned
+        url: https://lookscanned.io
+  params:
+    description: "Blogu rasmi ya Look Scanned — tunashiriki safari yetu katika ukuzaji wa wavuti, mbinu za uchakataji wa PDF, na ujenzi wa zana zinazotanguliza faragha. Pata maarifa ya kiufundi, masasisho ya maendeleo, na ujifunze jinsi tunavyofanya athari za usanifu zipatikane kwa wote."
+    homeInfoParams:
+      Title: "Blogu ya Look Scanned"
+      Content: >
+        👋 Karibu kwenye Blogu ya Look Scanned!
+
+        - 📚 [**Look Scanned**](https://lookscanned.io) ni programu nyepesi inayotumia kivinjari inayosimulate athari za PDF iliyoskanishwa. Imetengenezwa kwa kuzingatia faragha ili kuruhusu wabunifu, wasanifu na mtu yeyote kuongeza athari halisi kwenye PDF bila vifaa vya kimwili.
+
+af:
+  languageCode: af
+  languageName: Afrikaans
+  weight: 32
+  title: Look Scanned Blog
+  menu:
+    main:
+      - name: Argief
+        url: archives
+        weight: 5
+      - name: Soek
+        url: search
+        weight: 10
+      - name: Etikette
+        url: tags
+        weight: 15
+      - name: Look Scanned
+        url: https://lookscanned.io
+  params:
+    description: "Die amptelike Look Scanned-blog – ons deel ons reis in webontwikkeling, PDF-verwerkingstegnieke en die bou van privaatheid-eerste gereedskap. Kry tegniese insigte, ontwikkelingsopdaterings en leer hoe ons skandeereffekte vir almal toeganklik maak."
+    homeInfoParams:
+      Title: "Look Scanned Blog"
+      Content: >
+        👋 Welkom by die Look Scanned-blog!
+
+        - 📚 [**Look Scanned**](https://lookscanned.io) is ’n liggewig, blaaiergebaseerde toepassing wat geskendeerde PDF-effekte simuleer. Dit is met privaatheid in gedagte ontwerp en stel ontwikkelaars, ontwerpers en enigiemand anders in staat om outentieke effekte by PDF’s te voeg sonder fisiese hardeware.

@@ -22,11 +22,11 @@ Trước khi đi vào cách thực hiện, hãy tìm hiểu những lợi ích c
 
 Bạn không cần những công cụ phức tạp để tạo hiệu ứng quét. Dưới đây là các lựa chọn chính:
 
-- **Look Scanned**: Công cụ web đơn giản giúp chuyển đổi các file PDF, hình ảnh, DOCX, PPTX, Excel, Markdown, HTML và TXT thành tài liệu có vẻ ngoài như được quét thật.
+- **[Look Scanned](https://lookscanned.io)**: Công cụ web đơn giản giúp chuyển đổi các file PDF, hình ảnh, DOCX, PPTX, Excel, Markdown, HTML và TXT thành tài liệu có vẻ ngoài như được quét thật.
 - **Phần mềm xử lý ảnh**: Các phần mềm như Photoshop hay GIMP có thể tạo hiệu ứng quét, nhưng cần có kiến thức kỹ thuật.
 - **Quét thực tế**: Nếu có máy in và máy scan, bạn có thể in tài liệu ra giấy rồi quét lại.
 
-Trong hướng dẫn này, chúng tôi sẽ tập trung vào **Look Scanned** vì tính đơn giản, hiệu quả và hoàn toàn miễn phí của nó.
+Trong hướng dẫn này, chúng tôi sẽ tập trung vào **[Look Scanned](https://lookscanned.io)** vì tính đơn giản, hiệu quả và hoàn toàn miễn phí của nó.
 
 ## Hướng dẫn từng bước sử dụng Look Scanned
 
@@ -34,7 +34,7 @@ Thực hiện các bước sau để tạo hiệu ứng quét:
 
 ### Truy cập Look Scanned
 
-Mở trình duyệt và truy cập [lookscanned.io](https://lookscanned.io). Look Scanned là ứng dụng web đa năng hoạt động trên mọi trình duyệt di động và máy tính chính, giúp bạn dễ dàng sử dụng trên điện thoại thông minh, máy tính bảng hoặc máy tính. Ứng dụng cũng hoạt động được khi không có mạng - sau lần truy cập đầu tiên, bạn có thể sử dụng mà không cần kết nối internet.
+Mở trình duyệt và truy cập [lookscanned.io](https://lookscanned.io/scan). Look Scanned là ứng dụng web đa năng hoạt động trên mọi trình duyệt di động và máy tính chính, giúp bạn dễ dàng sử dụng trên điện thoại thông minh, máy tính bảng hoặc máy tính. Ứng dụng cũng hoạt động được khi không có mạng - sau lần truy cập đầu tiên, bạn có thể sử dụng mà không cần kết nối internet.
 
 ### Tải tập tin lên
 

@@ -22,11 +22,11 @@ Avant d'aborder la méthode, voyons pourquoi cet effet peut s'avérer utile :
 
 La création d'un effet de numérisation ne requiert pas d'outils sophistiqués. Voici les options principales :
 
-- **Look Scanned** : Un outil web convivial qui convertit les PDF, images, fichiers DOCX, PPTX, Excel, Markdown, HTML et TXT en documents à l'aspect numérisé authentique.
+- **[Look Scanned](https://lookscanned.io)** : Un outil web convivial qui convertit les PDF, images, fichiers DOCX, PPTX, Excel, Markdown, HTML et TXT en documents à l'aspect numérisé authentique.
 - **Logiciels de traitement d'image** : Des programmes comme Photoshop ou GIMP permettent d'appliquer des effets de numérisation, mais demandent une certaine expertise.
 - **Numérisation traditionnelle** : Si vous avez accès à une imprimante et un scanner, vous pouvez imprimer puis numériser le document.
 
-Ce guide se concentre sur **Look Scanned**, choisi pour sa facilité d'utilisation, sa rapidité et sa gratuité.
+Ce guide se concentre sur **[Look Scanned](https://lookscanned.io)**, choisi pour sa facilité d'utilisation, sa rapidité et sa gratuité.
 
 ## Guide étape par étape de Look Scanned
 
@@ -34,7 +34,7 @@ Suivez ces étapes pour obtenir l'effet de numérisation :
 
 ### Accéder à Look Scanned
 
-Ouvrez votre navigateur et rendez-vous sur [lookscanned.io](https://lookscanned.io). Look Scanned est une application web polyvalente qui fonctionne sur tous les principaux navigateurs mobiles et de bureau, vous permettant de l'utiliser facilement sur votre téléphone, tablette ou ordinateur. L'application fonctionne également hors ligne : une fois que vous avez visité le site pour la première fois, vous pouvez continuer à l'utiliser même sans connexion Internet.
+Ouvrez votre navigateur et rendez-vous sur [lookscanned.io](https://lookscanned.io/scan). Look Scanned est une application web polyvalente qui fonctionne sur tous les principaux navigateurs mobiles et de bureau, vous permettant de l'utiliser facilement sur votre téléphone, tablette ou ordinateur. L'application fonctionne également hors ligne : une fois que vous avez visité le site pour la première fois, vous pouvez continuer à l'utiliser même sans connexion Internet.
 
 ### Téléverser le fichier
 

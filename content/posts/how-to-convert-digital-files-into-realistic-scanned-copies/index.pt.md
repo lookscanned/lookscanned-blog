@@ -22,11 +22,11 @@ Antes de explicarmos o passo a passo, vamos entender os principais motivos para 
 
 Para criar o efeito de digitalização, você não precisa de ferramentas complexas. Estas são as principais opções:
 
-- **Look Scanned**: Uma ferramenta online intuitiva que transforma PDF, imagens, arquivos DOCX, PPTX, Excel, Markdown, HTML e TXT em documentos com aparência autêntica de digitalização.
+- **[Look Scanned](https://lookscanned.io)**: Uma ferramenta online intuitiva que transforma PDF, imagens, arquivos DOCX, PPTX, Excel, Markdown, HTML e TXT em documentos com aparência autêntica de digitalização.
 - **Editores de imagem**: Softwares como Photoshop ou GIMP possibilitam criar efeitos de digitalização, mas exigem conhecimentos específicos.
 - **Digitalização real**: Caso tenha acesso a uma impressora e scanner, você pode imprimir e digitalizar o documento fisicamente.
 
-Neste guia, vamos focar no **Look Scanned**, por ser gratuito, rápido e fácil de usar.
+Neste guia, vamos focar no **[Look Scanned](https://lookscanned.io)**, por ser gratuito, rápido e fácil de usar.
 
 ## Guia passo a passo do Look Scanned
 
@@ -34,7 +34,7 @@ Siga estas etapas para criar o efeito de digitalização:
 
 ### Acessando o Look Scanned
 
-Abra seu navegador e acesse [lookscanned.io](https://lookscanned.io). O Look Scanned é um aplicativo web versátil que funciona em todos os principais navegadores móveis e desktop, permitindo uso perfeito em smartphones, tablets ou computadores. O aplicativo também funciona offline - após a primeira visita ao site, você pode continuar usando-o mesmo sem conexão com a internet.
+Abra seu navegador e acesse [lookscanned.io](https://lookscanned.io/scan). O Look Scanned é um aplicativo web versátil que funciona em todos os principais navegadores móveis e desktop, permitindo uso perfeito em smartphones, tablets ou computadores. O aplicativo também funciona offline - após a primeira visita ao site, você pode continuar usando-o mesmo sem conexão com a internet.
 
 ### Enviando o arquivo
 

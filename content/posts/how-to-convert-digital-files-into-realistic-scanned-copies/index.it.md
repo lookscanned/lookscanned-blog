@@ -22,11 +22,11 @@ Prima di passare al metodo, vediamo i motivi per cui questo effetto può tornare
 
 Per creare un effetto scansione convincente non servono strumenti complessi. Ecco le opzioni principali:
 
-- **Look Scanned**: Uno strumento web pratico che trasforma PDF, immagini, file DOCX, PPTX, Excel, Markdown, HTML e TXT in documenti dall'aspetto autenticamente scansionato.
+- **[Look Scanned](https://lookscanned.io)**: Uno strumento web pratico che trasforma PDF, immagini, file DOCX, PPTX, Excel, Markdown, HTML e TXT in documenti dall'aspetto autenticamente scansionato.
 - **Programmi di fotoritocco**: Software come Photoshop o GIMP consentono di applicare effetti scansione, ma richiedono competenze specifiche.
 - **Scansione tradizionale**: Se disponi di stampante e scanner, puoi stampare e poi scansionare il documento.
 
-In questa guida ci focalizzeremo su **Look Scanned**, scelto per praticità, rapidità e assenza di costi.
+In questa guida ci focalizzeremo su **[Look Scanned](https://lookscanned.io)**, scelto per praticità, rapidità e assenza di costi.
 
 ## Guida passo passo di Look Scanned
 
@@ -34,7 +34,7 @@ Segui questi passaggi per ottenere l'effetto scansione:
 
 ### Accedere a Look Scanned
 
-Apri il browser e vai su [lookscanned.io](https://lookscanned.io). Look Scanned è un'applicazione web versatile che funziona su tutti i principali browser mobili e desktop, permettendoti di utilizzarla senza problemi su smartphone, tablet o computer. L'applicazione funziona anche offline: dopo la prima visita al sito, puoi continuare a utilizzarla anche senza connessione Internet.
+Apri il browser e vai su [lookscanned.io](https://lookscanned.io/scan). Look Scanned è un'applicazione web versatile che funziona su tutti i principali browser mobili e desktop, permettendoti di utilizzarla senza problemi su smartphone, tablet o computer. L'applicazione funziona anche offline: dopo la prima visita al sito, puoi continuare a utilizzarla anche senza connessione Internet.
 
 ### Caricare il file
 

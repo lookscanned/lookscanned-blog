@@ -22,11 +22,11 @@ Yöntemi açıklamadan önce, bu efektin hangi durumlarda faydalı olabileceğin
 
 Tarama efekti oluşturmak için karmaşık araçlara gerek yoktur. Başlıca seçenekler şunlardır:
 
-- **Look Scanned**: PDF, görüntü, DOCX, PPTX, Excel, Markdown, HTML ve TXT dosyalarını gerçekçi taranmış belgelere dönüştüren kullanımı kolay bir web aracı.
+- **[Look Scanned](https://lookscanned.io)**: PDF, görüntü, DOCX, PPTX, Excel, Markdown, HTML ve TXT dosyalarını gerçekçi taranmış belgelere dönüştüren kullanımı kolay bir web aracı.
 - **Görüntü İşleme Programları**: Photoshop veya GIMP gibi programlarla tarama efektleri uygulanabilir, ancak teknik bilgi gerektirir.
 - **Fiziksel Tarama**: Eğer yazıcı ve tarayıcınız varsa, belgeyi basıp tarayabilirsiniz.
 
-Bu kılavuzda, kullanım kolaylığı, hızı ve ücretsiz olması nedeniyle **Look Scanned** üzerine yoğunlaşacağız.
+Bu kılavuzda, kullanım kolaylığı, hızı ve ücretsiz olması nedeniyle **[Look Scanned](https://lookscanned.io)** üzerine yoğunlaşacağız.
 
 ## Look Scanned Adım Adım Kılavuzu
 
@@ -34,7 +34,7 @@ Tarama efekti oluşturmak için şu adımları izleyin:
 
 ### Look Scanned'e Erişim
 
-Tarayıcınızı açın ve [lookscanned.io](https://lookscanned.io) adresine gidin. Look Scanned, tüm önemli mobil ve masaüstü tarayıcılarda çalışan çok yönlü bir web uygulamasıdır, böylece akıllı telefon, tablet veya bilgisayarınızda kolayca kullanabilirsiniz. Uygulama çevrimdışı da çalışır - siteyi ilk ziyaretinizden sonra, internet bağlantısı olmadan da kullanabilirsiniz.
+Tarayıcınızı açın ve [lookscanned.io](https://lookscanned.io/scan) adresine gidin. Look Scanned, tüm önemli mobil ve masaüstü tarayıcılarda çalışan çok yönlü bir web uygulamasıdır, böylece akıllı telefon, tablet veya bilgisayarınızda kolayca kullanabilirsiniz. Uygulama çevrimdışı da çalışır - siteyi ilk ziyaretinizden sonra, internet bağlantısı olmadan da kullanabilirsiniz.
 
 ### Dosya Yükleme
 

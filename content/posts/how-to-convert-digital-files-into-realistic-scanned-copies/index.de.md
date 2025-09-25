@@ -22,11 +22,11 @@ Bevor wir uns der praktischen Umsetzung widmen, schauen wir uns die Gründe für
 
 Für einen überzeugenden Scan-Effekt benötigen Sie keine komplexen Programme. Hier sind die wichtigsten Möglichkeiten:
 
-- **Look Scanned**: Ein benutzerfreundliches Webtool, das PDFs, Bilder, DOCX, PPTX, Excel-Dateien, Markdown, HTML und TXT in authentisch aussehende Scans umwandelt.
+- **[Look Scanned](https://lookscanned.io)**: Ein benutzerfreundliches Webtool, das PDFs, Bilder, DOCX, PPTX, Excel-Dateien, Markdown, HTML und TXT in authentisch aussehende Scans umwandelt.
 - **Bildbearbeitungsprogramme**: Software wie Photoshop oder GIMP ermöglicht das Hinzufügen von Scan-Effekten, erfordert jedoch Fachkenntnisse und mehr Zeit.
 - **Konventionelles Scannen**: Mit Zugang zu Drucker und Scanner können Sie das Dokument ausdrucken und anschließend einscannen.
 
-Diese Anleitung konzentriert sich auf **Look Scanned**, da es besonders benutzerfreundlich, schnell und kostenfrei ist.
+Diese Anleitung konzentriert sich auf **[Look Scanned](https://lookscanned.io)**, da es besonders benutzerfreundlich, schnell und kostenfrei ist.
 
 ## Schritt-für-Schritt-Anleitung für Look Scanned
 
@@ -34,7 +34,7 @@ Folgen Sie diesen Schritten für den Scan-Effekt:
 
 ### Look Scanned aufrufen
 
-Öffnen Sie Ihren Browser und navigieren Sie zu [lookscanned.io](https://lookscanned.io). Look Scanned ist eine vielseitige Webanwendung, die alle gängigen mobilen und Desktop-Browser unterstützt und sich nahtlos auf Ihrem Smartphone, Tablet oder Computer nutzen lässt. Die App funktioniert auch offline - nach dem ersten Besuch der Website können Sie sie auch ohne Internetverbindung weiter nutzen.
+Öffnen Sie Ihren Browser und navigieren Sie zu [lookscanned.io](https://lookscanned.io/scan). Look Scanned ist eine vielseitige Webanwendung, die alle gängigen mobilen und Desktop-Browser unterstützt und sich nahtlos auf Ihrem Smartphone, Tablet oder Computer nutzen lässt. Die App funktioniert auch offline - nach dem ersten Besuch der Website können Sie sie auch ohne Internetverbindung weiter nutzen.
 
 ### Datei hochladen
 

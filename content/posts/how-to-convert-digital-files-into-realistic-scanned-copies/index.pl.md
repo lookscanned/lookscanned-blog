@@ -22,11 +22,11 @@ Zanim przejdziemy do szczegółów, przyjrzyjmy się korzyściom płynącym z te
 
 Stworzenie efektu skanowania nie wymaga skomplikowanych narzędzi. Oto podstawowe możliwości:
 
-- **Look Scanned**: Intuicyjne narzędzie online przekształcające pliki PDF, obrazy, DOCX, PPTX, Excel, Markdown, HTML i TXT w dokumenty wyglądające jak profesjonalne skany.
+- **[Look Scanned](https://lookscanned.io)**: Intuicyjne narzędzie online przekształcające pliki PDF, obrazy, DOCX, PPTX, Excel, Markdown, HTML i TXT w dokumenty wyglądające jak profesjonalne skany.
 - **Programy graficzne**: Aplikacje typu Photoshop czy GIMP pozwalają uzyskać efekt skanowania, ale wymagają umiejętności technicznych.
 - **Tradycyjne skanowanie**: Przy dostępie do drukarki i skanera możesz po prostu wydrukować i zeskanować dokument.
 
-W tym poradniku skupimy się na **Look Scanned** ze względu na jego prostotę, wydajność i bezpłatny dostęp.
+W tym poradniku skupimy się na **[Look Scanned](https://lookscanned.io)** ze względu na jego prostotę, wydajność i bezpłatny dostęp.
 
 ## Instrukcja krok po kroku dla Look Scanned
 
@@ -34,7 +34,7 @@ Wykonaj poniższe kroki, aby stworzyć efekt skanowania:
 
 ### Dostęp do Look Scanned
 
-Otwórz przeglądarkę i przejdź na stronę [lookscanned.io](https://lookscanned.io). Look Scanned to wszechstronna aplikacja internetowa działająca na wszystkich głównych przeglądarkach mobilnych i stacjonarnych, dzięki czemu możesz łatwo korzystać z niej na smartfonie, tablecie lub komputerze. Aplikacja działa również offline - po pierwszej wizycie na stronie możesz korzystać z niej bez połączenia z internetem.
+Otwórz przeglądarkę i przejdź na stronę [lookscanned.io](https://lookscanned.io/scan). Look Scanned to wszechstronna aplikacja internetowa działająca na wszystkich głównych przeglądarkach mobilnych i stacjonarnych, dzięki czemu możesz łatwo korzystać z niej na smartfonie, tablecie lub komputerze. Aplikacja działa również offline - po pierwszej wizycie na stronie możesz korzystać z niej bez połączenia z internetem.
 
 ### Przesyłanie pliku
 

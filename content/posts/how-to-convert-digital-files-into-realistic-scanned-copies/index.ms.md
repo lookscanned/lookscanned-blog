@@ -22,11 +22,11 @@ Sebelum kita bincangkan cara-caranya, mari lihat kepentingan kesan imbasan ini:
 
 Anda tidak memerlukan alat yang rumit untuk menghasilkan kesan imbasan. Berikut adalah pilihan-pilihan utama:
 
-- **Look Scanned**: Alat web yang mesra pengguna untuk menukar fail PDF, imej, DOCX, PPTX, Excel, Markdown, HTML dan TXT kepada dokumen yang kelihatan seperti imbasan sebenar
+- **[Look Scanned](https://lookscanned.io)**: Alat web yang mesra pengguna untuk menukar fail PDF, imej, DOCX, PPTX, Excel, Markdown, HTML dan TXT kepada dokumen yang kelihatan seperti imbasan sebenar
 - **Program Sunting Imej**: Program seperti Photoshop atau GIMP boleh menghasilkan kesan imbasan, tetapi memerlukan kemahiran teknikal
 - **Imbasan Fizikal**: Jika anda mempunyai pencetak dan pengimbas, anda boleh cetak dan imbas dokumen tersebut
 
-Dalam panduan ini, kita akan fokus kepada **Look Scanned** kerana ia mudah digunakan, pantas dan percuma.
+Dalam panduan ini, kita akan fokus kepada **[Look Scanned](https://lookscanned.io)** kerana ia mudah digunakan, pantas dan percuma.
 
 ## Panduan Langkah demi Langkah Look Scanned
 
@@ -34,7 +34,7 @@ Ikuti langkah-langkah berikut untuk mencipta kesan imbasan:
 
 ### Mengakses Look Scanned
 
-Buka pelayar web dan lawati [lookscanned.io](https://lookscanned.io). Look Scanned ialah aplikasi web serba guna yang berfungsi pada semua pelayar web mudah alih dan desktop utama, membolehkan anda menggunakannya dengan mudah pada telefon pintar, tablet atau komputer. Aplikasi juga boleh berfungsi secara luar talian - selepas lawatan pertama ke laman web, anda boleh menggunakannya tanpa sambungan internet.
+Buka pelayar web dan lawati [lookscanned.io](https://lookscanned.io/scan). Look Scanned ialah aplikasi web serba guna yang berfungsi pada semua pelayar web mudah alih dan desktop utama, membolehkan anda menggunakannya dengan mudah pada telefon pintar, tablet atau komputer. Aplikasi juga boleh berfungsi secara luar talian - selepas lawatan pertama ke laman web, anda boleh menggunakannya tanpa sambungan internet.
 
 ### Memuat Naik Fail
 

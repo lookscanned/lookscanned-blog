@@ -1,11 +1,11 @@
-+++
-date = '2025-01-20T09:35:50+08:00'
-draft = false
-title = 'How to Convert Digital Files (PDF, DOCX, Images) into Realistic Scanned Copies'
-tags = ['pdf', 'tools', 'tutorial', 'document-processing', 'scan', 'how-to']
-summary = 'Learn how to make your digital documents look like scanned copies using Look Scanned, a free browser-based tool. This guide covers step-by-step instructions, customization options, and tips for achieving an authentic scanned appearance.'
-description = 'Learn how to make your digital documents look like scanned copies using Look Scanned, a free browser-based tool. This guide covers step-by-step instructions, customization options, and tips for achieving an authentic scanned appearance.'
-+++
+---
+date: "2025-01-20T09:35:50+08:00"
+draft: false
+title: "How to Convert Digital Files (PDF, DOCX, Images) into Realistic Scanned Copies"
+tags: ["pdf", "tools", "tutorial", "document-processing", "scan", "how-to"]
+summary: "Learn how to make your digital documents look like scanned copies using Look Scanned, a free browser-based tool. This guide covers step-by-step instructions, customization options, and tips for achieving an authentic scanned appearance."
+description: "Learn how to make your digital documents look like scanned copies using Look Scanned, a free browser-based tool. This guide covers step-by-step instructions, customization options, and tips for achieving an authentic scanned appearance."
+---
 
 Sometimes, you need a digital document to look like it was scanned. Whether it’s for adding a professional touch, meeting specific requirements, or simply for aesthetic purposes, making a document look scanned can be surprisingly simple. In this blog post, we’ll walk you through the process step by step.
 
@@ -22,11 +22,11 @@ Before diving into the how, let’s explore why you might need this effect:
 
 Creating a scanned effect doesn’t require complex tools. Here are some options:
 
-- **Look Scanned**: A user-friendly, browser-based tool that transforms PDFs, images, DOCX, PPTX, Excel files, Markdown, HTML, and TXT into scanned-style documents.
+- **[Look Scanned](https://lookscanned.io)**: A user-friendly, browser-based tool that transforms PDFs, images, DOCX, PPTX, Excel files, Markdown, HTML, and TXT into scanned-style documents.
 - **Photo Editing Software**: Applications like Photoshop or GIMP can apply scanned-like filters but may require more effort and expertise.
 - **Printing and Scanning**: If you have access to a printer and scanner, you can print the document and scan it back to achieve a scanned look.
 
-For this tutorial, we’ll focus on **Look Scanned**, as it’s quick, intuitive, and free.
+For this tutorial, we’ll focus on **[Look Scanned](https://lookscanned.io)**, as it’s quick, intuitive, and free.
 
 ## Step-by-Step Guide Using Look Scanned
 
@@ -34,7 +34,7 @@ Follow these steps to achieve the scanned effect:
 
 ### Visit Look Scanned
 
-Open your browser and navigate to [lookscanned.io](https://lookscanned.io). Look Scanned is a versatile web application that supports all major mobile and desktop browsers, allowing you to use it seamlessly on your phone, tablet, or computer. The app is also offline-capable - once you've visited the site for the first time, you can continue using it even without an internet connection.
+Open your browser and navigate to [lookscanned.io](https://lookscanned.io/scan). Look Scanned is a versatile web application that supports all major mobile and desktop browsers, allowing you to use it seamlessly on your phone, tablet, or computer. The app is also offline-capable - once you've visited the site for the first time, you can continue using it even without an internet connection.
 
 ### Upload Your File
 
