@@ -324,6 +324,26 @@ ci: add GitHub Actions workflow for Copilot setup steps
 - Static files use Cloudflare cache headers (defined in `static/_headers`)
 - Minification is enabled by default in production builds
 
+## Tool Calling Guidelines
+
+When working with this repository, maximize efficiency by:
+
+### Multiple Tool Calls
+- **ALWAYS** use multiple tools simultaneously when performing independent operations
+- Especially when exploring repository, reading files, viewing directories, validating changes
+- Example: Call both `str_replace_editor` to view files AND `bash` to check status in one response
+
+### Build and Test Flow
+- Initialize submodules first: `git submodule update --init --recursive`
+- Use appropriate timeouts for long operations (build: 180s, tests: 300s)
+- Run builds and tests with `async=false` for reliable completion
+- Chain commands when logical: `hugo --minify && ls public/index.html`
+
+### Content Validation
+- For multilingual content, always consider impact across all 22+ supported languages
+- Use Hugo's live reload during development: `hugo server -D`
+- Validate builds before committing: clean build → test → commit
+
 ## Trust These Instructions
 
 These instructions are comprehensive and tested. Only perform additional exploration if:
