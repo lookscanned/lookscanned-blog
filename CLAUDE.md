@@ -111,6 +111,66 @@ The site has automated CI/CD via GitHub Actions (`.github/workflows/ci.yml`):
 - Deploys to Cloudflare Pages (primary: https://blog.lookscanned.io)
 - Deploys to GitHub Pages (secondary)
 
+## Git Commit Conventions
+
+This repository follows [Conventional Commits](https://www.conventionalcommits.org/) for all commit messages and pull request titles.
+
+### Commit Message Format
+
+```
+<type>(<scope>): <subject>
+
+<body>
+
+<footer>
+```
+
+### Standard Types
+
+- `feat`: New features
+- `fix`: Bug fixes
+- `docs`: Documentation changes
+- `perf`: Performance improvements
+- `refactor`: Code refactoring
+- `chore`: Maintenance tasks (dependencies, etc.)
+- `ci`: CI/CD changes
+
+### Custom Type: `post`
+
+Use `post:` for new blog post additions:
+
+```bash
+git commit -m "post: Boost Performance by 60% with ImageBitmap in Look Scanned"
+git commit -m "post: How to Convert Digital Files into Realistic Scanned Copies"
+```
+
+### Examples
+
+```bash
+# New feature
+git commit -m "feat(cursor): add new-post command for creating multilingual blog posts"
+
+# Bug fix
+git commit -m "fix: complete missing i18n translations for boost-performance post"
+
+# Documentation
+git commit -m "docs: add CLAUDE.md guide and update archetype to YAML format"
+
+# New blog post
+git commit -m "post: Building a Multilingual Blog with Hugo and PaperMod"
+```
+
+### Pull Request Titles
+
+Pull request titles must also follow Conventional Commits format:
+
+```
+feat: add user authentication system
+fix: resolve rendering issue on mobile devices
+docs: update API documentation
+post: introduce new blog post about PDF processing
+```
+
 ## Important Conventions
 
 1. **Content Focus**: All posts should relate to Look Scanned, web development, PDF processing, or privacy-first tools
