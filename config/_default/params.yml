@@ -19,7 +19,8 @@ socialIcons:
     title: RSS
     url: "index.xml"
 editPost:
-  disabled: true
+  URL: "https://github.com/lookscanned/lookscanned-blog/blob/main/content"
+  appendFilePath: true # to append file path to Edit link
 ShowCodeCopyButtons: true
 assets:
   favicon: "/favicon.ico"
