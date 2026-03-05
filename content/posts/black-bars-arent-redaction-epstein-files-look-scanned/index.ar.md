@@ -87,4 +87,4 @@ keywords:
 
 تعامل مع حجب البيانات كعملية بيانات، وتحقق من الملف الدقيق الذي ستنشره، وبعدها فقط فكّر في الشكل النهائي بطابع المسح.
 
-جرّب Look Scanned: https://lookscanned.io
+جرّب Look Scanned: [https://lookscanned.io](https://lookscanned.io)

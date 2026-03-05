@@ -87,4 +87,4 @@ PDF הוא לא תמיד "תמונה של עמוד". הוא יותר כמו מי
 
 התייחסו להשחרה כפעולת נתונים, אמתו את הקובץ המדויק שאתם עומדים לפרסם, ורק אחר כך תתעסקו במראה הסופי בסגנון סריקה.
 
-נסו את Look Scanned: https://lookscanned.io
+נסו את Look Scanned: [https://lookscanned.io](https://lookscanned.io)

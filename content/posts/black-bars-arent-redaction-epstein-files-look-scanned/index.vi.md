@@ -87,4 +87,4 @@ Nếu cuộc tranh luận PDF “Epstein files” dạy chúng ta thêm điều 
 
 Hãy coi việc che dữ liệu là thao tác dữ liệu, xác minh đúng file bạn sắp công bố, rồi mới tính chuyện làm nó trông như một bản scan chuẩn chỉnh.
 
-Thử Look Scanned: https://lookscanned.io
+Thử Look Scanned: [https://lookscanned.io](https://lookscanned.io)

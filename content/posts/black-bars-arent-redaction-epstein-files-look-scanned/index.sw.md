@@ -87,4 +87,4 @@ Kama mjadala wa PDF za "Epstein files" umetufundisha kitu tena, ni hiki:
 
 Chukulia uondoaji wa taarifa kama kazi ya data, thibitisha faili halisi unayotaka kuchapisha, halafu ndipo ufikirie mwonekano wa mwisho wa aina ya skani.
 
-Jaribu Look Scanned: https://lookscanned.io
+Jaribu Look Scanned: [https://lookscanned.io](https://lookscanned.io)

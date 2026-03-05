@@ -87,4 +87,4 @@ Se o debate dos PDFs de “Epstein files” ensinou algo de novo, foi isto:
 
 Trate a tarjação como operação de dados, valide o arquivo exato que você vai publicar e só depois se preocupe com o visual final de scan.
 
-Experimente Look Scanned: https://lookscanned.io
+Experimente Look Scanned: [https://lookscanned.io](https://lookscanned.io)

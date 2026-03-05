@@ -87,4 +87,4 @@ Epstein files-এর PDF বিতর্ক যদি আবার কিছু 
 
 রিড্যাকশনকে ডেটা অপারেশন হিসেবে নিন, যে ফাইল প্রকাশ করবেন সেটা ঠিকমতো যাচাই করুন, তারপর স্ক্যান-ধাঁচের চূড়ান্ত রূপ নিয়ে ভাবুন।
 
-Look Scanned দেখুন: https://lookscanned.io
+Look Scanned দেখুন: [https://lookscanned.io](https://lookscanned.io)

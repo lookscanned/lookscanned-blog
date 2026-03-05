@@ -87,4 +87,4 @@ Wenn uns die PDF-Debatte zu den “Epstein files” wieder etwas gezeigt hat, da
 
 Behandle Schwärzung als Datenoperation, prüfe die exakte Datei, die du veröffentlichst, und kümmere dich erst danach um den finalen Scan-Look.
 
-Look Scanned testen: https://lookscanned.io
+Look Scanned testen: [https://lookscanned.io](https://lookscanned.io)

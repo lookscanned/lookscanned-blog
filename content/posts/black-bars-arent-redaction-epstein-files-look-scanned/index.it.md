@@ -87,4 +87,4 @@ Se la discussione sui PDF degli “Epstein files” ci ha insegnato ancora qualc
 
 Tratta l’oscuramento come un’operazione sui dati, verifica il file esatto che stai per pubblicare e solo dopo pensa all’aspetto finale da scansione.
 
-Prova Look Scanned: https://lookscanned.io
+Prova Look Scanned: [https://lookscanned.io](https://lookscanned.io)

@@ -87,4 +87,4 @@ Jeśli debata wokół PDF „Epstein files” nauczyła nas czegoś ponownie, to
 
 Traktuj redakcję jako operację na danych, zweryfikuj dokładny plik, który publikujesz, a dopiero potem martw się, by wyglądał jak porządny skan.
 
-Wypróbuj Look Scanned: https://lookscanned.io
+Wypróbuj Look Scanned: [https://lookscanned.io](https://lookscanned.io)

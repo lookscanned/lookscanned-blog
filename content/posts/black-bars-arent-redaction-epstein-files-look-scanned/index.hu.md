@@ -87,4 +87,4 @@ Ha az „Epstein files” PDF-vita megint tanított valamit, akkor ezt:
 
 A redakció legyen adatkezelési művelet, ellenőrizd a ténylegesen publikált fájlt, és csak utána foglalkozz azzal, hogy nézzen ki „rendes szkennelésnek”.
 
-Próbáld ki a Look Scannedet: https://lookscanned.io
+Próbáld ki a Look Scannedet: [https://lookscanned.io](https://lookscanned.io)

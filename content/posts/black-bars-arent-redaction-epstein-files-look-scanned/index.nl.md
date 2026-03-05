@@ -87,4 +87,4 @@ Als de discussie rond de PDF’s van “Epstein files” ons weer iets leerde, d
 
 Behandel redactie als een data-operatie, controleer exact het bestand dat je gaat publiceren, en denk pas daarna aan de scan-achtige eindlook.
 
-Probeer Look Scanned: https://lookscanned.io
+Probeer Look Scanned: [https://lookscanned.io](https://lookscanned.io)

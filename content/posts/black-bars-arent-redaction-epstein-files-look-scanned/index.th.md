@@ -87,4 +87,4 @@ PDF ไม่ได้เป็นแค่ “รูปของหนึ่ง
 
 มองการปกปิดข้อมูลเป็นงานระดับข้อมูล ตรวจไฟล์จริงที่จะเผยแพร่ แล้วค่อยไปทำให้หน้าตาดูเป็นสแกนแบบที่ต้องการ
 
-ลองใช้ Look Scanned: https://lookscanned.io
+ลองใช้ Look Scanned: [https://lookscanned.io](https://lookscanned.io)

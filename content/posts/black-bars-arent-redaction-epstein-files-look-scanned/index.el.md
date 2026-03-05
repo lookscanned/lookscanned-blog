@@ -87,4 +87,4 @@ keywords:
 
 Αντιμετώπισε την απόκρυψη ως λειτουργία δεδομένων, επαλήθευσε το ακριβές αρχείο που θα δημοσιεύσεις, και μόνο μετά ασχολήσου με το να φαίνεται σαν σωστό scan.
 
-Δοκίμασε το Look Scanned: https://lookscanned.io
+Δοκίμασε το Look Scanned: [https://lookscanned.io](https://lookscanned.io)

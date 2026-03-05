@@ -87,4 +87,4 @@ Om PDF-debatten kring “Epstein files” lärde oss något igen så är det det
 
 Behandla redigering som en dataoperation, verifiera exakt filen du ska publicera och tänk först därefter på att få den att se ut som en riktig skanning.
 
-Prova Look Scanned: https://lookscanned.io
+Prova Look Scanned: [https://lookscanned.io](https://lookscanned.io)

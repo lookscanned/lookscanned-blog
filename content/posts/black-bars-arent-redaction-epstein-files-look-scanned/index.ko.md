@@ -87,4 +87,4 @@ PDF는 항상 “페이지 이미지”가 아니다. 오히려 컨테이너에 
 
 레닥션을 데이터 작업으로 다루고, 공개할 정확한 파일을 검증한 뒤, 그다음에 스캔 스타일의 최종 외형을 다듬어야 한다.
 
-Look Scanned 써보기: https://lookscanned.io
+Look Scanned 써보기: [https://lookscanned.io](https://lookscanned.io)

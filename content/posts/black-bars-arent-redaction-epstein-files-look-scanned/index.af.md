@@ -87,4 +87,4 @@ As die PDF-debat oor Epstein files ons weer iets geleer het, is dit dit:
 
 Behandel redaksie as 'n data-operasie, verifieer die presiese lêer wat jy gaan publiseer, en dink eers daarna oor die finale skandeervoorkoms.
 
-Probeer Look Scanned: https://lookscanned.io
+Probeer Look Scanned: [https://lookscanned.io](https://lookscanned.io)

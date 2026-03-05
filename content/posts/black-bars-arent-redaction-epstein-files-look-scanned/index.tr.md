@@ -87,4 +87,4 @@ Asıl mesele sıra: **kaldır → doğrula → sonlandır**.
 
 Redaksiyonu bir veri işlemi olarak ele alın, yayınlayacağınız dosyanın kendisini doğrulayın, sonra tarama görünümünü sonlandırın.
 
-Look Scanned’i deneyin: https://lookscanned.io
+Look Scanned’i deneyin: [https://lookscanned.io](https://lookscanned.io)

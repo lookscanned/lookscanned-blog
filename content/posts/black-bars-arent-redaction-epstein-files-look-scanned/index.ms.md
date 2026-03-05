@@ -87,4 +87,4 @@ Jika perdebatan PDF “Epstein files” mengajar kita sesuatu lagi, ini dia:
 
 Jadikan redaksi sebagai operasi data, sahkan fail tepat yang anda akan terbitkan, kemudian barulah fikirkan rupa akhirnya sebagai imbasan yang kemas.
 
-Cuba Look Scanned: https://lookscanned.io
+Cuba Look Scanned: [https://lookscanned.io](https://lookscanned.io)

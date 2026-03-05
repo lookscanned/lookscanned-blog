@@ -87,4 +87,4 @@ Dacă dezbaterea PDF „Epstein files” ne-a învățat ceva din nou, este asta
 
 Tratează redactarea ca operațiune pe date, verifică exact fișierul pe care îl publici și abia apoi ocupă-te de aspectul „scanat” al versiunii finale.
 
-Încearcă Look Scanned: https://lookscanned.io
+Încearcă Look Scanned: [https://lookscanned.io](https://lookscanned.io)

@@ -87,4 +87,4 @@ Kung may itinuro ulit ang PDF debate tungkol sa Epstein files, ito iyon:
 
 Tratuhin ang redaction bilang trabaho sa data, i-verify ang mismong file na ilalabas mo, at saka mo lang ayusin ang huling scan-look.
 
-Subukan ang Look Scanned: https://lookscanned.io
+Subukan ang Look Scanned: [https://lookscanned.io](https://lookscanned.io)

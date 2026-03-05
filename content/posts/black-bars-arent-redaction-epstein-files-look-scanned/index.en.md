@@ -87,4 +87,4 @@ If the “Epstein files” PDF debate taught us anything (again), it’s this:
 
 Make redaction a data operation, verify the exact file you’ll publish, and only then worry about making it look like a proper scan.
 
-Try Look Scanned: https://lookscanned.io
+Try Look Scanned: [https://lookscanned.io](https://lookscanned.io)

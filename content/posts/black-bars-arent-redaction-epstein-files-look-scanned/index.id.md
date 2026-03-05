@@ -87,4 +87,4 @@ Kalau perdebatan PDF “Epstein files” mengajarkan sesuatu lagi, pesannya ini:
 
 Jadikan redaksi sebagai operasi data, verifikasi file persis yang akan Anda publikasikan, lalu baru pikirkan tampilannya agar terlihat seperti scan yang layak.
 
-Coba Look Scanned: https://lookscanned.io
+Coba Look Scanned: [https://lookscanned.io](https://lookscanned.io)

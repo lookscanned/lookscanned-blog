@@ -87,4 +87,4 @@ Si el debate de los PDF de “Epstein files” nos volvió a enseñar algo, es e
 
 Trata la redacción como una operación de datos, verifica el archivo exacto que vas a publicar y recién después preocúpate por el aspecto final tipo escaneo.
 
-Prueba Look Scanned: https://lookscanned.io
+Prueba Look Scanned: [https://lookscanned.io](https://lookscanned.io)

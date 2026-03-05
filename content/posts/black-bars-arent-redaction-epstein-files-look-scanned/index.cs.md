@@ -87,4 +87,4 @@ Pokud nás debata o PDF „Epstein files“ znovu něco naučila, pak toto:
 
 Berte redakci jako datovou operaci, ověřte přesný soubor, který publikujete, a teprve potom řešte, aby vypadal jako správný sken.
 
-Vyzkoušejte Look Scanned: https://lookscanned.io
+Vyzkoušejte Look Scanned: [https://lookscanned.io](https://lookscanned.io)
