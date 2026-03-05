@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Barras pretas não são redaction (Sim, os PDFs de “Epstein files” lembraram todo mundo disso de novo)
-
 Sempre que um vazamento de documentos de alto perfil viraliza, a mesma discussão sobre PDF aparece no meu feed.  
 Desta vez, foi com os PDFs de **“Epstein files”**: gente dando zoom nas áreas em preto e perguntando se a “redaction” era real ou só retângulos pretos por cima.
 

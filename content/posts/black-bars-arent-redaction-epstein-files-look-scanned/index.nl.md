@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Zwarte balken zijn geen redactie (Ja, de PDF’s rond “Epstein files” herinnerden iedereen daar opnieuw aan)
-
 Elke keer als een opvallende documentdump viraal gaat, duikt dezelfde PDF-discussie op in mijn feed.  
 Deze keer ging het om de PDF’s van **“Epstein files”**: mensen zoomden in op zwartgemaakte delen en vroegen of de “redactie” echt was, of alleen zwarte rechthoeken over de inhoud.
 

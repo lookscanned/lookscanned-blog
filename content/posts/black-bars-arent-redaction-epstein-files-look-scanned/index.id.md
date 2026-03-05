@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Garis Hitam Bukan Redaksi (Ya, PDF “Epstein Files” Mengingatkan Semua Orang Lagi)
-
 Setiap kali ada dokumen besar yang viral, perdebatan PDF yang sama selalu muncul di feed saya.  
 Kali ini soal PDF **“Epstein files”**: orang-orang memperbesar area hitam dan bertanya apakah “redaksinya” benar-benar aman, atau cuma kotak hitam di atas teks.
 

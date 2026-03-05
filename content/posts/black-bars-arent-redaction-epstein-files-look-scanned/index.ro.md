@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Barele Negre Nu Înseamnă Redactare (Da, PDF-urile „Epstein files” au reamintit asta tuturor)
-
 De fiecare dată când un set de documente cu profil mare devine viral, același argument despre PDF apare în feed-ul meu.  
 De data asta a fost despre PDF-urile **„Epstein files”**: oamenii făceau zoom pe zonele înnegrite și întrebau dacă „redactările” erau reale sau doar niște dreptunghiuri negre puse deasupra.
 

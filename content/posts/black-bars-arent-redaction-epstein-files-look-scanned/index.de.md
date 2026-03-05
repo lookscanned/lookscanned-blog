@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Schwarze Balken sind keine Schwärzung (Ja, die PDFs zu den “Epstein files” haben es wieder gezeigt)
-
 Immer wenn ein aufsehenerregender Dokumenten-Drop viral geht, taucht dieselbe PDF-Debatte in meinem Feed auf.  
 Diesmal ging es um die PDFs der **“Epstein files”**: Leute zoomten in geschwärzte Stellen und fragten, ob die „Schwärzungen“ echt sind oder nur schwarze Rechtecke oben drauf.
 

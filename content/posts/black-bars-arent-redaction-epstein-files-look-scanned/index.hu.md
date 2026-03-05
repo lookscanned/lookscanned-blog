@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# A fekete sáv nem redakció (Igen, az „Epstein files” PDF-ek újra emlékeztettek mindenkit)
-
 Valahányszor egy nagy figyelmet kapó dokumentumcsomag virálissá válik, ugyanaz a PDF-vita jelenik meg a feedemben.  
 Most az **„Epstein files”** PDF-ekről volt szó: az emberek belenagyítottak a fekete sávokba, és azt kérdezték, valódi-e a „redakció”, vagy csak pár fekete téglalap a tartalom fölött.
 

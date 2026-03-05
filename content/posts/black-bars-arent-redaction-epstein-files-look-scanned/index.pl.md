@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Czarne paski to nie redakcja (Tak, PDF-y „Epstein files” znowu wszystkim o tym przypomniały)
-
 Za każdym razem, gdy głośny pakiet dokumentów staje się viralem, w moim feedzie wraca ten sam spór o PDF.  
 Tym razem chodziło o PDF-y **„Epstein files”**: ludzie powiększali zaczernione miejsca i pytali, czy „redakcja” była prawdziwa, czy to tylko czarne prostokąty na wierzchu.
 

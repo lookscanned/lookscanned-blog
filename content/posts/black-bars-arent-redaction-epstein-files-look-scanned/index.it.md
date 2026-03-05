@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Le barre nere non sono redaction (Sì, i PDF degli “Epstein files” lo hanno ricordato a tutti, di nuovo)
-
 Ogni volta che un rilascio di documenti ad alta visibilità diventa virale, nel mio feed torna sempre la stessa discussione sui PDF.  
 Questa volta è toccato ai PDF degli **“Epstein files”**: persone che zoomavano sulle parti annerite e chiedevano se la “redaction” fosse reale o solo rettangoli neri messi sopra.
 

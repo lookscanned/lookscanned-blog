@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Thanh Đen Không Phải Là Redaction (Đúng vậy, PDF “Epstein Files” lại nhắc mọi người lần nữa)
-
 Mỗi khi có một đợt tung tài liệu gây chú ý lớn, cùng một cuộc tranh luận về PDF lại xuất hiện trên feed của tôi.  
 Lần này là các PDF **“Epstein files”**: mọi người zoom vào các vùng bị tô đen và hỏi liệu phần “redaction” có thật sự được xử lý đúng hay chỉ là mấy hình chữ nhật đè lên trên.
 

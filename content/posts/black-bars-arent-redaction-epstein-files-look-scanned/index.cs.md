@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Černé pruhy nejsou redakce (Ano, PDF „Epstein files“ to všem připomněla znovu)
-
 Kdykoli se virálně šíří nějaký mediálně výrazný dokument, ve feedu se mi objeví stejná hádka o PDF.  
 Tentokrát šlo o PDF **„Epstein files“**: lidé si přibližovali začerněné části a řešili, jestli je „redakce“ skutečná, nebo jsou to jen černé obdélníky nahoře.
 

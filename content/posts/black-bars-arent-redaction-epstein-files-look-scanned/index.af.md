@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Swart Balke Is Nie Redaksie Nie (Ja, die PDF's van Epstein files het almal weer herinner)
-
 Elke keer wanneer 'n hoëprofiel-dokumentstel viraal gaan, sien ek dieselfde PDF-argument in my feed.  
 Hierdie keer was dit die PDF's van **Epstein files**: mense het ingezoom op swartgemaakte dele en gevra of die "redaksies" regtig was, of net swart reghoeke bo-op.
 

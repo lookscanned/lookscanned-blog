@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Hindi Redaction ang Mga Itim na Bar (Oo, pinaalala ulit ito ng mga PDF ng Epstein files)
-
 Tuwing may high-profile na document drop na nagva-viral, iisang usapan tungkol sa PDF ang lumilitaw sa feed ko.  
 Sa pagkakataong ito, tungkol ito sa mga PDF ng **Epstein files**: nagzo-zoom ang mga tao sa mga bahaging itim at nagtatanong kung tunay ba ang "redaction" o simpleng itim na rectangles lang sa ibabaw.
 

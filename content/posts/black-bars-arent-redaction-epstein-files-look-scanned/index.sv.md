@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Svarta Fält Är Inte Redigering (Ja, PDF:erna med “Epstein files” påminde alla igen)
-
 Varje gång en uppmärksammad dokumentdump blir viral dyker samma PDF-diskussion upp i mitt flöde.  
 Den här gången gällde det **“Epstein files”**-PDF:er: folk zoomade in på svärtade sidor och frågade om “redigeringarna” var riktiga, eller bara svarta rektanglar ovanpå.
 

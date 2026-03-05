@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Black Bars Aren’t Redaction (Yes, the “Epstein Files” PDFs Reminded Everyone Again)
-
 Every time a high-profile document drop goes viral, the same PDF argument shows up in my feed.  
 This time it was the **“Epstein files”** PDFs: people zooming in on blacked-out pages and asking whether the “redactions” were real, or just a bunch of rectangles on top.
 

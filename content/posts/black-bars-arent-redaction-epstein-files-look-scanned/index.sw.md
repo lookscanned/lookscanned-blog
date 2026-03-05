@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Mistari Nyeusi Si Redaction (Ndiyo, PDF za Epstein files zimewakumbusha watu tena)
-
 Kila mara kifurushi cha nyaraka chenye mvuto mkubwa kinapoenea mtandaoni, mjadala uleule wa PDF huonekana kwenye feed yangu.  
 Mara hii ilikuwa kuhusu PDF za **Epstein files**: watu walikuwa wakivuta karibu sehemu zilizotiwa weusi na kuuliza kama "redaction" ilikuwa ya kweli au ni mstatili mweusi tu juu ya maandishi.
 

@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Siyah Çubuklar Redaksiyon Değildir (Evet, “Epstein files” PDF tartışması bunu yine hatırlattı)
-
 Ne zaman yüksek profilli bir belge yayını viral olsa, akışımda aynı PDF tartışması beliriyor.  
 Bu kez konu **“Epstein files”** PDF’leriydi: insanlar karartılmış bölgelere yakınlaşıp “redaksiyon gerçek mi, yoksa üstüne konmuş siyah dikdörtgenlerden mi ibaret?” diye soruyordu.
 

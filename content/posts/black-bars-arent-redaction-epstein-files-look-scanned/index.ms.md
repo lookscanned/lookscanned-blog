@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Bar Hitam Bukan Redaksi (Ya, PDF “Epstein Files” Ingatkan Semua Orang Sekali Lagi)
-
 Setiap kali dokumen berprofil tinggi menjadi viral, perdebatan PDF yang sama muncul dalam feed saya.  
 Kali ini tentang PDF **“Epstein files”**: orang zum masuk pada bahagian yang dihitamkan dan tanya sama ada “redaksi” itu benar, atau sekadar segi empat hitam di atas teks.
 

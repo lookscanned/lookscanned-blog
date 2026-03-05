@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Las barras negras no son redacción (Sí, los PDF de “Epstein files” nos lo recordaron otra vez)
-
 Cada vez que una filtración de alto perfil se vuelve viral, aparece el mismo debate sobre PDF en mi feed.  
 Esta vez fue con los PDF de **“Epstein files”**: gente ampliando zonas en negro y preguntando si la “redacción” era real o solo rectángulos puestos por encima.
 

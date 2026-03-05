@@ -15,8 +15,6 @@ keywords:
   - "Look Scanned"
 ---
 
-# Les barres noires ne sont pas une censure (Oui, les PDF des “Epstein files” l’ont rappelé à tout le monde)
-
 À chaque fuite de documents très médiatisée, le même débat PDF revient dans mon fil.  
 Cette fois, c’était autour des PDF des **“Epstein files”** : des gens zoomaient sur des zones noircies et demandaient si la “censure” était réelle, ou juste des rectangles noirs posés au-dessus.
 
