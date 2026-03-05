@@ -42,13 +42,13 @@ Jika proses anda ialah “lukis segi empat hitam dalam Word/PowerPoint dan ekspo
 
 Ini bukan program pematuhan. Ini rutin 60–90 saat yang membosankan tetapi berkesan menangkap kesilapan asas.
 
-Saya cuma semak **fail eksport akhir** (yang akan saya upload/email/share):
+Saya cuma semak **fail eksport akhir** (yang benar-benar akan saya hantar atau kongsi):
 
 - **Cari** istilah sensitif (nama, ID, serpihan emel, alamat)
-- Cuba pilih kawasan sekitar bahagian hitam dan **copy/paste** ke editor teks biasa
+- Cuba pilih kawasan sekitar bahagian hitam dan **salin/tampal** ke editor teks biasa
 - Buka dalam **dua pembaca berbeza** (desktop + pelayar biasanya cukup)
 - Cari baki **anotasi/komen** (sorotan, nota, bentuk)
-- Semak **metadata** (author/title/subject) jika dokumen akan dihantar keluar
+- Semak **metadata** (penulis/tajuk/subjek) jika dokumen akan dihantar keluar
 
 Jika dokumen asalnya imbasan atau melalui OCR, saya lebih berhati-hati kerana teks tersembunyi yang boleh dicari ialah “lapisan kejutan” klasik.
 
@@ -58,25 +58,25 @@ Itu sahaja. Mudah. Boleh diulang. Mengejutkan berkesan.
 
 Bila dokumen mengandungi maklumat sensitif, saya pastikan aliran pelepasan sangat jelas:
 
-1) **Buat redaksi sebenar** (buang kandungan, bukan overlay)  
+1) **Buat redaksi sebenar** (buang kandungan, bukan sekadar lapisan penutup)  
 2) **Bersihkan lebihan** (anotasi, lampiran, lapisan tersembunyi, metadata)  
 3) **Sahkan eksport akhir** (guna senarai semak di atas)  
-4) **Hasilkan versi “siap hantar”** (selalunya gaya imbasan, konsisten, nampak final)
+4) **Hasilkan versi “siap hantar”** (selalunya gaya imbasan, konsisten, dan benar-benar siap)
 
 Langkah terakhir ini lebih penting daripada yang ramai sangka. Bukan untuk “teater keselamatan”, tetapi untuk kurangkan keanehan tak sengaja dan jadikan output konsisten merentas peranti.
 
 ## Di mana Look Scanned sesuai dalam aliran saya
 
 Saya tidak guna Look Scanned sebagai alat redaksi. Itu bukan fungsinya.  
-Saya guna ia sebagai **alat deliverable peringkat akhir**.
+Saya guna ia sebagai **alat penyediaan akhir sebelum dihantar**.
 
 Selepas dokumen diredaksi dengan betul dan eksport akhir disahkan, Look Scanned membantu saya hasilkan **PDF gaya imbasan** yang bersih, jenis fail yang orang memang jangka dalam penghantaran dan urusan formal.
 
 Dalam praktik, ini bermaksud:
 
 - kurang perbualan “format anda berubah pada komputer saya”  
-- rasa “artifak akhir” yang lebih kuat (terutama bila pihak penerima memang jangka fail imbasan)  
-- output lebih bersih, kurang kemungkinan lapisan markup rawak terbawa sekali (bergantung pada pipeline eksport anda)
+- rasa dokumen akhir yang lebih jelas (terutama bila pihak penerima memang jangka fail imbasan)  
+- hasil lebih bersih, kurang kemungkinan lapisan penandaan rawak terbawa sekali (bergantung pada aliran eksport anda)
 
 Turutan itu intinya: **buang → sahkan → muktamadkan**.
 

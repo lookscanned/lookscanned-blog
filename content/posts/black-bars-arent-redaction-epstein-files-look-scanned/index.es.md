@@ -42,13 +42,13 @@ Si tu proceso es “dibujar un rectángulo negro en Word/PowerPoint y exportar a
 
 No es un programa de compliance. Es una rutina aburrida de 60-90 segundos que detecta errores básicos.
 
-Solo reviso el **archivo exportado final** (el que voy a upload/email/share):
+Solo reviso el **archivo exportado final** (el que realmente voy a enviar o compartir):
 
-- **Search** de términos sensibles (nombres, IDs, fragmentos de email, direcciones)
-- Intentar seleccionar alrededor de la zona negra y hacer **copy/paste** en un editor de texto plano
-- Abrir el archivo en **dos viewers distintos** (desktop + navegador suele bastar)
-- Buscar **annotations/comments** que hayan quedado (highlights, notas, formas)
-- Mirar **metadata** (author/title/subject) si el documento va a salir fuera
+- **Buscar** términos sensibles (nombres, identificaciones, fragmentos de correo, direcciones)
+- Intentar seleccionar alrededor de la zona negra y hacer **copiar/pegar** en un editor de texto plano
+- Abrir el archivo en **dos visores distintos** (escritorio + navegador suele bastar)
+- Buscar **anotaciones/comentarios** que hayan quedado (resaltados, notas, formas)
+- Mirar **metadatos** (autor/título/asunto) si el documento va a salir fuera
 
 Si el documento empezó como escaneo o pasó por OCR, voy con más cuidado, porque el texto oculto y buscable es una “capa sorpresa” clásica.
 
@@ -58,10 +58,10 @@ Eso es todo. Simple. Repetible. Y sorprendentemente efectivo.
 
 Cuando hay información sensible, intento que el flujo de publicación sea lo más directo posible:
 
-1) **Hacer redacción real** (eliminar contenido, no solo overlay)  
-2) **Limpiar extras** (annotations, attachments, hidden layers, metadata)  
-3) **Verificar el export final** (con la checklist de arriba)  
-4) **Generar la versión lista para enviar** (normalmente scan-style, consistente y final)
+1) **Hacer redacción real** (eliminar contenido, no solo superponer una capa)  
+2) **Limpiar extras** (anotaciones, adjuntos, capas ocultas, metadatos)  
+3) **Verificar la exportación final** (con la lista de arriba)  
+4) **Generar la versión lista para enviar** (normalmente con estilo de escaneo, consistente y final)
 
 Ese último paso importa más de lo que parece. No por “teatro de seguridad”, sino para reducir rarezas accidentales y lograr consistencia entre dispositivos.
 
@@ -76,7 +76,7 @@ En la práctica, eso significa:
 
 - menos conversaciones de “en mi equipo se rompió el formato”  
 - más sensación de documento final (sobre todo cuando esperan un escaneo)  
-- salida más limpia y menos riesgo de capas de marcado accidentales (según tu export pipeline)
+- salida más limpia y menos riesgo de capas de marcado accidentales (según tu flujo de exportación)
 
 El orden es la clave: **eliminar → verificar → finalizar**.
 

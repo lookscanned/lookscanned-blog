@@ -15,7 +15,7 @@ keywords:
   - "Look Scanned"
 ---
 
-Za każdym razem, gdy głośny pakiet dokumentów staje się viralem, w moim feedzie wraca ten sam spór o PDF.  
+Za każdym razem, gdy głośny pakiet dokumentów staje się viralem, w moim kanale wraca ten sam spór o PDF.  
 Tym razem chodziło o PDF-y **„Epstein files”**: ludzie powiększali zaczernione miejsca i pytali, czy „redakcja” była prawdziwa, czy to tylko czarne prostokąty na wierzchu.
 
 Nie chodzi mi o ponowne rozstrzyganie sprawy. Ta dyskusja jest jednak cenna, bo pokazuje błąd dużo częstszy, niż większość zespołów chce przyznać:
@@ -40,15 +40,15 @@ Jeśli Twój proces to „narysuj czarny prostokąt w Wordzie/PowerPoincie i eks
 
 ## Szybkie kontrole, które robię przed wysłaniem „zredagowanego” PDF
 
-To nie jest program compliance. To nudna rutyna 60-90 sekund, która łapie głupie błędy.
+To nie jest program zgodności. To nudna rutyna 60-90 sekund, która łapie głupie błędy.
 
 Sprawdzam tylko **końcowy plik eksportu** (ten, który zaraz wyślę/udostępnię):
 
 - **Szukam** wrażliwych fraz (nazwiska, ID, fragmenty e-maili, adresy)
-- Próbuję zaznaczyć okolice zaczernienia i **copy/paste** do zwykłego edytora tekstu
-- Otwieram plik w **dwóch różnych viewerach** (desktop + przeglądarka zwykle wystarczy)
+- Próbuję zaznaczyć okolice zaczernienia i **kopiuj/wklej** do zwykłego edytora tekstu
+- Otwieram plik w **dwóch różnych przeglądarkach plików** (desktop + przeglądarka zwykle wystarczy)
 - Sprawdzam, czy zostały **adnotacje/komentarze** (podświetlenia, notatki, kształty)
-- Zerkam na **metadane** (author/title/subject), jeśli dokument wychodzi na zewnątrz
+- Zerkam na **metadane** (autor/tytuł/temat), jeśli dokument wychodzi na zewnątrz
 
 Jeśli dokument pochodzi ze skanu albo przeszedł OCR, jestem bardziej ostrożny, bo ukryty wyszukiwalny tekst to klasyczna „warstwa niespodzianka”.
 
@@ -58,7 +58,7 @@ To wszystko. Prosto. Powtarzalnie. I zaskakująco skutecznie.
 
 Gdy dokument zawiera dane wrażliwe, staram się utrzymać przepływ wydania maksymalnie prosty:
 
-1) **Zrób prawdziwą redakcję** (usunięcie treści, nie overlay)  
+1) **Zrób prawdziwą redakcję** (usunięcie treści, nie nakładka)  
 2) **Wyczyść dodatki** (adnotacje, załączniki, ukryte warstwy, metadane)  
 3) **Zweryfikuj finalny eksport** (lista powyżej)  
 4) **Wygeneruj wersję „do wysyłki”** (często styl skanu, spójna, finalna)
@@ -75,8 +75,8 @@ Gdy dokument jest poprawnie zredagowany i finalny eksport zweryfikowany, Look Sc
 W praktyce oznacza to:
 
 - mniej rozmów typu „u mnie format się rozsypał”  
-- mocniejsze poczucie „finalnego artefaktu” (szczególnie gdy ktoś oczekuje skanu)  
-- czystszy output i mniejsze ryzyko przypadkowych warstw znaczników (zależnie od pipeline eksportu)
+- mocniejsze poczucie naprawdę finalnego dokumentu (szczególnie gdy ktoś oczekuje skanu)  
+- czystszy wynik i mniejsze ryzyko przypadkowych warstw znaczników (zależnie od łańcucha eksportu)
 
 Kolejność jest kluczowa: **usuń → zweryfikuj → sfinalizuj**.
 

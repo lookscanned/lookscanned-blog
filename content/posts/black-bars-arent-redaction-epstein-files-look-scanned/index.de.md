@@ -42,13 +42,13 @@ Wenn dein Prozess lautet „schwarzes Rechteck in Word/PowerPoint zeichnen und a
 
 Das ist kein Compliance-Programm. Das ist eine simple 60-90-Sekunden-Routine gegen vermeidbare Fehler.
 
-Ich prüfe nur die **final exportierte Datei** (die ich gleich upload/email/share):
+Ich prüfe nur die **final exportierte Datei** (die ich gleich hochlade, verschicke oder teile):
 
-- **Search** nach sensiblen Begriffen (Namen, IDs, E-Mail-Fragmente, Adressen)
-- Rund um die geschwärzte Stelle markieren und **copy/paste** in einen reinen Texteditor
-- Datei in **zwei unterschiedlichen Viewern** öffnen (Desktop + Browser reicht meist)
-- Auf verbliebene **annotations/comments** prüfen (Highlights, Notizen, Formen)
-- **Metadata** (author/title/subject) ansehen, wenn das Dokument nach außen geht
+- **Suche** nach sensiblen Begriffen (Namen, IDs, E-Mail-Fragmente, Adressen)
+- Rund um die geschwärzte Stelle markieren und **kopieren/einfügen** in einen reinen Texteditor
+- Datei in **zwei unterschiedlichen Programmen** öffnen (Desktop + Browser reicht meist)
+- Auf verbliebene **Anmerkungen/Kommentare** prüfen (Highlights, Notizen, Formen)
+- **Metadaten** (Autor/Titel/Thema) ansehen, wenn das Dokument nach außen geht
 
 Wenn das Dokument als Scan gestartet ist oder durch OCR lief, bin ich extra vorsichtig, weil versteckter durchsuchbarer Text eine klassische übersehene Zusatzebene ist.
 
@@ -58,8 +58,8 @@ Mehr ist es nicht. Einfach. Wiederholbar. Und sehr effektiv.
 
 Wenn sensible Infos enthalten sind, halte ich den Freigabeprozess bewusst geradlinig:
 
-1) **Echte Schwärzung durchführen** (Inhalt entfernen, kein Overlay)  
-2) **Extras bereinigen** (annotations, attachments, hidden layers, metadata)  
+1) **Echte Schwärzung durchführen** (Inhalt entfernen, keine Überlagerung)  
+2) **Extras bereinigen** (Anmerkungen, Anhänge, versteckte Ebenen, Metadaten)  
 3) **Finalen Export verifizieren** (mit der Checkliste oben)  
 4) **Versandfertige Version erzeugen** (oft im Scan-Stil, konsistent, final)
 
@@ -70,7 +70,7 @@ Der letzte Schritt ist wichtiger, als viele denken. Nicht wegen Schein-Sicherhei
 Ich nutze Look Scanned nicht als Schwärzungs-Tool. Dafür ist es nicht gedacht.  
 Ich nutze es als **Werkzeug für den letzten Ausgabeschritt**.
 
-Wenn das Dokument korrekt geschwärzt und der finale Export geprüft ist, hilft mir Look Scanned, ein sauberes **scan-style PDF** zu erzeugen - genau der Dateityp, den Menschen bei formalen Einreichungen oft erwarten.
+Wenn das Dokument korrekt geschwärzt und der finale Export geprüft ist, hilft mir Look Scanned, ein sauberes **PDF im Scan-Look** zu erzeugen - genau der Dateityp, den Menschen bei formalen Einreichungen oft erwarten.
 
 In der Praxis heißt das:
 

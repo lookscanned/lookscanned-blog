@@ -40,13 +40,13 @@ Dacă procesul tău este „desenez un dreptunghi negru în Word/PowerPoint și 
 
 ## Verificările rapide pe care le fac înainte să trimit un PDF „redactat”
 
-Nu este un program de compliance. Este o rutină de 60–90 secunde, simplă și eficientă pentru greșelile banale.
+Nu este un program de conformitate. Este o rutină de 60–90 secunde, simplă și eficientă pentru greșelile banale.
 
-Verific doar **fișierul final exportat** (cel pe care urmează să-l încarc/trimit/distribui):
+Verific doar **fișierul final exportat** (cel pe care urmează să-l trimit sau să-l distribui):
 
 - **Caut** termeni sensibili (nume, ID-uri, fragmente de email, adrese)
-- Încerc selectarea în jurul zonei negre și **copy/paste** într-un editor text simplu
-- Îl deschid în **două viewere diferite** (desktop + browser este de obicei suficient)
+- Încerc selectarea în jurul zonei negre și **copiere/lipire** într-un editor text simplu
+- Îl deschid în **două aplicații diferite** (desktop + browser este de obicei suficient)
 - Verific dacă au rămas **anotări/comentarii** (highlight, note, forme)
 - Mă uit la **metadate** (author/title/subject) dacă documentul pleacă în afară
 
@@ -58,12 +58,12 @@ Atât. Simplu. Repetabil. Surprinzător de eficient.
 
 Când un document conține informații sensibile, țin fluxul de livrare cât se poate de clar:
 
-1) **Fac redactare reală** (eliminare de conținut, nu overlay)  
+1) **Fac redactare reală** (eliminare de conținut, nu simplă suprapunere)  
 2) **Curăț extra-urile** (anotări, atașamente, straturi ascunse, metadate)  
-3) **Verific exportul final** (checklistul de mai sus)  
-4) **Generez versiunea „gata de trimis”** (de obicei stil scan, consistentă, finală)
+3) **Verific exportul final** (lista de control de mai sus)  
+4) **Generez versiunea „gata de trimis”** (de obicei stil scanat, coerentă, finală)
 
-Ultimul pas contează mai mult decât pare. Nu pentru „teatru de securitate”, ci pentru a reduce ciudățeniile accidentale și pentru un rezultat consistent pe dispozitive diferite.
+Ultimul pas contează mai mult decât pare. Nu pentru „teatru de securitate”, ci pentru a reduce ciudățeniile accidentale și pentru un rezultat coerent pe dispozitive diferite.
 
 ## Unde se potrivește Look Scanned pentru mine
 
@@ -75,8 +75,8 @@ După ce documentul este redactat corect și exportul final este verificat, Look
 În practică, asta înseamnă:
 
 - mai puține discuții de tipul „la mine s-a stricat formatarea”  
-- un feeling mai clar de „artefact final” (mai ales când se așteaptă un scan)  
-- output mai curat, cu șanse mai mici să includă straturi de markup rămase (în funcție de pipeline-ul de export)
+- o senzație mai clară de document cu adevărat final (mai ales când se așteaptă un scan)  
+- rezultat mai curat, cu șanse mai mici să includă straturi de marcare rămase (în funcție de fluxul de export)
 
 Ordinea e esențială: **elimină → verifică → finalizează**.
 

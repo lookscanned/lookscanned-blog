@@ -15,7 +15,7 @@ keywords:
   - "Look Scanned"
 ---
 
-Valahányszor egy nagy figyelmet kapó dokumentumcsomag virálissá válik, ugyanaz a PDF-vita jelenik meg a feedemben.  
+Valahányszor egy nagy figyelmet kapó dokumentumcsomag virálissá válik, ugyanaz a PDF-vita jelenik meg a hírfolyamomban.  
 Most az **„Epstein files”** PDF-ekről volt szó: az emberek belenagyítottak a fekete sávokba, és azt kérdezték, valódi-e a „redakció”, vagy csak pár fekete téglalap a tartalom fölött.
 
 Nem az ügy újratárgyalása a célom. A vita mégis hasznos, mert rámutat egy hibára, ami sokkal gyakoribb, mint amit a legtöbb csapat beismer:
@@ -32,23 +32,23 @@ A PDF nem mindig „egy oldal képe”. Inkább konténer. Egy fájlban lehet:
 - kijelölhető szöveg
 - rejtett OCR-szöveg (nem látszik, de kereshető)
 - annotációk (kiemelések, alakzatok, megjegyzések)
-- metaadatok (author/title/subject stb.)
+- metaadatok (szerző/cím/tárgy stb.)
 
 Tehát valamit eltakarhatsz a képernyőn, de a mögöttes szöveg, OCR vagy maradék objektum mégis benne maradhat. Ezt értik **hatástalan redakció** alatt. Nem varázslat, csak egy munkafolyamat, ami összekeveri a „letakarva” és az „eltávolítva” fogalmat.
 
-Ha a folyamatod annyi, hogy „fekete téglalap Wordben/PowerPointban, majd export PDF-be”, akkor szerencsejátékot játszol. Lehet, hogy rendben lesz. Lehet, hogy nem. És ezt addig nem tudod, amíg nem ellenőrzöd a *ténylegesen küldött végső fájlt*.
+Ha a folyamatod annyi, hogy „fekete téglalap Wordben/PowerPointban, majd PDF-be exportálás”, akkor szerencsejátékot játszol. Lehet, hogy rendben lesz. Lehet, hogy nem. És ezt addig nem tudod, amíg nem ellenőrzöd a *ténylegesen küldött végső fájlt*.
 
 ## A gyors ellenőrzések, amiket küldés előtt megcsinálok
 
-Ez nem compliance program. Ez egy unalmas, 60-90 másodperces rutin, ami kiszúrja az egyszerű hibákat.
+Ez nem megfelelőségi program. Ez egy unalmas, 60-90 másodperces rutin, ami kiszúrja az egyszerű hibákat.
 
 Csak a **végső exportált fájlt** nézem (amit feltöltök/e-mailben küldök/megosztok):
 
 - **Keresés** érzékeny kifejezésekre (nevek, ID-k, e-mailrészletek, címek)
-- Kijelölés a fekete rész körül, majd **copy/paste** egyszerű szövegszerkesztőbe
-- Megnyitás **két különböző nézőben** (asztali + böngésző általában elég)
+- Kijelölés a fekete rész körül, majd **másolás/beillesztés** egyszerű szövegszerkesztőbe
+- Megnyitás **két különböző megjelenítőben** (asztali + böngésző általában elég)
 - Maradt-e **annotáció/komment** (kiemelés, jegyzet, alakzat)
-- **Metaadatok** ellenőrzése (author/title/subject), ha a dokumentum kifelé megy
+- **Metaadatok** ellenőrzése (szerző/cím/tárgy), ha a dokumentum kifelé megy
 
 Ha a dokumentum eredetileg szkennelt volt vagy OCR-en ment át, különösen óvatos vagyok, mert a rejtett, kereshető szöveg klasszikus „meglepetésréteg”.
 
@@ -61,7 +61,7 @@ Ha érzékeny információ van benne, igyekszem fájdalmasan egyenes release-fol
 1) **Valódi redakció** (tartalom eltávolítása, nem ráfedés)  
 2) **Maradékok takarítása** (annotációk, csatolmányok, rejtett rétegek, metaadatok)  
 3) **Végső export ellenőrzése** (a fenti lista szerint)  
-4) **„Küldhető” verzió készítése** (gyakran szkennelt stílusú, konzisztens, végleges)
+4) **Küldésre kész verzió készítése** (gyakran szkennelt stílusú, konzisztens, végleges)
 
 Az utolsó lépés fontosabb, mint sokan gondolják. Nem „biztonsági színház”, hanem az esetleges furcsaságok csökkentése és a konzisztens megjelenés miatt.
 
@@ -76,7 +76,7 @@ A gyakorlatban ez azt jelenti:
 
 - kevesebb „nálam szétesett a formázás” beszélgetés  
 - erősebb „kész végtermék” érzés (főleg ha szkennelt fájlt várnak)  
-- tisztább kimenet, kisebb esély véletlen markup-rétegekre (export pipeline-tól függően)
+- tisztább kimenet, kisebb esély véletlen jelölőrétegekre (exportfolyamattól függően)
 
 A sorrend a lényeg: **eltávolítás → ellenőrzés → véglegesítés**.
 

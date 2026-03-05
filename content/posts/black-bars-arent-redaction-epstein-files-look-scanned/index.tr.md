@@ -42,13 +42,13 @@ Eğer süreciniz “Word/PowerPoint’te siyah dikdörtgen çizip PDF’e aktarm
 
 Bu bir compliance programı değil. 60-90 saniyelik, sıkıcı ama etkili bir kontrol rutini.
 
-Sadece **final export dosyasını** kontrol ediyorum (upload/email/share edeceğim sürüm):
+Sadece **nihai dışa aktarılan dosyayı** kontrol ediyorum (gerçekten göndereceğim veya paylaşacağım sürüm):
 
-- Hassas terimler için **Search** (isimler, ID’ler, email parçaları, adresler)
-- Karartılmış alan çevresini seçip **copy/paste** ile plain text editörde deneme
-- Dosyayı **iki farklı viewer** ile açma (masaüstü + tarayıcı genelde yeterli)
-- Kalan **annotations/comments** var mı bakma (highlights, notes, shapes)
-- Dışarı gidecekse **metadata** (author/title/subject) kontrolü
+- Hassas terimler için **arama** (isimler, ID’ler, e-posta parçaları, adresler)
+- Karartılmış alan çevresini seçip **kopyala/yapıştır** ile düz metin düzenleyicide deneme
+- Dosyayı **iki farklı görüntüleyicide** açma (masaüstü + tarayıcı genelde yeterli)
+- Kalan **notlar/yorumlar** var mı bakma (vurgular, notlar, şekiller)
+- Dışarı gidecekse **üst veriler** (yazar/başlık/konu) kontrolü
 
 Belge tarama kökenliyse veya OCR’dan geçtiyse ekstra dikkat ediyorum, çünkü gizli ama aranabilir metin çoğu zaman fark edilmeyen ek bir katman olarak kalabiliyor.
 
@@ -58,10 +58,10 @@ Hepsi bu. Basit, tekrarlanabilir ve şaşırtıcı derecede işe yarıyor.
 
 Belgede hassas bilgi varsa süreci olabildiğince net tutuyorum:
 
-1) **Gerçek redaksiyon yap** (overlay değil, içeriği kaldır)  
-2) **Ek katmanları temizle** (annotations, attachments, hidden layers, metadata)  
-3) **Final export’u doğrula** (yukarıdaki kontrol listesiyle)  
-4) **Gönderime hazır sürümü üret** (genelde scan-style, tutarlı, final görünümlü)
+1) **Gerçek redaksiyon yap** (kaplama değil, içeriği kaldır)  
+2) **Ek katmanları temizle** (notlar, ekler, gizli katmanlar, üst veriler)  
+3) **Nihai dışa aktarımı doğrula** (yukarıdaki kontrol listesiyle)  
+4) **Gönderime hazır sürümü üret** (genelde tarama görünümlü, tutarlı, nihai)
 
 Son adım çoğu kişinin düşündüğünden daha önemli. Güvenlik gösterisi için değil; cihazlar arası tutarsızlıkları ve kazara oluşan tuhaflıkları azaltmak için.
 
@@ -70,13 +70,13 @@ Son adım çoğu kişinin düşündüğünden daha önemli. Güvenlik gösterisi
 Look Scanned’i redaksiyon aracı olarak kullanmıyorum. Bu onun işi değil.  
 Ben onu **son teslim aşaması aracı** olarak kullanıyorum.
 
-Belge doğru şekilde redakte edilip final export doğrulandıktan sonra, Look Scanned temiz bir **scan-style PDF** üretmeme yardımcı oluyor. Resmî gönderimlerde insanların beklediği dosya tipi bu oluyor.
+Belge doğru şekilde redakte edilip nihai dışa aktarım doğrulandıktan sonra, Look Scanned temiz bir **tarama görünümlü PDF** üretmeme yardımcı oluyor. Resmî gönderimlerde insanların beklediği dosya tipi bu oluyor.
 
 Pratikte bu şunları sağlıyor:
 
 - “Benim bilgisayarda format bozuldu” konuşmalarının azalması  
 - daha güçlü bir “nihai belge” hissi (özellikle karşı taraf taranmış görünüm bekliyorsa)  
-- daha temiz output ve rastgele markup katmanlarının kalma ihtimalinin düşmesi (export pipeline’a bağlı)
+- daha temiz çıktı ve rastgele işaretleme katmanlarının kalma ihtimalinin düşmesi (dışa aktarma sürecine bağlı)
 
 Asıl mesele sıra: **kaldır → doğrula → sonlandır**.
 
@@ -85,6 +85,6 @@ Asıl mesele sıra: **kaldır → doğrula → sonlandır**.
 “Epstein files” PDF tartışması bize yine bir şey öğrettiyse, o da şu:  
 **siyah kutular kanıt değildir.**
 
-Redaksiyonu bir veri işlemi olarak ele alın, yayınlayacağınız dosyanın kendisini doğrulayın, sonra tarama görünümünü finalize edin.
+Redaksiyonu bir veri işlemi olarak ele alın, yayınlayacağınız dosyanın kendisini doğrulayın, sonra tarama görünümünü sonlandırın.
 
 Look Scanned’i deneyin: https://lookscanned.io

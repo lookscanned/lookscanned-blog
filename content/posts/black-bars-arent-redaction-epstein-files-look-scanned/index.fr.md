@@ -42,13 +42,13 @@ Si votre process, c’est “dessiner un rectangle noir dans Word/PowerPoint pui
 
 Ce n’est pas un programme de conformité. C’est une routine de 60-90 secondes, très simple, qui évite les erreurs bêtes.
 
-Je vérifie uniquement le **fichier exporté final** (celui qui va partir en upload/email/share) :
+Je vérifie uniquement le **fichier exporté final** (celui qui va vraiment être envoyé ou partagé) :
 
-- **Search** des termes sensibles (noms, IDs, fragments d’email, adresses)
-- Sélection autour des zones noircies + **copy/paste** dans un éditeur texte brut
-- Ouverture dans **deux viewers différents** (desktop + navigateur, c’est souvent suffisant)
-- Recherche d’**annotations/comments** restantes (highlights, notes, formes)
-- Vérification des **metadata** (author/title/subject) si le document sort de l’équipe
+- **Recherche** des termes sensibles (noms, identifiants, fragments d’email, adresses)
+- Sélection autour des zones noircies + **copier/coller** dans un éditeur texte brut
+- Ouverture dans **deux lecteurs différents** (ordinateur + navigateur, c’est souvent suffisant)
+- Recherche d’**annotations/commentaires** restantes (surlignages, notes, formes)
+- Vérification des **métadonnées** (auteur/titre/sujet) si le document sort de l’équipe
 
 Si le document vient d’un scan ou d’un OCR, je suis encore plus prudent, car le texte caché mais recherchable est une couche facilement oubliée.
 
@@ -58,9 +58,9 @@ C’est tout. Simple. Reproductible. Et très efficace.
 
 Quand un document contient des infos sensibles, je garde un processus de publication très linéaire :
 
-1) **Faire un vrai caviardage** (suppression de contenu, pas un overlay)  
-2) **Nettoyer les extras** (annotations, attachments, hidden layers, metadata)  
-3) **Vérifier l’export final** (avec la checklist ci-dessus)  
+1) **Faire un vrai caviardage** (suppression de contenu, pas une simple superposition)  
+2) **Nettoyer les extras** (annotations, pièces jointes, couches cachées, métadonnées)  
+3) **Vérifier l’export final** (avec la liste ci-dessus)  
 4) **Produire une version prête à l’envoi** (souvent en style scan, cohérente, finale)
 
 La dernière étape compte plus qu’on ne le pense. Pas pour faire de la “sécurité de façade”, mais pour réduire les bizarreries accidentelles et garder un rendu cohérent selon les appareils.
@@ -76,7 +76,7 @@ En pratique, ça donne :
 
 - moins de “chez moi, la mise en page a bougé”  
 - une sensation plus nette de document final (surtout si un scan est attendu)  
-- un output plus propre, avec moins de risque de couches de marquage parasites (selon votre export pipeline)
+- un résultat plus propre, avec moins de risque de couches de marquage parasites (selon votre chaîne d’export)
 
 L’ordre est le point clé : **retirer → vérifier → finaliser**.
 

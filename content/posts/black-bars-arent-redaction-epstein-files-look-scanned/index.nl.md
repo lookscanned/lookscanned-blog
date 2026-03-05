@@ -2,8 +2,8 @@
 date: "2026-03-04T00:00:00+08:00"
 draft: false
 title: "Zwarte balken zijn geen redactie (Ja, de PDF’s rond “Epstein files” herinnerden iedereen daar opnieuw aan)"
-summary: "Een korte, praktische notitie over waarom zwarte vlakken in PDF’s kunnen falen, welke simpele checks ik doe vóór verzending, en waarom ik Look Scanned gebruik voor de definitieve scan-stijl versie."
-description: "Een korte, praktische notitie over waarom zwarte vlakken in PDF’s kunnen falen, welke simpele checks ik doe vóór verzending, en waarom ik Look Scanned gebruik voor de definitieve scan-stijl versie."
+summary: "Een korte, praktische notitie over waarom zwarte vlakken in PDF’s kunnen falen, welke simpele controles ik doe vóór verzending, en waarom ik Look Scanned gebruik voor de definitieve versie met scanuitstraling."
+description: "Een korte, praktische notitie over waarom zwarte vlakken in PDF’s kunnen falen, welke simpele controles ik doe vóór verzending, en waarom ik Look Scanned gebruik voor de definitieve versie met scanuitstraling."
 slug: "black-bars-arent-redaction-epstein-files-look-scanned"
 tags: ["PDF", "Redactie", "Documentveiligheid", "Look Scanned"]
 keywords:
@@ -42,13 +42,13 @@ Als je proces is “een zwart vlak tekenen in Word/PowerPoint en exporteren naar
 
 Dit is geen compliance-programma. Dit is een saaie routine van 60-90 seconden die domme fouten eruit haalt.
 
-Ik controleer alleen het **eindbestand na export** (de versie die ik ga upload/email/share):
+Ik controleer alleen het **eindbestand na export** (de versie die ik echt ga verzenden of delen):
 
-- **Search** op gevoelige termen (namen, ID’s, e-mailfragmenten, adressen)
-- Rondom de zwarte zone selecteren en **copy/paste** in een eenvoudige teksteditor
-- Openen in **twee verschillende viewers** (desktop + browser is meestal genoeg)
-- Kijken of er nog **annotations/comments** zijn (highlights, notities, vormen)
-- **Metadata** (author/title/subject) controleren als het document extern gedeeld wordt
+- **Zoeken** op gevoelige termen (namen, ID’s, e-mailfragmenten, adressen)
+- Rondom de zwarte zone selecteren en **kopiëren/plakken** in een eenvoudige teksteditor
+- Openen in **twee verschillende programma’s** (desktop + browser is meestal genoeg)
+- Kijken of er nog **annotaties/opmerkingen** zijn (highlights, notities, vormen)
+- **Metadata** (auteur/titel/onderwerp) controleren als het document extern gedeeld wordt
 
 Als het document begon als scan of door OCR is gegaan, ben ik extra voorzichtig, omdat verborgen doorzoekbare tekst vaak als extra laag blijft hangen.
 
@@ -58,25 +58,25 @@ Dat is alles. Simpel. Herhaalbaar. Verrassend effectief.
 
 Als er gevoelige informatie in staat, houd ik het vrijgaveproces bewust rechttoe rechtaan:
 
-1) **Doe echte redactie** (inhoud verwijderen, geen overlay)  
-2) **Maak extra lagen schoon** (annotations, attachments, hidden layers, metadata)  
-3) **Verifieer de finale export** (met de checklist hierboven)  
-4) **Maak de verzendklare versie** (vaak scan-style, consistent en duidelijk final)
+1) **Doe echte redactie** (inhoud verwijderen, geen overlaag)  
+2) **Maak extra lagen schoon** (annotaties, bijlagen, verborgen lagen, metadata)  
+3) **Verifieer de finale export** (met de controlelijst hierboven)  
+4) **Maak de verzendklare versie** (vaak met scanuitstraling, consistent en duidelijk afgerond)
 
-Die laatste stap is belangrijker dan veel mensen denken. Niet voor schijnveiligheid, maar om toevallige gekkigheden te verminderen en output consistent te houden op verschillende apparaten.
+Die laatste stap is belangrijker dan veel mensen denken. Niet voor schijnveiligheid, maar om toevallige gekkigheden te verminderen en de output consistent te houden op verschillende apparaten.
 
 ## Waar Look Scanned voor mij past
 
 Ik gebruik Look Scanned niet als redactie-tool. Daar is het niet voor.  
 Ik gebruik het als **tool voor de laatste afwerkstap**.
 
-Zodra het document correct is geredigeerd en de finale export is geverifieerd, helpt Look Scanned mij een schone **scan-style PDF** te maken, precies het type bestand dat mensen verwachten bij formele inzendingen en uitwisselingen.
+Zodra het document correct is geredigeerd en de finale export is geverifieerd, helpt Look Scanned mij een schone **PDF met scanuitstraling** te maken, precies het type bestand dat mensen verwachten bij formele inzendingen en uitwisselingen.
 
 In de praktijk betekent dat:
 
 - minder gesprekken zoals “bij mij verspringt je opmaak”  
 - een sterkere indruk van een echt einddocument (vooral als een scan verwacht wordt)  
-- schonere output met minder kans op willekeurige markup-lagen (afhankelijk van je exportpipeline)
+- schonere output met minder kans op willekeurige markeringslagen (afhankelijk van je exportketen)
 
 De volgorde is de kern: **verwijderen → controleren → afronden**.
 

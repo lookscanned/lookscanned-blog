@@ -1,9 +1,9 @@
 ---
 date: "2026-03-04T00:00:00+08:00"
 draft: false
-title: "Hindi Redaction ang Mga Itim na Bar (Oo, pinaalala ulit ito ng mga PDF ng Epstein files)"
-summary: "Isang maikli at praktikal na paalala kung bakit puwedeng pumalya ang mga itim na kahon sa PDF, anong simpleng checks ang ginagawa ko bago magpadala, at bakit Look Scanned ang gamit ko para sa final scan-style na bersyon."
-description: "Isang maikli at praktikal na paalala kung bakit puwedeng pumalya ang mga itim na kahon sa PDF, anong simpleng checks ang ginagawa ko bago magpadala, at bakit Look Scanned ang gamit ko para sa final scan-style na bersyon."
+title: "Hindi Redaction ang Itim na Bar (Oo, pinaalala ulit ito ng mga PDF ng Epstein files)"
+summary: "Isang maikli at praktikal na paalala kung bakit puwedeng pumalya ang itim na pantakip sa PDF, anong simpleng pag-check ang ginagawa ko bago magpadala, at bakit Look Scanned ang gamit ko sa huling scan-look na bersyon."
+description: "Isang maikli at praktikal na paalala kung bakit puwedeng pumalya ang itim na pantakip sa PDF, anong simpleng pag-check ang ginagawa ko bago magpadala, at bakit Look Scanned ang gamit ko sa huling scan-look na bersyon."
 slug: "black-bars-arent-redaction-epstein-files-look-scanned"
 tags: ["PDF", "Redaction", "Kaligtasan ng Dokumento", "Look Scanned"]
 keywords:
@@ -15,76 +15,76 @@ keywords:
   - "Look Scanned"
 ---
 
-Tuwing may high-profile na document drop na nagva-viral, iisang usapan tungkol sa PDF ang lumilitaw sa feed ko.  
-Sa pagkakataong ito, tungkol ito sa mga PDF ng **Epstein files**: nagzo-zoom ang mga tao sa mga bahaging itim at nagtatanong kung tunay ba ang "redaction" o simpleng itim na rectangles lang sa ibabaw.
+Tuwing may high-profile na paglabas ng dokumento na nagva-viral, iisang usapan tungkol sa PDF ang bumabalik sa feed ko.  
+Sa pagkakataong ito, tungkol sa mga PDF ng **Epstein files**: nagzo-zoom ang mga tao sa mga bahaging tinakpan ng itim at nagtatanong kung totoong redaction ba iyon o simpleng itim na kahon lang sa ibabaw.
 
-Hindi ko layuning balikan ang kaso mismo. Pero kapaki-pakinabang ang diskusyong ito dahil ipinapakita nito ang isang pagkakamaling mas karaniwan kaysa gustong aminin ng maraming team:
+Hindi ko balak balikan ang mismong kaso. Pero mahalaga ang diskusyong ito dahil ipinapakita nito ang pagkakamaling mas karaniwan kaysa gustong aminin ng maraming team:
 
-**Madalas, visual cover lang ang itim na bar. Ang tunay na redaction ay pagtanggal ng mismong laman.**
+**Madalas, pang-itsura lang ang itim na bar. Ang totoong redaction ay pag-alis ng mismong laman.**
 
-At oo, magkaibang bagay iyon.
+Oo, magkaiba ang dalawang iyon.
 
-## Bakit posibleng problema pa rin kahit "mukhang itim"
+## Bakit may panganib pa rin kahit “mukhang itim”
 
-Hindi palaging "larawan ng isang pahina" ang PDF. Mas parang lalagyan ito. Sa iisang file, puwedeng may:
+Hindi laging "larawan ng pahina" ang PDF. Mas parang lalagyan ito. Sa iisang file, puwedeng may:
 
 - nakikitang pahina
-- text na puwedeng i-select
-- nakatagong OCR text (hindi kita pero searchable)
-- annotations (highlights, shapes, comments)
+- tekstong puwedeng piliin
+- nakatagong OCR text (hindi kita pero nahahanap)
+- mga anotasyon (highlight, hugis, komento)
 - metadata (author/title/subject, atbp.)
 
-Kaya puwedeng natakpan mo sa screen ang isang bagay pero naipadala mo pa rin ang ilalim na text, OCR, o mga natirang object. Iyon ang ibig sabihin ng **hindi epektibong redaction**. Hindi ito advanced na hack - problema lang sa proseso kapag napagpapalit ang "natakpan" at "natanggal".
+Kaya puwedeng natakpan mo sa screen ang isang detalye pero naipadala mo pa rin ang ilalim na text, OCR, o natirang object. Iyan ang tinutukoy ng mga tao bilang **hindi epektibong redaction**. Walang espesyal na atake rito; simpleng proseso lang na napagpapalit ang "natakpan" at "natanggal".
 
-Kung ang proseso mo ay "gumuhit ng itim na rectangle sa Word/PowerPoint tapos export sa PDF," delikado iyon. Puwedeng okay. Puwedeng hindi. At hindi mo malalaman hangga't hindi mo chine-check ang *mismong final file* na ipapadala mo.
+Kung ang paraan mo ay "gumuhit ng itim na kahon sa Word/PowerPoint tapos i-export sa PDF," may risk iyon. Puwedeng umubra, puwedeng hindi. At hindi mo malalaman hangga't hindi mo tinitingnan ang *aktuwal na huling file* na ipapadala.
 
-## Mabilis kong checks bago mag-send ng "redacted" PDF
+## Mabilis kong pag-check bago magpadala ng "na-redact na" PDF
 
-Hindi ito full compliance program. Isa lang itong 60-90 second routine na simple pero mahusay manghuli ng basic mistakes.
+Hindi ito full compliance program. Isa lang itong 60-90 second na routine na nakakahuli ng karaniwang pagkakamali.
 
-**Final exported file** lang ang chine-check ko (iyong mismong iuupload/i-eemail/isi-share):
+**Huling na-export na file** lang ang chine-check ko (iyon mismo ang ia-upload/i-eemail/isi-share):
 
-- **Search** ng sensitibong terms (pangalan, ID, piraso ng email, address)
-- Subukang i-select ang paligid ng itim na bahagi at **copy/paste** sa plain text editor
-- Buksan sa **dalawang magkaibang viewer** (desktop + browser, kadalasan sapat na)
-- Hanapin kung may natirang **annotations/comments** (highlights, notes, shapes)
-- Tingnan ang **metadata** (author/title/subject) kung lalabas sa labas ang dokumento
+- **Hanapin** ang sensitibong termino (pangalan, ID, piraso ng email, address)
+- I-select ang paligid ng itim na bahagi at **kopya/dikit** sa plain text editor
+- Buksan sa **dalawang magkaibang pangbasa ng PDF** (desktop app + browser, kadalasan sapat na)
+- Tingnan kung may natirang **anotasyon/komento** (highlight, note, hugis)
+- Silipin ang **metadata** (author/title/subject) kung lalabas sa labas ng team
 
 Kung mula sa scan ang dokumento o dumaan sa OCR, mas maingat ako dahil madalas may natitirang hidden searchable text.
 
-Iyon na iyon. Simple. Nauulit. At nakakagulat na epektibo.
+Iyon lang. Simple. Nauulit. At epektibo.
 
-## Proseso na tumutulong para iwas problema
+## Proseso na tumutulong para iwas aberya
 
-Kapag may sensitibong impormasyon ang dokumento, sobrang direkta ko pinapanatili ang daloy ng pag-release:
+Kapag may sensitibong impormasyon ang dokumento, sinasadya kong gawing sobrang diretso ang daloy:
 
-1) **Gumawa ng totoong redaction** (tanggalin ang content, hindi overlay)  
-2) **Linisin ang extra layers** (annotations, attachments, hidden layers, metadata)  
-3) **I-verify ang final export** (gamit ang checklist sa taas)  
-4) **Gawin ang bersyong handa nang ipadala** (madalas scan-style, consistent, final-looking)
+1) **Gumawa ng totoong redaction** (tanggalin ang laman, huwag lang takpan)  
+2) **Linisin ang mga sobrang layer** (anotasyon, attachment, nakatagong layer, metadata)  
+3) **I-verify ang huling export** (gamit ang listahan sa itaas)  
+4) **Ihanda ang bersyong ipapadala** (madalas scan-look, consistent, final)
 
-Mas mahalaga ang huling step na ito kaysa inaakala ng marami. Hindi para lang sa pakitang-seguridad, kundi para mabawasan ang aksidenteng aberya at gawing consistent ang output sa iba't ibang device.
+Mas mahalaga ang huling hakbang na ito kaysa iniisip ng marami. Hindi ito para sa pa-show na seguridad, kundi para mabawasan ang aksidenteng sabit at gawing consistent ang output sa iba’t ibang device.
 
 ## Saan pumapasok ang Look Scanned para sa akin
 
-Hindi ko ginagamit ang Look Scanned bilang redaction tool. Hindi ito para doon.  
-Ginagamit ko ito bilang **final delivery tool**.
+Hindi ko ginagamit ang Look Scanned bilang redaction tool. Hindi iyon ang role nito.  
+Ginagamit ko ito bilang **panghuling delivery tool**.
 
-Kapag maayos na na-redact ang dokumento at na-verify ko na ang final export, tinutulungan ako ng Look Scanned gumawa ng malinis na **scan-style PDF** - iyon ang klaseng file na inaasahan ng mga tao sa formal submissions at exchanges.
+Kapag maayos na ang redaction at naverify na ang huling export, tinutulungan ako ng Look Scanned gumawa ng malinis na **scan-look na PDF**. Iyan ang klase ng file na inaasahan ng tao sa formal na pagsusumite at opisyal na palitan ng dokumento.
 
 Sa praktika, ibig sabihin nito:
 
-- mas kaunting usapang "nagbago format sa machine ko"  
-- mas malinaw na pakiramdam na final na dokumento (lalo na kung scan ang inaasahan)  
-- mas malinis na output na mas mababa ang chance na may random markup layers (depende sa export pipeline)
+- mas kaunting usapang "nag-iba ang format sa device ko"  
+- mas malinaw ang pakiramdam na tapos na talaga ang dokumento (lalo na kung scan ang inaasahan)  
+- mas malinis na output at mas mababang tsansang may random markup layer na maisama (depende sa export pipeline mo)
 
-Ang mahalaga ay ang order: **remove → verify → finalize**.
+Mahalaga ang tamang pagkakasunod: **tanggalin → beripikahin → tapusin**.
 
 ## Maikling takeaway
 
-Kung may itinuro ulit ang PDF debate ng Epstein files, ito iyon:  
-**hindi patunay ang mga itim na kahon.**
+Kung may itinuro ulit ang PDF debate tungkol sa Epstein files, ito iyon:  
+**hindi patunay ang itim na kahon.**
 
-Gawing data operation ang redaction, i-verify ang eksaktong file na ilalathala mo, at saka mo lang isipin ang final scan-like appearance.
+Tratuhin ang redaction bilang trabaho sa data, i-verify ang mismong file na ilalabas mo, at saka mo lang ayusin ang huling scan-look.
 
 Subukan ang Look Scanned: https://lookscanned.io

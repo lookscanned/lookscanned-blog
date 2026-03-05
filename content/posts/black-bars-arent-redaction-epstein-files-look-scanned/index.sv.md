@@ -42,10 +42,10 @@ Om din process är “rita en svart rektangel i Word/PowerPoint och exportera ti
 
 Det här är inget complianceprogram. Det är en tråkig 60–90-sekundersrutin som fångar dumma misstag.
 
-Jag kontrollerar bara **den slutligt exporterade filen** (den jag ska ladda upp/mejla/dela):
+Jag kontrollerar bara **den slutligt exporterade filen** (den jag faktiskt ska skicka vidare):
 
 - **Sök** efter känsliga termer (namn, ID, e-postfragment, adresser)
-- Försök markera runt den svarta ytan och **copy/paste** i en ren texteditor
+- Försök markera runt den svarta ytan och **kopiera/klistra in** i en ren texteditor
 - Öppna filen i **två olika visare** (desktop + webbläsare räcker oftast)
 - Leta efter kvarvarande **annoteringar/kommentarer** (markeringar, noteringar, former)
 - Kolla **metadata** (author/title/subject) om dokumentet ska utanför organisationen
@@ -58,10 +58,10 @@ Det är allt. Enkelt. Repeterbart. Förvånansvärt effektivt.
 
 När något innehåller känslig information försöker jag hålla publiceringsflödet brutalt rakt:
 
-1) **Gör riktig redigering** (ta bort innehåll, inte overlay)  
+1) **Gör riktig redigering** (ta bort innehåll, inte bara ett överlägg)  
 2) **Rensa allt extra** (annoteringar, bilagor, dolda lager, metadata)  
-3) **Verifiera slutexporten** (checklistan ovan)  
-4) **Skapa en “skickbar” version** (ofta skannad stil, konsekvent, tydligt final)
+3) **Verifiera slutexporten** (kontrollistan ovan)  
+4) **Skapa en version som är klar att skickas** (ofta i skannad stil, konsekvent och tydligt färdig)
 
 Det sista steget betyder mer än många tror. Inte för “säkerhetsteater”, utan för att minska konstiga överraskningar och få konsekvent resultat på olika enheter.
 
@@ -75,8 +75,8 @@ När dokumentet är korrekt redigerat och slutexporten verifierad hjälper Look 
 I praktiken betyder det:
 
 - färre samtal av typen “din formatering ändrades på min dator”  
-- tydligare känsla av “final artefakt” (särskilt när mottagaren förväntar sig en skanning)  
-- renare output, med mindre risk för slumpmässiga markup-lager (beroende på exportpipeline)
+- tydligare känsla av ett faktiskt slutdokument (särskilt när mottagaren förväntar sig en skanning)  
+- renare resultat, med mindre risk för slumpmässiga markeringslager (beroende på exportflödet)
 
 Ordningen är poängen: **ta bort → verifiera → färdigställ**.
 

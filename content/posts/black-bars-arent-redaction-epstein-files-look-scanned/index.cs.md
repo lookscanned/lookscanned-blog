@@ -42,13 +42,13 @@ Pokud je váš postup „nakreslit černý obdélník ve Wordu/PowerPointu a exp
 
 Není to compliance program. Je to prostá rutina na 60–90 sekund, která chytá hloupé chyby.
 
-Kontroluji jen **finální exportovaný soubor** (ten, který chci nahrát/poslat mailem/sdílet):
+Kontroluji jen **finální exportovaný soubor** (ten, který chci opravdu nahrát, odeslat nebo sdílet):
 
 - **Hledání** citlivých výrazů (jména, ID, části e-mailu, adresy)
-- Zkusit označit oblast kolem začernění a **copy/paste** do čistého textového editoru
-- Otevřít ve **dvou různých prohlížečích** (desktop + browser obvykle stačí)
+- Zkusit označit oblast kolem začernění a **kopírovat/vložit** do čistého textového editoru
+- Otevřít ve **dvou různých čtečkách** (desktop + prohlížeč obvykle stačí)
 - Zkontrolovat zbytky **anotací/komentářů** (highlighty, poznámky, tvary)
-- Mrknout na **metadata** (author/title/subject), pokud dokument jde ven
+- Mrknout na **metadata** (autor/název/předmět), pokud dokument jde ven
 
 Pokud dokument vznikl ze skenu nebo prošel OCR, jsem opatrnější, protože skrytý prohledávatelný text je klasická „překvapivá vrstva“.
 
@@ -58,12 +58,12 @@ To je celé. Jednoduché. Opakovatelné. Překvapivě účinné.
 
 Když dokument obsahuje citlivá data, držím postup vydání co nejjednodušší:
 
-1) **Udělám skutečnou redakci** (odstranění obsahu, ne overlay)  
+1) **Udělám skutečnou redakci** (odstranění obsahu, ne jen překrytí)  
 2) **Vyčistím zbytky** (anotace, přílohy, skryté vrstvy, metadata)  
-3) **Ověřím finální export** (checklist výše)  
+3) **Ověřím finální export** (kontrolní seznam výše)  
 4) **Vytvořím „odesílatelnou“ verzi** (často styl skenu, konzistentní, finální)
 
-Ten poslední krok je důležitější, než se zdá. Ne kvůli „security divadlu“, ale kvůli menším náhodným rozdílům a konzistentnímu výstupu napříč zařízeními.
+Ten poslední krok je důležitější, než se zdá. Ne kvůli „bezpečnostnímu divadlu“, ale kvůli menším náhodným rozdílům a konzistentnímu výstupu napříč zařízeními.
 
 ## Kde v tom pro mě je Look Scanned
 
@@ -75,8 +75,8 @@ Jakmile je dokument správně zredigovaný a finální export ověřený, Look S
 V praxi to znamená:
 
 - méně debat typu „na mém počítači se ti rozházel formát“  
-- silnější pocit „finálního artefaktu“ (hlavně když protistrana čeká sken)  
-- čistší výstup, menší šance, že v něm zůstanou náhodné markup vrstvy (podle export pipeline)
+- silnější pocit skutečně finálního dokumentu (hlavně když protistrana čeká sken)  
+- čistší výstup, menší šance, že v něm zůstanou náhodné vrstvy značek (podle exportního řetězce)
 
 Pořadí je klíčové: **odstranit → ověřit → finalizovat**.
 
