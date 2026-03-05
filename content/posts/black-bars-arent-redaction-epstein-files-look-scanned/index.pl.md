@@ -54,7 +54,7 @@ Jeśli dokument pochodzi ze skanu albo przeszedł OCR, jestem bardziej ostrożny
 
 To wszystko. Prosto. Powtarzalnie. I zaskakująco skutecznie.
 
-## Workflow, który trzyma mnie z dala od problemów
+## Proces, który trzyma mnie z dala od problemów
 
 Gdy dokument zawiera dane wrażliwe, staram się utrzymać przepływ wydania maksymalnie prosty:
 
@@ -68,7 +68,7 @@ Ten ostatni krok jest ważniejszy, niż wielu osobom się wydaje. Nie chodzi o �
 ## Gdzie w tym wszystkim jest Look Scanned
 
 Nie używam Look Scanned jako narzędzia do redakcji. To nie jego rola.  
-Używam go jako **narzędzia ostatniej mili dla wersji finalnej**.
+Używam go jako **narzędzia końcowego przygotowania wersji finalnej**.
 
 Gdy dokument jest poprawnie zredagowany i finalny eksport zweryfikowany, Look Scanned pomaga mi przygotować czysty **PDF w stylu skanu** - dokładnie taki format, jakiego ludzie oczekują przy formalnych zgłoszeniach i wymianie dokumentów.
 

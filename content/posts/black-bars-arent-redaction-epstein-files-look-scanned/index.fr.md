@@ -34,7 +34,7 @@ Un PDF n’est pas toujours “une image de page”. C’est plutôt un conteneu
 - des annotations (surlignages, formes, commentaires)
 - des métadonnées (author/title/subject, etc.)
 
-Donc on peut masquer quelque chose à l’écran, tout en envoyant quand même le texte sous-jacent, l’OCR ou des objets résiduels. C’est ce qu’on appelle un **caviardage inefficace (ineffective redaction)**. Rien de “hacker” : juste un workflow qui confond “couvert” et “supprimé”.
+Donc on peut masquer quelque chose à l’écran, tout en envoyant quand même le texte sous-jacent, l’OCR ou des objets résiduels. C’est ce qu’on appelle un **caviardage inefficace**. Rien de “hacker” : juste un processus qui confond “couvert” et “supprimé”.
 
 Si votre process, c’est “dessiner un rectangle noir dans Word/PowerPoint puis exporter en PDF”, vous prenez un risque. Ça peut passer. Ou pas. Et vous ne le saurez pas sans vérifier *le fichier final exact* que vous envoyez.
 
@@ -50,35 +50,35 @@ Je vérifie uniquement le **fichier exporté final** (celui qui va partir en upl
 - Recherche d’**annotations/comments** restantes (highlights, notes, formes)
 - Vérification des **metadata** (author/title/subject) si le document sort de l’équipe
 
-Si le document vient d’un scan ou d’un OCR, je suis encore plus prudent, car le texte caché mais recherchable est une “surprise layer” classique.
+Si le document vient d’un scan ou d’un OCR, je suis encore plus prudent, car le texte caché mais recherchable est une couche facilement oubliée.
 
 C’est tout. Simple. Reproductible. Et très efficace.
 
-## Le workflow qui m’évite des ennuis
+## Le processus qui m’évite des ennuis
 
-Quand un document contient des infos sensibles, je garde un release flow très linéaire :
+Quand un document contient des infos sensibles, je garde un processus de publication très linéaire :
 
 1) **Faire un vrai caviardage** (suppression de contenu, pas un overlay)  
 2) **Nettoyer les extras** (annotations, attachments, hidden layers, metadata)  
 3) **Vérifier l’export final** (avec la checklist ci-dessus)  
-4) **Produire une version “sendable”** (souvent scan-style, cohérente, finale)
+4) **Produire une version prête à l’envoi** (souvent en style scan, cohérente, finale)
 
-La dernière étape compte plus qu’on ne le pense. Pas pour du “security theater”, mais pour réduire les bizarreries accidentelles et garder un rendu cohérent selon les appareils.
+La dernière étape compte plus qu’on ne le pense. Pas pour faire de la “sécurité de façade”, mais pour réduire les bizarreries accidentelles et garder un rendu cohérent selon les appareils.
 
 ## Où Look Scanned s’intègre pour moi
 
 Je n’utilise pas Look Scanned comme outil de caviardage. Ce n’est pas son rôle.  
-Je l’utilise comme **last-mile deliverable tool**.
+Je l’utilise comme **outil de finalisation avant envoi**.
 
 Une fois le document bien caviardé et l’export final vérifié, Look Scanned m’aide à générer un **PDF au style scanné** propre, exactement le type de fichier attendu dans des soumissions et échanges formels.
 
 En pratique, ça donne :
 
 - moins de “chez moi, la mise en page a bougé”  
-- une sensation plus nette de “final artifact” (surtout si un scan est attendu)  
+- une sensation plus nette de document final (surtout si un scan est attendu)  
 - un output plus propre, avec moins de risque de couches de marquage parasites (selon votre export pipeline)
 
-L’ordre est le point clé : **remove → verify → finalize**.
+L’ordre est le point clé : **retirer → vérifier → finaliser**.
 
 ## Conclusion courte
 

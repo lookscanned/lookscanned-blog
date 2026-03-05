@@ -34,7 +34,7 @@ PDF her zaman “sayfanın resmi” değildir. Daha çok bir kapsayıcıdır. Te
 - anotasyonlar (vurgular, şekiller, yorumlar)
 - metadata (author/title/subject vb.)
 
-Yani ekranda bir şeyi kapatsanız bile alttaki metni, OCR’ı veya artık nesneleri yanlışlıkla dışarı gönderebilirsiniz. İnsanların **etkisiz redaksiyon (ineffective redaction)** derken kastettiği budur. Karmaşık bir saldırı değil; sadece “örtmek” ile “kaldırmak” arasını karıştıran bir workflow.
+Yani ekranda bir şeyi kapatsanız bile alttaki metni, OCR’ı veya artık nesneleri yanlışlıkla dışarı gönderebilirsiniz. İnsanların **etkisiz redaksiyon** derken kastettiği budur. Karmaşık bir saldırı değil; sadece “örtmek” ile “kaldırmak” arasını karıştıran bir süreç.
 
 Eğer süreciniz “Word/PowerPoint’te siyah dikdörtgen çizip PDF’e aktarmak” ise risk alıyorsunuz demektir. Sorunsuz da olabilir, sorunlu da. Bunu ancak gönderdiğiniz *gerçek final dosyayı* kontrol edince anlarsınız.
 
@@ -50,35 +50,35 @@ Sadece **final export dosyasını** kontrol ediyorum (upload/email/share edeceğ
 - Kalan **annotations/comments** var mı bakma (highlights, notes, shapes)
 - Dışarı gidecekse **metadata** (author/title/subject) kontrolü
 
-Belge tarama kökenliyse veya OCR’dan geçtiyse ekstra dikkat ediyorum, çünkü gizli ama aranabilir metin klasik bir “surprise layer”.
+Belge tarama kökenliyse veya OCR’dan geçtiyse ekstra dikkat ediyorum, çünkü gizli ama aranabilir metin çoğu zaman fark edilmeyen ek bir katman olarak kalabiliyor.
 
 Hepsi bu. Basit, tekrarlanabilir ve şaşırtıcı derecede işe yarıyor.
 
-## Beni hatadan uzak tutan workflow
+## Beni hatadan uzak tutan süreç
 
-Belgede hassas bilgi varsa release flow’u olabildiğince net tutuyorum:
+Belgede hassas bilgi varsa süreci olabildiğince net tutuyorum:
 
 1) **Gerçek redaksiyon yap** (overlay değil, içeriği kaldır)  
 2) **Ek katmanları temizle** (annotations, attachments, hidden layers, metadata)  
 3) **Final export’u doğrula** (yukarıdaki kontrol listesiyle)  
-4) **“Sendable” sürümü üret** (genelde scan-style, tutarlı, final görünümlü)
+4) **Gönderime hazır sürümü üret** (genelde scan-style, tutarlı, final görünümlü)
 
-Son adım çoğu kişinin düşündüğünden daha önemli. “Security theater” için değil; cihazlar arası tutarsızlıkları ve kazara oluşan tuhaflıkları azaltmak için.
+Son adım çoğu kişinin düşündüğünden daha önemli. Güvenlik gösterisi için değil; cihazlar arası tutarsızlıkları ve kazara oluşan tuhaflıkları azaltmak için.
 
 ## Look Scanned benim akışımda nereye oturuyor
 
 Look Scanned’i redaksiyon aracı olarak kullanmıyorum. Bu onun işi değil.  
-Ben onu **last-mile deliverable tool** olarak kullanıyorum.
+Ben onu **son teslim aşaması aracı** olarak kullanıyorum.
 
 Belge doğru şekilde redakte edilip final export doğrulandıktan sonra, Look Scanned temiz bir **scan-style PDF** üretmeme yardımcı oluyor. Resmî gönderimlerde insanların beklediği dosya tipi bu oluyor.
 
 Pratikte bu şunları sağlıyor:
 
 - “Benim bilgisayarda format bozuldu” konuşmalarının azalması  
-- daha güçlü bir “final artifact” hissi (özellikle karşı taraf taranmış görünüm bekliyorsa)  
+- daha güçlü bir “nihai belge” hissi (özellikle karşı taraf taranmış görünüm bekliyorsa)  
 - daha temiz output ve rastgele markup katmanlarının kalma ihtimalinin düşmesi (export pipeline’a bağlı)
 
-Asıl mesele sıra: **remove → verify → finalize**.
+Asıl mesele sıra: **kaldır → doğrula → sonlandır**.
 
 ## Kısa sonuç
 

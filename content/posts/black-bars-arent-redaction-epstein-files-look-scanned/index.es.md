@@ -34,7 +34,7 @@ Un PDF no siempre es “una imagen de una página”. Es más bien un contenedor
 - anotaciones (resaltados, formas, comentarios)
 - metadatos (author/title/subject, etc.)
 
-Así que puedes tapar algo en pantalla y aun así enviar por error el texto subyacente, OCR u objetos residuales. Eso es lo que se entiende por **redacción ineficaz (ineffective redaction)**. No hay magia técnica: es un flujo que confunde “cubierto” con “eliminado”.
+Así que puedes tapar algo en pantalla y aun así enviar por error el texto subyacente, OCR u objetos residuales. Eso es lo que se entiende por **redacción ineficaz**. No hay magia técnica: es un flujo que confunde “cubierto” con “eliminado”.
 
 Si tu proceso es “dibujar un rectángulo negro en Word/PowerPoint y exportar a PDF”, estás asumiendo un riesgo. Puede salir bien. O no. Y no lo sabrás hasta revisar *el archivo final real* que vas a enviar.
 
@@ -56,29 +56,29 @@ Eso es todo. Simple. Repetible. Y sorprendentemente efectivo.
 
 ## El flujo que me evita problemas
 
-Cuando hay información sensible, intento que el release flow sea lo más directo posible:
+Cuando hay información sensible, intento que el flujo de publicación sea lo más directo posible:
 
 1) **Hacer redacción real** (eliminar contenido, no solo overlay)  
 2) **Limpiar extras** (annotations, attachments, hidden layers, metadata)  
 3) **Verificar el export final** (con la checklist de arriba)  
-4) **Generar la versión “sendable”** (normalmente scan-style, consistente y final)
+4) **Generar la versión lista para enviar** (normalmente scan-style, consistente y final)
 
-Ese último paso importa más de lo que parece. No por “security theater”, sino para reducir rarezas accidentales y lograr consistencia entre dispositivos.
+Ese último paso importa más de lo que parece. No por “teatro de seguridad”, sino para reducir rarezas accidentales y lograr consistencia entre dispositivos.
 
 ## Dónde encaja Look Scanned en mi proceso
 
 No uso Look Scanned como herramienta de redacción. No es para eso.  
-Lo uso como **last-mile deliverable tool**.
+Lo uso como **herramienta de cierre antes de entrega**.
 
 Una vez que el documento está bien redactado y el export final está verificado, Look Scanned me ayuda a producir un **PDF estilo escaneado** limpio, justo el tipo de archivo que se espera en envíos y trámites formales.
 
 En la práctica, eso significa:
 
 - menos conversaciones de “en mi equipo se rompió el formato”  
-- más sensación de “final artifact” (sobre todo cuando esperan un escaneo)  
+- más sensación de documento final (sobre todo cuando esperan un escaneo)  
 - salida más limpia y menos riesgo de capas de marcado accidentales (según tu export pipeline)
 
-El orden es la clave: **remove → verify → finalize**.
+El orden es la clave: **eliminar → verificar → finalizar**.
 
 ## Conclusión breve
 

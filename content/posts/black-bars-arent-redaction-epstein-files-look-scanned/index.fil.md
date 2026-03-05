@@ -34,7 +34,7 @@ Hindi palaging "larawan ng isang pahina" ang PDF. Mas parang lalagyan ito. Sa ii
 - annotations (highlights, shapes, comments)
 - metadata (author/title/subject, atbp.)
 
-Kaya puwedeng natakpan mo sa screen ang isang bagay pero naipadala mo pa rin ang ilalim na text, OCR, o mga natirang object. Iyon ang ibig sabihin ng **ineffective redaction**. Hindi ito advanced na hack - problema lang sa proseso kapag napagpapalit ang "natakpan" at "natanggal".
+Kaya puwedeng natakpan mo sa screen ang isang bagay pero naipadala mo pa rin ang ilalim na text, OCR, o mga natirang object. Iyon ang ibig sabihin ng **hindi epektibong redaction**. Hindi ito advanced na hack - problema lang sa proseso kapag napagpapalit ang "natakpan" at "natanggal".
 
 Kung ang proseso mo ay "gumuhit ng itim na rectangle sa Word/PowerPoint tapos export sa PDF," delikado iyon. Puwedeng okay. Puwedeng hindi. At hindi mo malalaman hangga't hindi mo chine-check ang *mismong final file* na ipapadala mo.
 

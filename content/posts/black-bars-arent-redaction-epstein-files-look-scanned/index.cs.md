@@ -54,7 +54,7 @@ Pokud dokument vznikl ze skenu nebo prošel OCR, jsem opatrnější, protože sk
 
 To je celé. Jednoduché. Opakovatelné. Překvapivě účinné.
 
-## Workflow, které mě drží mimo průšvih
+## Postup, který mě drží mimo průšvih
 
 Když dokument obsahuje citlivá data, držím postup vydání co nejjednodušší:
 

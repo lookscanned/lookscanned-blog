@@ -34,7 +34,7 @@ PDF ist nicht immer nur „ein Bild einer Seite“. Es ist eher ein Container. E
 - Anmerkungen (Highlights, Formen, Kommentare)
 - Metadaten (author/title/subject usw.)
 
-Du kannst also etwas am Bildschirm verdecken und trotzdem versehentlich den darunterliegenden Text, OCR oder Restobjekte mitschicken. Genau das meint man mit **ineffektiver Schwärzung (ineffective redaction)**. Kein Zaubertrick, sondern ein Workflow, der „abgedeckt“ mit „entfernt“ verwechselt.
+Du kannst also etwas am Bildschirm verdecken und trotzdem versehentlich den darunterliegenden Text, OCR oder Restobjekte mitschicken. Genau das meint man mit **ineffektiver Schwärzung**. Kein Zaubertrick, sondern ein Ablauf, der „abgedeckt“ mit „entfernt“ verwechselt.
 
 Wenn dein Prozess lautet „schwarzes Rechteck in Word/PowerPoint zeichnen und als PDF exportieren“, ist das riskant. Es kann gutgehen. Oder eben nicht. Und du merkst es erst, wenn du die *tatsächliche finale Datei* prüfst, die du versendest.
 
@@ -50,35 +50,35 @@ Ich prüfe nur die **final exportierte Datei** (die ich gleich upload/email/shar
 - Auf verbliebene **annotations/comments** prüfen (Highlights, Notizen, Formen)
 - **Metadata** (author/title/subject) ansehen, wenn das Dokument nach außen geht
 
-Wenn das Dokument als Scan gestartet ist oder durch OCR lief, bin ich extra vorsichtig, weil versteckter durchsuchbarer Text eine klassische „surprise layer“ ist.
+Wenn das Dokument als Scan gestartet ist oder durch OCR lief, bin ich extra vorsichtig, weil versteckter durchsuchbarer Text eine klassische übersehene Zusatzebene ist.
 
 Mehr ist es nicht. Einfach. Wiederholbar. Und sehr effektiv.
 
-## Der Workflow, der mich aus Ärger raushält
+## Der Ablauf, der mich aus Ärger raushält
 
-Wenn sensible Infos enthalten sind, halte ich den Release-Flow bewusst geradlinig:
+Wenn sensible Infos enthalten sind, halte ich den Freigabeprozess bewusst geradlinig:
 
 1) **Echte Schwärzung durchführen** (Inhalt entfernen, kein Overlay)  
 2) **Extras bereinigen** (annotations, attachments, hidden layers, metadata)  
 3) **Finalen Export verifizieren** (mit der Checkliste oben)  
-4) **„Sendable“ Version erzeugen** (oft scan-style, konsistent, final)
+4) **Versandfertige Version erzeugen** (oft im Scan-Stil, konsistent, final)
 
-Der letzte Schritt ist wichtiger, als viele denken. Nicht wegen „security theater“, sondern um zufällige Darstellungsprobleme zu reduzieren und konsistente Ausgabe über Geräte hinweg zu bekommen.
+Der letzte Schritt ist wichtiger, als viele denken. Nicht wegen Schein-Sicherheit, sondern um zufällige Darstellungsprobleme zu reduzieren und konsistente Ausgabe über Geräte hinweg zu bekommen.
 
 ## Wo Look Scanned für mich reinpasst
 
 Ich nutze Look Scanned nicht als Schwärzungs-Tool. Dafür ist es nicht gedacht.  
-Ich nutze es als **last-mile deliverable tool**.
+Ich nutze es als **Werkzeug für den letzten Ausgabeschritt**.
 
 Wenn das Dokument korrekt geschwärzt und der finale Export geprüft ist, hilft mir Look Scanned, ein sauberes **scan-style PDF** zu erzeugen - genau der Dateityp, den Menschen bei formalen Einreichungen oft erwarten.
 
 In der Praxis heißt das:
 
 - weniger „bei mir hat sich das Layout verschoben“-Diskussionen  
-- stärkeres Gefühl von „final artifact“ (besonders wenn ein Scan erwartet wird)  
+- stärkeres Gefühl eines fertigen Enddokuments (besonders wenn ein Scan erwartet wird)  
 - saubererer Output mit geringerem Risiko für zufällige Markup-Layer (abhängig von der Export-Pipeline)
 
-Die Reihenfolge ist entscheidend: **remove → verify → finalize**.
+Die Reihenfolge ist entscheidend: **entfernen → prüfen → finalisieren**.
 
 ## Kurzes Fazit
 

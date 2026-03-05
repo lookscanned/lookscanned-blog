@@ -34,7 +34,7 @@ PDF não é sempre “uma foto da página”. Ele funciona mais como um contêin
 - anotações (destaques, formas, comentários)
 - metadados (author/title/subject etc.)
 
-Ou seja: você pode esconder algo na tela e, ainda assim, enviar sem querer o texto por baixo, OCR ou objetos residuais. É isso que chamam de **redaction ineficaz (ineffective redaction)**. Não tem truque avançado, é só um workflow que confunde “coberto” com “removido”.
+Ou seja: você pode esconder algo na tela e, ainda assim, enviar sem querer o texto por baixo, OCR ou objetos residuais. É isso que chamam de **redaction ineficaz**. Não tem truque avançado, é só um processo que confunde “coberto” com “removido”.
 
 Se o seu processo é “desenhar um retângulo preto no Word/PowerPoint e exportar para PDF”, você está assumindo risco. Pode dar certo. Pode não dar. E você só sabe quando checa *o arquivo final real* que vai enviar.
 
@@ -50,35 +50,35 @@ Eu só verifico o **arquivo exportado final** (o que vai para upload/email/share
 - Procurar **annotations/comments** que sobraram (highlights, notas, formas)
 - Conferir **metadata** (author/title/subject) se o documento vai sair para fora
 
-Se o documento começou como scan ou passou por OCR, eu redobro a atenção, porque texto oculto pesquisável é a clássica “surprise layer”.
+Se o documento começou como scan ou passou por OCR, eu redobro a atenção, porque texto oculto pesquisável é uma camada que passa fácil despercebida.
 
 É isso. Simples. Repetível. E surpreendentemente eficiente.
 
-## O workflow que me mantém fora de problema
+## O processo que me mantém fora de problema
 
-Quando há informação sensível, eu mantenho o release flow o mais direto possível:
+Quando há informação sensível, eu mantenho o fluxo de entrega o mais direto possível:
 
 1) **Fazer redaction real** (remover conteúdo, não apenas overlay)  
 2) **Limpar extras** (annotations, attachments, hidden layers, metadata)  
 3) **Verificar o export final** (com a checklist acima)  
-4) **Gerar a versão “sendable”** (geralmente scan-style, consistente e final)
+4) **Gerar a versão pronta para envio** (geralmente scan-style, consistente e final)
 
-Esse último passo importa mais do que parece. Não por “security theater”, e sim para reduzir comportamento estranho acidental e manter consistência entre dispositivos.
+Esse último passo importa mais do que parece. Não por “teatro de segurança”, e sim para reduzir comportamento estranho acidental e manter consistência entre dispositivos.
 
 ## Onde Look Scanned entra para mim
 
 Eu não uso Look Scanned como ferramenta de redaction. Não é para isso.  
-Eu uso como **last-mile deliverable tool**.
+Eu uso como **ferramenta de finalização para envio**.
 
 Depois que o documento está redigido corretamente e o export final foi validado, o Look Scanned me ajuda a produzir um **PDF em estilo digitalizado** limpo, exatamente o tipo de arquivo esperado em submissões e trocas formais.
 
 Na prática, isso significa:
 
 - menos conversa de “no meu computador o formato mudou”  
-- mais sensação de “final artifact” (especialmente quando esperam um scan)  
+- mais sensação de documento realmente final (especialmente quando esperam um scan)  
 - output mais limpo, com menor chance de camadas aleatórias de markup (dependendo do export pipeline)
 
-A ordem é o ponto principal: **remove → verify → finalize**.
+A ordem é o ponto principal: **remover → verificar → finalizar**.
 
 ## Resumo rápido
 

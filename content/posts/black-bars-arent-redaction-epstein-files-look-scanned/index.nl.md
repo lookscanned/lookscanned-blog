@@ -34,7 +34,7 @@ Een PDF is niet altijd “een foto van een pagina”. Het is eerder een containe
 - annotaties (highlights, vormen, opmerkingen)
 - metadata (author/title/subject, enz.)
 
-Je kunt dus iets op het scherm verbergen, maar toch per ongeluk de onderliggende tekst, OCR of overgebleven objecten meesturen. Dat bedoelen mensen met **ineffectieve redactie (ineffective redaction)**. Geen ingewikkelde hack, maar gewoon een workflow die “bedekt” verwart met “verwijderd”.
+Je kunt dus iets op het scherm verbergen, maar toch per ongeluk de onderliggende tekst, OCR of overgebleven objecten meesturen. Dat bedoelen mensen met **ineffectieve redactie**. Geen ingewikkelde hack, maar gewoon een proces dat “bedekt” verwart met “verwijderd”.
 
 Als je proces is “een zwart vlak tekenen in Word/PowerPoint en exporteren naar PDF”, dan neem je risico. Het kan goed gaan. Het kan ook misgaan. En je weet het pas als je *het daadwerkelijke eindbestand* controleert dat je gaat verzenden.
 
@@ -50,35 +50,35 @@ Ik controleer alleen het **eindbestand na export** (de versie die ik ga upload/e
 - Kijken of er nog **annotations/comments** zijn (highlights, notities, vormen)
 - **Metadata** (author/title/subject) controleren als het document extern gedeeld wordt
 
-Als het document begon als scan of door OCR is gegaan, ben ik extra voorzichtig, omdat verborgen doorzoekbare tekst een klassieke “surprise layer” is.
+Als het document begon als scan of door OCR is gegaan, ben ik extra voorzichtig, omdat verborgen doorzoekbare tekst vaak als extra laag blijft hangen.
 
 Dat is alles. Simpel. Herhaalbaar. Verrassend effectief.
 
-## De workflow die mij uit de problemen houdt
+## Het proces dat mij uit de problemen houdt
 
-Als er gevoelige informatie in staat, houd ik de release flow bewust rechttoe rechtaan:
+Als er gevoelige informatie in staat, houd ik het vrijgaveproces bewust rechttoe rechtaan:
 
 1) **Doe echte redactie** (inhoud verwijderen, geen overlay)  
 2) **Maak extra lagen schoon** (annotations, attachments, hidden layers, metadata)  
 3) **Verifieer de finale export** (met de checklist hierboven)  
-4) **Maak de “sendable” versie** (vaak scan-style, consistent en duidelijk final)
+4) **Maak de verzendklare versie** (vaak scan-style, consistent en duidelijk final)
 
-Die laatste stap is belangrijker dan veel mensen denken. Niet voor “security theater”, maar om toevallige gekkigheden te verminderen en output consistent te houden op verschillende apparaten.
+Die laatste stap is belangrijker dan veel mensen denken. Niet voor schijnveiligheid, maar om toevallige gekkigheden te verminderen en output consistent te houden op verschillende apparaten.
 
 ## Waar Look Scanned voor mij past
 
 Ik gebruik Look Scanned niet als redactie-tool. Daar is het niet voor.  
-Ik gebruik het als **last-mile deliverable tool**.
+Ik gebruik het als **tool voor de laatste afwerkstap**.
 
 Zodra het document correct is geredigeerd en de finale export is geverifieerd, helpt Look Scanned mij een schone **scan-style PDF** te maken, precies het type bestand dat mensen verwachten bij formele inzendingen en uitwisselingen.
 
 In de praktijk betekent dat:
 
 - minder gesprekken zoals “bij mij verspringt je opmaak”  
-- een sterkere “final artifact”-indruk (vooral als een scan verwacht wordt)  
+- een sterkere indruk van een echt einddocument (vooral als een scan verwacht wordt)  
 - schonere output met minder kans op willekeurige markup-lagen (afhankelijk van je exportpipeline)
 
-De volgorde is de kern: **remove → verify → finalize**.
+De volgorde is de kern: **verwijderen → controleren → afronden**.
 
 ## Korte conclusie
 
