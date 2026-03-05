@@ -15,7 +15,7 @@ keywords:
   - "Look Scanned"
 ---
 
-Kdykoli se virálně šíří nějaký mediálně výrazný dokument, ve feedu se mi objeví stejná hádka o PDF.  
+Kdykoli se virálně šíří nějaký mediálně výrazný dokument, v mém přehledu se objeví stejná hádka o PDF.  
 Tentokrát šlo o PDF **„Epstein files“**: lidé si přibližovali začerněné části a řešili, jestli je „redakce“ skutečná, nebo jsou to jen černé obdélníky nahoře.
 
 Nechci znovu otevírat konkrétní kauzu. Debata je ale užitečná, protože připomíná chybu, která je mnohem běžnější, než si týmy rády přiznávají:
@@ -32,11 +32,11 @@ PDF není vždy jen „obrázek stránky“. Je to spíš kontejner. Jeden soubo
 - označitelný text
 - skrytý OCR text (neviditelný, ale dohledatelný)
 - anotace (zvýraznění, tvary, komentáře)
-- metadata (author/title/subject atd.)
+- metadata (autor/název/předmět atd.)
 
 Můžete tedy něco na obrazovce zakrýt a stejně omylem odeslat původní text, OCR nebo zbylé objekty. Přesně to se myslí pojmem **neúčinná redakce**. Žádné hackerské kouzlo, jen postup, který plete „zakryto“ s „odstraněno“.
 
-Pokud je váš postup „nakreslit černý obdélník ve Wordu/PowerPointu a exportovat do PDF“, je to risk. Může to projít. A nemusí. Dokud nezkontrolujete *finální soubor*, který opravdu posíláte, nevíte to.
+Pokud je váš postup „nakreslit černý obdélník ve Wordu/PowerPointu a exportovat do PDF“, je to riziko. Může to projít. A nemusí. Dokud nezkontrolujete *finální soubor*, který opravdu posíláte, nevíte to.
 
 ## Rychlé kontroly, které dělám před odesláním „redigovaného“ PDF
 
@@ -61,7 +61,7 @@ Když dokument obsahuje citlivá data, držím postup vydání co nejjednodušš
 1) **Udělám skutečnou redakci** (odstranění obsahu, ne jen překrytí)  
 2) **Vyčistím zbytky** (anotace, přílohy, skryté vrstvy, metadata)  
 3) **Ověřím finální export** (kontrolní seznam výše)  
-4) **Vytvořím „odesílatelnou“ verzi** (často styl skenu, konzistentní, finální)
+4) **Vytvořím verzi připravenou k odeslání** (často ve stylu skenu, konzistentní, finální)
 
 Ten poslední krok je důležitější, než se zdá. Ne kvůli „bezpečnostnímu divadlu“, ale kvůli menším náhodným rozdílům a konzistentnímu výstupu napříč zařízeními.
 

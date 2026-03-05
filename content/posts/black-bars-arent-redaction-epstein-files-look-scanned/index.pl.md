@@ -15,7 +15,7 @@ keywords:
   - "Look Scanned"
 ---
 
-Za każdym razem, gdy głośny pakiet dokumentów staje się viralem, w moim kanale wraca ten sam spór o PDF.  
+Za każdym razem, gdy głośny pakiet dokumentów staje się viralem, w mojej osi czasu wraca ten sam spór o PDF.  
 Tym razem chodziło o PDF-y **„Epstein files”**: ludzie powiększali zaczernione miejsca i pytali, czy „redakcja” była prawdziwa, czy to tylko czarne prostokąty na wierzchu.
 
 Nie chodzi mi o ponowne rozstrzyganie sprawy. Ta dyskusja jest jednak cenna, bo pokazuje błąd dużo częstszy, niż większość zespołów chce przyznać:
@@ -46,7 +46,7 @@ Sprawdzam tylko **końcowy plik eksportu** (ten, który zaraz wyślę/udostępni
 
 - **Szukam** wrażliwych fraz (nazwiska, ID, fragmenty e-maili, adresy)
 - Próbuję zaznaczyć okolice zaczernienia i **kopiuj/wklej** do zwykłego edytora tekstu
-- Otwieram plik w **dwóch różnych przeglądarkach plików** (desktop + przeglądarka zwykle wystarczy)
+- Otwieram plik w **dwóch różnych programach podglądu** (desktop + przeglądarka zwykle wystarczy)
 - Sprawdzam, czy zostały **adnotacje/komentarze** (podświetlenia, notatki, kształty)
 - Zerkam na **metadane** (autor/tytuł/temat), jeśli dokument wychodzi na zewnątrz
 
@@ -61,7 +61,7 @@ Gdy dokument zawiera dane wrażliwe, staram się utrzymać przepływ wydania mak
 1) **Zrób prawdziwą redakcję** (usunięcie treści, nie nakładka)  
 2) **Wyczyść dodatki** (adnotacje, załączniki, ukryte warstwy, metadane)  
 3) **Zweryfikuj finalny eksport** (lista powyżej)  
-4) **Wygeneruj wersję „do wysyłki”** (często styl skanu, spójna, finalna)
+4) **Wygeneruj wersję „do wysyłki”** (często w stylu skanu, spójną i końcową)
 
 Ten ostatni krok jest ważniejszy, niż wielu osobom się wydaje. Nie chodzi o „teatr bezpieczeństwa”, ale o mniej przypadkowych niespodzianek i bardziej spójny wygląd na różnych urządzeniach.
 

@@ -32,11 +32,11 @@ Un PDF n’est pas toujours “une image de page”. C’est plutôt un conteneu
 - du texte sélectionnable
 - du texte OCR caché (invisible, mais recherchable)
 - des annotations (surlignages, formes, commentaires)
-- des métadonnées (author/title/subject, etc.)
+- des métadonnées (auteur/titre/sujet, etc.)
 
 Donc on peut masquer quelque chose à l’écran, tout en envoyant quand même le texte sous-jacent, l’OCR ou des objets résiduels. C’est ce qu’on appelle un **caviardage inefficace**. Rien de “hacker” : juste un processus qui confond “couvert” et “supprimé”.
 
-Si votre process, c’est “dessiner un rectangle noir dans Word/PowerPoint puis exporter en PDF”, vous prenez un risque. Ça peut passer. Ou pas. Et vous ne le saurez pas sans vérifier *le fichier final exact* que vous envoyez.
+Si votre méthode, c’est “dessiner un rectangle noir dans Word/PowerPoint puis exporter en PDF”, vous prenez un risque. Ça peut passer. Ou pas. Et vous ne le saurez pas sans vérifier *le fichier final exact* que vous envoyez.
 
 ## Mes vérifications rapides avant d’envoyer un PDF “caviardé”
 
@@ -85,6 +85,6 @@ L’ordre est le point clé : **retirer → vérifier → finaliser**.
 Si le débat autour des PDF des “Epstein files” nous a encore appris quelque chose, c’est ceci :  
 **les blocs noirs ne sont pas une preuve.**
 
-Traitez la censure comme une opération de données, vérifiez le fichier exact que vous allez publier, puis seulement ensuite soignez le rendu final type scan.
+Traitez la censure comme une opération de données, vérifiez le fichier exact que vous allez publier, puis seulement ensuite soignez le rendu final façon scan.
 
 Essayez Look Scanned : https://lookscanned.io

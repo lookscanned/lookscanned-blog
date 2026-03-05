@@ -47,7 +47,7 @@ Csak a **végső exportált fájlt** nézem (amit feltöltök/e-mailben küldök
 - **Keresés** érzékeny kifejezésekre (nevek, ID-k, e-mailrészletek, címek)
 - Kijelölés a fekete rész körül, majd **másolás/beillesztés** egyszerű szövegszerkesztőbe
 - Megnyitás **két különböző megjelenítőben** (asztali + böngésző általában elég)
-- Maradt-e **annotáció/komment** (kiemelés, jegyzet, alakzat)
+- Maradt-e **annotáció/megjegyzés** (kiemelés, jegyzet, alakzat)
 - **Metaadatok** ellenőrzése (szerző/cím/tárgy), ha a dokumentum kifelé megy
 
 Ha a dokumentum eredetileg szkennelt volt vagy OCR-en ment át, különösen óvatos vagyok, mert a rejtett, kereshető szöveg klasszikus „meglepetésréteg”.
@@ -56,7 +56,7 @@ Ennyi. Egyszerű. Ismételhető. Meglepően hatékony.
 
 ## A munkafolyamat, ami távol tart a problémáktól
 
-Ha érzékeny információ van benne, igyekszem fájdalmasan egyenes release-folyamatot tartani:
+Ha érzékeny információ van benne, igyekszem fájdalmasan egyenes munkafolyamatot tartani:
 
 1) **Valódi redakció** (tartalom eltávolítása, nem ráfedés)  
 2) **Maradékok takarítása** (annotációk, csatolmányok, rejtett rétegek, metaadatok)  
@@ -70,7 +70,7 @@ Az utolsó lépés fontosabb, mint sokan gondolják. Nem „biztonsági színhá
 Nem redakciós eszközként használom a Look Scannedet. Nem arra való.  
 Nálam ez a **végső átadási eszköz**.
 
-Miután a dokumentum rendesen redigált és a végső exportot ellenőriztem, a Look Scanned segít tiszta, **szkennelt stílusú PDF**-et készíteni - pont azt a formátumot, amit beadásoknál és formális ügyintézésnél elvárnak.
+Miután a dokumentum rendesen redaktált és a végső exportot ellenőriztem, a Look Scanned segít tiszta, **szkennelt stílusú PDF**-et készíteni - pont azt a formátumot, amit beadásoknál és formális ügyintézésnél elvárnak.
 
 A gyakorlatban ez azt jelenti:
 

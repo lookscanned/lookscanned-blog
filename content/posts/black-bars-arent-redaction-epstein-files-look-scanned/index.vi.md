@@ -15,7 +15,7 @@ keywords:
   - "Look Scanned"
 ---
 
-Mỗi khi có một đợt tung tài liệu gây chú ý lớn, cùng một cuộc tranh luận về PDF lại xuất hiện trên feed của tôi.  
+Mỗi khi có một đợt tung tài liệu gây chú ý lớn, cùng một cuộc tranh luận về PDF lại xuất hiện trên bảng tin của tôi.  
 Lần này là các PDF **“Epstein files”**: mọi người zoom vào các vùng bị tô đen và hỏi liệu phần “che dữ liệu” có thật sự được xử lý đúng hay chỉ là mấy hình chữ nhật đè lên trên.
 
 Tôi không ở đây để tranh luận lại vụ việc. Nhưng cuộc tranh luận này hữu ích vì nó chỉ ra một sai lầm phổ biến hơn nhiều so với điều đa số đội ngũ muốn thừa nhận:
@@ -26,28 +26,28 @@ Và đúng vậy, hai thứ đó hoàn toàn khác nhau.
 
 ## Vì sao “nhìn đã đen” vẫn có thể rủi ro
 
-PDF không phải lúc nào cũng chỉ là “ảnh chụp của một trang”. Nó giống một container hơn. Một file có thể chứa:
+PDF không phải lúc nào cũng chỉ là “ảnh chụp của một trang”. Nó giống một vật chứa hơn. Một file có thể chứa:
 
 - phần trang nhìn thấy được
 - văn bản có thể chọn/copy
 - văn bản OCR ẩn (không nhìn thấy nhưng vẫn tìm kiếm được)
-- annotation (highlight, shape, comment)
-- metadata (author/title/subject, v.v.)
+- chú thích (tô sáng, hình, bình luận)
+- siêu dữ liệu (tác giả/tiêu đề/chủ đề, v.v.)
 
 Vì vậy bạn có thể che được thứ gì đó trên màn hình nhưng vẫn vô tình gửi đi văn bản nền, OCR hoặc object còn sót lại. Đó chính là điều người ta gọi là **che dữ liệu không hiệu quả**. Không cần kỹ thuật cao siêu, thường chỉ là quy trình nhầm lẫn giữa “che” và “xóa”.
 
-Nếu quy trình của bạn là “vẽ hình chữ nhật đen trong Word/PowerPoint rồi export PDF”, thì đó là một canh bạc. Có thể ổn. Cũng có thể không. Và bạn sẽ không biết cho tới khi kiểm tra *chính file cuối cùng* mà bạn định gửi.
+Nếu quy trình của bạn là “vẽ hình chữ nhật đen trong Word/PowerPoint rồi xuất PDF”, thì đó là một canh bạc. Có thể ổn. Cũng có thể không. Và bạn sẽ không biết cho tới khi kiểm tra *chính file cuối cùng* mà bạn định gửi.
 
 ## Các bước kiểm tra nhanh tôi làm trước khi gửi PDF “đã che dữ liệu”
 
-Đây không phải chương trình tuân thủ. Chỉ là routine 60–90 giây nhàm chán nhưng bắt được nhiều lỗi ngớ ngẩn.
+Đây không phải chương trình tuân thủ. Chỉ là thói quen 60–90 giây nhàm chán nhưng bắt được nhiều lỗi ngớ ngẩn.
 
 Tôi chỉ kiểm tra **file xuất cuối cùng** (file chuẩn bị gửi đi):
 
 - **Tìm kiếm** các từ nhạy cảm (tên, ID, mảnh email, địa chỉ)
 - Thử chọn vùng quanh chỗ bị tô đen và **sao chép/dán** vào trình soạn thảo văn bản thuần
-- Mở bằng **hai trình đọc khác nhau** (desktop + browser thường là đủ)
-- Kiểm tra còn sót **ghi chú/bình luận** nào không (highlight, note, shape)
+- Mở bằng **hai trình đọc khác nhau** (ứng dụng máy tính + trình duyệt thường là đủ)
+- Kiểm tra còn sót **ghi chú/bình luận** nào không (tô sáng, ghi chú, hình)
 - Xem **siêu dữ liệu** (tác giả/tiêu đề/chủ đề) nếu tài liệu sẽ gửi ra ngoài
 
 Nếu tài liệu bắt đầu từ bản scan hoặc từng qua OCR, tôi cẩn thận hơn vì lớp văn bản ẩn có thể tìm kiếm là “lớp bất ngờ” rất điển hình.
@@ -74,8 +74,8 @@ Sau khi tài liệu được che dữ liệu đúng cách và bản xuất cuố
 
 Trong thực tế, điều đó có nghĩa là:
 
-- ít hơn các cuộc trao đổi “file này trên máy tôi bị lệch format”  
-- cảm giác “artifact cuối cùng” rõ ràng hơn (đặc biệt khi bên nhận mong file scan)  
+- ít hơn các cuộc trao đổi “file này trên máy tôi bị lệch định dạng”  
+- cảm giác “bản hoàn thiện cuối cùng” rõ ràng hơn (đặc biệt khi bên nhận mong file scan)  
 - đầu ra sạch hơn, ít khả năng kéo theo các lớp đánh dấu linh tinh (tùy quy trình xuất của bạn)
 
 Thứ tự mới là điểm mấu chốt: **xóa → xác minh → hoàn thiện**.

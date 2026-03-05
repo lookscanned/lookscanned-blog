@@ -32,15 +32,15 @@ Hindi laging "larawan ng pahina" ang PDF. Mas parang lalagyan ito. Sa iisang fil
 - tekstong puwedeng piliin
 - nakatagong OCR text (hindi kita pero nahahanap)
 - mga anotasyon (highlight, hugis, komento)
-- metadata (author/title/subject, atbp.)
+- metadata (may-akda/pamagat/paksa, atbp.)
 
 Kaya puwedeng natakpan mo sa screen ang isang detalye pero naipadala mo pa rin ang ilalim na text, OCR, o natirang object. Iyan ang tinutukoy ng mga tao bilang **hindi epektibong redaction**. Walang espesyal na atake rito; simpleng proseso lang na napagpapalit ang "natakpan" at "natanggal".
 
-Kung ang paraan mo ay "gumuhit ng itim na kahon sa Word/PowerPoint tapos i-export sa PDF," may risk iyon. Puwedeng umubra, puwedeng hindi. At hindi mo malalaman hangga't hindi mo tinitingnan ang *aktuwal na huling file* na ipapadala.
+Kung ang paraan mo ay "gumuhit ng itim na kahon sa Word/PowerPoint tapos i-export sa PDF," may panganib iyon. Puwedeng umubra, puwedeng hindi. At hindi mo malalaman hangga't hindi mo tinitingnan ang *aktuwal na huling file* na ipapadala.
 
 ## Mabilis kong pag-check bago magpadala ng "na-redact na" PDF
 
-Hindi ito full compliance program. Isa lang itong 60-90 second na routine na nakakahuli ng karaniwang pagkakamali.
+Hindi ito kumpletong programa sa pagsunod. Isa lang itong 60-90 segundong routine na nakakahuli ng karaniwang pagkakamali.
 
 **Huling na-export na file** lang ang chine-check ko (iyon mismo ang ia-upload/i-eemail/isi-share):
 
@@ -48,9 +48,9 @@ Hindi ito full compliance program. Isa lang itong 60-90 second na routine na nak
 - I-select ang paligid ng itim na bahagi at **kopya/dikit** sa plain text editor
 - Buksan sa **dalawang magkaibang pangbasa ng PDF** (desktop app + browser, kadalasan sapat na)
 - Tingnan kung may natirang **anotasyon/komento** (highlight, note, hugis)
-- Silipin ang **metadata** (author/title/subject) kung lalabas sa labas ng team
+- Silipin ang **metadata** (may-akda/pamagat/paksa) kung lalabas sa labas ng team
 
-Kung mula sa scan ang dokumento o dumaan sa OCR, mas maingat ako dahil madalas may natitirang hidden searchable text.
+Kung mula sa scan ang dokumento o dumaan sa OCR, mas maingat ako dahil madalas may natitirang nakatagong tekstong nahahanap sa paghahanap.
 
 Iyon lang. Simple. Nauulit. At epektibo.
 
@@ -61,22 +61,22 @@ Kapag may sensitibong impormasyon ang dokumento, sinasadya kong gawing sobrang d
 1) **Gumawa ng totoong redaction** (tanggalin ang laman, huwag lang takpan)  
 2) **Linisin ang mga sobrang layer** (anotasyon, attachment, nakatagong layer, metadata)  
 3) **I-verify ang huling export** (gamit ang listahan sa itaas)  
-4) **Ihanda ang bersyong ipapadala** (madalas scan-look, consistent, final)
+4) **Ihanda ang bersyong ipapadala** (madalas scan-look, pare-pareho ang hitsura, pinal)
 
-Mas mahalaga ang huling hakbang na ito kaysa iniisip ng marami. Hindi ito para sa pa-show na seguridad, kundi para mabawasan ang aksidenteng sabit at gawing consistent ang output sa iba’t ibang device.
+Mas mahalaga ang huling hakbang na ito kaysa iniisip ng marami. Hindi ito para sa pa-show na seguridad, kundi para mabawasan ang aksidenteng sabit at gawing pare-pareho ang resulta sa iba’t ibang device.
 
 ## Saan pumapasok ang Look Scanned para sa akin
 
-Hindi ko ginagamit ang Look Scanned bilang redaction tool. Hindi iyon ang role nito.  
+Hindi ko ginagamit ang Look Scanned bilang redaction tool. Hindi iyon ang pangunahing gamit nito.  
 Ginagamit ko ito bilang **panghuling delivery tool**.
 
-Kapag maayos na ang redaction at naverify na ang huling export, tinutulungan ako ng Look Scanned gumawa ng malinis na **scan-look na PDF**. Iyan ang klase ng file na inaasahan ng tao sa formal na pagsusumite at opisyal na palitan ng dokumento.
+Kapag maayos na ang redaction at naverify na ang huling export, tinutulungan ako ng Look Scanned gumawa ng malinis na **scan-look na PDF**. Iyan ang klase ng file na inaasahan ng tao sa pormal na pagsusumite at opisyal na palitan ng dokumento.
 
 Sa praktika, ibig sabihin nito:
 
 - mas kaunting usapang "nag-iba ang format sa device ko"  
 - mas malinaw ang pakiramdam na tapos na talaga ang dokumento (lalo na kung scan ang inaasahan)  
-- mas malinis na output at mas mababang tsansang may random markup layer na maisama (depende sa export pipeline mo)
+- mas malinis na resulta at mas mababang tsansang may kung anu-anong layer ng marka na maisama (depende sa daloy ng export mo)
 
 Mahalaga ang tamang pagkakasunod: **tanggalin → beripikahin → tapusin**.
 

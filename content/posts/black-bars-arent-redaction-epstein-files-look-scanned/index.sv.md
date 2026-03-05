@@ -32,7 +32,7 @@ PDF är inte alltid “en bild av en sida”. Det är mer som en behållare. En 
 - markerbar text
 - dold OCR-text (osynlig men sökbar)
 - annoteringar (markeringar, former, kommentarer)
-- metadata (author/title/subject etc.)
+- metadata (författare/titel/ämne etc.)
 
 Så du kan dölja något på skärmen men ändå råka skicka underliggande text, OCR eller kvarvarande objekt. Det är vad man menar med **ineffektiv redigering**. Inget avancerat - bara ett arbetsflöde som blandar ihop “täckt” med “borttaget”.
 
@@ -40,15 +40,15 @@ Om din process är “rita en svart rektangel i Word/PowerPoint och exportera ti
 
 ## Snabbkontroller jag gör innan jag skickar en “redigerad” PDF
 
-Det här är inget complianceprogram. Det är en tråkig 60–90-sekundersrutin som fångar dumma misstag.
+Det här är inget efterlevnadsprogram. Det är en tråkig 60–90-sekundersrutin som fångar dumma misstag.
 
 Jag kontrollerar bara **den slutligt exporterade filen** (den jag faktiskt ska skicka vidare):
 
 - **Sök** efter känsliga termer (namn, ID, e-postfragment, adresser)
 - Försök markera runt den svarta ytan och **kopiera/klistra in** i en ren texteditor
-- Öppna filen i **två olika visare** (desktop + webbläsare räcker oftast)
+- Öppna filen i **två olika visare** (datorapp + webbläsare räcker oftast)
 - Leta efter kvarvarande **annoteringar/kommentarer** (markeringar, noteringar, former)
-- Kolla **metadata** (author/title/subject) om dokumentet ska utanför organisationen
+- Kolla **metadata** (författare/titel/ämne) om dokumentet ska utanför organisationen
 
 Om dokumentet började som en skanning eller gick igenom OCR är jag extra försiktig, eftersom dold sökbar text är ett klassiskt “överraskningslager”.
 

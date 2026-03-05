@@ -15,7 +15,7 @@ keywords:
   - "Look Scanned"
 ---
 
-De fiecare dată când un set de documente cu profil mare devine viral, același argument despre PDF apare în feed-ul meu.  
+De fiecare dată când un set de documente cu profil mare devine viral, același argument despre PDF apare în fluxul meu.  
 De data asta a fost despre PDF-urile **„Epstein files”**: oamenii făceau zoom pe zonele înnegrite și întrebau dacă „redactările” erau reale sau doar niște dreptunghiuri negre puse deasupra.
 
 Nu sunt aici să rejudec subiectul. Dar dezbaterea e utilă, pentru că scoate în evidență o greșeală mult mai comună decât vor multe echipe să admită:
@@ -31,8 +31,8 @@ Un PDF nu este întotdeauna „o poză a paginii”. E mai degrabă un container
 - pagina vizibilă
 - text selectabil
 - text OCR ascuns (invizibil, dar căutabil)
-- anotări (highlight, forme, comentarii)
-- metadate (author/title/subject etc.)
+- anotări (evidențieri, forme, comentarii)
+- metadate (autor/titlu/subiect etc.)
 
 Așadar, poți ascunde ceva pe ecran, dar tot să trimiți din greșeală textul de dedesubt, OCR-ul sau obiecte rămase. Asta înseamnă **redactare ineficientă**. Nu e nimic sofisticat, doar un proces care confundă „acoperit” cu „eliminat”.
 
@@ -47,8 +47,8 @@ Verific doar **fișierul final exportat** (cel pe care urmează să-l trimit sau
 - **Caut** termeni sensibili (nume, ID-uri, fragmente de email, adrese)
 - Încerc selectarea în jurul zonei negre și **copiere/lipire** într-un editor text simplu
 - Îl deschid în **două aplicații diferite** (desktop + browser este de obicei suficient)
-- Verific dacă au rămas **anotări/comentarii** (highlight, note, forme)
-- Mă uit la **metadate** (author/title/subject) dacă documentul pleacă în afară
+- Verific dacă au rămas **anotări/comentarii** (evidențieri, note, forme)
+- Mă uit la **metadate** (autor/titlu/subiect) dacă documentul pleacă în afară
 
 Dacă documentul a pornit ca scan sau a trecut prin OCR, sunt mai atent, pentru că textul ascuns, căutabil, este o „surpriză” clasică.
 

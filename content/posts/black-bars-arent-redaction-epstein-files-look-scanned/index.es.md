@@ -32,7 +32,7 @@ Un PDF no siempre es “una imagen de una página”. Es más bien un contenedor
 - texto seleccionable
 - texto OCR oculto (invisible, pero buscable)
 - anotaciones (resaltados, formas, comentarios)
-- metadatos (author/title/subject, etc.)
+- metadatos (autor/título/asunto, etc.)
 
 Así que puedes tapar algo en pantalla y aun así enviar por error el texto subyacente, OCR u objetos residuales. Eso es lo que se entiende por **redacción ineficaz**. No hay magia técnica: es un flujo que confunde “cubierto” con “eliminado”.
 
@@ -40,7 +40,7 @@ Si tu proceso es “dibujar un rectángulo negro en Word/PowerPoint y exportar a
 
 ## Las comprobaciones rápidas que hago antes de enviar un PDF “redactado”
 
-No es un programa de compliance. Es una rutina aburrida de 60-90 segundos que detecta errores básicos.
+No es un programa de cumplimiento normativo. Es una rutina aburrida de 60-90 segundos que detecta errores básicos.
 
 Solo reviso el **archivo exportado final** (el que realmente voy a enviar o compartir):
 

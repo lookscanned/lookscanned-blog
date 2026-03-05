@@ -1,7 +1,7 @@
 ---
 date: "2026-03-04T00:00:00+08:00"
 draft: false
-title: "Swart Balke Is Nie Redaksie Nie (Ja, die PDF's van Epstein files het almal weer herinner)"
+title: "Swart Balke Is Nie Redaksie Nie (Ja, die PDF's van Epstein files het almal weer daaraan herinner)"
 summary: "'n Kort, praktiese nota oor hoekom swart blokkies in PDF's kan faal, watter eenvoudige kontroles ek doen voordat ek iets stuur, en hoekom ek Look Scanned gebruik vir die finale skandeer-styl weergawe."
 description: "'n Kort, praktiese nota oor hoekom swart blokkies in PDF's kan faal, watter eenvoudige kontroles ek doen voordat ek iets stuur, en hoekom ek Look Scanned gebruik vir die finale skandeer-styl weergawe."
 slug: "black-bars-arent-redaction-epstein-files-look-scanned"
@@ -42,7 +42,7 @@ As jou proses is "teken 'n swart reghoek in Word/PowerPoint en voer na PDF uit",
 
 Dis nie 'n volledige nakomingsprogram nie. Dis 'n eenvoudige 60-90 sekonde roetine wat dom foute vang.
 
-Ek kontroleer net die **finale uitgevoerde lêer** (die een wat regtig uitgestuur gaan word):
+Ek kontroleer net die **finale uitvoerlêer** (die een wat regtig uitgestuur gaan word):
 
 - **Soek** vir sensitiewe terme (name, ID's, e-pos-fragmente, adresse)
 - Probeer rondom die swart area selekteer en **kopieer/plak** in 'n gewone teksredigeerder
@@ -78,7 +78,7 @@ In praktyk beteken dit:
 - 'n sterker gevoel van 'n afgewerkte einddokument (veral wanneer iemand 'n skandering verwag)  
 - skoner uitset met minder kans op lukrake merkerlae (afhangend van jou uitvoerketting)
 
-Die volgorde is die punt: **verwyder → verifieer → finaliseer**.
+Die volgorde is wat tel: **verwyder → verifieer → finaliseer**.
 
 ## 'n Kort gevolgtrekking
 

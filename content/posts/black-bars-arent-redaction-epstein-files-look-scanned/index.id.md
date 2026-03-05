@@ -15,7 +15,7 @@ keywords:
   - "Look Scanned"
 ---
 
-Setiap kali ada dokumen besar yang viral, perdebatan PDF yang sama selalu muncul di feed saya.  
+Setiap kali ada dokumen besar yang viral, perdebatan PDF yang sama selalu muncul di linimasa saya.  
 Kali ini soal PDF **“Epstein files”**: orang-orang memperbesar area hitam dan bertanya apakah “redaksinya” benar-benar aman, atau cuma kotak hitam di atas teks.
 
 Saya tidak ingin mengulang perdebatan kasusnya. Tapi diskusi ini berguna karena menyoroti kesalahan yang jauh lebih umum daripada yang ingin diakui banyak tim:
@@ -31,12 +31,12 @@ PDF tidak selalu hanya “gambar halaman”. PDF lebih seperti kontainer. Satu f
 - halaman yang terlihat
 - teks yang bisa dipilih
 - teks OCR tersembunyi (tak terlihat, tapi bisa dicari)
-- anotasi (highlight, shape, komentar)
-- metadata (author/title/subject, dll.)
+- anotasi (sorotan, bentuk, komentar)
+- metadata (penulis/judul/subjek, dll.)
 
 Jadi sesuatu bisa tertutup di layar, tapi teks asli, OCR, atau objek sisa masih ikut terkirim. Inilah yang dimaksud orang saat bicara tentang **redaksi yang tidak efektif**. Bukan teknik canggih, biasanya cuma alur kerja yang mencampuradukkan “ditutup” dengan “dihapus”.
 
-Kalau proses Anda adalah “gambar kotak hitam di Word/PowerPoint lalu export ke PDF”, itu berisiko tinggi. Bisa saja aman. Bisa juga tidak. Dan Anda tidak akan tahu sebelum mengecek *file final* yang benar-benar akan dikirim.
+Kalau proses Anda adalah “gambar kotak hitam di Word/PowerPoint lalu ekspor ke PDF”, itu berisiko tinggi. Bisa saja aman. Bisa juga tidak. Dan Anda tidak akan tahu sebelum mengecek *file final* yang benar-benar akan dikirim.
 
 ## Cek cepat yang saya lakukan sebelum mengirim PDF “ter-redaksi”
 
@@ -47,7 +47,7 @@ Saya hanya mengecek **file ekspor final** (yang benar-benar akan saya kirim atau
 - **Cari** istilah sensitif (nama, ID, fragmen email, alamat)
 - Coba seleksi area sekitar bagian hitam lalu **salin/tempel** ke editor teks biasa
 - Buka di **dua pembaca berbeda** (desktop + browser biasanya cukup)
-- Cek sisa **anotasi/komentar** (highlight, note, shape)
+- Cek sisa **anotasi/komentar** (sorotan, catatan, bentuk)
 - Lihat **metadata** (penulis/judul/subjek) jika dokumen akan dikirim keluar
 
 Kalau dokumen awalnya hasil scan atau pernah diproses OCR, saya lebih waspada karena teks tersembunyi yang bisa dicari adalah “lapisan kejutan” klasik.
@@ -59,9 +59,9 @@ Itu saja. Sederhana. Bisa diulang. Dan sangat berguna.
 Kalau dokumen berisi info sensitif, saya menjaga alur rilis tetap sangat lurus:
 
 1) **Lakukan redaksi sungguhan** (hapus konten, bukan sekadar lapisan penutup)  
-2) **Bersihkan elemen tambahan** (anotasi, lampiran, layer tersembunyi, metadata)  
+2) **Bersihkan elemen tambahan** (anotasi, lampiran, lapisan tersembunyi, metadata)  
 3) **Verifikasi hasil ekspor final** (pakai daftar cek di atas)  
-4) **Buat versi yang siap dikirim** (biasanya bergaya hasil scan, konsisten, terasa final)
+4) **Buat versi yang siap dikirim** (biasanya bergaya hasil scan, konsisten, dan siap terbit)
 
 Langkah terakhir ini lebih penting daripada yang banyak orang kira. Bukan sekadar “teater keamanan”, tapi untuk mengurangi keanehan tak sengaja dan membuat hasil tampil konsisten di berbagai perangkat.
 
@@ -70,13 +70,13 @@ Langkah terakhir ini lebih penting daripada yang banyak orang kira. Bukan sekada
 Saya tidak memakai Look Scanned sebagai alat redaksi. Fungsinya bukan itu.  
 Saya memakainya sebagai **alat penyelesaian tahap akhir**.
 
-Setelah dokumen benar-benar di-redaksi dan export final sudah diverifikasi, Look Scanned membantu saya menghasilkan **PDF bergaya scan** yang bersih, jenis file yang memang diharapkan orang untuk pengajuan dan pertukaran dokumen formal.
+Setelah dokumen benar-benar diredaksi dan ekspor final sudah diverifikasi, Look Scanned membantu saya menghasilkan **PDF bergaya scan** yang bersih, jenis file yang memang diharapkan orang untuk pengajuan dan pertukaran dokumen formal.
 
 Dalam praktiknya, ini berarti:
 
 - lebih sedikit diskusi “formatnya berubah di komputer saya”  
 - dokumen terasa lebih benar-benar final (terutama saat pihak lain memang mengharapkan dokumen scan)  
-- hasil lebih bersih dan lebih kecil kemungkinan membawa layer penandaan acak (tergantung alur ekspor Anda)
+- hasil lebih bersih dan lebih kecil kemungkinan membawa lapisan penandaan acak (tergantung alur ekspor Anda)
 
 Urutannya yang penting: **hapus → verifikasi → finalisasi**.
 

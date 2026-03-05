@@ -15,7 +15,7 @@ keywords:
   - "Look Scanned"
 ---
 
-Setiap kali dokumen berprofil tinggi menjadi viral, perdebatan PDF yang sama muncul dalam feed saya.  
+Setiap kali dokumen berprofil tinggi menjadi viral, perdebatan PDF yang sama muncul dalam suapan saya.  
 Kali ini tentang PDF **“Epstein files”**: orang zum masuk pada bahagian yang dihitamkan dan tanya sama ada “redaksi” itu benar, atau sekadar segi empat hitam di atas teks.
 
 Saya bukan di sini untuk mengulang semula kes itu. Tetapi perdebatan ini berguna kerana ia menonjolkan kesilapan yang jauh lebih biasa daripada yang kebanyakan pasukan mahu akui:
@@ -32,7 +32,7 @@ PDF tidak semestinya hanya “gambar satu halaman”. Ia lebih seperti bekas. Sa
 - teks boleh pilih
 - teks OCR tersembunyi (tak nampak, tetapi boleh dicari)
 - anotasi (sorotan, bentuk, komen)
-- metadata (author/title/subject, dll.)
+- metadata (penulis/tajuk/subjek, dll.)
 
 Jadi anda boleh sembunyikan sesuatu di skrin, tetapi masih terhantar teks asal, OCR, atau objek baki. Inilah yang orang maksudkan bila bercakap tentang **redaksi tidak berkesan**. Bukan teknik rumit, cuma aliran kerja yang keliru antara “ditutup” dengan “dibuang”.
 
@@ -63,7 +63,7 @@ Bila dokumen mengandungi maklumat sensitif, saya pastikan aliran pelepasan sanga
 3) **Sahkan eksport akhir** (guna senarai semak di atas)  
 4) **Hasilkan versi “siap hantar”** (selalunya gaya imbasan, konsisten, dan benar-benar siap)
 
-Langkah terakhir ini lebih penting daripada yang ramai sangka. Bukan untuk “teater keselamatan”, tetapi untuk kurangkan keanehan tak sengaja dan jadikan output konsisten merentas peranti.
+Langkah terakhir ini lebih penting daripada yang ramai sangka. Bukan untuk “teater keselamatan”, tetapi untuk kurangkan keanehan tak sengaja dan jadikan hasil konsisten merentas peranti.
 
 ## Di mana Look Scanned sesuai dalam aliran saya
 
