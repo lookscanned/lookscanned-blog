@@ -4,7 +4,7 @@ draft: false
 title: "แถบดำไม่ใช่การปกปิดข้อมูลที่แท้จริง (ใช่แล้ว ไฟล์ PDF “Epstein Files” เตือนทุกคนอีกครั้ง)"
 summary: "โน้ตสั้น ๆ ที่ใช้งานได้จริง ว่าทำไมกล่องดำใน PDF ถึงพลาดได้ วิธีเช็กง่าย ๆ ที่ผมทำก่อนส่งเอกสาร และทำไมผมใช้ Look Scanned สำหรับไฟล์ส่งมอบขั้นสุดท้ายแบบสแกน"
 description: "โน้ตสั้น ๆ ที่ใช้งานได้จริง ว่าทำไมกล่องดำใน PDF ถึงพลาดได้ วิธีเช็กง่าย ๆ ที่ผมทำก่อนส่งเอกสาร และทำไมผมใช้ Look Scanned สำหรับไฟล์ส่งมอบขั้นสุดท้ายแบบสแกน"
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "การปกปิดข้อมูล", "ความปลอดภัยเอกสาร", "Look Scanned"]
 keywords:
   - "Epstein files"

@@ -4,7 +4,7 @@ draft: false
 title: "Barras pretas não são tarjação real (Sim, os PDFs de “Epstein files” lembraram todo mundo disso de novo)"
 summary: "Uma nota rápida e prática sobre por que caixas pretas em PDF podem falhar, quais verificações simples eu faço antes de enviar qualquer arquivo e por que uso Look Scanned para a versão final em estilo de digitalização."
 description: "Uma nota rápida e prática sobre por que caixas pretas em PDF podem falhar, quais verificações simples eu faço antes de enviar qualquer arquivo e por que uso Look Scanned para a versão final em estilo de digitalização."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Tarjação", "Segurança de Documentos", "Look Scanned"]
 keywords:
   - "Epstein files"

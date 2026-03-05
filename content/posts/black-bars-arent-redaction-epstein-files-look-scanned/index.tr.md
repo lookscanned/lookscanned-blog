@@ -4,7 +4,7 @@ draft: false
 title: "Siyah Çubuklar Redaksiyon Değildir (Evet, “Epstein files” PDF tartışması bunu yine hatırlattı)"
 summary: "PDF içindeki siyah kutuların neden yetersiz kalabildiğine, göndermeden önce yaptığım basit kontrollerin neler olduğuna ve final tarama stili çıktı için neden Look Scanned kullandığıma dair kısa, pratik bir not."
 description: "PDF içindeki siyah kutuların neden yetersiz kalabildiğine, göndermeden önce yaptığım basit kontrollerin neler olduğuna ve final tarama stili çıktı için neden Look Scanned kullandığıma dair kısa, pratik bir not."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Redaksiyon", "Belge Güvenliği", "Look Scanned"]
 keywords:
   - "Epstein files"

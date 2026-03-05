@@ -4,7 +4,7 @@ draft: false
 title: "Swart Balke Is Nie Redaksie Nie (Ja, die PDF's van Epstein files het almal weer daaraan herinner)"
 summary: "'n Kort, praktiese nota oor hoekom swart blokkies in PDF's kan faal, watter eenvoudige kontroles ek doen voordat ek iets stuur, en hoekom ek Look Scanned gebruik vir die finale skandeer-styl weergawe."
 description: "'n Kort, praktiese nota oor hoekom swart blokkies in PDF's kan faal, watter eenvoudige kontroles ek doen voordat ek iets stuur, en hoekom ek Look Scanned gebruik vir die finale skandeer-styl weergawe."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Redaksie", "Dokumentveiligheid", "Look Scanned"]
 keywords:
   - "Epstein files"

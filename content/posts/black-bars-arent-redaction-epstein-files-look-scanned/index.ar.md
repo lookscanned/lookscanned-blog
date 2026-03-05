@@ -4,7 +4,7 @@ draft: false
 title: "الأشرطة السوداء ليست حجبًا للبيانات (نعم، جدل PDF حول “Epstein files” ذكّر الجميع مرة أخرى)"
 summary: "ملاحظة سريعة وعملية: لماذا قد تفشل الصناديق السوداء داخل PDF، وما الفحوصات البسيطة التي أقوم بها قبل الإرسال، ولماذا أستخدم Look Scanned لإخراج النسخة النهائية بطابع المسح الضوئي."
 description: "ملاحظة سريعة وعملية: لماذا قد تفشل الصناديق السوداء داخل PDF، وما الفحوصات البسيطة التي أقوم بها قبل الإرسال، ولماذا أستخدم Look Scanned لإخراج النسخة النهائية بطابع المسح الضوئي."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "حجب البيانات", "سلامة المستندات", "Look Scanned"]
 keywords:
   - "Epstein files"

@@ -4,7 +4,7 @@ draft: false
 title: "Czarne paski to nie redakcja (Tak, PDF-y „Epstein files” znowu wszystkim o tym przypomniały)"
 summary: "Krótka, praktyczna notatka o tym, dlaczego czarne pola w PDF potrafią zawieść, jakie proste kontrole robię przed wysyłką i dlaczego używam Look Scanned do finalnej wersji w stylu skanu."
 description: "Krótka, praktyczna notatka o tym, dlaczego czarne pola w PDF potrafią zawieść, jakie proste kontrole robię przed wysyłką i dlaczego używam Look Scanned do finalnej wersji w stylu skanu."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Redakcja", "Bezpieczeństwo Dokumentów", "Look Scanned"]
 keywords:
   - "Epstein files"

@@ -4,7 +4,7 @@ draft: false
 title: "Barele Negre Nu Înseamnă Redactare (Da, PDF-urile „Epstein files” au reamintit asta tuturor)"
 summary: "O notă scurtă și practică despre de ce casetele negre din PDF pot eșua, ce verificări simple fac înainte să trimit ceva și de ce folosesc Look Scanned pentru versiunea finală în stil scanat."
 description: "O notă scurtă și practică despre de ce casetele negre din PDF pot eșua, ce verificări simple fac înainte să trimit ceva și de ce folosesc Look Scanned pentru versiunea finală în stil scanat."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Redactare", "Siguranța Documentelor", "Look Scanned"]
 keywords:
   - "Epstein files"

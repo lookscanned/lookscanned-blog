@@ -4,7 +4,7 @@ draft: false
 title: "Les barres noires ne sont pas une censure (Oui, les PDF des “Epstein files” l’ont rappelé à tout le monde)"
 summary: "Une note courte et pratique sur pourquoi des blocs noirs dans un PDF peuvent échouer, les vérifications simples que je fais avant envoi, et pourquoi j’utilise Look Scanned pour la version finale au rendu scanné."
 description: "Une note courte et pratique sur pourquoi des blocs noirs dans un PDF peuvent échouer, les vérifications simples que je fais avant envoi, et pourquoi j’utilise Look Scanned pour la version finale au rendu scanné."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Caviardage", "Sécurité Documentaire", "Look Scanned"]
 keywords:
   - "Epstein files"

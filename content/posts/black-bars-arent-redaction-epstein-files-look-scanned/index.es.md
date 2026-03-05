@@ -4,7 +4,7 @@ draft: false
 title: "Las barras negras no son redacción (Sí, los PDF de “Epstein files” nos lo recordaron otra vez)"
 summary: "Una nota rápida y práctica sobre por qué los cuadros negros en PDF pueden fallar, qué comprobaciones simples hago antes de enviar algo y por qué uso Look Scanned para la versión final con estilo escaneado."
 description: "Una nota rápida y práctica sobre por qué los cuadros negros en PDF pueden fallar, qué comprobaciones simples hago antes de enviar algo y por qué uso Look Scanned para la versión final con estilo escaneado."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Redacción", "Seguridad Documental", "Look Scanned"]
 keywords:
   - "Epstein files"

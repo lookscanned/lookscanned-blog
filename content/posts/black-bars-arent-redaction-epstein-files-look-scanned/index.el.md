@@ -4,7 +4,7 @@ draft: false
 title: "Οι Μαύρες Μπάρες Δεν Είναι Πραγματική Απόκρυψη (Ναι, τα PDF των Epstein files το θύμισαν σε όλους ξανά)"
 summary: "Ένα σύντομο, πρακτικό σημείωμα για το γιατί τα μαύρα κουτιά σε PDF μπορεί να αποτύχουν, ποιοι απλοί έλεγχοι με βοηθούν πριν στείλω οτιδήποτε και γιατί χρησιμοποιώ το Look Scanned για την τελική έκδοση σε στιλ σάρωσης."
 description: "Ένα σύντομο, πρακτικό σημείωμα για το γιατί τα μαύρα κουτιά σε PDF μπορεί να αποτύχουν, ποιοι απλοί έλεγχοι με βοηθούν πριν στείλω οτιδήποτε και γιατί χρησιμοποιώ το Look Scanned για την τελική έκδοση σε στιλ σάρωσης."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Απόκρυψη", "Ασφάλεια Εγγράφων", "Look Scanned"]
 keywords:
   - "Epstein files"

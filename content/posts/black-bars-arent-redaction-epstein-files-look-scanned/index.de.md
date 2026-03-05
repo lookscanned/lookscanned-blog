@@ -4,7 +4,7 @@ draft: false
 title: "Schwarze Balken sind keine Schwärzung (Ja, die PDFs zu den “Epstein files” haben es wieder gezeigt)"
 summary: "Ein kurzer, praxisnaher Hinweis, warum schwarze Kästen in PDFs versagen können, welche einfachen Prüfungen ich vor dem Versand mache und warum ich Look Scanned für die finale Scan-Version nutze."
 description: "Ein kurzer, praxisnaher Hinweis, warum schwarze Kästen in PDFs versagen können, welche einfachen Prüfungen ich vor dem Versand mache und warum ich Look Scanned für die finale Scan-Version nutze."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Schwärzung", "Dokumentensicherheit", "Look Scanned"]
 keywords:
   - "Epstein files"

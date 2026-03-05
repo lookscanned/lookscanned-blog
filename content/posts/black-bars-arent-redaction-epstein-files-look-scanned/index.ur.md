@@ -4,7 +4,7 @@ draft: false
 title: "کالی پٹیاں اصل رداکشن نہیں ہوتیں (جی ہاں، “Epstein files” کی PDF بحث نے پھر یاد دلایا)"
 summary: "ایک مختصر اور عملی نوٹ: PDF میں کالے باکس کیوں ناکام ہو سکتے ہیں، بھیجنے سے پہلے میں کون سی آسان جانچ کرتا ہوں، اور آخری مرحلے میں اسکین جیسا ورژن بنانے کے لیے میں Look Scanned کیوں استعمال کرتا ہوں۔"
 description: "ایک مختصر اور عملی نوٹ: PDF میں کالے باکس کیوں ناکام ہو سکتے ہیں، بھیجنے سے پہلے میں کون سی آسان جانچ کرتا ہوں، اور آخری مرحلے میں اسکین جیسا ورژن بنانے کے لیے میں Look Scanned کیوں استعمال کرتا ہوں۔"
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "رداکشن", "دستاویز کی حفاظت", "Look Scanned"]
 keywords:
   - "Epstein files"

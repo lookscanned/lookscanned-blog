@@ -4,7 +4,7 @@ draft: false
 title: "Bar Hitam Bukan Redaksi (Ya, PDF “Epstein Files” Ingatkan Semua Orang Sekali Lagi)"
 summary: "Catatan ringkas dan praktikal tentang mengapa kotak hitam dalam PDF boleh gagal, semakan mudah yang saya buat sebelum menghantar apa-apa, dan mengapa saya guna Look Scanned untuk versi akhir gaya imbasan."
 description: "Catatan ringkas dan praktikal tentang mengapa kotak hitam dalam PDF boleh gagal, semakan mudah yang saya buat sebelum menghantar apa-apa, dan mengapa saya guna Look Scanned untuk versi akhir gaya imbasan."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Redaksi", "Keselamatan Dokumen", "Look Scanned"]
 keywords:
   - "Epstein files"

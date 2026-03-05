@@ -4,7 +4,7 @@ draft: false
 title: "Černé pruhy nejsou redakce (Ano, PDF „Epstein files“ to všem připomněla znovu)"
 summary: "Krátká praktická poznámka, proč mohou černé bloky v PDF selhat, jaké jednoduché kontroly dělám před odesláním, a proč používám Look Scanned pro finální výstup ve stylu skenu."
 description: "Krátká praktická poznámka, proč mohou černé bloky v PDF selhat, jaké jednoduché kontroly dělám před odesláním, a proč používám Look Scanned pro finální výstup ve stylu skenu."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Redakce", "Bezpečnost Dokumentů", "Look Scanned"]
 keywords:
   - "Epstein files"

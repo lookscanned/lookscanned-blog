@@ -4,7 +4,7 @@ draft: false
 title: "黑条不等于脱敏（是的，“爱泼斯坦文件”PDF 争论又提醒了所有人）"
 summary: "一篇简短实用的提醒：为什么 PDF 里的黑框可能失效、我在发送前会做哪些快速检查，以及为什么我会用 Look Scanned 生成最终的扫描风格交付版本。"
 description: "一篇简短实用的提醒：为什么 PDF 里的黑框可能失效、我在发送前会做哪些快速检查，以及为什么我会用 Look Scanned 生成最终的扫描风格交付版本。"
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "脱敏", "文档安全", "Look Scanned"]
 keywords:
   - "爱泼斯坦文件"

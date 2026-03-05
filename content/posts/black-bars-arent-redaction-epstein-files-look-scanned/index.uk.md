@@ -4,7 +4,7 @@ draft: false
 title: "Чорні Смуги — Це Не Редагування (Так, PDF з Epstein files знову всім про це нагадали)"
 summary: "Коротка практична нотатка про те, чому чорні прямокутники в PDF можуть не захистити дані, які прості перевірки я роблю перед відправкою, і чому використовую Look Scanned для фінальної версії у скан-стилі."
 description: "Коротка практична нотатка про те, чому чорні прямокутники в PDF можуть не захистити дані, які прості перевірки я роблю перед відправкою, і чому використовую Look Scanned для фінальної версії у скан-стилі."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Редагування", "Безпека Документів", "Look Scanned"]
 keywords:
   - "Epstein files"

@@ -4,7 +4,7 @@ draft: false
 title: "黒塗りバーはレダクションではない（そう、“Epstein files”のPDF騒動がまた思い出させた）"
 summary: "PDFの黒塗りがなぜ失敗するのか、送信前に私がやるシンプルな確認、そして最終的なスキャン風成果物にLook Scannedを使う理由を、短く実務的にまとめます。"
 description: "PDFの黒塗りがなぜ失敗するのか、送信前に私がやるシンプルな確認、そして最終的なスキャン風成果物にLook Scannedを使う理由を、短く実務的にまとめます。"
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "レダクション", "文書セキュリティ", "Look Scanned"]
 keywords:
   - "Epstein files"

@@ -4,7 +4,7 @@ draft: false
 title: "Garis Hitam Bukan Redaksi (Ya, PDF “Epstein Files” Mengingatkan Semua Orang Lagi)"
 summary: "Catatan singkat dan praktis tentang kenapa kotak hitam di PDF bisa gagal, pengecekan sederhana yang saya lakukan sebelum mengirim apa pun, dan kenapa saya memakai Look Scanned untuk versi akhir bergaya hasil scan."
 description: "Catatan singkat dan praktis tentang kenapa kotak hitam di PDF bisa gagal, pengecekan sederhana yang saya lakukan sebelum mengirim apa pun, dan kenapa saya memakai Look Scanned untuk versi akhir bergaya hasil scan."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Redaksi", "Keamanan Dokumen", "Look Scanned"]
 keywords:
   - "Epstein files"

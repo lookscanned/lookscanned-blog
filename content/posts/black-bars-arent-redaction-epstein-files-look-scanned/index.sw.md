@@ -4,7 +4,7 @@ draft: false
 title: "Mistari Myeusi Sio Uondoaji wa Taarifa (Ndiyo, PDF za “Epstein files” zimetukumbusha tena)"
 summary: "Dokezo fupi la vitendo kuhusu kwa nini visanduku vyeusi kwenye PDF vinaweza kushindwa, ukaguzi rahisi ninaofanya kabla ya kutuma chochote, na kwa nini natumia Look Scanned kwa toleo la mwisho lenye mwonekano wa skani."
 description: "Dokezo fupi la vitendo kuhusu kwa nini visanduku vyeusi kwenye PDF vinaweza kushindwa, ukaguzi rahisi ninaofanya kabla ya kutuma chochote, na kwa nini natumia Look Scanned kwa toleo la mwisho lenye mwonekano wa skani."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Uondoaji wa Taarifa", "Usalama wa Hati", "Look Scanned"]
 keywords:
   - "Epstein files"

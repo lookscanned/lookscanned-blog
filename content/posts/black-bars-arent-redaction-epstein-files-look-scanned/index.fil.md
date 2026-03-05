@@ -4,7 +4,7 @@ draft: false
 title: "Hindi Redaction ang Itim na Bar (Oo, pinaalala ulit ito ng mga PDF ng Epstein files)"
 summary: "Isang maikli at praktikal na paalala kung bakit puwedeng pumalya ang itim na pantakip sa PDF, anong simpleng pag-check ang ginagawa ko bago magpadala, at bakit Look Scanned ang gamit ko sa huling scan-look na bersyon."
 description: "Isang maikli at praktikal na paalala kung bakit puwedeng pumalya ang itim na pantakip sa PDF, anong simpleng pag-check ang ginagawa ko bago magpadala, at bakit Look Scanned ang gamit ko sa huling scan-look na bersyon."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Redaction", "Kaligtasan ng Dokumento", "Look Scanned"]
 keywords:
   - "Epstein files"

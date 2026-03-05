@@ -4,7 +4,7 @@ draft: false
 title: "Svarta Fält Är Inte Redigering (Ja, PDF:erna med “Epstein files” påminde alla igen)"
 summary: "En snabb och praktisk notis om varför svarta rutor i PDF kan fallera, vilka enkla kontroller jag gör innan jag skickar något, och varför jag använder Look Scanned för den slutliga skannade leveransen."
 description: "En snabb och praktisk notis om varför svarta rutor i PDF kan fallera, vilka enkla kontroller jag gör innan jag skickar något, och varför jag använder Look Scanned för den slutliga skannade leveransen."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Redigering", "Dokumentsäkerhet", "Look Scanned"]
 keywords:
   - "Epstein files"

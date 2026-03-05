@@ -4,7 +4,7 @@ draft: false
 title: "Черные полосы — это не редактирование (Да, PDF из “Epstein files” снова всем это напомнили)"
 summary: "Короткая практичная заметка о том, почему черные блоки в PDF могут не защитить данные, какие простые проверки я делаю перед отправкой и почему использую Look Scanned для финальной версии в стиле скана."
 description: "Короткая практичная заметка о том, почему черные блоки в PDF могут не защитить данные, какие простые проверки я делаю перед отправкой и почему использую Look Scanned для финальной версии в стиле скана."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Редактирование", "Безопасность Документов", "Look Scanned"]
 keywords:
   - "Epstein files"

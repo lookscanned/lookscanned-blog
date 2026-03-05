@@ -4,7 +4,7 @@ draft: false
 title: "Thanh Đen Không Phải Là Che Dữ Liệu Đúng Cách (Đúng vậy, PDF “Epstein Files” lại nhắc mọi người lần nữa)"
 summary: "Một ghi chú ngắn, thực tế về lý do các ô đen trong PDF có thể thất bại, các bước kiểm tra đơn giản tôi làm trước khi gửi, và vì sao tôi dùng Look Scanned cho bản phát hành cuối kiểu scan."
 description: "Một ghi chú ngắn, thực tế về lý do các ô đen trong PDF có thể thất bại, các bước kiểm tra đơn giản tôi làm trước khi gửi, và vì sao tôi dùng Look Scanned cho bản phát hành cuối kiểu scan."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Che Dữ Liệu", "An Toàn Tài Liệu", "Look Scanned"]
 keywords:
   - "Epstein files"

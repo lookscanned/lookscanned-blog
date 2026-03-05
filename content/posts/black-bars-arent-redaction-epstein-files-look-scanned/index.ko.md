@@ -4,7 +4,7 @@ draft: false
 title: "검은 막대는 레닥션이 아니다 (맞다, “Epstein files” PDF 논쟁이 또 모두에게 상기시켰다)"
 summary: "PDF의 검은 박스가 왜 실패할 수 있는지, 보내기 전에 내가 하는 간단한 점검, 그리고 최종 스캔 스타일 결과물에 Look Scanned를 쓰는 이유를 짧고 실무적으로 정리한다."
 description: "PDF의 검은 박스가 왜 실패할 수 있는지, 보내기 전에 내가 하는 간단한 점검, 그리고 최종 스캔 스타일 결과물에 Look Scanned를 쓰는 이유를 짧고 실무적으로 정리한다."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "레닥션", "문서 보안", "Look Scanned"]
 keywords:
   - "Epstein files"

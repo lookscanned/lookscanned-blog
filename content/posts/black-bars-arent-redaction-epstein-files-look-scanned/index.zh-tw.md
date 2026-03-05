@@ -4,7 +4,7 @@ draft: false
 title: "黑條不等於遮敏（沒錯，「愛潑斯坦檔案」PDF 爭論又提醒了大家一次）"
 summary: "一篇快速、實用的提醒：為什麼 PDF 裡的黑框會失效、我在送出文件前會做哪些簡單檢查，以及為什麼我會用 Look Scanned 產出最終的掃描風格版本。"
 description: "一篇快速、實用的提醒：為什麼 PDF 裡的黑框會失效、我在送出文件前會做哪些簡單檢查，以及為什麼我會用 Look Scanned 產出最終的掃描風格版本。"
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "遮敏", "文件安全", "Look Scanned"]
 keywords:
   - "愛潑斯坦檔案"

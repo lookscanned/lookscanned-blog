@@ -4,7 +4,7 @@ draft: false
 title: "A fekete sáv nem redakció (Igen, az „Epstein files” PDF-ek újra emlékeztettek mindenkit)"
 summary: "Rövid, gyakorlatias jegyzet arról, miért bukhatnak el a fekete dobozok a PDF-ben, milyen egyszerű ellenőrzéseket végzek küldés előtt, és miért használom a Look Scannedet a végső, szkennelt stílusú verzióhoz."
 description: "Rövid, gyakorlatias jegyzet arról, miért bukhatnak el a fekete dobozok a PDF-ben, milyen egyszerű ellenőrzéseket végzek küldés előtt, és miért használom a Look Scannedet a végső, szkennelt stílusú verzióhoz."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Redakció", "Dokumentumbiztonság", "Look Scanned"]
 keywords:
   - "Epstein files"

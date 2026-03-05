@@ -4,7 +4,7 @@ draft: false
 title: "Black Bars Aren’t Redaction (Yes, the “Epstein Files” PDFs Reminded Everyone Again)"
 summary: "A quick, practical note on why black boxes in PDFs can fail, the simple checks I do before sending anything, and why I use Look Scanned for the final scan-style deliverable."
 description: "A quick, practical note on why black boxes in PDFs can fail, the simple checks I do before sending anything, and why I use Look Scanned for the final scan-style deliverable."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Redaction", "Document Safety", "Look Scanned"]
 keywords:
   - "Epstein files"

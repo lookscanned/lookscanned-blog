@@ -4,7 +4,7 @@ draft: false
 title: "Le barre nere non sono oscuramento vero (Sì, i PDF degli “Epstein files” lo hanno ricordato a tutti, di nuovo)"
 summary: "Una nota breve e pratica su perché i riquadri neri nei PDF possono fallire, quali controlli semplici faccio prima di inviare e perché uso Look Scanned per la versione finale in stile scansione."
 description: "Una nota breve e pratica su perché i riquadri neri nei PDF possono fallire, quali controlli semplici faccio prima di inviare e perché uso Look Scanned per la versione finale in stile scansione."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Oscuramento", "Sicurezza Documentale", "Look Scanned"]
 keywords:
   - "Epstein files"

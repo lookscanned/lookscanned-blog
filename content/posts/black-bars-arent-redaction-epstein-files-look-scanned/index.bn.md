@@ -4,7 +4,7 @@ draft: false
 title: "কালো বার মানেই রিড্যাকশন নয় (হ্যাঁ, Epstein files-এর PDF বিতর্ক আবার সেটাই মনে করিয়ে দিল)"
 summary: "একটি ছোট, ব্যবহারিক নোট: PDF-এর কালো বক্স কেন ভরসাযোগ্য নাও হতে পারে, পাঠানোর আগে আমি কোন সহজ যাচাই করি, আর কেন শেষ ধাপে স্ক্যান-ধাঁচের আউটপুটের জন্য Look Scanned ব্যবহার করি।"
 description: "একটি ছোট, ব্যবহারিক নোট: PDF-এর কালো বক্স কেন ভরসাযোগ্য নাও হতে পারে, পাঠানোর আগে আমি কোন সহজ যাচাই করি, আর কেন শেষ ধাপে স্ক্যান-ধাঁচের আউটপুটের জন্য Look Scanned ব্যবহার করি।"
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "রিড্যাকশন", "ডকুমেন্ট নিরাপত্তা", "Look Scanned"]
 keywords:
   - "Epstein files"

@@ -4,7 +4,7 @@ draft: false
 title: "פסים שחורים הם לא השחרה אמיתית (כן, ה-PDF של Epstein files הזכירו לכולם שוב)"
 summary: "הערה קצרה ומעשית על למה קופסאות שחורות ב-PDF עלולות להיכשל, אילו בדיקות פשוטות אני עושה לפני שליחה, ולמה אני משתמש ב-Look Scanned לגרסה הסופית בסגנון סריקה."
 description: "הערה קצרה ומעשית על למה קופסאות שחורות ב-PDF עלולות להיכשל, אילו בדיקות פשוטות אני עושה לפני שליחה, ולמה אני משתמש ב-Look Scanned לגרסה הסופית בסגנון סריקה."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "השחרה", "אבטחת מסמכים", "Look Scanned"]
 keywords:
   - "Epstein files"

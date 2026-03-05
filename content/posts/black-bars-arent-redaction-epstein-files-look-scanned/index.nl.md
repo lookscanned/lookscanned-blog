@@ -4,7 +4,7 @@ draft: false
 title: "Zwarte balken zijn geen redactie (Ja, de PDF’s rond “Epstein files” herinnerden iedereen daar opnieuw aan)"
 summary: "Een korte, praktische notitie over waarom zwarte vlakken in PDF’s kunnen falen, welke simpele controles ik doe vóór verzending, en waarom ik Look Scanned gebruik voor de definitieve versie met scanuitstraling."
 description: "Een korte, praktische notitie over waarom zwarte vlakken in PDF’s kunnen falen, welke simpele controles ik doe vóór verzending, en waarom ik Look Scanned gebruik voor de definitieve versie met scanuitstraling."
-slug: "black-bars-arent-redaction-epstein-files-look-scanned"
+slug: "black-bars-arent-redaction-pdf-redaction-checklist"
 tags: ["PDF", "Redactie", "Documentveiligheid", "Look Scanned"]
 keywords:
   - "Epstein files"
