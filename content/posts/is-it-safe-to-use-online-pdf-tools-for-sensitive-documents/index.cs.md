@@ -201,7 +201,7 @@ Online PDF nástroje bývají obvykle v pořádku pro:
 
 Na té poslední kategorii záleží. Pokud workflow zní „udělej z toho čistý finální výstup ve stylu skenu“, mnohem raději použiju lokální nástroj v prohlížeči, než abych kvůli papírové textuře a lehkému naklopení nahrával smlouvu do serverového konvertoru.
 
-Přesně pro takový úkol dává Look Scanned smysl. Pokud je dokument už hotový a vy jen potřebujete, aby výsledný soubor vypadal jako poctivý scan, lokální workflow v prohlížeči je mnohem lepší volba než předat soubor generické službě typu upload-and-convert. Pokud chcete praktický postup, tuhle část pokrývá [Jak udělat, aby PDF vypadalo jako naskenované](../make-pdf-look-scanned/).
+Přesně pro takový úkol dává [Look Scanned](https://lookscanned.io) smysl. Pokud je dokument už hotový a vy jen potřebujete, aby výsledný soubor vypadal jako poctivý scan, lokální workflow v prohlížeči je mnohem lepší volba než předat soubor generické službě typu upload-and-convert. Pokud chcete praktický postup, tuhle část pokrývá [Jak udělat, aby PDF vypadalo jako naskenované](../make-pdf-look-scanned/).
 
 ## Kdy bych soubor vůbec nenahrál
 

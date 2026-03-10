@@ -201,7 +201,7 @@ Las herramientas PDF online suelen estar bien para:
 
 Esa última categoría importa. Si el flujo es "haz que esto parezca un entregable final limpio con aspecto escaneado", prefiero con mucho una herramienta local que corre en el navegador antes que subir un contrato a un conversor en servidor solo para añadirle textura de papel y un poco de inclinación.
 
-Ese es exactamente el tipo de trabajo en el que Look Scanned tiene sentido. Si el documento ya está final y solo necesitas que el archivo final parezca un escaneo de verdad, un flujo local en el navegador encaja mucho mejor que entregar el archivo a un servicio genérico de subir y convertir. Si quieres la guía práctica, [Cómo hacer que un PDF parezca escaneado](../make-pdf-look-scanned/) cubre esa parte.
+Ese es exactamente el tipo de trabajo en el que [Look Scanned](https://lookscanned.io) tiene sentido. Si el documento ya está final y solo necesitas que el archivo final parezca un escaneo de verdad, un flujo local en el navegador encaja mucho mejor que entregar el archivo a un servicio genérico de subir y convertir. Si quieres la guía práctica, [Cómo hacer que un PDF parezca escaneado](../make-pdf-look-scanned/) cubre esa parte.
 
 ## Cuándo no subiría el archivo en absoluto
 
