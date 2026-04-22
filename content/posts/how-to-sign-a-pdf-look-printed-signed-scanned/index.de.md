@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Wie man ein PDF so unterschreibt, dass es aussieht, als hätte man es gedruckt, unterschrieben und gescannt"
 summary: "Eine digitale Signatur reicht nicht, wenn der Empfänger eine gescannt wirkende, unterschriebene Kopie erwartet. Hier ist der Zwei-Schritt-Workflow, der die Print-Sign-Scan-Ästhetik ohne Drucker trifft – und wann dieser Ansatz die falsche Wahl ist."

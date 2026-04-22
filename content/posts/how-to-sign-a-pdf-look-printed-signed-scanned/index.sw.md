@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Jinsi ya Kutia Saini PDF Ili Ionekane Kana Kwamba Umeichapisha, Umeitia Saini, na Umeiscan"
 summary: "Kuongeza saini ya kidijitali hakutoshi wakati mpokeaji anatarajia nakala iliyoscan na kutiwa saini. Huu hapa ni mtiririko wa hatua mbili unaolingana na mwonekano wa kuchapisha-kutia saini-kuscan bila printa, na lini njia hii si chaguo sahihi."

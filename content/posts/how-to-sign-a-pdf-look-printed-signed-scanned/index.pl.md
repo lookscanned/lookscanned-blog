@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Jak podpisać PDF, by wyglądał, jakbyś go wydrukował, podpisał i zeskanował"
 summary: "Samo dodanie podpisu cyfrowego nie wystarczy, gdy odbiorca spodziewa się podpisanej kopii wyglądającej jak skan. Oto dwuetapowy proces, który trafia w estetykę „wydrukuj-podpisz-zeskanuj” bez drukarki – i sytuacje, w których takie podejście jest złym wyborem."

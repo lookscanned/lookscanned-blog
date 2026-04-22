@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Hoe om 'n PDF te teken sodat dit lyk asof jy dit gedruk, geteken en geskandeer het"
 summary: "'n Digitale handtekening byvoeg is nie genoeg wanneer die ontvanger 'n geskandeerde afgetekende kopie verwag nie. Hier is die tweestap-werkvloei wat die druk-teken-skandeer-estetika pas sonder 'n drukker, en wanneer hierdie benadering die verkeerde keuse is."

@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Hogyan írj alá egy PDF-et úgy, hogy olyan legyen, mintha kinyomtattad, aláírtad és beszkennelted volna"
 summary: "A digitális aláírás hozzáadása nem elég, ha a címzett szkennelt kinézetű aláírt példányt vár. Itt a kétlépéses munkafolyamat, amely nyomtató nélkül is eltalálja a print-sign-scan esztétikát – és hogy mikor rossz választás ez a megközelítés."

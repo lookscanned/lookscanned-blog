@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Jak podepsat PDF, aby to vypadalo, že jste ho vytiskli, podepsali a naskenovali"
 summary: "Přidání digitálního podpisu nestačí, když příjemce očekává naskenovaně vypadající podepsanou kopii. Zde je dvoukrokový postup, který odpovídá estetice tisk-podpis-sken bez tiskárny, a kdy je tento přístup špatnou volbou."

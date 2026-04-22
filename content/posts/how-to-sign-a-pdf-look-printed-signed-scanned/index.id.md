@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Cara Menandatangani PDF Agar Terlihat Seperti Anda Mencetak, Menandatangani, dan Memindai"
 summary: "Menambahkan tanda tangan digital saja tidak cukup ketika penerima mengharapkan salinan yang terlihat seperti hasil pindai. Berikut alur dua langkah yang menyamai estetika cetak-tanda tangan-pindai tanpa printer, dan kapan pendekatan ini bukan pilihan yang tepat."

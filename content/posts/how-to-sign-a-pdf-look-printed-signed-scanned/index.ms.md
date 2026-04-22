@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Cara Menandatangani PDF Supaya Ia Kelihatan Seperti Anda Mencetak, Menandatangani, dan Mengimbasnya"
 summary: "Menambah tandatangan digital sahaja tidak mencukupi apabila penerima mengharapkan salinan bertandatangan yang kelihatan diimbas. Ini aliran kerja dua langkah yang menyamai estetika cetak-tandatangan-imbas tanpa pencetak, dan bila pendekatan ini adalah pilihan yang salah."

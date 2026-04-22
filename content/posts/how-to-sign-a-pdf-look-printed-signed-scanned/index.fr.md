@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Comment signer un PDF pour qu'il ait l'air imprimé, signé et scanné"
 summary: "Ajouter une signature numérique ne suffit pas quand le destinataire attend une copie signée qui a l'air scannée. Voici le workflow en deux étapes qui reproduit l'esthétique impression-signature-scan sans imprimante, et les cas où cette approche est le mauvais choix."

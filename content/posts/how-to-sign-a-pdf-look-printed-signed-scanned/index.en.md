@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "How to Sign a PDF So It Looks Like You Printed, Signed, and Scanned It"
 summary: "Adding a digital signature is not enough when the recipient expects a scanned-looking signed copy. Here is the two-step workflow that matches the print-sign-scan aesthetic without a printer, and when this approach is the wrong choice."

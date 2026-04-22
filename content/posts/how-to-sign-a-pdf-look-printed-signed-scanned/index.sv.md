@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Hur du signerar en PDF så att den ser ut som att du skrivit ut, signerat och skannat den"
 summary: "Att lägga till en digital signatur räcker inte när mottagaren förväntar sig en skannad och signerad kopia. Här är arbetsflödet i två steg som träffar print-sign-scan-estetiken utan skrivare, och när den här metoden är fel val."

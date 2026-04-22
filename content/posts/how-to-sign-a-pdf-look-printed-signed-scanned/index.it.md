@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Come firmare un PDF così da farlo sembrare stampato, firmato e scansionato"
 summary: "Aggiungere una firma digitale non basta quando il destinatario si aspetta una copia firmata con l'aspetto di una scansione. Ecco il flusso in due passaggi che ricrea l'estetica stampa-firma-scansione senza stampante, e quando questo approccio è la scelta sbagliata."

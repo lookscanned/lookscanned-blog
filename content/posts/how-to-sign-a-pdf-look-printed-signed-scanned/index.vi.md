@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Cách ký PDF sao cho trông như bạn đã in, ký, rồi scan"
 summary: "Chỉ thêm chữ ký số là chưa đủ khi người nhận mong đợi một bản ký trông giống bản scan. Đây là quy trình hai bước mô phỏng diện mạo in-ký-scan mà không cần máy in, và khi nào cách làm này là lựa chọn sai."

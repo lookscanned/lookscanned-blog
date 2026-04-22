@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Como assinar um PDF para parecer que você imprimiu, assinou e escaneou"
 summary: "Adicionar uma assinatura digital não basta quando o destinatário espera uma cópia assinada com cara de escaneada. Este é o fluxo em dois passos que reproduz a estética imprimir-assinar-escanear sem impressora — e quando essa abordagem é a escolha errada."

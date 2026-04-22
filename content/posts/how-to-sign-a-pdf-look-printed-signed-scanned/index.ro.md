@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Cum să semnezi un PDF ca să arate ca și cum l-ai fi printat, semnat și scanat"
 summary: "Adăugarea unei semnături digitale nu e suficientă atunci când destinatarul așteaptă o copie semnată cu aspect scanat. Iată fluxul în doi pași care reproduce estetica print-semnează-scanează fără imprimantă și când această abordare este alegerea greșită."

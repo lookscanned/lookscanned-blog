@@ -1,5 +1,5 @@
 ---
-date: "2026-04-22T22:00:00+08:00"
+date: "2026-04-22T15:00:00+08:00"
 draft: false
 title: "Bir PDF'yi Yazdırıp İmzalayıp Taramışsınız Gibi Görünecek Şekilde Nasıl İmzalarsınız"
 summary: "Alıcı taranmış görünümlü imzalı bir kopya beklediğinde dijital imza eklemek yeterli değildir. İşte yazıcı olmadan yazdır-imzala-tara estetiğini karşılayan iki adımlı iş akışı ve bu yaklaşımın ne zaman yanlış seçim olduğu."
