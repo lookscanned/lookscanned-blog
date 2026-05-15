@@ -1,60 +1,57 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-- `content/posts/<slug>/`: Each post lives in one folder with language files like `index.en.md`, `index.zh.md`, and `index.fr.md`.
-- `config/_default/`: Split Hugo config (`hugo.yml`, `languages.yml`, `params.yml`, `outputs.yml`).
-- `layouts/partials/`: Theme override entry points (`header.html`, `comments.html`, `extend_head.html`).
-- `assets/css/extended/`: Custom CSS additions for UI tweaks.
-- `static/`: Public static files (`favicon*`, `robots.txt`, `_headers`).
-- `archetypes/default.md`: Default front matter template for new content.
-- `themes/PaperMod/`: Git submodule theme source. Treat as upstream; do not edit directly.
+- `src/content/posts/<slug>/`: Each post lives in one folder with language files like `index.en.md`, `index.zh.md`, `index.fr.md` (32 per slug).
+- `src/i18n/`: Locale catalog (`locales.config.mjs`), generated site data (`locales.ts`), and generated UI strings (`ui.ts`).
+- `src/layouts/`: `BaseLayout.astro` and `PostLayout.astro`.
+- `src/components/`: All UI building blocks (Header, Footer, LangDropdown, PostCard, Search, etc.).
+- `src/pages/`: File-based routing. English routes at the root; other locales under `[locale]/`.
+- `src/styles/global.css`: Tailwind v4 entry + theme tokens.
+- `static/`: Public static files (`favicon*`, `robots.txt`, `_headers`, `_redirects`).
+- `scripts/`: One-off / build-time scripts (`build-i18n.mjs`, `url-parity-check.mjs`, `hugo-urls.txt`).
 
 ## Build, Test, and Development Commands
-Use these commands from the repository root:
+Run these from the repository root:
 
 ```bash
-hugo version                                   # Expect v0.150.0+
-git submodule update --init --recursive       # Required after clone; fetches PaperMod
-hugo server -D                                 # Local dev with drafts (http://localhost:1313)
-hugo server                                    # Preview published content only
-hugo --minify                                  # Production build to ./public
-rm -rf public resources && hugo --minify       # Clean build when diagnosing issues
-hugo --minify && ls public/index.html          # Quick build validation
+npm ci                                          # Install dependencies
+npm run dev                                     # Local dev (http://localhost:4321)
+npm run check                                   # Astro type check
+npm run build:astro                             # Astro build → dist/
+npm run build                                   # Astro + Pagefind (production)
+node scripts/url-parity-check.mjs               # URL parity regression gate
 ```
 
 ## Coding Style & Naming Conventions
-- Use YAML front matter with `---` delimiters and double-quoted strings.
+- Post front matter: YAML, `---` delimiters, double-quoted strings.
 - Required post keys: `date`, `draft`, `title`, `summary`, `description`, `tags`.
 - Keep `summary` and `description` aligned unless there is a strong reason to diverge.
-- Use kebab-case slugs (`content/posts/make-pdf-look-scanned/`).
+- Use kebab-case slugs (`src/content/posts/make-pdf-look-scanned/`).
 - Language files must use `index.<lang>.md` naming.
 - Keep content on-topic: Look Scanned, PDF workflows, web engineering, privacy-first tooling.
-- Follow existing formatting style in touched files and avoid unrelated reformat churn.
+- Components in `src/components/` are PascalCase `.astro` files.
 
 ## Content & i18n Workflow
-- Create English first:
-```bash
-hugo new content/posts/<slug>/index.en.md
-```
-- Keep date, section structure, and key links consistent across all translations.
-- This blog ships 32 languages. Before merge, avoid i18n drift by syncing updated posts across language files.
-- RTL languages (`ar`, `he`, `ur`) should remain normal Markdown; direction is handled in language config.
+- Create English first as `src/content/posts/<slug>/index.en.md`.
+- Translate all 31 other languages with the same date and structure.
+- RTL languages (`ar`, `he`, `ur`) use plain markdown — direction comes from `<html dir>` in the layout.
+- Edits to site-wide copy (menus, home blurb, descriptions) belong in the source YAMLs in your hand-maintained location and then re-generated via `node scripts/build-i18n.mjs`. UI strings come from the same generator.
 
 ## Validation Checklist
-- There is no separate automated test suite; build success is the primary validation gate.
-- Always run `hugo --minify` before opening a PR.
-- For content/UI changes, run `hugo server -D` and manually verify one English page, one non-Latin translation, and one RTL translation when language or layout logic is touched.
-- If `config/_default/languages.yml` changes, verify language navigation and page routing locally.
+- `npm run check` must pass (no type errors).
+- `npm run build` must succeed and produce `dist/`.
+- `node scripts/url-parity-check.mjs` must exit 0 (no uncovered URL regressions).
+- For content/UI changes, spot-check one English page, one CJK locale (`zh`), and one RTL locale (`ar`).
 
 ## Commit & Pull Request Guidelines
-- Follow Conventional Commit patterns seen in history: `feat:`, `fix:`, `docs:`, `chore:`, `perf:`.
-- Use `post:` for new article commits (example: `post: How to Make PDF Look Scanned`).
-- PR titles should also follow Conventional Commits.
+- Follow Conventional Commits: `feat:`, `fix:`, `docs:`, `chore:`, `perf:`, `ci:`, `refactor:`.
+- Use `post:` for new article commits (e.g., `post: How to Make PDF Look Scanned`).
+- PR titles use the same format.
 - Keep each commit focused on one logical change.
-- PRs should include a concise summary, linked issue(s) when applicable, screenshots for visual/layout updates, and confirmation that `hugo --minify` passed locally.
-- For post updates, list which languages were updated and whether full 32-language sync is complete.
+- PRs should include a concise summary, linked issues when applicable, and confirmation that the build + parity check passed locally.
+- For post updates, list which languages were updated and whether the full 32-language sync is complete.
 
 ## Deployment, Security, and Configuration Notes
 - CI behavior: all pushes/PRs run build; PR/non-main branches deploy to Cloudflare staging; `main` deploys to Cloudflare production and GitHub Pages.
-- Never commit secrets or API tokens. Deployment credentials must stay in GitHub/Cloudflare secret stores.
-- Coordinate before changing analytics, SEO, or header behavior in `config/_default/*.yml` or `static/_headers`, since these affect all languages and environments.
+- Never commit secrets or API tokens. Deployment credentials stay in GitHub/Cloudflare secret stores.
+- Coordinate before changing analytics, SEO, or header behavior in `astro.config.mjs`, `src/layouts/BaseLayout.astro`, or `static/_headers` / `static/_redirects` — these affect all languages and environments.

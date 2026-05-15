@@ -4,184 +4,148 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a multilingual Hugo-based blog for Look Scanned (https://lookscanned.io), a privacy-first browser-based PDF scanning tool. The blog publishes technical content about web development, PDF processing, and privacy-focused tools in 32 languages.
+This is a multilingual Astro-based blog for Look Scanned (https://lookscanned.io), a privacy-first browser-based PDF scanning tool. The blog publishes technical content about web development, PDF processing, and privacy-focused tools in 32 languages.
 
 ## Development Commands
 
 ### Local Development
 ```bash
-# Start development server with drafts
-hugo server -D
+# Install deps (first time / after pulling)
+npm ci
 
-# Start development server (published posts only)
-hugo server
+# Start the dev server (http://localhost:4321)
+npm run dev
 
-# The site will be available at http://localhost:1313
+# Type check
+npm run check
 ```
 
 ### Build
 ```bash
-# Build site with minification
-hugo --minify
+# Production build: Astro static output + Pagefind index
+npm run build
 
-# Build output goes to ./public directory
+# Astro only (skip the Pagefind step — useful when iterating fast)
+npm run build:astro
 ```
 
-### Theme Management
+Astro emits to `dist/`. The Pagefind step writes `dist/_pagefind/`.
+
+### URL parity check
 ```bash
-# Update PaperMod theme submodule
-git submodule update --init --recursive
+# Diff the Astro build vs the Hugo URL snapshot (scripts/hugo-urls.txt).
+# Exits non-zero if any URL is missing and not covered by static/_redirects.
+node scripts/url-parity-check.mjs
 ```
 
 ## Architecture
 
 ### Multilingual Structure
 
-The blog supports 32 languages with a highly structured i18n approach:
+32 languages, English as the default (no `/en/` URL prefix; English lives at `/`).
 
-- **Primary language**: English (`en`) - all content starts here
-- **Language files**: `config/_default/languages.yml` contains configuration for all 32 languages
-- **Content structure**: Each blog post exists as a directory under `content/posts/{slug}/` with separate markdown files per language (e.g., `index.en.md`, `index.zh.md`, `index.es.md`)
-- **RTL languages**: Arabic (`ar`), Hebrew (`he`), and Urdu (`ur`) are configured with `languageDirection: rtl` in the language config
+- **Language catalog**: `src/i18n/locales.config.mjs` (locale code, hreflang, dir, weight)
+- **Per-locale site data** (title, description, home blurb, menu items): `src/i18n/locales.ts` — generated from the source data; do not edit by hand. Regenerate with `node scripts/build-i18n.mjs`.
+- **UI strings** (prev/next, reading time, etc.): `src/i18n/ui.ts` — same generator.
+- **RTL languages**: `ar`, `he`, `ur` (configured in `src/i18n/locales.config.mjs`).
 
-### Content Organization
+### Content Layout
 
 ```
-content/
-├── posts/           # Blog posts - each post is a directory with index.{lang}.md files
-├── archives/        # Archive pages (translated for all languages)
-└── search/          # Search pages (translated for all languages)
+src/content/posts/<slug>/index.<lang>.md
 ```
 
-Each post directory contains 32 files: `index.en.md`, `index.zh.md`, `index.zh-tw.md`, `index.es.md`, etc.
+Each post directory holds 32 files: `index.en.md`, `index.zh.md`, `index.ar.md`, etc.
 
-### Hugo Configuration
+The Content Collection (`src/content.config.ts`) reads them with a custom `generateId` that produces `<locale>/<slug>` IDs — necessary because Astro's default ID generator would mangle `index.zh-tw.md` by stripping its dots.
 
-Configuration is split across multiple files in `config/_default/`:
-- `hugo.yml` - Base Hugo configuration
-- `languages.yml` - Language-specific settings, menus, and metadata
-- `params.yml` - Theme parameters and site-wide settings
-- `outputs.yml` - Output formats configuration
+### Post Front Matter
 
-### Theme Customization
-
-The blog uses the PaperMod theme as a git submodule. Customizations are made through:
-- `layouts/partials/header.html` - Custom header with language dropdown selector
-- `layouts/partials/comments.html` - Comments integration
-- `layouts/partials/extend_head.html` - Additional head content
-- `config/_default/params.yml` - Theme parameters
-
-## Creating New Blog Posts
-
-There's a Cursor command at `.cursor/commands/new-post.md` that documents the workflow for creating multilingual posts. Key points:
-
-1. Create English version first using `hugo new content content/posts/{slug}/index.en.md`
-2. Write full English content with proper front matter (title, summary, description, tags, date)
-3. Create translations for all 31 other languages: `af`, `ar`, `bn`, `cs`, `de`, `el`, `es`, `fil`, `fr`, `he`, `hi`, `hu`, `id`, `it`, `ja`, `ko`, `ms`, `nl`, `pl`, `pt`, `ro`, `ru`, `sv`, `sw`, `th`, `tr`, `uk`, `ur`, `vi`, `zh`, `zh-tw`
-4. Translate all content including title, summary, description, tags, and body
-5. Keep emojis in headings and maintain the call-to-action link to lookscanned.io
-
-### Post Front Matter Format
-
-Front matter uses YAML syntax with `---` delimiters. Always use double quotes for strings to avoid issues with apostrophes in multilingual content (e.g., French "C'est"):
+YAML, double-quoted strings (handles apostrophes in French, Portuguese, etc.):
 
 ```yaml
 ---
 date: "2025-01-20T15:30:00+08:00"
 draft: false
 title: "Post Title"
-summary: "Brief summary of the post"
-description: "Brief summary of the post"
-tags: ["tag1", "tag2", "tag3"]
+summary: "Brief summary"
+description: "Brief summary"
+tags: ["tag1", "tag2"]
+# slug: "custom-url-slug"   # optional override of the directory name
 ---
 ```
 
-Note: `summary` and `description` typically contain the same content.
+`summary` and `description` are typically the same. `slug` is optional — one
+existing post (`black-bars-arent-redaction-epstein-files-look-scanned`) uses
+it to override the URL.
+
+### Routing
+
+- `/`                                 — English home
+- `/<lang>/`                          — locale home
+- `/posts/<slug>/`                    — English post detail
+- `/<lang>/posts/<slug>/`             — locale post detail
+- `/archives/` + `/<lang>/archives/`  — chronological archive
+- `/tags/` + `/<lang>/tags/`          — tag index
+- `/tags/<tag>/` + locale variants    — single-tag listing
+- `/search/` + `/<lang>/search/`      — Pagefind UI
+- `/rss.xml` + `/<lang>/rss.xml`      — 32 feeds
+- `/sitemap-index.xml`                — multi-locale sitemap
+
+URLs always end with a trailing slash (Astro config: `trailingSlash: "always"`).
+
+### Components & Layouts
+
+- `src/layouts/BaseLayout.astro` — html/head, header, footer, dark-mode init script, hreflang alternates, speculation rules
+- `src/layouts/PostLayout.astro` — prose body, reading time, share/translations row, prev/next nav, Giscus
+- `src/components/Header.astro` — site title, menu, LangDropdown, ThemeToggle
+- `src/components/LangDropdown.astro` — `<details>`-based dropdown of locale options
+- `src/components/Giscus.astro` — comments, with PaperMod's locale map preserved
+
+### Styling
+
+Tailwind v4 via `@tailwindcss/vite`. Configuration lives entirely in `src/styles/global.css` (CSS-first via `@theme`). `@tailwindcss/typography` powers the `prose` classes used on post bodies. Font stack is `system-ui` with CJK / RTL fallbacks — zero font downloads.
+
+### Static Assets
+
+`static/` (Astro's `publicDir`) holds:
+- `_headers` — Cloudflare Pages cache rules
+- `_redirects` — catches Hugo-era URLs and 301s them to their Astro equivalents
+- favicons + robots.txt
+
+## Creating New Blog Posts
+
+See [.claude/commands/new-post.md](.claude/commands/new-post.md) for the full workflow. Short version: 32 markdown files, one per locale, all with the same `date` and the same body structure.
 
 ## Deployment
 
-The site has automated CI/CD via GitHub Actions (`.github/workflows/ci.yml`):
+GitHub Actions (`.github/workflows/ci.yml`):
 
-### On Pull Requests:
-- Builds the site
-- Deploys preview to Cloudflare Pages staging
+- **On pull requests**: build + deploy preview to Cloudflare Pages staging
+- **On push to `main`**: build + deploy to Cloudflare Pages production (`https://blog.lookscanned.io`) and GitHub Pages
 
-### On Push to Main:
-- Builds the site
-- Deploys to Cloudflare Pages (primary: https://blog.lookscanned.io)
-- Deploys to GitHub Pages (secondary)
+The build job runs:
+1. `npm ci`
+2. `npm run check` (Astro type check)
+3. `npm run build` (Astro + Pagefind)
+4. `node scripts/url-parity-check.mjs` (regression gate)
 
 ## Git Commit Conventions
 
-This repository follows [Conventional Commits](https://www.conventionalcommits.org/) for all commit messages and pull request titles.
-
-### Commit Message Format
-
-```
-<type>(<scope>): <subject>
-
-<body>
-
-<footer>
-```
-
-### Standard Types
-
-- `feat`: New features
-- `fix`: Bug fixes
-- `docs`: Documentation changes
-- `perf`: Performance improvements
-- `refactor`: Code refactoring
-- `chore`: Maintenance tasks (dependencies, etc.)
-- `ci`: CI/CD changes
-
-### Custom Type: `post`
-
-Use `post:` for new blog post additions:
+Conventional Commits. Standard types: `feat`, `fix`, `docs`, `perf`, `refactor`, `chore`, `ci`. Custom type `post:` for new blog post additions.
 
 ```bash
-git commit -m "post: Boost Performance by 60% with ImageBitmap in Look Scanned"
-git commit -m "post: How to Convert Digital Files into Realistic Scanned Copies"
+git commit -m "post: How to Make PDFs Look Scanned"
+git commit -m "feat: add dark mode to the post detail page"
+git commit -m "fix(i18n): correct Filipino menu translation for tags"
 ```
 
-### Examples
-
-```bash
-# New feature
-git commit -m "feat(cursor): add new-post command for creating multilingual blog posts"
-
-# Bug fix
-git commit -m "fix: complete missing i18n translations for boost-performance post"
-
-# Documentation
-git commit -m "docs: add CLAUDE.md guide and update archetype to YAML format"
-
-# New blog post
-git commit -m "post: Building a Multilingual Blog with Hugo and PaperMod"
-```
-
-### Pull Request Titles
-
-Pull request titles must also follow Conventional Commits format:
-
-```
-feat: add user authentication system
-fix: resolve rendering issue on mobile devices
-docs: update API documentation
-post: introduce new blog post about PDF processing
-```
+Pull request titles use the same format.
 
 ## Important Conventions
 
-1. **Content Focus**: All posts should relate to Look Scanned, web development, PDF processing, or privacy-first tools
-2. **Language Consistency**: When creating/updating posts, ensure all 32 language versions are synchronized
-3. **Front Matter Format**: Use YAML with `---` delimiters. Always use double quotes for strings to handle languages with apostrophes (e.g., French: "C'est")
-4. **Theme Files**: The theme is a git submodule - don't modify files in `themes/PaperMod/` directly. Use layouts overrides in `layouts/` instead
-5. **Git Submodules**: Always init/update submodules after cloning: `git submodule update --init --recursive`
-
-## Recent Git Activity
-
-The repository is on branch `feat/new-post-command` with recent work on:
-- Adding the new-post command for multilingual blog creation
-- Completing missing i18n translations for multiple posts
-- Improving automation for multilingual content management
+1. **Content focus**: Look Scanned, web development, PDF processing, privacy-first tools.
+2. **Language consistency**: all 32 languages must be synchronized when updating any post.
+3. **Front matter**: YAML, double-quoted strings.
+4. **Components**: prefer adding `.astro` components under `src/components/` instead of inlining markup into pages.
+5. **i18n changes**: edit `src/i18n/locales.config.mjs` for routing-level data; for site copy and UI strings, edit the source YAMLs and re-run `scripts/build-i18n.mjs`.
