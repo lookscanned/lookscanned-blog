@@ -14,22 +14,31 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
         with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+          fetch-depth: 0 # full history so any plugin that wants git data has it
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          hugo-version: "latest"
+          node-version: "22"
+          cache: "npm"
 
-      - name: Build Site
-        run: hugo --minify
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check
+        run: npm run check
+
+      - name: Build (Astro + Pagefind)
+        run: npm run build
+
+      - name: URL parity check vs Hugo snapshot
+        run: node scripts/url-parity-check.mjs
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v7
         with:
-          name: public
-          path: public
+          name: site
+          path: dist
 
   deploy-to-cloudflare-pages-staging:
     name: Deploy to Cloudflare Pages Staging
@@ -51,8 +60,8 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@v8
         with:
-          name: public
-          path: public
+          name: site
+          path: dist
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
@@ -60,7 +69,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=lookscanned-blog
+          command: pages deploy dist --project-name=lookscanned-blog
 
   deploy-to-cloudflare-pages:
     name: Deploy to Cloudflare Pages
@@ -81,8 +90,8 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@v8
         with:
-          name: public
-          path: public
+          name: site
+          path: dist
 
       - name: Deploy to Cloudflare Pages Release
         uses: cloudflare/wrangler-action@v3
@@ -90,7 +99,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=lookscanned-blog --branch=main
+          command: pages deploy dist --project-name=lookscanned-blog --branch=main
 
   deploy-to-github-pages:
     name: Deploy to GitHub Pages
@@ -114,8 +123,8 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@v8
         with:
-          name: public
-          path: public
+          name: site
+          path: dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -123,8 +132,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          # Upload entire repository
-          path: "public"
+          path: "dist"
 
       - name: Deploy to GitHub Pages
         id: deployment
