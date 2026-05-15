@@ -27,7 +27,7 @@ const description = post.entry.data.description ?? post.entry.data.summary ?? ""
 ---
 
 <BaseLayout title={title} description={description} locale={post.locale} alternates={alternates}>
-  <article class="mx-auto max-w-2xl px-6 py-12">
+  <article class="mx-auto max-w-2xl px-6 py-12" data-pagefind-body>
     <header class="mb-10">
       <h1 class="text-3xl font-medium tracking-tight text-balance">
         {post.entry.data.title}

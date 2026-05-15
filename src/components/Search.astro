@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getLocale } from "../i18n";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const meta = getLocale(locale);
+const menuEntry = meta.data.menu.find((m) => m.url === "search");
+const heading = menuEntry?.name ?? "Search";
+---
+
+<BaseLayout title={`${heading} · ${meta.data.title}`} description={meta.data.description} locale={locale} pageKey="search">
+  <main class="mx-auto max-w-2xl px-6 py-12">
+    <h1 class="text-2xl font-medium tracking-tight">{heading}</h1>
+    <div id="search" class="mt-8" data-pagefind-ui></div>
+  </main>
+</BaseLayout>
+
+<link
+  rel="stylesheet"
+  href="/_pagefind/pagefind-ui.css"
+/>
+<script is:inline src="/_pagefind/pagefind-ui.js"></script>
+<script is:inline define:vars={{ locale }}>
+  window.addEventListener("DOMContentLoaded", () => {
+    if (typeof PagefindUI === "undefined") {
+      const el = document.getElementById("search");
+      if (el) el.innerHTML = '<p class="text-sm text-zinc-500">Search index is generated at build time. Run <code>npm run build</code>.</p>';
+      return;
+    }
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      resetStyles: false,
+      translations: {},
+      ranking: { termFrequency: 0.5, pageLength: 0.5 },
+      filters: {},
+      pageSize: 10,
+    });
+  });
+</script>
+
+<style is:global>
+  /* Tone Pagefind UI down to match the site's minimal look. */
+  .pagefind-ui {
+    --pagefind-ui-primary: var(--color-accent-600);
+    --pagefind-ui-text: currentColor;
+    --pagefind-ui-background: transparent;
+    --pagefind-ui-border: rgba(160, 160, 160, 0.2);
+    --pagefind-ui-tag: rgba(160, 160, 160, 0.15);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 6px;
+    --pagefind-ui-image-border-radius: 4px;
+    --pagefind-ui-image-box-ratio: 3 / 2;
+    --pagefind-ui-font: inherit;
+  }
+  .pagefind-ui__search-input {
+    font-size: 0.95rem !important;
+  }
+  .pagefind-ui__result {
+    padding: 1rem 0 !important;
+  }
+</style>
