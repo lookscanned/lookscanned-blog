@@ -1,0 +1,34 @@
+---
+import "../styles/global.css";
+import { LOCALES, DEFAULT_LOCALE } from "../i18n/locales.config.mjs";
+
+interface Props {
+  title: string;
+  description?: string;
+  locale?: string;
+}
+
+const { title, description = "", locale = DEFAULT_LOCALE } = Astro.props;
+const meta = LOCALES.find((l) => l.code === locale) ?? LOCALES[0];
+const dir = meta.dir;
+const lang = meta.hreflang;
+---
+
+<!doctype html>
+<html lang={lang} dir={dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="alternate" type="application/rss+xml" title={title} href="/rss.xml" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body class="min-h-svh bg-white text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100">
+    <slot />
+  </body>
+</html>

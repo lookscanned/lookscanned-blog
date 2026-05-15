@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans:
+    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Noto Sans CJK SC", sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+
+  --color-accent-50:  oklch(0.985 0.018 75);
+  --color-accent-100: oklch(0.960 0.040 75);
+  --color-accent-500: oklch(0.700 0.150 50);
+  --color-accent-600: oklch(0.630 0.160 45);
+  --color-accent-700: oklch(0.540 0.150 40);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv01", "cv02";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--font-mono);
+}
+
+/* RTL niceties: keep prose readable when html[dir="rtl"] */
+:where([dir="rtl"]) .prose {
+  text-align: start;
+}

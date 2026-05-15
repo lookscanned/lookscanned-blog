@@ -8,6 +8,15 @@
 /resources
 .hugo_build.lock
 
+# astro / node
+/node_modules
+/dist
+/.astro
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
 # swap
 [._]*.s[a-v][a-z]
 [._]*.sw[a-p]

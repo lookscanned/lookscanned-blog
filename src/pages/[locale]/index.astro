@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { LOCALES, DEFAULT_LOCALE } from "../../i18n/locales.config.mjs";
+
+export function getStaticPaths() {
+  return LOCALES.filter((l) => l.code !== DEFAULT_LOCALE).map((l) => ({
+    params: { locale: l.code },
+    props: { locale: l.code },
+  }));
+}
+
+const { locale } = Astro.props;
+---
+
+<BaseLayout title={`Look Scanned Blog (${locale})`} locale={locale}>
+  <main class="mx-auto max-w-2xl px-6 py-16">
+    <h1 class="text-3xl font-medium tracking-tight">Look Scanned Blog · {locale}</h1>
+    <p class="mt-4 text-zinc-600 dark:text-zinc-400">
+      Astro skeleton — Phase 1 routing smoke test for <code>{locale}</code>.
+    </p>
+  </main>
+</BaseLayout>
