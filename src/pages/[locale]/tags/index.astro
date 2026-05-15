@@ -1,6 +1,6 @@
 ---
-import Home from "../../components/Home.astro";
-import { LOCALES, DEFAULT_LOCALE } from "../../i18n/locales.config.mjs";
+import TagsIndex from "../../../components/TagsIndex.astro";
+import { LOCALES, DEFAULT_LOCALE } from "../../../i18n/locales.config.mjs";
 
 export function getStaticPaths() {
   return LOCALES.filter((l) => l.code !== DEFAULT_LOCALE).map((l) => ({
@@ -12,4 +12,4 @@ export function getStaticPaths() {
 const { locale } = Astro.props;
 ---
 
-<Home locale={locale} />
+<TagsIndex locale={locale} />

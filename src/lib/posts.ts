@@ -4,7 +4,10 @@ export type PostEntry = CollectionEntry<"posts">;
 
 export interface PostMeta {
   entry: PostEntry;
+  /** URL slug (frontmatter `slug` if set, otherwise directory name). */
   slug: string;
+  /** Source directory name — used to group translations across locales. */
+  dirSlug: string;
   locale: string;
 }
 
@@ -26,7 +29,8 @@ export async function getAllPosts(): Promise<PostMeta[]> {
       console.warn(`[posts] unable to parse id: ${entry.id}`);
       return [];
     }
-    return [{ entry, slug: parsed.slug, locale: parsed.locale }];
+    const slug = entry.data.slug ?? parsed.slug;
+    return [{ entry, slug, dirSlug: parsed.slug, locale: parsed.locale }];
   });
   return cache;
 }
@@ -46,9 +50,9 @@ export async function getPostBySlug(
   return all.find((p) => p.slug === slug && p.locale === locale) ?? null;
 }
 
-export async function getTranslations(slug: string): Promise<PostMeta[]> {
+export async function getTranslations(dirSlug: string): Promise<PostMeta[]> {
   const all = await getAllPosts();
-  return all.filter((p) => p.slug === slug);
+  return all.filter((p) => p.dirSlug === dirSlug);
 }
 
 export async function getAllTagsByLocale(

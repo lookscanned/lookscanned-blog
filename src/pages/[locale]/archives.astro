@@ -1,5 +1,5 @@
 ---
-import Home from "../../components/Home.astro";
+import Archives from "../../components/Archives.astro";
 import { LOCALES, DEFAULT_LOCALE } from "../../i18n/locales.config.mjs";
 
 export function getStaticPaths() {
@@ -12,4 +12,4 @@ export function getStaticPaths() {
 const { locale } = Astro.props;
 ---
 
-<Home locale={locale} />
+<Archives locale={locale} />

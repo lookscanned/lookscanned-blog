@@ -22,6 +22,9 @@ const posts = defineCollection({
     summary: z.string().optional(),
     description: z.string().optional(),
     tags: z.array(z.string()).default([]),
+    // A post's URL slug overrides the directory name when present (Hugo
+    // honored frontmatter `slug`; one current post uses it).
+    slug: z.string().optional(),
   }),
 });
 

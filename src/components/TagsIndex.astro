@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getLocale, localizedPath } from "../i18n";
+import { getAllTagsByLocale } from "../lib/posts";
+import { tagSlug } from "../lib/tags";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const meta = getLocale(locale);
+const tags = await getAllTagsByLocale(locale);
+
+const sorted = [...tags.entries()].sort((a, b) => b[1].length - a[1].length);
+const menuEntry = meta.data.menu.find((m) => m.url === "tags");
+const heading = menuEntry?.name ?? "Tags";
+---
+
+<BaseLayout title={`${heading} · ${meta.data.title}`} description={meta.data.description} locale={locale} pageKey="tags">
+  <main class="mx-auto max-w-2xl px-6 py-12">
+    <h1 class="text-2xl font-medium tracking-tight">{heading}</h1>
+    <ul class="mt-8 flex flex-wrap gap-2">
+      {sorted.map(([tag, posts]) => (
+        <li>
+          <a
+            href={localizedPath(locale, `tags/${tagSlug(tag)}`)}
+            class="inline-flex items-baseline gap-1.5 rounded-md border border-zinc-200 bg-zinc-50/60 px-3 py-1.5 text-sm text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-300 dark:hover:border-zinc-700 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+          >
+            {tag}
+            <span class="text-xs text-zinc-500">{posts.length}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </main>
+</BaseLayout>

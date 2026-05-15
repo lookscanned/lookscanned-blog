@@ -1,34 +1,97 @@
 ---
 import "../styles/global.css";
-import { LOCALES, DEFAULT_LOCALE } from "../i18n/locales.config.mjs";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import SpeculationRules from "../components/SpeculationRules.astro";
+import { DEFAULT_LOCALE, getLocale, listLocales, localizedPath } from "../i18n";
 
 interface Props {
   title: string;
   description?: string;
   locale?: string;
+  /** Translation alternates for SEO (post pages). */
+  alternates?: Array<{ locale: string; slug: string }>;
+  /** Subpath for non-post pages (e.g. "archives"). */
+  pageKey?: string;
 }
 
-const { title, description = "", locale = DEFAULT_LOCALE } = Astro.props;
-const meta = LOCALES.find((l) => l.code === locale) ?? LOCALES[0];
-const dir = meta.dir;
-const lang = meta.hreflang;
+const {
+  title,
+  description = "",
+  locale = DEFAULT_LOCALE,
+  alternates,
+  pageKey,
+} = Astro.props;
+
+const meta = getLocale(locale);
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+const allLocales = listLocales();
+const altLinks = allLocales.map((l) => {
+  let path: string;
+  if (alternates) {
+    const match = alternates.find((a) => a.locale === l.code);
+    if (!match) return null;
+    path = `posts/${match.slug}`;
+  } else if (pageKey) {
+    path = pageKey;
+  } else {
+    path = "";
+  }
+  return {
+    hreflang: l.hreflang,
+    href: new URL(localizedPath(l.code, path), Astro.site).toString(),
+  };
+}).filter((x): x is { hreflang: string; href: string } => x !== null);
 ---
 
 <!doctype html>
-<html lang={lang} dir={dir}>
+<html lang={meta.hreflang} dir={meta.dir}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonicalUrl} />
+    {altLinks.map((l) => (
+      <link rel="alternate" hreflang={l.hreflang} href={l.href} />
+    ))}
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="alternate" type="application/rss+xml" title={title} href="/rss.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={meta.data.title}
+      href={locale === DEFAULT_LOCALE ? "/rss.xml" : `/${locale}/rss.xml`}
+    />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={meta.hreflang.replace("-", "_")} />
+    <meta name="twitter:card" content="summary" />
+    <SpeculationRules />
+    <script is:inline>
+      // Restore theme preference before paint to avoid a light/dark flash.
+      (() => {
+        try {
+          const stored = localStorage.getItem("theme");
+          const prefers = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          if (stored === "dark" || (!stored && prefers)) {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (_) {}
+      })();
+    </script>
     <meta name="generator" content={Astro.generator} />
   </head>
   <body class="min-h-svh bg-white text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100">
+    <Header locale={locale} />
     <slot />
+    <Footer locale={locale} />
   </body>
 </html>

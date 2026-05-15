@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PostCard from "./PostCard.astro";
+import { getLocale } from "../i18n";
+import { getPostsByLocale } from "../lib/posts";
+import { renderInlineMarkdown } from "../lib/markdown";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const meta = getLocale(locale);
+const posts = await getPostsByLocale(locale);
+
+const title = meta.data.title;
+const description = meta.data.description;
+---
+
+<BaseLayout title={title} description={description} locale={locale}>
+  <main class="mx-auto max-w-2xl px-6 py-12">
+    <section class="border-b border-zinc-200/70 pb-10 dark:border-zinc-800/80">
+      <h1 class="text-2xl font-medium tracking-tight">{meta.data.homeTitle}</h1>
+      <div
+        class="mt-4 prose prose-sm prose-zinc max-w-none dark:prose-invert prose-a:text-accent-600 prose-a:no-underline hover:prose-a:underline dark:prose-a:text-accent-500 prose-p:my-2 prose-ul:my-2"
+        set:html={renderInlineMarkdown(meta.data.homeContent)}
+      />
+    </section>
+    <section class="mt-8 divide-y divide-zinc-200/70 dark:divide-zinc-800/80">
+      {posts.map((post) => <PostCard post={post} />)}
+    </section>
+  </main>
+</BaseLayout>

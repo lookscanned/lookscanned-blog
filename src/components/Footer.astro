@@ -1,0 +1,39 @@
+---
+import { getLocale } from "../i18n";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const meta = getLocale(locale);
+const year = new Date().getFullYear();
+const rssUrl =
+  locale === "en" ? "/rss.xml" : `/${locale}/rss.xml`;
+---
+
+<footer class="mt-24 border-t border-zinc-200/70 dark:border-zinc-800/80">
+  <div class="mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-4 px-6 py-8 text-sm text-zinc-500 dark:text-zinc-400">
+    <span>&copy; {year} {meta.data.title}</span>
+    <div class="flex items-center gap-4">
+      <a
+        href="https://lookscanned.io"
+        class="transition hover:text-zinc-900 dark:hover:text-zinc-100"
+        target="_blank"
+        rel="noopener"
+      >Look Scanned</a>
+      <a
+        href="https://github.com/lookscanned"
+        class="transition hover:text-zinc-900 dark:hover:text-zinc-100"
+        target="_blank"
+        rel="noopener"
+        aria-label="GitHub"
+      >GitHub</a>
+      <a
+        href={rssUrl}
+        class="transition hover:text-zinc-900 dark:hover:text-zinc-100"
+        aria-label="RSS"
+      >RSS</a>
+    </div>
+  </div>
+</footer>
