@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = "Come Look Scanned protegge la tua privacy mentre crea PDF dall'aspetto di documenti scansionati realistici"
-description = "Scopri come Look Scanned garantisce la massima riservatezza dei tuoi documenti con elaborazione nel browser, funzionalità offline e nessuna comunicazione con server durante la creazione di PDF che sembrano autenticamente scansionati."
-summary = "Look Scanned è un'applicazione che mette al primo posto la privacy e crea PDF dall'aspetto di vere scansioni direttamente nel tuo browser. Scopri come la sua elaborazione completamente locale protegge i tuoi documenti sensibili senza mai inviare dati verso server esterni."
-tags = ['privacy', 'lookscanned', 'funzionalità', 'browser', 'offline', 'sicurezza', 'elaborazione-locale']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Come Look Scanned protegge la tua privacy mentre crea PDF dall'aspetto di documenti scansionati realistici"
+summary: "Look Scanned è un'applicazione che mette al primo posto la privacy e crea PDF dall'aspetto di vere scansioni direttamente nel tuo browser. Scopri come la sua elaborazione completamente locale protegge i tuoi documenti sensibili senza mai inviare dati verso server esterni."
+description: "Scopri come Look Scanned garantisce la massima riservatezza dei tuoi documenti con elaborazione nel browser, funzionalità offline e nessuna comunicazione con server durante la creazione di PDF che sembrano autenticamente scansionati."
+tags: ["privacy", "lookscanned", "funzionalità", "browser", "offline", "sicurezza", "elaborazione-locale"]
+---
 
 Nell'era della digitalizzazione documentale, le preoccupazioni relative alla privacy sono diventate sempre più rilevanti. Look Scanned è un'applicazione leggera basata su browser progettata per creare PDF che sembrano autenticamente scansionati, operando direttamente nel tuo browser. Questo articolo spiega come Look Scanned utilizza un innovativo sistema di elaborazione locale per garantire la massima riservatezza e sicurezza dei tuoi documenti.
 

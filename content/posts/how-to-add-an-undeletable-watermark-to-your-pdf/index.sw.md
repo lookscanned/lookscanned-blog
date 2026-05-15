@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'Jinsi ya Kuongeza Alama ya Maji Isiyoweza Kufutwa kwenye PDF Yako'
-description = 'Jifunze jinsi ya kuunda alama za maji zisizoweza kufutwa katika PDF zako kwa kutumia Look Scanned. Mwongozo huu unaeleza kwa nini alama za maji za jadi zinashindwa na jinsi ya kutengeneza hati zisizoweza kuharibiwa zinazoonyesha kama uscaji wa kimwili.'
-tags = ['PDF', 'usalama', 'alama ya maji', 'ulinzi wa hati']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "Jinsi ya Kuongeza Alama ya Maji Isiyoweza Kufutwa kwenye PDF Yako"
+description: "Jifunze jinsi ya kuunda alama za maji zisizoweza kufutwa katika PDF zako kwa kutumia Look Scanned. Mwongozo huu unaeleza kwa nini alama za maji za jadi zinashindwa na jinsi ya kutengeneza hati zisizoweza kuharibiwa zinazoonyesha kama uscaji wa kimwili."
+tags: ["PDF", "usalama", "alama ya maji", "ulinzi wa hati"]
+---
 
 Alama za maji ni njia ya kawaida ya kulinda hati, lakini alama za maji za jadi mara nyingi zinaweza kuondolewa au kupitiliwa kwa kubofya mara chache tu. Katika chapisho hili, tutakuonyesha jinsi ya kuunda **alama ya maji isiyoweza kufutwa** kwa kutumia **Look Scanned**, chombo kinachotegemea kivinjari kinachoiga hati zilizochanwa kwa usalama ulioongezwa wa hati.
 

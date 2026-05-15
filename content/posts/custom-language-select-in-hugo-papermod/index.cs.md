@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Vytvoření vlastního selektoru jazyků v Hugo PaperMod'
-summary = 'Podrobný průvodce implementací vlastního dropdown selektoru jazyků v tématu Hugo PaperMod, ideální pro vícejazyčné weby s mnoha jazykovými variantami'
-description = 'Podrobný průvodce implementací vlastního dropdown selektoru jazyků v tématu Hugo PaperMod, ideální pro vícejazyčné weby s mnoha jazykovými variantami'
-tags = ['hugo', 'papermod', 'návod', 'vícejazyčný', 'html', 'i18n', 'css', 'webový vývoj', 'uživatelské rozhraní', 'uživatelská zkušenost', 'optimalizace výkonu']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Vytvoření vlastního selektoru jazyků v Hugo PaperMod"
+summary: "Podrobný průvodce implementací vlastního dropdown selektoru jazyků v tématu Hugo PaperMod, ideální pro vícejazyčné weby s mnoha jazykovými variantami"
+description: "Podrobný průvodce implementací vlastního dropdown selektoru jazyků v tématu Hugo PaperMod, ideální pro vícejazyčné weby s mnoha jazykovými variantami"
+tags: ["hugo", "papermod", "návod", "vícejazyčný", "html", "i18n", "css", "webový vývoj", "uživatelské rozhraní", "uživatelská zkušenost", "optimalizace výkonu"]
+---
 
 ## Proč vytvořit vlastní selektor jazyků?
 

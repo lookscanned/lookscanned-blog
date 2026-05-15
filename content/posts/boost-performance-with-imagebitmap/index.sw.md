@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = 'Ongezea Utendaji kwa 60% kwa kutumia ImageBitmap katika Look Scanned'
-summary = 'Chunguza jinsi kuunganisha ImageBitmap katika Look Scanned kunavyoboresha utendaji kwa kuwezesha ufumuzi wa asynchronous na uonyeshaji wenye ufanisi, huku ikidumisha upatanifu na vivinjari vya zamani.'
-description = 'Chunguza jinsi kuunganisha ImageBitmap katika Look Scanned kunavyoboresha utendaji kwa kuwezesha ufumuzi wa asynchronous na uonyeshaji wenye ufanisi, huku ikidumisha upatanifu na vivinjari vya zamani.'
-tags = ['utendaji', 'imagebitmap', 'picha', 'kivinjari']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "Ongezea Utendaji kwa 60% kwa kutumia ImageBitmap katika Look Scanned"
+summary: "Chunguza jinsi kuunganisha ImageBitmap katika Look Scanned kunavyoboresha utendaji kwa kuwezesha ufumuzi wa asynchronous na uonyeshaji wenye ufanisi, huku ikidumisha upatanifu na vivinjari vya zamani."
+description: "Chunguza jinsi kuunganisha ImageBitmap katika Look Scanned kunavyoboresha utendaji kwa kuwezesha ufumuzi wa asynchronous na uonyeshaji wenye ufanisi, huku ikidumisha upatanifu na vivinjari vya zamani."
+tags: ["utendaji", "imagebitmap", "picha", "kivinjari"]
+---
 
 Kuboresha utendaji ni muhimu sana wakati wa kujenga programu za kisasa za wavuti kama [Look Scanned](https://lookscanned.io), hasa wakati wa kushughulikia picha. Chombo chenye nguvu lakini kisichotumika sana kwa kufikia maboresho makubwa ya utendaji ni kiolesura cha `ImageBitmap`. Katika chapisho hili la blogu, tutachunguza ni nini `ImageBitmap`, kwa nini ni cha ufanisi, na jinsi kimeuganishwa katika Look Scanned kuboresha utendaji wa uonyeshaji.
 

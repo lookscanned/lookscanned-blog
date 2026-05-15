@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Elegancki selektor języków dla Hugo PaperMod'
-summary = 'Praktyczny przewodnik implementacji selektora języków z menu rozwijanym w Hugo PaperMod, który ułatwia nawigację na stronach wielojęzycznych dzięki przejrzystemu interfejsowi'
-description = 'Praktyczny przewodnik implementacji selektora języków z menu rozwijanym w Hugo PaperMod, który ułatwia nawigację na stronach wielojęzycznych dzięki przejrzystemu interfejsowi'
-tags = ['hugo', 'papermod', 'poradnik', 'wielojęzyczność', 'html', 'i18n', 'css', 'programowanie', 'interfejs', 'dostępność', 'ux']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Elegancki selektor języków dla Hugo PaperMod"
+summary: "Praktyczny przewodnik implementacji selektora języków z menu rozwijanym w Hugo PaperMod, który ułatwia nawigację na stronach wielojęzycznych dzięki przejrzystemu interfejsowi"
+description: "Praktyczny przewodnik implementacji selektora języków z menu rozwijanym w Hugo PaperMod, który ułatwia nawigację na stronach wielojęzycznych dzięki przejrzystemu interfejsowi"
+tags: ["hugo", "papermod", "poradnik", "wielojęzyczność", "html", "i18n", "css", "programowanie", "interfejs", "dostępność", "ux"]
+---
 
 ## Dlaczego warto ulepszyć selektor języków?
 

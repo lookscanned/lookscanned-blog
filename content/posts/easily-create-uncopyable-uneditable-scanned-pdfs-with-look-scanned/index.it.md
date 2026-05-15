@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Crea facilmente PDF "Non Copiabili e Non Modificabili" con Effetto Scansione grazie a Look Scanned'
-description = "Scopri come trasformare i tuoi PDF in documenti con effetto scansione non copiabili e non modificabili con Look Scanned, un'applicazione web che elabora i file in locale garantendo la massima privacy."
-summary = "Look Scanned è un'applicazione web che mette al primo posto la privacy, trasformando i tuoi PDF in documenti dall'aspetto scansionato che non possono essere copiati o modificati. Tutta l'elaborazione avviene in locale nel tuo browser, assicurando che i tuoi documenti sensibili rimangano completamente protetti."
-tags = ['privacy', 'effetto scansione', 'sicurezza', 'browser', 'offline', 'protezione documenti', 'elaborazione locale']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Crea facilmente PDF \"Non Copiabili e Non Modificabili\" con Effetto Scansione grazie a Look Scanned"
+summary: "Look Scanned è un'applicazione web che mette al primo posto la privacy, trasformando i tuoi PDF in documenti dall'aspetto scansionato che non possono essere copiati o modificati. Tutta l'elaborazione avviene in locale nel tuo browser, assicurando che i tuoi documenti sensibili rimangano completamente protetti."
+description: "Scopri come trasformare i tuoi PDF in documenti con effetto scansione non copiabili e non modificabili con Look Scanned, un'applicazione web che elabora i file in locale garantendo la massima privacy."
+tags: ["privacy", "effetto scansione", "sicurezza", "browser", "offline", "protezione documenti", "elaborazione locale"]
+---
 
 Nell'era digitale, la protezione dei documenti sensibili è fondamentale. Che tu stia condividendo contratti, relazioni o informazioni riservate, potresti voler impedire ad altri di copiare o modificare i contenuti. Un metodo efficace per raggiungere questo obiettivo è convertire il tuo PDF in un **documento con effetto scansionato**, facendolo apparire come se fosse stato acquisito fisicamente tramite scanner anziché come un file modificabile.
 

@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Crie facilmente PDFs digitalizados "impossíveis de copiar e editar" com o Look Scanned'
-description = 'Aprenda a transformar seus PDFs em documentos com aparência de digitalização que não podem ser copiados ou editados usando o Look Scanned, uma ferramenta web que processa arquivos localmente para garantir total privacidade.'
-summary = 'Look Scanned é uma ferramenta web focada em privacidade que transforma seus PDFs em documentos digitalizados realistas que impedem a cópia e edição. Todo o processamento ocorre localmente em seu navegador, garantindo que seus documentos sensíveis permaneçam seguros.'
-tags = ['privacidade', 'efeito de digitalização', 'segurança', 'navegador', 'offline', 'proteção de documentos', 'processamento local']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Crie facilmente PDFs digitalizados \"impossíveis de copiar e editar\" com o Look Scanned"
+summary: "Look Scanned é uma ferramenta web focada em privacidade que transforma seus PDFs em documentos digitalizados realistas que impedem a cópia e edição. Todo o processamento ocorre localmente em seu navegador, garantindo que seus documentos sensíveis permaneçam seguros."
+description: "Aprenda a transformar seus PDFs em documentos com aparência de digitalização que não podem ser copiados ou editados usando o Look Scanned, uma ferramenta web que processa arquivos localmente para garantir total privacidade."
+tags: ["privacidade", "efeito de digitalização", "segurança", "navegador", "offline", "proteção de documentos", "processamento local"]
+---
 
 No mundo digital atual, proteger documentos sensíveis é fundamental. Seja ao compartilhar contratos, relatórios ou informações confidenciais, você provavelmente deseja impedir que terceiros copiem ou modifiquem o conteúdo. Uma maneira eficaz de conseguir isso é convertendo seu PDF em um **documento com aparência de digitalização**, fazendo-o parecer uma digitalização física em vez de um arquivo editável.
 

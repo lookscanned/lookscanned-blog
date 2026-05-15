@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Cum protejează Look Scanned confidențialitatea ta în timp ce creează PDF-uri scanate realistice'
-description = 'Descoperă cum Look Scanned asigură confidențialitatea completă a documentelor prin procesarea în browser, capabilități offline și zero interacțiune cu serverul în timp ce creează PDF-uri scanate realistice.'
-summary = 'Look Scanned este un instrument axat pe confidențialitate care creează PDF-uri scanate realistice în întregime în browserul tău. Află cum abordarea sa de procesare locală păstrează documentele sensibile în siguranță prin netrimiterea niciodată a datelor către servere remote.'
-tags = ['confidențialitate', 'lookscanned', 'caracteristici', 'browser', 'offline', 'securitate', 'local']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Cum protejează Look Scanned confidențialitatea ta în timp ce creează PDF-uri scanate realistice"
+summary: "Look Scanned este un instrument axat pe confidențialitate care creează PDF-uri scanate realistice în întregime în browserul tău. Află cum abordarea sa de procesare locală păstrează documentele sensibile în siguranță prin netrimiterea niciodată a datelor către servere remote."
+description: "Descoperă cum Look Scanned asigură confidențialitatea completă a documentelor prin procesarea în browser, capabilități offline și zero interacțiune cu serverul în timp ce creează PDF-uri scanate realistice."
+tags: ["confidențialitate", "lookscanned", "caracteristici", "browser", "offline", "securitate", "local"]
+---
 
 Odată cu creșterea procesării și partajării digitale a documentelor, preocupările privind confidențialitatea devin din ce în ce mai critice. Look Scanned este un instrument ușor, bazat pe browser, conceput pentru a crea PDF-uri scanate realistice direct în browserul tău. Acest articol explică cum Look Scanned folosește procesarea locală inovatoare pentru a asigura confidențialitatea și securitatea documentelor tale.
 

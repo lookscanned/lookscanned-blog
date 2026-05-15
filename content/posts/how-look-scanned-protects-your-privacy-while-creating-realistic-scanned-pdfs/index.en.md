@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'How Look Scanned Protects Your Privacy While Creating Realistic Scanned PDFs'
-description = 'Discover how Look Scanned ensures complete document privacy with browser-based processing, offline capabilities, and zero server interaction while creating realistic scanned PDFs.'
-summary = 'Look Scanned is a privacy-focused tool that creates realistic scanned PDFs entirely within your browser. Learn how its local processing approach keeps your sensitive documents secure by never sending data to remote servers.'
-tags = ['privacy', 'lookscanned', 'features', 'browser', 'offline', 'security', 'local']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "How Look Scanned Protects Your Privacy While Creating Realistic Scanned PDFs"
+summary: "Look Scanned is a privacy-focused tool that creates realistic scanned PDFs entirely within your browser. Learn how its local processing approach keeps your sensitive documents secure by never sending data to remote servers."
+description: "Discover how Look Scanned ensures complete document privacy with browser-based processing, offline capabilities, and zero server interaction while creating realistic scanned PDFs."
+tags: ["privacy", "lookscanned", "features", "browser", "offline", "security", "local"]
+---
 
 With the rise of digital document processing and sharing, concerns about privacy are becoming increasingly critical. Look Scanned is a lightweight, browser-based tool designed to create realistic scanned PDFs directly within your browser. This article explains how Look Scanned uses innovative local processing to ensure your document privacy and security.
 

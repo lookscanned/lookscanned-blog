@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'Hogyan adj hozzá törölhetetlen vízjelet a PDF-edhez'
-description = 'Tanuld meg, hogyan készíts valóban törölhetetlen vízjeleket a PDF-eidben a Look Scanned használatával. Ez az útmutató elmagyarázza, miért hiúsulnak meg a hagyományos vízjelek, és hogyan készíts manipulációbiztos dokumentumokat, amelyek fizikai szkennelésnek tűnnek.'
-tags = ['PDF', 'biztonság', 'vízjel', 'dokumentumvédelem']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "Hogyan adj hozzá törölhetetlen vízjelet a PDF-edhez"
+description: "Tanuld meg, hogyan készíts valóban törölhetetlen vízjeleket a PDF-eidben a Look Scanned használatával. Ez az útmutató elmagyarázza, miért hiúsulnak meg a hagyományos vízjelek, és hogyan készíts manipulációbiztos dokumentumokat, amelyek fizikai szkennelésnek tűnnek."
+tags: ["PDF", "biztonság", "vízjel", "dokumentumvédelem"]
+---
 
 A vízjelek gyakori módja a dokumentumok védelmének, de a hagyományos vízjelek gyakran néhány kattintással eltávolíthatók vagy megkerülhetők. Ebben a bejegyzésben megmutatjuk, hogyan készíts **valóban törölhetetlen vízjelet** a **Look Scanned** használatával, egy böngészőalapú eszközzel, amely szkennelt dokumentumokat szimulál a fokozott dokumentumbiztonság érdekében.
 

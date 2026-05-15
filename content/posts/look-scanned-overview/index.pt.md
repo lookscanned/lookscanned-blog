@@ -1,10 +1,10 @@
-+++
-date = '2025-02-10T15:39:20+08:00'
-draft = false
-title = 'Look Scanned: A maneira rápida, segura e inteligente de simular documentos digitalizados'
-summary = 'Look Scanned é uma ferramenta leve baseada em navegador que permite criar documentos digitalizados realistas instantaneamente—sem instalação, sem uploads e sem preocupações com privacidade. Seja você um indivíduo, uma equipe ou um desenvolvedor procurando integrar recursos de digitalização, o Look Scanned tem tudo o que você precisa.'
-tags = ['digitalização', 'visão geral', 'recursos', 'lookscanned']
-+++
+---
+date: "2025-02-10T15:39:20+08:00"
+draft: false
+title: "Look Scanned: A maneira rápida, segura e inteligente de simular documentos digitalizados"
+summary: "Look Scanned é uma ferramenta leve baseada em navegador que permite criar documentos digitalizados realistas instantaneamente—sem instalação, sem uploads e sem preocupações com privacidade. Seja você um indivíduo, uma equipe ou um desenvolvedor procurando integrar recursos de digitalização, o Look Scanned tem tudo o que você precisa."
+tags: ["digitalização", "visão geral", "recursos", "lookscanned"]
+---
 
 No mundo digital de hoje, converter documentos eletrônicos em PDFs digitalizados realistas é essencial para tarefas como envio de contratos, arquivamento de documentos e compartilhamento de arquivos oficiais. Os scanners tradicionais são volumosos e lentos, enquanto muitas ferramentas online exigem upload de arquivos, gerando riscos à privacidade.
 

@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Erstellen Sie mühelos "nicht kopierbare & nicht editierbare" gescannte PDFs mit Look Scanned'
-description = 'Erfahren Sie, wie Sie mit Look Scanned Ihre PDFs in nicht kopierbare, nicht bearbeitbare Dokumente mit Scan-Optik umwandeln können – ein browserbasiertes Tool, das Dateien für maximalen Datenschutz lokal verarbeitet.'
-summary = 'Look Scanned ist ein datenschutzorientiertes Browser-Tool, das Ihre PDFs in realistisch aussehende gescannte Dokumente umwandelt, die vor Kopieren und Bearbeiten geschützt sind. Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser, wodurch die Sicherheit Ihrer vertraulichen Dokumente gewährleistet wird.'
-tags = ['Datenschutz', 'Scan-Effekt', 'Sicherheit', 'Browser', 'Offline', 'Dokumentenschutz', 'lokale Verarbeitung']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Erstellen Sie mühelos \"nicht kopierbare & nicht editierbare\" gescannte PDFs mit Look Scanned"
+summary: "Look Scanned ist ein datenschutzorientiertes Browser-Tool, das Ihre PDFs in realistisch aussehende gescannte Dokumente umwandelt, die vor Kopieren und Bearbeiten geschützt sind. Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser, wodurch die Sicherheit Ihrer vertraulichen Dokumente gewährleistet wird."
+description: "Erfahren Sie, wie Sie mit Look Scanned Ihre PDFs in nicht kopierbare, nicht bearbeitbare Dokumente mit Scan-Optik umwandeln können – ein browserbasiertes Tool, das Dateien für maximalen Datenschutz lokal verarbeitet."
+tags: ["Datenschutz", "Scan-Effekt", "Sicherheit", "Browser", "Offline", "Dokumentenschutz", "lokale Verarbeitung"]
+---
 
 In der digitalen Welt ist der Schutz vertraulicher Dokumente von entscheidender Bedeutung. Ob Sie Verträge, Berichte oder sensible Informationen teilen – oft möchten Sie verhindern, dass andere den Inhalt kopieren oder verändern können. Eine wirkungsvolle Methode, dies zu erreichen, besteht darin, Ihr PDF in ein **Dokument mit Scan-Optik** umzuwandeln, sodass es wie ein physisch eingescanntes Dokument wirkt und nicht wie eine bearbeitbare Datei.
 

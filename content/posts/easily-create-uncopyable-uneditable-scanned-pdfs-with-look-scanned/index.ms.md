@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Cipta Fail PDF Bergaya Imbasan yang "Tidak Boleh Disalin & Disunting" dengan Mudah Menggunakan Look Scanned'
-description = 'Ketahui cara menukar fail PDF anda kepada dokumen bergaya imbasan yang tidak boleh disalin dan disunting dengan Look Scanned, iaitu alat berasaskan pelayar web yang memproses fail secara setempat untuk menjamin privasi sepenuhnya.'
-summary = 'Look Scanned ialah alat dalam pelayar web yang mengutamakan privasi yang mampu menukar fail PDF anda kepada dokumen bergaya imbasan yang realistik serta menghalang penyalinan dan penyuntingan. Semua pemprosesan berlaku secara setempat dalam pelayar web anda, memastikan dokumen sulit anda kekal terjamin.'
-tags = ['privasi', 'kesan imbasan', 'keselamatan', 'pelayar web', 'luar talian', 'perlindungan dokumen', 'pemprosesan setempat']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Cipta Fail PDF Bergaya Imbasan yang \"Tidak Boleh Disalin & Disunting\" dengan Mudah Menggunakan Look Scanned"
+summary: "Look Scanned ialah alat dalam pelayar web yang mengutamakan privasi yang mampu menukar fail PDF anda kepada dokumen bergaya imbasan yang realistik serta menghalang penyalinan dan penyuntingan. Semua pemprosesan berlaku secara setempat dalam pelayar web anda, memastikan dokumen sulit anda kekal terjamin."
+description: "Ketahui cara menukar fail PDF anda kepada dokumen bergaya imbasan yang tidak boleh disalin dan disunting dengan Look Scanned, iaitu alat berasaskan pelayar web yang memproses fail secara setempat untuk menjamin privasi sepenuhnya."
+tags: ["privasi", "kesan imbasan", "keselamatan", "pelayar web", "luar talian", "perlindungan dokumen", "pemprosesan setempat"]
+---
 
 Dalam era digital kini, melindungi dokumen sulit adalah sangat penting. Sama ada anda berkongsi kontrak, laporan, atau maklumat rahsia, anda mungkin mahu menghalang orang lain daripada menyalin atau mengubah suai kandungannya. Salah satu cara berkesan untuk mencapai matlamat ini ialah dengan menukar fail PDF anda kepada **dokumen bergaya imbasan**, menjadikannya kelihatan seperti hasil imbasan fizikal dan bukannya fail yang boleh disunting.
 

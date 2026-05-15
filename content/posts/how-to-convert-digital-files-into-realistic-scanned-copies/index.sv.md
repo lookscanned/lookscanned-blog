@@ -1,11 +1,11 @@
-+++
-date = '2025-01-20T09:35:50+08:00'
-draft = false
-title = 'Så får du dina digitala filer (PDF, DOCX, bilder) att se ut som inskannade dokument'
-tags = ['pdf', 'verktyg', 'handledning', 'dokumenthantering', 'skanning', 'guide']
-summary = 'Lär dig hur du får dina digitala dokument att se ut som inskannade med hjälp av Look Scanned, ett kostnadsfritt webbaserat verktyg. Denna guide innehåller steg-för-steg-instruktioner, anpassningsmöjligheter och tips för att uppnå ett äkta skannat utseende.'
-description = 'Lär dig hur du får dina digitala dokument att se ut som inskannade med hjälp av Look Scanned, ett kostnadsfritt webbaserat verktyg. Denna guide innehåller steg-för-steg-instruktioner, anpassningsmöjligheter och tips för att uppnå ett äkta skannat utseende.'
-+++
+---
+date: "2025-01-20T09:35:50+08:00"
+draft: false
+title: "Så får du dina digitala filer (PDF, DOCX, bilder) att se ut som inskannade dokument"
+summary: "Lär dig hur du får dina digitala dokument att se ut som inskannade med hjälp av Look Scanned, ett kostnadsfritt webbaserat verktyg. Denna guide innehåller steg-för-steg-instruktioner, anpassningsmöjligheter och tips för att uppnå ett äkta skannat utseende."
+description: "Lär dig hur du får dina digitala dokument att se ut som inskannade med hjälp av Look Scanned, ett kostnadsfritt webbaserat verktyg. Denna guide innehåller steg-för-steg-instruktioner, anpassningsmöjligheter och tips för att uppnå ett äkta skannat utseende."
+tags: ["pdf", "verktyg", "handledning", "dokumenthantering", "skanning", "guide"]
+---
 
 Ibland behöver man få digitala dokument att se ut som om de vore inskannade. Oavsett om det handlar om att skapa ett mer professionellt intryck, uppfylla särskilda krav eller av estetiska skäl, är det enklare än man kan tro att få ett dokument att se inskannat ut. I den här guiden går vi igenom processen steg för steg.
 

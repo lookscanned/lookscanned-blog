@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Crearea unui selector de limbă personalizat în Hugo PaperMod'
-summary = 'Ghid pas cu pas pentru implementarea unui selector de limbă dropdown personalizat în tema Hugo PaperMod, perfect pentru site-urile multilingve cu multe opțiuni de limbă'
-description = 'Ghid pas cu pas pentru implementarea unui selector de limbă dropdown personalizat în tema Hugo PaperMod, perfect pentru site-urile multilingve cu multe opțiuni de limbă'
-tags = ['hugo', 'papermod', 'tutorial', 'multilingv', 'html', 'i18n', 'css', 'dezvoltare web', 'interfață utilizator', 'experiența utilizatorului', 'optimizare performanță']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Crearea unui selector de limbă personalizat în Hugo PaperMod"
+summary: "Ghid pas cu pas pentru implementarea unui selector de limbă dropdown personalizat în tema Hugo PaperMod, perfect pentru site-urile multilingve cu multe opțiuni de limbă"
+description: "Ghid pas cu pas pentru implementarea unui selector de limbă dropdown personalizat în tema Hugo PaperMod, perfect pentru site-urile multilingve cu multe opțiuni de limbă"
+tags: ["hugo", "papermod", "tutorial", "multilingv", "html", "i18n", "css", "dezvoltare web", "interfață utilizator", "experiența utilizatorului", "optimizare performanță"]
+---
 
 ## De ce să creezi un selector de limbă personalizat?
 

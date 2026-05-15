@@ -1,10 +1,10 @@
-+++
-date = '2025-02-10T15:39:20+08:00'
-draft = false
-title = 'Look Scanned: Njia ya Haraka, Salama na Akili ya Kuiga Waraka za Kupigwa Picha'
-summary = 'Look Scanned ni chombo nyepesi, kinachotumia kivinjari kinachoruhusu kuunda waraka za kupigwa picha za kweli papo hapo—bila kusakinisha, bila kupakia, na bila wasiwasi wa faragha. Iwe wewe ni mtu binafsi, timu, au msanidi programu anayetafuta vipengele vya kupiga picha vya kuunganishwa, Look Scanned inakufunika.'
-tags = ['chanua', 'muhtasari', 'vipengele', 'lookscanned']
-+++
+---
+date: "2025-02-10T15:39:20+08:00"
+draft: false
+title: "Look Scanned: Njia ya Haraka, Salama na Akili ya Kuiga Waraka za Kupigwa Picha"
+summary: "Look Scanned ni chombo nyepesi, kinachotumia kivinjari kinachoruhusu kuunda waraka za kupigwa picha za kweli papo hapo—bila kusakinisha, bila kupakia, na bila wasiwasi wa faragha. Iwe wewe ni mtu binafsi, timu, au msanidi programu anayetafuta vipengele vya kupiga picha vya kuunganishwa, Look Scanned inakufunika."
+tags: ["chanua", "muhtasari", "vipengele", "lookscanned"]
+---
 
 Katika ulimwengu wa kidijitali wa leo, kubadilisha waraka za kielektroniki kuwa PDF za kupigwa picha za kweli ni muhimu kwa kazi kama kuwasilisha mikataba, kuhifadhi waraka, na kushiriki faili rasmi. Vipiga picha vya jadi ni vizito na vya polepole, huku vyombo vingi vya mtandaoni vikihitaji kupakia faili, na hivyo kuleta hatari za faragha.
 

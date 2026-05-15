@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = 'Look Scanned aumenta performance em 60% utilizando ImageBitmap'
-summary = 'Saiba como o Look Scanned otimiza sua performance através de decodificação assíncrona e renderização eficiente com ImageBitmap, mantendo compatibilidade com navegadores antigos.'
-description = 'Saiba como o Look Scanned otimiza sua performance através de decodificação assíncrona e renderização eficiente com ImageBitmap, mantendo compatibilidade com navegadores antigos.'
-tags = ['otimização de performance', 'imagebitmap', 'processamento de imagens', 'desenvolvimento web']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "Look Scanned aumenta performance em 60% utilizando ImageBitmap"
+summary: "Saiba como o Look Scanned otimiza sua performance através de decodificação assíncrona e renderização eficiente com ImageBitmap, mantendo compatibilidade com navegadores antigos."
+description: "Saiba como o Look Scanned otimiza sua performance através de decodificação assíncrona e renderização eficiente com ImageBitmap, mantendo compatibilidade com navegadores antigos."
+tags: ["otimização de performance", "imagebitmap", "processamento de imagens", "desenvolvimento web"]
+---
 
 No desenvolvimento de aplicações web modernas como o [Look Scanned](https://lookscanned.io), a otimização de performance é uma prioridade essencial. Isso se torna ainda mais crítico no processamento de imagens. A interface `ImageBitmap`, apesar de ainda não ser amplamente utilizada, é uma ferramenta poderosa capaz de proporcionar ganhos expressivos de performance. Neste artigo, abordaremos os principais recursos do `ImageBitmap`, suas vantagens e nossa experiência ao implementá-lo no Look Scanned.
 

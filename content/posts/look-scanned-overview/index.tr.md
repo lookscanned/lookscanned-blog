@@ -1,10 +1,10 @@
-+++
-date = '2025-02-10T15:39:20+08:00'
-draft = false
-title = 'Look Scanned: Taranan Belgeleri Hızlı, Güvenli ve Akıllı Bir Şekilde Simüle Etmenin Yolu'
-summary = 'Look Scanned, kurulum gerektirmeden, yükleme yapmadan ve gizlilik endişesi olmadan gerçekçi taranan belgeler oluşturmanızı sağlayan hafif, tarayıcı tabanlı bir araçtır. İster bireysel kullanıcı, ister ekip, ister tarama özelliklerini entegre etmek isteyen bir geliştirici olun, Look Scanned tüm ihtiyaçlarınızı karşılar.'
-tags = ['tarama', 'genel-bakış', 'özellikler', 'lookscanned']
-+++
+---
+date: "2025-02-10T15:39:20+08:00"
+draft: false
+title: "Look Scanned: Taranan Belgeleri Hızlı, Güvenli ve Akıllı Bir Şekilde Simüle Etmenin Yolu"
+summary: "Look Scanned, kurulum gerektirmeden, yükleme yapmadan ve gizlilik endişesi olmadan gerçekçi taranan belgeler oluşturmanızı sağlayan hafif, tarayıcı tabanlı bir araçtır. İster bireysel kullanıcı, ister ekip, ister tarama özelliklerini entegre etmek isteyen bir geliştirici olun, Look Scanned tüm ihtiyaçlarınızı karşılar."
+tags: ["tarama", "genel-bakış", "özellikler", "lookscanned"]
+---
 
 Günümüz dijital dünyasında, sözleşmelerin teslimi, belgelerin arşivlenmesi ve resmi dosyaların paylaşılması gibi görevler için elektronik belgeleri gerçekçi taranan PDF'lere dönüştürmek gereklidir. Geleneksel tarayıcılar büyük ve yavaşken, birçok çevrimiçi araç dosya yüklemeyi gerektirir ve bu da gizlilik riskleri oluşturur.
 

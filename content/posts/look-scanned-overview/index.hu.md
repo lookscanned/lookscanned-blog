@@ -1,10 +1,10 @@
-+++
-date = '2025-02-10T15:39:20+08:00'
-draft = false
-title = 'Look Scanned: A gyors, biztonságos és okos módja a skennel szimulált dokumentumok készítésének'
-summary = 'A Look Scanned egy könnyű, böngészőalapú eszköz, amely lehetővé teszi, hogy azonnal valósághű szkennelt dokumentumokat hozz létre – telepítés, fájlfeltöltés és adatvédelmi aggodalmak nélkül. Akár egyén vagy, csapattagként vagy fejlesztőként keresed a szkennelési funkciók integrációját, a Look Scanned megoldást nyújt.'
-tags = ['szkennelés', 'áttekintés', 'funkciók', 'lookscanned']
-+++
+---
+date: "2025-02-10T15:39:20+08:00"
+draft: false
+title: "Look Scanned: A gyors, biztonságos és okos módja a skennel szimulált dokumentumok készítésének"
+summary: "A Look Scanned egy könnyű, böngészőalapú eszköz, amely lehetővé teszi, hogy azonnal valósághű szkennelt dokumentumokat hozz létre – telepítés, fájlfeltöltés és adatvédelmi aggodalmak nélkül. Akár egyén vagy, csapattagként vagy fejlesztőként keresed a szkennelési funkciók integrációját, a Look Scanned megoldást nyújt."
+tags: ["szkennelés", "áttekintés", "funkciók", "lookscanned"]
+---
 
 A mai digitális világban az elektronikus dokumentumok valósághű szkennelt PDF-ekké alakítása elengedhetetlen olyan feladatokhoz, mint szerződések benyújtása, dokumentumok archiválása és hivatalos fájlok megosztása. A hagyományos szkennerek nehézkes és lassúak, míg sok online eszköz fájlfeltöltést igényel, ami adatvédelmi kockázatokat rejt magában.
 

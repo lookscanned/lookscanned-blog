@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = "Look Scanned ile \"Kopyalanamayan ve Düzenlenemeyen\" Taranmış PDF'leri Kolayca Oluşturun"
-description = "Look Scanned ile PDF'lerinizi kopyalanamayan ve düzenlenemeyen taranmış belgelere nasıl dönüştüreceğinizi öğrenin. Tam gizlilik sağlamak için dosyaları yerel olarak işleyen tarayıcı tabanlı bir uygulama."
-summary = "Look Scanned, PDF'lerinizi kopyalama ve düzenleme işlemlerini engelleyen gerçekçi taranmış belgelere dönüştüren, gizliliğe öncelik veren bir tarayıcı uygulamasıdır. Tüm işlemler tarayıcınızda yerel olarak gerçekleştiğinden, hassas belgelerinizin güvenliği tamamen sağlanır."
-tags = ['gizlilik', 'tarama efekti', 'güvenlik', 'tarayıcı', 'çevrimdışı', 'belge koruması', 'yerel işleme']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Look Scanned ile \"Kopyalanamayan ve Düzenlenemeyen\" Taranmış PDF'leri Kolayca Oluşturun"
+summary: "Look Scanned, PDF'lerinizi kopyalama ve düzenleme işlemlerini engelleyen gerçekçi taranmış belgelere dönüştüren, gizliliğe öncelik veren bir tarayıcı uygulamasıdır. Tüm işlemler tarayıcınızda yerel olarak gerçekleştiğinden, hassas belgelerinizin güvenliği tamamen sağlanır."
+description: "Look Scanned ile PDF'lerinizi kopyalanamayan ve düzenlenemeyen taranmış belgelere nasıl dönüştüreceğinizi öğrenin. Tam gizlilik sağlamak için dosyaları yerel olarak işleyen tarayıcı tabanlı bir uygulama."
+tags: ["gizlilik", "tarama efekti", "güvenlik", "tarayıcı", "çevrimdışı", "belge koruması", "yerel işleme"]
+---
 
 Dijital dünyada hassas belgelerin korunması büyük önem taşır. İster sözleşmeler, ister raporlar, isterse gizli bilgiler paylaşıyor olun, başkalarının bu içeriği kopyalamasını veya değiştirmesini engellemek isteyebilirsiniz. Bunu gerçekleştirmenin etkili bir yolu, PDF'nizi **taranmış görünümlü bir belgeye** dönüştürmektir. Böylece belgeniz, düzenlenebilir bir dosya yerine fiziksel olarak taranmış bir doküman gibi görünür.
 

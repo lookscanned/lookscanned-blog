@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Paano Pinoprotektahan ng Look Scanned ang Inyong Privacy Habang Gumagawa ng Realistic na Na-scan na PDFs'
-description = 'Alamin kung paano tinitiyak ng Look Scanned ang kumpletong privacy ng dokumento sa pamamagitan ng browser-based processing, offline capabilities, at zero server interaction habang gumagawa ng realistic na na-scan na PDFs.'
-summary = 'Ang Look Scanned ay isang privacy-focused na tool na gumagawa ng realistic na na-scan na PDFs sa loob lang ng inyong browser. Alamin kung paano pinapanatiling secure ng local processing approach nito ang inyong sensitibong mga dokumento sa pamamagitan ng hindi kailanman nagpapadala ng data sa mga remote servers.'
-tags = ['privacy', 'lookscanned', 'features', 'browser', 'offline', 'security', 'local']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Paano Pinoprotektahan ng Look Scanned ang Inyong Privacy Habang Gumagawa ng Realistic na Na-scan na PDFs"
+summary: "Ang Look Scanned ay isang privacy-focused na tool na gumagawa ng realistic na na-scan na PDFs sa loob lang ng inyong browser. Alamin kung paano pinapanatiling secure ng local processing approach nito ang inyong sensitibong mga dokumento sa pamamagitan ng hindi kailanman nagpapadala ng data sa mga remote servers."
+description: "Alamin kung paano tinitiyak ng Look Scanned ang kumpletong privacy ng dokumento sa pamamagitan ng browser-based processing, offline capabilities, at zero server interaction habang gumagawa ng realistic na na-scan na PDFs."
+tags: ["privacy", "lookscanned", "features", "browser", "offline", "security", "local"]
+---
 
 Sa pagtaas ng digital document processing at sharing, ang mga alalahanin tungkol sa privacy ay nagiging mas kritikal. Ang Look Scanned ay isang lightweight, browser-based na tool na dinisenyo para gumawa ng realistic na na-scan na PDFs diretso sa inyong browser. Ang artikulong ito ay nagpapaliwanag kung paano ginagamit ng Look Scanned ang innovative local processing para matiyak ang privacy at security ng inyong mga dokumento.
 

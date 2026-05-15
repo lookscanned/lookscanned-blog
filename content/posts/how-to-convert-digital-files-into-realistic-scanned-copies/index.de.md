@@ -1,11 +1,11 @@
-+++
-date = '2025-01-20T09:35:50+08:00'
-draft = false
-title = 'Digitale Dateien (PDF, DOCX, Bilder) in realistische Scans umwandeln'
-tags = ['pdf', 'tools', 'anleitung', 'dokumentenverarbeitung', 'scan', 'how-to']
-summary = 'Lernen Sie, wie Sie mit Look Scanned, einem kostenlosen browserbasiertem Tool, digitale Dokumente wie gescannte Kopien aussehen lassen können. Diese Anleitung enthält Schritt-für-Schritt-Anleitungen, Anpassungsoptionen und Tipps für ein authentisches Scan-Erscheinungsbild.'
-description = 'Lernen Sie, wie Sie mit Look Scanned, einem kostenlosen browserbasiertem Tool, digitale Dokumente wie gescannte Kopien aussehen lassen können. Diese Anleitung enthält Schritt-für-Schritt-Anleitungen, Anpassungsoptionen und Tipps für ein authentisches Scan-Erscheinungsbild.'
-+++
+---
+date: "2025-01-20T09:35:50+08:00"
+draft: false
+title: "Digitale Dateien (PDF, DOCX, Bilder) in realistische Scans umwandeln"
+summary: "Lernen Sie, wie Sie mit Look Scanned, einem kostenlosen browserbasiertem Tool, digitale Dokumente wie gescannte Kopien aussehen lassen können. Diese Anleitung enthält Schritt-für-Schritt-Anleitungen, Anpassungsoptionen und Tipps für ein authentisches Scan-Erscheinungsbild."
+description: "Lernen Sie, wie Sie mit Look Scanned, einem kostenlosen browserbasiertem Tool, digitale Dokumente wie gescannte Kopien aussehen lassen können. Diese Anleitung enthält Schritt-für-Schritt-Anleitungen, Anpassungsoptionen und Tipps für ein authentisches Scan-Erscheinungsbild."
+tags: ["pdf", "tools", "anleitung", "dokumentenverarbeitung", "scan", "how-to"]
+---
 
 Manchmal möchte man, dass ein digitales Dokument wie eingescannt aussieht. Ob für einen professionelleren Eindruck, zur Erfüllung bestimmter Anforderungen oder aus ästhetischen Gründen - einem Dokument ein gescanntes Aussehen zu verleihen, ist überraschend einfach. In diesem Blogbeitrag führen wir Sie Schritt für Schritt durch den Prozess.
 

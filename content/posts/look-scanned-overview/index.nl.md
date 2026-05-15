@@ -1,10 +1,10 @@
-+++
-date = '2025-02-10T15:39:20+08:00'
-draft = false
-title = 'Look Scanned: De snelle, veilige en slimme manier om gescande documenten te simuleren'
-summary = 'Look Scanned is een lichtgewicht browsergebaseerde tool waarmee je direct realistische gescande documenten kunt maken — zonder installatie, zonder uploads en zonder zorgen over privacy. Of je nu een individu bent, een team of een ontwikkelaar die scanfunctionaliteit wil integreren, Look Scanned heeft alles wat je nodig hebt.'
-tags = ['scannen', 'overzicht', 'functies', 'lookscanned']
-+++
+---
+date: "2025-02-10T15:39:20+08:00"
+draft: false
+title: "Look Scanned: De snelle, veilige en slimme manier om gescande documenten te simuleren"
+summary: "Look Scanned is een lichtgewicht browsergebaseerde tool waarmee je direct realistische gescande documenten kunt maken — zonder installatie, zonder uploads en zonder zorgen over privacy. Of je nu een individu bent, een team of een ontwikkelaar die scanfunctionaliteit wil integreren, Look Scanned heeft alles wat je nodig hebt."
+tags: ["scannen", "overzicht", "functies", "lookscanned"]
+---
 
 In de digitale wereld van vandaag is het omzetten van elektronische documenten naar realistische gescande PDF's essentieel voor taken zoals het indienen van contracten, archiveren van documenten en delen van officiële bestanden. Traditionele scanners zijn groot en traag, terwijl veel online tools bestandsuploads vereisen, wat privacyrisico's met zich meebrengt.
 

@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Hogyan védi meg a Look Scanned az adatvédelmét valósághű szkennelt PDF-ek létrehozása közben'
-description = 'Fedezze fel, hogyan biztosítja a Look Scanned a teljes dokumentum-adatvédelmet böngészőalapú feldolgozással, offline képességekkel és zéró szerver interakcióval valósághű szkennelt PDF-ek létrehozása közben.'
-summary = 'A Look Scanned egy adatvédelemre fókuszáló eszköz, amely valósághű szkennelt PDF-eket hoz létre teljesen a böngészőjében. Tudja meg, hogyan tartja biztonságban érzékeny dokumentumait a helyi feldolgozási megközelítés azzal, hogy soha nem küld adatokat távoli szerverekre.'
-tags = ['adatvédelem', 'lookscanned', 'funkciók', 'böngésző', 'offline', 'biztonság', 'helyi']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Hogyan védi meg a Look Scanned az adatvédelmét valósághű szkennelt PDF-ek létrehozása közben"
+summary: "A Look Scanned egy adatvédelemre fókuszáló eszköz, amely valósághű szkennelt PDF-eket hoz létre teljesen a böngészőjében. Tudja meg, hogyan tartja biztonságban érzékeny dokumentumait a helyi feldolgozási megközelítés azzal, hogy soha nem küld adatokat távoli szerverekre."
+description: "Fedezze fel, hogyan biztosítja a Look Scanned a teljes dokumentum-adatvédelmet böngészőalapú feldolgozással, offline képességekkel és zéró szerver interakcióval valósághű szkennelt PDF-ek létrehozása közben."
+tags: ["adatvédelem", "lookscanned", "funkciók", "böngésző", "offline", "biztonság", "helyi"]
+---
 
 A digitális dokumentumfeldolgozás és -megosztás növekedésével az adatvédelemmel kapcsolatos aggodalmak egyre kritikusabbá válnak. A Look Scanned egy könnyű, böngészőalapú eszköz, amelyet valósághű szkennelt PDF-ek létrehozására terveztek közvetlenül a böngészőjében. Ez a cikk elmagyarázza, hogyan használ a Look Scanned innovatív helyi feldolgozást dokumentumai adatvédelmének és biztonságának biztosítására.
 

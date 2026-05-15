@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'Paano Magdagdag ng Undeletable Watermark sa Inyong PDF'
-description = 'Matuto kung paano gumawa ng tunay na undeletable watermarks sa inyong mga PDF gamit ang Look Scanned. Ang gabay na ito ay nagpapaliwanag kung bakit nabibigo ang mga traditional na watermark at paano gumawa ng tamper-proof na mga dokumento na mukha ng physical na mga scan.'
-tags = ['PDF', 'seguridad', 'watermark', 'proteksyon ng dokumento']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "Paano Magdagdag ng Undeletable Watermark sa Inyong PDF"
+description: "Matuto kung paano gumawa ng tunay na undeletable watermarks sa inyong mga PDF gamit ang Look Scanned. Ang gabay na ito ay nagpapaliwanag kung bakit nabibigo ang mga traditional na watermark at paano gumawa ng tamper-proof na mga dokumento na mukha ng physical na mga scan."
+tags: ["PDF", "seguridad", "watermark", "proteksyon ng dokumento"]
+---
 
 Ang mga watermark ay isang karaniwang paraan upang protektahan ang mga dokumento, ngunit ang mga traditional na watermark ay madalas na maaring alisin o makaiwas gamit lamang ang ilang pindot. Sa post na ito, ipapakita namin sa inyo kung paano gumawa ng **tunay na undeletable watermark** gamit ang **Look Scanned**, isang browser-based na tool na nagsisimula ng mga scanned na dokumento para sa mas mataas na seguridad ng dokumento.
 

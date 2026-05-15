@@ -1,11 +1,11 @@
-+++
-date = '2025-01-20T09:35:50+08:00'
-draft = false
-title = 'Dijital Dosyalarınızı (PDF, DOCX, Görüntü) Gerçek Taranmış Belge Görünümüne Nasıl Dönüştürebilirsiniz'
-tags = ['pdf', 'araçlar', 'öğretici', 'belge-işleme', 'tarama', 'kılavuz']
-summary = 'Look Scanned adlı ücretsiz, tarayıcı tabanlı bir araç kullanarak dijital belgelerinizi taranmış görünüme kavuşturmayı öğrenin. Bu kılavuz, adım adım talimatlar, özelleştirme seçenekleri ve gerçek taranmış belge görünümü elde etmek için ipuçları içerir.'
-description = 'Look Scanned adlı ücretsiz, tarayıcı tabanlı bir araç kullanarak dijital belgelerinizi taranmış görünüme kavuşturmayı öğrenin. Bu kılavuz, adım adım talimatlar, özelleştirme seçenekleri ve gerçek taranmış belge görünümü elde etmek için ipuçları içerir.'
-+++
+---
+date: "2025-01-20T09:35:50+08:00"
+draft: false
+title: "Dijital Dosyalarınızı (PDF, DOCX, Görüntü) Gerçek Taranmış Belge Görünümüne Nasıl Dönüştürebilirsiniz"
+summary: "Look Scanned adlı ücretsiz, tarayıcı tabanlı bir araç kullanarak dijital belgelerinizi taranmış görünüme kavuşturmayı öğrenin. Bu kılavuz, adım adım talimatlar, özelleştirme seçenekleri ve gerçek taranmış belge görünümü elde etmek için ipuçları içerir."
+description: "Look Scanned adlı ücretsiz, tarayıcı tabanlı bir araç kullanarak dijital belgelerinizi taranmış görünüme kavuşturmayı öğrenin. Bu kılavuz, adım adım talimatlar, özelleştirme seçenekleri ve gerçek taranmış belge görünümü elde etmek için ipuçları içerir."
+tags: ["pdf", "araçlar", "öğretici", "belge-işleme", "tarama", "kılavuz"]
+---
 
 Bazen dijital belgelerimize taranmış görünümü vermemiz gerekebilir. İster profesyonel bir izlenim yaratmak için, ister kurumsal gereklilikleri karşılamak için, isterse görsel nedenlerle olsun, bir belgeye taranmış görünümü vermek düşündüğünüzden çok daha kolay olabilir. Bu yazıda, size süreci adım adım anlatacağız.
 

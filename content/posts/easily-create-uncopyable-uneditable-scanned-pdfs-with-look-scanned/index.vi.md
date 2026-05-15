@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Tạo PDF Giả Quét "Không Thể Sao Chép & Chỉnh Sửa" Một Cách Dễ Dàng Với Look Scanned'
-description = 'Tìm hiểu cách chuyển đổi file PDF của bạn thành tài liệu có hiệu ứng quét không thể sao chép, không thể chỉnh sửa với Look Scanned - công cụ trên trình duyệt xử lý file ngay trên máy tính để đảm bảo quyền riêng tư tối đa.'
-summary = 'Look Scanned là ứng dụng trình duyệt chú trọng bảo mật, biến PDF của bạn thành tài liệu có hiệu ứng quét chân thực mà không thể sao chép hay chỉnh sửa. Toàn bộ quá trình xử lý diễn ra ngay trên trình duyệt của bạn, đảm bảo an toàn tuyệt đối cho tài liệu nhạy cảm.'
-tags = ['quyền riêng tư', 'hiệu ứng quét', 'bảo mật', 'trình duyệt', 'ngoại tuyến', 'bảo vệ tài liệu', 'xử lý cục bộ']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Tạo PDF Giả Quét \"Không Thể Sao Chép & Chỉnh Sửa\" Một Cách Dễ Dàng Với Look Scanned"
+summary: "Look Scanned là ứng dụng trình duyệt chú trọng bảo mật, biến PDF của bạn thành tài liệu có hiệu ứng quét chân thực mà không thể sao chép hay chỉnh sửa. Toàn bộ quá trình xử lý diễn ra ngay trên trình duyệt của bạn, đảm bảo an toàn tuyệt đối cho tài liệu nhạy cảm."
+description: "Tìm hiểu cách chuyển đổi file PDF của bạn thành tài liệu có hiệu ứng quét không thể sao chép, không thể chỉnh sửa với Look Scanned - công cụ trên trình duyệt xử lý file ngay trên máy tính để đảm bảo quyền riêng tư tối đa."
+tags: ["quyền riêng tư", "hiệu ứng quét", "bảo mật", "trình duyệt", "ngoại tuyến", "bảo vệ tài liệu", "xử lý cục bộ"]
+---
 
 Trong thời đại số hóa hiện nay, việc bảo vệ tài liệu nhạy cảm là vô cùng quan trọng. Dù bạn đang chia sẻ hợp đồng, báo cáo hay thông tin mật, bạn đều có thể muốn ngăn người khác sao chép hoặc sửa đổi nội dung. Một phương pháp hiệu quả để làm điều này là chuyển đổi file PDF của bạn thành **tài liệu có hiệu ứng quét**, khiến nó trông giống như một bản scan vật lý thay vì một file có thể chỉnh sửa được.
 

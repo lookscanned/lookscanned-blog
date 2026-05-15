@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'Cara Menambahkan Watermark yang Tidak Dapat Dihapus ke PDF Anda'
-description = 'Pelajari cara membuat watermark yang benar-benar tidak dapat dihapus di PDF Anda menggunakan Look Scanned. Panduan ini menjelaskan mengapa watermark tradisional gagal dan cara membuat dokumen anti-pemalsuan yang terlihat seperti hasil pindaian fisik.'
-tags = ['PDF', 'keamanan', 'watermark', 'perlindungan dokumen']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "Cara Menambahkan Watermark yang Tidak Dapat Dihapus ke PDF Anda"
+description: "Pelajari cara membuat watermark yang benar-benar tidak dapat dihapus di PDF Anda menggunakan Look Scanned. Panduan ini menjelaskan mengapa watermark tradisional gagal dan cara membuat dokumen anti-pemalsuan yang terlihat seperti hasil pindaian fisik."
+tags: ["PDF", "keamanan", "watermark", "perlindungan dokumen"]
+---
 
 Watermark adalah cara umum untuk melindungi dokumen, tetapi watermark tradisional seringkali dapat dihapus atau dilewati hanya dengan beberapa klik. Dalam artikel ini, kami akan menunjukkan cara membuat **watermark yang benar-benar tidak dapat dihapus** menggunakan **Look Scanned**, alat berbasis browser yang mensimulasikan dokumen yang dipindai untuk meningkatkan keamanan dokumen.
 

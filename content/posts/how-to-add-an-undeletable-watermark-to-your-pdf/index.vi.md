@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'Cách Thêm Dấu Nước Không Thể Xóa vào PDF của Bạn'
-description = 'Tìm hiểu cách tạo dấu nước thực sự không thể xóa trong tệp PDF của bạn bằng Look Scanned. Hướng dẫn này giải thích tại sao dấu nước truyền thống thất bại và cách tạo tài liệu chống giả mạo trông giống như bản quét vật lý.'
-tags = ['PDF', 'bảo mật', 'dấu nước', 'bảo vệ tài liệu']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "Cách Thêm Dấu Nước Không Thể Xóa vào PDF của Bạn"
+description: "Tìm hiểu cách tạo dấu nước thực sự không thể xóa trong tệp PDF của bạn bằng Look Scanned. Hướng dẫn này giải thích tại sao dấu nước truyền thống thất bại và cách tạo tài liệu chống giả mạo trông giống như bản quét vật lý."
+tags: ["PDF", "bảo mật", "dấu nước", "bảo vệ tài liệu"]
+---
 
 Dấu nước là một cách phổ biến để bảo vệ tài liệu, nhưng dấu nước truyền thống thường có thể bị xóa hoặc bỏ qua chỉ với vài cú nhấp chuột. Trong bài viết này, chúng tôi sẽ chỉ cho bạn cách tạo **dấu nước thực sự không thể xóa** bằng **Look Scanned**, một công cụ dựa trên trình duyệt mô phỏng tài liệu được quét để tăng cường bảo mật tài liệu.
 

@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = 'Teljesítmény Növelése 60%-kal ImageBitmap-pel a Look Scanned-ben'
-summary = 'Fedezze fel, hogy az ImageBitmap integrálása a Look Scanned-be hogyan javítja a teljesítményt az aszinkron dekódolás és hatékony renderelés lehetővé tételével, miközben megőrzi a régebbi böngészőkkel való kompatibilitást.'
-description = 'Fedezze fel, hogy az ImageBitmap integrálása a Look Scanned-be hogyan javítja a teljesítményt az aszinkron dekódolás és hatékony renderelés lehetővé tételével, miközben megőrzi a régebbi böngészőkkel való kompatibilitást.'
-tags = ['teljesítmény', 'imagebitmap', 'kép', 'böngésző']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "Teljesítmény Növelése 60%-kal ImageBitmap-pel a Look Scanned-ben"
+summary: "Fedezze fel, hogy az ImageBitmap integrálása a Look Scanned-be hogyan javítja a teljesítményt az aszinkron dekódolás és hatékony renderelés lehetővé tételével, miközben megőrzi a régebbi böngészőkkel való kompatibilitást."
+description: "Fedezze fel, hogy az ImageBitmap integrálása a Look Scanned-be hogyan javítja a teljesítményt az aszinkron dekódolás és hatékony renderelés lehetővé tételével, miközben megőrzi a régebbi böngészőkkel való kompatibilitást."
+tags: ["teljesítmény", "imagebitmap", "kép", "böngésző"]
+---
 
 A teljesítmény-optimalizálás kulcsfontosságú a modern webalkalmazások, például a [Look Scanned](https://lookscanned.io) építésekor, különösen képek kezelésekor. Egy hatékony, de kevésbé kihasznált eszköz a jelentős teljesítményjavulások eléréséhez az `ImageBitmap` interfész. Ebben a blogbejegyzésben felfedezzük, mi az `ImageBitmap`, miért hatékony, és hogyan lett integrálva a Look Scanned-be a renderelési teljesítmény javítása érdekében.
 

@@ -1,10 +1,10 @@
-+++
-date = '2025-02-10T15:39:20+08:00'
-draft = false
-title = 'Look Scanned: Rychlý, bezpečný a chytrý způsob simulace skenovaných dokumentů'
-summary = 'Look Scanned je lehký webový nástroj, který vám umožní okamžitě vytvářet realistické skenované dokumenty – bez instalace, bez nahrávání souborů a bez obav o soukromí. Ať už jste jednotlivec, tým nebo vývojář hledající integrace skenování, Look Scanned je tu pro vás.'
-tags = ['skenování', 'přehled', 'funkce', 'lookscanned']
-+++
+---
+date: "2025-02-10T15:39:20+08:00"
+draft: false
+title: "Look Scanned: Rychlý, bezpečný a chytrý způsob simulace skenovaných dokumentů"
+summary: "Look Scanned je lehký webový nástroj, který vám umožní okamžitě vytvářet realistické skenované dokumenty – bez instalace, bez nahrávání souborů a bez obav o soukromí. Ať už jste jednotlivec, tým nebo vývojář hledající integrace skenování, Look Scanned je tu pro vás."
+tags: ["skenování", "přehled", "funkce", "lookscanned"]
+---
 
 V dnešním digitálním světě je převod elektronických dokumentů na realistické skenované PDF zásadní pro úkoly jako podávání smluv, archivace dokumentů a sdílení oficiálních souborů. Tradiční skenery jsou objemné a pomalé, zatímco mnoho online nástrojů vyžaduje nahrávání souborů, což představuje riziko pro soukromí.
 

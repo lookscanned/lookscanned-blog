@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Elegante Sprachauswahl für Hugo PaperMod mit Dropdown-Menü'
-summary = 'Eine Anleitung zur Implementierung einer eleganten Sprachauswahl im Hugo PaperMod Theme mittels Dropdown-Menü. Durch ein intuitives Icon und übersichtliches Design wird die Navigationsleiste mehrsprachiger Websites optimal strukturiert'
-description = 'Eine Anleitung zur Implementierung einer eleganten Sprachauswahl im Hugo PaperMod Theme mittels Dropdown-Menü. Durch ein intuitives Icon und übersichtliches Design wird die Navigationsleiste mehrsprachiger Websites optimal strukturiert'
-tags = ['hugo', 'papermod', 'anleitung', 'mehrsprachigkeit', 'html', 'i18n', 'css', 'webentwicklung']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Elegante Sprachauswahl für Hugo PaperMod mit Dropdown-Menü"
+summary: "Eine Anleitung zur Implementierung einer eleganten Sprachauswahl im Hugo PaperMod Theme mittels Dropdown-Menü. Durch ein intuitives Icon und übersichtliches Design wird die Navigationsleiste mehrsprachiger Websites optimal strukturiert"
+description: "Eine Anleitung zur Implementierung einer eleganten Sprachauswahl im Hugo PaperMod Theme mittels Dropdown-Menü. Durch ein intuitives Icon und übersichtliches Design wird die Navigationsleiste mehrsprachiger Websites optimal strukturiert"
+tags: ["hugo", "papermod", "anleitung", "mehrsprachigkeit", "html", "i18n", "css", "webentwicklung"]
+---
 
 ## Warum eine verbesserte Sprachauswahl?
 

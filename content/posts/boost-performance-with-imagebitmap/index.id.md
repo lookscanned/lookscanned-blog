@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = 'Look Scanned Tingkatkan Performa 60% dengan ImageBitmap'
-summary = 'Simak cara Look Scanned mengoptimalkan performa melalui dekoding asinkron dan rendering efisien dengan ImageBitmap, tanpa mengorbankan kompatibilitas dengan browser lama.'
-description = 'Simak cara Look Scanned mengoptimalkan performa melalui dekoding asinkron dan rendering efisien dengan ImageBitmap, tanpa mengorbankan kompatibilitas dengan browser lama.'
-tags = ['optimasi performa', 'imagebitmap', 'pemrosesan gambar', 'pengembangan web']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "Look Scanned Tingkatkan Performa 60% dengan ImageBitmap"
+summary: "Simak cara Look Scanned mengoptimalkan performa melalui dekoding asinkron dan rendering efisien dengan ImageBitmap, tanpa mengorbankan kompatibilitas dengan browser lama."
+description: "Simak cara Look Scanned mengoptimalkan performa melalui dekoding asinkron dan rendering efisien dengan ImageBitmap, tanpa mengorbankan kompatibilitas dengan browser lama."
+tags: ["optimasi performa", "imagebitmap", "pemrosesan gambar", "pengembangan web"]
+---
 
 Dalam pengembangan aplikasi web modern seperti [Look Scanned](https://lookscanned.io), optimasi performa menjadi prioritas utama, terutama dalam pemrosesan gambar. Antarmuka `ImageBitmap`, meski belum banyak digunakan, merupakan alat yang sangat efektif untuk meningkatkan performa secara signifikan. Dalam artikel ini, kami akan membahas fitur utama `ImageBitmap`, berbagai keunggulannya, dan pengalaman kami mengimplementasikannya di Look Scanned.
 

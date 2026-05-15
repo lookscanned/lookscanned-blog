@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Tạo Bộ Chuyển Đổi Ngôn Ngữ Tinh Tế cho Hugo PaperMod'
-summary = 'Hướng dẫn chi tiết cách tạo bộ chuyển đổi ngôn ngữ với menu thả xuống trong Hugo PaperMod, giúp điều hướng trên các trang web đa ngôn ngữ trở nên thuận tiện và trực quan hơn'
-description = 'Hướng dẫn chi tiết cách tạo bộ chuyển đổi ngôn ngữ với menu thả xuống trong Hugo PaperMod, giúp điều hướng trên các trang web đa ngôn ngữ trở nên thuận tiện và trực quan hơn'
-tags = ['hugo', 'papermod', 'hướng dẫn', 'đa ngôn ngữ', 'html', 'i18n', 'css', 'lập trình web', 'giao diện', 'trải nghiệm người dùng', 'tối ưu hóa']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Tạo Bộ Chuyển Đổi Ngôn Ngữ Tinh Tế cho Hugo PaperMod"
+summary: "Hướng dẫn chi tiết cách tạo bộ chuyển đổi ngôn ngữ với menu thả xuống trong Hugo PaperMod, giúp điều hướng trên các trang web đa ngôn ngữ trở nên thuận tiện và trực quan hơn"
+description: "Hướng dẫn chi tiết cách tạo bộ chuyển đổi ngôn ngữ với menu thả xuống trong Hugo PaperMod, giúp điều hướng trên các trang web đa ngôn ngữ trở nên thuận tiện và trực quan hơn"
+tags: ["hugo", "papermod", "hướng dẫn", "đa ngôn ngữ", "html", "i18n", "css", "lập trình web", "giao diện", "trải nghiệm người dùng", "tối ưu hóa"]
+---
 
 ## Tại Sao Cần Cải Thiện Bộ Chuyển Đổi Ngôn Ngữ?
 

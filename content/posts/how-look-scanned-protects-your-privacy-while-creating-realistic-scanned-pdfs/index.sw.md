@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Jinsi Look Scanned inavyolinda faragha yako wakati wa kuunda PDF za uchunguzi halisi'
-description = 'Gundua jinsi Look Scanned inavyohakikisha faragha kamili ya hati kwa kuvingi vitu vya kivinjari, uwezo wa kutumia bila mtandao na hakuna mwingiliano wa seva wakati wa kuunda PDF za uchunguzi halisi.'
-summary = 'Look Scanned ni zana inayolenga faragha ambayo huunda PDF za uchunguzi halisi kabisa ndani ya kivinjari chako. Jifunze jinsi mbinu yake ya usindikaji wa ndani inavyoweka hati zako nyeti salama kwa kutowahi kutuma data kwa seva za mbali.'
-tags = ['faragha', 'lookscanned', 'vipengele', 'kivinjari', 'nje-ya-mtandao', 'usalama', 'ndani']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Jinsi Look Scanned inavyolinda faragha yako wakati wa kuunda PDF za uchunguzi halisi"
+summary: "Look Scanned ni zana inayolenga faragha ambayo huunda PDF za uchunguzi halisi kabisa ndani ya kivinjari chako. Jifunze jinsi mbinu yake ya usindikaji wa ndani inavyoweka hati zako nyeti salama kwa kutowahi kutuma data kwa seva za mbali."
+description: "Gundua jinsi Look Scanned inavyohakikisha faragha kamili ya hati kwa kuvingi vitu vya kivinjari, uwezo wa kutumia bila mtandao na hakuna mwingiliano wa seva wakati wa kuunda PDF za uchunguzi halisi."
+tags: ["faragha", "lookscanned", "vipengele", "kivinjari", "nje-ya-mtandao", "usalama", "ndani"]
+---
 
 Kwa kuongezeka kwa usindikaji wa kidijiti wa hati na ugawanyaji, wasiwasi kuhusu faragha unakuwa muhimu zaidi. Look Scanned ni zana nyepesi, inayotegemea kivinjari iliyoundwa kuunda PDF za uchunguzi halisi moja kwa moja kwenye kivinjari chako. Makala hii inaelezea jinsi Look Scanned inavyotumia usindikaji wa ndani wa kiumbuzi kuhakikisha faragha na usalama wa hati zako.
 

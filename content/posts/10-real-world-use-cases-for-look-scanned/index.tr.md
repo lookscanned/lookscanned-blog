@@ -1,10 +1,10 @@
-+++
-date = '2025-07-31T16:36:14+08:00'
-draft = false
-title = 'Look Scanned için 10 Pratik Kullanım Alanı: Hukuki Belgelerden Kreatif Projelere'
-summary = "Look Scanned'in farklı sektörler ve senaryolarda pratik uygulamalarını keşfedin. Hukuki belge hazırlamadan kreatif proje arşivlemeye kadar, bu tarayıcı tabanlı aracın çeşitli profesyonel ve kişisel bağlamlarda gerçek sorunları nasıl çözdüğünü öğrenin."
-tags = ['kullanim-alanlari', 'uygulamalar', 'hukuki', 'is-dunyasi', 'kreatif', 'lookscanned']
-+++
+---
+date: "2025-07-31T16:36:14+08:00"
+draft: false
+title: "Look Scanned için 10 Pratik Kullanım Alanı: Hukuki Belgelerden Kreatif Projelere"
+summary: "Look Scanned'in farklı sektörler ve senaryolarda pratik uygulamalarını keşfedin. Hukuki belge hazırlamadan kreatif proje arşivlemeye kadar, bu tarayıcı tabanlı aracın çeşitli profesyonel ve kişisel bağlamlarda gerçek sorunları nasıl çözdüğünü öğrenin."
+tags: ["kullanim-alanlari", "uygulamalar", "hukuki", "is-dunyasi", "kreatif", "lookscanned"]
+---
 
 [Look Scanned](https://lookscanned.io) sadece bir belge dönüştürme aracı değil—çeşitli sektörler ve kişisel senaryolarda karşılaşılan gerçek zorlukları ele alan çok yönlü bir çözümdür. Birçok kullanıcı başlangıçta Look Scanned'i temel PDF tarama ihtiyaçları için keşfetse de, uygulamaları basit belge dönüştürmeden çok daha ilerisine uzanır.
 

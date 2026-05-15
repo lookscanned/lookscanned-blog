@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'Hoe Voeg je een Onuitwisbaar Watermerk toe aan je PDF'
-description = 'Leer hoe je echt onuitwisbare watermerken kunt maken in je PDF-bestanden met Look Scanned. Deze gids legt uit waarom traditionele watermerken falen en hoe je documenten kunt maken die eruitzien als fysieke scans.'
-tags = ['PDF', 'beveiliging', 'watermerk', 'documentbescherming']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "Hoe Voeg je een Onuitwisbaar Watermerk toe aan je PDF"
+description: "Leer hoe je echt onuitwisbare watermerken kunt maken in je PDF-bestanden met Look Scanned. Deze gids legt uit waarom traditionele watermerken falen en hoe je documenten kunt maken die eruitzien als fysieke scans."
+tags: ["PDF", "beveiliging", "watermerk", "documentbescherming"]
+---
 
 Watermerken zijn een veelgebruikte manier om documenten te beschermen, maar traditionele watermerken kunnen vaak met een paar klikken worden verwijderd of omzeild. In dit artikel laten we je zien hoe je een **echt onuitwisbaar watermerk** kunt maken met **Look Scanned**, een browsergebaseerd hulpmiddel dat gescande documenten simuleert voor verbeterde documentbeveiliging.
 

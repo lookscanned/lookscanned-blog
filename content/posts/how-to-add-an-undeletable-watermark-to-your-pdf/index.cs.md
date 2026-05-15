@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'Jak Přidat Nemazatelný Vodoznak do Vašeho PDF'
-description = 'Naučte se vytvářet skutečně nemazatelné vodoznaky ve vašich PDF pomocí Look Scanned. Tento návod vysvětluje, proč tradiční vodoznaky selhávají a jak vytvořit tamper-proof dokumenty, které vypadají jako fyzické skeny.'
-tags = ['PDF', 'zabezpečení', 'vodoznak', 'ochrana dokumentů']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "Jak Přidat Nemazatelný Vodoznak do Vašeho PDF"
+description: "Naučte se vytvářet skutečně nemazatelné vodoznaky ve vašich PDF pomocí Look Scanned. Tento návod vysvětluje, proč tradiční vodoznaky selhávají a jak vytvořit tamper-proof dokumenty, které vypadají jako fyzické skeny."
+tags: ["PDF", "zabezpečení", "vodoznak", "ochrana dokumentů"]
+---
 
 Vodoznaky jsou běžným způsobem ochrany dokumentů, ale tradiční vodoznaky lze často odstranit nebo obejít pouhými několika kliknutími. V tomto příspěvku vám ukážeme, jak vytvořit **skutečně nemazatelný vodoznak** pomocí **Look Scanned**, nástroje založeného na prohlížeči, který simuluje skenované dokumenty pro zvýšené zabezpečení dokumentů.
 

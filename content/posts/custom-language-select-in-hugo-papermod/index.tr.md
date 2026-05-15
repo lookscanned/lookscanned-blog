@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Hugo PaperMod için Şık Bir Dil Seçici Tasarımı'
-summary = 'Hugo PaperMod teması için açılır menülü bir dil seçici geliştirerek çok dilli web sitelerinde gezinmeyi kolaylaştıran pratik bir kılavuz'
-description = 'Hugo PaperMod teması için açılır menülü bir dil seçici geliştirerek çok dilli web sitelerinde gezinmeyi kolaylaştıran pratik bir kılavuz'
-tags = ['hugo', 'papermod', 'kılavuz', 'çoklu dil', 'html', 'i18n', 'css', 'web geliştirme', 'kullanıcı arayüzü', 'erişilebilirlik']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Hugo PaperMod için Şık Bir Dil Seçici Tasarımı"
+summary: "Hugo PaperMod teması için açılır menülü bir dil seçici geliştirerek çok dilli web sitelerinde gezinmeyi kolaylaştıran pratik bir kılavuz"
+description: "Hugo PaperMod teması için açılır menülü bir dil seçici geliştirerek çok dilli web sitelerinde gezinmeyi kolaylaştıran pratik bir kılavuz"
+tags: ["hugo", "papermod", "kılavuz", "çoklu dil", "html", "i18n", "css", "web geliştirme", "kullanıcı arayüzü", "erişilebilirlik"]
+---
 
 ## Neden Farklı Bir Dil Seçiciye İhtiyaç Var?
 

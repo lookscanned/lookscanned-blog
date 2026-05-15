@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Comment Look Scanned protège votre confidentialité tout en créant des PDF numérisés réalistes'
-description = "Découvrez comment Look Scanned garantit une confidentialité totale de vos documents grâce au traitement dans le navigateur, aux fonctionnalités hors ligne et à l'absence d'interaction avec les serveurs lors de la création de PDF numérisés réalistes."
-summary = "Look Scanned est un outil axé sur la confidentialité qui crée des PDF d'aspect numérisé entièrement dans votre navigateur. Découvrez comment son approche de traitement local garde vos documents sensibles en sécurité en n'envoyant jamais de données vers des serveurs distants."
-tags = ['confidentialité', 'lookscanned', 'fonctionnalités', 'navigateur', 'hors-ligne', 'sécurité', 'traitement-local']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Comment Look Scanned protège votre confidentialité tout en créant des PDF numérisés réalistes"
+summary: "Look Scanned est un outil axé sur la confidentialité qui crée des PDF d'aspect numérisé entièrement dans votre navigateur. Découvrez comment son approche de traitement local garde vos documents sensibles en sécurité en n'envoyant jamais de données vers des serveurs distants."
+description: "Découvrez comment Look Scanned garantit une confidentialité totale de vos documents grâce au traitement dans le navigateur, aux fonctionnalités hors ligne et à l'absence d'interaction avec les serveurs lors de la création de PDF numérisés réalistes."
+tags: ["confidentialité", "lookscanned", "fonctionnalités", "navigateur", "hors-ligne", "sécurité", "traitement-local"]
+---
 
 Avec l'essor du traitement et du partage de documents numériques, les préoccupations concernant la confidentialité deviennent de plus en plus cruciales. Look Scanned est un outil léger, basé sur navigateur, conçu pour créer des PDF d'aspect numérisé directement dans votre navigateur. Cet article explique comment Look Scanned utilise un traitement local innovant pour garantir la confidentialité et la sécurité de vos documents.
 

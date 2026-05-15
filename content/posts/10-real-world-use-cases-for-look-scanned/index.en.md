@@ -1,10 +1,10 @@
-+++
-date = '2025-07-31T16:36:14+08:00'
-draft = false
-title = '10 Real-World Use Cases for Look Scanned: From Legal Documents to Creative Projects'
-summary = 'Discover practical applications of Look Scanned across different industries and scenarios. From legal document preparation to creative project archiving, learn how this browser-based tool solves real problems in various professional and personal contexts.'
-tags = ['use-cases', 'applications', 'legal', 'business', 'creative', 'lookscanned']
-+++
+---
+date: "2025-07-31T16:36:14+08:00"
+draft: false
+title: "10 Real-World Use Cases for Look Scanned: From Legal Documents to Creative Projects"
+summary: "Discover practical applications of Look Scanned across different industries and scenarios. From legal document preparation to creative project archiving, learn how this browser-based tool solves real problems in various professional and personal contexts."
+tags: ["use-cases", "applications", "legal", "business", "creative", "lookscanned"]
+---
 
 [Look Scanned](https://lookscanned.io) isn't just another document conversion tool—it's a versatile solution that addresses real-world challenges across various industries and personal scenarios. While many users initially discover Look Scanned for basic PDF scanning needs, its applications extend far beyond simple document conversion.
 

@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Crea fácilmente PDFs escaneados "Imposibles de copiar y editar" con Look Scanned'
-description = 'Aprende a transformar tus PDFs en documentos con apariencia de escaneados que no se pueden copiar ni editar con Look Scanned, una herramienta web que procesa los archivos localmente para garantizar total privacidad.'
-summary = 'Look Scanned es una herramienta de navegador centrada en la privacidad que convierte tus PDFs en documentos escaneados realistas que impiden la copia y edición. Todo el procesamiento ocurre localmente en tu navegador, garantizando que tus documentos sensibles permanezcan seguros.'
-tags = ['privacidad', 'efecto escaneado', 'seguridad', 'navegador', 'offline', 'protección de documentos', 'procesamiento local']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Crea fácilmente PDFs escaneados \"Imposibles de copiar y editar\" con Look Scanned"
+summary: "Look Scanned es una herramienta de navegador centrada en la privacidad que convierte tus PDFs en documentos escaneados realistas que impiden la copia y edición. Todo el procesamiento ocurre localmente en tu navegador, garantizando que tus documentos sensibles permanezcan seguros."
+description: "Aprende a transformar tus PDFs en documentos con apariencia de escaneados que no se pueden copiar ni editar con Look Scanned, una herramienta web que procesa los archivos localmente para garantizar total privacidad."
+tags: ["privacidad", "efecto escaneado", "seguridad", "navegador", "offline", "protección de documentos", "procesamiento local"]
+---
 
 En el mundo digital, proteger documentos sensibles es fundamental. Ya sea que estés compartiendo contratos, informes o información confidencial, es probable que quieras evitar que otros copien o modifiquen su contenido. Una forma eficaz de conseguirlo es convirtiendo tu PDF en un **documento tipo escaneado**, haciendo que parezca una digitalización física en lugar de un archivo editable.
 

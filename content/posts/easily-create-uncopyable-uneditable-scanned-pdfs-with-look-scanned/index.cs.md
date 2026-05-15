@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Snadno vytvořte "nekopírovatelné a needitovatelné" skenované PDF s Look Scanned'
-description = 'Naučte se, jak pomocí Look Scanned transformovat vaše PDF do nekopírovatelných, needitovatelných dokumentů podobných skenům. Jedná se o nástroj fungující v prohlížeči, který zpracovává soubory lokálně pro úplnou ochranu soukromí.'
-summary = 'Look Scanned je nástroj pro prohlížeč zaměřený na ochranu soukromí, který mění vaše PDF na realistické skenované dokumenty, které brání kopírování a editaci. Veškeré zpracování probíhá lokálně ve vašem prohlížeči, což zajišťuje, že vaše citlivé dokumenty zůstávají v bezpečí.'
-tags = ['soukromí', 'efekt skenování', 'bezpečnost', 'prohlížeč', 'offline', 'ochrana dokumentů', 'lokální zpracování']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Snadno vytvořte \"nekopírovatelné a needitovatelné\" skenované PDF s Look Scanned"
+summary: "Look Scanned je nástroj pro prohlížeč zaměřený na ochranu soukromí, který mění vaše PDF na realistické skenované dokumenty, které brání kopírování a editaci. Veškeré zpracování probíhá lokálně ve vašem prohlížeči, což zajišťuje, že vaše citlivé dokumenty zůstávají v bezpečí."
+description: "Naučte se, jak pomocí Look Scanned transformovat vaše PDF do nekopírovatelných, needitovatelných dokumentů podobných skenům. Jedná se o nástroj fungující v prohlížeči, který zpracovává soubory lokálně pro úplnou ochranu soukromí."
+tags: ["soukromí", "efekt skenování", "bezpečnost", "prohlížeč", "offline", "ochrana dokumentů", "lokální zpracování"]
+---
 
 V digitálním světě je ochrana citlivých dokumentů klíčová. Ať už sdílíte smlouvy, zprávy nebo důverné informace, možná budete chtít zabránit ostatním v kopírování nebo úpravě obsahu. Jedním účinným způsobem, jak toho dosáhnout, je převedení vašeho PDF na **dokument podobný skenu**, který vypadá jako fyzický sken spíše než jako editovatelný soubor.
 

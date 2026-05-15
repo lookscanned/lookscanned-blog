@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = "Skep Maklik \"Nie-kopieerbaar & Nie-redigeerbaar\" Geskandeerde PDFs met Look Scanned"
-description = "Leer hoe om jou PDFs te transformeer in nie-kopieerbare, nie-redigeerbare skandering-agtige dokumente met Look Scanned, 'n blaaier-gebaseerde instrument wat lêers plaaslik verwerk vir volledige privaatheid."
-summary = "Look Scanned is 'n privaatheid-gefokusde blaaier instrument wat jou PDFs omskakel in realistiese geskandeerde dokumente wat kopiëring en redigering voorkom. Alle verwerking gebeur plaaslik in jou blaaier, wat verseker dat jou sensitiewe dokumente veilig bly."
-tags = ['privaatheid', 'geskandeerde effek', 'veiligheid', 'blaaier', 'vanlyn', 'dokumentbeskerming', 'plaaslike verwerking']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Skep Maklik \"Nie-kopieerbaar & Nie-redigeerbaar\" Geskandeerde PDFs met Look Scanned"
+summary: "Look Scanned is 'n privaatheid-gefokusde blaaier instrument wat jou PDFs omskakel in realistiese geskandeerde dokumente wat kopiëring en redigering voorkom. Alle verwerking gebeur plaaslik in jou blaaier, wat verseker dat jou sensitiewe dokumente veilig bly."
+description: "Leer hoe om jou PDFs te transformeer in nie-kopieerbare, nie-redigeerbare skandering-agtige dokumente met Look Scanned, 'n blaaier-gebaseerde instrument wat lêers plaaslik verwerk vir volledige privaatheid."
+tags: ["privaatheid", "geskandeerde effek", "veiligheid", "blaaier", "vanlyn", "dokumentbeskerming", "plaaslike verwerking"]
+---
 
 In die digitale wêreld is die beskerming van sensitiewe dokumente van kardinale belang. Of jy nou kontrakte, verslae of vertroulike inligting deel, jy mag dalk wil verhoed dat ander die inhoud kopieer of wysig. Een effektiewe manier om dit te bereik is deur jou PDF om te skakel in 'n **skandering-agtige dokument**, wat dit laat lyk soos 'n fisiese skandering eerder as 'n redigeerbare lêer.
 

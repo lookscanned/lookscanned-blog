@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Skapa en smidig språkväljare för Hugo PaperMod'
-summary = 'En guide för att bygga en språkväljare med rullgardinsmeny i Hugo PaperMod som förenklar navigeringen på flerspråkiga webbplatser'
-description = 'En guide för att bygga en språkväljare med rullgardinsmeny i Hugo PaperMod som förenklar navigeringen på flerspråkiga webbplatser'
-tags = ['hugo', 'papermod', 'guide', 'flerspråkig', 'html', 'i18n', 'css', 'webbutveckling', 'användargränssnitt', 'användarupplevelse', 'prestanda']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Skapa en smidig språkväljare för Hugo PaperMod"
+summary: "En guide för att bygga en språkväljare med rullgardinsmeny i Hugo PaperMod som förenklar navigeringen på flerspråkiga webbplatser"
+description: "En guide för att bygga en språkväljare med rullgardinsmeny i Hugo PaperMod som förenklar navigeringen på flerspråkiga webbplatser"
+tags: ["hugo", "papermod", "guide", "flerspråkig", "html", "i18n", "css", "webbutveckling", "användargränssnitt", "användarupplevelse", "prestanda"]
+---
 
 ## Varför behöver vi en bättre språkväljare?
 

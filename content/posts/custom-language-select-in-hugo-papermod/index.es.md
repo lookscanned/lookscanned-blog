@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Crear un elegante selector de idiomas desplegable en Hugo PaperMod'
-summary = 'Guía paso a paso para implementar un selector de idiomas desplegable en Hugo PaperMod, optimizando la navegación de sitios multilingües mediante una interfaz intuitiva y ordenada'
-description = 'Guía paso a paso para implementar un selector de idiomas desplegable en Hugo PaperMod, optimizando la navegación de sitios multilingües mediante una interfaz intuitiva y ordenada'
-tags = ['hugo', 'papermod', 'tutorial', 'multilingüe', 'html', 'i18n', 'css', 'desarrollo web']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Crear un elegante selector de idiomas desplegable en Hugo PaperMod"
+summary: "Guía paso a paso para implementar un selector de idiomas desplegable en Hugo PaperMod, optimizando la navegación de sitios multilingües mediante una interfaz intuitiva y ordenada"
+description: "Guía paso a paso para implementar un selector de idiomas desplegable en Hugo PaperMod, optimizando la navegación de sitios multilingües mediante una interfaz intuitiva y ordenada"
+tags: ["hugo", "papermod", "tutorial", "multilingüe", "html", "i18n", "css", "desarrollo web"]
+---
 
 ## ¿Por qué necesitamos un nuevo selector de idiomas?
 

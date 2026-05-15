@@ -1,11 +1,11 @@
-+++
-date = '2025-01-20T09:35:50+08:00'
-draft = false
-title = 'Come convertire file digitali (PDF, DOCX, immagini) in copie scansionate realistiche'
-tags = ['pdf', 'strumenti', 'tutorial', 'elaborazione-documenti', 'scansione', 'guida']
-summary = 'Impara a far sembrare i tuoi documenti digitali come copie scansionate usando Look Scanned, uno strumento gratuito basato su browser. Questa guida include istruzioni passo passo, opzioni di personalizzazione e suggerimenti per ottenere un aspetto scansionato autentico.'
-description = 'Impara a far sembrare i tuoi documenti digitali come copie scansionate usando Look Scanned, uno strumento gratuito basato su browser. Questa guida include istruzioni passo passo, opzioni di personalizzazione e suggerimenti per ottenere un aspetto scansionato autentico.'
-+++
+---
+date: "2025-01-20T09:35:50+08:00"
+draft: false
+title: "Come convertire file digitali (PDF, DOCX, immagini) in copie scansionate realistiche"
+summary: "Impara a far sembrare i tuoi documenti digitali come copie scansionate usando Look Scanned, uno strumento gratuito basato su browser. Questa guida include istruzioni passo passo, opzioni di personalizzazione e suggerimenti per ottenere un aspetto scansionato autentico."
+description: "Impara a far sembrare i tuoi documenti digitali come copie scansionate usando Look Scanned, uno strumento gratuito basato su browser. Questa guida include istruzioni passo passo, opzioni di personalizzazione e suggerimenti per ottenere un aspetto scansionato autentico."
+tags: ["pdf", "strumenti", "tutorial", "elaborazione-documenti", "scansione", "guida"]
+---
 
 A volte abbiamo bisogno che un documento digitale sembri scansionato. Che sia per aggiungere un tocco professionale, soddisfare requisiti specifici o per ragioni estetiche, far sembrare un documento scansionato può essere sorprendentemente semplice. In questo articolo, ti guideremo passo dopo passo attraverso il processo.
 

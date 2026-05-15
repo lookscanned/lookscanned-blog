@@ -1,10 +1,10 @@
-+++
-date = '2025-02-10T15:39:20+08:00'
-draft = false
-title = 'Look Scanned: Modalitatea rapidă, sigură și inteligentă de a simula documentele scanate'
-summary = 'Look Scanned este un instrument ușor, bazat pe browser, care vă permite să creați instantaneu documente scanate realiste – fără instalare, fără încărcări și fără griji privind confidențialitatea. Indiferent dacă sunteți o persoană fizică, o echipă sau un dezvoltator care dorește să integreze funcții de scanare, Look Scanned vă acoperă.'
-tags = ['scanare', 'prezentare', 'caracteristici', 'lookscanned']
-+++
+---
+date: "2025-02-10T15:39:20+08:00"
+draft: false
+title: "Look Scanned: Modalitatea rapidă, sigură și inteligentă de a simula documentele scanate"
+summary: "Look Scanned este un instrument ușor, bazat pe browser, care vă permite să creați instantaneu documente scanate realiste – fără instalare, fără încărcări și fără griji privind confidențialitatea. Indiferent dacă sunteți o persoană fizică, o echipă sau un dezvoltator care dorește să integreze funcții de scanare, Look Scanned vă acoperă."
+tags: ["scanare", "prezentare", "caracteristici", "lookscanned"]
+---
 
 În lumea digitală de astăzi, convertirea documentelor electronice în PDF-uri scanate realiste este esențială pentru sarcini precum depunerea contractelor, arhivarea documentelor și partajarea fișierelor oficiale. Scannerele tradiționale sunt voluminoase și lente, în timp ce multe instrumente online necesită încărcarea fișierelor, prezentând riscuri de confidențialitate.
 

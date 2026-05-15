@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Membuat Pemilih Bahasa yang Praktis untuk Hugo PaperMod'
-summary = 'Panduan lengkap pembuatan pemilih bahasa dengan menu dropdown di Hugo PaperMod untuk memudahkan navigasi di situs web multibahasa'
-description = 'Panduan lengkap pembuatan pemilih bahasa dengan menu dropdown di Hugo PaperMod untuk memudahkan navigasi di situs web multibahasa'
-tags = ['hugo', 'papermod', 'panduan', 'multibahasa', 'html', 'i18n', 'css', 'pengembangan web', 'antarmuka', 'pengalaman pengguna', 'kinerja']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Membuat Pemilih Bahasa yang Praktis untuk Hugo PaperMod"
+summary: "Panduan lengkap pembuatan pemilih bahasa dengan menu dropdown di Hugo PaperMod untuk memudahkan navigasi di situs web multibahasa"
+description: "Panduan lengkap pembuatan pemilih bahasa dengan menu dropdown di Hugo PaperMod untuk memudahkan navigasi di situs web multibahasa"
+tags: ["hugo", "papermod", "panduan", "multibahasa", "html", "i18n", "css", "pengembangan web", "antarmuka", "pengalaman pengguna", "kinerja"]
+---
 
 ## Mengapa Diperlukan Pemilih Bahasa yang Lebih Baik?
 

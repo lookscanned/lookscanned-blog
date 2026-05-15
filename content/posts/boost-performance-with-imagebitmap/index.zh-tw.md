@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = '運用 ImageBitmap 提升 Look Scanned 效能 60%'
-summary = '探討如何透過 ImageBitmap 的非同步解碼與高效渲染機制來提升 Look Scanned 的效能表現，並同時維持對舊版瀏覽器的相容支援。'
-description = '探討如何透過 ImageBitmap 的非同步解碼與高效渲染機制來提升 Look Scanned 的效能表現，並同時維持對舊版瀏覽器的相容支援。'
-tags = ['效能優化', 'imagebitmap', '影像處理', '瀏覽器技術']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "運用 ImageBitmap 提升 Look Scanned 效能 60%"
+summary: "探討如何透過 ImageBitmap 的非同步解碼與高效渲染機制來提升 Look Scanned 的效能表現，並同時維持對舊版瀏覽器的相容支援。"
+description: "探討如何透過 ImageBitmap 的非同步解碼與高效渲染機制來提升 Look Scanned 的效能表現，並同時維持對舊版瀏覽器的相容支援。"
+tags: ["效能優化", "imagebitmap", "影像處理", "瀏覽器技術"]
+---
 
 在開發如 [Look Scanned](https://lookscanned.io) 這類現代網頁應用程式時，效能優化是一項關鍵課題，尤其是在影像處理方面。`ImageBitmap` 介面雖然是個強大但尚未被廣泛運用的工具，卻能帶來顯著的效能提升。本文將深入探討 `ImageBitmap` 的核心特性、應用優勢，以及我們如何將它整合至 Look Scanned 以提升渲染效能。
 

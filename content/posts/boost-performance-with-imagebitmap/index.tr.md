@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = 'Look Scanned, ImageBitmap kullanımıyla performansını %60 artırdı'
-summary = "Look Scanned'ın ImageBitmap teknolojisiyle asenkron kod çözme ve verimli görüntü işleme kullanarak performansını nasıl optimize ettiğini ve eski tarayıcılarla uyumluluğu nasıl koruduğunu keşfedin."
-description = "Look Scanned'ın ImageBitmap teknolojisiyle asenkron kod çözme ve verimli görüntü işleme kullanarak performansını nasıl optimize ettiğini ve eski tarayıcılarla uyumluluğu nasıl koruduğunu keşfedin."
-tags = ['performans optimizasyonu', 'imagebitmap', 'görüntü işleme', 'web geliştirme']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "Look Scanned, ImageBitmap kullanımıyla performansını %60 artırdı"
+summary: "Look Scanned'ın ImageBitmap teknolojisiyle asenkron kod çözme ve verimli görüntü işleme kullanarak performansını nasıl optimize ettiğini ve eski tarayıcılarla uyumluluğu nasıl koruduğunu keşfedin."
+description: "Look Scanned'ın ImageBitmap teknolojisiyle asenkron kod çözme ve verimli görüntü işleme kullanarak performansını nasıl optimize ettiğini ve eski tarayıcılarla uyumluluğu nasıl koruduğunu keşfedin."
+tags: ["performans optimizasyonu", "imagebitmap", "görüntü işleme", "web geliştirme"]
+---
 
 [Look Scanned](https://lookscanned.io) gibi modern web uygulamalarının geliştirilmesinde performans optimizasyonu en önemli önceliklerden biridir. Bu özellikle görüntü işleme söz konusu olduğunda kritik bir önem taşır. `ImageBitmap` arayüzü, henüz yaygın olarak benimsenmemiş olsa da, performansta önemli iyileştirmeler sağlayabilen güçlü bir teknolojidir. Bu yazıda, `ImageBitmap`'in temel özelliklerini, avantajlarını ve Look Scanned'daki uygulama deneyimimizi detaylı olarak ele alacağız.
 

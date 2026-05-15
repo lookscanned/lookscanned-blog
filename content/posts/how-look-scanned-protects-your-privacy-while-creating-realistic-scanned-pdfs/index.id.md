@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Bagaimana Look Scanned Melindungi Privasi Anda Saat Membuat PDF Hasil Pemindaian yang Realistis'
-description = 'Temukan bagaimana Look Scanned menjamin privasi dokumen sepenuhnya dengan pemrosesan berbasis browser, kemampuan offline, dan tanpa interaksi server saat membuat PDF hasil pemindaian yang tampak nyata.'
-summary = 'Look Scanned adalah alat yang mengutamakan privasi yang menciptakan PDF hasil pemindaian realistis sepenuhnya di dalam browser Anda. Pelajari bagaimana pendekatan pemrosesan lokalnya menjaga keamanan dokumen sensitif Anda dengan tidak pernah mengirimkan data ke server eksternal.'
-tags = ['privasi', 'lookscanned', 'fitur', 'browser', 'offline', 'keamanan', 'pemrosesan-lokal']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Bagaimana Look Scanned Melindungi Privasi Anda Saat Membuat PDF Hasil Pemindaian yang Realistis"
+summary: "Look Scanned adalah alat yang mengutamakan privasi yang menciptakan PDF hasil pemindaian realistis sepenuhnya di dalam browser Anda. Pelajari bagaimana pendekatan pemrosesan lokalnya menjaga keamanan dokumen sensitif Anda dengan tidak pernah mengirimkan data ke server eksternal."
+description: "Temukan bagaimana Look Scanned menjamin privasi dokumen sepenuhnya dengan pemrosesan berbasis browser, kemampuan offline, dan tanpa interaksi server saat membuat PDF hasil pemindaian yang tampak nyata."
+tags: ["privasi", "lookscanned", "fitur", "browser", "offline", "keamanan", "pemrosesan-lokal"]
+---
 
 Seiring meningkatnya pengolahan dan berbagi dokumen digital, perhatian terhadap privasi menjadi semakin krusial. Look Scanned adalah aplikasi ringan berbasis browser yang dirancang untuk membuat PDF hasil pemindaian yang tampak nyata langsung di dalam browser Anda. Artikel ini menjelaskan bagaimana Look Scanned menggunakan pemrosesan lokal yang inovatif untuk memastikan privasi dan keamanan dokumen Anda.
 

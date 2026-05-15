@@ -1,11 +1,11 @@
-+++
-date = '2025-01-20T09:35:50+08:00'
-draft = false
-title = 'Cómo convertir archivos digitales (PDF, DOCX, imágenes) en copias escaneadas realistas'
-tags = ['pdf', 'herramientas', 'tutorial', 'procesamiento-documentos', 'escaneo', 'guía']
-summary = 'Aprende a hacer que tus documentos digitales parezcan copias escaneadas usando Look Scanned, una herramienta gratuita basada en navegador. Esta guía incluye instrucciones paso a paso, opciones de personalización y consejos para lograr una apariencia de escaneo auténtica.'
-description = 'Aprende a hacer que tus documentos digitales parezcan copias escaneadas usando Look Scanned, una herramienta gratuita basada en navegador. Esta guía incluye instrucciones paso a paso, opciones de personalización y consejos para lograr una apariencia de escaneo auténtica.'
-+++
+---
+date: "2025-01-20T09:35:50+08:00"
+draft: false
+title: "Cómo convertir archivos digitales (PDF, DOCX, imágenes) en copias escaneadas realistas"
+summary: "Aprende a hacer que tus documentos digitales parezcan copias escaneadas usando Look Scanned, una herramienta gratuita basada en navegador. Esta guía incluye instrucciones paso a paso, opciones de personalización y consejos para lograr una apariencia de escaneo auténtica."
+description: "Aprende a hacer que tus documentos digitales parezcan copias escaneadas usando Look Scanned, una herramienta gratuita basada en navegador. Esta guía incluye instrucciones paso a paso, opciones de personalización y consejos para lograr una apariencia de escaneo auténtica."
+tags: ["pdf", "herramientas", "tutorial", "procesamiento-documentos", "escaneo", "guía"]
+---
 
 A veces necesitamos que un documento digital parezca escaneado. Ya sea para darle un toque más profesional, cumplir con requisitos específicos o por razones estéticas, hacer que un documento parezca escaneado puede ser sorprendentemente sencillo. En esta entrada del blog, te guiaremos paso a paso a través del proceso.
 

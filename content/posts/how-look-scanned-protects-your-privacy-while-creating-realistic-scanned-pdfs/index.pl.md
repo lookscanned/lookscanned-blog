@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Jak Look Scanned chroni Twoją prywatność podczas tworzenia realistycznych zeskanowanych PDF-ów'
-description = 'Dowiedz się, jak Look Scanned zapewnia pełną prywatność dokumentów dzięki przetwarzaniu w przeglądarce, funkcjom offline i braku interakcji z serwerami podczas tworzenia realistycznych zeskanowanych PDF-ów.'
-summary = 'Look Scanned to narzędzie skupione na prywatności, które tworzy realistyczne zeskanowane PDF-y całkowicie w Twojej przeglądarce. Dowiedz się, jak jego lokalne podejście do przetwarzania chroni Twoje wrażliwe dokumenty, nigdy nie wysyłając danych do zdalnych serwerów.'
-tags = ['prywatność', 'lookscanned', 'funkcje', 'przeglądarka', 'offline', 'bezpieczeństwo', 'przetwarzanie-lokalne']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Jak Look Scanned chroni Twoją prywatność podczas tworzenia realistycznych zeskanowanych PDF-ów"
+summary: "Look Scanned to narzędzie skupione na prywatności, które tworzy realistyczne zeskanowane PDF-y całkowicie w Twojej przeglądarce. Dowiedz się, jak jego lokalne podejście do przetwarzania chroni Twoje wrażliwe dokumenty, nigdy nie wysyłając danych do zdalnych serwerów."
+description: "Dowiedz się, jak Look Scanned zapewnia pełną prywatność dokumentów dzięki przetwarzaniu w przeglądarce, funkcjom offline i braku interakcji z serwerami podczas tworzenia realistycznych zeskanowanych PDF-ów."
+tags: ["prywatność", "lookscanned", "funkcje", "przeglądarka", "offline", "bezpieczeństwo", "przetwarzanie-lokalne"]
+---
 
 Wraz ze wzrostem cyfrowego przetwarzania i udostępniania dokumentów, obawy dotyczące prywatności stają się coraz bardziej istotne. Look Scanned to lekkie narzędzie oparte na przeglądarce, zaprojektowane do tworzenia realistycznych zeskanowanych PDF-ów bezpośrednio w Twojej przeglądarce. W tym artykule wyjaśniamy, jak Look Scanned wykorzystuje innowacyjne lokalne przetwarzanie, aby zapewnić prywatność i bezpieczeństwo Twoich dokumentów.
 

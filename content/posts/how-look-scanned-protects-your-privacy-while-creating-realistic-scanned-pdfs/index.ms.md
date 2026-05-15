@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Cara Look Scanned Melindungi Privasi Anda Ketika Menghasilkan PDF Imbasan yang Kelihatan Asli'
-description = 'Ketahui bagaimana Look Scanned menjamin privasi dokumen sepenuhnya dengan pemprosesan dalam pelayar, keupayaan luar talian, dan sifar interaksi dengan pelayan ketika menghasilkan PDF imbasan yang kelihatan seperti asli.'
-summary = 'Look Scanned ialah alat yang mengutamakan privasi bagi menghasilkan PDF imbasan yang kelihatan asli, semuanya dalam pelayar anda. Ketahui bagaimana pendekatan pemprosesan setempat melindungi dokumen sulit anda dengan tidak sesekali menghantar data ke pelayan luar.'
-tags = ['privasi', 'look-scanned', 'ciri', 'pelayar', 'luar-talian', 'keselamatan', 'pemprosesan-setempat']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Cara Look Scanned Melindungi Privasi Anda Ketika Menghasilkan PDF Imbasan yang Kelihatan Asli"
+summary: "Look Scanned ialah alat yang mengutamakan privasi bagi menghasilkan PDF imbasan yang kelihatan asli, semuanya dalam pelayar anda. Ketahui bagaimana pendekatan pemprosesan setempat melindungi dokumen sulit anda dengan tidak sesekali menghantar data ke pelayan luar."
+description: "Ketahui bagaimana Look Scanned menjamin privasi dokumen sepenuhnya dengan pemprosesan dalam pelayar, keupayaan luar talian, dan sifar interaksi dengan pelayan ketika menghasilkan PDF imbasan yang kelihatan seperti asli."
+tags: ["privasi", "look-scanned", "ciri", "pelayar", "luar-talian", "keselamatan", "pemprosesan-setempat"]
+---
 
 Dalam era digital masa kini, di mana pemprosesan dan perkongsian dokumen semakin menjadi kebiasaan, isu privasi semakin mendapat perhatian. Look Scanned ialah aplikasi ringan berasaskan pelayar yang direka khas untuk menghasilkan PDF imbasan yang kelihatan asli terus dalam pelayar anda. Artikel ini menerangkan bagaimana Look Scanned menggunakan teknologi pemprosesan setempat yang inovatif untuk memastikan privasi dan keselamatan dokumen anda terjamin.
 

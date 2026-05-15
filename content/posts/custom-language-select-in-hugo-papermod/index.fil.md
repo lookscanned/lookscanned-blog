@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Paggawa ng Custom na Language Selector sa Hugo PaperMod'
-summary = 'Hakbang-hakbang na gabay sa pagpapatupad ng custom dropdown-based na language selector sa Hugo PaperMod theme, perpekto para sa mga multilingual na site na may maraming wika'
-description = 'Hakbang-hakbang na gabay sa pagpapatupad ng custom dropdown-based na language selector sa Hugo PaperMod theme, perpekto para sa mga multilingual na site na may maraming wika'
-tags = ['hugo', 'papermod', 'tutorial', 'multilingual', 'html', 'i18n', 'css', 'web development', 'user interface', 'user experience', 'performance optimization']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Paggawa ng Custom na Language Selector sa Hugo PaperMod"
+summary: "Hakbang-hakbang na gabay sa pagpapatupad ng custom dropdown-based na language selector sa Hugo PaperMod theme, perpekto para sa mga multilingual na site na may maraming wika"
+description: "Hakbang-hakbang na gabay sa pagpapatupad ng custom dropdown-based na language selector sa Hugo PaperMod theme, perpekto para sa mga multilingual na site na may maraming wika"
+tags: ["hugo", "papermod", "tutorial", "multilingual", "html", "i18n", "css", "web development", "user interface", "user experience", "performance optimization"]
+---
 
 ## Bakit Gumawa ng Custom na Language Selector?
 

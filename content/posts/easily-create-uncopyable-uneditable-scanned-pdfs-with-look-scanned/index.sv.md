@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Skapa enkelt PDF-filer med "skannningseffekt" som inte kan kopieras eller redigeras med Look Scanned'
-description = 'Lär dig hur du omvandlar dina PDF-filer till dokument med skanningseffekt som varken kan kopieras eller redigeras med hjälp av Look Scanned, ett webbläsarbaserat verktyg som bearbetar filer lokalt för maximalt integritetsskydd.'
-summary = 'Look Scanned är ett integritetsfokuserat webbläsarverktyg som förvandlar dina PDF-filer till realistiskt skannade dokument som hindrar kopiering och redigering. All bearbetning sker lokalt i din webbläsare, vilket garanterar att dina känsliga dokument förblir säkra.'
-tags = ['integritet', 'skanningseffekt', 'säkerhet', 'webbläsare', 'offline', 'dokumentskydd', 'lokal bearbetning']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Skapa enkelt PDF-filer med \"skannningseffekt\" som inte kan kopieras eller redigeras med Look Scanned"
+summary: "Look Scanned är ett integritetsfokuserat webbläsarverktyg som förvandlar dina PDF-filer till realistiskt skannade dokument som hindrar kopiering och redigering. All bearbetning sker lokalt i din webbläsare, vilket garanterar att dina känsliga dokument förblir säkra."
+description: "Lär dig hur du omvandlar dina PDF-filer till dokument med skanningseffekt som varken kan kopieras eller redigeras med hjälp av Look Scanned, ett webbläsarbaserat verktyg som bearbetar filer lokalt för maximalt integritetsskydd."
+tags: ["integritet", "skanningseffekt", "säkerhet", "webbläsare", "offline", "dokumentskydd", "lokal bearbetning"]
+---
 
 I dagens digitala värld är det avgörande att kunna skydda känsliga dokument. Oavsett om du delar kontrakt, rapporter eller konfidentiell information vill du kanske förhindra att andra kopierar eller ändrar innehållet. Ett effektivt sätt att uppnå detta är genom att konvertera din PDF-fil till ett **dokument med skanningseffekt**, så att det ser ut som en fysiskt inskannad kopia snarare än en redigerbar fil.
 

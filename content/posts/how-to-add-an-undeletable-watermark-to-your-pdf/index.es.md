@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'Cómo Añadir una Marca de Agua Indeleble a tu PDF'
-description = 'Aprende a crear marcas de agua verdaderamente indelebles en tus PDFs usando Look Scanned. Esta guía explica por qué fallan las marcas de agua tradicionales y cómo crear documentos a prueba de manipulaciones que parezcan escaneados físicos.'
-tags = ['PDF', 'seguridad', 'marca de agua', 'protección de documentos']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "Cómo Añadir una Marca de Agua Indeleble a tu PDF"
+description: "Aprende a crear marcas de agua verdaderamente indelebles en tus PDFs usando Look Scanned. Esta guía explica por qué fallan las marcas de agua tradicionales y cómo crear documentos a prueba de manipulaciones que parezcan escaneados físicos."
+tags: ["PDF", "seguridad", "marca de agua", "protección de documentos"]
+---
 
 Las marcas de agua son una forma común de proteger documentos, pero las marcas de agua tradicionales a menudo pueden ser eliminadas o evitadas con solo unos clics. En esta publicación, te mostraremos cómo crear una **marca de agua verdaderamente indeleble** usando **Look Scanned**, una herramienta basada en navegador que simula documentos escaneados para mejorar la seguridad de los documentos.
 

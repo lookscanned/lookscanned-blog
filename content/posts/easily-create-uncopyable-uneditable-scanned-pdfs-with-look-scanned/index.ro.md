@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Creează cu ușurință PDF-uri scanate "necopiabile și needitabile" cu Look Scanned'
-description = 'Învață cum să-ți transformi PDF-urile în documente de tip scanat necopiabile și needitabile cu Look Scanned, un instrument bazat pe browser care procesează fișierele local pentru confidențialitate completă.'
-summary = 'Look Scanned este un instrument de browser axat pe confidențialitate care transformă PDF-urile tale în documente scanate realiste care împiedică copierea și editarea. Toată procesarea se întâmplă local în browserul tău, asigurând că documentele tale sensibile rămân sigure.'
-tags = ['confidențialitate', 'efect scanat', 'securitate', 'browser', 'offline', 'protecție documente', 'procesare locală']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Creează cu ușurință PDF-uri scanate \"necopiabile și needitabile\" cu Look Scanned"
+summary: "Look Scanned este un instrument de browser axat pe confidențialitate care transformă PDF-urile tale în documente scanate realiste care împiedică copierea și editarea. Toată procesarea se întâmplă local în browserul tău, asigurând că documentele tale sensibile rămân sigure."
+description: "Învață cum să-ți transformi PDF-urile în documente de tip scanat necopiabile și needitabile cu Look Scanned, un instrument bazat pe browser care procesează fișierele local pentru confidențialitate completă."
+tags: ["confidențialitate", "efect scanat", "securitate", "browser", "offline", "protecție documente", "procesare locală"]
+---
 
 În lumea digitală, protecția documentelor sensibile este crucială. Fie că împarți contracte, rapoarte sau informații confidențiale, s-ar putea să vrei să împiedici pe alții să copieze sau să modifice conținutul. Un mod eficient de a realiza acest lucru este prin convertirea PDF-ului tău într-un **document de tip scanat**, făcându-l să pară o scanare fizică în loc de un fișier editabil.
 

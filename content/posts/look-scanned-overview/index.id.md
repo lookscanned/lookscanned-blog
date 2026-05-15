@@ -1,10 +1,10 @@
-+++
-date = '2025-02-10T15:39:20+08:00'
-draft = false
-title = 'Look Scanned: Cara Cepat, Aman, dan Cerdas untuk Mensimulasikan Dokumen Pindai'
-summary = 'Look Scanned adalah alat berbasis browser yang ringan yang memungkinkan Anda membuat dokumen pindai realistis secara instan — tanpa instalasi, tanpa unggahan, dan tanpa masalah privasi. Baik Anda individu, tim, atau pengembang yang ingin mengintegrasikan fitur pemindaian, Look Scanned memiliki semua yang Anda butuhkan.'
-tags = ['pemindaian', 'ikhtisar', 'fitur', 'lookscanned']
-+++
+---
+date: "2025-02-10T15:39:20+08:00"
+draft: false
+title: "Look Scanned: Cara Cepat, Aman, dan Cerdas untuk Mensimulasikan Dokumen Pindai"
+summary: "Look Scanned adalah alat berbasis browser yang ringan yang memungkinkan Anda membuat dokumen pindai realistis secara instan — tanpa instalasi, tanpa unggahan, dan tanpa masalah privasi. Baik Anda individu, tim, atau pengembang yang ingin mengintegrasikan fitur pemindaian, Look Scanned memiliki semua yang Anda butuhkan."
+tags: ["pemindaian", "ikhtisar", "fitur", "lookscanned"]
+---
 
 Di dunia digital saat ini, mengubah dokumen elektronik menjadi PDF pindai yang realistis sangat penting untuk tugas-tugas seperti pengajuan kontrak, pengarsipan dokumen, dan berbagi berkas resmi. Pemindai tradisional besar dan lambat, sementara banyak alat online mengharuskan pengunggahan berkas yang menciptakan risiko privasi.
 

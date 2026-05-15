@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = 'Look Scanned tăng hiệu năng 60% nhờ ImageBitmap'
-summary = 'Khám phá cách Look Scanned tối ưu hóa hiệu năng thông qua giải mã bất đồng bộ và render hiệu quả với ImageBitmap, đồng thời vẫn đảm bảo tương thích với các trình duyệt cũ.'
-description = 'Khám phá cách Look Scanned tối ưu hóa hiệu năng thông qua giải mã bất đồng bộ và render hiệu quả với ImageBitmap, đồng thời vẫn đảm bảo tương thích với các trình duyệt cũ.'
-tags = ['tối ưu hiệu năng', 'imagebitmap', 'xử lý ảnh', 'lập trình web']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "Look Scanned tăng hiệu năng 60% nhờ ImageBitmap"
+summary: "Khám phá cách Look Scanned tối ưu hóa hiệu năng thông qua giải mã bất đồng bộ và render hiệu quả với ImageBitmap, đồng thời vẫn đảm bảo tương thích với các trình duyệt cũ."
+description: "Khám phá cách Look Scanned tối ưu hóa hiệu năng thông qua giải mã bất đồng bộ và render hiệu quả với ImageBitmap, đồng thời vẫn đảm bảo tương thích với các trình duyệt cũ."
+tags: ["tối ưu hiệu năng", "imagebitmap", "xử lý ảnh", "lập trình web"]
+---
 
 Trong quá trình phát triển các ứng dụng web hiện đại như [Look Scanned](https://lookscanned.io), tối ưu hóa hiệu năng luôn là ưu tiên hàng đầu. Điều này đặc biệt quan trọng trong lĩnh vực xử lý hình ảnh. Giao diện `ImageBitmap`, dù chưa được sử dụng phổ biến, là một công cụ mạnh mẽ có khả năng cải thiện hiệu năng đáng kể. Trong bài viết này, chúng tôi sẽ giới thiệu các tính năng chính của `ImageBitmap`, những ưu điểm của nó và chia sẻ kinh nghiệm triển khai tại Look Scanned.
 

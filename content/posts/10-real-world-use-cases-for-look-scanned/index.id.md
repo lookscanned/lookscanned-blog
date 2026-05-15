@@ -1,10 +1,10 @@
-+++
-date = '2025-07-31T16:36:14+08:00'
-draft = false
-title = '10 Kasus Penggunaan Nyata untuk Look Scanned: Dari Dokumen Hukum hingga Proyek Kreatif'
-summary = 'Temukan aplikasi praktis Look Scanned di berbagai industri dan skenario. Dari persiapan dokumen hukum hingga pengarsipan proyek kreatif, pelajari bagaimana alat berbasis browser ini memecahkan masalah nyata dalam berbagai konteks profesional dan pribadi.'
-tags = ['kasus-penggunaan', 'aplikasi', 'hukum', 'bisnis', 'kreatif', 'lookscanned']
-+++
+---
+date: "2025-07-31T16:36:14+08:00"
+draft: false
+title: "10 Kasus Penggunaan Nyata untuk Look Scanned: Dari Dokumen Hukum hingga Proyek Kreatif"
+summary: "Temukan aplikasi praktis Look Scanned di berbagai industri dan skenario. Dari persiapan dokumen hukum hingga pengarsipan proyek kreatif, pelajari bagaimana alat berbasis browser ini memecahkan masalah nyata dalam berbagai konteks profesional dan pribadi."
+tags: ["kasus-penggunaan", "aplikasi", "hukum", "bisnis", "kreatif", "lookscanned"]
+---
 
 [Look Scanned](https://lookscanned.io) bukan sekadar alat konversi dokumen biasa—ini adalah solusi serbaguna yang mengatasi tantangan nyata di berbagai industri dan skenario pribadi. Meskipun banyak pengguna awalnya menemukan Look Scanned untuk kebutuhan pemindaian PDF dasar, aplikasinya meluas jauh melampaui konversi dokumen sederhana.
 

@@ -1,10 +1,10 @@
-+++
-date = '2025-07-31T16:36:14+08:00'
-draft = false
-title = 'Matumizi 10 ya Kweli ya Look Scanned: Kutoka Nyaraka za Kisheria hadi Miradi ya Ubunifu'
-summary = 'Gundua matumizi ya vitendo ya Look Scanned katika viwanda na hali mbalimbali. Kutoka kuandaa nyaraka za kisheria hadi kuweka kumbukumbu za miradi ya ubunifu, jifunze jinsi zana hii inayotegemea kivinjari inavyosuluhisha matatizo ya kweli katika mazingira mbalimbali ya kitaaluma na kibinafsi.'
-tags = ['matumizi', 'programu', 'sheria', 'biashara', 'ubunifu', 'lookscanned']
-+++
+---
+date: "2025-07-31T16:36:14+08:00"
+draft: false
+title: "Matumizi 10 ya Kweli ya Look Scanned: Kutoka Nyaraka za Kisheria hadi Miradi ya Ubunifu"
+summary: "Gundua matumizi ya vitendo ya Look Scanned katika viwanda na hali mbalimbali. Kutoka kuandaa nyaraka za kisheria hadi kuweka kumbukumbu za miradi ya ubunifu, jifunze jinsi zana hii inayotegemea kivinjari inavyosuluhisha matatizo ya kweli katika mazingira mbalimbali ya kitaaluma na kibinafsi."
+tags: ["matumizi", "programu", "sheria", "biashara", "ubunifu", "lookscanned"]
+---
 
 [Look Scanned](https://lookscanned.io) si chombo kingine tu cha kubadili nyaraka—ni suluhisho la kutumika kwa njia mbalimbali linalotatua changamoto za kweli katika viwanda mbalimbali na mazingira ya kibinafsi. Wakati watumiaji wengi wanagundua Look Scanned kwa mara ya kwanza kwa mahitaji ya msingi ya kusoma PDF, matumizi yake yanaenea mbali zaidi ya ubadilishaji rahisi wa nyaraka.
 

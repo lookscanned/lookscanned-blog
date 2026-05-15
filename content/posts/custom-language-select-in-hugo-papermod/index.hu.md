@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Egyedi nyelvválasztó létrehozása Hugo PaperMod-ban'
-summary = 'Lépésről lépésre útmutató egy egyedi dropdown alapú nyelvválasztó megvalósításához a Hugo PaperMod témában, tökéletes több nyelvet támogató weboldalakhoz'
-description = 'Lépésről lépésre útmutató egy egyedi dropdown alapú nyelvválasztó megvalósításához a Hugo PaperMod témában, tökéletes több nyelvet támogató weboldalakhoz'
-tags = ['hugo', 'papermod', 'útmutató', 'többnyelvű', 'html', 'i18n', 'css', 'webfejlesztés', 'felhasználói felület', 'felhasználói élmény', 'teljesítmény optimalizálás']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Egyedi nyelvválasztó létrehozása Hugo PaperMod-ban"
+summary: "Lépésről lépésre útmutató egy egyedi dropdown alapú nyelvválasztó megvalósításához a Hugo PaperMod témában, tökéletes több nyelvet támogató weboldalakhoz"
+description: "Lépésről lépésre útmutató egy egyedi dropdown alapú nyelvválasztó megvalósításához a Hugo PaperMod témában, tökéletes több nyelvet támogató weboldalakhoz"
+tags: ["hugo", "papermod", "útmutató", "többnyelvű", "html", "i18n", "css", "webfejlesztés", "felhasználói felület", "felhasználói élmény", "teljesítmény optimalizálás"]
+---
 
 ## Miért hozzunk létre egyedi nyelvválasztót?
 

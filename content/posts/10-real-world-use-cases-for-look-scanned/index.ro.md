@@ -1,10 +1,10 @@
-+++
-date = '2025-07-31T16:36:14+08:00'
-draft = false
-title = '10 Cazuri de Utilizare Reală pentru Look Scanned: De la Documentele Juridice la Proiectele Creative'
-summary = 'Descoperă aplicațiile practice ale Look Scanned în diverse industrii și scenarii. De la pregătirea documentelor juridice la arhivarea proiectelor creative, învață cum acest instrument bazat pe browser rezolvă probleme reale în diverse contexte profesionale și personale.'
-tags = ['cazuri-de-utilizare', 'aplicații', 'juridic', 'afaceri', 'creativ', 'lookscanned']
-+++
+---
+date: "2025-07-31T16:36:14+08:00"
+draft: false
+title: "10 Cazuri de Utilizare Reală pentru Look Scanned: De la Documentele Juridice la Proiectele Creative"
+summary: "Descoperă aplicațiile practice ale Look Scanned în diverse industrii și scenarii. De la pregătirea documentelor juridice la arhivarea proiectelor creative, învață cum acest instrument bazat pe browser rezolvă probleme reale în diverse contexte profesionale și personale."
+tags: ["cazuri-de-utilizare", "aplicații", "juridic", "afaceri", "creativ", "lookscanned"]
+---
 
 [Look Scanned](https://lookscanned.io) nu este doar un alt instrument de conversie documente—este o soluție versatilă care abordează provocări reale din diverse industrii și scenarii personale. În timp ce mulți utilizatori descoperă inițial Look Scanned pentru necesități de bază de scanare PDF, aplicațiile sale se extind mult dincolo de conversia simplă de documente.
 

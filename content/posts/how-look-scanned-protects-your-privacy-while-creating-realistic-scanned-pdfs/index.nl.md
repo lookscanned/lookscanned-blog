@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Zo beschermt Look Scanned je privacy tijdens het creëren van levensecht gescande PDF-bestanden'
-description = 'Ontdek hoe Look Scanned complete documentprivacy waarborgt met verwerking in je eigen browser, offline mogelijkheden en nul serverinteractie bij het maken van levensecht gescande PDF-bestanden.'
-summary = 'Look Scanned is een privacygericht hulpmiddel dat levensecht gescande PDF-bestanden volledig in je browser maakt. Ontdek hoe de lokale verwerking je gevoelige documenten veilig houdt door nooit gegevens naar externe servers te versturen.'
-tags = ['privacy', 'lookscanned', 'functies', 'browser', 'offline', 'beveiliging', 'lokale-verwerking']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Zo beschermt Look Scanned je privacy tijdens het creëren van levensecht gescande PDF-bestanden"
+summary: "Look Scanned is een privacygericht hulpmiddel dat levensecht gescande PDF-bestanden volledig in je browser maakt. Ontdek hoe de lokale verwerking je gevoelige documenten veilig houdt door nooit gegevens naar externe servers te versturen."
+description: "Ontdek hoe Look Scanned complete documentprivacy waarborgt met verwerking in je eigen browser, offline mogelijkheden en nul serverinteractie bij het maken van levensecht gescande PDF-bestanden."
+tags: ["privacy", "lookscanned", "functies", "browser", "offline", "beveiliging", "lokale-verwerking"]
+---
 
 In het huidige digitale tijdperk, waarin het verwerken en delen van documenten steeds gewoner wordt, zijn zorgen over privacy belangrijker dan ooit. Look Scanned is een lichtgewicht, browsergebaseerde tool ontworpen om levensecht gescande PDF-bestanden direct in je browser te maken. Dit artikel legt uit hoe Look Scanned innovatieve lokale verwerking gebruikt om de privacy en veiligheid van je documenten te garanderen.
 

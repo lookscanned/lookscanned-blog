@@ -1,10 +1,10 @@
-+++
-date = '2025-02-10T15:39:20+08:00'
-draft = false
-title = 'Look Scanned: Cách nhanh chóng, an toàn và thông minh để mô phỏng tài liệu quét'
-summary = 'Look Scanned là công cụ nhẹ chạy trên trình duyệt cho phép bạn tạo tài liệu quét chân thực ngay lập tức — không cần cài đặt, không cần tải lên và không lo lắng về quyền riêng tư. Dù bạn là cá nhân, nhóm hay nhà phát triển muốn tích hợp tính năng quét, Look Scanned đều có mọi thứ bạn cần.'
-tags = ['quét', 'tổng-quan', 'tính-năng', 'lookscanned']
-+++
+---
+date: "2025-02-10T15:39:20+08:00"
+draft: false
+title: "Look Scanned: Cách nhanh chóng, an toàn và thông minh để mô phỏng tài liệu quét"
+summary: "Look Scanned là công cụ nhẹ chạy trên trình duyệt cho phép bạn tạo tài liệu quét chân thực ngay lập tức — không cần cài đặt, không cần tải lên và không lo lắng về quyền riêng tư. Dù bạn là cá nhân, nhóm hay nhà phát triển muốn tích hợp tính năng quét, Look Scanned đều có mọi thứ bạn cần."
+tags: ["quét", "tổng-quan", "tính-năng", "lookscanned"]
+---
 
 Trong thế giới số hóa ngày nay, việc chuyển đổi tài liệu điện tử thành PDF quét chân thực là cần thiết cho các tác vụ như nộp hợp đồng, lưu trữ tài liệu và chia sẻ tập tin chính thức. Máy quét truyền thống thì cồng kềnh và chậm, trong khi nhiều công cụ trực tuyến yêu cầu tải tập tin lên, gây rủi ro về quyền riêng tư.
 

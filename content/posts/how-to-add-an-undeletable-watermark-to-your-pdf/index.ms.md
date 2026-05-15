@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'Cara Menambah Tanda Air yang Tidak Boleh Dipadam ke PDF Anda'
-description = 'Pelajari cara mencipta tanda air yang benar-benar tidak boleh dipadam dalam fail PDF anda menggunakan Look Scanned. Panduan ini menerangkan mengapa tanda air tradisional gagal dan cara mencipta dokumen yang kalis manipulasi yang kelihatan seperti imbasan fizikal.'
-tags = ['PDF', 'keselamatan', 'tanda air', 'perlindungan dokumen']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "Cara Menambah Tanda Air yang Tidak Boleh Dipadam ke PDF Anda"
+description: "Pelajari cara mencipta tanda air yang benar-benar tidak boleh dipadam dalam fail PDF anda menggunakan Look Scanned. Panduan ini menerangkan mengapa tanda air tradisional gagal dan cara mencipta dokumen yang kalis manipulasi yang kelihatan seperti imbasan fizikal."
+tags: ["PDF", "keselamatan", "tanda air", "perlindungan dokumen"]
+---
 
 Tanda air adalah cara biasa untuk melindungi dokumen, tetapi tanda air tradisional sering boleh dipadam atau dielakkan dengan hanya beberapa klik. Dalam artikel ini, kami akan menunjukkan cara mencipta **tanda air yang benar-benar tidak boleh dipadam** menggunakan **Look Scanned**, alat berasaskan pelayar yang mensimulasikan dokumen yang diimbas untuk keselamatan dokumen yang lebih baik.
 

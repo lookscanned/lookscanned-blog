@@ -1,10 +1,10 @@
-+++
-date = '2025-02-10T15:39:20+08:00'
-draft = false
-title = 'Look Scanned: Ang Mabilis, Secure, at Matalinong Paraan upang I-simulate ang Scanned Documents'
-summary = 'Ang Look Scanned ay isang lightweight, browser-based na tool na nagbibigay-daan sa iyo na lumikha ng realistic na scanned documents agad-agad—walang installation, walang uploads, at walang privacy concerns. Maging ikaw man ay indibidwal, team, o developer na naghahanap ng scanning features na mai-integrate, saklaw ka ng Look Scanned.'
-tags = ['scan', 'overview', 'features', 'lookscanned']
-+++
+---
+date: "2025-02-10T15:39:20+08:00"
+draft: false
+title: "Look Scanned: Ang Mabilis, Secure, at Matalinong Paraan upang I-simulate ang Scanned Documents"
+summary: "Ang Look Scanned ay isang lightweight, browser-based na tool na nagbibigay-daan sa iyo na lumikha ng realistic na scanned documents agad-agad—walang installation, walang uploads, at walang privacy concerns. Maging ikaw man ay indibidwal, team, o developer na naghahanap ng scanning features na mai-integrate, saklaw ka ng Look Scanned."
+tags: ["scan", "overview", "features", "lookscanned"]
+---
 
 Sa digital world ngayon, ang pag-convert ng electronic documents sa realistic na scanned PDFs ay importante para sa mga gawain tulad ng pagsusumite ng contracts, pag-archive ng documents, at pagbabahagi ng official files. Ang mga traditional scanners ay mabigat at mabagal, habang maraming online tools ay nangangailangan ng file uploads, na nagdudulot ng privacy risks.
 

@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = '通过 ImageBitmap 让 Look Scanned 性能提升 60%'
-summary = '探索如何通过 ImageBitmap 的异步解码和高效渲染机制提升 Look Scanned 的性能，同时保持对旧版浏览器的兼容支持。'
-description = '探索如何通过 ImageBitmap 的异步解码和高效渲染机制提升 Look Scanned 的性能，同时保持对旧版浏览器的兼容支持。'
-tags = ['性能优化', 'imagebitmap', '图像处理', '浏览器技术']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "通过 ImageBitmap 让 Look Scanned 性能提升 60%"
+summary: "探索如何通过 ImageBitmap 的异步解码和高效渲染机制提升 Look Scanned 的性能，同时保持对旧版浏览器的兼容支持。"
+description: "探索如何通过 ImageBitmap 的异步解码和高效渲染机制提升 Look Scanned 的性能，同时保持对旧版浏览器的兼容支持。"
+tags: ["性能优化", "imagebitmap", "图像处理", "浏览器技术"]
+---
 
 在开发像 [Look Scanned](https://lookscanned.io) 这样的现代 Web 应用时，性能优化是一个关键课题，特别是在图像处理方面。`ImageBitmap` 接口作为一个功能强大但尚未被广泛使用的工具，能够带来显著的性能提升。本文将深入探讨 `ImageBitmap` 的核心特性、应用优势，以及我们如何将其整合到 Look Scanned 中来提升渲染性能。
 

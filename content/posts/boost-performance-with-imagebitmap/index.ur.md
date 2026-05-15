@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = 'Look Scanned میں ImageBitmap کے ذریعے 60% کارکردگی میں اضافہ'
-summary = 'جانیں کہ Look Scanned میں ImageBitmap کا انضمام کیسے asynchronous decoding اور موثر rendering کو فعال کرکے کارکردگی بہتر بناتا ہے، جبکہ پرانے browsers کے ساتھ compatibility برقرار رکھتا ہے۔'
-description = 'جانیں کہ Look Scanned میں ImageBitmap کا انضمام کیسے asynchronous decoding اور موثر rendering کو فعال کرکے کارکردگی بہتر بناتا ہے، جبکہ پرانے browsers کے ساتھ compatibility برقرار رکھتا ہے۔'
-tags = ['کارکردگی', 'imagebitmap', 'تصویر', 'browser']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "Look Scanned میں ImageBitmap کے ذریعے 60% کارکردگی میں اضافہ"
+summary: "جانیں کہ Look Scanned میں ImageBitmap کا انضمام کیسے asynchronous decoding اور موثر rendering کو فعال کرکے کارکردگی بہتر بناتا ہے، جبکہ پرانے browsers کے ساتھ compatibility برقرار رکھتا ہے۔"
+description: "جانیں کہ Look Scanned میں ImageBitmap کا انضمام کیسے asynchronous decoding اور موثر rendering کو فعال کرکے کارکردگی بہتر بناتا ہے، جبکہ پرانے browsers کے ساتھ compatibility برقرار رکھتا ہے۔"
+tags: ["کارکردگی", "imagebitmap", "تصویر", "browser"]
+---
 
 جدید ویب ایپلیکیشنز جیسے [Look Scanned](https://lookscanned.io) بناتے وقت کارکردگی کی بہتری انتہائی اہم ہے، خاص طور پر جب تصاویر کے ساتھ کام کریں۔ اہم کارکردگی کی بہتری حاصل کرنے کے لیے ایک طاقتور لیکن کم استعمال ہونے والا ٹول `ImageBitmap` interface ہے۔ اس blog post میں ہم دیکھیں گے کہ `ImageBitmap` کیا ہے، یہ کیوں مؤثر ہے، اور Look Scanned میں rendering performance بہتر بنانے کے لیے اسے کیسے integrate کیا گیا ہے۔
 

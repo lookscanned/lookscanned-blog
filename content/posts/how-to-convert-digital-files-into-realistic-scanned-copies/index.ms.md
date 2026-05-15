@@ -1,11 +1,11 @@
-+++
-date = '2025-01-20T09:35:50+08:00'
-draft = false
-title = 'Cara Menjadikan Fail Digital (PDF, DOCX, imej) Kelihatan Seperti Dokumen Imbasan'
-tags = ['pdf', 'alat', 'tutorial', 'pemprosesan-dokumen', 'pengimbasan', 'panduan']
-summary = 'Pelajari cara menjadikan dokumen digital anda kelihatan seperti hasil imbasan menggunakan Look Scanned - alat percuma berasaskan pelayar web. Panduan ini mengandungi arahan langkah demi langkah, pilihan penyesuaian, dan petua untuk mendapatkan rupa dokumen imbasan yang tulen.'
-description = 'Pelajari cara menjadikan dokumen digital anda kelihatan seperti hasil imbasan menggunakan Look Scanned - alat percuma berasaskan pelayar web. Panduan ini mengandungi arahan langkah demi langkah, pilihan penyesuaian, dan petua untuk mendapatkan rupa dokumen imbasan yang tulen.'
-+++
+---
+date: "2025-01-20T09:35:50+08:00"
+draft: false
+title: "Cara Menjadikan Fail Digital (PDF, DOCX, imej) Kelihatan Seperti Dokumen Imbasan"
+summary: "Pelajari cara menjadikan dokumen digital anda kelihatan seperti hasil imbasan menggunakan Look Scanned - alat percuma berasaskan pelayar web. Panduan ini mengandungi arahan langkah demi langkah, pilihan penyesuaian, dan petua untuk mendapatkan rupa dokumen imbasan yang tulen."
+description: "Pelajari cara menjadikan dokumen digital anda kelihatan seperti hasil imbasan menggunakan Look Scanned - alat percuma berasaskan pelayar web. Panduan ini mengandungi arahan langkah demi langkah, pilihan penyesuaian, dan petua untuk mendapatkan rupa dokumen imbasan yang tulen."
+tags: ["pdf", "alat", "tutorial", "pemprosesan-dokumen", "pengimbasan", "panduan"]
+---
 
 Ada kalanya kita perlu menjadikan dokumen digital kelihatan seperti telah diimbas. Sama ada untuk tujuan profesional, memenuhi keperluan tertentu, atau untuk tujuan estetika - menjadikan dokumen kelihatan seperti diimbas sebenarnya lebih mudah daripada yang anda sangka. Dalam panduan ini, kami akan tunjukkan langkah demi langkah cara melakukannya.
 

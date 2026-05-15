@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Buat PDF "Anti-Salin & Anti-Edit" dengan Efek Scan Menggunakan Look Scanned'
-description = 'Pelajari cara mengubah PDF Anda menjadi dokumen dengan efek scan yang tidak dapat disalin atau diedit menggunakan Look Scanned, aplikasi berbasis browser yang memproses file secara lokal untuk menjamin privasi penuh.'
-summary = 'Look Scanned adalah aplikasi browser yang mengutamakan privasi, mampu mengubah PDF Anda menjadi dokumen hasil scan yang realistis sehingga tidak dapat disalin atau diedit. Seluruh pemrosesan dilakukan secara lokal di browser Anda, menjamin keamanan dokumen sensitif Anda.'
-tags = ['privasi', 'efek scan', 'keamanan', 'browser', 'offline', 'perlindungan dokumen', 'pemrosesan lokal']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Buat PDF \"Anti-Salin & Anti-Edit\" dengan Efek Scan Menggunakan Look Scanned"
+summary: "Look Scanned adalah aplikasi browser yang mengutamakan privasi, mampu mengubah PDF Anda menjadi dokumen hasil scan yang realistis sehingga tidak dapat disalin atau diedit. Seluruh pemrosesan dilakukan secara lokal di browser Anda, menjamin keamanan dokumen sensitif Anda."
+description: "Pelajari cara mengubah PDF Anda menjadi dokumen dengan efek scan yang tidak dapat disalin atau diedit menggunakan Look Scanned, aplikasi berbasis browser yang memproses file secara lokal untuk menjamin privasi penuh."
+tags: ["privasi", "efek scan", "keamanan", "browser", "offline", "perlindungan dokumen", "pemrosesan lokal"]
+---
 
 Dalam era digital saat ini, melindungi dokumen sensitif merupakan hal yang sangat penting. Baik Anda sedang berbagi kontrak, laporan, maupun informasi rahasia, tentu Anda ingin mencegah orang lain menyalin atau mengubah isinya. Salah satu cara efektif untuk mencapai hal ini adalah dengan mengubah PDF Anda menjadi **dokumen dengan efek scan**, sehingga terlihat seperti hasil pemindaian fisik dan bukan file yang dapat diedit.
 

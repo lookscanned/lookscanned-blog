@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Creating a Custom Language Selector in Hugo PaperMod'
-summary = 'A step-by-step guide to implementing a custom dropdown-based language selector in Hugo PaperMod theme, perfect for multilingual sites with many language options'
-description = 'A step-by-step guide to implementing a custom dropdown-based language selector in Hugo PaperMod theme, perfect for multilingual sites with many language options'
-tags = ['hugo', 'papermod', 'tutorial', 'multilingual', 'html', 'i18n', 'css']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Creating a Custom Language Selector in Hugo PaperMod"
+summary: "A step-by-step guide to implementing a custom dropdown-based language selector in Hugo PaperMod theme, perfect for multilingual sites with many language options"
+description: "A step-by-step guide to implementing a custom dropdown-based language selector in Hugo PaperMod theme, perfect for multilingual sites with many language options"
+tags: ["hugo", "papermod", "tutorial", "multilingual", "html", "i18n", "css"]
+---
 
 ## Why Create a Custom Language Selector?
 

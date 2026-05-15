@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Kuunda Kichagua Lugha Maalum katika Hugo PaperMod'
-summary = 'Mwongozo wa hatua kwa hatua wa kutekeleza kichagua lugha cha dropdown katika theme ya Hugo PaperMod, kamili kwa tovuti za kilugha nyingi zenye chaguo nyingi za lugha'
-description = 'Mwongozo wa hatua kwa hatua wa kutekeleza kichagua lugha cha dropdown katika theme ya Hugo PaperMod, kamili kwa tovuti za kilugha nyingi zenye chaguo nyingi za lugha'
-tags = ['hugo', 'papermod', 'mwongozo', 'kilugha nyingi', 'html', 'i18n', 'css', 'maendeleo ya wavuti', 'kiolesura cha mtumiaji', 'uzoefu wa mtumiaji', 'uboresha utendaji']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Kuunda Kichagua Lugha Maalum katika Hugo PaperMod"
+summary: "Mwongozo wa hatua kwa hatua wa kutekeleza kichagua lugha cha dropdown katika theme ya Hugo PaperMod, kamili kwa tovuti za kilugha nyingi zenye chaguo nyingi za lugha"
+description: "Mwongozo wa hatua kwa hatua wa kutekeleza kichagua lugha cha dropdown katika theme ya Hugo PaperMod, kamili kwa tovuti za kilugha nyingi zenye chaguo nyingi za lugha"
+tags: ["hugo", "papermod", "mwongozo", "kilugha nyingi", "html", "i18n", "css", "maendeleo ya wavuti", "kiolesura cha mtumiaji", "uzoefu wa mtumiaji", "uboresha utendaji"]
+---
 
 ## Kwa Nini Kuunda Kichagua Lugha Maalum?
 

@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Creare un elegante selettore di lingua a tendina per Hugo PaperMod'
-summary = "Una guida pratica per implementare un selettore di lingua a tendina in Hugo PaperMod, rendendo più intuitiva la navigazione dei siti multilingua grazie a un'interfaccia elegante e ordinata"
-description = "Una guida pratica per implementare un selettore di lingua a tendina in Hugo PaperMod, rendendo più intuitiva la navigazione dei siti multilingua grazie a un'interfaccia elegante e ordinata"
-tags = ['hugo', 'papermod', 'tutorial', 'multilingua', 'html', 'i18n', 'css', 'sviluppo web', 'interfaccia']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Creare un elegante selettore di lingua a tendina per Hugo PaperMod"
+summary: "Una guida pratica per implementare un selettore di lingua a tendina in Hugo PaperMod, rendendo più intuitiva la navigazione dei siti multilingua grazie a un'interfaccia elegante e ordinata"
+description: "Una guida pratica per implementare un selettore di lingua a tendina in Hugo PaperMod, rendendo più intuitiva la navigazione dei siti multilingua grazie a un'interfaccia elegante e ordinata"
+tags: ["hugo", "papermod", "tutorial", "multilingua", "html", "i18n", "css", "sviluppo web", "interfaccia"]
+---
 
 ## Perché serve un nuovo selettore di lingua?
 

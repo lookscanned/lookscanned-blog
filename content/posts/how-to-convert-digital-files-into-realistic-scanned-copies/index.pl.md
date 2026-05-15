@@ -1,11 +1,11 @@
-+++
-date = '2025-01-20T09:35:50+08:00'
-draft = false
-title = 'Jak przekształcić pliki cyfrowe (PDF, DOCX, obrazy) w realistycznie wyglądające dokumenty skanowane'
-tags = ['pdf', 'narzędzia', 'poradnik', 'przetwarzanie-dokumentów', 'skanowanie', 'przewodnik']
-summary = 'Dowiedz się, jak nadać dokumentom cyfrowym wygląd zeskanowanych za pomocą Look Scanned - darmowego narzędzia działającego w przeglądarce. Ten poradnik zawiera instrukcje krok po kroku, opcje dostosowywania oraz wskazówki pozwalające uzyskać autentyczny wygląd zeskanowanego dokumentu.'
-description = 'Dowiedz się, jak nadać dokumentom cyfrowym wygląd zeskanowanych za pomocą Look Scanned - darmowego narzędzia działającego w przeglądarce. Ten poradnik zawiera instrukcje krok po kroku, opcje dostosowywania oraz wskazówki pozwalające uzyskać autentyczny wygląd zeskanowanego dokumentu.'
-+++
+---
+date: "2025-01-20T09:35:50+08:00"
+draft: false
+title: "Jak przekształcić pliki cyfrowe (PDF, DOCX, obrazy) w realistycznie wyglądające dokumenty skanowane"
+summary: "Dowiedz się, jak nadać dokumentom cyfrowym wygląd zeskanowanych za pomocą Look Scanned - darmowego narzędzia działającego w przeglądarce. Ten poradnik zawiera instrukcje krok po kroku, opcje dostosowywania oraz wskazówki pozwalające uzyskać autentyczny wygląd zeskanowanego dokumentu."
+description: "Dowiedz się, jak nadać dokumentom cyfrowym wygląd zeskanowanych za pomocą Look Scanned - darmowego narzędzia działającego w przeglądarce. Ten poradnik zawiera instrukcje krok po kroku, opcje dostosowywania oraz wskazówki pozwalające uzyskać autentyczny wygląd zeskanowanego dokumentu."
+tags: ["pdf", "narzędzia", "poradnik", "przetwarzanie-dokumentów", "skanowanie", "przewodnik"]
+---
 
 Czasami zachodzi potrzeba, aby nasze dokumenty cyfrowe wyglądały jak zeskanowane. Niezależnie od tego, czy zależy nam na profesjonalnym wyglądzie, spełnieniu określonych wymogów czy efekcie wizualnym - nadanie dokumentowi wyglądu zeskanowanego jest prostsze, niż mogłoby się wydawać. W tym poradniku przeprowadzimy Cię przez cały proces krok po kroku.
 

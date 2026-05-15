@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'PDF Dosyanıza Nasıl Silinemez Filigran Eklenir'
-description = 'Look Scanned kullanarak PDF dosyalarınıza gerçekten silinemez filigranlar eklemeyi öğrenin. Bu kılavuz, geleneksel filigranların neden başarısız olduğunu ve fiziksel taramalar gibi görünen kurcalamaya dayanıklı belgelerin nasıl oluşturulacağını açıklıyor.'
-tags = ['PDF', 'güvenlik', 'filigran', 'belge koruma']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "PDF Dosyanıza Nasıl Silinemez Filigran Eklenir"
+description: "Look Scanned kullanarak PDF dosyalarınıza gerçekten silinemez filigranlar eklemeyi öğrenin. Bu kılavuz, geleneksel filigranların neden başarısız olduğunu ve fiziksel taramalar gibi görünen kurcalamaya dayanıklı belgelerin nasıl oluşturulacağını açıklıyor."
+tags: ["PDF", "güvenlik", "filigran", "belge koruma"]
+---
 
 Filigranlar belgeleri korumak için yaygın bir yöntemdir, ancak geleneksel filigranlar genellikle birkaç tıklama ile kaldırılabilir veya atlatılabilir. Bu yazıda, **Look Scanned** kullanarak **gerçekten silinemez bir filigran** oluşturmayı göstereceğiz. Look Scanned, belge güvenliğini artırmak için taramış belgeleri simüle eden tarayıcı tabanlı bir araçtır.
 

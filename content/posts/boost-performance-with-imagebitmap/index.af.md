@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = 'Verhoog Prestasie met 60% deur ImageBitmap in Look Scanned'
-summary = 'Verken hoe die integrasie van ImageBitmap in Look Scanned prestasie verbeter deur asinchrone dekodering en doeltreffende weergawe moontlik te maak, terwyl verenigbaarheid met ouer webblaaiers behou word.'
-description = 'Verken hoe die integrasie van ImageBitmap in Look Scanned prestasie verbeter deur asinchrone dekodering en doeltreffende weergawe moontlik te maak, terwyl verenigbaarheid met ouer webblaaiers behou word.'
-tags = ['prestasie', 'imagebitmap', 'beeld', 'blaaier']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "Verhoog Prestasie met 60% deur ImageBitmap in Look Scanned"
+summary: "Verken hoe die integrasie van ImageBitmap in Look Scanned prestasie verbeter deur asinchrone dekodering en doeltreffende weergawe moontlik te maak, terwyl verenigbaarheid met ouer webblaaiers behou word."
+description: "Verken hoe die integrasie van ImageBitmap in Look Scanned prestasie verbeter deur asinchrone dekodering en doeltreffende weergawe moontlik te maak, terwyl verenigbaarheid met ouer webblaaiers behou word."
+tags: ["prestasie", "imagebitmap", "beeld", "blaaier"]
+---
 
 Prestasie-optimering is van kritieke belang wanneer moderne webapplikasies soos [Look Scanned](https://lookscanned.io) gebou word, veral wanneer dit by beelde kom. 'n Kragtige maar onderbenutte instrument vir die bereiking van beduidende prestasievoordele is die `ImageBitmap`-koppelvlak. In hierdie blogpos sal ons verken wat `ImageBitmap` is, waarom dit effektief is, en hoe dit in Look Scanned geïntegreer is om weergewingsprestasie te verbeter.
 

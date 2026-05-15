@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = 'ImageBitmap導入によりLook Scannedのパフォーマンスが60%向上'
-summary = 'ImageBitmapによる非同期デコードと効率的なレンダリングを活用し、Look Scannedのパフォーマンスを最適化。レガシーブラウザとの互換性も確保した実装方法をご紹介します。'
-description = 'ImageBitmapによる非同期デコードと効率的なレンダリングを活用し、Look Scannedのパフォーマンスを最適化。レガシーブラウザとの互換性も確保した実装方法をご紹介します。'
-tags = ['パフォーマンス最適化', 'imagebitmap', '画像処理', 'Web技術']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "ImageBitmap導入によりLook Scannedのパフォーマンスが60%向上"
+summary: "ImageBitmapによる非同期デコードと効率的なレンダリングを活用し、Look Scannedのパフォーマンスを最適化。レガシーブラウザとの互換性も確保した実装方法をご紹介します。"
+description: "ImageBitmapによる非同期デコードと効率的なレンダリングを活用し、Look Scannedのパフォーマンスを最適化。レガシーブラウザとの互換性も確保した実装方法をご紹介します。"
+tags: ["パフォーマンス最適化", "imagebitmap", "画像処理", "Web技術"]
+---
 
 [Look Scanned](https://lookscanned.io)のようなモダンな Web アプリケーションの開発において、パフォーマンスの最適化は最重要課題の一つです。特に画像処理においては、その重要性が際立ちます。`ImageBitmap`インターフェースは、まだ広く普及していないものの、大幅なパフォーマンス向上を実現できる強力なツールです。本記事では、`ImageBitmap`の主要機能、その利点、そして Look Scanned への実装方法について詳しくご説明します。
 

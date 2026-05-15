@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Cómo Look Scanned protege tu privacidad al crear PDFs con apariencia de documentos escaneados'
-description = 'Descubre cómo Look Scanned garantiza total privacidad de tus documentos mediante procesamiento en el navegador, funcionalidad sin conexión y cero interacción con servidores mientras crea PDFs con aspecto de escaneado realista.'
-summary = 'Look Scanned es una herramienta enfocada en la privacidad que crea PDFs con apariencia de documentos escaneados directamente en tu navegador. Descubre cómo su enfoque de procesamiento local mantiene tus documentos sensibles seguros al no enviar nunca datos a servidores externos.'
-tags = ['privacidad', 'lookscanned', 'características', 'navegador', 'sin conexión', 'seguridad', 'procesamiento local']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Cómo Look Scanned protege tu privacidad al crear PDFs con apariencia de documentos escaneados"
+summary: "Look Scanned es una herramienta enfocada en la privacidad que crea PDFs con apariencia de documentos escaneados directamente en tu navegador. Descubre cómo su enfoque de procesamiento local mantiene tus documentos sensibles seguros al no enviar nunca datos a servidores externos."
+description: "Descubre cómo Look Scanned garantiza total privacidad de tus documentos mediante procesamiento en el navegador, funcionalidad sin conexión y cero interacción con servidores mientras crea PDFs con aspecto de escaneado realista."
+tags: ["privacidad", "lookscanned", "características", "navegador", "sin conexión", "seguridad", "procesamiento local"]
+---
 
 Con el auge del procesamiento y la compartición digital de documentos, las preocupaciones sobre la privacidad son cada vez más importantes. Look Scanned es una herramienta ligera basada en navegador diseñada para crear PDFs con apariencia de documentos escaneados directamente en tu navegador. Este artículo explica cómo Look Scanned utiliza un innovador procesamiento local para garantizar la privacidad y seguridad de tus documentos.
 

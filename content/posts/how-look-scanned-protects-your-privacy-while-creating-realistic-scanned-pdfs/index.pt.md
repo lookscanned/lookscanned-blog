@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Como o Look Scanned protege sua privacidade enquanto cria PDFs digitalizados realistas'
-description = 'Descubra como o Look Scanned garante total privacidade dos seus documentos com processamento no navegador, recursos offline e zero interação com servidores enquanto cria PDFs com aparência de digitalizados.'
-summary = 'O Look Scanned é uma ferramenta focada em privacidade que cria PDFs com aparência de digitalizados inteiramente dentro do seu navegador. Saiba como sua abordagem de processamento local mantém seus documentos sensíveis seguros ao nunca enviar dados para servidores remotos.'
-tags = ['privacidade', 'lookscanned', 'recursos', 'navegador', 'offline', 'segurança', 'processamento-local']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Como o Look Scanned protege sua privacidade enquanto cria PDFs digitalizados realistas"
+summary: "O Look Scanned é uma ferramenta focada em privacidade que cria PDFs com aparência de digitalizados inteiramente dentro do seu navegador. Saiba como sua abordagem de processamento local mantém seus documentos sensíveis seguros ao nunca enviar dados para servidores remotos."
+description: "Descubra como o Look Scanned garante total privacidade dos seus documentos com processamento no navegador, recursos offline e zero interação com servidores enquanto cria PDFs com aparência de digitalizados."
+tags: ["privacidade", "lookscanned", "recursos", "navegador", "offline", "segurança", "processamento-local"]
+---
 
 Com o aumento do processamento e compartilhamento de documentos digitais, as preocupações com privacidade estão se tornando cada vez mais críticas. O Look Scanned é uma ferramenta leve, baseada em navegador, projetada para criar PDFs com aparência de digitalizados diretamente no seu navegador. Este artigo explica como o Look Scanned utiliza processamento local inovador para garantir a privacidade e segurança dos seus documentos.
 

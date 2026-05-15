@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = 'Look Scanned ökar prestandan med 60% genom ImageBitmap'
-summary = 'Läs om hur Look Scanned optimerar sin prestanda med hjälp av asynkron avkodning och effektiv rendering via ImageBitmap, samtidigt som stödet för äldre webbläsare behålls.'
-description = 'Läs om hur Look Scanned optimerar sin prestanda med hjälp av asynkron avkodning och effektiv rendering via ImageBitmap, samtidigt som stödet för äldre webbläsare behålls.'
-tags = ['prestandaoptimering', 'imagebitmap', 'bildhantering', 'webbutveckling']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "Look Scanned ökar prestandan med 60% genom ImageBitmap"
+summary: "Läs om hur Look Scanned optimerar sin prestanda med hjälp av asynkron avkodning och effektiv rendering via ImageBitmap, samtidigt som stödet för äldre webbläsare behålls."
+description: "Läs om hur Look Scanned optimerar sin prestanda med hjälp av asynkron avkodning och effektiv rendering via ImageBitmap, samtidigt som stödet för äldre webbläsare behålls."
+tags: ["prestandaoptimering", "imagebitmap", "bildhantering", "webbutveckling"]
+---
 
 I utvecklingen av moderna webbapplikationer som [Look Scanned](https://lookscanned.io) är prestandaoptimering högsta prioritet. Detta gäller särskilt vid bildhantering. `ImageBitmap`-gränssnittet är, trots att det ännu inte används brett, ett kraftfullt verktyg som kan ge märkbara prestandaförbättringar. I denna artikel beskriver vi de viktigaste funktionerna i `ImageBitmap`, dess fördelar och våra erfarenheter av implementeringen i Look Scanned.
 

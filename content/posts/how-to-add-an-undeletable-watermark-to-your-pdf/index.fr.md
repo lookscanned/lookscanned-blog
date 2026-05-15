@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'Comment Ajouter un Filigrane Indélébile à votre PDF'
-description = 'Apprenez à créer des filigranes véritablement indélébiles dans vos PDF en utilisant Look Scanned. Ce guide explique pourquoi les filigranes traditionnels échouent et comment créer des documents inviolables qui ressemblent à des scans physiques.'
-tags = ['PDF', 'sécurité', 'filigrane', 'protection de documents']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "Comment Ajouter un Filigrane Indélébile à votre PDF"
+description: "Apprenez à créer des filigranes véritablement indélébiles dans vos PDF en utilisant Look Scanned. Ce guide explique pourquoi les filigranes traditionnels échouent et comment créer des documents inviolables qui ressemblent à des scans physiques."
+tags: ["PDF", "sécurité", "filigrane", "protection de documents"]
+---
 
 Les filigranes sont un moyen courant de protéger les documents, mais les filigranes traditionnels peuvent souvent être supprimés ou contournés en quelques clics. Dans cet article, nous vous montrerons comment créer un **filigrane véritablement indélébile** en utilisant **Look Scanned**, un outil basé sur navigateur qui simule des documents scannés pour renforcer la sécurité des documents.
 

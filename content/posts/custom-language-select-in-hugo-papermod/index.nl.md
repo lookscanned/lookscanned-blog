@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Een stijlvolle taalkiezer met uitklapmenu voor Hugo PaperMod'
-summary = 'Een praktische handleiding voor het implementeren van een taalkiezer met uitklapmenu in Hugo PaperMod, waardoor meertalige websites gebruiksvriendelijker worden'
-description = 'Een praktische handleiding voor het implementeren van een taalkiezer met uitklapmenu in Hugo PaperMod, waardoor meertalige websites gebruiksvriendelijker worden'
-tags = ['hugo', 'papermod', 'handleiding', 'meertaligheid', 'html', 'i18n', 'css', 'webontwikkeling', 'gebruikersinterface', 'toegankelijkheid']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Een stijlvolle taalkiezer met uitklapmenu voor Hugo PaperMod"
+summary: "Een praktische handleiding voor het implementeren van een taalkiezer met uitklapmenu in Hugo PaperMod, waardoor meertalige websites gebruiksvriendelijker worden"
+description: "Een praktische handleiding voor het implementeren van een taalkiezer met uitklapmenu in Hugo PaperMod, waardoor meertalige websites gebruiksvriendelijker worden"
+tags: ["hugo", "papermod", "handleiding", "meertaligheid", "html", "i18n", "css", "webontwikkeling", "gebruikersinterface", "toegankelijkheid"]
+---
 
 ## Waarom een betere taalkiezer?
 

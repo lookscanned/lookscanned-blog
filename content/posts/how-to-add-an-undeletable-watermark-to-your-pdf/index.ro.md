@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'Cum să adaugi un filigran neștergibil la PDF-ul tău'
-description = 'Învață cum să creezi filigrane cu adevărat neștergibile în PDF-urile tale folosind Look Scanned. Acest ghid explică de ce filigranele tradiționale eșuează și cum să faci documente rezistente la alterare care arată ca scanări fizice.'
-tags = ['PDF', 'securitate', 'filigran', 'protecția documentelor']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "Cum să adaugi un filigran neștergibil la PDF-ul tău"
+description: "Învață cum să creezi filigrane cu adevărat neștergibile în PDF-urile tale folosind Look Scanned. Acest ghid explică de ce filigranele tradiționale eșuează și cum să faci documente rezistente la alterare care arată ca scanări fizice."
+tags: ["PDF", "securitate", "filigran", "protecția documentelor"]
+---
 
 Filigranele sunt o modalitate comună de a proteja documentele, dar filigranele tradiționale pot fi adesea eliminate sau ocolite cu doar câteva clicuri. În această postare, îți vom arăta cum să creezi un **filigran cu adevărat neștergibil** folosind **Look Scanned**, un instrument bazat pe browser care simulează documente scanate pentru securitate îmbunătățită a documentelor.
 

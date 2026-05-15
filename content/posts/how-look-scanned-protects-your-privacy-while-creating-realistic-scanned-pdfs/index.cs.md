@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Jak Look Scanned chrání vaše soukromí při vytváření realistických skenovaných PDF'
-description = 'Zjistěte, jak Look Scanned zajišťuje úplné soukromí dokumentů pomocí zpracování v prohlížeči, offline funkcí a nulové interakce se servery při vytváření realistických skenovaných PDF.'
-summary = 'Look Scanned je nástroj zaměřený na soukromí, který vytváří realistické skenované PDF zcela ve vašem prohlížeči. Zjistěte, jak jeho lokální přístup zpracování udržuje vaše citlivé dokumenty v bezpečí tím, že nikdy neodesílá data na vzdálené servery.'
-tags = ['soukromí', 'lookscanned', 'funkce', 'prohlížeč', 'offline', 'zabezpečení', 'místní']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Jak Look Scanned chrání vaše soukromí při vytváření realistických skenovaných PDF"
+summary: "Look Scanned je nástroj zaměřený na soukromí, který vytváří realistické skenované PDF zcela ve vašem prohlížeči. Zjistěte, jak jeho lokální přístup zpracování udržuje vaše citlivé dokumenty v bezpečí tím, že nikdy neodesílá data na vzdálené servery."
+description: "Zjistěte, jak Look Scanned zajišťuje úplné soukromí dokumentů pomocí zpracování v prohlížeči, offline funkcí a nulové interakce se servery při vytváření realistických skenovaných PDF."
+tags: ["soukromí", "lookscanned", "funkce", "prohlížeč", "offline", "zabezpečení", "místní"]
+---
 
 S nárůstem digitálního zpracování a sdílení dokumentů se obavy o soukromí stávají stále kritičtějšími. Look Scanned je lehký nástroj založený na prohlížeči, navržený pro vytváření realistických skenovaných PDF přímo ve vašem prohlížeči. Tento článek vysvětluje, jak Look Scanned používá inovativní místní zpracování k zajištění soukromí a bezpečnosti vašich dokumentů.
 

@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'Hur du Lägger till ett Oraderbart Vattenstämpel i din PDF'
-description = 'Lär dig hur du skapar verkligt oraderbara vattenstämplar i dina PDF-filer med Look Scanned. Denna guide förklarar varför traditionella vattenstämplar misslyckas och hur du skapar dokument som ser ut som fysiska skanningar.'
-tags = ['PDF', 'säkerhet', 'vattenstämpel', 'dokumentskydd']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "Hur du Lägger till ett Oraderbart Vattenstämpel i din PDF"
+description: "Lär dig hur du skapar verkligt oraderbara vattenstämplar i dina PDF-filer med Look Scanned. Denna guide förklarar varför traditionella vattenstämplar misslyckas och hur du skapar dokument som ser ut som fysiska skanningar."
+tags: ["PDF", "säkerhet", "vattenstämpel", "dokumentskydd"]
+---
 
 Vattenstämplar är ett vanligt sätt att skydda dokument, men traditionella vattenstämplar kan ofta tas bort eller kringgås med bara några klick. I det här inlägget visar vi hur du skapar en **verkligt oraderbar vattenstämpel** med **Look Scanned**, ett webbläsarbaserat verktyg som simulerar skannade dokument för förbättrad dokumentsäkerhet.
 

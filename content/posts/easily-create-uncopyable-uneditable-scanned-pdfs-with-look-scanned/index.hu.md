@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Könnyen készíthetsz "nem másolható és nem szerkeszthető" beszkennelt PDF-eket a Look Scanned segítségével'
-description = 'Tanuld meg, hogyan alakítsd át PDF-jeidet nem másolható, nem szerkeszthető, szkennelt dokumentumokká a Look Scanned segítségével, egy böngészőalapú eszközzel, amely helyben dolgozza fel a fájlokat a teljes adatvédelem érdekében.'
-summary = 'A Look Scanned egy adatvédelem-központú böngésző eszköz, amely PDF-jeidet valósághű szkennelt dokumentumokká alakítja, amelyek megakadályozzák a másolást és szerkesztést. Minden feldolgozás helyben történik a böngésződben, biztosítva, hogy érzékeny dokumentumaid biztonságban maradjanak.'
-tags = ['adatvédelem', 'szkennelési effektus', 'biztonság', 'böngésző', 'offline', 'dokumentumvédelem', 'helyi feldolgozás']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Könnyen készíthetsz \"nem másolható és nem szerkeszthető\" beszkennelt PDF-eket a Look Scanned segítségével"
+summary: "A Look Scanned egy adatvédelem-központú böngésző eszköz, amely PDF-jeidet valósághű szkennelt dokumentumokká alakítja, amelyek megakadályozzák a másolást és szerkesztést. Minden feldolgozás helyben történik a böngésződben, biztosítva, hogy érzékeny dokumentumaid biztonságban maradjanak."
+description: "Tanuld meg, hogyan alakítsd át PDF-jeidet nem másolható, nem szerkeszthető, szkennelt dokumentumokká a Look Scanned segítségével, egy böngészőalapú eszközzel, amely helyben dolgozza fel a fájlokat a teljes adatvédelem érdekében."
+tags: ["adatvédelem", "szkennelési effektus", "biztonság", "böngésző", "offline", "dokumentumvédelem", "helyi feldolgozás"]
+---
 
 A digitális világban az érzékeny dokumentumok védelme kulcsfontosságú. Akár szerződéseket, jelentéseket vagy bizalmas információkat osztasz meg, megakadályozhatod, hogy mások másolják vagy módosítsák a tartalmat. Ennek elérésének egy hatékony módja, ha PDF-edet **szkennelt-szerű dokumentummá** alakítod, így fizikai szkennelésként jelenik meg, nem pedig szerkeszthető fájlként.
 

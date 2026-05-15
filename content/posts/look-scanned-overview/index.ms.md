@@ -1,10 +1,10 @@
-+++
-date = '2025-02-10T15:39:20+08:00'
-draft = false
-title = 'Look Scanned: Cara Pantas, Selamat dan Pintar untuk Mensimulasikan Dokumen Imbasan'
-summary = 'Look Scanned ialah alat berasaskan pelayar yang ringan yang membolehkan anda mencipta dokumen imbasan realistik dengan serta-merta — tanpa pemasangan, tanpa muat naik dan tanpa kebimbangan privasi. Sama ada anda individu, pasukan atau pembangun yang ingin mengintegrasikan ciri pengimbasan, Look Scanned mempunyai semua yang anda perlukan.'
-tags = ['pengimbasan', 'gambaran-keseluruhan', 'ciri', 'lookscanned']
-+++
+---
+date: "2025-02-10T15:39:20+08:00"
+draft: false
+title: "Look Scanned: Cara Pantas, Selamat dan Pintar untuk Mensimulasikan Dokumen Imbasan"
+summary: "Look Scanned ialah alat berasaskan pelayar yang ringan yang membolehkan anda mencipta dokumen imbasan realistik dengan serta-merta — tanpa pemasangan, tanpa muat naik dan tanpa kebimbangan privasi. Sama ada anda individu, pasukan atau pembangun yang ingin mengintegrasikan ciri pengimbasan, Look Scanned mempunyai semua yang anda perlukan."
+tags: ["pengimbasan", "gambaran-keseluruhan", "ciri", "lookscanned"]
+---
 
 Dalam dunia digital hari ini, penukaran dokumen elektronik kepada PDF imbasan yang realistik adalah penting untuk tugas-tugas seperti penghantaran kontrak, pengarkiban dokumen dan perkongsian fail rasmi. Pengimbas tradisional besar dan perlahan, manakala banyak alat dalam talian memerlukan muat naik fail yang mewujudkan risiko privasi.
 

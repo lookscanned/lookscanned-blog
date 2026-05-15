@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Tengeneza kwa Urahisi PDF za "Kutolipatika Kunakili na Kutohaririwa" zilizopigiwa Picha kwa Look Scanned'
-description = 'Jifunze jinsi ya kubadilisha PDF zako kuwa hati za mfano wa kupiga picha ambazo haziwezi kunakiliwa au kuhaririwa kwa kutumia Look Scanned, zana ya kivinjari ambayo huchakata faili ndani yako kwa faragha kamili.'
-summary = 'Look Scanned ni zana ya kivinjari inayojali faragha ambayo hubadilisha PDF zako kuwa hati za kupiga picha za kweli zinazokataza kunakili na kuhariri. Uchakataji wote unafanyika ndani ya kivinjari chako, kuhakikisha hati zako nyeti zinabaki salama.'
-tags = ['faragha', 'athari za kupiga picha', 'usalama', 'kivinjari', 'nje ya mtandao', 'ulinzi wa hati', 'uchakataji wa ndani']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Tengeneza kwa Urahisi PDF za \"Kutolipatika Kunakili na Kutohaririwa\" zilizopigiwa Picha kwa Look Scanned"
+summary: "Look Scanned ni zana ya kivinjari inayojali faragha ambayo hubadilisha PDF zako kuwa hati za kupiga picha za kweli zinazokataza kunakili na kuhariri. Uchakataji wote unafanyika ndani ya kivinjari chako, kuhakikisha hati zako nyeti zinabaki salama."
+description: "Jifunze jinsi ya kubadilisha PDF zako kuwa hati za mfano wa kupiga picha ambazo haziwezi kunakiliwa au kuhaririwa kwa kutumia Look Scanned, zana ya kivinjari ambayo huchakata faili ndani yako kwa faragha kamili."
+tags: ["faragha", "athari za kupiga picha", "usalama", "kivinjari", "nje ya mtandao", "ulinzi wa hati", "uchakataji wa ndani"]
+---
 
 Katika ulimwengu wa kidijitali, kulinda hati nyeti ni muhimu sana. Iwe unashiriki mikataba, ripoti, au habari za siri, unaweza kutaka kuzuia wengine wasinakili au kubadilisha yaliyomo. Njia moja ya kufanikiwa hii ni kwa kubadilisha PDF yako kuwa **hati iliyo kama picha iliyopigiwa**, kuifanya ionekane kama picha halisi badala ya faili linaloweza kuhaririwa.
 

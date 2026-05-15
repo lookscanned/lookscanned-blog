@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Madaling Lumikha ng "Hindi Makopya at Hindi Ma-edit" na Scanned PDF gamit ang Look Scanned'
-description = 'Matuto kung paano i-transform ang inyong mga PDF sa hindi makopya, hindi ma-edit na scanned-like na mga dokumento gamit ang Look Scanned, isang browser-based na tool na nagproproseso ng mga file sa lokal para sa kumpletong privacy.'
-summary = 'Ang Look Scanned ay isang privacy-focused na browser tool na nagcoconvert ng inyong mga PDF sa realistic na scanned documents na pumipigil sa copying at editing. Lahat ng processing ay nangyayari sa lokal sa inyong browser, tinitiyak na ang inyong mga sensitive na dokumento ay nananatiling secure.'
-tags = ['privacy', 'scanned effect', 'security', 'browser', 'offline', 'document protection', 'local processing']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Madaling Lumikha ng \"Hindi Makopya at Hindi Ma-edit\" na Scanned PDF gamit ang Look Scanned"
+summary: "Ang Look Scanned ay isang privacy-focused na browser tool na nagcoconvert ng inyong mga PDF sa realistic na scanned documents na pumipigil sa copying at editing. Lahat ng processing ay nangyayari sa lokal sa inyong browser, tinitiyak na ang inyong mga sensitive na dokumento ay nananatiling secure."
+description: "Matuto kung paano i-transform ang inyong mga PDF sa hindi makopya, hindi ma-edit na scanned-like na mga dokumento gamit ang Look Scanned, isang browser-based na tool na nagproproseso ng mga file sa lokal para sa kumpletong privacy."
+tags: ["privacy", "scanned effect", "security", "browser", "offline", "document protection", "local processing"]
+---
 
 Sa digital na mundo, ang pagprotekta sa mga sensitive na dokumento ay napakahalaga. Maging ikaw ay nagshashare ng mga kontrata, mga report, o confidential na impormasyon, maaari mong gustuhang pigilan ang iba sa pag-copy o pagbabago sa content. Isang epektibong paraan upang makamit ito ay sa pamamagitan ng pag-convert ng inyong PDF sa isang **scanned-like na dokumento**, na ginagawang mukhang physical scan sa halip na editable file.
 

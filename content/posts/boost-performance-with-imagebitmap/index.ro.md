@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = 'Creșterea Performanței cu 60% folosind ImageBitmap în Look Scanned'
-summary = 'Explorați cum integrarea ImageBitmap în Look Scanned îmbunătățește performanța prin activarea decodării asincrone și a randării eficiente, menținând în același timp compatibilitatea cu browserele mai vechi.'
-description = 'Explorați cum integrarea ImageBitmap în Look Scanned îmbunătățește performanța prin activarea decodării asincrone și a randării eficiente, menținând în același timp compatibilitatea cu browserele mai vechi.'
-tags = ['performanță', 'imagebitmap', 'imagine', 'browser']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "Creșterea Performanței cu 60% folosind ImageBitmap în Look Scanned"
+summary: "Explorați cum integrarea ImageBitmap în Look Scanned îmbunătățește performanța prin activarea decodării asincrone și a randării eficiente, menținând în același timp compatibilitatea cu browserele mai vechi."
+description: "Explorați cum integrarea ImageBitmap în Look Scanned îmbunătățește performanța prin activarea decodării asincrone și a randării eficiente, menținând în același timp compatibilitatea cu browserele mai vechi."
+tags: ["performanță", "imagebitmap", "imagine", "browser"]
+---
 
 Optimizarea performanței este crucială atunci când construim aplicații web moderne cum este [Look Scanned](https://lookscanned.io), în special când lucrăm cu imagini. Un instrument puternic, dar subutilizat pentru obținerea de îmbunătățiri semnificative ale performanței este interfața `ImageBitmap`. În această postare de blog, vom explora ce este `ImageBitmap`, de ce este efectiv și cum a fost integrat în Look Scanned pentru a îmbunătăți performanța de randare.
 

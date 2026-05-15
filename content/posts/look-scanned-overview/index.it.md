@@ -1,10 +1,10 @@
-+++
-date = '2025-02-10T15:39:20+08:00'
-draft = false
-title = 'Look Scanned: Il modo veloce, sicuro e intelligente per simulare documenti scansionati'
-summary = 'Look Scanned è uno strumento leggero basato su browser che ti permette di creare istantaneamente documenti scansionati realistici—senza installazione, senza caricamenti e senza preoccupazioni per la privacy. Che tu sia un individuo, un team o uno sviluppatore alla ricerca di funzionalità di scansione, Look Scanned ha quello che ti serve.'
-tags = ['scansione', 'panoramica', 'funzionalità', 'lookscanned']
-+++
+---
+date: "2025-02-10T15:39:20+08:00"
+draft: false
+title: "Look Scanned: Il modo veloce, sicuro e intelligente per simulare documenti scansionati"
+summary: "Look Scanned è uno strumento leggero basato su browser che ti permette di creare istantaneamente documenti scansionati realistici—senza installazione, senza caricamenti e senza preoccupazioni per la privacy. Che tu sia un individuo, un team o uno sviluppatore alla ricerca di funzionalità di scansione, Look Scanned ha quello che ti serve."
+tags: ["scansione", "panoramica", "funzionalità", "lookscanned"]
+---
 
 Nel mondo digitale di oggi, convertire documenti elettronici in PDF scansionati realistici è essenziale per attività come l'invio di contratti, l'archiviazione di documenti e la condivisione di file ufficiali. Gli scanner tradizionali sono ingombranti e lenti, mentre molti strumenti online richiedono il caricamento di file, ponendo rischi per la privacy.
 

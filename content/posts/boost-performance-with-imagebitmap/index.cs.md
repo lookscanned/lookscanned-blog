@@ -1,11 +1,11 @@
-+++
-date = '2025-01-18T19:15:33+08:00'
-draft = false
-title = 'Zvýšení výkonu o 60% pomocí ImageBitmap v Look Scanned'
-summary = 'Prozkoumejte, jak integrace ImageBitmap do Look Scanned zvyšuje výkon umožněním asynchronního dekódování a efektivního renderování, při zachování kompatibility se staršími prohlížeči.'
-description = 'Prozkoumejte, jak integrace ImageBitmap do Look Scanned zvyšuje výkon umožněním asynchronního dekódování a efektivního renderování, při zachování kompatibility se staršími prohlížeči.'
-tags = ['výkon', 'imagebitmap', 'obrázek', 'prohlížeč']
-+++
+---
+date: "2025-01-18T19:15:33+08:00"
+draft: false
+title: "Zvýšení výkonu o 60% pomocí ImageBitmap v Look Scanned"
+summary: "Prozkoumejte, jak integrace ImageBitmap do Look Scanned zvyšuje výkon umožněním asynchronního dekódování a efektivního renderování, při zachování kompatibility se staršími prohlížeči."
+description: "Prozkoumejte, jak integrace ImageBitmap do Look Scanned zvyšuje výkon umožněním asynchronního dekódování a efektivního renderování, při zachování kompatibility se staršími prohlížeči."
+tags: ["výkon", "imagebitmap", "obrázek", "prohlížeč"]
+---
 
 Optimalizace výkonu je klíčová při vytváření moderních webových aplikací jako [Look Scanned](https://lookscanned.io), zejména při práci s obrázky. Mocným, ale nedostatečně využívaným nástrojem pro dosažení významného zlepšení výkonu je rozhraní `ImageBitmap`. V tomto blogovém příspěvku prozkoumáme, co je `ImageBitmap`, proč je efektivní a jak byl integrován do Look Scanned pro zvýšení výkonu renderování.
 

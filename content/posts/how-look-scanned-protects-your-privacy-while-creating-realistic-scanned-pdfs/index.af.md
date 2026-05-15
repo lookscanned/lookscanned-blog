@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Hoe Look Scanned Jou Privaatheid Beskerm Terwyl Dit Realistiese Geskaneerde PDFs Skep'
-description = 'Ontdek hoe Look Scanned volledige dokument-privaatheid verseker met blaaier-gebaseerde verwerking, vanlyn moontlikhede, en geen bediener interaksie terwyl dit realistiese geskaneerde PDFs skep.'
-summary = "Look Scanned is 'n privaatheid-gefokusde instrument wat realistiese geskaneerde PDFs heeltemal binne jou blaaier skep. Leer hoe sy plaaslike verwerkings-benadering jou sensitiewe dokumente veilig hou deur nooit data na afgeleë bedieners te stuur nie."
-tags = ['privaatheid', 'lookscanned', 'kenmerke', 'blaaier', 'vanlyn', 'sekuriteit', 'plaaslik']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Hoe Look Scanned Jou Privaatheid Beskerm Terwyl Dit Realistiese Geskaneerde PDFs Skep"
+summary: "Look Scanned is 'n privaatheid-gefokusde instrument wat realistiese geskaneerde PDFs heeltemal binne jou blaaier skep. Leer hoe sy plaaslike verwerkings-benadering jou sensitiewe dokumente veilig hou deur nooit data na afgeleë bedieners te stuur nie."
+description: "Ontdek hoe Look Scanned volledige dokument-privaatheid verseker met blaaier-gebaseerde verwerking, vanlyn moontlikhede, en geen bediener interaksie terwyl dit realistiese geskaneerde PDFs skep."
+tags: ["privaatheid", "lookscanned", "kenmerke", "blaaier", "vanlyn", "sekuriteit", "plaaslik"]
+---
 
 Met die toename van digitale dokument-verwerking en deling, word kommer oor privaatheid toenemend kritiek. Look Scanned is 'n liggewig, blaaier-gebaseerde instrument ontwerp om realistiese geskaneerde PDFs direk binne jou blaaier te skep. Hierdie artikel verduidelik hoe Look Scanned innoverende plaaslike verwerking gebruik om jou dokument-privaatheid en sekuriteit te verseker.
 

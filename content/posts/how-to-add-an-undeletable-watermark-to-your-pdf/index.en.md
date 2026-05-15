@@ -1,10 +1,10 @@
-+++
-date = '2025-04-21T14:19:16+08:00'
-draft = false
-title = 'How to Add an Undeletable Watermark to Your PDF'
-description = 'Learn how to create truly undeletable watermarks in your PDFs using Look Scanned. This guide explains why traditional watermarks fail and how to make tamper-proof documents that look like physical scans.'
-tags = ['PDF', 'security', 'watermark', 'document protection']
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "How to Add an Undeletable Watermark to Your PDF"
+description: "Learn how to create truly undeletable watermarks in your PDFs using Look Scanned. This guide explains why traditional watermarks fail and how to make tamper-proof documents that look like physical scans."
+tags: ["PDF", "security", "watermark", "document protection"]
+---
 
 Watermarks are a common way to protect documents, but traditional watermarks can often be removed or bypassed with just a few clicks. In this post, we’ll show you how to create a **truly undeletable watermark** using **Look Scanned**, a browser-based tool that simulates scanned documents for enhanced document security.
 

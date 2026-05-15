@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Twórz "Niekopiowalne i Nieedytowalne" PDF-y z Efektem Skanowania za pomocą Look Scanned'
-description = 'Dowiedz się, jak przekształcić pliki PDF w dokumenty z efektem skanowania, których nie można kopiować ani edytować, dzięki Look Scanned – aplikacji działającej w przeglądarce, która przetwarza pliki lokalnie, zapewniając pełną prywatność.'
-summary = 'Look Scanned to aplikacja przeglądarkowa dbająca o prywatność, która zamienia pliki PDF w realistyczne dokumenty z efektem skanowania, uniemożliwiając ich kopiowanie i edycję. Cały proces odbywa się lokalnie w przeglądarce, co gwarantuje bezpieczeństwo poufnych dokumentów.'
-tags = ['prywatność', 'efekt skanowania', 'bezpieczeństwo', 'przeglądarka', 'offline', 'ochrona dokumentów', 'przetwarzanie lokalne']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Twórz \"Niekopiowalne i Nieedytowalne\" PDF-y z Efektem Skanowania za pomocą Look Scanned"
+summary: "Look Scanned to aplikacja przeglądarkowa dbająca o prywatność, która zamienia pliki PDF w realistyczne dokumenty z efektem skanowania, uniemożliwiając ich kopiowanie i edycję. Cały proces odbywa się lokalnie w przeglądarce, co gwarantuje bezpieczeństwo poufnych dokumentów."
+description: "Dowiedz się, jak przekształcić pliki PDF w dokumenty z efektem skanowania, których nie można kopiować ani edytować, dzięki Look Scanned – aplikacji działającej w przeglądarce, która przetwarza pliki lokalnie, zapewniając pełną prywatność."
+tags: ["prywatność", "efekt skanowania", "bezpieczeństwo", "przeglądarka", "offline", "ochrona dokumentów", "przetwarzanie lokalne"]
+---
 
 W cyfrowym świecie ochrona poufnych dokumentów ma kluczowe znaczenie. Niezależnie od tego, czy udostępniasz umowy, raporty czy informacje poufne, prawdopodobnie zależy Ci na tym, by uniemożliwić innym kopiowanie lub modyfikowanie ich treści. Jednym ze skutecznych sposobów osiągnięcia tego celu jest przekształcenie pliku PDF w **dokument z efektem skanowania**, dzięki czemu wygląda on jak fizyczny skan, a nie edytowalny plik.
 

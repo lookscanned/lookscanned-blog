@@ -1,10 +1,10 @@
-+++
-date = '2025-07-31T16:36:14+08:00'
-draft = false
-title = '10 Praktische Toepassingen voor Look Scanned: Van Juridische Documenten tot Creatieve Projecten'
-summary = "Ontdek de praktische toepassingen van Look Scanned in verschillende sectoren en scenario's. Van juridische documentvoorbereiding tot creatieve projectarchivering, leer hoe deze browser-gebaseerde tool echte problemen oplost in verschillende professionele en persoonlijke contexten."
-tags = ['toepassingen', 'gebruiksmogelijkheden', 'juridisch', 'bedrijfsleven', 'creatief', 'lookscanned']
-+++
+---
+date: "2025-07-31T16:36:14+08:00"
+draft: false
+title: "10 Praktische Toepassingen voor Look Scanned: Van Juridische Documenten tot Creatieve Projecten"
+summary: "Ontdek de praktische toepassingen van Look Scanned in verschillende sectoren en scenario's. Van juridische documentvoorbereiding tot creatieve projectarchivering, leer hoe deze browser-gebaseerde tool echte problemen oplost in verschillende professionele en persoonlijke contexten."
+tags: ["toepassingen", "gebruiksmogelijkheden", "juridisch", "bedrijfsleven", "creatief", "lookscanned"]
+---
 
 [Look Scanned](https://lookscanned.io) is niet zomaar een documentconversietool—het is een veelzijdige oplossing die echte uitdagingen aanpakt in verschillende sectoren en persoonlijke scenario's. Hoewel veel gebruikers Look Scanned aanvankelijk ontdekken voor basis PDF-scanbehoeften, strekken de toepassingen zich veel verder uit dan eenvoudige documentconversie.
 

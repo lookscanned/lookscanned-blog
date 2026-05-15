@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Créer un sélecteur de langue élégant avec menu déroulant pour Hugo PaperMod'
-summary = 'Un guide pratique pour implémenter un sélecteur de langue avec menu déroulant dans Hugo PaperMod, permettant une navigation plus élégante et organisée sur les sites multilingues grâce à une interface intuitive'
-description = 'Un guide pratique pour implémenter un sélecteur de langue avec menu déroulant dans Hugo PaperMod, permettant une navigation plus élégante et organisée sur les sites multilingues grâce à une interface intuitive'
-tags = ['hugo', 'papermod', 'tutoriel', 'multilinguisme', 'html', 'i18n', 'css', 'développement web']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Créer un sélecteur de langue élégant avec menu déroulant pour Hugo PaperMod"
+summary: "Un guide pratique pour implémenter un sélecteur de langue avec menu déroulant dans Hugo PaperMod, permettant une navigation plus élégante et organisée sur les sites multilingues grâce à une interface intuitive"
+description: "Un guide pratique pour implémenter un sélecteur de langue avec menu déroulant dans Hugo PaperMod, permettant une navigation plus élégante et organisée sur les sites multilingues grâce à une interface intuitive"
+tags: ["hugo", "papermod", "tutoriel", "multilinguisme", "html", "i18n", "css", "développement web"]
+---
 
 ## Pourquoi repenser le sélecteur de langue ?
 

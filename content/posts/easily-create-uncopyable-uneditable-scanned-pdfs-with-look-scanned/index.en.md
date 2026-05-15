@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Easily Create "Uncopyable & Uneditable" Scanned PDFs with Look Scanned'
-description = 'Learn how to transform your PDFs into non-copyable, non-editable scanned-like documents with Look Scanned, a browser-based tool that processes files locally for complete privacy.'
-summary = 'Look Scanned is a privacy-focused browser tool that turns your PDFs into realistic scanned documents that prevent copying and editing. All processing happens locally in your browser, ensuring your sensitive documents remain secure.'
-tags = ['privacy', 'scanned effect', 'security', 'browser', 'offline', 'document protection', 'local processing']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Easily Create \"Uncopyable & Uneditable\" Scanned PDFs with Look Scanned"
+summary: "Look Scanned is a privacy-focused browser tool that turns your PDFs into realistic scanned documents that prevent copying and editing. All processing happens locally in your browser, ensuring your sensitive documents remain secure."
+description: "Learn how to transform your PDFs into non-copyable, non-editable scanned-like documents with Look Scanned, a browser-based tool that processes files locally for complete privacy."
+tags: ["privacy", "scanned effect", "security", "browser", "offline", "document protection", "local processing"]
+---
 
 In the digital world, protecting sensitive documents is crucial. Whether you're sharing contracts, reports, or confidential information, you may want to prevent others from copying or modifying the content. One effective way to achieve this is by converting your PDF into a **scanned-like document**, making it appear as a physical scan rather than an editable file.
 

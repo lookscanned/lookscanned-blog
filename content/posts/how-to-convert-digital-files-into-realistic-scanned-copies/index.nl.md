@@ -1,11 +1,11 @@
-+++
-date = '2025-01-20T09:35:50+08:00'
-draft = false
-title = 'Hoe u uw digitale bestanden (PDF, DOCX, afbeeldingen) kunt omzetten naar realistische gescande documenten'
-tags = ['pdf', 'tools', 'tutorial', 'documentverwerking', 'scannen', 'handleiding']
-summary = 'Leer hoe u uw digitale documenten er uit kunt laten zien als gescande documenten met Look Scanned, een gratis browsergebaseerde tool. Deze handleiding bevat stap-voor-stap instructies, aanpassingsopties en tips voor het bereiken van een authentieke gescande look.'
-description = 'Leer hoe u uw digitale documenten er uit kunt laten zien als gescande documenten met Look Scanned, een gratis browsergebaseerde tool. Deze handleiding bevat stap-voor-stap instructies, aanpassingsopties en tips voor het bereiken van een authentieke gescande look.'
-+++
+---
+date: "2025-01-20T09:35:50+08:00"
+draft: false
+title: "Hoe u uw digitale bestanden (PDF, DOCX, afbeeldingen) kunt omzetten naar realistische gescande documenten"
+summary: "Leer hoe u uw digitale documenten er uit kunt laten zien als gescande documenten met Look Scanned, een gratis browsergebaseerde tool. Deze handleiding bevat stap-voor-stap instructies, aanpassingsopties en tips voor het bereiken van een authentieke gescande look."
+description: "Leer hoe u uw digitale documenten er uit kunt laten zien als gescande documenten met Look Scanned, een gratis browsergebaseerde tool. Deze handleiding bevat stap-voor-stap instructies, aanpassingsopties en tips voor het bereiken van een authentieke gescande look."
+tags: ["pdf", "tools", "tutorial", "documentverwerking", "scannen", "handleiding"]
+---
 
 Soms wilt u dat uw digitale documenten eruitzien alsof ze gescand zijn. Of het nu gaat om een professionelere uitstraling, het voldoen aan bepaalde vereisten, of om esthetische redenen - een document er gescand uit laten zien is eenvoudiger dan u denkt. In dit artikel nemen we u stap voor stap mee door het proces.
 

@@ -1,11 +1,11 @@
-+++
-date = '2025-01-20T09:35:50+08:00'
-draft = false
-title = 'Cách chuyển tập tin số (PDF, DOCX, hình ảnh) thành tài liệu quét có độ chân thực cao'
-tags = ['pdf', 'công-cụ', 'hướng-dẫn', 'xử-lý-tài-liệu', 'quét-tài-liệu', 'thủ-thuật']
-summary = 'Tìm hiểu cách tạo hiệu ứng quét cho tài liệu số bằng Look Scanned - công cụ miễn phí chạy trên trình duyệt. Hướng dẫn này bao gồm các bước thực hiện chi tiết, tùy chọn tùy chỉnh và mẹo để tạo ra hiệu ứng quét chân thực.'
-description = 'Tìm hiểu cách tạo hiệu ứng quét cho tài liệu số bằng Look Scanned - công cụ miễn phí chạy trên trình duyệt. Hướng dẫn này bao gồm các bước thực hiện chi tiết, tùy chọn tùy chỉnh và mẹo để tạo ra hiệu ứng quét chân thực.'
-+++
+---
+date: "2025-01-20T09:35:50+08:00"
+draft: false
+title: "Cách chuyển tập tin số (PDF, DOCX, hình ảnh) thành tài liệu quét có độ chân thực cao"
+summary: "Tìm hiểu cách tạo hiệu ứng quét cho tài liệu số bằng Look Scanned - công cụ miễn phí chạy trên trình duyệt. Hướng dẫn này bao gồm các bước thực hiện chi tiết, tùy chọn tùy chỉnh và mẹo để tạo ra hiệu ứng quét chân thực."
+description: "Tìm hiểu cách tạo hiệu ứng quét cho tài liệu số bằng Look Scanned - công cụ miễn phí chạy trên trình duyệt. Hướng dẫn này bao gồm các bước thực hiện chi tiết, tùy chọn tùy chỉnh và mẹo để tạo ra hiệu ứng quét chân thực."
+tags: ["pdf", "công-cụ", "hướng-dẫn", "xử-lý-tài-liệu", "quét-tài-liệu", "thủ-thuật"]
+---
 
 Đôi khi chúng ta cần tạo cho tài liệu số một vẻ ngoài như thể đã được quét (scan). Dù là để tạo vẻ chuyên nghiệp, đáp ứng yêu cầu đặc thù hay đơn giản vì mục đích thẩm mỹ - việc tạo hiệu ứng quét cho tài liệu thực ra đơn giản hơn nhiều so với bạn nghĩ. Trong bài viết này, chúng tôi sẽ hướng dẫn bạn thực hiện từng bước một.
 

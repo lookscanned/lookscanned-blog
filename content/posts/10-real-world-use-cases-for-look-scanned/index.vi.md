@@ -1,10 +1,10 @@
-+++
-date = '2025-07-31T16:36:14+08:00'
-draft = false
-title = '10 Trường Hợp Sử Dụng Thực Tế cho Look Scanned: Từ Tài Liệu Pháp Lý đến Dự Án Sáng Tạo'
-summary = 'Khám phá ứng dụng thực tế của Look Scanned trong các ngành và tình huống khác nhau. Từ chuẩn bị tài liệu pháp lý đến lưu trữ dự án sáng tạo, tìm hiểu cách công cụ dựa trên trình duyệt này giải quyết các vấn đề thực tế trong nhiều bối cảnh chuyên nghiệp và cá nhân.'
-tags = ['trường-hợp-sử-dụng', 'ứng-dụng', 'pháp-lý', 'kinh-doanh', 'sáng-tạo', 'lookscanned']
-+++
+---
+date: "2025-07-31T16:36:14+08:00"
+draft: false
+title: "10 Trường Hợp Sử Dụng Thực Tế cho Look Scanned: Từ Tài Liệu Pháp Lý đến Dự Án Sáng Tạo"
+summary: "Khám phá ứng dụng thực tế của Look Scanned trong các ngành và tình huống khác nhau. Từ chuẩn bị tài liệu pháp lý đến lưu trữ dự án sáng tạo, tìm hiểu cách công cụ dựa trên trình duyệt này giải quyết các vấn đề thực tế trong nhiều bối cảnh chuyên nghiệp và cá nhân."
+tags: ["trường-hợp-sử-dụng", "ứng-dụng", "pháp-lý", "kinh-doanh", "sáng-tạo", "lookscanned"]
+---
 
 [Look Scanned](https://lookscanned.io) không chỉ là một công cụ chuyển đổi tài liệu thông thường—mà là giải pháp đa năng giải quyết những thách thức thực tế trong các ngành và tình huống cá nhân khác nhau. Trong khi nhiều người dùng ban đầu khám phá Look Scanned cho nhu cầu quét PDF cơ bản, các ứng dụng của nó mở rộng xa hơn việc chuyển đổi tài liệu đơn giản.
 

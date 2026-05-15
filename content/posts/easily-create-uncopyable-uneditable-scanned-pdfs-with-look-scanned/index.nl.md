@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = "Creëer eenvoudig \"Niet-kopieerbare & Niet-bewerkbare\" PDF's met Scan-effect via Look Scanned"
-description = "Ontdek hoe je je PDF's kunt omzetten naar niet-kopieerbare en niet-bewerkbare documenten met een scan-effect dankzij Look Scanned, een browsergebaseerde applicatie die bestanden lokaal verwerkt voor optimale privacy."
-summary = "Look Scanned is een privacygerichte webapplicatie die je PDF's transformeert in realistische gescande documenten die niet gekopieerd of bewerkt kunnen worden. Alle verwerking vindt lokaal plaats in je browser, waardoor de veiligheid van je gevoelige documenten volledig gewaarborgd blijft."
-tags = ['privacy', 'scan-effect', 'beveiliging', 'browser', 'offline', 'documentbescherming', 'lokale verwerking']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Creëer eenvoudig \"Niet-kopieerbare & Niet-bewerkbare\" PDF's met Scan-effect via Look Scanned"
+summary: "Look Scanned is een privacygerichte webapplicatie die je PDF's transformeert in realistische gescande documenten die niet gekopieerd of bewerkt kunnen worden. Alle verwerking vindt lokaal plaats in je browser, waardoor de veiligheid van je gevoelige documenten volledig gewaarborgd blijft."
+description: "Ontdek hoe je je PDF's kunt omzetten naar niet-kopieerbare en niet-bewerkbare documenten met een scan-effect dankzij Look Scanned, een browsergebaseerde applicatie die bestanden lokaal verwerkt voor optimale privacy."
+tags: ["privacy", "scan-effect", "beveiliging", "browser", "offline", "documentbescherming", "lokale verwerking"]
+---
 
 In de digitale wereld is de bescherming van gevoelige documenten van essentieel belang. Of je nu contracten, rapporten of vertrouwelijke informatie deelt, vaak wil je voorkomen dat anderen de inhoud kunnen kopiëren of wijzigen. Een effectieve oplossing hiervoor is het converteren van je PDF naar een **document met scan-effect**, zodat het eruitziet als een fysiek gescand document in plaats van een bewerkbaar bestand.
 

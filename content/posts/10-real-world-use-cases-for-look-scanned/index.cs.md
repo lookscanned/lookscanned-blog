@@ -1,10 +1,10 @@
-+++
-date = '2025-07-31T16:36:14+08:00'
-draft = false
-title = '10 Reálných Případů Použití Look Scanned: Od Právních Dokumentů po Kreativní Projekty'
-summary = 'Objevte praktické aplikace Look Scanned v různých odvětvích a scénářích. Od přípravy právních dokumentů po archivaci kreativních projektů se naučte, jak tento nástroj založený na prohlížeči řeší reálné problémy v různých profesionálních a osobních kontextech.'
-tags = ['případy-použití', 'aplikace', 'právní', 'obchodní', 'kreativní', 'lookscanned']
-+++
+---
+date: "2025-07-31T16:36:14+08:00"
+draft: false
+title: "10 Reálných Případů Použití Look Scanned: Od Právních Dokumentů po Kreativní Projekty"
+summary: "Objevte praktické aplikace Look Scanned v různých odvětvích a scénářích. Od přípravy právních dokumentů po archivaci kreativních projektů se naučte, jak tento nástroj založený na prohlížeči řeší reálné problémy v různých profesionálních a osobních kontextech."
+tags: ["případy-použití", "aplikace", "právní", "obchodní", "kreativní", "lookscanned"]
+---
 
 [Look Scanned](https://lookscanned.io) není jen další nástroj pro konverzi dokumentů—je to všestranné řešení, které řeší reálné výzvy napříč různými odvětvími a osobními scénáři. Zatímco mnoho uživatelů Look Scanned zpočátku objeví pro základní potřeby skenování PDF, jeho aplikace se rozprostírají daleko za jednoduchou konverzi dokumentů.
 

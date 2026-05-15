@@ -1,11 +1,11 @@
-+++
-date = '2025-01-20T09:35:50+08:00'
-draft = false
-title = 'Como converter arquivos digitais (PDF, DOCX, imagens) em cópias digitalizadas realistas'
-tags = ['pdf', 'ferramentas', 'tutorial', 'processamento-documentos', 'digitalização', 'guia']
-summary = 'Aprenda a fazer seus documentos digitais parecerem digitalizados usando o Look Scanned, uma ferramenta gratuita baseada em navegador. Este guia inclui instruções passo a passo, opções de personalização e dicas para obter uma aparência autêntica de documento digitalizado.'
-description = 'Aprenda a fazer seus documentos digitais parecerem digitalizados usando o Look Scanned, uma ferramenta gratuita baseada em navegador. Este guia inclui instruções passo a passo, opções de personalização e dicas para obter uma aparência autêntica de documento digitalizado.'
-+++
+---
+date: "2025-01-20T09:35:50+08:00"
+draft: false
+title: "Como converter arquivos digitais (PDF, DOCX, imagens) em cópias digitalizadas realistas"
+summary: "Aprenda a fazer seus documentos digitais parecerem digitalizados usando o Look Scanned, uma ferramenta gratuita baseada em navegador. Este guia inclui instruções passo a passo, opções de personalização e dicas para obter uma aparência autêntica de documento digitalizado."
+description: "Aprenda a fazer seus documentos digitais parecerem digitalizados usando o Look Scanned, uma ferramenta gratuita baseada em navegador. Este guia inclui instruções passo a passo, opções de personalização e dicas para obter uma aparência autêntica de documento digitalizado."
+tags: ["pdf", "ferramentas", "tutorial", "processamento-documentos", "digitalização", "guia"]
+---
 
 Às vezes, precisamos fazer um documento digital parecer digitalizado. Seja para dar um toque profissional, atender a requisitos específicos ou por razões estéticas, fazer um documento parecer digitalizado pode ser surpreendentemente simples. Neste artigo, vamos guiá-lo passo a passo pelo processo.
 

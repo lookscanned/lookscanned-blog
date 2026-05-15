@@ -1,11 +1,11 @@
-+++
-date = '2025-01-20T09:35:50+08:00'
-draft = false
-title = 'Comment convertir vos fichiers numériques (PDF, DOCX, images) en copies numérisées réalistes'
-tags = ['pdf', 'outils', 'tutoriel', 'traitement-documents', 'numérisation', 'guide']
-summary = "Apprenez à donner à vos documents numériques l'apparence de copies numérisées avec Look Scanned, un outil gratuit basé sur navigateur. Ce guide comprend des instructions étape par étape, des options de personnalisation et des conseils pour obtenir un aspect numérisé authentique."
-description = "Apprenez à donner à vos documents numériques l'apparence de copies numérisées avec Look Scanned, un outil gratuit basé sur navigateur. Ce guide comprend des instructions étape par étape, des options de personnalisation et des conseils pour obtenir un aspect numérisé authentique."
-+++
+---
+date: "2025-01-20T09:35:50+08:00"
+draft: false
+title: "Comment convertir vos fichiers numériques (PDF, DOCX, images) en copies numérisées réalistes"
+summary: "Apprenez à donner à vos documents numériques l'apparence de copies numérisées avec Look Scanned, un outil gratuit basé sur navigateur. Ce guide comprend des instructions étape par étape, des options de personnalisation et des conseils pour obtenir un aspect numérisé authentique."
+description: "Apprenez à donner à vos documents numériques l'apparence de copies numérisées avec Look Scanned, un outil gratuit basé sur navigateur. Ce guide comprend des instructions étape par étape, des options de personnalisation et des conseils pour obtenir un aspect numérisé authentique."
+tags: ["pdf", "outils", "tutoriel", "traitement-documents", "numérisation", "guide"]
+---
 
 Parfois, nous avons besoin qu'un document numérique ressemble à un document numérisé. Que ce soit pour ajouter une touche professionnelle, répondre à des exigences spécifiques ou pour des raisons esthétiques, donner un aspect numérisé à un document peut être étonnamment simple. Dans cet article, nous vous guidons étape par étape à travers le processus.
 

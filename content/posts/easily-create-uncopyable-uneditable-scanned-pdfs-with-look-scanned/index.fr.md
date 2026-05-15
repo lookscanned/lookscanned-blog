@@ -1,11 +1,11 @@
-+++
-date = '2025-03-25T21:34:57+08:00'
-draft = false
-title = 'Créez facilement des PDF numérisés "impossibles à copier et à modifier" avec Look Scanned'
-description = 'Apprenez à transformer vos PDF en documents numériques non copiables et non modifiables avec Look Scanned, un outil web qui traite vos fichiers localement pour une confidentialité absolue.'
-summary = "Look Scanned est un outil web privilégiant la confidentialité qui transforme vos PDF en documents numérisés réalistes empêchant toute copie et modification. Tout le traitement s'effectue localement dans votre navigateur, garantissant ainsi la sécurité de vos documents sensibles."
-tags = ['confidentialité', 'effet numérisé', 'sécurité', 'navigateur', 'hors ligne', 'protection documentaire', 'traitement local']
-+++
+---
+date: "2025-03-25T21:34:57+08:00"
+draft: false
+title: "Créez facilement des PDF numérisés \"impossibles à copier et à modifier\" avec Look Scanned"
+summary: "Look Scanned est un outil web privilégiant la confidentialité qui transforme vos PDF en documents numérisés réalistes empêchant toute copie et modification. Tout le traitement s'effectue localement dans votre navigateur, garantissant ainsi la sécurité de vos documents sensibles."
+description: "Apprenez à transformer vos PDF en documents numériques non copiables et non modifiables avec Look Scanned, un outil web qui traite vos fichiers localement pour une confidentialité absolue."
+tags: ["confidentialité", "effet numérisé", "sécurité", "navigateur", "hors ligne", "protection documentaire", "traitement local"]
+---
 
 Dans l'univers numérique actuel, protéger ses documents sensibles est fondamental. Que vous partagiez des contrats, des rapports ou des informations confidentielles, vous souhaitez probablement empêcher autrui de copier ou modifier leur contenu. Une méthode efficace pour y parvenir consiste à convertir votre PDF en un **document d'apparence numérisée**, lui donnant l'aspect d'une numérisation physique plutôt que d'un fichier modifiable.
 

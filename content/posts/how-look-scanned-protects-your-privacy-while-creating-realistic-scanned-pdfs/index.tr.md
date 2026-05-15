@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = "Look Scanned, Gerçek Taranmış Görünümlü PDF'ler Oluştururken Gizliliğinizi Nasıl Koruyor"
-description = "Look Scanned'ın tarayıcı tabanlı işleme, çevrimdışı çalışma ve sıfır sunucu bağlantısı ile gerçek taranmış görünümlü PDF'ler oluştururken belge gizliliğinizi nasıl tam olarak sağladığını keşfedin."
-summary = "Look Scanned, tamamen tarayıcınızda gerçek taranmış görünümlü PDF'ler oluşturan, gizliliği ön planda tutan bir uygulamadır. Verilerinizi hiçbir zaman uzak sunuculara göndermeden hassas belgelerinizi güvende tutan yerel işleme teknolojisini öğrenin."
-tags = ['gizlilik', 'look-scanned', 'özellikler', 'tarayıcı', 'çevrimdışı', 'güvenlik', 'yerel-işleme']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Look Scanned, Gerçek Taranmış Görünümlü PDF'ler Oluştururken Gizliliğinizi Nasıl Koruyor"
+summary: "Look Scanned, tamamen tarayıcınızda gerçek taranmış görünümlü PDF'ler oluşturan, gizliliği ön planda tutan bir uygulamadır. Verilerinizi hiçbir zaman uzak sunuculara göndermeden hassas belgelerinizi güvende tutan yerel işleme teknolojisini öğrenin."
+description: "Look Scanned'ın tarayıcı tabanlı işleme, çevrimdışı çalışma ve sıfır sunucu bağlantısı ile gerçek taranmış görünümlü PDF'ler oluştururken belge gizliliğinizi nasıl tam olarak sağladığını keşfedin."
+tags: ["gizlilik", "look-scanned", "özellikler", "tarayıcı", "çevrimdışı", "güvenlik", "yerel-işleme"]
+---
 
 Dijital belge işleme ve paylaşımının giderek yaygınlaştığı günümüzde, gizlilik endişeleri de her geçen gün daha fazla önem kazanıyor. Look Scanned, doğrudan tarayıcınız üzerinde gerçek taranmış görünümlü PDF'ler oluşturmak için tasarlanmış, hafif ve tamamen tarayıcı tabanlı bir uygulamadır. Bu yazıda, Look Scanned'in yenilikçi yerel işleme teknolojisiyle belgelerinizin gizliliğini ve güvenliğini nasıl sağladığını anlatacağız.
 

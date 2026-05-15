@@ -1,11 +1,11 @@
-+++
-date = '2025-01-17T21:11:58+08:00'
-draft = false
-title = 'Skep ʼn Aangepaste Taalselector in Hugo PaperMod'
-summary = 'ʼn Stap-vir-stap gids vir die implementering van ʼn aangepaste dropdown-gebaseerde taalselector in Hugo PaperMod tema, perfek vir veeltalige webwerwe met baie taalopsies'
-description = 'ʼn Stap-vir-stap gids vir die implementering van ʼn aangepaste dropdown-gebaseerde taalselector in Hugo PaperMod tema, perfek vir veeltalige webwerwe met baie taalopsies'
-tags = ['hugo', 'papermod', 'tutoriaal', 'veeltalig', 'html', 'i18n', 'css', 'webontwikkeling', 'gebruikerkoppelvlak', 'gebruikerservaring', 'prestasie-optimering']
-+++
+---
+date: "2025-01-17T21:11:58+08:00"
+draft: false
+title: "Skep ʼn Aangepaste Taalselector in Hugo PaperMod"
+summary: "ʼn Stap-vir-stap gids vir die implementering van ʼn aangepaste dropdown-gebaseerde taalselector in Hugo PaperMod tema, perfek vir veeltalige webwerwe met baie taalopsies"
+description: "ʼn Stap-vir-stap gids vir die implementering van ʼn aangepaste dropdown-gebaseerde taalselector in Hugo PaperMod tema, perfek vir veeltalige webwerwe met baie taalopsies"
+tags: ["hugo", "papermod", "tutoriaal", "veeltalig", "html", "i18n", "css", "webontwikkeling", "gebruikerkoppelvlak", "gebruikerservaring", "prestasie-optimering"]
+---
 
 ## Hoekom ʼn Aangepaste Taalselector Skep?
 

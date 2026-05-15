@@ -1,10 +1,10 @@
-+++
-date = "2025-04-21T14:19:16+08:00"
-draft = false
-title = "Como Adicionar uma Marca d'Água Indelével ao seu PDF"
-description = "Aprenda a criar marcas d'água verdadeiramente indeléveis em seus PDFs usando o Look Scanned. Este guia explica por que as marcas d'água tradicionais falham e como criar documentos à prova de adulteração que parecem com digitalizações físicas."
-tags = ["PDF", "segurança", "marca d'água", "proteção de documentos"]
-+++
+---
+date: "2025-04-21T14:19:16+08:00"
+draft: false
+title: "Como Adicionar uma Marca d'Água Indelével ao seu PDF"
+description: "Aprenda a criar marcas d'água verdadeiramente indeléveis em seus PDFs usando o Look Scanned. Este guia explica por que as marcas d'água tradicionais falham e como criar documentos à prova de adulteração que parecem com digitalizações físicas."
+tags: ["PDF", "segurança", "marca d'água", "proteção de documentos"]
+---
 
 As marcas d'água são uma forma comum de proteger documentos, mas as marcas d'água tradicionais geralmente podem ser removidas ou contornadas com apenas alguns cliques. Neste post, mostraremos como criar uma **marca d\'água verdadeiramente indelével** usando o **Look Scanned**, uma ferramenta baseada em navegador que simula documentos digitalizados para melhorar a segurança dos documentos.
 

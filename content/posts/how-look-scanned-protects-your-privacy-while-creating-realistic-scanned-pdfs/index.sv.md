@@ -1,11 +1,11 @@
-+++
-date = '2025-03-19T22:39:44+08:00'
-draft = false
-title = 'Så skyddar Look Scanned din integritet när du skapar naturtrogna skannade PDF-filer'
-description = 'Upptäck hur Look Scanned garanterar fullständigt dokumentskydd med bearbetning i webbläsaren, möjlighet till offlineanvändning och helt utan serverkommunikation när du skapar PDF-filer som ser ut som äkta skanningar.'
-summary = 'Look Scanned är ett verktyg med fokus på integritet som skapar naturtrogna skannade PDF-filer helt i din webbläsare. Läs om hur lokal bearbetning håller dina känsliga dokument säkra genom att aldrig skicka data till externa servrar.'
-tags = ['integritet', 'look-scanned', 'funktioner', 'webbläsare', 'offline', 'säkerhet', 'lokal-bearbetning']
-+++
+---
+date: "2025-03-19T22:39:44+08:00"
+draft: false
+title: "Så skyddar Look Scanned din integritet när du skapar naturtrogna skannade PDF-filer"
+summary: "Look Scanned är ett verktyg med fokus på integritet som skapar naturtrogna skannade PDF-filer helt i din webbläsare. Läs om hur lokal bearbetning håller dina känsliga dokument säkra genom att aldrig skicka data till externa servrar."
+description: "Upptäck hur Look Scanned garanterar fullständigt dokumentskydd med bearbetning i webbläsaren, möjlighet till offlineanvändning och helt utan serverkommunikation när du skapar PDF-filer som ser ut som äkta skanningar."
+tags: ["integritet", "look-scanned", "funktioner", "webbläsare", "offline", "säkerhet", "lokal-bearbetning"]
+---
 
 I takt med den ökande digitaliseringen av dokumenthantering och delning blir integritetsfrågor allt viktigare. Look Scanned är ett lättanvänt webbverktyg utvecklat för att skapa PDF-filer med äkta skanningseffekt direkt i din webbläsare. Denna artikel förklarar hur Look Scanned använder innovativ lokal bearbetning för att garantera dina dokuments sekretess och säkerhet.
 

@@ -1,11 +1,11 @@
-+++
-date = '2025-01-20T09:35:50+08:00'
-draft = false
-title = 'Cara Mengubah File Digital (PDF, DOCX, gambar) Menjadi Tampak Seperti Dokumen Hasil Scan'
-tags = ['pdf', 'alat', 'tutorial', 'pengolahan-dokumen', 'pemindaian', 'panduan']
-summary = 'Pelajari cara membuat dokumen digital Anda tampak seperti hasil scan menggunakan Look Scanned - alat gratis berbasis browser. Panduan ini mencakup petunjuk langkah demi langkah, opsi penyesuaian, dan tips untuk mendapatkan tampilan scan yang autentik.'
-description = 'Pelajari cara membuat dokumen digital Anda tampak seperti hasil scan menggunakan Look Scanned - alat gratis berbasis browser. Panduan ini mencakup petunjuk langkah demi langkah, opsi penyesuaian, dan tips untuk mendapatkan tampilan scan yang autentik.'
-+++
+---
+date: "2025-01-20T09:35:50+08:00"
+draft: false
+title: "Cara Mengubah File Digital (PDF, DOCX, gambar) Menjadi Tampak Seperti Dokumen Hasil Scan"
+summary: "Pelajari cara membuat dokumen digital Anda tampak seperti hasil scan menggunakan Look Scanned - alat gratis berbasis browser. Panduan ini mencakup petunjuk langkah demi langkah, opsi penyesuaian, dan tips untuk mendapatkan tampilan scan yang autentik."
+description: "Pelajari cara membuat dokumen digital Anda tampak seperti hasil scan menggunakan Look Scanned - alat gratis berbasis browser. Panduan ini mencakup petunjuk langkah demi langkah, opsi penyesuaian, dan tips untuk mendapatkan tampilan scan yang autentik."
+tags: ["pdf", "alat", "tutorial", "pengolahan-dokumen", "pemindaian", "panduan"]
+---
 
 Terkadang kita perlu membuat dokumen digital terlihat seperti hasil pemindaian (scan). Baik untuk keperluan profesional, memenuhi persyaratan tertentu, atau alasan estetika - membuat dokumen terlihat seperti hasil scan ternyata lebih mudah dari yang Anda bayangkan. Dalam panduan ini, kami akan menjelaskan prosesnya langkah demi langkah.
 
