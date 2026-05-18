@@ -105,6 +105,7 @@ for (const l of allLocales) {
     {jsonLd && (
       <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
     )}
+    <slot name="head" />
     <SpeculationRules />
     <script is:inline>
       (() => {

@@ -46,7 +46,29 @@
   html {
     color-scheme: light dark;
     scroll-behavior: smooth;
+    /* Sticky navbar is ~64px; add breathing room so in-page anchor jumps
+       (TOC links, ## headings) don't slide under it. */
+    scroll-padding-top: 5rem;
     -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  /* Cross-document view transitions. Chrome/Edge 126+, Safari 18.2+;
+     Firefox falls back to plain navigation. Pairs with prefetch hints so
+     prefetched pages morph without a flash. Shared elements opt in via
+     inline `view-transition-name`:
+       - PostCard <h2> ↔ PostLayout <h1>  (key: `post-title-<slug>`) */
+  @view-transition {
+    navigation: auto;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    ::view-transition-group(*),
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+      animation: none !important;
+    }
   }
 
   body {

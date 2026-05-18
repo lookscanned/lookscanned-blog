@@ -17,9 +17,9 @@ export async function getStaticPaths() {
 const { locale, slug } = Astro.props;
 const post = await getPostBySlug(slug, locale);
 if (!post) throw new Error(`Missing post: ${locale}/${slug}`);
-const { Content } = await render(post.entry);
+const { Content, headings } = await render(post.entry);
 ---
 
-<PostLayout post={post} body={post.entry.body ?? ""}>
+<PostLayout post={post} body={post.entry.body ?? ""} headings={headings}>
   <Content />
 </PostLayout>
