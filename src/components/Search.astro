@@ -13,9 +13,14 @@ const heading = menuEntry?.name ?? "Search";
 ---
 
 <BaseLayout title={`${heading} · ${meta.data.title}`} description={meta.data.description} locale={locale} pageKey="search">
-  <main class="mx-auto max-w-3xl px-6 py-12">
-    <h1 class="text-2xl font-medium tracking-tight text-zinc-950 dark:text-zinc-50">{heading}</h1>
-    <div id="search" class="mt-8" data-pagefind-ui></div>
+  <main class="mx-auto max-w-3xl px-6 pt-10 pb-12 sm:pt-16">
+    <p class="font-ui text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
+      Full-text · all entries
+    </p>
+    <h1 class="font-display mt-4 text-[2.75rem] font-medium italic leading-[1.05] tracking-tight text-(--color-ink) sm:text-[3.5rem] dark:text-(--color-paper-fg-2)">
+      {heading}
+    </h1>
+    <div id="search" class="font-ui mt-12" data-pagefind-ui></div>
   </main>
 </BaseLayout>
 
@@ -25,7 +30,7 @@ const heading = menuEntry?.name ?? "Search";
   window.addEventListener("DOMContentLoaded", () => {
     if (typeof PagefindUI === "undefined") {
       const el = document.getElementById("search");
-      if (el) el.innerHTML = '<p class="text-sm text-zinc-500">Search index is generated at build time. Run <code>npm run build</code>.</p>';
+      if (el) el.innerHTML = '<p class="text-sm">Search index is generated at build time.</p>';
       return;
     }
     new PagefindUI({
@@ -43,18 +48,27 @@ const heading = menuEntry?.name ?? "Search";
     --pagefind-ui-primary: var(--color-accent-600);
     --pagefind-ui-text: currentColor;
     --pagefind-ui-background: transparent;
-    --pagefind-ui-border: rgba(160, 160, 160, 0.2);
-    --pagefind-ui-tag: rgba(160, 160, 160, 0.15);
+    --pagefind-ui-border: var(--color-rule);
+    --pagefind-ui-tag: var(--color-paper-soft);
     --pagefind-ui-border-width: 1px;
-    --pagefind-ui-border-radius: 6px;
-    --pagefind-ui-image-border-radius: 4px;
+    --pagefind-ui-border-radius: 4px;
+    --pagefind-ui-image-border-radius: 2px;
     --pagefind-ui-image-box-ratio: 3 / 2;
     --pagefind-ui-font: inherit;
   }
+  html.dark .pagefind-ui {
+    --pagefind-ui-border: var(--color-rule-dark);
+    --pagefind-ui-tag: var(--color-paper-dark-2);
+  }
   .pagefind-ui__search-input {
     font-size: 0.95rem !important;
+    background: transparent !important;
   }
   .pagefind-ui__result {
     padding: 1rem 0 !important;
+  }
+  .pagefind-ui__result-title {
+    font-family: var(--font-display) !important;
+    font-weight: 500 !important;
   }
 </style>

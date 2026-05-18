@@ -1,7 +1,6 @@
 ---
 import type { PostMeta } from "../lib/posts";
 import { localizedPath } from "../i18n";
-import { formatDate } from "../lib/date";
 
 interface Props {
   post: PostMeta;
@@ -9,22 +8,34 @@ interface Props {
 
 const { post } = Astro.props;
 const href = localizedPath(post.locale, `posts/${post.slug}`);
+
+const date = post.entry.data.date;
+const day = String(date.getDate()).padStart(2, "0");
+// Always render the date column with Latin month abbreviation + year — this
+// is the "edition stamp", not the human-readable date. Locale-aware reading
+// dates appear on the post page itself.
+const monthShort = date.toLocaleDateString("en-US", { month: "short" }).toUpperCase();
+const yearShort = String(date.getFullYear()).slice(-2);
 ---
 
 <article class="group">
-  <a href={href} class="block py-5 transition">
-    <h2 class="text-xl font-medium tracking-tight text-zinc-900 transition group-hover:text-accent-600 dark:text-zinc-100 dark:group-hover:text-accent-500">
-      {post.entry.data.title}
-    </h2>
-    <p class="mt-1.5 text-xs text-zinc-500">
-      <time datetime={post.entry.data.date.toISOString()}>
-        {formatDate(post.locale, post.entry.data.date)}
-      </time>
-    </p>
-    {post.entry.data.summary && (
-      <p class="mt-3 text-[15px] leading-relaxed text-zinc-600 dark:text-zinc-400 line-clamp-3">
-        {post.entry.data.summary}
-      </p>
-    )}
+  <a
+    href={href}
+    class="grid grid-cols-[3.5rem_1fr] gap-x-6 gap-y-1 py-6 transition sm:grid-cols-[5rem_1fr] sm:gap-x-8"
+  >
+    <div class="font-mono text-(--color-ink-faint) leading-none transition group-hover:text-(--color-accent-600) dark:group-hover:text-(--color-accent-400-dark)">
+      <div class="text-2xl tabular-nums tracking-tight text-(--color-ink-soft) sm:text-3xl dark:text-(--color-paper-fg)">{day}</div>
+      <div class="mt-1.5 text-[10px] tracking-[0.15em]">{monthShort} ’{yearShort}</div>
+    </div>
+    <div>
+      <h2 class="font-display text-xl font-medium leading-tight text-(--color-ink) transition group-hover:text-(--color-accent-700) dark:text-(--color-paper-fg-2) dark:group-hover:text-(--color-accent-300-dark) sm:text-2xl">
+        {post.entry.data.title}
+      </h2>
+      {post.entry.data.summary && (
+        <p class="font-ui mt-2 line-clamp-2 text-[14px] leading-relaxed text-(--color-ink-mute) dark:text-(--color-ink-faint)">
+          {post.entry.data.summary}
+        </p>
+      )}
+    </div>
   </a>
 </article>

@@ -1,10 +1,11 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import PostMeta from "../components/PostMeta.astro";
-import TagList from "../components/TagList.astro";
 import Giscus from "../components/Giscus.astro";
-import { getLocale, localizedPath } from "../i18n";
+import { getLocale, formatReadingTime, localizedPath } from "../i18n";
+import { formatDate } from "../lib/date";
+import { tagSlug } from "../lib/tags";
 import { getPostsByLocale, getTranslations, type PostMeta as PostMetaType } from "../lib/posts";
+import readingTime from "reading-time";
 
 interface Props {
   post: PostMetaType;
@@ -28,6 +29,9 @@ const older = idx >= 0 && idx < samelocale.length - 1 ? samelocale[idx + 1] : nu
 const title = `${post.entry.data.title} · ${meta.data.title}`;
 const description = post.entry.data.description ?? post.entry.data.summary ?? "";
 
+const rt = readingTime(body);
+const minutes = Math.max(1, Math.round(rt.minutes));
+
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const jsonLd = {
   "@context": "https://schema.org",
@@ -39,16 +43,15 @@ const jsonLd = {
   mainEntityOfPage: canonicalUrl,
   url: canonicalUrl,
   keywords: post.entry.data.tags,
-  publisher: {
-    "@type": "Organization",
-    name: "Look Scanned",
-    url: "https://lookscanned.io",
-  },
-  author: {
-    "@type": "Organization",
-    name: "Look Scanned",
-  },
+  publisher: { "@type": "Organization", name: "Look Scanned", url: "https://lookscanned.io" },
+  author: { "@type": "Organization", name: "Look Scanned" },
 };
+
+const day = String(post.entry.data.date.getDate()).padStart(2, "0");
+const monthShort = post.entry.data.date
+  .toLocaleDateString("en-US", { month: "short" })
+  .toUpperCase();
+const year = post.entry.data.date.getFullYear();
 ---
 
 <BaseLayout
@@ -59,79 +62,109 @@ const jsonLd = {
   jsonLd={jsonLd}
 >
   <article class="mx-auto max-w-3xl px-6 py-12" data-pagefind-body>
-    <header class="mb-10">
-      <h1 class="text-4xl font-medium leading-tight tracking-tight text-balance text-zinc-950 dark:text-zinc-50">
+    <header class="mb-12">
+      <p class="font-ui flex items-center gap-3 text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
+        <span class="font-mono tabular-nums">{day} {monthShort} {year}</span>
+        <span aria-hidden="true">·</span>
+        <span>{formatReadingTime(post.locale, minutes)}</span>
+      </p>
+      <h1 class="font-display mt-6 text-[2.5rem] font-medium leading-[1.1] tracking-tight text-balance text-(--color-ink) sm:text-[3rem] dark:text-(--color-paper-fg-2)">
         {post.entry.data.title}
       </h1>
       {post.entry.data.summary && (
-        <p class="mt-4 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+        <p class="font-display mt-6 text-[1.25rem] italic leading-relaxed text-(--color-ink-soft) text-pretty dark:text-(--color-paper-fg)">
           {post.entry.data.summary}
         </p>
       )}
-      <div class="mt-6">
-        <PostMeta locale={post.locale} date={post.entry.data.date} body={body} />
-      </div>
+      <p class="font-ui mt-6 text-xs text-(--color-ink-faint)" lang={post.locale}>
+        <time datetime={post.entry.data.date.toISOString()}>
+          {formatDate(post.locale, post.entry.data.date)}
+        </time>
+      </p>
     </header>
 
+    <div class="rule-ornament pb-10 text-xs">* * *</div>
+
     <div class:list={[
-      "prose prose-lg prose-zinc dark:prose-invert max-w-none",
-      "[--tw-prose-body:var(--color-zinc-800)] dark:[--tw-prose-body:var(--color-zinc-200)]",
-      "[--tw-prose-headings:var(--color-zinc-950)] dark:[--tw-prose-headings:var(--color-zinc-50)]",
-      "[--tw-prose-bold:var(--color-zinc-950)] dark:[--tw-prose-bold:var(--color-zinc-50)]",
-      "prose-headings:font-medium prose-headings:tracking-tight",
-      "prose-a:text-accent-600 prose-a:no-underline hover:prose-a:underline dark:prose-a:text-accent-500",
-      "prose-code:rounded prose-code:bg-zinc-100 prose-code:px-1 prose-code:py-0.5 prose-code:font-normal prose-code:text-zinc-900",
-      "dark:prose-code:bg-zinc-800 dark:prose-code:text-zinc-100",
+      "editorial-prose prose prose-lg max-w-none",
+      "[--tw-prose-body:var(--color-ink-soft)] dark:[--tw-prose-body:var(--color-paper-fg)]",
+      "[--tw-prose-headings:var(--color-ink)] dark:[--tw-prose-headings:var(--color-paper-fg-2)]",
+      "[--tw-prose-bold:var(--color-ink)] dark:[--tw-prose-bold:var(--color-paper-fg-2)]",
+      "[--tw-prose-links:var(--color-accent-600)] dark:[--tw-prose-links:var(--color-accent-400-dark)]",
+      "[--tw-prose-quotes:var(--color-ink-soft)] dark:[--tw-prose-quotes:var(--color-paper-fg)]",
+      "[--tw-prose-quote-borders:var(--color-accent-600)]",
+      "[--tw-prose-hr:var(--color-rule)] dark:[--tw-prose-hr:var(--color-rule-dark)]",
+      "[--tw-prose-bullets:var(--color-ink-faint)]",
+      "[--tw-prose-counters:var(--color-ink-faint)]",
+      "[--tw-prose-captions:var(--color-ink-mute)] dark:[--tw-prose-captions:var(--color-ink-faint)]",
+      "prose-headings:font-display prose-headings:font-medium prose-headings:tracking-tight",
+      "prose-a:underline-offset-[3px] prose-a:decoration-(--color-accent-600)/30 hover:prose-a:decoration-(--color-accent-600)",
+      "dark:prose-a:decoration-(--color-accent-400-dark)/30 dark:hover:prose-a:decoration-(--color-accent-400-dark)",
+      "prose-code:rounded prose-code:bg-(--color-paper-soft) prose-code:px-1 prose-code:py-0.5 prose-code:font-normal prose-code:text-(--color-ink)",
+      "dark:prose-code:bg-(--color-paper-dark-2) dark:prose-code:text-(--color-paper-fg-2)",
       "prose-code:before:content-none prose-code:after:content-none",
-      "prose-img:rounded-md",
+      "prose-img:rounded prose-img:my-8",
+      "prose-blockquote:not-italic prose-blockquote:font-display prose-blockquote:italic",
     ]}>
       <slot />
     </div>
 
     {post.entry.data.tags.length > 0 && (
-      <section class="mt-12 border-t border-zinc-200 pt-6 dark:border-zinc-800">
-        <TagList locale={post.locale} tags={post.entry.data.tags} />
+      <section class="mt-16 font-ui text-sm text-(--color-ink-mute) dark:text-(--color-ink-faint)">
+        <span class="font-display italic text-(--color-ink-soft) dark:text-(--color-paper-fg)">Filed under:</span>
+        {" "}
+        {post.entry.data.tags.map((tag, i, arr) => (
+          <>
+            <a
+              href={localizedPath(post.locale, `tags/${tagSlug(tag)}`)}
+              class="underline-offset-[3px] decoration-(--color-ink-faint) hover:text-(--color-accent-600) hover:decoration-(--color-accent-600) hover:underline dark:hover:text-(--color-accent-400-dark) dark:hover:decoration-(--color-accent-400-dark)"
+            >{tag}</a>
+            {i < arr.length - 1 && <span>, </span>}
+          </>
+        ))}
       </section>
     )}
 
     {translations.length > 1 && (
-      <section class="mt-8 text-sm">
-        <p class="text-zinc-500 dark:text-zinc-400">
-          <span class="font-medium text-zinc-700 dark:text-zinc-300">{meta.ui.translations}:</span>
-          {" "}
-          {translations
-            .filter((t) => t.locale !== post.locale)
-            .map((t, i, arr) => (
-              <>
-                <a
-                  href={localizedPath(t.locale, `posts/${t.slug}`)}
-                  lang={t.locale}
-                  class="text-zinc-600 underline-offset-2 hover:text-zinc-900 hover:underline dark:text-zinc-400 dark:hover:text-zinc-100"
-                >
-                  {getLocale(t.locale).data.languageName}
-                </a>
-                {i < arr.length - 1 && <span>, </span>}
-              </>
-            ))}
-        </p>
+      <section class="mt-6 font-ui text-sm text-(--color-ink-mute) dark:text-(--color-ink-faint)">
+        <span class="font-display italic text-(--color-ink-soft) dark:text-(--color-paper-fg)">{meta.ui.translations}:</span>
+        {" "}
+        {translations
+          .filter((t) => t.locale !== post.locale)
+          .map((t, i, arr) => (
+            <>
+              <a
+                href={localizedPath(t.locale, `posts/${t.slug}`)}
+                lang={t.locale}
+                class="underline-offset-[3px] decoration-(--color-ink-faint) hover:text-(--color-accent-600) hover:decoration-(--color-accent-600) hover:underline dark:hover:text-(--color-accent-400-dark) dark:hover:decoration-(--color-accent-400-dark)"
+              >
+                {getLocale(t.locale).data.languageName}
+              </a>
+              {i < arr.length - 1 && <span>, </span>}
+            </>
+          ))}
       </section>
     )}
 
     {(newer || older) && (
-      <nav class="mt-10 flex justify-between gap-6 border-t border-zinc-200 pt-6 text-sm dark:border-zinc-800">
-        <div class="flex-1">
+      <nav class="mt-12 grid grid-cols-2 gap-6 border-t border-double border-(--color-rule) pt-8 dark:border-(--color-rule-dark)">
+        <div>
           {older && (
-            <a href={localizedPath(older.locale, `posts/${older.slug}`)} class="block transition hover:text-accent-600 dark:hover:text-accent-500">
-              <div class="text-xs text-zinc-500">← {meta.ui.prev_page}</div>
-              <div class="mt-1 line-clamp-1">{older.entry.data.title}</div>
+            <a href={localizedPath(older.locale, `posts/${older.slug}`)} class="block transition hover:text-(--color-accent-600) dark:hover:text-(--color-accent-400-dark)">
+              <div class="font-ui text-[10px] uppercase tracking-[0.18em] text-(--color-ink-faint)">← {meta.ui.prev_page}</div>
+              <div class="font-display mt-2 line-clamp-2 italic text-(--color-ink-soft) dark:text-(--color-paper-fg)">
+                {older.entry.data.title}
+              </div>
             </a>
           )}
         </div>
-        <div class="flex-1 text-right">
+        <div class="text-right">
           {newer && (
-            <a href={localizedPath(newer.locale, `posts/${newer.slug}`)} class="block transition hover:text-accent-600 dark:hover:text-accent-500">
-              <div class="text-xs text-zinc-500">{meta.ui.next_page} →</div>
-              <div class="mt-1 line-clamp-1">{newer.entry.data.title}</div>
+            <a href={localizedPath(newer.locale, `posts/${newer.slug}`)} class="block transition hover:text-(--color-accent-600) dark:hover:text-(--color-accent-400-dark)">
+              <div class="font-ui text-[10px] uppercase tracking-[0.18em] text-(--color-ink-faint)">{meta.ui.next_page} →</div>
+              <div class="font-display mt-2 line-clamp-2 italic text-(--color-ink-soft) dark:text-(--color-paper-fg)">
+                {newer.entry.data.title}
+              </div>
             </a>
           )}
         </div>

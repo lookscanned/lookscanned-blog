@@ -94,6 +94,8 @@ for (const l of allLocales) {
       title={meta.data.title}
       href={locale === DEFAULT_LOCALE ? "/rss.xml" : `/${locale}/rss.xml`}
     />
+    <meta name="theme-color" content="#faf7f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f0d0a" media="(prefers-color-scheme: dark)" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
@@ -119,7 +121,7 @@ for (const l of allLocales) {
     </script>
     <meta name="generator" content={Astro.generator} />
   </head>
-  <body class="min-h-svh bg-white text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100">
+  <body class="min-h-svh">
     <Header locale={locale} localeUrls={localeUrlMap} currentPath={Astro.url.pathname} />
     <slot />
     <Footer locale={locale} />

@@ -17,17 +17,26 @@ const heading = menuEntry?.name ?? "Tags";
 ---
 
 <BaseLayout title={`${heading} · ${meta.data.title}`} description={meta.data.description} locale={locale} pageKey="tags">
-  <main class="mx-auto max-w-3xl px-6 py-12">
-    <h1 class="text-2xl font-medium tracking-tight text-zinc-950 dark:text-zinc-50">{heading}</h1>
-    <ul class="mt-8 flex flex-wrap gap-2">
+  <main class="mx-auto max-w-3xl px-6 pt-10 pb-12 sm:pt-16">
+    <p class="font-ui text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
+      Subject index · {sorted.length} {sorted.length === 1 ? "topic" : "topics"}
+    </p>
+    <h1 class="font-display mt-4 text-[2.75rem] font-medium italic leading-[1.05] tracking-tight text-(--color-ink) sm:text-[3.5rem] dark:text-(--color-paper-fg-2)">
+      {heading}
+    </h1>
+    <ul class="mt-12 divide-y divide-(--color-rule) dark:divide-(--color-rule-dark)">
       {sorted.map((bucket) => (
         <li>
           <a
             href={localizedPath(locale, `tags/${bucket.slug}`)}
-            class="inline-flex items-baseline gap-1.5 rounded-md border border-zinc-200 bg-zinc-50/60 px-3 py-1.5 text-sm text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-300 dark:hover:border-zinc-700 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+            class="group grid grid-cols-[1fr_auto] items-baseline gap-6 py-3 transition"
           >
-            {bucket.name}
-            <span class="text-xs text-zinc-500">{bucket.posts.length}</span>
+            <span class="font-display text-lg text-(--color-ink-soft) transition group-hover:text-(--color-accent-700) dark:text-(--color-paper-fg) dark:group-hover:text-(--color-accent-300-dark) sm:text-xl">
+              {bucket.name}
+            </span>
+            <span class="font-mono text-xs tabular-nums text-(--color-ink-faint) transition group-hover:text-(--color-accent-600) dark:group-hover:text-(--color-accent-400-dark)">
+              {String(bucket.posts.length).padStart(2, "0")}
+            </span>
           </a>
         </li>
       ))}

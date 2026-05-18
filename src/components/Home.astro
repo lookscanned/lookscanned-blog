@@ -5,7 +5,6 @@ import Pagination from "./Pagination.astro";
 import { getLocale } from "../i18n";
 import { getPostsByLocale } from "../lib/posts";
 import { paginateItems, PAGE_SIZE } from "../lib/paginate";
-import { renderInlineMarkdown } from "../lib/markdown";
 
 interface Props {
   locale: string;
@@ -21,20 +20,37 @@ const current = pages[Math.max(0, Math.min(page - 1, pages.length - 1))];
 const title = page > 1
   ? `${meta.data.title} · ${page}/${current.total}`
   : meta.data.title;
+
+const sinceYear = 2025;
+const currentYear = new Date().getFullYear();
+const dateline = sinceYear === currentYear
+  ? `Est. ${sinceYear}`
+  : `${sinceYear}–${currentYear}`;
 ---
 
 <BaseLayout title={title} description={meta.data.description} locale={locale}>
-  <main class="mx-auto max-w-3xl px-6 py-12">
+  <main class="mx-auto max-w-3xl px-6">
     {page === 1 && (
-      <section class="border-b border-zinc-200/70 pb-10 dark:border-zinc-800/80">
-        <h1 class="text-2xl font-medium tracking-tight text-zinc-950 dark:text-zinc-50">{meta.data.homeTitle}</h1>
-        <div
-          class="mt-4 prose prose-zinc max-w-none dark:prose-invert [--tw-prose-body:var(--color-zinc-800)] dark:[--tw-prose-body:var(--color-zinc-200)] prose-a:text-accent-600 prose-a:no-underline hover:prose-a:underline dark:prose-a:text-accent-500 prose-p:my-2 prose-ul:my-2"
-          set:html={renderInlineMarkdown(meta.data.homeContent)}
-        />
+      <section class="pt-10 pb-12 sm:pt-16">
+        <p class="font-ui text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
+          {dateline} · Vol. {currentYear - sinceYear + 1}
+        </p>
+        <h1 class="font-display mt-4 text-[2.75rem] font-medium italic leading-[1.05] tracking-tight text-balance text-(--color-ink) sm:text-[3.5rem] dark:text-(--color-paper-fg-2)">
+          {meta.data.homeTitle}
+        </h1>
+        <p class="font-ui mt-6 max-w-xl text-[15px] leading-relaxed text-(--color-ink-mute) dark:text-(--color-ink-faint)">
+          {meta.data.description}
+        </p>
       </section>
     )}
-    <div class={page === 1 ? "mt-8" : "mt-2"}>
+    {page > 1 && (
+      <section class="pt-10 pb-8">
+        <p class="font-ui text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
+          Page {page} of {current.total}
+        </p>
+      </section>
+    )}
+    <div class="border-t border-double border-(--color-rule) dark:border-(--color-rule-dark)">
       <PostList posts={current.items} />
     </div>
     <Pagination locale={locale} current={current.page} total={current.total} basePath="" />

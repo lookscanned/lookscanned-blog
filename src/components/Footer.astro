@@ -8,32 +8,39 @@ interface Props {
 const { locale } = Astro.props;
 const meta = getLocale(locale);
 const year = new Date().getFullYear();
-const rssUrl =
-  locale === "en" ? "/rss.xml" : `/${locale}/rss.xml`;
+const rssUrl = locale === "en" ? "/rss.xml" : `/${locale}/rss.xml`;
 ---
 
-<footer class="mt-24 border-t border-zinc-200/70 dark:border-zinc-800/80">
-  <div class="mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-4 px-6 py-8 text-sm text-zinc-500 dark:text-zinc-400">
-    <span>&copy; {year} {meta.data.title}</span>
-    <div class="flex items-center gap-4">
-      <a
-        href="https://lookscanned.io"
-        class="transition hover:text-zinc-900 dark:hover:text-zinc-100"
-        target="_blank"
-        rel="noopener"
-      >Look Scanned</a>
-      <a
-        href="https://github.com/lookscanned"
-        class="transition hover:text-zinc-900 dark:hover:text-zinc-100"
-        target="_blank"
-        rel="noopener"
-        aria-label="GitHub"
-      >GitHub</a>
-      <a
-        href={rssUrl}
-        class="transition hover:text-zinc-900 dark:hover:text-zinc-100"
-        aria-label="RSS"
-      >RSS</a>
+<footer class="mt-32">
+  <div class="mx-auto max-w-3xl px-6 pb-12">
+    <div class="rule-ornament py-6 text-xs">* * *</div>
+    <div class="font-ui flex flex-col gap-3 text-xs text-(--color-ink-mute) sm:flex-row sm:items-baseline sm:justify-between dark:text-(--color-ink-faint)">
+      <p>
+        <span class="font-display italic text-(--color-ink-soft) dark:text-(--color-paper-fg)">{meta.data.title}</span>
+        <span class="mx-2">·</span>
+        <span>est. 2025</span>
+        <span class="mx-2">·</span>
+        <span>© {year}</span>
+      </p>
+      <p class="flex items-center gap-4">
+        <a
+          href="https://lookscanned.io"
+          class="transition hover:text-(--color-accent-600) dark:hover:text-(--color-accent-400-dark)"
+          target="_blank" rel="noopener noreferrer"
+        >lookscanned.io</a>
+        <a
+          href="https://github.com/lookscanned"
+          class="transition hover:text-(--color-accent-600) dark:hover:text-(--color-accent-400-dark)"
+          target="_blank" rel="noopener noreferrer"
+        >GitHub</a>
+        <a
+          href={rssUrl}
+          class="transition hover:text-(--color-accent-600) dark:hover:text-(--color-accent-400-dark)"
+        >RSS</a>
+      </p>
     </div>
+    <p class="font-ui mt-6 text-[11px] uppercase tracking-[0.15em] text-(--color-ink-faint)">
+      Set in Newsreader. Privacy-first by design.
+    </p>
   </div>
 </footer>

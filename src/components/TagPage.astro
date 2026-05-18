@@ -28,10 +28,14 @@ const title = page > 1
 ---
 
 <BaseLayout title={title} description={meta.data.description} locale={locale}>
-  <main class="mx-auto max-w-3xl px-6 py-12">
-    <p class="text-xs uppercase tracking-wide text-zinc-500">{tagsLabel}</p>
-    <h1 class="mt-1 text-2xl font-medium tracking-tight text-zinc-950 dark:text-zinc-50">{tag}</h1>
-    <div class="mt-8">
+  <main class="mx-auto max-w-3xl px-6 pt-10 pb-12 sm:pt-16">
+    <p class="font-ui text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
+      {tagsLabel} · {posts.length} {posts.length === 1 ? "entry" : "entries"}{page > 1 && <> · Page {page} of {current.total}</>}
+    </p>
+    <h1 class="font-display mt-4 text-[2.5rem] font-medium italic leading-[1.05] tracking-tight text-(--color-ink) sm:text-[3.25rem] dark:text-(--color-paper-fg-2)">
+      {tag}
+    </h1>
+    <div class="mt-12 border-t border-double border-(--color-rule) dark:border-(--color-rule-dark)">
       <PostList posts={current.items} />
     </div>
     <Pagination locale={locale} current={current.page} total={current.total} basePath={`/tags/${tagSlug(tag)}`} />

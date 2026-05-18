@@ -17,3 +17,16 @@ export function formatDate(locale: string, date: Date): string {
     return date.toISOString().slice(0, 10);
   }
 }
+
+/** Day + month only — used in lists where the year heads its own group. */
+export function formatDayMonth(locale: string, date: Date): string {
+  const tag = getLocale(locale).hreflang;
+  try {
+    return new Intl.DateTimeFormat(tag, {
+      month: "short",
+      day: "numeric",
+    }).format(date);
+  } catch {
+    return `${date.getMonth() + 1}/${date.getDate()}`;
+  }
+}

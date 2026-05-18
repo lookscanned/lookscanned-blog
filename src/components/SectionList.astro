@@ -24,9 +24,14 @@ const title = page > 1
 ---
 
 <BaseLayout title={title} description={meta.data.description} locale={locale} pageKey="posts">
-  <main class="mx-auto max-w-3xl px-6 py-12">
-    <h1 class="text-2xl font-medium tracking-tight text-zinc-950 dark:text-zinc-50">{heading}</h1>
-    <div class="mt-8">
+  <main class="mx-auto max-w-3xl px-6 pt-10 pb-12 sm:pt-16">
+    <p class="font-ui text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
+      {all.length} {all.length === 1 ? "entry" : "entries"}{page > 1 && <> · Page {page} of {current.total}</>}
+    </p>
+    <h1 class="font-display mt-4 text-[2.75rem] font-medium italic leading-[1.05] tracking-tight text-(--color-ink) sm:text-[3.5rem] dark:text-(--color-paper-fg-2)">
+      {heading}
+    </h1>
+    <div class="mt-12 border-t border-double border-(--color-rule) dark:border-(--color-rule-dark)">
       <PostList posts={current.items} />
     </div>
     <Pagination locale={locale} current={current.page} total={current.total} basePath="/posts" />
