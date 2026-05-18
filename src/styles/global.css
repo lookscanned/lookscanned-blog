@@ -1,27 +1,40 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-/* Newsreader: self-hosted variable serif. Roman only — we don't ship the
-   italic file since the design doesn't use italic. */
-@import "@fontsource-variable/newsreader";
-
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+  /*
+   * Serif: system-only stack. No web font fetch → no FOUT/CLS.
+   * Apple devices land on the SF/New York family via `ui-serif`; Windows
+   * users get Charter (bundled with Office) or Sitka/Cambria; Android and
+   * Chrome OS users get Noto Serif (system default).
+   * The CJK block routes Chinese / Japanese / Traditional Chinese readers
+   * to their OS's native Songti / Mincho / PMingLiU instead of falling
+   * through to a Latin-only serif that would render their text in a
+   * generic sans.
+   */
   --font-display:
-    "Newsreader Variable", ui-serif, Georgia, "Times New Roman", serif;
-  --font-serif:
-    "Newsreader Variable", ui-serif, Georgia, "Times New Roman", serif;
-  --font-sans:
-    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
-    "Noto Sans CJK SC", sans-serif;
-  --font-mono:
-    ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
-    "Liberation Mono", monospace;
+    ui-serif,
+    Charter, "Iowan Old Style", "Source Serif Pro", "Sitka Text", Cambria,
+    "Noto Serif",
+    "Songti SC", "Songti TC", "Source Han Serif SC", "Noto Serif CJK SC",
+    "Hiragino Mincho ProN", "Yu Mincho", "PMingLiU",
+    Georgia, "Times New Roman", serif;
+  --font-serif: var(--font-display);
 
-  /* Oxblood accent on the standard 50–950 ramp so utilities pick clean names.
-     Light-mode uses 600/700 for links + hover; dark-mode uses 300/400. */
+  --font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial,
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC",
+    sans-serif;
+
+  --font-mono:
+    ui-monospace, SFMono-Regular, "SF Mono", Menlo,
+    Consolas, "Liberation Mono", monospace;
+
+  /* Oxblood accent ramp — same OKLCH values, full 50–950 so utilities
+     like text-accent-600 / dark:text-accent-400 resolve naturally. */
   --color-accent-50:  oklch(0.97 0.018 25);
   --color-accent-100: oklch(0.93 0.040 25);
   --color-accent-200: oklch(0.86 0.070 25);
@@ -79,7 +92,7 @@
     border-radius: 2px;
   }
   .dark :where(a, button, summary, input, select, textarea, [tabindex]):focus-visible {
-    outline-color: var(--color-accent-400-dark);
+    outline-color: var(--color-accent-400);
   }
 }
 
