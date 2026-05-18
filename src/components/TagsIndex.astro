@@ -17,24 +17,24 @@ const heading = menuEntry?.name ?? "Tags";
 ---
 
 <BaseLayout title={`${heading} · ${meta.data.title}`} description={meta.data.description} locale={locale} pageKey="tags">
-  <main class="mx-auto max-w-3xl px-6 pt-10 pb-12 sm:pt-16">
-    <p class="font-ui text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
-      Subject index · {sorted.length} {sorted.length === 1 ? "topic" : "topics"}
-    </p>
-    <h1 class="font-display mt-4 text-[2.75rem] font-medium italic leading-[1.05] tracking-tight text-(--color-ink) sm:text-[3.5rem] dark:text-(--color-paper-fg-2)">
+  <main class="mx-auto max-w-3xl px-6 pt-12 pb-12 sm:pt-16">
+    <h1 class="font-display text-4xl font-medium leading-[1.1] tracking-tight text-zinc-900 sm:text-5xl dark:text-zinc-50">
       {heading}
     </h1>
-    <ul class="mt-12 divide-y divide-(--color-rule) dark:divide-(--color-rule-dark)">
+    <p class="font-ui mt-3 text-sm text-zinc-500 dark:text-zinc-400">
+      {sorted.length} tags
+    </p>
+    <ul class="mt-12 divide-y divide-zinc-200 dark:divide-zinc-800">
       {sorted.map((bucket) => (
         <li>
           <a
             href={localizedPath(locale, `tags/${bucket.slug}`)}
             class="group grid grid-cols-[1fr_auto] items-baseline gap-6 py-3 transition"
           >
-            <span class="font-display text-lg text-(--color-ink-soft) transition group-hover:text-(--color-accent-700) dark:text-(--color-paper-fg) dark:group-hover:text-(--color-accent-300-dark) sm:text-xl">
+            <span class="font-display text-lg text-zinc-800 transition group-hover:text-accent-700 dark:text-zinc-200 dark:group-hover:text-accent-300 sm:text-xl">
               {bucket.name}
             </span>
-            <span class="font-mono text-xs tabular-nums text-(--color-ink-faint) transition group-hover:text-(--color-accent-600) dark:group-hover:text-(--color-accent-400-dark)">
+            <span class="font-mono text-xs tabular-nums text-zinc-400 transition group-hover:text-accent-600 dark:text-zinc-600 dark:group-hover:text-accent-400">
               {String(bucket.posts.length).padStart(2, "0")}
             </span>
           </a>

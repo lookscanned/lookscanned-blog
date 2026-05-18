@@ -13,7 +13,7 @@ const allLocales = listLocales();
 
 <details class="lang-dropdown relative">
   <summary
-    class="flex h-8 w-8 cursor-pointer list-none items-center justify-center rounded text-(--color-ink-mute) transition hover:bg-(--color-paper-soft) hover:text-(--color-ink) dark:text-(--color-ink-faint) dark:hover:bg-(--color-paper-dark-2) dark:hover:text-(--color-paper-fg-2) [&::-webkit-details-marker]:hidden"
+    class="flex h-8 w-8 cursor-pointer list-none items-center justify-center rounded text-zinc-600 transition hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 [&::-webkit-details-marker]:hidden"
     aria-label={meta.ui.translations || "Translations"}
     title={meta.ui.translations || "Translations"}
   >
@@ -23,7 +23,7 @@ const allLocales = listLocales();
     </svg>
   </summary>
   <div
-    class="absolute right-0 z-20 mt-2 max-h-80 w-48 overflow-y-auto rounded border border-(--color-rule) bg-(--color-paper) py-1 text-sm shadow-lg dark:border-(--color-rule-dark) dark:bg-(--color-paper-dark-2)"
+    class="absolute right-0 z-20 mt-2 max-h-80 w-48 overflow-y-auto rounded border border-zinc-200 bg-white py-1 text-sm shadow-lg dark:border-zinc-800 dark:bg-zinc-900"
   >
     {allLocales.map((l) => (
       <a
@@ -33,8 +33,8 @@ const allLocales = listLocales();
         class:list={[
           "font-ui block px-3 py-1.5 transition",
           l.code === locale
-            ? "bg-(--color-paper-soft) text-(--color-ink) dark:bg-(--color-paper-dark) dark:text-(--color-paper-fg-2)"
-            : "text-(--color-ink-mute) hover:bg-(--color-paper-soft) hover:text-(--color-ink) dark:text-(--color-ink-faint) dark:hover:bg-(--color-paper-dark) dark:hover:text-(--color-paper-fg-2)",
+            ? "bg-zinc-50 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100"
+            : "text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100",
         ]}
         aria-current={l.code === locale ? "page" : undefined}
       >

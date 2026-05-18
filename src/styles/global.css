@@ -1,17 +1,13 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-/* Newsreader: variable serif with full italic axis. Self-hosted — no Google
-   Fonts request, no GDPR surface. We load roman + italic for headings, lede,
-   and the article body. */
+/* Newsreader: self-hosted variable serif. Roman only — we don't ship the
+   italic file since the design doesn't use italic. */
 @import "@fontsource-variable/newsreader";
-@import "@fontsource-variable/newsreader/wght-italic.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Editorial type stack. Newsreader for display + reading; system sans for
-     UI chrome (menu, meta, chips); ui-monospace for numerals + code. */
   --font-display:
     "Newsreader Variable", ui-serif, Georgia, "Times New Roman", serif;
   --font-serif:
@@ -24,32 +20,18 @@
     ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
     "Liberation Mono", monospace;
 
-  /* Warm paper palette. Replaces zinc/slate — those neutrals are tech-flat;
-     these are slightly off-axis on the cream/sepia line, like an offset-press
-     proof. */
-  --color-paper:        #faf7f0;
-  --color-paper-soft:   #f4efde;
-  --color-paper-dark:   #0f0d0a;
-  --color-paper-dark-2: #16140f;
-  --color-ink:          #181613;
-  --color-ink-soft:     #3c372e;
-  --color-ink-mute:     #6f695c;
-  --color-ink-faint:    #9b9385;
-  --color-paper-fg:     #e8e2d2;
-  --color-paper-fg-2:   #f2ebd9;
-  --color-rule:         #d8d2c2;
-  --color-rule-dark:    #2a2620;
-
-  /* Oxblood-leaning accent — a printed-ink red, not a screen red. Has more
-     gravity than amber and feels like a book cover or an old Penguin
-     paperback spine. */
+  /* Oxblood accent on the standard 50–950 ramp so utilities pick clean names.
+     Light-mode uses 600/700 for links + hover; dark-mode uses 300/400. */
   --color-accent-50:  oklch(0.97 0.018 25);
   --color-accent-100: oklch(0.93 0.040 25);
-  --color-accent-500: oklch(0.50 0.110 25);
-  --color-accent-600: oklch(0.43 0.120 25);
-  --color-accent-700: oklch(0.36 0.110 25);
-  --color-accent-300-dark: oklch(0.72 0.090 25);
-  --color-accent-400-dark: oklch(0.66 0.110 25);
+  --color-accent-200: oklch(0.86 0.070 25);
+  --color-accent-300: oklch(0.74 0.100 25);
+  --color-accent-400: oklch(0.68 0.130 25);
+  --color-accent-500: oklch(0.55 0.150 25);
+  --color-accent-600: oklch(0.48 0.165 25);
+  --color-accent-700: oklch(0.41 0.155 25);
+  --color-accent-800: oklch(0.34 0.140 25);
+  --color-accent-900: oklch(0.27 0.110 25);
 }
 
 @layer base {
@@ -61,8 +43,8 @@
 
   body {
     font-family: var(--font-serif);
-    background-color: var(--color-paper);
-    color: var(--color-ink-soft);
+    background-color: #ffffff;
+    color: var(--color-zinc-800);
     font-feature-settings: "kern", "liga", "calt";
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -70,11 +52,10 @@
   }
 
   .dark body {
-    background-color: var(--color-paper-dark);
-    color: var(--color-paper-fg);
+    background-color: var(--color-zinc-950);
+    color: var(--color-zinc-200);
   }
 
-  /* Sans for chrome surfaces that should feel UI-tier rather than reading-tier. */
   .font-ui { font-family: var(--font-sans); }
   .font-display { font-family: var(--font-display); }
   .font-mono { font-family: var(--font-mono); }
@@ -83,18 +64,15 @@
     font-family: var(--font-mono);
   }
 
-  /* Selection: oxblood ink instead of OS-default blue. */
   ::selection {
     background-color: oklch(0.93 0.040 25);
-    color: var(--color-ink);
+    color: var(--color-zinc-900);
   }
   .dark ::selection {
     background-color: oklch(0.30 0.080 25);
-    color: var(--color-paper-fg-2);
+    color: var(--color-zinc-50);
   }
 
-  /* Universal focus ring — meets WIG focus-visible requirement once instead
-     of per-component. */
   :where(a, button, summary, input, select, textarea, [tabindex]):focus-visible {
     outline: 2px solid var(--color-accent-600);
     outline-offset: 2px;
@@ -105,52 +83,11 @@
   }
 }
 
-/* RTL niceties: keep prose left-aligned semantics correct. */
 :where([dir="rtl"]) .prose {
   text-align: start;
 }
 
-/* === Editorial chrome === */
-
-/* Section-number ornament: numbered §1, §2 prefix on h2 inside articles. */
-.editorial-prose {
-  counter-reset: section;
-}
-.editorial-prose :where(h2)::before {
-  counter-increment: section;
-  content: "§ " counter(section) "  ";
-  color: var(--color-ink-faint);
-  font-family: var(--font-mono);
-  font-size: 0.7em;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  vertical-align: 0.15em;
-  margin-inline-end: 0.25em;
-}
-.dark .editorial-prose :where(h2)::before {
-  color: var(--color-ink-faint);
-}
-
-/* Ornamental rule between sections — three asterisms instead of a hairline. */
-.rule-ornament {
-  text-align: center;
-  color: var(--color-ink-faint);
-  letter-spacing: 0.75em;
-  padding-inline-start: 0.75em;
-  user-select: none;
-}
-
-/* Drop cap available as a utility for the first paragraph if we ever want one. */
-.drop-cap::first-letter {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: 4.25rem;
-  line-height: 0.85;
-  float: inline-start;
-  margin: 0.1em 0.25em 0 0;
-}
-
-/* === Shiki dual-theme code blocks === */
+/* Shiki dual-theme code blocks */
 html.dark .astro-code,
 html.dark .astro-code span {
   color: var(--shiki-dark) !important;
@@ -161,15 +98,15 @@ html.dark .astro-code span {
 }
 
 .prose :where(pre.astro-code) {
-  border: 1px solid var(--color-rule);
-  border-radius: 4px;
+  border: 1px solid var(--color-zinc-200);
+  border-radius: 6px;
   padding: 1rem 1.25rem;
   line-height: 1.6;
   font-size: 0.875em;
   overflow-wrap: anywhere;
 }
 html.dark .prose :where(pre.astro-code) {
-  border-color: var(--color-rule-dark);
+  border-color: var(--color-zinc-800);
 }
 .prose :where(pre.astro-code) :where(code) {
   background: transparent !important;

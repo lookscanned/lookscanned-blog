@@ -11,15 +11,12 @@ const meta = getLocale(locale);
 ---
 
 <BaseLayout title={`Categories · ${meta.data.title}`} description={meta.data.description} locale={locale} pageKey="categories">
-  <main class="mx-auto max-w-3xl px-6 pt-10 pb-12 sm:pt-16">
-    <p class="font-ui text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
-      Filing system · empty
-    </p>
-    <h1 class="font-display mt-4 text-[2.75rem] font-medium italic leading-[1.05] tracking-tight text-(--color-ink) sm:text-[3.5rem] dark:text-(--color-paper-fg-2)">
+  <main class="mx-auto max-w-3xl px-6 pt-12 pb-12 sm:pt-16">
+    <h1 class="font-display text-4xl font-medium leading-[1.1] tracking-tight text-zinc-900 sm:text-5xl dark:text-zinc-50">
       Categories
     </h1>
-    <p class="font-ui mt-8 text-sm text-(--color-ink-mute) dark:text-(--color-ink-faint)">
-      No categories filed at this time. Browse <a href="/tags/" class="underline decoration-(--color-ink-faint) underline-offset-[3px] hover:text-(--color-accent-600) hover:decoration-(--color-accent-600) dark:hover:text-(--color-accent-400-dark) dark:hover:decoration-(--color-accent-400-dark)">subject index</a> instead.
+    <p class="font-ui mt-6 text-sm text-zinc-600 dark:text-zinc-400">
+      No categories yet. Browse <a href="/tags/" class="text-accent-600 underline-offset-[3px] hover:underline dark:text-accent-400">tags</a> instead.
     </p>
   </main>
 </BaseLayout>

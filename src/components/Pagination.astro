@@ -5,7 +5,6 @@ interface Props {
   locale: string;
   current: number;
   total: number;
-  /** Path prefix without trailing slash, e.g. "" for home, "/posts" for section. */
   basePath: string;
 }
 
@@ -17,7 +16,10 @@ const localeRoot = locale === "en" ? "" : `/${locale}`;
 const indexUrl = `${localeRoot}${basePath}/`.replace(/^\/\//, "/");
 
 function url(page: number): string {
-  if (page === 1) return basePath === "" ? `${localeRoot || "/"}` + (localeRoot ? "/" : "") : indexUrl;
+  if (page === 1) {
+    if (basePath === "") return localeRoot ? `${localeRoot}/` : "/";
+    return indexUrl;
+  }
   return `${localeRoot}${basePath}/page/${page}/`;
 }
 
@@ -25,20 +27,18 @@ const prev = current > 1 ? url(current - 1) : null;
 const next = current < total ? url(current + 1) : null;
 ---
 
-<nav class="mt-16 grid grid-cols-2 gap-6 border-t border-(--color-rule) pt-6 dark:border-(--color-rule-dark)">
+<nav class="mt-16 grid grid-cols-2 gap-6 border-t border-zinc-200 pt-6 text-sm dark:border-zinc-800">
   <div>
     {prev && (
-      <a href={prev} class="block transition hover:text-(--color-accent-600) dark:hover:text-(--color-accent-400-dark)">
-        <span class="font-ui text-[10px] uppercase tracking-[0.18em] text-(--color-ink-faint)">← Older</span>
-        <span class="font-display block mt-1 italic text-(--color-ink-soft) dark:text-(--color-paper-fg)">{meta.ui.prev_page}</span>
+      <a href={prev} class="font-ui text-zinc-600 transition hover:text-accent-600 dark:text-zinc-400 dark:hover:text-accent-400">
+        ← {meta.ui.prev_page}
       </a>
     )}
   </div>
   <div class="text-right">
     {next && (
-      <a href={next} class="block transition hover:text-(--color-accent-600) dark:hover:text-(--color-accent-400-dark)">
-        <span class="font-ui text-[10px] uppercase tracking-[0.18em] text-(--color-ink-faint)">Newer →</span>
-        <span class="font-display block mt-1 italic text-(--color-ink-soft) dark:text-(--color-paper-fg)">{meta.ui.next_page}</span>
+      <a href={next} class="font-ui text-zinc-600 transition hover:text-accent-600 dark:text-zinc-400 dark:hover:text-accent-400">
+        {meta.ui.next_page} →
       </a>
     )}
   </div>

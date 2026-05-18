@@ -26,29 +26,29 @@ const years = [...grouped.keys()].sort((a, b) => b - a);
 ---
 
 <BaseLayout title={`${archiveTitle} · ${meta.data.title}`} description={meta.data.description} locale={locale} pageKey="archives">
-  <main class="mx-auto max-w-3xl px-6 pt-10 pb-12 sm:pt-16">
-    <p class="font-ui text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
-      The complete index · {posts.length} {posts.length === 1 ? "entry" : "entries"}
-    </p>
-    <h1 class="font-display mt-4 text-[2.75rem] font-medium italic leading-[1.05] tracking-tight text-(--color-ink) sm:text-[3.5rem] dark:text-(--color-paper-fg-2)">
+  <main class="mx-auto max-w-3xl px-6 pt-12 pb-12 sm:pt-16">
+    <h1 class="font-display text-4xl font-medium leading-[1.1] tracking-tight text-zinc-900 sm:text-5xl dark:text-zinc-50">
       {archiveTitle}
     </h1>
+    <p class="font-ui mt-3 text-sm text-zinc-500 dark:text-zinc-400">
+      {posts.length} posts
+    </p>
 
-    <div class="mt-10 space-y-12">
+    <div class="mt-12 space-y-12">
       {years.map((year) => (
         <section>
-          <h2 class="font-mono text-sm tabular-nums tracking-[0.1em] text-(--color-ink-faint)">{year}</h2>
-          <ul class="mt-4 divide-y divide-(--color-rule) dark:divide-(--color-rule-dark)">
+          <h2 class="font-mono text-sm tabular-nums tracking-wider text-zinc-400 dark:text-zinc-600">{year}</h2>
+          <ul class="mt-4 divide-y divide-zinc-200 dark:divide-zinc-800">
             {grouped.get(year)!.map((p) => (
               <li>
                 <a
                   href={localizedPath(locale, `posts/${p.slug}`)}
                   class="group grid grid-cols-[5rem_1fr] items-baseline gap-x-6 py-3 transition sm:grid-cols-[7rem_1fr] sm:gap-x-8"
                 >
-                  <span class="font-mono text-xs tabular-nums uppercase tracking-[0.1em] text-(--color-ink-faint) transition group-hover:text-(--color-accent-600) dark:group-hover:text-(--color-accent-400-dark)">
+                  <span class="font-mono text-xs tabular-nums uppercase tracking-wider text-zinc-400 transition group-hover:text-accent-600 dark:text-zinc-600 dark:group-hover:text-accent-400">
                     {formatDayMonth(locale, p.entry.data.date)}
                   </span>
-                  <span class="font-display text-base text-(--color-ink-soft) transition group-hover:text-(--color-accent-700) dark:text-(--color-paper-fg) dark:group-hover:text-(--color-accent-300-dark) sm:text-lg">
+                  <span class="font-display text-base text-zinc-800 transition group-hover:text-accent-700 dark:text-zinc-200 dark:group-hover:text-accent-300 sm:text-lg">
                     {p.entry.data.title}
                   </span>
                 </a>

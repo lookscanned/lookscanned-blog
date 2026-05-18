@@ -4,18 +4,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout title="404 · Look Scanned Blog" locale="en">
   <main class="mx-auto max-w-3xl px-6 py-24 text-center sm:py-32">
-    <p class="font-ui text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
-      No entry under this signature
-    </p>
-    <h1 class="font-display mt-6 text-[5rem] font-medium italic leading-none tracking-tight text-(--color-ink) sm:text-[7rem] dark:text-(--color-paper-fg-2)">
+    <h1 class="font-display text-6xl font-medium leading-none tracking-tight text-zinc-900 sm:text-7xl dark:text-zinc-50">
       404
     </h1>
-    <p class="font-ui mt-8 text-(--color-ink-mute) dark:text-(--color-ink-faint)">
-      The page you requested could not be located.
+    <p class="font-ui mt-6 text-zinc-600 dark:text-zinc-400">
+      Page not found.
     </p>
     <a
       href="/"
-      class="font-display mt-10 inline-block italic underline decoration-(--color-accent-600)/40 underline-offset-[3px] transition hover:decoration-(--color-accent-600) dark:decoration-(--color-accent-400-dark)/40 dark:hover:decoration-(--color-accent-400-dark)"
-    >Return to the index →</a>
+      class="font-ui mt-8 inline-block text-sm text-accent-600 underline-offset-[3px] hover:underline dark:text-accent-400"
+    >Back to home →</a>
   </main>
 </BaseLayout>

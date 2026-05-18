@@ -28,14 +28,15 @@ const title = page > 1
 ---
 
 <BaseLayout title={title} description={meta.data.description} locale={locale}>
-  <main class="mx-auto max-w-3xl px-6 pt-10 pb-12 sm:pt-16">
-    <p class="font-ui text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
-      {tagsLabel} · {posts.length} {posts.length === 1 ? "entry" : "entries"}{page > 1 && <> · Page {page} of {current.total}</>}
-    </p>
-    <h1 class="font-display mt-4 text-[2.5rem] font-medium italic leading-[1.05] tracking-tight text-(--color-ink) sm:text-[3.25rem] dark:text-(--color-paper-fg-2)">
+  <main class="mx-auto max-w-3xl px-6 pt-12 pb-12 sm:pt-16">
+    <p class="font-ui text-sm text-zinc-500 dark:text-zinc-400">{tagsLabel}</p>
+    <h1 class="font-display mt-2 text-4xl font-medium leading-[1.1] tracking-tight text-zinc-900 sm:text-5xl dark:text-zinc-50">
       {tag}
     </h1>
-    <div class="mt-12 border-t border-double border-(--color-rule) dark:border-(--color-rule-dark)">
+    <p class="font-ui mt-3 text-sm text-zinc-500 dark:text-zinc-400">
+      {posts.length} posts{page > 1 && <> · page {page} of {current.total}</>}
+    </p>
+    <div class="mt-12 border-t border-zinc-200 dark:border-zinc-800">
       <PostList posts={current.items} />
     </div>
     <Pagination locale={locale} current={current.page} total={current.total} basePath={`/tags/${tagSlug(tag)}`} />

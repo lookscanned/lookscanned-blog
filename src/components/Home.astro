@@ -20,37 +20,28 @@ const current = pages[Math.max(0, Math.min(page - 1, pages.length - 1))];
 const title = page > 1
   ? `${meta.data.title} · ${page}/${current.total}`
   : meta.data.title;
-
-const sinceYear = 2025;
-const currentYear = new Date().getFullYear();
-const dateline = sinceYear === currentYear
-  ? `Est. ${sinceYear}`
-  : `${sinceYear}–${currentYear}`;
 ---
 
 <BaseLayout title={title} description={meta.data.description} locale={locale}>
   <main class="mx-auto max-w-3xl px-6">
     {page === 1 && (
-      <section class="pt-10 pb-12 sm:pt-16">
-        <p class="font-ui text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
-          {dateline} · Vol. {currentYear - sinceYear + 1}
-        </p>
-        <h1 class="font-display mt-4 text-[2.75rem] font-medium italic leading-[1.05] tracking-tight text-balance text-(--color-ink) sm:text-[3.5rem] dark:text-(--color-paper-fg-2)">
+      <section class="pt-12 pb-10 sm:pt-16">
+        <h1 class="font-display text-4xl font-medium leading-[1.1] tracking-tight text-balance text-zinc-900 sm:text-5xl dark:text-zinc-50">
           {meta.data.homeTitle}
         </h1>
-        <p class="font-ui mt-6 max-w-xl text-[15px] leading-relaxed text-(--color-ink-mute) dark:text-(--color-ink-faint)">
+        <p class="font-ui mt-6 max-w-xl text-[15px] leading-relaxed text-zinc-600 dark:text-zinc-400">
           {meta.data.description}
         </p>
       </section>
     )}
     {page > 1 && (
-      <section class="pt-10 pb-8">
-        <p class="font-ui text-[11px] uppercase tracking-[0.18em] text-(--color-ink-faint)">
+      <section class="pt-12 pb-8 sm:pt-16">
+        <p class="font-ui text-sm text-zinc-500 dark:text-zinc-400">
           Page {page} of {current.total}
         </p>
       </section>
     )}
-    <div class="border-t border-double border-(--color-rule) dark:border-(--color-rule-dark)">
+    <div class="border-t border-zinc-200 dark:border-zinc-800">
       <PostList posts={current.items} />
     </div>
     <Pagination locale={locale} current={current.page} total={current.total} basePath="" />
