@@ -1,6 +1,7 @@
 ---
 import type { PostMeta } from "../lib/posts";
 import { localizedPath } from "../i18n";
+import { formatDate } from "../lib/date";
 
 interface Props {
   post: PostMeta;
@@ -8,31 +9,22 @@ interface Props {
 
 const { post } = Astro.props;
 const href = localizedPath(post.locale, `posts/${post.slug}`);
-
-const date = post.entry.data.date;
-const day = String(date.getDate()).padStart(2, "0");
-const monthShort = date.toLocaleDateString("en-US", { month: "short" }).toUpperCase();
-const yearShort = String(date.getFullYear()).slice(-2);
 ---
 
 <article class="group">
-  <a
-    href={href}
-    class="grid grid-cols-[3.5rem_1fr] gap-x-6 gap-y-1 py-6 transition sm:grid-cols-[5rem_1fr] sm:gap-x-8"
-  >
-    <div class="font-mono leading-none text-zinc-400 transition group-hover:text-accent-600 dark:text-zinc-600 dark:group-hover:text-accent-400">
-      <div class="text-2xl tabular-nums tracking-tight text-zinc-700 sm:text-3xl dark:text-zinc-300">{day}</div>
-      <div class="mt-1.5 text-[10px] tracking-[0.15em]">{monthShort} {yearShort}</div>
-    </div>
-    <div>
-      <h2 class="font-display text-xl font-medium leading-tight text-zinc-900 transition group-hover:text-accent-700 dark:text-zinc-50 dark:group-hover:text-accent-300 sm:text-2xl">
-        {post.entry.data.title}
-      </h2>
-      {post.entry.data.summary && (
-        <p class="font-ui mt-2 line-clamp-2 text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400">
-          {post.entry.data.summary}
-        </p>
-      )}
-    </div>
+  <a href={href} class="block py-6 transition">
+    <h2 class="text-xl font-medium tracking-tight text-zinc-900 transition group-hover:text-accent-600 dark:text-zinc-50 dark:group-hover:text-accent-400">
+      {post.entry.data.title}
+    </h2>
+    <p class="mt-1.5 text-xs text-zinc-500 dark:text-zinc-500">
+      <time datetime={post.entry.data.date.toISOString()}>
+        {formatDate(post.locale, post.entry.data.date)}
+      </time>
+    </p>
+    {post.entry.data.summary && (
+      <p class="mt-3 line-clamp-3 text-[15px] leading-relaxed text-zinc-600 dark:text-zinc-400">
+        {post.entry.data.summary}
+      </p>
+    )}
   </a>
 </article>

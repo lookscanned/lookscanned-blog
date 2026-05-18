@@ -26,17 +26,17 @@ const title = page > 1
   <main class="mx-auto max-w-3xl px-6">
     {page === 1 && (
       <section class="pt-12 pb-10 sm:pt-16">
-        <h1 class="font-display text-4xl font-medium leading-[1.1] tracking-tight text-balance text-zinc-900 sm:text-5xl dark:text-zinc-50">
+        <h1 class="text-3xl font-medium leading-tight tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-zinc-50">
           {meta.data.homeTitle}
         </h1>
-        <p class="font-ui mt-6 max-w-xl text-[15px] leading-relaxed text-zinc-600 dark:text-zinc-400">
+        <p class="mt-5 max-w-xl text-[15px] leading-relaxed text-zinc-600 dark:text-zinc-400">
           {meta.data.description}
         </p>
       </section>
     )}
     {page > 1 && (
       <section class="pt-12 pb-8 sm:pt-16">
-        <p class="font-ui text-sm text-zinc-500 dark:text-zinc-400">
+        <p class="text-sm text-zinc-500 dark:text-zinc-400">
           Page {page} of {current.total}
         </p>
       </section>

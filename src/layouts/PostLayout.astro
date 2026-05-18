@@ -57,15 +57,15 @@ const jsonLd = {
 >
   <article class="mx-auto max-w-3xl px-6 py-12" data-pagefind-body>
     <header class="mb-10">
-      <h1 class="font-display text-4xl font-medium leading-[1.15] tracking-tight text-balance text-zinc-900 sm:text-[2.75rem] dark:text-zinc-50">
+      <h1 class="text-3xl font-medium leading-tight tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-zinc-50">
         {post.entry.data.title}
       </h1>
       {post.entry.data.summary && (
-        <p class="font-display mt-5 text-xl leading-relaxed text-zinc-600 text-pretty dark:text-zinc-400">
+        <p class="mt-5 text-lg leading-relaxed text-zinc-600 text-pretty dark:text-zinc-400">
           {post.entry.data.summary}
         </p>
       )}
-      <div class="font-ui mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-zinc-500 dark:text-zinc-400">
+      <div class="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-zinc-500 dark:text-zinc-400">
         <time datetime={post.entry.data.date.toISOString()}>
           {formatDate(post.locale, post.entry.data.date)}
         </time>
@@ -86,7 +86,7 @@ const jsonLd = {
       "[--tw-prose-quotes:var(--color-zinc-700)] dark:[--tw-prose-quotes:var(--color-zinc-300)]",
       "[--tw-prose-quote-borders:var(--color-accent-600)]",
       "[--tw-prose-captions:var(--color-zinc-500)] dark:[--tw-prose-captions:var(--color-zinc-400)]",
-      "prose-headings:font-display prose-headings:font-medium prose-headings:tracking-tight",
+      "prose-headings:font-medium prose-headings:tracking-tight",
       "prose-a:underline-offset-[3px] prose-a:decoration-accent-600/30 hover:prose-a:decoration-accent-600",
       "dark:prose-a:decoration-accent-400/30 dark:hover:prose-a:decoration-accent-400",
       "prose-code:rounded prose-code:bg-zinc-100 prose-code:px-1 prose-code:py-0.5 prose-code:font-normal prose-code:text-zinc-900",
@@ -104,7 +104,7 @@ const jsonLd = {
             <li>
               <a
                 href={localizedPath(post.locale, `tags/${tagSlug(tag)}`)}
-                class="font-ui inline-block rounded px-2 py-1 text-xs text-zinc-600 ring-1 ring-zinc-200 transition hover:text-zinc-900 hover:ring-zinc-300 dark:text-zinc-400 dark:ring-zinc-800 dark:hover:text-zinc-100 dark:hover:ring-zinc-700"
+                class="inline-block rounded px-2 py-1 text-xs text-zinc-600 ring-1 ring-zinc-200 transition hover:text-zinc-900 hover:ring-zinc-300 dark:text-zinc-400 dark:ring-zinc-800 dark:hover:text-zinc-100 dark:hover:ring-zinc-700"
               >{tag}</a>
             </li>
           ))}
@@ -113,7 +113,7 @@ const jsonLd = {
     )}
 
     {translations.length > 1 && (
-      <section class="font-ui mt-6 text-sm text-zinc-500 dark:text-zinc-400">
+      <section class="mt-6 text-sm text-zinc-500 dark:text-zinc-400">
         <span class="text-zinc-700 dark:text-zinc-300">{meta.ui.translations}:</span>
         {" "}
         {translations
@@ -136,8 +136,8 @@ const jsonLd = {
         <div>
           {older && (
             <a href={localizedPath(older.locale, `posts/${older.slug}`)} class="block transition hover:text-accent-600 dark:hover:text-accent-400">
-              <div class="font-ui text-xs text-zinc-500">← {meta.ui.prev_page}</div>
-              <div class="font-display mt-2 line-clamp-2 text-zinc-800 dark:text-zinc-200">
+              <div class="text-xs text-zinc-500">← {meta.ui.prev_page}</div>
+              <div class="mt-2 line-clamp-2 text-zinc-800 dark:text-zinc-200">
                 {older.entry.data.title}
               </div>
             </a>
@@ -146,8 +146,8 @@ const jsonLd = {
         <div class="text-right">
           {newer && (
             <a href={localizedPath(newer.locale, `posts/${newer.slug}`)} class="block transition hover:text-accent-600 dark:hover:text-accent-400">
-              <div class="font-ui text-xs text-zinc-500">{meta.ui.next_page} →</div>
-              <div class="font-display mt-2 line-clamp-2 text-zinc-800 dark:text-zinc-200">
+              <div class="text-xs text-zinc-500">{meta.ui.next_page} →</div>
+              <div class="mt-2 line-clamp-2 text-zinc-800 dark:text-zinc-200">
                 {newer.entry.data.title}
               </div>
             </a>

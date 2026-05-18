@@ -14,10 +14,10 @@ const heading = menuEntry?.name ?? "Search";
 
 <BaseLayout title={`${heading} · ${meta.data.title}`} description={meta.data.description} locale={locale} pageKey="search">
   <main class="mx-auto max-w-3xl px-6 pt-12 pb-12 sm:pt-16">
-    <h1 class="font-display text-4xl font-medium leading-[1.1] tracking-tight text-zinc-900 sm:text-5xl dark:text-zinc-50">
+    <h1 class="text-3xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
       {heading}
     </h1>
-    <div id="search" class="font-ui mt-10" data-pagefind-ui></div>
+    <div id="search" class="mt-10" data-pagefind-ui></div>
   </main>
 </BaseLayout>
 
@@ -59,5 +59,4 @@ const heading = menuEntry?.name ?? "Search";
   }
   .pagefind-ui__search-input { font-size: 0.95rem !important; background: transparent !important; }
   .pagefind-ui__result { padding: 1rem 0 !important; }
-  .pagefind-ui__result-title { font-family: var(--font-display) !important; font-weight: 500 !important; }
 </style>
