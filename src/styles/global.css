@@ -43,3 +43,44 @@ samp {
 :where([dir="rtl"]) .prose {
   text-align: start;
 }
+
+/* Shiki dual-theme: swap to the dark palette inside `<html class="dark">`.
+   Shiki ships the light theme as the inline background-color / color on
+   <pre> + per-token <span>, and the dark variant as `--shiki-dark` /
+   `--shiki-dark-bg` CSS variables. These rules wire the dark variant up. */
+html.dark .astro-code,
+html.dark .astro-code span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+/* Soften the code block frame and keep it consistent across themes. The
+   inline `background-color` from Shiki wins for the surface; we only touch
+   layout / chrome here. */
+.prose :where(pre.astro-code) {
+  border: 1px solid rgb(228 228 231); /* zinc-200 */
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  line-height: 1.6;
+  font-size: 0.875em;
+  /* `wrap: true` puts whitespace: pre-wrap on the <pre>; ensure long
+     unbreakable tokens still wrap rather than overflow. */
+  overflow-wrap: anywhere;
+}
+
+html.dark .prose :where(pre.astro-code) {
+  border-color: rgb(39 39 42); /* zinc-800 */
+}
+
+/* Reset the prose plugin's pre defaults that fight with Shiki's inline
+   styles (it likes a dark surface and dictates its own padding). */
+.prose :where(pre.astro-code) :where(code) {
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-weight: inherit;
+  color: inherit;
+}

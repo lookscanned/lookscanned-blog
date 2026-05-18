@@ -12,6 +12,20 @@ export default defineConfig({
   build: { format: "directory" },
   publicDir: "./static",
   prefetch: { prefetchAll: false, defaultStrategy: "hover" },
+  markdown: {
+    shikiConfig: {
+      // Dual themes: Shiki emits both color sets as CSS variables; the dark
+      // one activates inside `<html class="dark">` via rules in global.css.
+      themes: {
+        light: "github-light",
+        dark: "github-dark",
+      },
+      // Wrap long lines instead of horizontal-scroll — posts contain inline
+      // SVG and Hugo templates with multi-hundred-char lines that get lost
+      // off-screen otherwise.
+      wrap: true,
+    },
+  },
   i18n: {
     defaultLocale: DEFAULT_LOCALE,
     locales: localeCodes,
