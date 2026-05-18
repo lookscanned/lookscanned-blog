@@ -1,32 +1,14 @@
-# Redirects for Hugo-era courtesy URLs that the new Astro build no longer
-# generates. Each rule serves a 301 so any external links / cached search
-# index entries land somewhere sensible instead of 404ing.
+# Redirects for URLs Astro doesn't (and shouldn't) generate directly.
 
 # Hugo emitted /en/ as a meta-refresh stub when defaultContentLanguageInSubdir
 # was false. Astro doesn't ship it; redirect any /en/* to the canonical root.
 /en/  /  301
 /en/*  /:splat  301
 
-# Home pagination → home
-/page/*  /  301
-/:lang/page/*  /:lang/  301
-
-# Hugo's "posts" section listing → our archive page (same content set)
-/posts/  /archives/  301
-/posts/page/*  /archives/  301
-/:lang/posts/  /:lang/archives/  301
-/:lang/posts/page/*  /:lang/archives/  301
-
-# Hugo emitted empty /categories/ pages; route them to the home instead
-/categories/  /  301
-/:lang/categories/  /:lang/  301
-
-# Hugo tag pagination (/<lang>/tags/<tag>/page/N/) → the tag landing page
-/tags/:tag/page/*  /tags/:tag/  301
-/:lang/tags/:tag/page/*  /:lang/tags/:tag/  301
-
 # Two French/Portuguese tags slugify slightly differently in Astro (Hugo stripped
 # the apostrophe entirely; Astro turns it into a `-`). Send the old URLs to the
 # new ones so any backlinks resolve.
 /fr/tags/traitement-dimages/  /fr/tags/traitement-d-images/  301
+/fr/tags/traitement-dimages/page/*  /fr/tags/traitement-d-images/page/:splat  301
 /pt/tags/marca-dágua/  /pt/tags/marca-d-água/  301
+/pt/tags/marca-dágua/page/*  /pt/tags/marca-d-água/page/:splat  301

@@ -1,0 +1,28 @@
+---
+import TagPage from "../../../../../components/TagPage.astro";
+import { getAllTagsByLocale } from "../../../../../lib/posts";
+import { paginateItems, PAGE_SIZE } from "../../../../../lib/paginate";
+import { LOCALES, DEFAULT_LOCALE } from "../../../../../i18n/locales.config.mjs";
+
+export async function getStaticPaths() {
+  const out = [];
+  for (const l of LOCALES) {
+    if (l.code === DEFAULT_LOCALE) continue;
+    const buckets = await getAllTagsByLocale(l.code);
+    for (const b of buckets) {
+      const pages = paginateItems(b.posts, PAGE_SIZE);
+      for (const p of pages) {
+        out.push({
+          params: { locale: l.code, tag: b.slug, page: String(p.page) },
+          props: { locale: l.code, tag: b.name, posts: b.posts, page: p.page },
+        });
+      }
+    }
+  }
+  return out;
+}
+
+const { locale, tag, posts, page } = Astro.props;
+---
+
+<TagPage locale={locale} tag={tag} posts={posts} page={page} />

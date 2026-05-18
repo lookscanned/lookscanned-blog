@@ -1,28 +1,39 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import PostCard from "./PostCard.astro";
+import PostList from "./PostList.astro";
+import Pagination from "./Pagination.astro";
 import { getLocale } from "../i18n";
+import { tagSlug } from "../lib/tags";
+import { paginateItems, PAGE_SIZE } from "../lib/paginate";
 import type { PostMeta } from "../lib/posts";
 
 interface Props {
   locale: string;
   tag: string;
   posts: PostMeta[];
+  page?: number;
 }
 
-const { locale, tag, posts } = Astro.props;
+const { locale, tag, posts, page = 1 } = Astro.props;
 const meta = getLocale(locale);
 const menuEntry = meta.data.menu.find((m) => m.url === "tags");
 const tagsLabel = menuEntry?.name ?? "Tags";
-const title = `${tag} · ${tagsLabel} · ${meta.data.title}`;
+
+const pages = paginateItems(posts, PAGE_SIZE);
+const current = pages[Math.max(0, Math.min(page - 1, pages.length - 1))];
+
+const title = page > 1
+  ? `${tag} · ${page}/${current.total} · ${tagsLabel} · ${meta.data.title}`
+  : `${tag} · ${tagsLabel} · ${meta.data.title}`;
 ---
 
 <BaseLayout title={title} description={meta.data.description} locale={locale}>
-  <main class="mx-auto max-w-2xl px-6 py-12">
+  <main class="mx-auto max-w-3xl px-6 py-12">
     <p class="text-xs uppercase tracking-wide text-zinc-500">{tagsLabel}</p>
-    <h1 class="mt-1 text-2xl font-medium tracking-tight">{tag}</h1>
-    <section class="mt-8 divide-y divide-zinc-200/70 dark:divide-zinc-800/80">
-      {posts.map((post) => <PostCard post={post} />)}
-    </section>
+    <h1 class="mt-1 text-2xl font-medium tracking-tight text-zinc-950 dark:text-zinc-50">{tag}</h1>
+    <div class="mt-8">
+      <PostList posts={current.items} />
+    </div>
+    <Pagination locale={locale} current={current.page} total={current.total} basePath={`/tags/${tagSlug(tag)}`} />
   </main>
 </BaseLayout>

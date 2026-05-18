@@ -13,18 +13,15 @@ const heading = menuEntry?.name ?? "Search";
 ---
 
 <BaseLayout title={`${heading} · ${meta.data.title}`} description={meta.data.description} locale={locale} pageKey="search">
-  <main class="mx-auto max-w-2xl px-6 py-12">
-    <h1 class="text-2xl font-medium tracking-tight">{heading}</h1>
+  <main class="mx-auto max-w-3xl px-6 py-12">
+    <h1 class="text-2xl font-medium tracking-tight text-zinc-950 dark:text-zinc-50">{heading}</h1>
     <div id="search" class="mt-8" data-pagefind-ui></div>
   </main>
 </BaseLayout>
 
-<link
-  rel="stylesheet"
-  href="/_pagefind/pagefind-ui.css"
-/>
+<link rel="stylesheet" href="/_pagefind/pagefind-ui.css" />
 <script is:inline src="/_pagefind/pagefind-ui.js"></script>
-<script is:inline define:vars={{ locale }}>
+<script is:inline>
   window.addEventListener("DOMContentLoaded", () => {
     if (typeof PagefindUI === "undefined") {
       const el = document.getElementById("search");
@@ -35,16 +32,13 @@ const heading = menuEntry?.name ?? "Search";
       element: "#search",
       showSubResults: true,
       resetStyles: false,
-      translations: {},
       ranking: { termFrequency: 0.5, pageLength: 0.5 },
-      filters: {},
       pageSize: 10,
     });
   });
 </script>
 
 <style is:global>
-  /* Tone Pagefind UI down to match the site's minimal look. */
   .pagefind-ui {
     --pagefind-ui-primary: var(--color-accent-600);
     --pagefind-ui-text: currentColor;

@@ -57,8 +57,8 @@ const HANDLERS = [
   { match: (u) => /^(\/[a-z][a-z0-9-]*)?\/posts\/$/.test(u), status: "redirect", note: "/posts/ → /archives/" },
   { match: (u) => /^(\/[a-z][a-z0-9-]*)?\/posts\/page\/\d+\/$/.test(u), status: "redirect", note: "section pagination" },
   { match: (u) => /^(\/[a-z][a-z0-9-]*)?\/categories\/$/.test(u), status: "redirect", note: "categories → home" },
-  { match: (u) => /^(\/[a-z][a-z0-9-]*)?\/tags\/[^/]+\/page\/\d+\/$/.test(u), status: "redirect", note: "tag pagination" },
-  { match: (u) => u === "/fr/tags/traitement-dimages/" || u === "/pt/tags/marca-dágua/", status: "redirect", note: "apostrophe slug remap" },
+  { match: (u) => /^\/fr\/tags\/traitement-dimages\//.test(u), status: "redirect", note: "apostrophe slug remap (fr)" },
+  { match: (u) => /^\/pt\/tags\/marca-dágua\//.test(u), status: "redirect", note: "apostrophe slug remap (pt)" },
 ];
 
 function classify(u) {

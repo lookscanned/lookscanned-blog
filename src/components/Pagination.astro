@@ -1,0 +1,44 @@
+---
+import { getLocale } from "../i18n";
+
+interface Props {
+  locale: string;
+  current: number;
+  total: number;
+  /** Path prefix without trailing slash, e.g. "" for home, "/posts" for section. */
+  basePath: string;
+}
+
+const { locale, current, total, basePath } = Astro.props;
+if (total <= 1) return null;
+
+const meta = getLocale(locale);
+const localeRoot = locale === "en" ? "" : `/${locale}`;
+const base = `${localeRoot}${basePath}`;
+
+function url(page: number): string {
+  if (page === 1 && basePath === "") return `${localeRoot || "/"}${localeRoot ? "/" : ""}`;
+  if (page === 1) return `${base}/`;
+  return `${base}/page/${page}/`;
+}
+const prev = current > 1 ? url(current - 1) : null;
+const next = current < total ? url(current + 1) : null;
+---
+
+<nav class="mt-12 flex items-center justify-between border-t border-zinc-200 pt-6 text-sm dark:border-zinc-800">
+  <div class="flex-1">
+    {prev && (
+      <a href={prev} class="text-zinc-600 transition hover:text-accent-600 dark:text-zinc-400 dark:hover:text-accent-500">
+        ← {meta.ui.prev_page}
+      </a>
+    )}
+  </div>
+  <span class="px-4 text-xs text-zinc-500">{current} / {total}</span>
+  <div class="flex-1 text-right">
+    {next && (
+      <a href={next} class="text-zinc-600 transition hover:text-accent-600 dark:text-zinc-400 dark:hover:text-accent-500">
+        {meta.ui.next_page} →
+      </a>
+    )}
+  </div>
+</nav>

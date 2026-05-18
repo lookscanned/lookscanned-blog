@@ -1,0 +1,15 @@
+---
+import CategoriesIndex from "../../components/CategoriesIndex.astro";
+import { LOCALES, DEFAULT_LOCALE } from "../../i18n/locales.config.mjs";
+
+export function getStaticPaths() {
+  return LOCALES.filter((l) => l.code !== DEFAULT_LOCALE).map((l) => ({
+    params: { locale: l.code },
+    props: { locale: l.code },
+  }));
+}
+
+const { locale } = Astro.props;
+---
+
+<CategoriesIndex locale={locale} />

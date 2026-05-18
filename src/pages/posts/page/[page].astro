@@ -1,0 +1,18 @@
+---
+import SectionList from "../../../components/SectionList.astro";
+import { getPostsByLocale } from "../../../lib/posts";
+import { paginateItems, PAGE_SIZE } from "../../../lib/paginate";
+
+export async function getStaticPaths() {
+  const all = await getPostsByLocale("en");
+  const pages = paginateItems(all, PAGE_SIZE);
+  return pages.map((p) => ({
+    params: { page: String(p.page) },
+    props: { page: p.page },
+  }));
+}
+
+const { page } = Astro.props;
+---
+
+<SectionList locale="en" page={page} />

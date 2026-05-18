@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getLocale, localizedPath } from "../i18n";
 import { getPostsByLocale } from "../lib/posts";
+import { formatDate } from "../lib/date";
 
 interface Props {
   locale: string;
@@ -11,11 +12,9 @@ const { locale } = Astro.props;
 const meta = getLocale(locale);
 const posts = await getPostsByLocale(locale);
 
-// Find the menu entry for archives to get the localized title.
 const archiveMenu = meta.data.menu.find((m) => m.url === "archives");
 const archiveTitle = archiveMenu?.name ?? "Archive";
 
-// Group by year, descending.
 const grouped = new Map<number, typeof posts>();
 for (const p of posts) {
   const year = p.entry.data.date.getFullYear();
@@ -27,19 +26,19 @@ const years = [...grouped.keys()].sort((a, b) => b - a);
 ---
 
 <BaseLayout title={`${archiveTitle} · ${meta.data.title}`} description={meta.data.description} locale={locale} pageKey="archives">
-  <main class="mx-auto max-w-2xl px-6 py-12">
-    <h1 class="text-2xl font-medium tracking-tight">{archiveTitle}</h1>
+  <main class="mx-auto max-w-3xl px-6 py-12">
+    <h1 class="text-2xl font-medium tracking-tight text-zinc-950 dark:text-zinc-50">{archiveTitle}</h1>
     <p class="mt-2 text-sm text-zinc-500 dark:text-zinc-400">{posts.length}</p>
     {years.map((year) => (
       <section class="mt-10">
-        <h2 class="text-xl font-medium tracking-tight text-zinc-700 dark:text-zinc-300">{year}</h2>
+        <h2 class="text-xl font-medium tracking-tight text-zinc-800 dark:text-zinc-200">{year}</h2>
         <ul class="mt-3 divide-y divide-zinc-200/70 dark:divide-zinc-800/80">
           {grouped.get(year)!.map((p) => (
             <li class="flex items-baseline gap-4 py-3">
-              <span class="font-mono text-xs text-zinc-500 dark:text-zinc-500">{p.entry.data.date.toISOString().slice(5, 10)}</span>
+              <span class="w-24 shrink-0 text-xs text-zinc-500 dark:text-zinc-500">{formatDate(locale, p.entry.data.date).replace(`${year}`, "").replace(/[,]/g, "").trim()}</span>
               <a
                 href={localizedPath(locale, `posts/${p.slug}`)}
-                class="flex-1 text-sm text-zinc-700 transition hover:text-accent-600 dark:text-zinc-300 dark:hover:text-accent-500"
+                class="flex-1 text-zinc-800 transition hover:text-accent-600 dark:text-zinc-200 dark:hover:text-accent-500"
               >
                 {p.entry.data.title}
               </a>

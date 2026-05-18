@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import PostMeta from "../components/PostMeta.astro";
+import TagList from "../components/TagList.astro";
 import Giscus from "../components/Giscus.astro";
 import { getLocale, localizedPath } from "../i18n";
 import { getPostsByLocale, getTranslations, type PostMeta as PostMetaType } from "../lib/posts";
@@ -14,9 +15,11 @@ const { post, body } = Astro.props;
 const meta = getLocale(post.locale);
 
 const translations = await getTranslations(post.dirSlug);
-const alternates = translations.map((t) => ({ locale: t.locale, slug: t.slug }));
+const alternates = translations.map((t) => ({
+  locale: t.locale,
+  path: `posts/${t.slug}`,
+}));
 
-// Adjacent posts (newer / older) in the same locale.
 const samelocale = await getPostsByLocale(post.locale);
 const idx = samelocale.findIndex((p) => p.dirSlug === post.dirSlug);
 const newer = idx > 0 ? samelocale[idx - 1] : null;
@@ -24,36 +27,76 @@ const older = idx >= 0 && idx < samelocale.length - 1 ? samelocale[idx + 1] : nu
 
 const title = `${post.entry.data.title} · ${meta.data.title}`;
 const description = post.entry.data.description ?? post.entry.data.summary ?? "";
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: post.entry.data.title,
+  description,
+  datePublished: post.entry.data.date.toISOString(),
+  inLanguage: meta.hreflang,
+  mainEntityOfPage: canonicalUrl,
+  url: canonicalUrl,
+  keywords: post.entry.data.tags,
+  publisher: {
+    "@type": "Organization",
+    name: "Look Scanned",
+    url: "https://lookscanned.io",
+  },
+  author: {
+    "@type": "Organization",
+    name: "Look Scanned",
+  },
+};
 ---
 
-<BaseLayout title={title} description={description} locale={post.locale} alternates={alternates}>
-  <article class="mx-auto max-w-2xl px-6 py-12" data-pagefind-body>
+<BaseLayout
+  title={title}
+  description={description}
+  locale={post.locale}
+  alternates={alternates}
+  jsonLd={jsonLd}
+>
+  <article class="mx-auto max-w-3xl px-6 py-12" data-pagefind-body>
     <header class="mb-10">
-      <h1 class="text-3xl font-medium tracking-tight text-balance">
+      <h1 class="text-4xl font-medium leading-tight tracking-tight text-balance text-zinc-950 dark:text-zinc-50">
         {post.entry.data.title}
       </h1>
-      <div class="mt-4">
-        <PostMeta
-          locale={post.locale}
-          date={post.entry.data.date}
-          tags={post.entry.data.tags}
-          body={body}
-        />
+      {post.entry.data.summary && (
+        <p class="mt-4 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
+          {post.entry.data.summary}
+        </p>
+      )}
+      <div class="mt-6">
+        <PostMeta locale={post.locale} date={post.entry.data.date} body={body} />
       </div>
     </header>
-    <div class="prose prose-zinc max-w-none dark:prose-invert
-      prose-headings:font-medium prose-headings:tracking-tight
-      prose-a:text-accent-600 prose-a:no-underline hover:prose-a:underline dark:prose-a:text-accent-500
-      prose-code:rounded prose-code:bg-zinc-100 prose-code:px-1 prose-code:py-0.5 prose-code:font-normal prose-code:text-zinc-900
-      dark:prose-code:bg-zinc-800 dark:prose-code:text-zinc-100
-      prose-code:before:content-none prose-code:after:content-none
-      prose-pre:bg-zinc-950 prose-pre:text-zinc-100 prose-pre:border prose-pre:border-zinc-800
-      prose-img:rounded-md prose-img:border prose-img:border-zinc-200 dark:prose-img:border-zinc-800">
+
+    <div class:list={[
+      "prose prose-lg prose-zinc dark:prose-invert max-w-none",
+      "[--tw-prose-body:var(--color-zinc-800)] dark:[--tw-prose-body:var(--color-zinc-200)]",
+      "[--tw-prose-headings:var(--color-zinc-950)] dark:[--tw-prose-headings:var(--color-zinc-50)]",
+      "[--tw-prose-bold:var(--color-zinc-950)] dark:[--tw-prose-bold:var(--color-zinc-50)]",
+      "prose-headings:font-medium prose-headings:tracking-tight",
+      "prose-a:text-accent-600 prose-a:no-underline hover:prose-a:underline dark:prose-a:text-accent-500",
+      "prose-code:rounded prose-code:bg-zinc-100 prose-code:px-1 prose-code:py-0.5 prose-code:font-normal prose-code:text-zinc-900",
+      "dark:prose-code:bg-zinc-800 dark:prose-code:text-zinc-100",
+      "prose-code:before:content-none prose-code:after:content-none",
+      "prose-pre:bg-zinc-950 prose-pre:text-zinc-100 prose-pre:border prose-pre:border-zinc-800",
+      "prose-img:rounded-md prose-img:border prose-img:border-zinc-200 dark:prose-img:border-zinc-800",
+    ]}>
       <slot />
     </div>
 
+    {post.entry.data.tags.length > 0 && (
+      <section class="mt-12 border-t border-zinc-200 pt-6 dark:border-zinc-800">
+        <TagList locale={post.locale} tags={post.entry.data.tags} />
+      </section>
+    )}
+
     {translations.length > 1 && (
-      <section class="mt-12 border-t border-zinc-200 pt-6 text-sm dark:border-zinc-800">
+      <section class="mt-8 text-sm">
         <p class="text-zinc-500 dark:text-zinc-400">
           <span class="font-medium text-zinc-700 dark:text-zinc-300">{meta.ui.translations}:</span>
           {" "}
@@ -66,7 +109,7 @@ const description = post.entry.data.description ?? post.entry.data.summary ?? ""
                   lang={t.locale}
                   class="text-zinc-600 underline-offset-2 hover:text-zinc-900 hover:underline dark:text-zinc-400 dark:hover:text-zinc-100"
                 >
-                  {(getLocale(t.locale).data.languageName)}
+                  {getLocale(t.locale).data.languageName}
                 </a>
                 {i < arr.length - 1 && <span>, </span>}
               </>

@@ -35,7 +35,7 @@ node scripts/url-parity-check.mjs               # URL parity regression gate
 - Create English first as `src/content/posts/<slug>/index.en.md`.
 - Translate all 31 other languages with the same date and structure.
 - RTL languages (`ar`, `he`, `ur`) use plain markdown — direction comes from `<html dir>` in the layout.
-- Edits to site-wide copy (menus, home blurb, descriptions) belong in the source YAMLs in your hand-maintained location and then re-generated via `node scripts/build-i18n.mjs`. UI strings come from the same generator.
+- Site-wide copy lives in `src/i18n/locales.ts` (per-locale title, description, home blurb, menu); UI strings live in `src/i18n/ui.ts`. Both are hand-edited.
 
 ## Validation Checklist
 - `npm run check` must pass (no type errors).

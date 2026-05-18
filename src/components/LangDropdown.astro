@@ -1,24 +1,15 @@
 ---
-import { listLocales, localizedPath, getLocale } from "../i18n";
+import { listLocales, getLocale } from "../i18n";
 
 interface Props {
   locale: string;
-  /** When set, links go to the same content in each locale (post detail use). */
-  translations?: Array<{ locale: string; slug: string }>;
+  /** Per-locale URL for the equivalent page (computed in BaseLayout). */
+  localeUrls: Record<string, string>;
 }
 
-const { locale, translations } = Astro.props;
+const { locale, localeUrls } = Astro.props;
 const meta = getLocale(locale);
-
 const allLocales = listLocales();
-
-function urlFor(target: string): string {
-  if (translations) {
-    const match = translations.find((t) => t.locale === target);
-    if (match) return localizedPath(target, `posts/${match.slug}`);
-  }
-  return localizedPath(target, "");
-}
 ---
 
 <details class="lang-dropdown relative">
@@ -42,7 +33,7 @@ function urlFor(target: string): string {
   >
     {allLocales.map((l) => (
       <a
-        href={urlFor(l.code)}
+        href={localeUrls[l.code]}
         lang={l.hreflang}
         dir={l.dir}
         class:list={[
@@ -60,7 +51,6 @@ function urlFor(target: string): string {
 </details>
 
 <script>
-  // Close the language dropdown when clicking outside.
   document.addEventListener("click", (event) => {
     document.querySelectorAll<HTMLDetailsElement>("details.lang-dropdown[open]").forEach((d) => {
       if (!d.contains(event.target as Node)) d.open = false;

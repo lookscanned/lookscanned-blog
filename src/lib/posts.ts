@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from "astro:content";
+import { tagSlug } from "./tags";
 
 export type PostEntry = CollectionEntry<"posts">;
 
@@ -55,17 +56,31 @@ export async function getTranslations(dirSlug: string): Promise<PostMeta[]> {
   return all.filter((p) => p.dirSlug === dirSlug);
 }
 
-export async function getAllTagsByLocale(
-  locale: string,
-): Promise<Map<string, PostMeta[]>> {
+export interface TagBucket {
+  /** Display name (first-seen casing in the source data). */
+  name: string;
+  /** URL slug — case-folded and ASCII-punctuation-normalized. */
+  slug: string;
+  posts: PostMeta[];
+}
+
+/**
+ * Group all posts in `locale` by tag, with case-insensitive bucketing
+ * (so `"pdf"` and `"PDF"` collapse to one page at `/tags/pdf/`).
+ */
+export async function getAllTagsByLocale(locale: string): Promise<TagBucket[]> {
   const posts = await getPostsByLocale(locale);
-  const tags = new Map<string, PostMeta[]>();
+  const buckets = new Map<string, TagBucket>();
   for (const post of posts) {
     for (const tag of post.entry.data.tags) {
-      const list = tags.get(tag) ?? [];
-      list.push(post);
-      tags.set(tag, list);
+      const slug = tagSlug(tag);
+      let bucket = buckets.get(slug);
+      if (!bucket) {
+        bucket = { name: tag, slug, posts: [] };
+        buckets.set(slug, bucket);
+      }
+      bucket.posts.push(post);
     }
   }
-  return tags;
+  return [...buckets.values()];
 }

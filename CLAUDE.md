@@ -45,8 +45,8 @@ node scripts/url-parity-check.mjs
 32 languages, English as the default (no `/en/` URL prefix; English lives at `/`).
 
 - **Language catalog**: `src/i18n/locales.config.mjs` (locale code, hreflang, dir, weight)
-- **Per-locale site data** (title, description, home blurb, menu items): `src/i18n/locales.ts` — generated from the source data; do not edit by hand. Regenerate with `node scripts/build-i18n.mjs`.
-- **UI strings** (prev/next, reading time, etc.): `src/i18n/ui.ts` — same generator.
+- **Per-locale site data** (title, description, home blurb, menu items): `src/i18n/locales.ts` — hand-maintained; edit directly to add/update locales.
+- **UI strings** (prev/next, reading time, etc.): `src/i18n/ui.ts` — also hand-maintained.
 - **RTL languages**: `ar`, `he`, `ur` (configured in `src/i18n/locales.config.mjs`).
 
 ### Content Layout
@@ -148,4 +148,4 @@ Pull request titles use the same format.
 2. **Language consistency**: all 32 languages must be synchronized when updating any post.
 3. **Front matter**: YAML, double-quoted strings.
 4. **Components**: prefer adding `.astro` components under `src/components/` instead of inlining markup into pages.
-5. **i18n changes**: edit `src/i18n/locales.config.mjs` for routing-level data; for site copy and UI strings, edit the source YAMLs and re-run `scripts/build-i18n.mjs`.
+5. **i18n changes**: edit `src/i18n/locales.config.mjs` for routing-level data; edit `src/i18n/locales.ts` and `src/i18n/ui.ts` directly for site copy and UI strings.
