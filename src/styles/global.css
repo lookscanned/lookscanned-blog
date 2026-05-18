@@ -5,36 +5,78 @@
 
 @theme {
   /*
-   * Serif: system-only stack. No web font fetch → no FOUT/CLS.
-   * Apple devices land on the SF/New York family via `ui-serif`; Windows
-   * users get Charter (bundled with Office) or Sitka/Cambria; Android and
-   * Chrome OS users get Noto Serif (system default).
-   * The CJK block routes Chinese / Japanese / Traditional Chinese readers
-   * to their OS's native Songti / Mincho / PMingLiU instead of falling
-   * through to a Latin-only serif that would render their text in a
-   * generic sans.
+   * SERIF — system-only, no @font-face, no FOUT/CLS.
+   *
+   * Ordered so that for each script, the most-likely-installed font on
+   * the user's OS appears first. Browser font matching is per-character:
+   * Latin glyphs land on the Latin section, CJK glyphs walk down to the
+   * CJK section, etc. Per-language overrides below promote the matching
+   * CJK family to the front so mixed Latin/CJK in a CJK locale renders
+   * coherently.
    */
   --font-display:
-    ui-serif,
-    Charter, "Iowan Old Style", "Source Serif Pro", "Sitka Text", Cambria,
-    "Noto Serif",
-    "Songti SC", "Songti TC", "Source Han Serif SC", "Noto Serif CJK SC",
-    "Hiragino Mincho ProN", "Yu Mincho", "PMingLiU",
+    /* —— Latin —— */
+    ui-serif,                          /* Apple SF Pro Serif / New York */
+    Charter,                           /* macOS + Windows (with Office) */
+    "Iowan Old Style",                 /* macOS */
+    "Source Serif Pro", "Source Serif 4", /* Linux distros, Adobe */
+    "Sitka Text",                      /* Windows 8.1+ */
+    Cambria,                           /* Windows Vista+ */
+    "Noto Serif",                      /* Android / ChromeOS */
+    /* —— Chinese (Simplified) —— */
+    "Source Han Serif SC", "Source Han Serif CN",
+    "Noto Serif CJK SC", "Noto Serif SC",
+    "Songti SC", STSong,               /* macOS */
+    SimSun, NSimSun, FangSong,         /* Windows */
+    "STSong",
+    /* —— Chinese (Traditional) —— */
+    "Source Han Serif TC", "Source Han Serif TW",
+    "Noto Serif CJK TC", "Noto Serif TC",
+    "Songti TC", "LiSong Pro",         /* macOS */
+    PMingLiU, MingLiU,                 /* Windows */
+    /* —— Japanese —— */
+    "Hiragino Mincho ProN", "Hiragino Mincho Pro",  /* macOS / iOS */
+    "Yu Mincho", "YuMincho",           /* Windows 8+ / macOS */
+    "Source Han Serif", "Source Han Serif JP",
+    "Noto Serif CJK JP", "Noto Serif JP",
+    "MS PMincho", "MS Mincho",         /* legacy Windows */
+    /* —— Korean —— */
+    "Source Han Serif K", "Source Han Serif KR",
+    "Noto Serif KR", "Noto Serif CJK KR",
+    AppleMyungjo,                      /* macOS */
+    Batang, BatangChe,                 /* Windows */
+    /* —— Other scripts —— */
+    "Noto Serif Devanagari",           /* Hindi */
+    "Sanskrit Text",                   /* macOS Hindi */
+    "Noto Serif Bengali",
+    "Noto Serif Thai", Thonburi,       /* Thai */
+    "Noto Naskh Arabic", "Geeza Pro",  /* Arabic */
+    "Noto Serif Hebrew",
+    "Noto Nastaliq Urdu",              /* Urdu (Nastaliq script) */
+    /* —— Universal fallback —— */
     Georgia, "Times New Roman", serif;
   --font-serif: var(--font-display);
 
   --font-sans:
+    /* —— Latin —— */
     system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial,
-    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC",
+    /* —— CJK sans (more common than the serif counterparts) —— */
+    "PingFang SC", "PingFang TC", "PingFang HK",  /* macOS / iOS */
+    "Hiragino Sans GB",                            /* macOS Chinese sans */
+    "Hiragino Kaku Gothic ProN",                   /* macOS Japanese */
+    "Yu Gothic", "Meiryo",                         /* Windows Japanese */
+    "Microsoft YaHei", "Microsoft YaHei UI",       /* Windows Simplified */
+    "Microsoft JhengHei", "Microsoft JhengHei UI", /* Windows Traditional */
+    "Apple SD Gothic Neo", "Malgun Gothic",        /* Korean */
+    "Source Han Sans", "Noto Sans CJK SC", "Noto Sans SC",
     sans-serif;
 
   --font-mono:
     ui-monospace, SFMono-Regular, "SF Mono", Menlo,
     Consolas, "Liberation Mono", monospace;
 
-  /* Oxblood accent ramp — same OKLCH values, full 50–950 so utilities
-     like text-accent-600 / dark:text-accent-400 resolve naturally. */
+  /* Oxblood accent — standard 50–950 ramp. */
   --color-accent-50:  oklch(0.97 0.018 25);
   --color-accent-100: oklch(0.93 0.040 25);
   --color-accent-200: oklch(0.86 0.070 25);
@@ -94,6 +136,52 @@
   .dark :where(a, button, summary, input, select, textarea, [tabindex]):focus-visible {
     outline-color: var(--color-accent-400);
   }
+}
+
+/*
+ * Per-language SERIF promotion.
+ *
+ * `:lang(zh)` matches `<html lang="zh">`, `lang="zh-CN"`, `lang="zh-Hans-CN"`, etc.
+ * by BCP-47 subtag matching. Source order matters: the more specific
+ * Traditional/HK rule comes after `:lang(zh)` so `<html lang="zh-TW">`
+ * (which matches both) takes the Traditional stack via cascade.
+ *
+ * Only override `--font-serif` here — the Latin tail in each stack lets
+ * inline English/punctuation still pick a Latin glyph correctly.
+ */
+:lang(zh) {
+  --font-serif:
+    "Source Han Serif SC", "Source Han Serif CN",
+    "Noto Serif CJK SC", "Noto Serif SC",
+    "Songti SC", STSong, SimSun, NSimSun, FangSong,
+    ui-serif, Charter, "Source Serif Pro", Cambria, Georgia,
+    serif;
+}
+:lang(zh-Hant), :lang(zh-TW), :lang(zh-HK), :lang(zh-MO) {
+  --font-serif:
+    "Source Han Serif TC", "Source Han Serif TW",
+    "Noto Serif CJK TC", "Noto Serif TC",
+    "Songti TC", "LiSong Pro", PMingLiU, MingLiU,
+    ui-serif, Charter, "Source Serif Pro", Cambria, Georgia,
+    serif;
+}
+:lang(ja) {
+  --font-serif:
+    "Hiragino Mincho ProN", "Hiragino Mincho Pro",
+    "Yu Mincho", "YuMincho",
+    "Source Han Serif", "Source Han Serif JP",
+    "Noto Serif CJK JP", "Noto Serif JP",
+    "MS PMincho", "MS Mincho",
+    ui-serif, Charter, "Source Serif Pro", Cambria, Georgia,
+    serif;
+}
+:lang(ko) {
+  --font-serif:
+    "Source Han Serif K", "Source Han Serif KR",
+    "Noto Serif KR", "Noto Serif CJK KR",
+    AppleMyungjo, Batang, BatangChe,
+    ui-serif, Charter, "Source Serif Pro", Cambria, Georgia,
+    serif;
 }
 
 :where([dir="rtl"]) .prose {
