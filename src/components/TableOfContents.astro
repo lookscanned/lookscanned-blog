@@ -47,11 +47,23 @@ const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
 
     if (targets.length > 0) {
       let activeId: string | null = null;
+      const motionOk = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
       const setActive = (id: string) => {
         if (id === activeId) return;
         activeId = id;
         links.forEach((link) => {
-          link.toggleAttribute("data-active", link.dataset.tocLink === id);
+          const active = link.dataset.tocLink === id;
+          link.toggleAttribute("data-active", active);
+          if (active) {
+            // Keep the active link visible inside a tall TOC. `block: nearest`
+            // scrolls the nearest scrollable ancestor (the sidebar) without
+            // pulling the main document.
+            link.scrollIntoView({
+              block: "nearest",
+              behavior: motionOk ? "smooth" : "auto",
+            });
+          }
         });
       };
       const observer = new IntersectionObserver(
