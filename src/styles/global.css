@@ -42,12 +42,54 @@
     -webkit-text-size-adjust: 100%;
     /* Bump the root from the 16px browser default to 17px so the whole
        design — Tailwind's rem-based text/spacing/width utilities included
-       — scales up ~6% in lockstep. System-ui (PingFang SC / Microsoft
-       YaHei / Segoe UI) has a lighter optical weight than Noto Sans SC at
-       the same pixel size, and this one knob compensates for it without
-       making every component carry its own custom size class. Browser
-       zoom still works on top — we're only shifting the base. */
+       — scales up ~6% in lockstep. */
     font-size: 17px;
+    /* Reserve scrollbar gutter so page width stays constant regardless
+       of vertical overflow — no CLS when async content (images, lazy
+       components) pushes the page past one viewport. Combined with the
+       thin-width styling below the reserved strip is ~8px. */
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  /* Page scrollbar fades in when the pointer enters the viewport (or any
+     element inside receives focus). `opacity` on the thumb pseudo-element
+     transitions reliably across WebKit; transitioning `background-color`
+     here works in spec but is shaky in practice on some Chromium builds —
+     opacity gives a consistent fade. */
+  html::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  html::-webkit-scrollbar-track,
+  html::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  html::-webkit-scrollbar-thumb {
+    background-color: var(--color-zinc-300);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    border-radius: 9999px;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  html.dark::-webkit-scrollbar-thumb {
+    background-color: var(--color-zinc-700);
+  }
+  html:hover::-webkit-scrollbar-thumb,
+  html:focus-within::-webkit-scrollbar-thumb {
+    opacity: 1;
+  }
+  /* Firefox: scrollbar-color can't be transitioned, but flipping the
+     color on hover at least makes the thumb visible only while the user
+     is interacting with the page. */
+  html:hover,
+  html:focus-within {
+    scrollbar-color: var(--color-zinc-300) transparent;
+  }
+  html.dark:hover,
+  html.dark:focus-within {
+    scrollbar-color: var(--color-zinc-700) transparent;
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
@@ -111,19 +153,6 @@
   text-align: start;
 }
 
-/*
- * Theme-change transition guard. ThemeToggle sets the
- * `data-theme-changing` attribute on <html> for one frame around the
- * `.dark` class flip; that suppresses every property transition during
- * the swap so colors snap rather than ghost-animate the next time a
- * dropdown re-opens.
- */
-html[data-theme-changing] *,
-html[data-theme-changing] *::before,
-html[data-theme-changing] *::after {
-  transition: none !important;
-  animation-duration: 0s !important;
-}
 
 /*
  * Stealth scrollbar — track invisible at rest, thumb fades in on hover.
@@ -175,19 +204,22 @@ html[data-theme-changing] *::after {
 .scroll-stealth::-webkit-scrollbar-thumb {
   -webkit-appearance: none;
   appearance: none;
-  background-color: transparent;
+  background-color: var(--color-zinc-300);
   border: 2px solid transparent;
   background-clip: padding-box;
   border-radius: 9999px;
-  transition: background-color 0.3s ease;
+  /* Opacity transitions reliably on scrollbar pseudo-elements where
+     background-color does not. Thumb is fully painted but invisible at
+     rest, then fades in on container hover/focus-within. */
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.dark .scroll-stealth::-webkit-scrollbar-thumb {
+  background-color: var(--color-zinc-700);
 }
 .scroll-stealth:hover::-webkit-scrollbar-thumb,
 .scroll-stealth:focus-within::-webkit-scrollbar-thumb {
-  background-color: var(--color-zinc-300);
-}
-.dark .scroll-stealth:hover::-webkit-scrollbar-thumb,
-.dark .scroll-stealth:focus-within::-webkit-scrollbar-thumb {
-  background-color: var(--color-zinc-700);
+  opacity: 1;
 }
 
 /*

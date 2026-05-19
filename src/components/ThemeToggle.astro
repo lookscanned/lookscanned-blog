@@ -13,13 +13,6 @@ import { Icon } from "astro-icon/components";
  *   - "system" = absence of `theme` key in localStorage (default)
  *   - "light" / "dark" = explicit override
  *
- * On every state change we add a `data-theme-changing` attribute on
- * <html> for one frame so global CSS can suppress transitions during
- * the swap. Without it, every `transition`-class element fades from
- * its old-theme color to its new-theme color the next time it gets
- * painted, which produces a jarring "ghost animation" when the menu
- * is re-opened.
- *
  * Dispatches a `themechange` CustomEvent (kept as a hook for any
  * future embedded surface that needs to mirror the resolved theme).
  */
@@ -91,26 +84,14 @@ const labels = {
 
     const currentMode = () => localStorage.getItem("theme") ?? "system";
 
-    const apply = (skipTransitionFlash = false) => {
+    const apply = () => {
       const mode = currentMode();
       const dark = mode === "dark" || (mode === "system" && media.matches);
-      if (skipTransitionFlash) {
-        // Mark the document so global CSS can disable transitions during
-        // the class flip. Removed on the next frame after styles apply.
-        document.documentElement.setAttribute("data-theme-changing", "");
-      }
       document.documentElement.classList.toggle("dark", dark);
       root.setAttribute("data-mode", mode);
       options.forEach((opt) => {
         opt.setAttribute("aria-current", opt.dataset.mode === mode ? "true" : "false");
       });
-      if (skipTransitionFlash) {
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            document.documentElement.removeAttribute("data-theme-changing");
-          });
-        });
-      }
       document.dispatchEvent(
         new CustomEvent("themechange", { detail: { dark, mode } }),
       );
@@ -121,13 +102,13 @@ const labels = {
         const next = opt.dataset.mode;
         if (next === "system") localStorage.removeItem("theme");
         else if (next) localStorage.setItem("theme", next);
-        apply(true);
+        apply();
         root.open = false;
       });
     });
 
     media.addEventListener("change", () => {
-      if (currentMode() === "system") apply(true);
+      if (currentMode() === "system") apply();
     });
 
     document.addEventListener("click", (event) => {
