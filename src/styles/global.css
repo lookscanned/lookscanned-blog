@@ -112,6 +112,20 @@
 }
 
 /*
+ * Theme-change transition guard. ThemeToggle sets the
+ * `data-theme-changing` attribute on <html> for one frame around the
+ * `.dark` class flip; that suppresses every property transition during
+ * the swap so colors snap rather than ghost-animate the next time a
+ * dropdown re-opens.
+ */
+html[data-theme-changing] *,
+html[data-theme-changing] *::before,
+html[data-theme-changing] *::after {
+  transition: none !important;
+  animation-duration: 0s !important;
+}
+
+/*
  * Stealth scrollbar — track invisible at rest, thumb fades in on hover.
  *
  * Why the appearance / border-clip dance:

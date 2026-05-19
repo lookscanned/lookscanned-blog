@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon/components";
 import { getLocale, localizedPath } from "../i18n";
 import LangDropdown from "./LangDropdown.astro";
 import ThemeToggle from "./ThemeToggle.astro";
@@ -25,9 +26,6 @@ function resolveUrl(url: string): string {
   return localizedPath(locale, url);
 }
 
-// Partition the menu into the three roles the navbar uses. Archive / Tags
-// drop to the footer; Search becomes an icon; the external item becomes
-// the "Try Look Scanned" CTA.
 const archivedInFooter = new Set(["archives", "tags"]);
 const searchEntry = sortedMenu.find((m) => m.url === "search");
 const externalCta = sortedMenu.find((m) => isExternal(m.url));
@@ -88,20 +86,7 @@ const searchActive = currentPath === searchUrl;
         title={`${searchLabel} (⌘K)`}
         aria-current={searchActive ? "page" : undefined}
       >
-        <svg
-          class="h-[18px] w-[18px]"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
+        <Icon name="lucide:search" class="h-[18px] w-[18px]" aria-hidden="true" />
       </a>
       <LangDropdown locale={locale} localeUrls={localeUrls} />
       <ThemeToggle />
@@ -110,23 +95,14 @@ const searchActive = currentPath === searchUrl;
           href={externalCta.url}
           target="_blank"
           rel="noopener noreferrer"
-          class="group ml-1 inline-flex h-8 items-center justify-center rounded-md bg-zinc-900 px-3 text-sm font-medium text-white shadow-xs transition hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300 sm:ml-2"
+          class="group ml-1 inline-flex h-8 items-center justify-center gap-1.5 rounded-md bg-zinc-900 px-3 text-sm font-medium text-white shadow-xs transition hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300 sm:ml-2"
         >
           {meta.ui.try_cta}
-          <svg
-            class="ml-1.5 h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+          <Icon
+            name="lucide:arrow-right"
+            class="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5"
             aria-hidden="true"
-          >
-            <path d="M5 12h14"></path>
-            <path d="m12 5 7 7-7 7"></path>
-          </svg>
+          />
         </a>
       )}
     </div>

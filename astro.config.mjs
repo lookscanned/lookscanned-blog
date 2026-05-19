@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
+import icon from "astro-icon";
 
 import { LOCALES, DEFAULT_LOCALE } from "./src/i18n/locales.config.mjs";
 
@@ -32,6 +33,19 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false, redirectToDefaultLocale: false },
   },
   integrations: [
+    icon({
+      // Only pull the iconify subsets we actually use; keeps the
+      // build cache lean.
+      iconDir: undefined,
+      include: {
+        lucide: [
+          "search", "arrow-right", "arrow-up-right",
+          "sun", "moon", "sun-moon",
+          "x", "check", "languages",
+          "menu",
+        ],
+      },
+    }),
     sitemap({
       i18n: {
         defaultLocale: DEFAULT_LOCALE,

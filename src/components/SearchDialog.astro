@@ -1,36 +1,33 @@
 ---
-/*
- * Global ⌘K / Ctrl+K search dialog. Mounts once via BaseLayout.
- *
- * - The native `<dialog>` element handles modal semantics (backdrop,
- *   focus trap, ESC to close) — no JS framework needed.
- * - Pagefind UI is loaded lazily on first open. ~50KB JS + CSS only
- *   download when a visitor actually reaches for search.
- * - The triggers are any element with `data-search-trigger`. Headers
- *   keep their anchor + href so the same control still navigates to
- *   `/search/` when JS is unavailable (progressive enhancement).
- * - `data-search-trigger` triggers don't intercept new-tab / cmd-click
- *   navigations — only plain left-clicks are converted to dialog opens.
- */
+import { Icon } from "astro-icon/components";
+import { getLocale } from "../i18n";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const meta = getLocale(locale);
+// Pull the search label from the per-locale menu so the modal header
+// reads "搜索" / "搜尋" / "البحث" / etc. natively.
+const searchLabel =
+  meta.data.menu.find((m) => m.url === "search")?.name ?? "Search";
 ---
 
 <dialog
   id="search-dialog"
-  aria-label="Search"
+  aria-label={searchLabel}
   class="m-0 w-full max-w-2xl rounded-xl border border-zinc-200 bg-white p-0 text-zinc-900 shadow-2xl backdrop:bg-zinc-900/50 backdrop:backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-100 sm:mx-auto sm:my-[8vh]"
 >
   <div class="flex items-center justify-between border-b border-zinc-200/60 px-4 py-3 dark:border-zinc-800/60">
-    <span class="text-xs uppercase tracking-[0.18em] text-zinc-400 dark:text-zinc-600">Search</span>
+    <span class="text-xs uppercase tracking-[0.18em] text-zinc-400 dark:text-zinc-600">{searchLabel}</span>
     <button
       id="search-dialog-close"
       type="button"
       class="flex h-7 w-7 items-center justify-center rounded text-zinc-500 transition hover:bg-zinc-100 hover:text-zinc-900 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
-      aria-label="Close search"
+      aria-label="Close"
     >
-      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
+      <Icon name="lucide:x" class="h-4 w-4" aria-hidden="true" />
     </button>
   </div>
   <div
@@ -120,10 +117,6 @@
 
     const close = () => dialog.close();
 
-    // Trigger from any element marked data-search-trigger. We only
-    // intercept the plain left-click — Cmd/Ctrl/Shift/middle-click stay
-    // as navigations so power users can still open `/search/` in a new
-    // tab from the search icon.
     document.addEventListener("click", (event) => {
       const t = event.target;
       if (!(t instanceof Element)) return;
@@ -141,8 +134,6 @@
 
     closeBtn?.addEventListener("click", close);
 
-    // Backdrop click closes — the native dialog only fires click on the
-    // dialog element itself when the click hits the backdrop area.
     dialog.addEventListener("click", (event) => {
       if (event.target === dialog) close();
     });
