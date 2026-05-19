@@ -108,15 +108,19 @@ for (const l of allLocales) {
     <slot name="head" />
     <SpeculationRules />
     <script is:inline>
+      // Pre-paint theme apply. Three modes (matching ThemeToggle):
+      //   stored "dark"  → force dark
+      //   stored "light" → force light
+      //   anything else (incl. null / "system") → follow OS preference
+      // Must run before paint to prevent FOUC; kept inline for that reason.
       (() => {
         try {
           const stored = localStorage.getItem("theme");
           const prefers = window.matchMedia(
             "(prefers-color-scheme: dark)",
           ).matches;
-          if (stored === "dark" || (!stored && prefers)) {
-            document.documentElement.classList.add("dark");
-          }
+          const dark = stored === "dark" || (stored !== "light" && prefers);
+          if (dark) document.documentElement.classList.add("dark");
         } catch (_) {}
       })();
     </script>

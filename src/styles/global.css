@@ -5,29 +5,14 @@
 
 @theme {
   /*
-   * System-only sans. Latin section first; CJK sans fonts listed
-   * explicitly so Chinese / Japanese / Korean characters land on the
-   * native sans instead of the browser's generic sans-serif fallback.
-   * No web font fetch → no FOUT/CLS.
+   * Pure system stack. `system-ui` resolves to the host OS UI font (SF
+   * Pro on Apple, Segoe UI on Windows, Roboto on Android, distro
+   * default on Linux). For CJK glyphs not present in the Latin UI font,
+   * modern browsers fall back to the OS-installed CJK sans automatically
+   * — no need to enumerate PingFang / Microsoft YaHei / etc. inline.
    */
-  --font-sans:
-    /* —— Latin —— */
-    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial,
-    /* —— CJK —— */
-    "PingFang SC", "PingFang TC", "PingFang HK",  /* macOS Chinese */
-    "Hiragino Sans GB",                            /* macOS Chinese (older) */
-    "Hiragino Kaku Gothic ProN",                   /* macOS Japanese */
-    "Yu Gothic", "Meiryo",                         /* Windows Japanese */
-    "Microsoft YaHei", "Microsoft YaHei UI",       /* Windows Simplified */
-    "Microsoft JhengHei", "Microsoft JhengHei UI", /* Windows Traditional */
-    "Apple SD Gothic Neo", "Malgun Gothic",        /* Korean */
-    "Source Han Sans", "Noto Sans CJK SC", "Noto Sans SC",
-    sans-serif;
-
-  --font-mono:
-    ui-monospace, SFMono-Regular, "SF Mono", Menlo,
-    Consolas, "Liberation Mono", monospace;
+  --font-sans: system-ui, sans-serif;
+  --font-mono: ui-monospace, monospace;
 
   /*
    * Accent — a refined ink-blue, hue 252 (between true blue and indigo,
