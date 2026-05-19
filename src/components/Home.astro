@@ -25,11 +25,11 @@ const title = page > 1
 <BaseLayout title={title} description={meta.data.description} locale={locale}>
   <main class="mx-auto max-w-5xl px-6">
     {page === 1 && (
-      <section class="pt-12 pb-10 sm:pt-16">
-        <h1 class="text-3xl font-medium leading-tight tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-zinc-50">
+      <section class="pt-16 pb-12 sm:pt-24 sm:pb-16">
+        <h1 class="text-4xl font-medium leading-[1.1] tracking-tight text-balance text-zinc-900 sm:text-5xl dark:text-zinc-50">
           {meta.data.homeTitle}
         </h1>
-        <p class="mt-5 max-w-xl text-[15px] leading-relaxed text-zinc-600 dark:text-zinc-400">
+        <p class="mt-6 max-w-2xl text-lg leading-relaxed text-pretty text-zinc-600 dark:text-zinc-400 sm:text-xl">
           {meta.data.description}
         </p>
       </section>
