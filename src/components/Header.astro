@@ -45,7 +45,7 @@ const searchActive = currentPath === searchUrl;
   <nav class="mx-auto flex h-16 max-w-5xl items-center justify-between gap-4 px-6">
     <a
       href={homeUrl}
-      class="text-base font-medium tracking-tight text-zinc-900 underline-offset-[3px] transition hover:underline dark:text-zinc-50"
+      class="text-base font-semibold tracking-tight text-zinc-900 underline-offset-[3px] transition hover:underline dark:text-zinc-50 sm:text-lg"
       aria-label={meta.data.title}
     >
       {meta.data.title}
@@ -111,7 +111,7 @@ const searchActive = currentPath === searchUrl;
           rel="noopener noreferrer"
           class="ml-1 inline-flex h-8 items-center justify-center rounded-md bg-zinc-900 px-3 text-sm font-medium text-white shadow-xs transition hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300 sm:ml-2"
         >
-          Try {externalCta.name}
+          {meta.ui.try_cta}
         </a>
       )}
     </div>

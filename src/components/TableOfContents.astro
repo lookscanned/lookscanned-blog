@@ -14,21 +14,27 @@ interface Props {
 
 const { headings, locale } = Astro.props;
 const meta = getLocale(locale);
-// Skip the page's H1; surface H2/H3 only — deeper nesting tends to
-// clutter the sidebar without aiding navigation.
+// Skip the page's H1; surface H2 / H3 only — deeper nesting tends to clutter.
 const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
 ---
 
 {items.length > 0 && (
-  <nav aria-label={meta.ui.toc} class="text-sm">
-    <p class="mb-3 font-medium text-zinc-900 dark:text-zinc-100">{meta.ui.toc}</p>
-    <ul class="space-y-2 border-l border-zinc-200 dark:border-zinc-800">
+  <nav
+    aria-label={meta.ui.toc}
+    class="flex max-h-[calc(100vh-7rem)] flex-col text-sm"
+  >
+    <p class="mb-3 shrink-0 font-medium text-zinc-900 dark:text-zinc-100">
+      {meta.ui.toc}
+    </p>
+    <ul
+      class="scroll-stealth min-h-0 flex-1 space-y-2 overflow-y-auto border-l border-zinc-200 dark:border-zinc-800"
+    >
       {items.map((h) => (
         <li class={h.depth === 3 ? "pl-8" : "pl-4"}>
           <a
             href={`#${h.slug}`}
             data-toc-link={h.slug}
-            class="block text-zinc-500 transition hover:text-zinc-900 data-[active]:font-medium data-[active]:text-zinc-900 dark:text-zinc-500 dark:hover:text-zinc-100 dark:data-[active]:text-zinc-100"
+            class="block py-0.5 text-zinc-500 transition data-[active]:font-medium data-[active]:text-zinc-900 dark:text-zinc-500 dark:data-[active]:text-zinc-100"
           >
             {h.text}
           </a>
@@ -56,9 +62,9 @@ const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
           const active = link.dataset.tocLink === id;
           link.toggleAttribute("data-active", active);
           if (active) {
-            // Keep the active link visible inside a tall TOC. `block: nearest`
-            // scrolls the nearest scrollable ancestor (the sidebar) without
-            // pulling the main document.
+            // `block: nearest` scrolls the nearest scrollable ancestor — the
+            // <ul> with overflow-y-auto — keeping the active link visible
+            // without pulling the main document.
             link.scrollIntoView({
               block: "nearest",
               behavior: motionOk ? "smooth" : "auto",
@@ -68,9 +74,6 @@ const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
       };
       const observer = new IntersectionObserver(
         (entries) => {
-          // Multiple headings can share the activation band at boundaries;
-          // pick the topmost intersecting one deterministically rather than
-          // letting IO entry order decide.
           const candidates = entries
             .filter((e) => e.isIntersecting)
             .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);

@@ -126,6 +126,49 @@
   text-align: start;
 }
 
+/*
+ * Stealth scrollbar — track stays invisible at rest, thumb fades in on
+ * hover. Use on internal scrollers (TOC sidebar, LangDropdown menu)
+ * where the scrollbar shouldn't claim layout space or visual weight.
+ *
+ * Cross-browser: Firefox uses the standard `scrollbar-width` /
+ * `scrollbar-color` properties; Chromium / Safari uses the WebKit
+ * pseudo-elements. Both branches are present.
+ */
+.scroll-stealth {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.2s ease;
+}
+.scroll-stealth:hover,
+.scroll-stealth:focus-within {
+  scrollbar-color: var(--color-zinc-300) transparent;
+}
+.dark .scroll-stealth:hover,
+.dark .scroll-stealth:focus-within {
+  scrollbar-color: var(--color-zinc-700) transparent;
+}
+.scroll-stealth::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scroll-stealth::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-stealth::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+}
+.scroll-stealth:hover::-webkit-scrollbar-thumb,
+.scroll-stealth:focus-within::-webkit-scrollbar-thumb {
+  background-color: var(--color-zinc-300);
+}
+.dark .scroll-stealth:hover::-webkit-scrollbar-thumb,
+.dark .scroll-stealth:focus-within::-webkit-scrollbar-thumb {
+  background-color: var(--color-zinc-700);
+}
+
 /* Shiki dual-theme code blocks */
 html.dark .astro-code,
 html.dark .astro-code span {
