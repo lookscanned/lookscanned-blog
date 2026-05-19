@@ -5,6 +5,7 @@ interface Props {
   locale: string;
   current: number;
   total: number;
+  /** Path prefix without trailing slash, e.g. "" for home, "/posts" for section. */
   basePath: string;
 }
 
@@ -27,19 +28,33 @@ const prev = current > 1 ? url(current - 1) : null;
 const next = current < total ? url(current + 1) : null;
 ---
 
-<nav class="mt-16 grid grid-cols-2 gap-6 border-t border-zinc-200 pt-6 text-sm dark:border-zinc-800">
-  <div>
-    {prev && (
-      <a href={prev} class="text-zinc-600 transition hover:text-accent-600 dark:text-zinc-400 dark:hover:text-accent-400">
-        ← {meta.ui.prev_page}
-      </a>
-    )}
-  </div>
-  <div class="text-right">
-    {next && (
-      <a href={next} class="text-zinc-600 transition hover:text-accent-600 dark:text-zinc-400 dark:hover:text-accent-400">
-        {meta.ui.next_page} →
-      </a>
-    )}
-  </div>
+<nav
+  class="mt-16 flex items-center justify-between border-t border-zinc-200 pt-6 text-sm dark:border-zinc-800"
+  aria-label="Pagination"
+>
+  {prev ? (
+    <a
+      href={prev}
+      rel="prev"
+      class="text-zinc-600 transition hover:text-accent-600 dark:text-zinc-400 dark:hover:text-accent-400"
+    >
+      ← {meta.ui.prev_page}
+    </a>
+  ) : (
+    <span class="text-zinc-300 dark:text-zinc-700">← {meta.ui.prev_page}</span>
+  )}
+  <span class="tabular-nums text-zinc-500 dark:text-zinc-400">
+    {current} / {total}
+  </span>
+  {next ? (
+    <a
+      href={next}
+      rel="next"
+      class="text-zinc-600 transition hover:text-accent-600 dark:text-zinc-400 dark:hover:text-accent-400"
+    >
+      {meta.ui.next_page} →
+    </a>
+  ) : (
+    <span class="text-zinc-300 dark:text-zinc-700">{meta.ui.next_page} →</span>
+  )}
 </nav>
