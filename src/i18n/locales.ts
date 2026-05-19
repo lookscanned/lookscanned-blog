@@ -22,7 +22,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "en",
     "languageName": "English",
     "title": "Look Scanned Blog",
-    "description": "The official Look Scanned blog - sharing our journey in web development, PDF processing techniques, and building privacy-first tools. Get technical insights, development updates, and learn how we're making document scanning effects accessible to everyone.",
+    "description": "Notes on web development, PDF processing, and privacy-first tools — from the team behind Look Scanned.",
     "homeTitle": "Look Scanned Blog",
     "homeContent": "👋 Welcome to the Look Scanned Blog!\n- 📚 [**Look Scanned**](https://lookscanned.io) is a lightweight, browser-based application that simulates scanned PDF effects. It's designed with privacy in mind, allowing developers, designers, and anyone else to add authentic scanning effects to PDFs without the need for physical hardware.",
     "menu": [
@@ -52,7 +52,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "zh",
     "languageName": "简体中文",
     "title": "Look Scanned 博客",
-    "description": "Look Scanned 官方博客 - 分享我们在网页开发、PDF 处理技术和构建隐私优先工具方面的历程。获取技术见解、开发动态，了解我们如何让文档扫描效果触手可及。",
+    "description": "网页开发、PDF 处理、隐私优先工具——来自 Look Scanned 团队的随手记。",
     "homeTitle": "Look Scanned 博客",
     "homeContent": "👋 欢迎来到 Look Scanned 博客！\n- 📚 [**Look Scanned**](https://lookscanned.io) 是一个轻量级的基于浏览器的应用程序，可以模拟扫描PDF效果。它注重隐私保护，让开发者、设计师和所有用户无需物理硬件即可为PDF添加真实的扫描效果。",
     "menu": [
@@ -82,7 +82,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "zh-tw",
     "languageName": "繁體中文",
     "title": "Look Scanned 部落格",
-    "description": "Look Scanned 官方部落格 - 分享我們在網頁開發、PDF 處理技術和打造重視隱私工具的歷程。獲取技術見解、開發動態，了解我們如何讓文件掃描效果觸手可及。",
+    "description": "網頁開發、PDF 處理、重視隱私的工具——來自 Look Scanned 團隊的隨手記。",
     "homeTitle": "Look Scanned 部落格",
     "homeContent": "👋 歡迎來到 Look Scanned 部落格！\n- 📚 [**Look Scanned**](https://lookscanned.io) 是一個輕量級的網頁應用程式，可以模擬掃描PDF效果。它注重隱私保護，讓開發者、設計師和所有使用者無需實體硬體即可為PDF添加真實的掃描效果。",
     "menu": [
@@ -112,7 +112,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "es",
     "languageName": "Español",
     "title": "Blog de Look Scanned",
-    "description": "El blog oficial de Look Scanned - Compartimos nuestra experiencia en desarrollo web, técnicas de procesamiento PDF y creación de herramientas centradas en la privacidad. Obtén información técnica, actualizaciones de desarrollo y descubre cómo hacemos que los efectos de escaneo sean accesibles para todos.",
+    "description": "Notas sobre desarrollo web, procesamiento de PDF y herramientas que respetan la privacidad — del equipo de Look Scanned.",
     "homeTitle": "Blog de Look Scanned",
     "homeContent": "👋 ¡Bienvenido al Blog de Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) es una aplicación ligera basada en navegador que simula efectos de PDF escaneado. Está diseñada pensando en la privacidad, permitiendo a desarrolladores, diseñadores y cualquier usuario añadir efectos de escaneo auténticos a PDFs sin necesidad de hardware físico.",
     "menu": [
@@ -142,7 +142,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "hi",
     "languageName": "हिन्दी",
     "title": "Look Scanned ब्लॉग",
-    "description": "Look Scanned का आधिकारिक ब्लॉग - वेब विकास, PDF प्रसंस्करण तकनीकों और गोपनीयता-केंद्रित टूल्स के निर्माण में हमारी यात्रा को साझा करते हुए। तकनीकी अंतर्दृष्टि, विकास अपडेट प्राप्त करें और जानें कि हम स्कैनिंग प्रभावों को सभी के लिए कैसे सुलभ बना रहे हैं।",
+    "description": "वेब डेवलपमेंट, PDF प्रोसेसिंग और प्राइवेसी-फर्स्ट टूल्स पर Look Scanned टीम के नोट्स।",
     "homeTitle": "Look Scanned ब्लॉग",
     "homeContent": "👋 Look Scanned ब्लॉग में आपका स्वागत है!\n- 📚 [**Look Scanned**](https://lookscanned.io) एक हल्का, ब्राउज़र-आधारित एप्लिकेशन है जो स्कैन किए गए PDF प्रभावों का अनुकरण करता है। यह गोपनीयता को ध्यान में रखकर डिज़ाइन किया गया है, जो डेवलपर्स, डिज़ाइनर्स और अन्य सभी को बिना किसी भौतिक हार्डवेयर के PDF में प्रामाणिक स्कैनिंग प्रभाव जोड़ने की सुविधा देता है।",
     "menu": [
@@ -172,7 +172,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "ar",
     "languageName": "العربية",
     "title": "مدونة Look Scanned",
-    "description": "المدونة الرسمية لـ Look Scanned - نشارك رحلتنا في تطوير الويب وتقنيات معالجة PDF وبناء أدوات تركز على الخصوصية. احصل على رؤى تقنية وتحديثات التطوير وتعرف على كيفية جعلنا تأثيرات المسح الضوئي متاحة للجميع.",
+    "description": "ملاحظات حول تطوير الويب ومعالجة PDF والأدوات التي تحترم الخصوصية — من فريق Look Scanned.",
     "homeTitle": "مدونة Look Scanned",
     "homeContent": "👋 مرحباً بكم في مدونة Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) هو تطبيق خفيف يعمل على المتصفح ويحاكي تأثيرات مسح PDF الضوئي. تم تصميمه مع مراعاة الخصوصية، مما يتيح للمطورين والمصممين وأي شخص آخر إضافة تأثيرات مسح ضوئي حقيقية إلى ملفات PDF دون الحاجة إلى أجهزة فعلية.",
     "menu": [
@@ -202,7 +202,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "fr",
     "languageName": "Français",
     "title": "Blog Look Scanned",
-    "description": "Le blog officiel de Look Scanned - Nous partageons notre parcours dans le développement web, les techniques de traitement PDF et la création d'outils axés sur la confidentialité. Découvrez nos perspectives techniques, nos mises à jour de développement et apprenez comment nous rendons les effets de numérisation accessibles à tous.",
+    "description": "Notes sur le développement web, le traitement de PDF et les outils respectueux de la vie privée — par l'équipe Look Scanned.",
     "homeTitle": "Blog Look Scanned",
     "homeContent": "👋 Bienvenue sur le Blog Look Scanned !\n- 📚 [**Look Scanned**](https://lookscanned.io) est une application légère basée sur navigateur qui simule des effets de PDF numérisé. Conçue dans le respect de la confidentialité, elle permet aux développeurs, designers et à tous les utilisateurs d'ajouter des effets de numérisation authentiques aux PDF sans matériel physique.",
     "menu": [
@@ -232,7 +232,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "pt",
     "languageName": "Português",
     "title": "Blog do Look Scanned",
-    "description": "O blog oficial do Look Scanned - Compartilhamos nossa jornada no desenvolvimento web, técnicas de processamento de PDF e construção de ferramentas focadas em privacidade. Obtenha insights técnicos, atualizações de desenvolvimento e saiba como tornamos os efeitos de digitalização acessíveis a todos.",
+    "description": "Notas sobre desenvolvimento web, processamento de PDF e ferramentas com foco em privacidade — da equipe do Look Scanned.",
     "homeTitle": "Blog do Look Scanned",
     "homeContent": "👋 Bem-vindo ao Blog do Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) é uma aplicação leve baseada em navegador que simula efeitos de PDF digitalizado. Foi projetada com foco na privacidade, permitindo que desenvolvedores, designers e qualquer pessoa adicione efeitos autênticos de digitalização a PDFs sem necessidade de hardware físico.",
     "menu": [
@@ -262,7 +262,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "ja",
     "languageName": "日本語",
     "title": "Look Scanned ブログ",
-    "description": "Look Scanned 公式ブログ - Web開発、PDF処理技術、プライバシー重視のツール開発における私たちの取り組みを共有します。技術的な洞察、開発アップデート、そしてスキャン効果を誰もが利用できるようにする方法をご紹介します。",
+    "description": "Web 開発、PDF 処理、プライバシー重視のツールについて — Look Scanned チームのノート。",
     "homeTitle": "Look Scanned ブログ",
     "homeContent": "👋 Look Scanned ブログへようこそ！\n- 📚 [**Look Scanned**](https://lookscanned.io) は、スキャンしたPDFの効果をシミュレートするブラウザベースの軽量アプリケーションです。プライバシーを重視して設計されており、開発者やデザイナー、その他すべてのユーザーが物理的なハードウェアを必要とせずに、PDFに本物のスキャン効果を追加できます。",
     "menu": [
@@ -292,7 +292,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "de",
     "languageName": "Deutsch",
     "title": "Look Scanned Blog",
-    "description": "Der offizielle Look Scanned Blog - Wir teilen unsere Erfahrungen in der Webentwicklung, PDF-Verarbeitungstechniken und der Entwicklung datenschutzorientierter Tools. Erhalten Sie technische Einblicke, Entwicklungsupdates und erfahren Sie, wie wir Dokument-Scan-Effekte für alle zugänglich machen.",
+    "description": "Notizen zu Webentwicklung, PDF-Verarbeitung und datenschutzorientierten Tools — vom Team hinter Look Scanned.",
     "homeTitle": "Look Scanned Blog",
     "homeContent": "👋 Willkommen beim Look Scanned Blog!\n- 📚 [**Look Scanned**](https://lookscanned.io) ist eine schlanke, browserbasierte Anwendung, die PDF-Scan-Effekte simuliert. Sie wurde mit Fokus auf Datenschutz entwickelt und ermöglicht es Entwicklern, Designern und allen anderen, authentische Scan-Effekte zu PDFs hinzuzufügen – ganz ohne physische Hardware.",
     "menu": [
@@ -322,7 +322,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "ru",
     "languageName": "Русский",
     "title": "Блог Look Scanned",
-    "description": "Официальный блог Look Scanned - Делимся нашим опытом в веб-разработке, технологиях обработки PDF и создании инструментов с акцентом на конфиденциальность. Получайте технические знания, обновления разработки и узнайте, как мы делаем эффекты сканирования доступными для всех.",
+    "description": "Заметки о веб-разработке, обработке PDF и инструментах, уважающих приватность — от команды Look Scanned.",
     "homeTitle": "Блог Look Scanned",
     "homeContent": "👋 Добро пожаловать в блог Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) - это легкое браузерное приложение, которое имитирует эффекты сканированных PDF. Оно разработано с учетом конфиденциальности, позволяя разработчикам, дизайнерам и всем желающим добавлять реалистичные эффекты сканирования в PDF без необходимости в физическом оборудовании.",
     "menu": [
@@ -352,7 +352,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "id",
     "languageName": "Bahasa Indonesia",
     "title": "Blog Look Scanned",
-    "description": "Blog resmi Look Scanned - Berbagi perjalanan kami dalam pengembangan web, teknik pemrosesan PDF, dan pembuatan alat yang mengutamakan privasi. Dapatkan wawasan teknis, pembaruan pengembangan, dan pelajari bagaimana kami membuat efek pemindaian dapat diakses oleh semua orang.",
+    "description": "Catatan tentang pengembangan web, pemrosesan PDF, dan alat yang mengutamakan privasi — dari tim Look Scanned.",
     "homeTitle": "Blog Look Scanned",
     "homeContent": "👋 Selamat datang di Blog Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) adalah aplikasi berbasis browser yang ringan yang mensimulasikan efek PDF hasil pemindaian. Dirancang dengan memperhatikan privasi, memungkinkan pengembang, desainer, dan siapa saja untuk menambahkan efek pemindaian yang autentik ke PDF tanpa memerlukan perangkat keras fisik.",
     "menu": [
@@ -382,7 +382,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "ko",
     "languageName": "한국어",
     "title": "Look Scanned 블로그",
-    "description": "Look Scanned 공식 블로그 - 웹 개발, PDF 처리 기술, 프라이버시 중심 도구 구축에 대한 우리의 여정을 공유합니다. 기술적 인사이트, 개발 업데이트를 얻고 문서 스캔 효과를 모두가 이용할 수 있게 만드는 방법을 알아보세요.",
+    "description": "웹 개발, PDF 처리, 프라이버시 우선 도구에 관한 Look Scanned 팀의 기록.",
     "homeTitle": "Look Scanned 블로그",
     "homeContent": "👋 Look Scanned 블로그에 오신 것을 환영합니다!\n- 📚 [**Look Scanned**](https://lookscanned.io)은 스캔된 PDF 효과를 시뮬레이션하는 경량 브라우저 기반 애플리케이션입니다. 개인정보 보호를 고려하여 설계되었으며, 개발자, 디자이너 및 모든 사용자가 물리적 하드웨어 없이도 PDF에 실제 스캔 효과를 추가할 수 있습니다.",
     "menu": [
@@ -412,7 +412,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "it",
     "languageName": "Italiano",
     "title": "Blog di Look Scanned",
-    "description": "Il blog ufficiale di Look Scanned - Condividiamo il nostro percorso nello sviluppo web, nelle tecniche di elaborazione PDF e nella creazione di strumenti incentrati sulla privacy. Ottieni approfondimenti tecnici, aggiornamenti sullo sviluppo e scopri come rendiamo gli effetti di scansione accessibili a tutti.",
+    "description": "Note su sviluppo web, elaborazione PDF e strumenti che rispettano la privacy — dal team di Look Scanned.",
     "homeTitle": "Blog di Look Scanned",
     "homeContent": "👋 Benvenuto nel Blog di Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) è un'applicazione leggera basata su browser che simula effetti di scansione PDF. È progettata pensando alla privacy, permettendo a sviluppatori, designer e chiunque altro di aggiungere autentici effetti di scansione ai PDF senza bisogno di hardware fisico.",
     "menu": [
@@ -442,7 +442,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "tr",
     "languageName": "Türkçe",
     "title": "Look Scanned Blogu",
-    "description": "Look Scanned resmi blogu - Web geliştirme, PDF işleme teknikleri ve gizlilik odaklı araçlar oluşturma konusundaki yolculuğumuzu paylaşıyoruz. Teknik içgörüler ve geliştirme güncellemeleri edinin, tarama efektlerini herkes için nasıl erişilebilir kıldığımızı öğrenin.",
+    "description": "Web geliştirme, PDF işleme ve gizliliği önceleyen araçlar üzerine — Look Scanned ekibinin notları.",
     "homeTitle": "Look Scanned Blogu",
     "homeContent": "👋 Look Scanned Blogu'na hoş geldiniz!\n- 📚 [**Look Scanned**](https://lookscanned.io), taranmış PDF efektlerini simüle eden hafif, tarayıcı tabanlı bir uygulamadır. Gizlilik göz önünde bulundurularak tasarlanmış olup, geliştiricilerin, tasarımcıların ve diğer herkesin fiziksel donanıma ihtiyaç duymadan PDF'lere gerçek tarama efektleri eklemesine olanak tanır.",
     "menu": [
@@ -472,7 +472,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "pl",
     "languageName": "Polski",
     "title": "Blog Look Scanned",
-    "description": "Oficjalny blog Look Scanned - Dzielimy się naszą podróżą w rozwoju aplikacji webowych, technikach przetwarzania PDF i tworzeniu narzędzi zorientowanych na prywatność. Zdobądź techniczne wskazówki, aktualizacje rozwoju i dowiedz się, jak udostępniamy efekty skanowania dla wszystkich.",
+    "description": "Notatki o tworzeniu stron, przetwarzaniu PDF i narzędziach szanujących prywatność — od zespołu Look Scanned.",
     "homeTitle": "Blog Look Scanned",
     "homeContent": "👋 Witamy na blogu Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) to lekka aplikacja przeglądarkowa, która symuluje efekty skanowania PDF. Została zaprojektowana z myślą o prywatności, umożliwiając programistom, projektantom i wszystkim innym dodawanie autentycznych efektów skanowania do plików PDF bez potrzeby posiadania fizycznego sprzętu.",
     "menu": [
@@ -502,7 +502,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "nl",
     "languageName": "Nederlands",
     "title": "Look Scanned Blog",
-    "description": "De officiële Look Scanned blog - We delen onze reis in webontwikkeling, PDF-verwerkingstechnieken en het bouwen van privacy-gerichte tools. Krijg technische inzichten, ontwikkelingsupdates en leer hoe we scan-effecten toegankelijk maken voor iedereen.",
+    "description": "Notities over webontwikkeling, PDF-verwerking en privacyvriendelijke tools — van het Look Scanned-team.",
     "homeTitle": "Look Scanned Blog",
     "homeContent": "👋 Welkom bij de Look Scanned Blog!\n- 📚 [**Look Scanned**](https://lookscanned.io) is een lichtgewicht, browser-gebaseerde applicatie die gescande PDF-effecten simuleert. Het is ontworpen met privacy in gedachten, waardoor ontwikkelaars, designers en iedereen authentieke scan-effecten aan PDF's kan toevoegen zonder fysieke hardware.",
     "menu": [
@@ -532,7 +532,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "vi",
     "languageName": "Tiếng Việt",
     "title": "Blog Look Scanned",
-    "description": "Blog chính thức của Look Scanned - Chia sẻ hành trình của chúng tôi trong phát triển web, kỹ thuật xử lý PDF và xây dựng công cụ đề cao quyền riêng tư. Nhận thông tin kỹ thuật, cập nhật phát triển và tìm hiểu cách chúng tôi làm cho hiệu ứng quét trở nên dễ tiếp cận với mọi người.",
+    "description": "Ghi chú về phát triển web, xử lý PDF và công cụ ưu tiên quyền riêng tư — từ đội ngũ Look Scanned.",
     "homeTitle": "Blog Look Scanned",
     "homeContent": "👋 Chào mừng đến với Blog Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) là một ứng dụng nhẹ, chạy trên trình duyệt cho phép mô phỏng hiệu ứng PDF được quét. Được thiết kế với việc bảo mật quyền riêng tư, cho phép các nhà phát triển, nhà thiết kế và bất kỳ ai thêm hiệu ứng quét chân thực vào PDF mà không cần thiết bị phần cứng.",
     "menu": [
@@ -562,7 +562,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "th",
     "languageName": "ไทย",
     "title": "บล็อก Look Scanned",
-    "description": "บล็อกทางการของ Look Scanned - แบ่งปันการเดินทางของเราในการพัฒนาเว็บ เทคนิคการประมวลผล PDF และการสร้างเครื่องมือที่เน้นความเป็นส่วนตัว รับข้อมูลเชิงเทคนิค อัปเดตการพัฒนา และเรียนรู้วิธีที่เราทำให้เอฟเฟกต์การสแกนเข้าถึงได้สำหรับทุกคน",
+    "description": "บันทึกเรื่องการพัฒนาเว็บ การประมวลผล PDF และเครื่องมือที่เคารพความเป็นส่วนตัว — จากทีม Look Scanned",
     "homeTitle": "บล็อก Look Scanned",
     "homeContent": "👋 ยินดีต้อนรับสู่บล็อก Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) เป็นแอปพลิเคชันเบาๆ ที่ทำงานบนเบราว์เซอร์ซึ่งจำลองเอฟเฟกต์การสแกน PDF ออกแบบมาโดยคำนึงถึงความเป็นส่วนตัว ช่วยให้นักพัฒนา นักออกแบบ และทุกคนสามารถเพิ่มเอฟเฟกต์การสแกนที่เหมือนจริงลงใน PDF โดยไม่จำเป็นต้องใช้ฮาร์ดแวร์จริง",
     "menu": [
@@ -592,7 +592,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "sv",
     "languageName": "Svenska",
     "title": "Look Scanned Blogg",
-    "description": "Den officiella Look Scanned-bloggen - Vi delar vår resa inom webbutveckling, PDF-behandlingstekniker och byggandet av integritetsfokuserade verktyg. Få tekniska insikter, utvecklingsuppdateringar och lär dig hur vi gör skanningseffekter tillgängliga för alla.",
+    "description": "Anteckningar om webbutveckling, PDF-bearbetning och integritetsvänliga verktyg — från Look Scanned-teamet.",
     "homeTitle": "Look Scanned Blogg",
     "homeContent": "👋 Välkommen till Look Scanned Bloggen!\n- 📚 [**Look Scanned**](https://lookscanned.io) är en lättviktig, webbläsarbaserad applikation som simulerar inskannade PDF-effekter. Den är designad med integritet i åtanke och låter utvecklare, designers och alla andra lägga till autentiska skanningseffekter till PDF:er utan behov av fysisk hårdvara.",
     "menu": [
@@ -622,7 +622,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "ms",
     "languageName": "Bahasa Melayu",
     "title": "Blog Look Scanned",
-    "description": "Blog rasmi Look Scanned - Berkongsi perjalanan kami dalam pembangunan web, teknik pemprosesan PDF, dan pembinaan alat yang mengutamakan privasi. Dapatkan pandangan teknikal, kemas kini pembangunan, dan ketahui bagaimana kami menjadikan kesan imbasan mudah diakses oleh semua.",
+    "description": "Catatan tentang pembangunan web, pemprosesan PDF, dan alat yang mengutamakan privasi — daripada pasukan Look Scanned.",
     "homeTitle": "Blog Look Scanned",
     "homeContent": "👋 Selamat datang ke Blog Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) ialah aplikasi ringan berasaskan pelayar yang mensimulasikan kesan PDF yang diimbas. Ia direka dengan mengutamakan privasi, membolehkan pembangun, pereka dan sesiapa sahaja menambah kesan imbasan yang autentik kepada PDF tanpa memerlukan perkakasan fizikal.",
     "menu": [
@@ -652,7 +652,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "he",
     "languageName": "עברית",
     "title": "בלוג Look Scanned",
-    "description": "הבלוג הרשמי של Look Scanned - משתפים את המסע שלנו בפיתוח אינטרנט, טכניקות עיבוד PDF ובניית כלים ממוקדי פרטיות. קבלו תובנות טכניות, עדכוני פיתוח ולמדו כיצד אנו הופכים אפקטים של סריקה לנגישים לכולם.",
+    "description": "הערות על פיתוח אתרים, עיבוד PDF וכלים ששומרים על פרטיות — מצוות Look Scanned.",
     "homeTitle": "בלוג Look Scanned",
     "homeContent": "👋 ברוכים הבאים לבלוג Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) הוא יישום קל משקל מבוסס דפדפן המדמה אפקטים של PDF סרוק. הוא תוכנן תוך התחשבות בפרטיות, ומאפשר למפתחים, מעצבים וכל אחד אחר להוסיף אפקטים אותנטיים של סריקה לקבצי PDF ללא צורך בחומרה פיזית.",
     "menu": [
@@ -682,7 +682,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "cs",
     "languageName": "Čeština",
     "title": "Look Scanned Blog",
-    "description": "Oficiální blog Look Scanned – sdílíme naši cestu ve webovém vývoji, technikách zpracování PDF a budování nástrojů zaměřených na soukromí. Získejte technické poznatky, novinky z vývoje a zjistěte, jak zpřístupňujeme efekt skenování dokumentů všem.",
+    "description": "Poznámky o vývoji webu, zpracování PDF a nástrojích respektujících soukromí — od týmu Look Scanned.",
     "homeTitle": "Look Scanned Blog",
     "homeContent": "👋 Vítejte na Look Scanned Blogu!\n- 📚 [**Look Scanned**](https://lookscanned.io) je lehká aplikace v prohlížeči, která simuluje efekty skenovaných PDF. Je navržena s důrazem na soukromí a umožňuje vývojářům, designérům i komukoli dalšímu přidávat autentické skenovací efekty do PDF bez fyzického hardwaru.",
     "menu": [
@@ -712,7 +712,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "hu",
     "languageName": "Magyar",
     "title": "Look Scanned Blog",
-    "description": "A Look Scanned hivatalos blogja – webfejlesztési tapasztalatainkat, PDF-feldolgozási technikákat és adatvédelem-központú eszközök építését osztjuk meg. Szerezz technikai betekintést, fejlesztési híreket, és tudd meg, miként tesszük a szkennelési effekteket mindenki számára elérhetővé.",
+    "description": "Jegyzetek webfejlesztésről, PDF-feldolgozásról és adatvédelmet tisztelő eszközökről — a Look Scanned csapatától.",
     "homeTitle": "Look Scanned Blog",
     "homeContent": "👋 Üdv a Look Scanned Blogon!\n- 📚 [**Look Scanned**](https://lookscanned.io) egy könnyű, böngészőalapú alkalmazás, amely szkennelt PDF-hatásokat szimulál. Adatvédelemre tervezve lehetővé teszi, hogy fejlesztők, designerek és bárki valósághű szkennelési effekteket adjon a PDF-ekhez fizikai hardver nélkül.",
     "menu": [
@@ -742,7 +742,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "ro",
     "languageName": "Română",
     "title": "Blogul Look Scanned",
-    "description": "Blogul oficial Look Scanned – împărtășim parcursul nostru în dezvoltare web, tehnici de procesare PDF și construirea de instrumente axate pe confidențialitate. Obține perspective tehnice, noutăți și află cum facem efectele de scanare accesibile tuturor.",
+    "description": "Notițe despre dezvoltare web, procesare PDF și instrumente care respectă confidențialitatea — de la echipa Look Scanned.",
     "homeTitle": "Blogul Look Scanned",
     "homeContent": "👋 Bine ai venit pe Blogul Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) este o aplicație ușoară, bazată pe browser, care simulează efecte de PDF scanat. Proiectată cu atenție la confidențialitate, le permite dezvoltatorilor, designerilor și tuturor utilizatorilor să adauge efecte autentice fără hardware fizic.",
     "menu": [
@@ -772,7 +772,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "el",
     "languageName": "Ελληνικά",
     "title": "Ιστολόγιο Look Scanned",
-    "description": "Επίσημο ιστολόγιο του Look Scanned – μοιραζόμαστε το ταξίδι μας στην ανάπτυξη ιστού, τεχνικές επεξεργασίας PDF και τη δημιουργία εργαλείων με επίκεντρο την ιδιωτικότητα. Αποκτήστε τεχνικές γνώσεις, ενημερώσεις ανάπτυξης και μάθετε πώς κάνουμε τα εφέ σάρωσης προσιτά σε όλους.",
+    "description": "Σημειώσεις για την ανάπτυξη web, την επεξεργασία PDF και εργαλεία με σεβασμό στην ιδιωτικότητα — από την ομάδα του Look Scanned.",
     "homeTitle": "Ιστολόγιο Look Scanned",
     "homeContent": "👋 Καλώς ήρθατε στο Ιστολόγιο Look Scanned!\n- 📚 Το [**Look Scanned**](https://lookscanned.io) είναι μια ελαφριά εφαρμογή στον περιηγητή που προσομοιώνει εφέ σαρωμένων PDF. Σχεδιασμένη με γνώμονα την ιδιωτικότητα, επιτρέπει σε προγραμματιστές, σχεδιαστές και όλους τους χρήστες να προσθέτουν αυθεντικά εφέ χωρίς φυσικό υλικό.",
     "menu": [
@@ -802,7 +802,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "uk",
     "languageName": "Українська",
     "title": "Блог Look Scanned",
-    "description": "Офіційний блог Look Scanned – ділимося нашим досвідом у веб-розробці, технологіях обробки PDF та створенні інструментів із фокусом на приватність. Отримуйте технічні інсайти, новини розробки та дізнавайтеся, як ми робимо ефекти сканування доступними для всіх.",
+    "description": "Нотатки про веброзробку, обробку PDF та інструменти, що поважають приватність — від команди Look Scanned.",
     "homeTitle": "Блог Look Scanned",
     "homeContent": "👋 Ласкаво просимо до блогу Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) – це легкий веб-додаток, що імітує ефекти сканованих PDF. Створений із повагою до приватності, він дозволяє додавати автентичні ефекти без потреби у фізичному обладнанні.",
     "menu": [
@@ -832,7 +832,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "fil",
     "languageName": "Filipino",
     "title": "Look Scanned Blog",
-    "description": "Opisyal na blog ng Look Scanned – ibinabahagi namin ang aming paglalakbay sa web development, mga teknik sa pagproseso ng PDF, at pagbuo ng mga tool na inuuna ang privacy. Kumuha ng teknikal na kaalaman, mga update sa development, at alamin kung paano namin ginagawang abot-kaya sa lahat ang mga epekto ng pag-scan.",
+    "description": "Mga tala tungkol sa web development, pagpoproseso ng PDF, at mga tool na nagpapahalaga sa privacy — mula sa team ng Look Scanned.",
     "homeTitle": "Look Scanned Blog",
     "homeContent": "👋 Maligayang pagdating sa Look Scanned Blog!\n- 📚 Ang [**Look Scanned**](https://lookscanned.io) ay isang magaan na browser-based na app na nagsi-simulate ng mga efektong parang na-scan na PDF. Dinisenyo na may pokus sa privacy para makapagdagdag ng tunay na scan effects sa PDF nang walang physical na hardware.",
     "menu": [
@@ -862,7 +862,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "bn",
     "languageName": "বাংলা",
     "title": "Look Scanned ব্লগ",
-    "description": "Look Scanned-এর অফিসিয়াল ব্লগ — ওয়েব ডেভেলপমেন্ট, PDF প্রক্রিয়াকরণ কৌশল এবং গোপনীয়তা-কেন্দ্রিক টুল তৈরির অভিজ্ঞতা শেয়ার করি। টেকনিক্যাল ইনসাইট, ডেভেলপমেন্ট আপডেট জানুন এবং কীভাবে সবার জন্য স্ক্যানিং এফেক্ট সহজলভ্য করছি তা দেখুন।",
+    "description": "ওয়েব ডেভেলপমেন্ট, PDF প্রসেসিং এবং গোপনীয়তা-কেন্দ্রিক টুল নিয়ে — Look Scanned টিমের নোট।",
     "homeTitle": "Look Scanned ব্লগ",
     "homeContent": "👋 Look Scanned ব্লগে স্বাগতম!\n- 📚 [**Look Scanned**](https://lookscanned.io) একটি হালকা, ব্রাউজার-ভিত্তিক অ্যাপ যা স্ক্যান করা PDF-এর প্রভাব অনুকরণ করে। গোপনীয়তা বিবেচনায় রেখে তৈরি, যা ডেভেলপার, ডিজাইনার এবং সবার জন্য হার্ডওয়্যার ছাড়াই PDF-এ বাস্তবসম্মত স্ক্যানিং এফেক্ট যোগ করতে দেয়।",
     "menu": [
@@ -892,7 +892,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "ur",
     "languageName": "اردو",
     "title": "Look Scanned بلاگ",
-    "description": "Look Scanned کا آفیشل بلاگ — ہم ویب ڈیولپمنٹ، PDF پروسیسنگ تکنیکس اور پرائیویسی پر مبنی ٹولز بنانے کا سفر شیئر کرتے ہیں۔ تکنیکی بصیرت، ڈیولپمنٹ اپڈیٹس حاصل کریں اور جانیں کہ ہم اسکیننگ ایفیکٹس کو سب کے لیے کیسے قابلِ رسائی بناتے ہیں۔",
+    "description": "ویب ڈویلپمنٹ، PDF پراسیسنگ، اور پرائیویسی پر مرکوز ٹولز پر — Look Scanned ٹیم کے نوٹس۔",
     "homeTitle": "Look Scanned بلاگ",
     "homeContent": "👋 Look Scanned بلاگ میں خوش آمدید!\n- 📚 [**Look Scanned**](https://lookscanned.io) ایک ہلکی، براؤزر پر مبنی ایپ ہے جو اسکین شدہ PDF کے اثرات کی نقل کرتی ہے۔ پرائیویسی کو مدِنظر رکھتے ہوئے ڈیزائن کی گئی، یہ ڈیولپرز، ڈیزائنرز اور ہر کسی کو بغیر فزیکل ہارڈویئر کے PDF میں مستند اسکیننگ ایفیکٹس شامل کرنے دیتی ہے۔",
     "menu": [
@@ -922,7 +922,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "sw",
     "languageName": "Kiswahili",
     "title": "Blogu ya Look Scanned",
-    "description": "Blogu rasmi ya Look Scanned — tunashiriki safari yetu katika ukuzaji wa wavuti, mbinu za uchakataji wa PDF, na ujenzi wa zana zinazotanguliza faragha. Pata maarifa ya kiufundi, masasisho ya maendeleo, na ujifunze jinsi tunavyofanya athari za usanifu zipatikane kwa wote.",
+    "description": "Maelezo kuhusu uundaji wa wavuti, uchakataji wa PDF, na zana zinazoheshimu faragha — kutoka kwa timu ya Look Scanned.",
     "homeTitle": "Blogu ya Look Scanned",
     "homeContent": "👋 Karibu kwenye Blogu ya Look Scanned!\n- 📚 [**Look Scanned**](https://lookscanned.io) ni programu nyepesi inayotumia kivinjari inayosimulate athari za PDF iliyoskanishwa. Imetengenezwa kwa kuzingatia faragha ili kuruhusu wabunifu, wasanifu na mtu yeyote kuongeza athari halisi kwenye PDF bila vifaa vya kimwili.",
     "menu": [
@@ -952,7 +952,7 @@ export const LOCALE_DATA: Record<string, LocaleData> = {
     "code": "af",
     "languageName": "Afrikaans",
     "title": "Look Scanned Blog",
-    "description": "Die amptelike Look Scanned-blog – ons deel ons reis in webontwikkeling, PDF-verwerkingstegnieke en die bou van privaatheid-eerste gereedskap. Kry tegniese insigte, ontwikkelingsopdaterings en leer hoe ons skandeereffekte vir almal toeganklik maak.",
+    "description": "Notas oor webontwikkeling, PDF-verwerking en privaatheidsgesentreerde gereedskap — van die Look Scanned-span.",
     "homeTitle": "Look Scanned Blog",
     "homeContent": "👋 Welkom by die Look Scanned-blog!\n- 📚 [**Look Scanned**](https://lookscanned.io) is ’n liggewig, blaaiergebaseerde toepassing wat geskendeerde PDF-effekte simuleer. Dit is met privaatheid in gedagte ontwerp en stel ontwikkelaars, ontwerpers en enigiemand anders in staat om outentieke effekte by PDF’s te voeg sonder fisiese hardeware.",
     "menu": [
