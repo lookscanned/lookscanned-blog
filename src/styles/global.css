@@ -44,30 +44,34 @@
        design — Tailwind's rem-based text/spacing/width utilities included
        — scales up ~6% in lockstep. */
     font-size: 17px;
-    /* Reserve scrollbar gutter so page width stays constant regardless
-       of vertical overflow — no CLS when async content (images, lazy
-       components) pushes the page past one viewport. Combined with the
-       thin-width styling below the reserved strip is ~8px. */
     /* Reserve scrollbar gutter so the page width stays constant — no CLS
        when async content (images, lazy components) pushes the page past
        one viewport. */
     scrollbar-gutter: stable;
+    /*
+     * Auto-fade page scrollbar. Default state: transparent thumb on
+     * both Firefox (scrollbar-color) and WebKit (background-color on
+     * the thumb pseudo-element). When the pointer enters the viewport
+     * (html:hover) or focus moves into the page (html:focus-within),
+     * the thumb fades in over 0.3s and fades out the same way on
+     * leave. Firefox interpolation works through the
+     * @property-registered --sb-thumb custom property (FF 128+);
+     * Chrome 121+ transitions scrollbar-color natively; WebKit
+     * transitions background-color on ::-webkit-scrollbar-thumb.
+     */
     scrollbar-width: thin;
-    scrollbar-color: var(--color-zinc-300) transparent;
+    --sb-thumb: transparent;
+    scrollbar-color: var(--sb-thumb) transparent;
+    transition: --sb-thumb 0.3s ease, scrollbar-color 0.3s ease;
   }
-  html.dark {
-    scrollbar-color: var(--color-zinc-700) transparent;
+  html:hover,
+  html:focus-within {
+    --sb-thumb: var(--color-zinc-300);
   }
-  /*
-   * No fade-in/out animation on the page scrollbar. WebKit and Chromium
-   * don't reliably transition any property on `::-webkit-scrollbar-*`
-   * pseudo-elements, and Firefox can't transition `scrollbar-color`
-   * at all. Earlier opacity-based attempts read as a "flash" in
-   * practice. The honest answer is an always-on but very thin and
-   * desaturated scrollbar that matches the palette. The thumb gets a
-   * slightly darker tone on direct hover (the only state browsers do
-   * paint consistently) so the user knows they can drag it.
-   */
+  html.dark:hover,
+  html.dark:focus-within {
+    --sb-thumb: var(--color-zinc-700);
+  }
   html::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -77,12 +81,18 @@
     background: transparent;
   }
   html::-webkit-scrollbar-thumb {
-    background-color: var(--color-zinc-300);
+    background-color: transparent;
     border: 2px solid transparent;
     background-clip: padding-box;
     border-radius: 9999px;
+    transition: background-color 0.3s ease;
   }
-  html.dark::-webkit-scrollbar-thumb {
+  html:hover::-webkit-scrollbar-thumb,
+  html:focus-within::-webkit-scrollbar-thumb {
+    background-color: var(--color-zinc-300);
+  }
+  html.dark:hover::-webkit-scrollbar-thumb,
+  html.dark:focus-within::-webkit-scrollbar-thumb {
     background-color: var(--color-zinc-700);
   }
   html::-webkit-scrollbar-thumb:hover {
@@ -155,21 +165,26 @@
 
 
 /*
- * Stealth-ish scrollbar for in-content scrollers (TOC, LangDropdown).
- * After research, WebKit/Chromium don't reliably transition any
- * property on `::-webkit-scrollbar-*` pseudo-elements (background-color
- * and opacity both fail in practice on some Chromium versions), and
- * Firefox can't transition `scrollbar-color` at all. Earlier
- * opacity-fade attempts read as a flash, not a fade. Settling on:
- * a very thin, low-contrast, always-on bar that matches the palette
- * and slightly darkens on direct thumb hover.
+ * Stealth scrollbar for in-content scrollers (TOC, LangDropdown).
+ * Same auto-fade strategy as the page scrollbar: hidden by default,
+ * fades in on hover / focus-within of the scrolling container, fades
+ * back out on leave. Firefox interpolates through the
+ * @property-registered --sb-thumb-stealth custom property; WebKit
+ * transitions background-color on the thumb pseudo-element.
  */
 .scroll-stealth {
   scrollbar-width: thin;
-  scrollbar-color: var(--color-zinc-200) transparent;
+  --sb-thumb-stealth: transparent;
+  scrollbar-color: var(--sb-thumb-stealth) transparent;
+  transition: --sb-thumb-stealth 0.3s ease, scrollbar-color 0.3s ease;
 }
-.dark .scroll-stealth {
-  scrollbar-color: var(--color-zinc-800) transparent;
+.scroll-stealth:hover,
+.scroll-stealth:focus-within {
+  --sb-thumb-stealth: var(--color-zinc-200);
+}
+.dark .scroll-stealth:hover,
+.dark .scroll-stealth:focus-within {
+  --sb-thumb-stealth: var(--color-zinc-800);
 }
 .scroll-stealth::-webkit-scrollbar {
   width: 6px;
@@ -193,10 +208,16 @@
 .scroll-stealth::-webkit-scrollbar-thumb {
   -webkit-appearance: none;
   appearance: none;
-  background-color: var(--color-zinc-200);
+  background-color: transparent;
   border-radius: 9999px;
+  transition: background-color 0.3s ease;
 }
-.dark .scroll-stealth::-webkit-scrollbar-thumb {
+.scroll-stealth:hover::-webkit-scrollbar-thumb,
+.scroll-stealth:focus-within::-webkit-scrollbar-thumb {
+  background-color: var(--color-zinc-200);
+}
+.dark .scroll-stealth:hover::-webkit-scrollbar-thumb,
+.dark .scroll-stealth:focus-within::-webkit-scrollbar-thumb {
   background-color: var(--color-zinc-800);
 }
 .scroll-stealth::-webkit-scrollbar-thumb:hover {
@@ -236,6 +257,11 @@
 .fade-mask-y[data-fade-bottom] { --fade-bottom: 24px; }
 @property --fade-top    { syntax: "<length>"; initial-value: 0px; inherits: false; }
 @property --fade-bottom { syntax: "<length>"; initial-value: 0px; inherits: false; }
+
+/* Registered colors so Firefox 128+ and Chrome 121+ can interpolate
+   `scrollbar-color` smoothly when the thumb fades in / out. */
+@property --sb-thumb         { syntax: "<color>"; initial-value: transparent; inherits: false; }
+@property --sb-thumb-stealth { syntax: "<color>"; initial-value: transparent; inherits: false; }
 
 /* Shiki dual-theme code blocks */
 html.dark .astro-code,
