@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import { DEFAULT_LOCALE, getLocale } from "../i18n";
 
 /*
  * Three-state theme toggle: System / Light / Dark.
@@ -17,11 +18,17 @@ import { Icon } from "astro-icon/components";
  * future embedded surface that needs to mirror the resolved theme).
  */
 
+interface Props {
+  locale?: string;
+}
+
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const ui = getLocale(locale).ui;
 const labels = {
-  trigger: "Theme",
-  system: "System",
-  light: "Light",
-  dark: "Dark",
+  trigger: ui.theme,
+  system: ui.theme_system,
+  light: ui.theme_light,
+  dark: ui.theme_dark,
 };
 ---
 

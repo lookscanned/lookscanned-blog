@@ -89,7 +89,7 @@ const searchActive = currentPath === searchUrl;
         <Icon name="lucide:search" class="h-[18px] w-[18px]" aria-hidden="true" />
       </a>
       <LangDropdown locale={locale} localeUrls={localeUrls} />
-      <ThemeToggle />
+      <ThemeToggle locale={locale} />
       {externalCta && (
         <a
           href={externalCta.url}

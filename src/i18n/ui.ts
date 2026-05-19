@@ -1,6 +1,7 @@
 // Hand-maintained UI strings. Originally seeded from PaperMod's i18n YAMLs
 // via scripts/build-i18n.mjs but extended manually since (browse_label,
-// connect_label, try_cta) — re-running the generator would drop those.
+// connect_label, try_cta, skip_to_content, theme*) — re-running the
+// generator would drop those.
 
 export interface UIStrings {
   prev_page: string;
@@ -18,6 +19,11 @@ export interface UIStrings {
   browse_label: string;
   connect_label: string;
   try_cta: string;
+  skip_to_content: string;
+  theme: string;
+  theme_system: string;
+  theme_light: string;
+  theme_dark: string;
 }
 
 export const UI: Record<string, UIStrings> = {
@@ -36,7 +42,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Browse",
     "connect_label": "Connect",
-    "try_cta": "Try Look Scanned Free"
+    "try_cta": "Try Look Scanned Free",
+    "skip_to_content": "Skip to content",
+    "theme": "Theme",
+    "theme_system": "System",
+    "theme_light": "Light",
+    "theme_dark": "Dark"
   },
   "zh": {
     "prev_page": "上一页",
@@ -53,7 +64,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} 字",
     "browse_label": "浏览",
     "connect_label": "联系",
-    "try_cta": "免费试试 Look Scanned"
+    "try_cta": "免费试试 Look Scanned",
+    "skip_to_content": "跳到内容",
+    "theme": "主题",
+    "theme_system": "跟随系统",
+    "theme_light": "浅色",
+    "theme_dark": "深色"
   },
   "zh-tw": {
     "prev_page": "上一頁",
@@ -70,7 +86,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} 字",
     "browse_label": "瀏覽",
     "connect_label": "聯絡",
-    "try_cta": "免費試試 Look Scanned"
+    "try_cta": "免費試試 Look Scanned",
+    "skip_to_content": "跳至內容",
+    "theme": "主題",
+    "theme_system": "跟隨系統",
+    "theme_light": "淺色",
+    "theme_dark": "深色"
   },
   "es": {
     "prev_page": "Anterior",
@@ -87,7 +108,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} palabras",
     "browse_label": "Explorar",
     "connect_label": "Contacto",
-    "try_cta": "Prueba Look Scanned gratis"
+    "try_cta": "Prueba Look Scanned gratis",
+    "skip_to_content": "Saltar al contenido",
+    "theme": "Tema",
+    "theme_system": "Sistema",
+    "theme_light": "Claro",
+    "theme_dark": "Oscuro"
   },
   "hi": {
     "prev_page": "पिछला",
@@ -104,7 +130,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "ब्राउज़ करें",
     "connect_label": "संपर्क",
-    "try_cta": "Look Scanned मुफ़्त आज़माएं"
+    "try_cta": "Look Scanned मुफ़्त आज़माएं",
+    "skip_to_content": "सामग्री पर जाएं",
+    "theme": "थीम",
+    "theme_system": "सिस्टम",
+    "theme_light": "हल्का",
+    "theme_dark": "गहरा"
   },
   "ar": {
     "prev_page": "السابق",
@@ -121,7 +152,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "تصفح",
     "connect_label": "تواصل",
-    "try_cta": "جرب Look Scanned مجانًا"
+    "try_cta": "جرب Look Scanned مجانًا",
+    "skip_to_content": "تخطي إلى المحتوى",
+    "theme": "السمة",
+    "theme_system": "النظام",
+    "theme_light": "فاتح",
+    "theme_dark": "داكن"
   },
   "fr": {
     "prev_page": "Précédent",
@@ -138,7 +174,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} mots",
     "browse_label": "Parcourir",
     "connect_label": "Contact",
-    "try_cta": "Essayer Look Scanned gratuitement"
+    "try_cta": "Essayer Look Scanned gratuitement",
+    "skip_to_content": "Aller au contenu",
+    "theme": "Thème",
+    "theme_system": "Système",
+    "theme_light": "Clair",
+    "theme_dark": "Sombre"
   },
   "pt": {
     "prev_page": "Página Anterior",
@@ -155,7 +196,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} palavras",
     "browse_label": "Navegar",
     "connect_label": "Contato",
-    "try_cta": "Experimente o Look Scanned grátis"
+    "try_cta": "Experimente o Look Scanned grátis",
+    "skip_to_content": "Ir para o conteúdo",
+    "theme": "Tema",
+    "theme_system": "Sistema",
+    "theme_light": "Claro",
+    "theme_dark": "Escuro"
   },
   "ja": {
     "prev_page": "前へ",
@@ -172,7 +218,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} 文字",
     "browse_label": "閲覧",
     "connect_label": "お問い合わせ",
-    "try_cta": "Look Scanned を無料で試す"
+    "try_cta": "Look Scanned を無料で試す",
+    "skip_to_content": "コンテンツへスキップ",
+    "theme": "テーマ",
+    "theme_system": "システム",
+    "theme_light": "ライト",
+    "theme_dark": "ダーク"
   },
   "de": {
     "prev_page": "Vorherige",
@@ -189,7 +240,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} Wörter",
     "browse_label": "Durchsuchen",
     "connect_label": "Kontakt",
-    "try_cta": "Look Scanned kostenlos testen"
+    "try_cta": "Look Scanned kostenlos testen",
+    "skip_to_content": "Zum Inhalt springen",
+    "theme": "Design",
+    "theme_system": "System",
+    "theme_light": "Hell",
+    "theme_dark": "Dunkel"
   },
   "ru": {
     "prev_page": "Предыдущая",
@@ -206,7 +262,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} слово",
     "browse_label": "Обзор",
     "connect_label": "Связаться",
-    "try_cta": "Попробовать Look Scanned бесплатно"
+    "try_cta": "Попробовать Look Scanned бесплатно",
+    "skip_to_content": "Перейти к содержанию",
+    "theme": "Тема",
+    "theme_system": "Системная",
+    "theme_light": "Светлая",
+    "theme_dark": "Тёмная"
   },
   "id": {
     "prev_page": "Sebelumnya",
@@ -223,7 +284,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} kata",
     "browse_label": "Jelajahi",
     "connect_label": "Hubungi",
-    "try_cta": "Coba Look Scanned gratis"
+    "try_cta": "Coba Look Scanned gratis",
+    "skip_to_content": "Lewati ke konten",
+    "theme": "Tema",
+    "theme_system": "Sistem",
+    "theme_light": "Terang",
+    "theme_dark": "Gelap"
   },
   "ko": {
     "prev_page": "이전 페이지",
@@ -240,7 +306,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} 단어",
     "browse_label": "둘러보기",
     "connect_label": "연결",
-    "try_cta": "Look Scanned 무료로 사용해보기"
+    "try_cta": "Look Scanned 무료로 사용해보기",
+    "skip_to_content": "본문으로 건너뛰기",
+    "theme": "테마",
+    "theme_system": "시스템",
+    "theme_light": "라이트",
+    "theme_dark": "다크"
   },
   "it": {
     "prev_page": "Precedente",
@@ -257,7 +328,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} parole",
     "browse_label": "Sfoglia",
     "connect_label": "Contatto",
-    "try_cta": "Prova Look Scanned gratis"
+    "try_cta": "Prova Look Scanned gratis",
+    "skip_to_content": "Vai al contenuto",
+    "theme": "Tema",
+    "theme_system": "Sistema",
+    "theme_light": "Chiaro",
+    "theme_dark": "Scuro"
   },
   "tr": {
     "prev_page": "Önceki",
@@ -274,7 +350,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} sözcük",
     "browse_label": "Gözat",
     "connect_label": "İletişim",
-    "try_cta": "Look Scanned'i Ücretsiz Dene"
+    "try_cta": "Look Scanned'i Ücretsiz Dene",
+    "skip_to_content": "İçeriğe geç",
+    "theme": "Tema",
+    "theme_system": "Sistem",
+    "theme_light": "Açık",
+    "theme_dark": "Koyu"
   },
   "pl": {
     "prev_page": "Poprzednia",
@@ -291,7 +372,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} słów",
     "browse_label": "Przeglądaj",
     "connect_label": "Kontakt",
-    "try_cta": "Wypróbuj Look Scanned za darmo"
+    "try_cta": "Wypróbuj Look Scanned za darmo",
+    "skip_to_content": "Przejdź do treści",
+    "theme": "Motyw",
+    "theme_system": "Systemowy",
+    "theme_light": "Jasny",
+    "theme_dark": "Ciemny"
   },
   "nl": {
     "prev_page": "Vorige",
@@ -308,7 +394,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} woorden",
     "browse_label": "Bladeren",
     "connect_label": "Contact",
-    "try_cta": "Probeer Look Scanned gratis"
+    "try_cta": "Probeer Look Scanned gratis",
+    "skip_to_content": "Ga naar inhoud",
+    "theme": "Thema",
+    "theme_system": "Systeem",
+    "theme_light": "Licht",
+    "theme_dark": "Donker"
   },
   "vi": {
     "prev_page": "Trang trước",
@@ -325,7 +416,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} từ",
     "browse_label": "Duyệt",
     "connect_label": "Liên hệ",
-    "try_cta": "Dùng thử Look Scanned miễn phí"
+    "try_cta": "Dùng thử Look Scanned miễn phí",
+    "skip_to_content": "Bỏ qua đến nội dung",
+    "theme": "Giao diện",
+    "theme_system": "Hệ thống",
+    "theme_light": "Sáng",
+    "theme_dark": "Tối"
   },
   "th": {
     "prev_page": "ก่อนหน้า",
@@ -342,7 +438,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} คำ",
     "browse_label": "เรียกดู",
     "connect_label": "ติดต่อ",
-    "try_cta": "ทดลองใช้ Look Scanned ฟรี"
+    "try_cta": "ทดลองใช้ Look Scanned ฟรี",
+    "skip_to_content": "ข้ามไปที่เนื้อหา",
+    "theme": "ธีม",
+    "theme_system": "ระบบ",
+    "theme_light": "สว่าง",
+    "theme_dark": "มืด"
   },
   "sv": {
     "prev_page": "Förra Sidan",
@@ -359,7 +460,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Bläddra",
     "connect_label": "Kontakt",
-    "try_cta": "Prova Look Scanned gratis"
+    "try_cta": "Prova Look Scanned gratis",
+    "skip_to_content": "Hoppa till innehåll",
+    "theme": "Tema",
+    "theme_system": "System",
+    "theme_light": "Ljus",
+    "theme_dark": "Mörk"
   },
   "ms": {
     "prev_page": "Halaman Sebelumnya",
@@ -376,7 +482,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Layari",
     "connect_label": "Hubungi",
-    "try_cta": "Cuba Look Scanned secara percuma"
+    "try_cta": "Cuba Look Scanned secara percuma",
+    "skip_to_content": "Langkau ke kandungan",
+    "theme": "Tema",
+    "theme_system": "Sistem",
+    "theme_light": "Cerah",
+    "theme_dark": "Gelap"
   },
   "he": {
     "prev_page": "הקודם",
@@ -393,7 +504,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} מילים",
     "browse_label": "עיון",
     "connect_label": "צור קשר",
-    "try_cta": "נסה את Look Scanned בחינם"
+    "try_cta": "נסה את Look Scanned בחינם",
+    "skip_to_content": "דלג לתוכן",
+    "theme": "ערכת נושא",
+    "theme_system": "מערכת",
+    "theme_light": "בהיר",
+    "theme_dark": "כהה"
   },
   "cs": {
     "prev_page": "Předchozí",
@@ -410,7 +526,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} slov",
     "browse_label": "Procházet",
     "connect_label": "Kontakt",
-    "try_cta": "Vyzkoušejte Look Scanned zdarma"
+    "try_cta": "Vyzkoušejte Look Scanned zdarma",
+    "skip_to_content": "Přejít na obsah",
+    "theme": "Motiv",
+    "theme_system": "Systémový",
+    "theme_light": "Světlý",
+    "theme_dark": "Tmavý"
   },
   "hu": {
     "prev_page": "Előző oldal",
@@ -427,7 +548,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Böngészés",
     "connect_label": "Kapcsolat",
-    "try_cta": "Próbáld ki ingyen a Look Scannedet"
+    "try_cta": "Próbáld ki ingyen a Look Scannedet",
+    "skip_to_content": "Ugrás a tartalomhoz",
+    "theme": "Téma",
+    "theme_system": "Rendszer",
+    "theme_light": "Világos",
+    "theme_dark": "Sötét"
   },
   "ro": {
     "prev_page": "Înapoi",
@@ -444,7 +570,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} cuvinte",
     "browse_label": "Răsfoiește",
     "connect_label": "Contact",
-    "try_cta": "Încearcă Look Scanned gratuit"
+    "try_cta": "Încearcă Look Scanned gratuit",
+    "skip_to_content": "Sari la conținut",
+    "theme": "Temă",
+    "theme_system": "Sistem",
+    "theme_light": "Luminos",
+    "theme_dark": "Întunecat"
   },
   "el": {
     "prev_page": "Προηγούμενο",
@@ -461,7 +592,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} λέξεις",
     "browse_label": "Περιήγηση",
     "connect_label": "Επικοινωνία",
-    "try_cta": "Δοκιμάστε δωρεάν το Look Scanned"
+    "try_cta": "Δοκιμάστε δωρεάν το Look Scanned",
+    "skip_to_content": "Μετάβαση στο περιεχόμενο",
+    "theme": "Θέμα",
+    "theme_system": "Σύστημα",
+    "theme_light": "Φωτεινό",
+    "theme_dark": "Σκοτεινό"
   },
   "uk": {
     "prev_page": "Попередня",
@@ -478,7 +614,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Огляд",
     "connect_label": "Зв'язатися",
-    "try_cta": "Спробувати Look Scanned безкоштовно"
+    "try_cta": "Спробувати Look Scanned безкоштовно",
+    "skip_to_content": "Перейти до вмісту",
+    "theme": "Тема",
+    "theme_system": "Системна",
+    "theme_light": "Світла",
+    "theme_dark": "Темна"
   },
   "fil": {
     "prev_page": "Prev",
@@ -495,24 +636,34 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Mag-browse",
     "connect_label": "Kumonekta",
-    "try_cta": "Subukan ang Look Scanned nang libre"
+    "try_cta": "Subukan ang Look Scanned nang libre",
+    "skip_to_content": "Lumaktaw sa nilalaman",
+    "theme": "Tema",
+    "theme_system": "Sistema",
+    "theme_light": "Maliwanag",
+    "theme_dark": "Madilim"
   },
   "bn": {
     "prev_page": "পূর্ববর্তী",
     "next_page": "পরবর্তী",
     "toc": "সূচিপত্র",
     "translations": "অনুবাদসমূহ",
-    "home": "হোম",
+    "home": "হোম",
     "edit_post": "সম্পাদনা করুন",
     "code_copy": "কপি করুন",
-    "code_copied": "কপি হয়েছে!",
+    "code_copied": "কপি হয়েছে!",
     "read_time_one": "১ মিনিট",
     "read_time_other": "{{ .Count }} মিনিট",
     "words_one": "১ টি শব্দ",
     "words_other": "{{ .Count }} টি শব্দ",
     "browse_label": "ব্রাউজ করুন",
     "connect_label": "যোগাযোগ",
-    "try_cta": "Look Scanned বিনামূল্যে চেষ্টা করুন"
+    "try_cta": "Look Scanned বিনামূল্যে চেষ্টা করুন",
+    "skip_to_content": "বিষয়বস্তুতে যান",
+    "theme": "থিম",
+    "theme_system": "সিস্টেম",
+    "theme_light": "হালকা",
+    "theme_dark": "গাঢ়"
   },
   "ur": {
     "prev_page": "Prev",
@@ -529,7 +680,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "براؤز کریں",
     "connect_label": "رابطہ",
-    "try_cta": "Look Scanned مفت آزمائیں"
+    "try_cta": "Look Scanned مفت آزمائیں",
+    "skip_to_content": "مواد پر جائیں",
+    "theme": "تھیم",
+    "theme_system": "سسٹم",
+    "theme_light": "ہلکا",
+    "theme_dark": "گہرا"
   },
   "sw": {
     "prev_page": "Uliopita",
@@ -546,7 +702,12 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "maneno {{ .Count }}",
     "browse_label": "Vinjari",
     "connect_label": "Wasiliana",
-    "try_cta": "Jaribu Look Scanned bure"
+    "try_cta": "Jaribu Look Scanned bure",
+    "skip_to_content": "Ruka kwa maudhui",
+    "theme": "Mandhari",
+    "theme_system": "Mfumo",
+    "theme_light": "Mwanga",
+    "theme_dark": "Giza"
   },
   "af": {
     "prev_page": "Prev",
@@ -563,6 +724,11 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Blaai",
     "connect_label": "Kontak",
-    "try_cta": "Probeer Look Scanned gratis"
+    "try_cta": "Probeer Look Scanned gratis",
+    "skip_to_content": "Slaan oor na inhoud",
+    "theme": "Tema",
+    "theme_system": "Stelsel",
+    "theme_light": "Lig",
+    "theme_dark": "Donker"
   },
 };
