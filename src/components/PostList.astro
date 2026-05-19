@@ -9,6 +9,6 @@ interface Props {
 const { posts } = Astro.props;
 ---
 
-<section class="divide-y divide-zinc-200 dark:divide-zinc-800">
+<section class="divide-y divide-zinc-200/60 dark:divide-zinc-800/60">
   {posts.map((post) => <PostCard post={post} />)}
 </section>
