@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist --output-subdir _pagefind",
-    "build:astro": "astro build",
+    "build": "astro build && node scripts/flatten-locale-404.mjs && pagefind --site dist --output-subdir _pagefind",
+    "build:astro": "astro build && node scripts/flatten-locale-404.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check"

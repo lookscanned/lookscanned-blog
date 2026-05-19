@@ -1,7 +1,7 @@
 // Hand-maintained UI strings. Originally seeded from PaperMod's i18n YAMLs
 // via scripts/build-i18n.mjs but extended manually since (browse_label,
-// connect_label, try_cta, skip_to_content, theme*) — re-running the
-// generator would drop those.
+// connect_label, try_cta, skip_to_content, theme*, not_found,
+// back_to_home) — re-running the generator would drop those.
 
 export interface UIStrings {
   prev_page: string;
@@ -24,6 +24,8 @@ export interface UIStrings {
   theme_system: string;
   theme_light: string;
   theme_dark: string;
+  not_found: string;
+  back_to_home: string;
 }
 
 export const UI: Record<string, UIStrings> = {
@@ -47,7 +49,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Theme",
     "theme_system": "System",
     "theme_light": "Light",
-    "theme_dark": "Dark"
+    "theme_dark": "Dark",
+    "not_found": "Page not found.",
+    "back_to_home": "Back to home"
   },
   "zh": {
     "prev_page": "上一页",
@@ -69,7 +73,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "主题",
     "theme_system": "跟随系统",
     "theme_light": "浅色",
-    "theme_dark": "深色"
+    "theme_dark": "深色",
+    "not_found": "页面未找到。",
+    "back_to_home": "返回主页"
   },
   "zh-tw": {
     "prev_page": "上一頁",
@@ -91,7 +97,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "主題",
     "theme_system": "跟隨系統",
     "theme_light": "淺色",
-    "theme_dark": "深色"
+    "theme_dark": "深色",
+    "not_found": "頁面未找到。",
+    "back_to_home": "返回首頁"
   },
   "es": {
     "prev_page": "Anterior",
@@ -113,7 +121,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Tema",
     "theme_system": "Sistema",
     "theme_light": "Claro",
-    "theme_dark": "Oscuro"
+    "theme_dark": "Oscuro",
+    "not_found": "Página no encontrada.",
+    "back_to_home": "Volver al inicio"
   },
   "hi": {
     "prev_page": "पिछला",
@@ -135,7 +145,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "थीम",
     "theme_system": "सिस्टम",
     "theme_light": "हल्का",
-    "theme_dark": "गहरा"
+    "theme_dark": "गहरा",
+    "not_found": "पेज नहीं मिला।",
+    "back_to_home": "होम पर वापस जाएं"
   },
   "ar": {
     "prev_page": "السابق",
@@ -157,7 +169,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "السمة",
     "theme_system": "النظام",
     "theme_light": "فاتح",
-    "theme_dark": "داكن"
+    "theme_dark": "داكن",
+    "not_found": "الصفحة غير موجودة.",
+    "back_to_home": "العودة إلى الصفحة الرئيسية"
   },
   "fr": {
     "prev_page": "Précédent",
@@ -179,7 +193,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Thème",
     "theme_system": "Système",
     "theme_light": "Clair",
-    "theme_dark": "Sombre"
+    "theme_dark": "Sombre",
+    "not_found": "Page introuvable.",
+    "back_to_home": "Retour à l'accueil"
   },
   "pt": {
     "prev_page": "Página Anterior",
@@ -201,7 +217,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Tema",
     "theme_system": "Sistema",
     "theme_light": "Claro",
-    "theme_dark": "Escuro"
+    "theme_dark": "Escuro",
+    "not_found": "Página não encontrada.",
+    "back_to_home": "Voltar ao início"
   },
   "ja": {
     "prev_page": "前へ",
@@ -223,7 +241,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "テーマ",
     "theme_system": "システム",
     "theme_light": "ライト",
-    "theme_dark": "ダーク"
+    "theme_dark": "ダーク",
+    "not_found": "ページが見つかりません。",
+    "back_to_home": "ホームに戻る"
   },
   "de": {
     "prev_page": "Vorherige",
@@ -245,7 +265,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Design",
     "theme_system": "System",
     "theme_light": "Hell",
-    "theme_dark": "Dunkel"
+    "theme_dark": "Dunkel",
+    "not_found": "Seite nicht gefunden.",
+    "back_to_home": "Zurück zur Startseite"
   },
   "ru": {
     "prev_page": "Предыдущая",
@@ -267,7 +289,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Тема",
     "theme_system": "Системная",
     "theme_light": "Светлая",
-    "theme_dark": "Тёмная"
+    "theme_dark": "Тёмная",
+    "not_found": "Страница не найдена.",
+    "back_to_home": "Вернуться на главную"
   },
   "id": {
     "prev_page": "Sebelumnya",
@@ -289,7 +313,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Tema",
     "theme_system": "Sistem",
     "theme_light": "Terang",
-    "theme_dark": "Gelap"
+    "theme_dark": "Gelap",
+    "not_found": "Halaman tidak ditemukan.",
+    "back_to_home": "Kembali ke beranda"
   },
   "ko": {
     "prev_page": "이전 페이지",
@@ -311,7 +337,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "테마",
     "theme_system": "시스템",
     "theme_light": "라이트",
-    "theme_dark": "다크"
+    "theme_dark": "다크",
+    "not_found": "페이지를 찾을 수 없습니다.",
+    "back_to_home": "홈으로 돌아가기"
   },
   "it": {
     "prev_page": "Precedente",
@@ -333,7 +361,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Tema",
     "theme_system": "Sistema",
     "theme_light": "Chiaro",
-    "theme_dark": "Scuro"
+    "theme_dark": "Scuro",
+    "not_found": "Pagina non trovata.",
+    "back_to_home": "Torna alla home"
   },
   "tr": {
     "prev_page": "Önceki",
@@ -355,7 +385,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Tema",
     "theme_system": "Sistem",
     "theme_light": "Açık",
-    "theme_dark": "Koyu"
+    "theme_dark": "Koyu",
+    "not_found": "Sayfa bulunamadı.",
+    "back_to_home": "Ana sayfaya dön"
   },
   "pl": {
     "prev_page": "Poprzednia",
@@ -377,7 +409,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Motyw",
     "theme_system": "Systemowy",
     "theme_light": "Jasny",
-    "theme_dark": "Ciemny"
+    "theme_dark": "Ciemny",
+    "not_found": "Strona nie znaleziona.",
+    "back_to_home": "Powrót do strony głównej"
   },
   "nl": {
     "prev_page": "Vorige",
@@ -399,7 +433,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Thema",
     "theme_system": "Systeem",
     "theme_light": "Licht",
-    "theme_dark": "Donker"
+    "theme_dark": "Donker",
+    "not_found": "Pagina niet gevonden.",
+    "back_to_home": "Terug naar startpagina"
   },
   "vi": {
     "prev_page": "Trang trước",
@@ -421,7 +457,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Giao diện",
     "theme_system": "Hệ thống",
     "theme_light": "Sáng",
-    "theme_dark": "Tối"
+    "theme_dark": "Tối",
+    "not_found": "Không tìm thấy trang.",
+    "back_to_home": "Quay lại trang chủ"
   },
   "th": {
     "prev_page": "ก่อนหน้า",
@@ -443,7 +481,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "ธีม",
     "theme_system": "ระบบ",
     "theme_light": "สว่าง",
-    "theme_dark": "มืด"
+    "theme_dark": "มืด",
+    "not_found": "ไม่พบหน้า",
+    "back_to_home": "กลับสู่หน้าหลัก"
   },
   "sv": {
     "prev_page": "Förra Sidan",
@@ -465,7 +505,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Tema",
     "theme_system": "System",
     "theme_light": "Ljus",
-    "theme_dark": "Mörk"
+    "theme_dark": "Mörk",
+    "not_found": "Sidan kunde inte hittas.",
+    "back_to_home": "Tillbaka till start"
   },
   "ms": {
     "prev_page": "Halaman Sebelumnya",
@@ -487,7 +529,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Tema",
     "theme_system": "Sistem",
     "theme_light": "Cerah",
-    "theme_dark": "Gelap"
+    "theme_dark": "Gelap",
+    "not_found": "Halaman tidak dijumpai.",
+    "back_to_home": "Kembali ke laman utama"
   },
   "he": {
     "prev_page": "הקודם",
@@ -509,7 +553,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "ערכת נושא",
     "theme_system": "מערכת",
     "theme_light": "בהיר",
-    "theme_dark": "כהה"
+    "theme_dark": "כהה",
+    "not_found": "הדף לא נמצא.",
+    "back_to_home": "חזרה לדף הבית"
   },
   "cs": {
     "prev_page": "Předchozí",
@@ -531,7 +577,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Motiv",
     "theme_system": "Systémový",
     "theme_light": "Světlý",
-    "theme_dark": "Tmavý"
+    "theme_dark": "Tmavý",
+    "not_found": "Stránka nenalezena.",
+    "back_to_home": "Zpět na úvod"
   },
   "hu": {
     "prev_page": "Előző oldal",
@@ -553,7 +601,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Téma",
     "theme_system": "Rendszer",
     "theme_light": "Világos",
-    "theme_dark": "Sötét"
+    "theme_dark": "Sötét",
+    "not_found": "Az oldal nem található.",
+    "back_to_home": "Vissza a kezdőlapra"
   },
   "ro": {
     "prev_page": "Înapoi",
@@ -575,7 +625,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Temă",
     "theme_system": "Sistem",
     "theme_light": "Luminos",
-    "theme_dark": "Întunecat"
+    "theme_dark": "Întunecat",
+    "not_found": "Pagina nu a fost găsită.",
+    "back_to_home": "Înapoi la pagina principală"
   },
   "el": {
     "prev_page": "Προηγούμενο",
@@ -597,7 +649,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Θέμα",
     "theme_system": "Σύστημα",
     "theme_light": "Φωτεινό",
-    "theme_dark": "Σκοτεινό"
+    "theme_dark": "Σκοτεινό",
+    "not_found": "Η σελίδα δεν βρέθηκε.",
+    "back_to_home": "Επιστροφή στην αρχική"
   },
   "uk": {
     "prev_page": "Попередня",
@@ -619,7 +673,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Тема",
     "theme_system": "Системна",
     "theme_light": "Світла",
-    "theme_dark": "Темна"
+    "theme_dark": "Темна",
+    "not_found": "Сторінку не знайдено.",
+    "back_to_home": "Повернутися на головну"
   },
   "fil": {
     "prev_page": "Prev",
@@ -641,7 +697,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Tema",
     "theme_system": "Sistema",
     "theme_light": "Maliwanag",
-    "theme_dark": "Madilim"
+    "theme_dark": "Madilim",
+    "not_found": "Hindi nahanap ang pahina.",
+    "back_to_home": "Bumalik sa home"
   },
   "bn": {
     "prev_page": "পূর্ববর্তী",
@@ -663,7 +721,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "থিম",
     "theme_system": "সিস্টেম",
     "theme_light": "হালকা",
-    "theme_dark": "গাঢ়"
+    "theme_dark": "গাঢ়",
+    "not_found": "পৃষ্ঠা পাওয়া যায়নি।",
+    "back_to_home": "হোমে ফিরে যান"
   },
   "ur": {
     "prev_page": "Prev",
@@ -685,7 +745,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "تھیم",
     "theme_system": "سسٹم",
     "theme_light": "ہلکا",
-    "theme_dark": "گہرا"
+    "theme_dark": "گہرا",
+    "not_found": "صفحہ نہیں ملا۔",
+    "back_to_home": "ہوم پر واپس جائیں"
   },
   "sw": {
     "prev_page": "Uliopita",
@@ -707,7 +769,9 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Mandhari",
     "theme_system": "Mfumo",
     "theme_light": "Mwanga",
-    "theme_dark": "Giza"
+    "theme_dark": "Giza",
+    "not_found": "Ukurasa haukupatikana.",
+    "back_to_home": "Rudi nyumbani"
   },
   "af": {
     "prev_page": "Prev",
@@ -729,6 +793,8 @@ export const UI: Record<string, UIStrings> = {
     "theme": "Tema",
     "theme_system": "Stelsel",
     "theme_light": "Lig",
-    "theme_dark": "Donker"
+    "theme_dark": "Donker",
+    "not_found": "Bladsy nie gevind nie.",
+    "back_to_home": "Terug na tuisblad"
   },
 };
