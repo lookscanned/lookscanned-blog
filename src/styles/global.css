@@ -50,6 +50,14 @@
        (TOC links, ## headings) don't slide under it. */
     scroll-padding-top: 5rem;
     -webkit-text-size-adjust: 100%;
+    /* Bump the root from the 16px browser default to 17px so the whole
+       design — Tailwind's rem-based text/spacing/width utilities included
+       — scales up ~6% in lockstep. System-ui (PingFang SC / Microsoft
+       YaHei / Segoe UI) has a lighter optical weight than Noto Sans SC at
+       the same pixel size, and this one knob compensates for it without
+       making every component carry its own custom size class. Browser
+       zoom still works on top — we're only shifting the base. */
+    font-size: 17px;
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
