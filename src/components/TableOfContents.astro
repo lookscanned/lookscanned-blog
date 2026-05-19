@@ -104,6 +104,21 @@ const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
         { rootMargin: "-80px 0px -70% 0px" },
       );
       targets.forEach((t) => observer.observe(t));
+
+      // Edge case: when the user scrolls to the very bottom of the page,
+      // no heading sits inside the IntersectionObserver's narrow band
+      // (-80px from top, 30% of viewport tall), so the active item stops
+      // updating and the TOC fails to scroll its last entry into view.
+      // Watch the scroll position and force the last heading active when
+      // we're within a few pixels of the page bottom.
+      const onScroll = () => {
+        const docHeight = document.documentElement.scrollHeight;
+        const scrolledBottom = window.scrollY + window.innerHeight;
+        if (scrolledBottom >= docHeight - 4) {
+          setActive(targets[targets.length - 1].id);
+        }
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
     }
   }
 </script>
