@@ -43,12 +43,12 @@ const years = [...grouped.keys()].sort((a, b) => b - a);
               <li>
                 <a
                   href={localizedPath(locale, `posts/${p.slug}`)}
-                  class="group grid grid-cols-[5rem_1fr] items-baseline gap-x-6 py-3 transition sm:grid-cols-[7rem_1fr] sm:gap-x-8"
+                  class="group grid grid-cols-[5rem_1fr] items-baseline gap-x-6 py-3 sm:grid-cols-[7rem_1fr] sm:gap-x-8"
                 >
-                  <span class="text-xs tabular-nums uppercase tracking-wider text-zinc-400 transition group-hover:text-accent-600 dark:text-zinc-600 dark:group-hover:text-accent-400">
+                  <span class="text-xs tabular-nums uppercase tracking-wider text-zinc-400 dark:text-zinc-600">
                     {formatDayMonth(locale, p.entry.data.date)}
                   </span>
-                  <span class="text-base text-zinc-800 transition group-hover:text-accent-700 dark:text-zinc-200 dark:group-hover:text-accent-300 sm:text-lg">
+                  <span class="text-base text-zinc-800 underline-offset-[3px] group-hover:underline dark:text-zinc-200 sm:text-lg">
                     {p.entry.data.title}
                   </span>
                 </a>

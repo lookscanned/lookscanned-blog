@@ -29,17 +29,22 @@
     ui-monospace, SFMono-Regular, "SF Mono", Menlo,
     Consolas, "Liberation Mono", monospace;
 
-  /* Oxblood accent — restrained, used on links + hover only. */
-  --color-accent-50:  oklch(0.97 0.018 25);
-  --color-accent-100: oklch(0.93 0.040 25);
-  --color-accent-200: oklch(0.86 0.070 25);
-  --color-accent-300: oklch(0.74 0.100 25);
-  --color-accent-400: oklch(0.68 0.130 25);
-  --color-accent-500: oklch(0.55 0.150 25);
-  --color-accent-600: oklch(0.48 0.165 25);
-  --color-accent-700: oklch(0.41 0.155 25);
-  --color-accent-800: oklch(0.34 0.140 25);
-  --color-accent-900: oklch(0.27 0.110 25);
+  /*
+   * Accent — a refined ink-blue, hue 252 (between true blue and indigo,
+   * away from purple). Only two surfaces use it: `::selection` and
+   * `:focus-visible`. Links / hovers stay neutral (zinc) so the page
+   * doesn't bloom with color.
+   */
+  --color-accent-50:  oklch(0.97 0.020 252);
+  --color-accent-100: oklch(0.93 0.045 252);
+  --color-accent-200: oklch(0.86 0.080 252);
+  --color-accent-300: oklch(0.75 0.110 252);
+  --color-accent-400: oklch(0.68 0.140 252);
+  --color-accent-500: oklch(0.55 0.165 252);
+  --color-accent-600: oklch(0.48 0.170 252);
+  --color-accent-700: oklch(0.41 0.160 252);
+  --color-accent-800: oklch(0.34 0.140 252);
+  --color-accent-900: oklch(0.27 0.110 252);
 }
 
 @layer base {
@@ -99,11 +104,11 @@
   }
 
   ::selection {
-    background-color: oklch(0.93 0.040 25);
+    background-color: oklch(0.93 0.045 252);
     color: var(--color-zinc-900);
   }
   .dark ::selection {
-    background-color: oklch(0.30 0.080 25);
+    background-color: oklch(0.30 0.080 252);
     color: var(--color-zinc-50);
   }
 

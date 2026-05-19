@@ -91,16 +91,19 @@ const jsonLd = {
         "[--tw-prose-body:var(--color-zinc-800)] dark:[--tw-prose-body:var(--color-zinc-200)]",
         "[--tw-prose-headings:var(--color-zinc-900)] dark:[--tw-prose-headings:var(--color-zinc-50)]",
         "[--tw-prose-bold:var(--color-zinc-900)] dark:[--tw-prose-bold:var(--color-zinc-50)]",
-        "[--tw-prose-links:var(--color-accent-600)] dark:[--tw-prose-links:var(--color-accent-400)]",
+        // Links inherit body color — bold + underline carries the affordance, color stays out of it.
+        "[--tw-prose-links:var(--color-zinc-900)] dark:[--tw-prose-links:var(--color-zinc-50)]",
         "[--tw-prose-hr:var(--color-zinc-200)] dark:[--tw-prose-hr:var(--color-zinc-800)]",
         "[--tw-prose-bullets:var(--color-zinc-400)]",
         "[--tw-prose-counters:var(--color-zinc-400)]",
         "[--tw-prose-quotes:var(--color-zinc-700)] dark:[--tw-prose-quotes:var(--color-zinc-300)]",
-        "[--tw-prose-quote-borders:var(--color-accent-600)]",
+        "[--tw-prose-quote-borders:var(--color-zinc-300)] dark:[--tw-prose-quote-borders:var(--color-zinc-700)]",
         "[--tw-prose-captions:var(--color-zinc-500)] dark:[--tw-prose-captions:var(--color-zinc-400)]",
         "prose-headings:font-medium prose-headings:tracking-tight",
-        "prose-a:underline-offset-[3px] prose-a:decoration-accent-600/30 hover:prose-a:decoration-accent-600",
-        "dark:prose-a:decoration-accent-400/30 dark:hover:prose-a:decoration-accent-400",
+        // Always-underlined links: zinc-300 at rest → zinc-900 on hover. No color shift.
+        "prose-a:font-medium prose-a:underline prose-a:underline-offset-[3px]",
+        "prose-a:decoration-zinc-300 hover:prose-a:decoration-zinc-900",
+        "dark:prose-a:decoration-zinc-600 dark:hover:prose-a:decoration-zinc-100",
         "prose-code:rounded prose-code:bg-zinc-100 prose-code:px-1 prose-code:py-0.5 prose-code:font-normal prose-code:text-zinc-900",
         "dark:prose-code:bg-zinc-800 dark:prose-code:text-zinc-100",
         "prose-code:before:content-none prose-code:after:content-none",
@@ -135,7 +138,7 @@ const jsonLd = {
                 <a
                   href={localizedPath(t.locale, `posts/${t.slug}`)}
                   lang={t.locale}
-                  class="underline-offset-[3px] decoration-zinc-300 hover:text-accent-600 hover:decoration-accent-600 hover:underline dark:decoration-zinc-700 dark:hover:text-accent-400 dark:hover:decoration-accent-400"
+                  class="text-zinc-700 underline-offset-[3px] hover:underline dark:text-zinc-300"
                 >{getLocale(t.locale).data.languageName}</a>
                 {i < arr.length - 1 && <span>, </span>}
               </>
@@ -147,9 +150,12 @@ const jsonLd = {
         <nav class="mt-12 grid grid-cols-2 gap-6 border-t border-zinc-200/60 pt-8 dark:border-zinc-800/60">
           <div>
             {older && (
-              <a href={localizedPath(older.locale, `posts/${older.slug}`)} class="block transition hover:text-accent-600 dark:hover:text-accent-400">
+              <a
+                href={localizedPath(older.locale, `posts/${older.slug}`)}
+                class="group block"
+              >
                 <div class="text-xs text-zinc-500">← {meta.ui.prev_page}</div>
-                <div class="mt-2 line-clamp-2 text-zinc-800 dark:text-zinc-200">
+                <div class="mt-2 line-clamp-2 text-zinc-800 underline-offset-[3px] group-hover:underline dark:text-zinc-200">
                   {older.entry.data.title}
                 </div>
               </a>
@@ -157,9 +163,12 @@ const jsonLd = {
           </div>
           <div class="text-right">
             {newer && (
-              <a href={localizedPath(newer.locale, `posts/${newer.slug}`)} class="block transition hover:text-accent-600 dark:hover:text-accent-400">
+              <a
+                href={localizedPath(newer.locale, `posts/${newer.slug}`)}
+                class="group block"
+              >
                 <div class="text-xs text-zinc-500">{meta.ui.next_page} →</div>
-                <div class="mt-2 line-clamp-2 text-zinc-800 dark:text-zinc-200">
+                <div class="mt-2 line-clamp-2 text-zinc-800 underline-offset-[3px] group-hover:underline dark:text-zinc-200">
                   {newer.entry.data.title}
                 </div>
               </a>
