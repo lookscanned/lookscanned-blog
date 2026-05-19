@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import Giscus from "../components/Giscus.astro";
 import TableOfContents from "../components/TableOfContents.astro";
 import { getLocale, formatReadingTime, localizedPath } from "../i18n";
 import { formatDate } from "../lib/date";
@@ -177,7 +176,6 @@ const jsonLd = {
         </nav>
       )}
 
-      <Giscus locale={post.locale} />
     </article>
 
     <aside class="hidden lg:block">

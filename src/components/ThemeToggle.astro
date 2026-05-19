@@ -20,8 +20,8 @@ import { Icon } from "astro-icon/components";
  * painted, which produces a jarring "ghost animation" when the menu
  * is re-opened.
  *
- * Dispatches a `themechange` CustomEvent so Giscus can mirror the
- * iframe theme.
+ * Dispatches a `themechange` CustomEvent (kept as a hook for any
+ * future embedded surface that needs to mirror the resolved theme).
  */
 
 const labels = {

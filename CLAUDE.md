@@ -97,10 +97,9 @@ URLs always end with a trailing slash (Astro config: `trailingSlash: "always"`).
 ### Components & Layouts
 
 - `src/layouts/BaseLayout.astro` — html/head, header, footer, dark-mode init script, hreflang alternates, speculation rules
-- `src/layouts/PostLayout.astro` — prose body, reading time, share/translations row, prev/next nav, Giscus
+- `src/layouts/PostLayout.astro` — prose body, reading time, translations row, prev/next nav
 - `src/components/Header.astro` — site title, menu, LangDropdown, ThemeToggle
 - `src/components/LangDropdown.astro` — `<details>`-based dropdown of locale options
-- `src/components/Giscus.astro` — comments, with PaperMod's locale map preserved
 
 ### Styling
 
