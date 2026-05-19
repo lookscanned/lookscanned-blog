@@ -4,18 +4,10 @@ import { DEFAULT_LOCALE, getLocale } from "../i18n";
 
 /*
  * Three-state theme toggle: System / Light / Dark.
- *
- * Trigger icon:
- *   - System mode → sun-moon (combined) — clearly says "auto"
- *   - Light mode  → sun
- *   - Dark mode   → moon
- *
- * Mode storage:
- *   - "system" = absence of `theme` key in localStorage (default)
- *   - "light" / "dark" = explicit override
- *
- * Dispatches a `themechange` CustomEvent (kept as a hook for any
- * future embedded surface that needs to mirror the resolved theme).
+ *   - System mode → sun-moon icon, localStorage entry absent
+ *   - Light / Dark → sun / moon icon, explicit "theme" override
+ * Dispatches a `themechange` CustomEvent so embedded surfaces can
+ * mirror the resolved theme.
  */
 
 interface Props {
@@ -24,19 +16,13 @@ interface Props {
 
 const { locale = DEFAULT_LOCALE } = Astro.props;
 const ui = getLocale(locale).ui;
-const labels = {
-  trigger: ui.theme,
-  system: ui.theme_system,
-  light: ui.theme_light,
-  dark: ui.theme_dark,
-};
 ---
 
 <details class="theme-dropdown relative" data-mode="system">
   <summary
     class="flex h-8 w-8 cursor-pointer list-none items-center justify-center rounded text-zinc-600 transition hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 [&::-webkit-details-marker]:hidden"
-    aria-label={labels.trigger}
-    title={labels.trigger}
+    aria-label={ui.theme}
+    title={ui.theme}
   >
     <Icon name="lucide:sun-moon" class="theme-trigger-icon theme-trigger-icon-system h-[18px] w-[18px]" aria-hidden="true" />
     <Icon name="lucide:sun"      class="theme-trigger-icon theme-trigger-icon-light h-[18px] w-[18px]"  aria-hidden="true" />
@@ -49,21 +35,21 @@ const labels = {
     <button type="button" data-mode="system" class="theme-option mx-1 flex w-[calc(100%-0.5rem)] items-center justify-between rounded px-3 py-1.5 text-left text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800/60 dark:hover:text-zinc-100 aria-[current=true]:bg-zinc-100 aria-[current=true]:text-zinc-900 dark:aria-[current=true]:bg-zinc-800 dark:aria-[current=true]:text-zinc-100">
       <span class="flex items-center gap-2">
         <Icon name="lucide:sun-moon" class="h-3.5 w-3.5" aria-hidden="true" />
-        {labels.system}
+        {ui.theme_system}
       </span>
       <Icon name="lucide:check" class="theme-option-check h-3.5 w-3.5 opacity-0" aria-hidden="true" />
     </button>
     <button type="button" data-mode="light" class="theme-option mx-1 flex w-[calc(100%-0.5rem)] items-center justify-between rounded px-3 py-1.5 text-left text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800/60 dark:hover:text-zinc-100 aria-[current=true]:bg-zinc-100 aria-[current=true]:text-zinc-900 dark:aria-[current=true]:bg-zinc-800 dark:aria-[current=true]:text-zinc-100">
       <span class="flex items-center gap-2">
         <Icon name="lucide:sun" class="h-3.5 w-3.5" aria-hidden="true" />
-        {labels.light}
+        {ui.theme_light}
       </span>
       <Icon name="lucide:check" class="theme-option-check h-3.5 w-3.5 opacity-0" aria-hidden="true" />
     </button>
     <button type="button" data-mode="dark" class="theme-option mx-1 flex w-[calc(100%-0.5rem)] items-center justify-between rounded px-3 py-1.5 text-left text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800/60 dark:hover:text-zinc-100 aria-[current=true]:bg-zinc-100 aria-[current=true]:text-zinc-900 dark:aria-[current=true]:bg-zinc-800 dark:aria-[current=true]:text-zinc-100">
       <span class="flex items-center gap-2">
         <Icon name="lucide:moon" class="h-3.5 w-3.5" aria-hidden="true" />
-        {labels.dark}
+        {ui.theme_dark}
       </span>
       <Icon name="lucide:check" class="theme-option-check h-3.5 w-3.5 opacity-0" aria-hidden="true" />
     </button>

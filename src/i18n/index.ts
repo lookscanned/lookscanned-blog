@@ -56,6 +56,17 @@ export function localeFromPath(pathname: string): string {
     : DEFAULT_LOCALE;
 }
 
+/**
+ * getStaticPaths for routes under `src/pages/[locale]/*` — one entry per
+ * non-default locale. The English variant lives at the un-prefixed root,
+ * so the `en` code is intentionally excluded.
+ */
+export function localeStaticPaths() {
+  return LOCALES
+    .filter((l) => l.code !== DEFAULT_LOCALE)
+    .map((l) => ({ params: { locale: l.code }, props: { locale: l.code } }));
+}
+
 /** Pluralized "{n} min" using PaperMod's one/other forms. */
 export function formatReadingTime(locale: string, minutes: number): string {
   const ui = getLocale(locale).ui;

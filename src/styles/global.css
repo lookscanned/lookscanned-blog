@@ -49,15 +49,10 @@
        one viewport. */
     scrollbar-gutter: stable;
     /*
-     * Auto-fade page scrollbar. Default state: transparent thumb on
-     * both Firefox (scrollbar-color) and WebKit (background-color on
-     * the thumb pseudo-element). When the pointer enters the viewport
-     * (html:hover) or focus moves into the page (html:focus-within),
-     * the thumb fades in over 0.3s and fades out the same way on
-     * leave. Firefox interpolation works through the
-     * @property-registered --sb-thumb custom property (FF 128+);
-     * Chrome 121+ transitions scrollbar-color natively; WebKit
-     * transitions background-color on ::-webkit-scrollbar-thumb.
+     * Auto-fade page scrollbar via :hover / :focus-within. Firefox 128+
+     * interpolates `scrollbar-color` through the @property-registered
+     * --sb-thumb (declared at bottom of file); WebKit transitions
+     * `::-webkit-scrollbar-thumb`'s background-color in parallel.
      */
     scrollbar-width: thin;
     --sb-thumb: transparent;
@@ -166,11 +161,7 @@
 
 /*
  * Stealth scrollbar for in-content scrollers (TOC, LangDropdown).
- * Same auto-fade strategy as the page scrollbar: hidden by default,
- * fades in on hover / focus-within of the scrolling container, fades
- * back out on leave. Firefox interpolates through the
- * @property-registered --sb-thumb-stealth custom property; WebKit
- * transitions background-color on the thumb pseudo-element.
+ * Same auto-fade strategy as the page bar above — see that comment.
  */
 .scroll-stealth {
   scrollbar-width: thin;
