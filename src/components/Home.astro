@@ -23,7 +23,7 @@ const title = page > 1
 ---
 
 <BaseLayout title={title} description={meta.data.description} locale={locale}>
-  <main class="mx-auto max-w-5xl px-6">
+  <div class="mx-auto max-w-5xl px-6">
     <header class="pt-10 pb-10 sm:pt-14 sm:pb-12">
       <h1 class="text-3xl font-medium leading-[1.15] tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-zinc-50">
         {meta.data.homeTitle}
@@ -34,5 +34,5 @@ const title = page > 1
     </header>
     <PostList posts={current.items} />
     <Pagination locale={locale} current={current.page} total={current.total} basePath="" />
-  </main>
+  </div>
 </BaseLayout>

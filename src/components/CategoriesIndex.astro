@@ -11,12 +11,12 @@ const meta = getLocale(locale);
 ---
 
 <BaseLayout title={`Categories · ${meta.data.title}`} description={meta.data.description} locale={locale} pageKey="categories">
-  <main class="mx-auto max-w-5xl px-6 pt-12 pb-12 sm:pt-16">
-    <h1 class="text-3xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
+  <div class="mx-auto max-w-5xl px-6 pt-12 pb-12 sm:pt-16">
+    <h1 class="text-3xl font-medium leading-tight tracking-tight text-balance text-zinc-900 sm:text-4xl dark:text-zinc-50">
       Categories
     </h1>
     <p class="mt-6 text-sm text-zinc-600 dark:text-zinc-400">
       No categories yet. Browse <a href="/tags/" class="font-medium text-zinc-900 underline underline-offset-[3px] decoration-zinc-300 hover:decoration-zinc-900 dark:text-zinc-50 dark:decoration-zinc-600 dark:hover:decoration-zinc-100">tags</a> instead.
     </p>
-  </main>
+  </div>
 </BaseLayout>

@@ -1,62 +1,91 @@
 ---
-/*
- * Three-state theme toggle: system → light → dark → system → …
- *
- * - "system" (default) — follow `prefers-color-scheme`. Stored as
- *   *absence* of the `theme` localStorage key, so visitors who never
- *   touch the toggle stay on system without us writing anything.
- * - "light" / "dark" — explicit override, persisted across visits.
- *
- * On every state change, the script dispatches a `themechange`
- * CustomEvent (detail: { dark, mode }) so embedded surfaces such as
- * Giscus can update without polling.
- */
+// Labels stay English for the dropdown — the trigger icon is universal
+// (sun/moon) and the three modes are short technical terms. Can be
+// hoisted to src/i18n/ui.ts later if we want them localized.
+const labels = {
+  trigger: "Theme",
+  system: "System",
+  light: "Light",
+  dark: "Dark",
+};
 ---
 
-<button
-  id="theme-toggle"
-  type="button"
-  data-theme-mode="system"
-  aria-label="Theme"
-  class="theme-toggle flex h-8 w-8 items-center justify-center rounded text-zinc-600 transition hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
->
-  <!-- system: monitor -->
-  <svg class="theme-icon theme-icon-system h-[18px] w-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-    <rect width="20" height="14" x="2" y="3" rx="2"></rect>
-    <line x1="8" x2="16" y1="21" y2="21"></line>
-    <line x1="12" x2="12" y1="17" y2="21"></line>
-  </svg>
-  <!-- light: sun -->
-  <svg class="theme-icon theme-icon-light h-[18px] w-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-    <circle cx="12" cy="12" r="5"></circle>
-    <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
-    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-    <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
-    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-  </svg>
-  <!-- dark: moon -->
-  <svg class="theme-icon theme-icon-dark h-[18px] w-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-  </svg>
-</button>
+<details class="theme-dropdown relative">
+  <summary
+    class="flex h-8 w-8 cursor-pointer list-none items-center justify-center rounded text-zinc-600 transition hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 [&::-webkit-details-marker]:hidden"
+    aria-label={labels.trigger}
+    title={labels.trigger}
+  >
+    {/* Icon mirrors the rendered theme so users always see a familiar
+        sun (light) / moon (dark) — never a confusing 'monitor' icon. */}
+    <svg
+      class="h-[18px] w-[18px] dark:hidden"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    <svg
+      class="hidden h-[18px] w-[18px] dark:block"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+    >
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </summary>
+  <div
+    class="absolute right-0 z-20 mt-2 w-32 overflow-hidden rounded-md border border-zinc-200 bg-white py-1 text-sm shadow-lg dark:border-zinc-800 dark:bg-zinc-900"
+    role="menu"
+  >
+    <button
+      type="button"
+      data-mode="system"
+      class="theme-option flex w-full items-center justify-between px-3 py-1.5 text-left text-zinc-600 transition hover:bg-zinc-50 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 aria-[current=true]:bg-zinc-50 aria-[current=true]:text-zinc-900 dark:aria-[current=true]:bg-zinc-800 dark:aria-[current=true]:text-zinc-100"
+    >
+      {labels.system}
+      <svg class="theme-option-check h-3.5 w-3.5 opacity-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </button>
+    <button
+      type="button"
+      data-mode="light"
+      class="theme-option flex w-full items-center justify-between px-3 py-1.5 text-left text-zinc-600 transition hover:bg-zinc-50 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 aria-[current=true]:bg-zinc-50 aria-[current=true]:text-zinc-900 dark:aria-[current=true]:bg-zinc-800 dark:aria-[current=true]:text-zinc-100"
+    >
+      {labels.light}
+      <svg class="theme-option-check h-3.5 w-3.5 opacity-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </button>
+    <button
+      type="button"
+      data-mode="dark"
+      class="theme-option flex w-full items-center justify-between px-3 py-1.5 text-left text-zinc-600 transition hover:bg-zinc-50 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 aria-[current=true]:bg-zinc-50 aria-[current=true]:text-zinc-900 dark:aria-[current=true]:bg-zinc-800 dark:aria-[current=true]:text-zinc-100"
+    >
+      {labels.dark}
+      <svg class="theme-option-check h-3.5 w-3.5 opacity-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </button>
+  </div>
+</details>
 
 <style>
-  .theme-toggle .theme-icon { display: none; }
-  .theme-toggle[data-theme-mode="system"] .theme-icon-system,
-  .theme-toggle[data-theme-mode="light"]  .theme-icon-light,
-  .theme-toggle[data-theme-mode="dark"]   .theme-icon-dark { display: block; }
+  /* Show the check next to whichever mode is currently active. */
+  .theme-option[aria-current="true"] .theme-option-check { opacity: 1; }
 </style>
 
-<script is:inline>
+<script>
   (() => {
-    const btn = document.getElementById("theme-toggle");
-    if (!btn) return;
-    const order = ["system", "light", "dark"];
-    const labels = {
-      system: "Theme: follow system",
-      light: "Theme: light",
-      dark: "Theme: dark",
-    };
+    const root = document.querySelector<HTMLDetailsElement>(".theme-dropdown");
+    if (!root) return;
+    const options = root.querySelectorAll<HTMLButtonElement>("[data-mode]");
     const media = window.matchMedia("(prefers-color-scheme: dark)");
 
     const currentMode = () => localStorage.getItem("theme") ?? "system";
@@ -65,23 +94,32 @@
       const mode = currentMode();
       const dark = mode === "dark" || (mode === "system" && media.matches);
       document.documentElement.classList.toggle("dark", dark);
-      btn.setAttribute("data-theme-mode", mode);
-      btn.setAttribute("aria-label", labels[mode]);
+      options.forEach((opt) => {
+        opt.setAttribute("aria-current", opt.dataset.mode === mode ? "true" : "false");
+      });
       document.dispatchEvent(
         new CustomEvent("themechange", { detail: { dark, mode } }),
       );
     };
 
-    btn.addEventListener("click", () => {
-      const next = order[(order.indexOf(currentMode()) + 1) % order.length];
-      if (next === "system") localStorage.removeItem("theme");
-      else localStorage.setItem("theme", next);
-      apply();
+    options.forEach((opt) => {
+      opt.addEventListener("click", () => {
+        const next = opt.dataset.mode;
+        if (next === "system") localStorage.removeItem("theme");
+        else if (next) localStorage.setItem("theme", next);
+        apply();
+        root.open = false;
+      });
     });
 
-    // Follow OS theme changes while on "system" mode.
+    // Follow OS theme when on system mode.
     media.addEventListener("change", () => {
       if (currentMode() === "system") apply();
+    });
+
+    // Close on outside click — matches LangDropdown behaviour.
+    document.addEventListener("click", (event) => {
+      if (root.open && !root.contains(event.target as Node)) root.open = false;
     });
 
     apply();

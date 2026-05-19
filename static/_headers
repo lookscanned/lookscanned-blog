@@ -1,4 +1,16 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://giscus.app https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://giscus.app https://api.github.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com; worker-src 'self' blob:; frame-src https://giscus.app; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
+
 /assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/_pagefind/*
   Cache-Control: public, max-age=31536000, immutable
 
 /apple-touch-icon.png
@@ -15,4 +27,3 @@
 
 /posts/*.webp
   Cache-Control: public, max-age=604800, stale-while-revalidate=86400
-
