@@ -5,7 +5,8 @@ interface Props {
 
 const { locale } = Astro.props;
 
-// Map our locale codes to Giscus's lang list. Fallback to "en".
+// Giscus's own language list (https://github.com/giscus/giscus/blob/main/lib/i18n.ts).
+// Fall back to English for locales it doesn't ship.
 const GISCUS_LANG_MAP: Record<string, string> = {
   ar: "ar", be: "be", bg: "bg", ca: "ca", cs: "cs", da: "da", de: "de",
   el: "gr", en: "en", eo: "eo", es: "es", eu: "eu", fa: "fa", fil: "en",
@@ -17,39 +18,42 @@ const GISCUS_LANG_MAP: Record<string, string> = {
 const giscusLang = GISCUS_LANG_MAP[locale] ?? "en";
 ---
 
-<section class="mt-16" id="giscus-section"></section>
+<section class="mt-16">
+  {/* Inline script tag — Giscus uses document.currentScript.parentElement
+      to know where to inject its <iframe>. Setting up the script this
+      way (rather than dynamically appending it from another script) is
+      what guarantees the iframe lands inside this <section> at full
+      width. The theme is initialised to follow OS preference and then
+      synced to our app's actual state below via postMessage. */}
+  <script
+    is:inline
+    src="https://giscus.app/client.js"
+    data-repo="lookscanned/lookscanned-blog"
+    data-repo-id="R_kgDONrCyPw"
+    data-category="Announcements"
+    data-category-id="DIC_kwDONrCyP84CmK9C"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-theme="preferred_color_scheme"
+    data-lang={giscusLang}
+    crossorigin="anonymous"
+    async
+  ></script>
+</section>
 
-<script is:inline define:vars={{ giscusLang }}>
+<script is:inline>
+  /*
+   * Theme sync. Two paths into the iframe:
+   *   1. On first 'discussion' message from giscus.app, immediately
+   *      override the OS-default theme with our app's current state
+   *      (handles users whose manual choice differs from OS).
+   *   2. On subsequent `themechange` CustomEvent (dispatched by
+   *      ThemeToggle), propagate to the iframe too.
+   */
   (() => {
-    const section = document.getElementById("giscus-section");
-    if (!section) return;
-
-    // Read current theme from html.dark — the BaseLayout pre-paint
-    // script has already applied the correct class by the time this
-    // runs, so this is the source of truth at first paint.
-    const initialDark = document.documentElement.classList.contains("dark");
-
-    const script = document.createElement("script");
-    script.src = "https://giscus.app/client.js";
-    script.async = true;
-    script.crossOrigin = "anonymous";
-    Object.assign(script.dataset, {
-      repo: "lookscanned/lookscanned-blog",
-      repoId: "R_kgDONrCyPw",
-      category: "Announcements",
-      categoryId: "DIC_kwDONrCyP84CmK9C",
-      mapping: "pathname",
-      strict: "0",
-      reactionsEnabled: "1",
-      emitMetadata: "0",
-      theme: initialDark ? "dark" : "light",
-      lang: giscusLang,
-    });
-    section.appendChild(script);
-
-    // Keep the embedded iframe in sync when the user toggles dark mode
-    // via ThemeToggle (which dispatches a `themechange` CustomEvent).
-    const updateTheme = (dark) => {
+    const sendTheme = (dark) => {
       const frame = document.querySelector("iframe.giscus-frame");
       if (!frame || !frame.contentWindow) return;
       frame.contentWindow.postMessage(
@@ -57,8 +61,19 @@ const giscusLang = GISCUS_LANG_MAP[locale] ?? "en";
         "https://giscus.app",
       );
     };
+    const currentDark = () =>
+      document.documentElement.classList.contains("dark");
+
+    window.addEventListener("message", (event) => {
+      if (event.origin !== "https://giscus.app") return;
+      const data = event.data;
+      if (data && data.giscus && data.giscus.discussion) {
+        sendTheme(currentDark());
+      }
+    });
+
     document.addEventListener("themechange", (event) => {
-      updateTheme(Boolean(event.detail && event.detail.dark));
+      sendTheme(Boolean(event.detail && event.detail.dark));
     });
   })();
 </script>
