@@ -127,18 +127,24 @@
 }
 
 /*
- * Stealth scrollbar — track stays invisible at rest, thumb fades in on
- * hover. Use on internal scrollers (TOC sidebar, LangDropdown menu)
- * where the scrollbar shouldn't claim layout space or visual weight.
+ * Stealth scrollbar — track invisible at rest, thumb fades in on hover.
  *
- * Cross-browser: Firefox uses the standard `scrollbar-width` /
- * `scrollbar-color` properties; Chromium / Safari uses the WebKit
- * pseudo-elements. Both branches are present.
+ * Why the appearance / border-clip dance:
+ *   1. `appearance: none` on every scrollbar pseudo-element. Without it
+ *      WebKit briefly paints the OS-default thumb (dark on macOS / Win)
+ *      before our CSS applies, producing the "flash to black" issue.
+ *   2. `border: 2px solid transparent; background-clip: padding-box`
+ *      gives the thumb breathing room inside the scrollbar gutter so
+ *      it looks slim without us shrinking the scrollbar width itself.
+ *   3. `transition: background-color 0.3s ease` on the thumb itself —
+ *      WebKit honors transitions on pseudo-elements for compositor-
+ *      friendly properties like background-color since Safari 14+.
+ *      Firefox can't transition `scrollbar-color`, so its end states
+ *      are snap-to but the initial paint is correct (no flash).
  */
 .scroll-stealth {
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
-  transition: scrollbar-color 0.2s ease;
 }
 .scroll-stealth:hover,
 .scroll-stealth:focus-within {
@@ -149,16 +155,32 @@
   scrollbar-color: var(--color-zinc-700) transparent;
 }
 .scroll-stealth::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
 }
-.scroll-stealth::-webkit-scrollbar-track {
-  background: transparent;
+.scroll-stealth::-webkit-scrollbar-track,
+.scroll-stealth::-webkit-scrollbar-track-piece,
+.scroll-stealth::-webkit-scrollbar-corner {
+  background-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.scroll-stealth::-webkit-scrollbar-button {
+  display: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .scroll-stealth::-webkit-scrollbar-thumb {
+  -webkit-appearance: none;
+  appearance: none;
   background-color: transparent;
+  border: 2px solid transparent;
+  background-clip: padding-box;
   border-radius: 9999px;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 .scroll-stealth:hover::-webkit-scrollbar-thumb,
 .scroll-stealth:focus-within::-webkit-scrollbar-thumb {

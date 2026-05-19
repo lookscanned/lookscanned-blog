@@ -36,7 +36,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Browse",
     "connect_label": "Connect",
-    "try_cta": "Try Look Scanned"
+    "try_cta": "Try Look Scanned Free"
   },
   "zh": {
     "prev_page": "上一页",
@@ -53,7 +53,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} 字",
     "browse_label": "浏览",
     "connect_label": "联系",
-    "try_cta": "试用 Look Scanned"
+    "try_cta": "免费试试 Look Scanned"
   },
   "zh-tw": {
     "prev_page": "上一頁",
@@ -70,7 +70,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} 字",
     "browse_label": "瀏覽",
     "connect_label": "聯絡",
-    "try_cta": "試用 Look Scanned"
+    "try_cta": "免費試試 Look Scanned"
   },
   "es": {
     "prev_page": "Anterior",
@@ -87,7 +87,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} palabras",
     "browse_label": "Explorar",
     "connect_label": "Contacto",
-    "try_cta": "Prueba Look Scanned"
+    "try_cta": "Prueba Look Scanned gratis"
   },
   "hi": {
     "prev_page": "पिछला",
@@ -104,7 +104,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "ब्राउज़ करें",
     "connect_label": "संपर्क",
-    "try_cta": "Look Scanned आज़माएं"
+    "try_cta": "Look Scanned मुफ़्त आज़माएं"
   },
   "ar": {
     "prev_page": "السابق",
@@ -121,7 +121,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "تصفح",
     "connect_label": "تواصل",
-    "try_cta": "جرب Look Scanned"
+    "try_cta": "جرب Look Scanned مجانًا"
   },
   "fr": {
     "prev_page": "Précédent",
@@ -138,7 +138,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} mots",
     "browse_label": "Parcourir",
     "connect_label": "Contact",
-    "try_cta": "Essayer Look Scanned"
+    "try_cta": "Essayer Look Scanned gratuitement"
   },
   "pt": {
     "prev_page": "Página Anterior",
@@ -155,7 +155,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} palavras",
     "browse_label": "Navegar",
     "connect_label": "Contato",
-    "try_cta": "Experimente o Look Scanned"
+    "try_cta": "Experimente o Look Scanned grátis"
   },
   "ja": {
     "prev_page": "前へ",
@@ -172,7 +172,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} 文字",
     "browse_label": "閲覧",
     "connect_label": "お問い合わせ",
-    "try_cta": "Look Scanned を試す"
+    "try_cta": "Look Scanned を無料で試す"
   },
   "de": {
     "prev_page": "Vorherige",
@@ -189,7 +189,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} Wörter",
     "browse_label": "Durchsuchen",
     "connect_label": "Kontakt",
-    "try_cta": "Look Scanned ausprobieren"
+    "try_cta": "Look Scanned kostenlos testen"
   },
   "ru": {
     "prev_page": "Предыдущая",
@@ -206,7 +206,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} слово",
     "browse_label": "Обзор",
     "connect_label": "Связаться",
-    "try_cta": "Попробовать Look Scanned"
+    "try_cta": "Попробовать Look Scanned бесплатно"
   },
   "id": {
     "prev_page": "Sebelumnya",
@@ -223,7 +223,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} kata",
     "browse_label": "Jelajahi",
     "connect_label": "Hubungi",
-    "try_cta": "Coba Look Scanned"
+    "try_cta": "Coba Look Scanned gratis"
   },
   "ko": {
     "prev_page": "이전 페이지",
@@ -240,7 +240,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} 단어",
     "browse_label": "둘러보기",
     "connect_label": "연결",
-    "try_cta": "Look Scanned 사용해보기"
+    "try_cta": "Look Scanned 무료로 사용해보기"
   },
   "it": {
     "prev_page": "Precedente",
@@ -257,7 +257,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} parole",
     "browse_label": "Sfoglia",
     "connect_label": "Contatto",
-    "try_cta": "Prova Look Scanned"
+    "try_cta": "Prova Look Scanned gratis"
   },
   "tr": {
     "prev_page": "Önceki",
@@ -274,7 +274,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} sözcük",
     "browse_label": "Gözat",
     "connect_label": "İletişim",
-    "try_cta": "Look Scanned'i Dene"
+    "try_cta": "Look Scanned'i Ücretsiz Dene"
   },
   "pl": {
     "prev_page": "Poprzednia",
@@ -291,7 +291,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} słów",
     "browse_label": "Przeglądaj",
     "connect_label": "Kontakt",
-    "try_cta": "Wypróbuj Look Scanned"
+    "try_cta": "Wypróbuj Look Scanned za darmo"
   },
   "nl": {
     "prev_page": "Vorige",
@@ -308,7 +308,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} woorden",
     "browse_label": "Bladeren",
     "connect_label": "Contact",
-    "try_cta": "Probeer Look Scanned"
+    "try_cta": "Probeer Look Scanned gratis"
   },
   "vi": {
     "prev_page": "Trang trước",
@@ -325,7 +325,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} từ",
     "browse_label": "Duyệt",
     "connect_label": "Liên hệ",
-    "try_cta": "Dùng thử Look Scanned"
+    "try_cta": "Dùng thử Look Scanned miễn phí"
   },
   "th": {
     "prev_page": "ก่อนหน้า",
@@ -342,7 +342,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} คำ",
     "browse_label": "เรียกดู",
     "connect_label": "ติดต่อ",
-    "try_cta": "ทดลองใช้ Look Scanned"
+    "try_cta": "ทดลองใช้ Look Scanned ฟรี"
   },
   "sv": {
     "prev_page": "Förra Sidan",
@@ -359,7 +359,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Bläddra",
     "connect_label": "Kontakt",
-    "try_cta": "Prova Look Scanned"
+    "try_cta": "Prova Look Scanned gratis"
   },
   "ms": {
     "prev_page": "Halaman Sebelumnya",
@@ -376,7 +376,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Layari",
     "connect_label": "Hubungi",
-    "try_cta": "Cuba Look Scanned"
+    "try_cta": "Cuba Look Scanned secara percuma"
   },
   "he": {
     "prev_page": "הקודם",
@@ -393,7 +393,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} מילים",
     "browse_label": "עיון",
     "connect_label": "צור קשר",
-    "try_cta": "נסה את Look Scanned"
+    "try_cta": "נסה את Look Scanned בחינם"
   },
   "cs": {
     "prev_page": "Předchozí",
@@ -410,7 +410,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} slov",
     "browse_label": "Procházet",
     "connect_label": "Kontakt",
-    "try_cta": "Vyzkoušet Look Scanned"
+    "try_cta": "Vyzkoušejte Look Scanned zdarma"
   },
   "hu": {
     "prev_page": "Előző oldal",
@@ -427,7 +427,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Böngészés",
     "connect_label": "Kapcsolat",
-    "try_cta": "Próbáld ki a Look Scannedet"
+    "try_cta": "Próbáld ki ingyen a Look Scannedet"
   },
   "ro": {
     "prev_page": "Înapoi",
@@ -444,7 +444,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} cuvinte",
     "browse_label": "Răsfoiește",
     "connect_label": "Contact",
-    "try_cta": "Încearcă Look Scanned"
+    "try_cta": "Încearcă Look Scanned gratuit"
   },
   "el": {
     "prev_page": "Προηγούμενο",
@@ -461,7 +461,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} λέξεις",
     "browse_label": "Περιήγηση",
     "connect_label": "Επικοινωνία",
-    "try_cta": "Δοκιμάστε το Look Scanned"
+    "try_cta": "Δοκιμάστε δωρεάν το Look Scanned"
   },
   "uk": {
     "prev_page": "Попередня",
@@ -478,7 +478,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Огляд",
     "connect_label": "Зв'язатися",
-    "try_cta": "Спробувати Look Scanned"
+    "try_cta": "Спробувати Look Scanned безкоштовно"
   },
   "fil": {
     "prev_page": "Prev",
@@ -495,7 +495,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Mag-browse",
     "connect_label": "Kumonekta",
-    "try_cta": "Subukan ang Look Scanned"
+    "try_cta": "Subukan ang Look Scanned nang libre"
   },
   "bn": {
     "prev_page": "পূর্ববর্তী",
@@ -512,7 +512,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} টি শব্দ",
     "browse_label": "ব্রাউজ করুন",
     "connect_label": "যোগাযোগ",
-    "try_cta": "Look Scanned চেষ্টা করুন"
+    "try_cta": "Look Scanned বিনামূল্যে চেষ্টা করুন"
   },
   "ur": {
     "prev_page": "Prev",
@@ -529,7 +529,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "براؤز کریں",
     "connect_label": "رابطہ",
-    "try_cta": "Look Scanned آزمائیں"
+    "try_cta": "Look Scanned مفت آزمائیں"
   },
   "sw": {
     "prev_page": "Uliopita",
@@ -546,7 +546,7 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "maneno {{ .Count }}",
     "browse_label": "Vinjari",
     "connect_label": "Wasiliana",
-    "try_cta": "Jaribu Look Scanned"
+    "try_cta": "Jaribu Look Scanned bure"
   },
   "af": {
     "prev_page": "Prev",
@@ -563,6 +563,6 @@ export const UI: Record<string, UIStrings> = {
     "words_other": "{{ .Count }} words",
     "browse_label": "Blaai",
     "connect_label": "Kontak",
-    "try_cta": "Probeer Look Scanned"
+    "try_cta": "Probeer Look Scanned gratis"
   },
 };
