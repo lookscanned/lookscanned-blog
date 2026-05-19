@@ -169,6 +169,37 @@
   background-color: var(--color-zinc-700);
 }
 
+/*
+ * Edge-fade mask. JS toggles `data-fade-top` / `data-fade-bottom`
+ * attributes based on scroll position; the CSS variables drive a
+ * mask-image gradient that fades only the edge that actually has
+ * hidden content. When neither attr is set, the mask is fully opaque
+ * (both vars 0px), so the element renders normally.
+ */
+.fade-mask-y {
+  --fade-top: 0px;
+  --fade-bottom: 0px;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    black var(--fade-top),
+    black calc(100% - var(--fade-bottom)),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    black var(--fade-top),
+    black calc(100% - var(--fade-bottom)),
+    transparent 100%
+  );
+  transition: --fade-top 0.18s ease, --fade-bottom 0.18s ease;
+}
+.fade-mask-y[data-fade-top]    { --fade-top: 24px; }
+.fade-mask-y[data-fade-bottom] { --fade-bottom: 24px; }
+@property --fade-top    { syntax: "<length>"; initial-value: 0px; inherits: false; }
+@property --fade-bottom { syntax: "<length>"; initial-value: 0px; inherits: false; }
+
 /* Shiki dual-theme code blocks */
 html.dark .astro-code,
 html.dark .astro-code span {
