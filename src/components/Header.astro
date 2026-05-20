@@ -50,7 +50,7 @@ const searchActive = currentPath === searchUrl;
     </a>
     <div class="flex items-center gap-1 sm:gap-2">
       {inlineMenu.length > 0 && (
-        <ul class="hidden items-center gap-5 pr-2 text-sm text-zinc-600 dark:text-zinc-400 sm:flex">
+        <ul class="hidden items-center gap-5 pe-2 text-sm text-zinc-600 dark:text-zinc-400 sm:flex">
           {inlineMenu.map((item) => {
             const url = resolveUrl(item.url);
             const active = currentPath === url;
@@ -95,12 +95,12 @@ const searchActive = currentPath === searchUrl;
           href={externalCta.url}
           target="_blank"
           rel="noopener noreferrer"
-          class="group ml-1 inline-flex h-8 items-center justify-center gap-1.5 rounded-md bg-zinc-900 px-3 text-sm font-medium text-white shadow-xs transition hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300 sm:ml-2"
+          class="group ms-1 inline-flex h-8 items-center justify-center gap-1.5 rounded-md bg-zinc-900 px-3 text-sm font-medium text-white shadow-xs transition hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300 sm:ms-2"
         >
           {meta.ui.try_cta}
           <Icon
             name="lucide:arrow-right"
-            class="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5"
+            class="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5 rtl:rotate-180 rtl:group-hover:-translate-x-0.5"
             aria-hidden="true"
           />
         </a>

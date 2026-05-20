@@ -153,20 +153,20 @@ const jsonLd = {
                 href={localizedPath(older.locale, `posts/${older.slug}`)}
                 class="group block"
               >
-                <div class="text-xs text-zinc-500">← {meta.ui.prev_page}</div>
+                <div class="text-xs text-zinc-500"><span class="inline-block rtl:rotate-180">←</span> {meta.ui.prev_page}</div>
                 <div class="mt-2 line-clamp-2 text-zinc-800 underline-offset-[3px] group-hover:underline dark:text-zinc-200">
                   {older.entry.data.title}
                 </div>
               </a>
             )}
           </div>
-          <div class="text-right">
+          <div class="text-end">
             {newer && (
               <a
                 href={localizedPath(newer.locale, `posts/${newer.slug}`)}
                 class="group block"
               >
-                <div class="text-xs text-zinc-500">{meta.ui.next_page} →</div>
+                <div class="text-xs text-zinc-500">{meta.ui.next_page} <span class="inline-block rtl:rotate-180">→</span></div>
                 <div class="mt-2 line-clamp-2 text-zinc-800 underline-offset-[3px] group-hover:underline dark:text-zinc-200">
                   {newer.entry.data.title}
                 </div>

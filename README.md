@@ -11,7 +11,6 @@ This repository contains the source for the Look Scanned Blog, built with Astro 
 - 32-language multilingual content (English at `/`, others under `/<lang>/`)
 - Per-locale RSS feeds and a multi-locale sitemap with hreflang alternates
 - Pagefind full-text search with per-locale indexes
-- Giscus comments with the right Giscus locale per language
 - Dark/light theme, RTL support for `ar` / `he` / `ur`
 - Automatic deployments to Cloudflare Pages (primary) and GitHub Pages (secondary)
 

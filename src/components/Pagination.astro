@@ -37,10 +37,10 @@ const next = current < total ? url(current + 1) : null;
       rel="prev"
       class="text-zinc-700 underline-offset-[3px] transition hover:underline dark:text-zinc-300"
     >
-      ← {meta.ui.prev_page}
+      <span class="inline-block rtl:rotate-180">←</span> {meta.ui.prev_page}
     </a>
   ) : (
-    <span class="text-zinc-300 dark:text-zinc-700">← {meta.ui.prev_page}</span>
+    <span class="text-zinc-300 dark:text-zinc-700"><span class="inline-block rtl:rotate-180">←</span> {meta.ui.prev_page}</span>
   )}
   <span class="tabular-nums text-zinc-500 dark:text-zinc-400">
     {current} / {total}
@@ -51,9 +51,9 @@ const next = current < total ? url(current + 1) : null;
       rel="next"
       class="text-zinc-700 underline-offset-[3px] transition hover:underline dark:text-zinc-300"
     >
-      {meta.ui.next_page} →
+      {meta.ui.next_page} <span class="inline-block rtl:rotate-180">→</span>
     </a>
   ) : (
-    <span class="text-zinc-300 dark:text-zinc-700">{meta.ui.next_page} →</span>
+    <span class="text-zinc-300 dark:text-zinc-700">{meta.ui.next_page} <span class="inline-block rtl:rotate-180">→</span></span>
   )}
 </nav>

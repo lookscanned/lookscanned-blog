@@ -28,10 +28,10 @@ const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
     </p>
     <ul
       data-toc-scroll
-      class="scroll-stealth fade-mask-y min-h-0 flex-1 space-y-2 overflow-y-auto border-l border-zinc-200 dark:border-zinc-800"
+      class="scroll-stealth fade-mask-y min-h-0 flex-1 space-y-2 overflow-y-auto border-s border-zinc-200 dark:border-zinc-800"
     >
       {items.map((h) => (
-        <li class={h.depth === 3 ? "pl-8" : "pl-4"}>
+        <li class={h.depth === 3 ? "ps-8" : "ps-4"}>
           <a
             href={`#${h.slug}`}
             data-toc-link={h.slug}

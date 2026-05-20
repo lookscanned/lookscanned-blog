@@ -5,6 +5,12 @@
 /en/  /  301
 /en/*  /:splat  301
 
+# Hugo emitted /categories/ + /<locale>/categories/ stubs for every locale even
+# though no post defines a category. Astro no longer ships these — redirect to
+# the corresponding /tags/ index, the closest taxonomy.
+/categories/  /tags/  301
+/:locale/categories/  /:locale/tags/  301
+
 # Two French/Portuguese tags slugify slightly differently in Astro (Hugo stripped
 # the apostrophe entirely; Astro turns it into a `-`). Send the old URLs to the
 # new ones so any backlinks resolve.
