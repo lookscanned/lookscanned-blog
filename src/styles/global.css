@@ -40,10 +40,15 @@
        (TOC links, ## headings) don't slide under it. */
     scroll-padding-top: 5rem;
     -webkit-text-size-adjust: 100%;
-    /* Bump the root from the 16px browser default to 17px so the whole
-       design — Tailwind's rem-based text/spacing/width utilities included
-       — scales up ~6% in lockstep. */
-    font-size: 17px;
+    /*
+     * Mobile uses the browser-default 16px root; sm+ bumps to 17px so
+     * the desktop design — Tailwind's rem-based text/spacing/width
+     * utilities included — scales up ~6% in lockstep. The split keeps
+     * mobile from feeling cramped (padding + headings + line-height
+     * shrink together with the body text) while preserving the
+     * roomier desktop reading rhythm.
+     */
+    font-size: 16px;
     /* Reserve scrollbar gutter so the page width stays constant — no CLS
        when async content (images, lazy components) pushes the page past
        one viewport. */
@@ -114,6 +119,10 @@
     ::view-transition-new(*) {
       animation: none !important;
     }
+  }
+
+  @media (min-width: 640px) {
+    html { font-size: 17px; }
   }
 
   body {
@@ -281,4 +290,39 @@ html.dark .prose :where(pre.astro-code) {
   border-radius: 0 !important;
   font-weight: inherit;
   color: inherit;
+}
+
+/*
+ * Mobile-safe markdown tables. Wide tables (5+ columns is common in
+ * comparison posts) would otherwise push the article past 100vw and
+ * trigger horizontal page scroll. Flipping the <table> itself to
+ * `display: block` turns it into its own horizontal scroll container —
+ * no rehype wrapper needed.
+ */
+.prose :where(table) {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*
+ * Long unbroken strings (URLs, code identifiers) in prose can overflow
+ * narrow viewports. `break-word` keeps Latin readable; tables/code
+ * already handle themselves above.
+ */
+.prose :where(p, li, blockquote, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
+
+/*
+ * Inline code is typically a single unbroken token (path, identifier,
+ * URL). `break-word` only kicks in as a last resort and picks a random
+ * character mid-word — `themes/PaperMod/layouts/partials/header.html`
+ * becomes `themes/PaperMod/layouts/pa | rtials/header.html`. Switching
+ * to `break-all` lets the browser break at any character so long inline
+ * code wraps cleanly without overflowing narrow viewports.
+ */
+.prose :where(:not(pre) > code) {
+  word-break: break-all;
 }

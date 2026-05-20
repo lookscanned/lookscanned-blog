@@ -72,7 +72,7 @@ const jsonLd = {
           {post.entry.data.title}
         </h1>
         {post.entry.data.summary && (
-          <p class="mt-5 text-lg leading-relaxed text-zinc-600 text-pretty dark:text-zinc-400">
+          <p class="mt-5 text-base leading-relaxed text-zinc-600 text-pretty dark:text-zinc-400 sm:text-lg">
             {post.entry.data.summary}
           </p>
         )}
@@ -86,7 +86,7 @@ const jsonLd = {
       </header>
 
       <div class:list={[
-        "prose prose-xl max-w-none",
+        "prose prose-lg max-w-none sm:prose-xl",
         "[--tw-prose-body:var(--color-zinc-800)] dark:[--tw-prose-body:var(--color-zinc-200)]",
         "[--tw-prose-headings:var(--color-zinc-900)] dark:[--tw-prose-headings:var(--color-zinc-50)]",
         "[--tw-prose-bold:var(--color-zinc-900)] dark:[--tw-prose-bold:var(--color-zinc-50)]",
