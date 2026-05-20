@@ -61,7 +61,7 @@ jobs:
           path: dist
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         id: deployment
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -91,7 +91,7 @@ jobs:
           path: dist
 
       - name: Deploy to Cloudflare Pages Release
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         id: deployment
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
