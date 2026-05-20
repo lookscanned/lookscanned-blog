@@ -305,3 +305,15 @@ html.dark .prose :where(pre.astro-code) {
 .prose :where(p, li, blockquote, h1, h2, h3, h4, h5, h6) {
   overflow-wrap: break-word;
 }
+
+/*
+ * Inline code is typically a single unbroken token (path, identifier,
+ * URL). `break-word` only kicks in as a last resort and picks a random
+ * character mid-word — `themes/PaperMod/layouts/partials/header.html`
+ * becomes `themes/PaperMod/layouts/pa | rtials/header.html`. Switching
+ * to `break-all` lets the browser break at any character so long inline
+ * code wraps cleanly without overflowing narrow viewports.
+ */
+.prose :where(:not(pre) > code) {
+  word-break: break-all;
+}
