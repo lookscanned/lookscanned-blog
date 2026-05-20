@@ -40,10 +40,15 @@
        (TOC links, ## headings) don't slide under it. */
     scroll-padding-top: 5rem;
     -webkit-text-size-adjust: 100%;
-    /* Bump the root from the 16px browser default to 17px so the whole
-       design — Tailwind's rem-based text/spacing/width utilities included
-       — scales up ~6% in lockstep. */
-    font-size: 17px;
+    /*
+     * Mobile uses the browser-default 16px root; sm+ bumps to 17px so
+     * the desktop design — Tailwind's rem-based text/spacing/width
+     * utilities included — scales up ~6% in lockstep. The split keeps
+     * mobile from feeling cramped (padding + headings + line-height
+     * shrink together with the body text) while preserving the
+     * roomier desktop reading rhythm.
+     */
+    font-size: 16px;
     /* Reserve scrollbar gutter so the page width stays constant — no CLS
        when async content (images, lazy components) pushes the page past
        one viewport. */
@@ -114,6 +119,10 @@
     ::view-transition-new(*) {
       animation: none !important;
     }
+  }
+
+  @media (min-width: 640px) {
+    html { font-size: 17px; }
   }
 
   body {
