@@ -14,7 +14,7 @@ const rssUrl = locale === "en" ? "/rss.xml" : `/${locale}/rss.xml`;
 // English if the entry is missing for some reason (unlikely — all 32
 // locales ship the full menu).
 function menuLabel(url: string, fallback: string): string {
-  return meta.data.menu.find((m) => m.url === url)?.name ?? fallback;
+  return meta.menu.find((m) => m.url === url)?.name ?? fallback;
 }
 
 const browseLinks = [
@@ -35,10 +35,10 @@ const connectLinks = [
     <div class="grid gap-10 md:grid-cols-[2fr_1fr_1fr]">
       <div>
         <p class="text-base font-medium tracking-tight text-zinc-900 dark:text-zinc-50">
-          {meta.data.title}
+          {meta.title}
         </p>
         <p class="mt-3 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
-          {meta.data.description}
+          {meta.description}
         </p>
       </div>
 
@@ -77,7 +77,7 @@ const connectLinks = [
     </div>
 
     <p class="mt-12 border-t border-zinc-200/60 pt-6 text-xs text-zinc-500 dark:border-zinc-800/60 dark:text-zinc-400">
-      &copy; {year} {meta.data.title}
+      &copy; {year} {meta.title}
     </p>
   </div>
 </footer>

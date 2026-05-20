@@ -6,8 +6,8 @@ export async function buildRssResponse(locale: string, site: URL | string) {
   const meta = getLocale(locale);
   const posts = await getPostsByLocale(locale);
   return rss({
-    title: meta.data.title,
-    description: meta.data.description,
+    title: meta.title,
+    description: meta.description,
     site,
     items: posts.map((post) => ({
       title: post.entry.data.title,

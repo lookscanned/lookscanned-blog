@@ -11,7 +11,7 @@ const meta = getLocale(locale);
 // Pull the search label from the per-locale menu so the modal header
 // reads "搜索" / "搜尋" / "البحث" / etc. natively.
 const searchLabel =
-  meta.data.menu.find((m) => m.url === "search")?.name ?? "Search";
+  meta.menu.find((m) => m.url === "search")?.name ?? "Search";
 ---
 
 <dialog

@@ -14,7 +14,7 @@ const { locale, localeUrls, currentPath = "/" } = Astro.props;
 const meta = getLocale(locale);
 const homeUrl = localizedPath(locale, "");
 
-const sortedMenu = meta.data.menu
+const sortedMenu = meta.menu
   .slice()
   .sort((a, b) => (a.weight ?? Infinity) - (b.weight ?? Infinity));
 
@@ -44,9 +44,9 @@ const searchActive = currentPath === searchUrl;
     <a
       href={homeUrl}
       class="text-base font-semibold tracking-tight text-zinc-900 transition hover:text-zinc-600 dark:text-zinc-50 dark:hover:text-zinc-300 sm:text-lg"
-      aria-label={meta.data.title}
+      aria-label={meta.title}
     >
-      {meta.data.title}
+      {meta.title}
     </a>
     <div class="flex items-center gap-1 sm:gap-2">
       {inlineMenu.length > 0 && (

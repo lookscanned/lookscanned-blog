@@ -18,18 +18,18 @@ const pages = paginateItems(all, PAGE_SIZE);
 const current = pages[Math.max(0, Math.min(page - 1, pages.length - 1))];
 
 const title = page > 1
-  ? `${meta.data.title} · ${page}/${current.total}`
-  : meta.data.title;
+  ? `${meta.title} · ${page}/${current.total}`
+  : meta.title;
 ---
 
-<BaseLayout title={title} description={meta.data.description} locale={locale}>
+<BaseLayout title={title} description={meta.description} locale={locale}>
   <div class="mx-auto max-w-5xl px-6">
     <header class="pt-10 pb-10 sm:pt-14 sm:pb-12">
       <h1 class="text-3xl font-medium leading-[1.15] tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
-        {meta.data.homeTitle}
+        {meta.homeTitle}
       </h1>
       <p class="mt-3 text-base leading-relaxed text-pretty text-zinc-600 dark:text-zinc-400 sm:text-lg">
-        {meta.data.description}
+        {meta.description}
       </p>
     </header>
     <PostList posts={current.items} />

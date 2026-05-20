@@ -16,18 +16,18 @@ interface Props {
 
 const { locale, tag, posts, page = 1 } = Astro.props;
 const meta = getLocale(locale);
-const menuEntry = meta.data.menu.find((m) => m.url === "tags");
+const menuEntry = meta.menu.find((m) => m.url === "tags");
 const tagsLabel = menuEntry?.name ?? "Tags";
 
 const pages = paginateItems(posts, PAGE_SIZE);
 const current = pages[Math.max(0, Math.min(page - 1, pages.length - 1))];
 
 const title = page > 1
-  ? `${tag} · ${page}/${current.total} · ${tagsLabel} · ${meta.data.title}`
-  : `${tag} · ${tagsLabel} · ${meta.data.title}`;
+  ? `${tag} · ${page}/${current.total} · ${tagsLabel} · ${meta.title}`
+  : `${tag} · ${tagsLabel} · ${meta.title}`;
 ---
 
-<BaseLayout title={title} description={meta.data.description} locale={locale}>
+<BaseLayout title={title} description={meta.description} locale={locale}>
   <div class="mx-auto max-w-5xl px-6 pt-12 pb-12 sm:pt-16">
     <p class="text-sm text-zinc-500 dark:text-zinc-400">{tagsLabel}</p>
     <h1 class="mt-2 text-3xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">

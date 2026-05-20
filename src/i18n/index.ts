@@ -43,48 +43,22 @@ export interface RoutingMeta {
   dir: "ltr" | "rtl";
 }
 
-export interface LocaleData {
+export interface LocaleMeta extends RoutingMeta {
   languageName: string;
   title: string;
   description: string;
   homeTitle: string;
   menu: MenuItem[];
-}
-
-export interface LocaleMeta extends RoutingMeta {
-  data: LocaleData;
   ui: UIStrings;
 }
 
-/** Shape of each src/i18n/locales/<code>.json file: flat. */
-type LocaleJson = RoutingMeta & LocaleData & { ui: UIStrings };
-
-const modules = import.meta.glob<{ default: LocaleJson }>(
+const modules = import.meta.glob<{ default: LocaleMeta }>(
   "./locales/*.json",
   { eager: true },
 );
 
 const META_BY_CODE = new Map<string, LocaleMeta>(
-  Object.values(modules).map((mod) => {
-    const j = mod.default;
-    return [
-      j.code,
-      {
-        code: j.code,
-        weight: j.weight,
-        hreflang: j.hreflang,
-        dir: j.dir,
-        data: {
-          languageName: j.languageName,
-          title: j.title,
-          description: j.description,
-          homeTitle: j.homeTitle,
-          menu: j.menu,
-        },
-        ui: j.ui,
-      },
-    ];
-  }),
+  Object.values(modules).map((mod) => [mod.default.code, mod.default]),
 );
 
 // English never gets a URL prefix; everything else lives at /<code>/.

@@ -8,11 +8,11 @@ interface Props {
 
 const { locale } = Astro.props;
 const meta = getLocale(locale);
-const menuEntry = meta.data.menu.find((m) => m.url === "search");
+const menuEntry = meta.menu.find((m) => m.url === "search");
 const heading = menuEntry?.name ?? "Search";
 ---
 
-<BaseLayout title={`${heading} · ${meta.data.title}`} description={meta.data.description} locale={locale} pageKey="search">
+<BaseLayout title={`${heading} · ${meta.title}`} description={meta.description} locale={locale} pageKey="search">
   <div class="mx-auto max-w-5xl px-6 pt-12 pb-12 sm:pt-16">
     <h1 class="text-3xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
       {heading}

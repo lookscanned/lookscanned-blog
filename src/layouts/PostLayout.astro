@@ -33,7 +33,7 @@ const idx = samelocale.findIndex((p) => p.dirSlug === post.dirSlug);
 const newer = idx > 0 ? samelocale[idx - 1] : null;
 const older = idx >= 0 && idx < samelocale.length - 1 ? samelocale[idx + 1] : null;
 
-const title = `${post.entry.data.title} · ${meta.data.title}`;
+const title = `${post.entry.data.title} · ${meta.title}`;
 const description = post.entry.data.description ?? post.entry.data.summary ?? "";
 
 const rt = readingTime(body);
@@ -138,7 +138,7 @@ const jsonLd = {
                   href={localizedPath(t.locale, `posts/${t.slug}`)}
                   lang={t.locale}
                   class="text-zinc-700 underline-offset-[3px] hover:underline dark:text-zinc-300"
-                >{getLocale(t.locale).data.languageName}</a>
+                >{getLocale(t.locale).languageName}</a>
                 {i < arr.length - 1 && <span>, </span>}
               </>
             ))}

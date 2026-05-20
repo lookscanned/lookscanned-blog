@@ -9,7 +9,7 @@
 - `src/pages/`: File-based routing. English routes at the root; other locales under `[locale]/`.
 - `src/styles/global.css`: Tailwind v4 entry + theme tokens.
 - `static/`: Public static files (`favicon*`, `robots.txt`, `_headers`, `_redirects`).
-- `scripts/`: Build-time scripts (`flatten-locale-404.mjs` post-processes Astro output for Cloudflare).
+- `scripts/`: Currently empty; build-time hooks live as Astro integrations in `astro.config.ts` (e.g. `flattenLocale404`).
 
 ## Build, Test, and Development Commands
 Run these from the repository root:
