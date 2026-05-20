@@ -1,0 +1,56 @@
+{
+  "code": "he",
+  "weight": 22,
+  "hreflang": "he",
+  "dir": "rtl",
+  "languageName": "עברית",
+  "title": "בלוג Look Scanned",
+  "description": "הערות על פיתוח אתרים, עיבוד PDF וכלים ששומרים על פרטיות — מצוות Look Scanned.",
+  "homeTitle": "בלוג Look Scanned",
+  "menu": [
+    {
+      "name": "ארכיון",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "חיפוש",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "תגיות",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "הקודם",
+    "next_page": "הבא",
+    "toc": "תוכן עניינים",
+    "translations": "תרגומים",
+    "home": "בית",
+    "edit_post": "ערוך",
+    "code_copy": "העתק",
+    "code_copied": "הועתק!",
+    "read_time_one": "דקה אחת",
+    "read_time_other": "{{ .Count }} דקות",
+    "words_one": "מילה אחת",
+    "words_other": "{{ .Count }} מילים",
+    "browse_label": "עיון",
+    "connect_label": "צור קשר",
+    "try_cta": "נסה את Look Scanned בחינם",
+    "skip_to_content": "דלג לתוכן",
+    "theme": "ערכת נושא",
+    "theme_system": "מערכת",
+    "theme_light": "בהיר",
+    "theme_dark": "כהה",
+    "not_found": "הדף לא נמצא.",
+    "back_to_home": "חזרה לדף הבית"
+  }
+}

@@ -2,7 +2,7 @@
 import TagPage from "../../../../../components/TagPage.astro";
 import { getAllTagsByLocale } from "../../../../../lib/posts";
 import { paginateItems, PAGE_SIZE } from "../../../../../lib/paginate";
-import { LOCALES, DEFAULT_LOCALE } from "../../../../../i18n/locales.config.mjs";
+import { LOCALES, DEFAULT_LOCALE } from "../../../../../i18n";
 
 export async function getStaticPaths() {
   const out = [];

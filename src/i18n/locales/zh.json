@@ -1,0 +1,56 @@
+{
+  "code": "zh",
+  "weight": 2,
+  "hreflang": "zh-CN",
+  "dir": "ltr",
+  "languageName": "简体中文",
+  "title": "Look Scanned 博客",
+  "description": "网页开发、PDF 处理、隐私优先工具——来自 Look Scanned 团队的随手记。",
+  "homeTitle": "Look Scanned 博客",
+  "menu": [
+    {
+      "name": "归档",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "搜索",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "标签",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "上一页",
+    "next_page": "下一页",
+    "toc": "目录",
+    "translations": "语言",
+    "home": "主页",
+    "edit_post": "编辑",
+    "code_copy": "复制",
+    "code_copied": "已复制！",
+    "read_time_one": "1 分钟",
+    "read_time_other": "{{ .Count }} 分钟",
+    "words_one": "字",
+    "words_other": "{{ .Count }} 字",
+    "browse_label": "浏览",
+    "connect_label": "联系",
+    "try_cta": "免费试试 Look Scanned",
+    "skip_to_content": "跳到内容",
+    "theme": "主题",
+    "theme_system": "跟随系统",
+    "theme_light": "浅色",
+    "theme_dark": "深色",
+    "not_found": "页面未找到。",
+    "back_to_home": "返回主页"
+  }
+}

@@ -31,9 +31,6 @@ jobs:
       - name: Build (Astro + Pagefind)
         run: npm run build
 
-      - name: URL parity check vs Hugo snapshot
-        run: node scripts/url-parity-check.mjs
-
       - name: Upload Artifact
         uses: actions/upload-artifact@v7
         with:

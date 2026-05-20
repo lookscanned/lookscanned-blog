@@ -1,0 +1,56 @@
+{
+  "code": "zh-tw",
+  "weight": 3,
+  "hreflang": "zh-TW",
+  "dir": "ltr",
+  "languageName": "繁體中文",
+  "title": "Look Scanned 部落格",
+  "description": "網頁開發、PDF 處理、重視隱私的工具——來自 Look Scanned 團隊的隨手記。",
+  "homeTitle": "Look Scanned 部落格",
+  "menu": [
+    {
+      "name": "歸檔",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "搜尋",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "標籤",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "上一頁",
+    "next_page": "下一頁",
+    "toc": "目錄",
+    "translations": "語言",
+    "home": "首頁",
+    "edit_post": "編輯",
+    "code_copy": "複製",
+    "code_copied": "已複製！",
+    "read_time_one": "1 分鐘",
+    "read_time_other": "{{ .Count }} 分鐘",
+    "words_one": "字",
+    "words_other": "{{ .Count }} 字",
+    "browse_label": "瀏覽",
+    "connect_label": "聯絡",
+    "try_cta": "免費試試 Look Scanned",
+    "skip_to_content": "跳至內容",
+    "theme": "主題",
+    "theme_system": "跟隨系統",
+    "theme_light": "淺色",
+    "theme_dark": "深色",
+    "not_found": "頁面未找到。",
+    "back_to_home": "返回首頁"
+  }
+}

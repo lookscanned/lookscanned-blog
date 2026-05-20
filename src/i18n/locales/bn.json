@@ -1,0 +1,56 @@
+{
+  "code": "bn",
+  "weight": 29,
+  "hreflang": "bn",
+  "dir": "ltr",
+  "languageName": "বাংলা",
+  "title": "Look Scanned ব্লগ",
+  "description": "ওয়েব ডেভেলপমেন্ট, PDF প্রসেসিং এবং গোপনীয়তা-কেন্দ্রিক টুল নিয়ে — Look Scanned টিমের নোট।",
+  "homeTitle": "Look Scanned ব্লগ",
+  "menu": [
+    {
+      "name": "সংরক্ষণাগার",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "অনুসন্ধান",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "ট্যাগ",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "পূর্ববর্তী",
+    "next_page": "পরবর্তী",
+    "toc": "সূচিপত্র",
+    "translations": "অনুবাদসমূহ",
+    "home": "হোম",
+    "edit_post": "সম্পাদনা করুন",
+    "code_copy": "কপি করুন",
+    "code_copied": "কপি হয়েছে!",
+    "read_time_one": "১ মিনিট",
+    "read_time_other": "{{ .Count }} মিনিট",
+    "words_one": "১ টি শব্দ",
+    "words_other": "{{ .Count }} টি শব্দ",
+    "browse_label": "ব্রাউজ করুন",
+    "connect_label": "যোগাযোগ",
+    "try_cta": "Look Scanned বিনামূল্যে চেষ্টা করুন",
+    "skip_to_content": "বিষয়বস্তুতে যান",
+    "theme": "থিম",
+    "theme_system": "সিস্টেম",
+    "theme_light": "হালকা",
+    "theme_dark": "গাঢ়",
+    "not_found": "পৃষ্ঠা পাওয়া যায়নি।",
+    "back_to_home": "হোমে ফিরে যান"
+  }
+}

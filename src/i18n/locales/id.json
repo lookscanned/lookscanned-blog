@@ -1,0 +1,56 @@
+{
+  "code": "id",
+  "weight": 12,
+  "hreflang": "id",
+  "dir": "ltr",
+  "languageName": "Bahasa Indonesia",
+  "title": "Blog Look Scanned",
+  "description": "Catatan tentang pengembangan web, pemrosesan PDF, dan alat yang mengutamakan privasi — dari tim Look Scanned.",
+  "homeTitle": "Blog Look Scanned",
+  "menu": [
+    {
+      "name": "Arsip",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Cari",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Tag",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Sebelumnya",
+    "next_page": "Selanjutnya",
+    "toc": "Daftar isi",
+    "translations": "Terjemahan",
+    "home": "Beranda",
+    "edit_post": "Sunting",
+    "code_copy": "salin",
+    "code_copied": "disalin!",
+    "read_time_one": "1 menit",
+    "read_time_other": "{{ .Count }} menit",
+    "words_one": "kata",
+    "words_other": "{{ .Count }} kata",
+    "browse_label": "Jelajahi",
+    "connect_label": "Hubungi",
+    "try_cta": "Coba Look Scanned gratis",
+    "skip_to_content": "Lewati ke konten",
+    "theme": "Tema",
+    "theme_system": "Sistem",
+    "theme_light": "Terang",
+    "theme_dark": "Gelap",
+    "not_found": "Halaman tidak ditemukan.",
+    "back_to_home": "Kembali ke beranda"
+  }
+}

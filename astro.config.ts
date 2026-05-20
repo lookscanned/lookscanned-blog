@@ -1,11 +1,26 @@
+import { readdirSync, readFileSync } from "node:fs";
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import icon from "astro-icon";
 
-import { LOCALES, DEFAULT_LOCALE } from "./src/i18n/locales.config.mjs";
+// Read the per-locale JSON files at config-load time. Vite's
+// `import.meta.glob` isn't available here (config runs before the Vite
+// pipeline), so we do plain fs. Each JSON carries `code/weight/hreflang/dir`
+// — everything the Astro i18n + sitemap integrations need.
+const LOCALE_DIR = "./src/i18n/locales";
+const localeMeta = readdirSync(LOCALE_DIR)
+  .filter((f) => f.endsWith(".json"))
+  .map((f) => JSON.parse(readFileSync(`${LOCALE_DIR}/${f}`, "utf8")) as {
+    code: string;
+    weight: number;
+    hreflang: string;
+    dir: "ltr" | "rtl";
+  })
+  .sort((a, b) => a.weight - b.weight);
 
-const localeCodes = LOCALES.map((l) => l.code);
+const DEFAULT_LOCALE = "en";
+const localeCodes = localeMeta.map((l) => l.code);
 
 export default defineConfig({
   site: "https://blog.lookscanned.io",
@@ -49,9 +64,11 @@ export default defineConfig({
     sitemap({
       i18n: {
         defaultLocale: DEFAULT_LOCALE,
-        locales: Object.fromEntries(LOCALES.map((l) => [l.code, l.hreflang])),
+        locales: Object.fromEntries(localeMeta.map((l) => [l.code, l.hreflang])),
       },
     }),
   ],
-  vite: { plugins: [tailwindcss()] },
+  // `tailwindcss()` ships its own bundled Vite types; cast around the
+  // duplicate-module type mismatch with Astro's Vite copy.
+  vite: { plugins: [tailwindcss() as never] },
 });

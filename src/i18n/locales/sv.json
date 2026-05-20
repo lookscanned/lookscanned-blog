@@ -1,0 +1,56 @@
+{
+  "code": "sv",
+  "weight": 20,
+  "hreflang": "sv",
+  "dir": "ltr",
+  "languageName": "Svenska",
+  "title": "Look Scanned Blogg",
+  "description": "Anteckningar om webbutveckling, PDF-bearbetning och integritetsvänliga verktyg — från Look Scanned-teamet.",
+  "homeTitle": "Look Scanned Blogg",
+  "menu": [
+    {
+      "name": "Arkiv",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Sök",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Taggar",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Förra Sidan",
+    "next_page": "Nästa Sida",
+    "toc": "Innehållsförteckning",
+    "translations": "Översättningar",
+    "home": "Hem",
+    "edit_post": "Redigera",
+    "code_copy": "kopiera",
+    "code_copied": "kopierad!",
+    "read_time_one": "1 min",
+    "read_time_other": "{{ .Count }} min",
+    "words_one": "word",
+    "words_other": "{{ .Count }} words",
+    "browse_label": "Bläddra",
+    "connect_label": "Kontakt",
+    "try_cta": "Prova Look Scanned gratis",
+    "skip_to_content": "Hoppa till innehåll",
+    "theme": "Tema",
+    "theme_system": "System",
+    "theme_light": "Ljus",
+    "theme_dark": "Mörk",
+    "not_found": "Sidan kunde inte hittas.",
+    "back_to_home": "Tillbaka till start"
+  }
+}

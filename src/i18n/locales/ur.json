@@ -1,0 +1,56 @@
+{
+  "code": "ur",
+  "weight": 30,
+  "hreflang": "ur",
+  "dir": "rtl",
+  "languageName": "اردو",
+  "title": "Look Scanned بلاگ",
+  "description": "ویب ڈویلپمنٹ، PDF پراسیسنگ، اور پرائیویسی پر مرکوز ٹولز پر — Look Scanned ٹیم کے نوٹس۔",
+  "homeTitle": "Look Scanned بلاگ",
+  "menu": [
+    {
+      "name": "محفوظات",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "تلاش",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "ٹیگز",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "پچھلا",
+    "next_page": "اگلا",
+    "toc": "فہرست",
+    "translations": "تراجم",
+    "home": "ہوم",
+    "edit_post": "ترمیم",
+    "code_copy": "کاپی",
+    "code_copied": "کاپی ہوگیا!",
+    "read_time_one": "1 منٹ",
+    "read_time_other": "{{ .Count }} منٹ",
+    "words_one": "لفظ",
+    "words_other": "{{ .Count }} الفاظ",
+    "browse_label": "براؤز کریں",
+    "connect_label": "رابطہ",
+    "try_cta": "Look Scanned مفت آزمائیں",
+    "skip_to_content": "مواد پر جائیں",
+    "theme": "تھیم",
+    "theme_system": "سسٹم",
+    "theme_light": "ہلکا",
+    "theme_dark": "گہرا",
+    "not_found": "صفحہ نہیں ملا۔",
+    "back_to_home": "ہوم پر واپس جائیں"
+  }
+}

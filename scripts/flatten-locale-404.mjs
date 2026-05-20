@@ -7,15 +7,13 @@
 // Cloudflare Pages only walks the tree looking for literal
 // `<dir>/404.html`, so the wrapper directory has to go.
 
-import { rename, rmdir } from "node:fs/promises";
+import { readdir, rename, rmdir } from "node:fs/promises";
 import { join } from "node:path";
-import { LOCALES, DEFAULT_LOCALE } from "../src/i18n/locales.config.mjs";
 
-const flatten = async (code) => {
-  const localeDir = join("dist", code);
-  const nestedDir = join(localeDir, "404");
+const flatten = async (dir) => {
+  const nestedDir = join("dist", dir, "404");
   try {
-    await rename(join(nestedDir, "index.html"), join(localeDir, "404.html"));
+    await rename(join(nestedDir, "index.html"), join("dist", dir, "404.html"));
     await rmdir(nestedDir);
     return 1;
   } catch (err) {
@@ -24,8 +22,9 @@ const flatten = async (code) => {
   }
 };
 
+const entries = await readdir("dist", { withFileTypes: true });
 const counts = await Promise.all(
-  LOCALES.filter((l) => l.code !== DEFAULT_LOCALE).map((l) => flatten(l.code)),
+  entries.filter((e) => e.isDirectory()).map((e) => flatten(e.name)),
 );
 const renamed = counts.reduce((a, b) => a + b, 0);
 

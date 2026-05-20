@@ -1,0 +1,56 @@
+{
+  "code": "th",
+  "weight": 19,
+  "hreflang": "th",
+  "dir": "ltr",
+  "languageName": "ไทย",
+  "title": "บล็อก Look Scanned",
+  "description": "บันทึกเรื่องการพัฒนาเว็บ การประมวลผล PDF และเครื่องมือที่เคารพความเป็นส่วนตัว — จากทีม Look Scanned",
+  "homeTitle": "บล็อก Look Scanned",
+  "menu": [
+    {
+      "name": "คลังเก็บ",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "ค้นหา",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "แท็ก",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "ก่อนหน้า",
+    "next_page": "ถัดไป",
+    "toc": "สารบัญ",
+    "translations": "การแปล",
+    "home": "หน้าหลัก",
+    "edit_post": "แก้ไข",
+    "code_copy": "คัดลอก",
+    "code_copied": "คัดลอกแล้ว!",
+    "read_time_one": "1 นาที",
+    "read_time_other": "{{ .Count }} นาที",
+    "words_one": "คำ",
+    "words_other": "{{ .Count }} คำ",
+    "browse_label": "เรียกดู",
+    "connect_label": "ติดต่อ",
+    "try_cta": "ทดลองใช้ Look Scanned ฟรี",
+    "skip_to_content": "ข้ามไปที่เนื้อหา",
+    "theme": "ธีม",
+    "theme_system": "ระบบ",
+    "theme_light": "สว่าง",
+    "theme_dark": "มืด",
+    "not_found": "ไม่พบหน้า",
+    "back_to_home": "กลับสู่หน้าหลัก"
+  }
+}

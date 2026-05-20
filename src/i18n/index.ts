@@ -1,31 +1,100 @@
-import { LOCALES, DEFAULT_LOCALE } from "./locales.config.mjs";
-import { LOCALE_DATA, type LocaleData, type MenuItem } from "./locales";
-import { UI, type UIStrings } from "./ui";
+// Public i18n API. Per-locale data lives in ./locales/<code>.json — each
+// file is the single source of truth for that locale (meta + site data +
+// UI strings). Adding a new locale is just dropping a new JSON file in
+// ./locales/. astro.config.ts reads the same directory via fs at config
+// time; everything else goes through this module.
 
-export { LOCALES, DEFAULT_LOCALE, LOCALE_DATA, UI };
-export type { LocaleData, MenuItem, UIStrings };
+export interface MenuItem {
+  name: string;
+  url: string;
+  weight: number | null;
+}
+
+export interface UIStrings {
+  prev_page: string;
+  next_page: string;
+  toc: string;
+  translations: string;
+  home: string;
+  edit_post: string;
+  code_copy: string;
+  code_copied: string;
+  read_time_one: string;
+  read_time_other: string;
+  words_one: string;
+  words_other: string;
+  browse_label: string;
+  connect_label: string;
+  try_cta: string;
+  skip_to_content: string;
+  theme: string;
+  theme_system: string;
+  theme_light: string;
+  theme_dark: string;
+  not_found: string;
+  back_to_home: string;
+}
+
+export interface LocaleData {
+  languageName: string;
+  title: string;
+  description: string;
+  homeTitle: string;
+  menu: MenuItem[];
+}
 
 export interface LocaleMeta {
   code: string;
+  weight: number;
   hreflang: string;
   dir: "ltr" | "rtl";
-  weight: number;
   data: LocaleData;
   ui: UIStrings;
 }
 
+interface LocaleJson extends LocaleData {
+  code: string;
+  weight: number;
+  hreflang: string;
+  dir: "ltr" | "rtl";
+  ui: UIStrings;
+}
+
+const modules = import.meta.glob<{ default: LocaleJson }>(
+  "./locales/*.json",
+  { eager: true },
+);
+
 const META_BY_CODE = new Map<string, LocaleMeta>(
-  LOCALES.map((l) => [
-    l.code,
-    {
-      code: l.code,
-      hreflang: l.hreflang,
-      dir: l.dir as "ltr" | "rtl",
-      weight: l.weight,
-      data: LOCALE_DATA[l.code],
-      ui: UI[l.code],
-    },
-  ]),
+  Object.values(modules).map((mod) => {
+    const j = mod.default;
+    return [
+      j.code,
+      {
+        code: j.code,
+        weight: j.weight,
+        hreflang: j.hreflang,
+        dir: j.dir,
+        data: {
+          languageName: j.languageName,
+          title: j.title,
+          description: j.description,
+          homeTitle: j.homeTitle,
+          menu: j.menu,
+        },
+        ui: j.ui,
+      },
+    ];
+  }),
+);
+
+// English never gets a URL prefix; everything else lives at /<code>/.
+// Hardcoded here because astro.config.ts also pins this exact value when
+// computing the Astro i18n integration config.
+export const DEFAULT_LOCALE = "en";
+
+export const LOCALES = [...META_BY_CODE.values()].sort(
+  (a, b) => a.weight - b.weight,
 );
 
 export function getLocale(code: string): LocaleMeta {
@@ -35,7 +104,7 @@ export function getLocale(code: string): LocaleMeta {
 }
 
 export function listLocales(): LocaleMeta[] {
-  return [...META_BY_CODE.values()].sort((a, b) => a.weight - b.weight);
+  return LOCALES;
 }
 
 /** Build a URL path for a route within the given locale. */
@@ -62,9 +131,10 @@ export function localeFromPath(pathname: string): string {
  * so the `en` code is intentionally excluded.
  */
 export function localeStaticPaths() {
-  return LOCALES
-    .filter((l) => l.code !== DEFAULT_LOCALE)
-    .map((l) => ({ params: { locale: l.code }, props: { locale: l.code } }));
+  return LOCALES.filter((l) => l.code !== DEFAULT_LOCALE).map((l) => ({
+    params: { locale: l.code },
+    props: { locale: l.code },
+  }));
 }
 
 /** Pluralized "{n} min" using PaperMod's one/other forms. */

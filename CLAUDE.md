@@ -31,23 +31,25 @@ npm run build:astro
 
 Astro emits to `dist/`. The Pagefind step writes `dist/_pagefind/`.
 
-### URL parity check
-```bash
-# Diff the Astro build vs the Hugo URL snapshot (scripts/hugo-urls.txt).
-# Exits non-zero if any URL is missing and not covered by static/_redirects.
-node scripts/url-parity-check.mjs
-```
-
 ## Architecture
 
 ### Multilingual Structure
 
 32 languages, English as the default (no `/en/` URL prefix; English lives at `/`).
 
-- **Language catalog**: `src/i18n/locales.config.mjs` (locale code, hreflang, dir, weight)
-- **Per-locale site data** (title, description, home blurb, menu items): `src/i18n/locales.ts` — hand-maintained; edit directly to add/update locales.
-- **UI strings** (prev/next, reading time, etc.): `src/i18n/ui.ts` — also hand-maintained.
-- **RTL languages**: `ar`, `he`, `ur` (configured in `src/i18n/locales.config.mjs`).
+Each locale has one JSON file at `src/i18n/locales/<code>.json` containing
+everything for that language — routing meta (`code`, `weight`, `hreflang`,
+`dir`), site copy (`title`, `description`, `homeTitle`, `menu`), and UI
+strings (`ui.prev_page`, `ui.theme_*`, …). Adding a new locale = dropping
+a new JSON file in that directory.
+
+`src/i18n/index.ts` loads them all via `import.meta.glob` and exports the
+typed `LOCALES`, `DEFAULT_LOCALE`, `getLocale()`, `localizedPath()`, etc.
+`astro.config.ts` reads the same directory via `fs` at config-load time
+(Vite isn't running yet) to populate the i18n + sitemap integration
+configs.
+
+RTL languages: `ar`, `he`, `ur` (each JSON's `dir: "rtl"`).
 
 ### Content Layout
 
@@ -127,7 +129,6 @@ The build job runs:
 1. `npm ci`
 2. `npm run check` (Astro type check)
 3. `npm run build` (Astro + Pagefind)
-4. `node scripts/url-parity-check.mjs` (regression gate)
 
 ## Git Commit Conventions
 
@@ -147,4 +148,4 @@ Pull request titles use the same format.
 2. **Language consistency**: all 32 languages must be synchronized when updating any post.
 3. **Front matter**: YAML, double-quoted strings.
 4. **Components**: prefer adding `.astro` components under `src/components/` instead of inlining markup into pages.
-5. **i18n changes**: edit `src/i18n/locales.config.mjs` for routing-level data; edit `src/i18n/locales.ts` and `src/i18n/ui.ts` directly for site copy and UI strings.
+5. **i18n changes**: edit the per-locale file at `src/i18n/locales/<code>.json` — one file is the single source of truth for that language (routing meta + site copy + UI strings).

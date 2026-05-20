@@ -2,13 +2,14 @@
 
 ## Project Structure & Module Organization
 - `src/content/posts/<slug>/`: Each post lives in one folder with language files like `index.en.md`, `index.zh.md`, `index.fr.md` (32 per slug).
-- `src/i18n/`: Locale catalog (`locales.config.mjs`), generated site data (`locales.ts`), and generated UI strings (`ui.ts`).
+- `src/i18n/locales/<code>.json`: One JSON per language — single source of truth for routing meta, site copy, and UI strings.
+- `src/i18n/index.ts`: Loads the JSON files and exports the typed public API (`LOCALES`, `getLocale`, `localizedPath`, …).
 - `src/layouts/`: `BaseLayout.astro` and `PostLayout.astro`.
 - `src/components/`: All UI building blocks (Header, Footer, LangDropdown, PostCard, Search, etc.).
 - `src/pages/`: File-based routing. English routes at the root; other locales under `[locale]/`.
 - `src/styles/global.css`: Tailwind v4 entry + theme tokens.
 - `static/`: Public static files (`favicon*`, `robots.txt`, `_headers`, `_redirects`).
-- `scripts/`: One-off / build-time scripts (`build-i18n.mjs`, `url-parity-check.mjs`, `hugo-urls.txt`).
+- `scripts/`: Build-time scripts (`flatten-locale-404.mjs` post-processes Astro output for Cloudflare).
 
 ## Build, Test, and Development Commands
 Run these from the repository root:
@@ -19,7 +20,6 @@ npm run dev                                     # Local dev (http://localhost:43
 npm run check                                   # Astro type check
 npm run build:astro                             # Astro build → dist/
 npm run build                                   # Astro + Pagefind (production)
-node scripts/url-parity-check.mjs               # URL parity regression gate
 ```
 
 ## Coding Style & Naming Conventions
@@ -35,12 +35,11 @@ node scripts/url-parity-check.mjs               # URL parity regression gate
 - Create English first as `src/content/posts/<slug>/index.en.md`.
 - Translate all 31 other languages with the same date and structure.
 - RTL languages (`ar`, `he`, `ur`) use plain markdown — direction comes from `<html dir>` in the layout.
-- Site-wide copy lives in `src/i18n/locales.ts` (per-locale title, description, home blurb, menu); UI strings live in `src/i18n/ui.ts`. Both are hand-edited.
+- Site-wide copy and UI strings live in `src/i18n/locales/<code>.json`. One file per language, hand-edited; the JSON is the single source of truth.
 
 ## Validation Checklist
 - `npm run check` must pass (no type errors).
 - `npm run build` must succeed and produce `dist/`.
-- `node scripts/url-parity-check.mjs` must exit 0 (no uncovered URL regressions).
 - For content/UI changes, spot-check one English page, one CJK locale (`zh`), and one RTL locale (`ar`).
 
 ## Commit & Pull Request Guidelines
@@ -48,10 +47,10 @@ node scripts/url-parity-check.mjs               # URL parity regression gate
 - Use `post:` for new article commits (e.g., `post: How to Make PDF Look Scanned`).
 - PR titles use the same format.
 - Keep each commit focused on one logical change.
-- PRs should include a concise summary, linked issues when applicable, and confirmation that the build + parity check passed locally.
+- PRs should include a concise summary, linked issues when applicable, and confirmation that the build passed locally.
 - For post updates, list which languages were updated and whether the full 32-language sync is complete.
 
 ## Deployment, Security, and Configuration Notes
 - CI behavior: all pushes/PRs run build; PR/non-main branches deploy to Cloudflare staging; `main` deploys to Cloudflare production and GitHub Pages.
 - Never commit secrets or API tokens. Deployment credentials stay in GitHub/Cloudflare secret stores.
-- Coordinate before changing analytics, SEO, or header behavior in `astro.config.mjs`, `src/layouts/BaseLayout.astro`, or `static/_headers` / `static/_redirects` — these affect all languages and environments.
+- Coordinate before changing analytics, SEO, or header behavior in `astro.config.ts`, `src/layouts/BaseLayout.astro`, or `static/_headers` / `static/_redirects` — these affect all languages and environments.

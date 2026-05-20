@@ -1,0 +1,56 @@
+{
+  "code": "cs",
+  "weight": 23,
+  "hreflang": "cs",
+  "dir": "ltr",
+  "languageName": "Čeština",
+  "title": "Look Scanned Blog",
+  "description": "Poznámky o vývoji webu, zpracování PDF a nástrojích respektujících soukromí — od týmu Look Scanned.",
+  "homeTitle": "Look Scanned Blog",
+  "menu": [
+    {
+      "name": "Archiv",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Hledat",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Štítky",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Předchozí",
+    "next_page": "Další",
+    "toc": "Obsah",
+    "translations": "Překlady",
+    "home": "Domů",
+    "edit_post": "Upravit",
+    "code_copy": "kopírovat",
+    "code_copied": "zkopírováno!",
+    "read_time_one": "1 min",
+    "read_time_other": "{{ .Count }} min",
+    "words_one": "slovo",
+    "words_other": "{{ .Count }} slov",
+    "browse_label": "Procházet",
+    "connect_label": "Kontakt",
+    "try_cta": "Vyzkoušejte Look Scanned zdarma",
+    "skip_to_content": "Přejít na obsah",
+    "theme": "Motiv",
+    "theme_system": "Systémový",
+    "theme_light": "Světlý",
+    "theme_dark": "Tmavý",
+    "not_found": "Stránka nenalezena.",
+    "back_to_home": "Zpět na úvod"
+  }
+}

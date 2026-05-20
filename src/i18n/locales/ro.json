@@ -1,0 +1,56 @@
+{
+  "code": "ro",
+  "weight": 25,
+  "hreflang": "ro",
+  "dir": "ltr",
+  "languageName": "Română",
+  "title": "Blogul Look Scanned",
+  "description": "Notițe despre dezvoltare web, procesare PDF și instrumente care respectă confidențialitatea — de la echipa Look Scanned.",
+  "homeTitle": "Blogul Look Scanned",
+  "menu": [
+    {
+      "name": "Arhivă",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Căutare",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Etichete",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Înapoi",
+    "next_page": "Înainte",
+    "toc": "Sumar",
+    "translations": "Traduceri",
+    "home": "Acasă",
+    "edit_post": "Editează",
+    "code_copy": "copiază",
+    "code_copied": "copiat!",
+    "read_time_one": "1 minut",
+    "read_time_other": "{{ .Count }} minute",
+    "words_one": "cuvânt",
+    "words_other": "{{ .Count }} cuvinte",
+    "browse_label": "Răsfoiește",
+    "connect_label": "Contact",
+    "try_cta": "Încearcă Look Scanned gratuit",
+    "skip_to_content": "Sari la conținut",
+    "theme": "Temă",
+    "theme_system": "Sistem",
+    "theme_light": "Luminos",
+    "theme_dark": "Întunecat",
+    "not_found": "Pagina nu a fost găsită.",
+    "back_to_home": "Înapoi la pagina principală"
+  }
+}

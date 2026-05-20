@@ -1,0 +1,56 @@
+{
+  "code": "uk",
+  "weight": 27,
+  "hreflang": "uk",
+  "dir": "ltr",
+  "languageName": "Українська",
+  "title": "Блог Look Scanned",
+  "description": "Нотатки про веброзробку, обробку PDF та інструменти, що поважають приватність — від команди Look Scanned.",
+  "homeTitle": "Блог Look Scanned",
+  "menu": [
+    {
+      "name": "Архів",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Пошук",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Теги",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Попередня",
+    "next_page": "Наступна",
+    "toc": "Зміст",
+    "translations": "Переклади",
+    "home": "Головна",
+    "edit_post": "Edit",
+    "code_copy": "копіювати",
+    "code_copied": "скопійовано!",
+    "read_time_one": "1 хвилина",
+    "read_time_other": "{{ .Count }} хвилин",
+    "words_one": "word",
+    "words_other": "{{ .Count }} words",
+    "browse_label": "Огляд",
+    "connect_label": "Зв'язатися",
+    "try_cta": "Спробувати Look Scanned безкоштовно",
+    "skip_to_content": "Перейти до вмісту",
+    "theme": "Тема",
+    "theme_system": "Системна",
+    "theme_light": "Світла",
+    "theme_dark": "Темна",
+    "not_found": "Сторінку не знайдено.",
+    "back_to_home": "Повернутися на головну"
+  }
+}
