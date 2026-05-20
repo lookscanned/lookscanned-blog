@@ -14,12 +14,14 @@
 ## Build, Test, and Development Commands
 Run these from the repository root:
 
+Package manager: **pnpm** (pinned via `packageManager` in `package.json`, managed by Corepack — run `corepack enable pnpm` once).
+
 ```bash
-npm ci                                          # Install dependencies
-npm run dev                                     # Local dev (http://localhost:4321)
-npm run check                                   # Astro type check
-npm run build:astro                             # Astro build → dist/
-npm run build                                   # Astro + Pagefind (production)
+pnpm install                                    # Install dependencies
+pnpm dev                                        # Local dev (http://localhost:4321)
+pnpm check                                      # Astro type check
+pnpm build:astro                                # Astro build → dist/
+pnpm build                                      # Astro + Pagefind (production)
 ```
 
 ## Coding Style & Naming Conventions
@@ -38,8 +40,8 @@ npm run build                                   # Astro + Pagefind (production)
 - Site-wide copy and UI strings live in `src/i18n/locales/<code>.json`. One file per language, hand-edited; the JSON is the single source of truth.
 
 ## Validation Checklist
-- `npm run check` must pass (no type errors).
-- `npm run build` must succeed and produce `dist/`.
+- `pnpm check` must pass (no type errors).
+- `pnpm build` must succeed and produce `dist/`.
 - For content/UI changes, spot-check one English page, one CJK locale (`zh`), and one RTL locale (`ar`).
 
 ## Commit & Pull Request Guidelines

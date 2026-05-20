@@ -16,11 +16,13 @@ This repository contains the source for the Look Scanned Blog, built with Astro 
 
 ## Local Development
 
+This repo uses pnpm via Corepack. If you don't already have it, run `corepack enable pnpm` once — it activates the pnpm version pinned in `package.json`'s `packageManager` field.
+
 ```bash
 git clone https://github.com/lookscanned/lookscanned-blog
 cd lookscanned-blog
-npm ci
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 The dev server runs at `http://localhost:4321`.
@@ -28,7 +30,7 @@ The dev server runs at `http://localhost:4321`.
 ## Build
 
 ```bash
-npm run build       # Astro + Pagefind index
+pnpm build       # Astro + Pagefind index
 ```
 
 Output: `dist/`.
@@ -41,7 +43,7 @@ Pull requests deploy a preview to Cloudflare Pages staging. Pushes to `main` dep
 
 1. Fork the repository
 2. Create a feature branch
-3. Make your changes (run `npm run check` and `npm run build` before opening a PR)
+3. Make your changes (run `pnpm check` and `pnpm build` before opening a PR)
 4. Submit a pull request
 
 ## License
