@@ -12,7 +12,7 @@ export default defineConfig({
   trailingSlash: "always",
   build: { format: "directory" },
   publicDir: "./static",
-  prefetch: { prefetchAll: false, defaultStrategy: "hover" },
+  prefetch: { prefetchAll: true, defaultStrategy: "hover" },
   markdown: {
     shikiConfig: {
       // Dual themes: Shiki emits both color sets as CSS variables; the dark
