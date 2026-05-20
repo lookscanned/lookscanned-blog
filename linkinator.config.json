@@ -1,0 +1,7 @@
+{
+  "concurrency": 25,
+  "serverRoot": "dist",
+  "skip": [
+    "^https?://(?!localhost)"
+  ]
+}
