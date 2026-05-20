@@ -7,6 +7,7 @@ import type { AstroIntegration } from "astro";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import icon from "astro-icon";
+import * as pagefind from "pagefind";
 import type { RoutingMeta } from "./src/i18n";
 
 /**
@@ -34,6 +35,37 @@ const flattenLocale404: AstroIntegration = {
           }
         });
       await Promise.all(renames);
+    },
+  },
+};
+
+/**
+ * Build the Pagefind search index. Replaces the standalone CLI step
+ * (`pagefind --site dist --output-subdir _pagefind`) so that everything
+ * post-build lives inside Astro's pipeline. Set `SKIP_PAGEFIND=1` for a
+ * fast `astro build` that omits the index (~3s saved when iterating).
+ *
+ * Must run AFTER `flatten-locale-404` so we don't index the throwaway
+ * `<locale>/404/index.html` paths.
+ */
+const pagefindIndex: AstroIntegration = {
+  name: "pagefind",
+  hooks: {
+    "astro:build:done": async ({ dir, logger }) => {
+      if (process.env.SKIP_PAGEFIND) {
+        logger.info("skipped (SKIP_PAGEFIND=1)");
+        return;
+      }
+      const { index, errors: createErrors } = await pagefind.createIndex({});
+      if (!index || createErrors.length) {
+        throw new Error(`pagefind createIndex: ${createErrors.join(", ")}`);
+      }
+      const distDir = fileURLToPath(dir);
+      const { errors: addErrors, page_count } = await index.addDirectory({ path: distDir });
+      if (addErrors.length) throw new Error(`pagefind addDirectory: ${addErrors.join(", ")}`);
+      await index.writeFiles({ outputPath: join(distDir, "_pagefind") });
+      await pagefind.close();
+      logger.info(`indexed ${page_count} pages`);
     },
   },
 };
@@ -78,6 +110,7 @@ export default defineConfig({
   },
   integrations: [
     flattenLocale404,
+    pagefindIndex,
     icon({
       // Only pull the iconify subsets we actually use; keeps the
       // build cache lean.

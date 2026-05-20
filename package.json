@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist --output-subdir _pagefind",
-    "build:astro": "astro build",
+    "build": "astro build",
+    "build:astro": "SKIP_PAGEFIND=1 astro build",
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check"
