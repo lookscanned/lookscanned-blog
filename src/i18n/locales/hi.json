@@ -1,0 +1,56 @@
+{
+  "code": "hi",
+  "weight": 5,
+  "hreflang": "hi",
+  "dir": "ltr",
+  "languageName": "हिन्दी",
+  "title": "Look Scanned ब्लॉग",
+  "description": "वेब डेवलपमेंट, PDF प्रोसेसिंग और प्राइवेसी-फर्स्ट टूल्स पर Look Scanned टीम के नोट्स।",
+  "homeTitle": "Look Scanned ब्लॉग",
+  "menu": [
+    {
+      "name": "पुरालेख",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "खोज",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "टैग",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "पिछला",
+    "next_page": "अगला",
+    "toc": "विषय - सूची",
+    "translations": "अनुवाद",
+    "home": "Home",
+    "edit_post": "सुधारें",
+    "code_copy": "copy",
+    "code_copied": "copied!",
+    "read_time_one": "एक मिनट",
+    "read_time_other": "{{ .Count }} मिनट",
+    "words_one": "word",
+    "words_other": "{{ .Count }} words",
+    "browse_label": "ब्राउज़ करें",
+    "connect_label": "संपर्क",
+    "try_cta": "Look Scanned मुफ़्त आज़माएं",
+    "skip_to_content": "सामग्री पर जाएं",
+    "theme": "थीम",
+    "theme_system": "सिस्टम",
+    "theme_light": "हल्का",
+    "theme_dark": "गहरा",
+    "not_found": "पेज नहीं मिला।",
+    "back_to_home": "होम पर वापस जाएं"
+  }
+}

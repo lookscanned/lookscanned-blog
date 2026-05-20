@@ -1,0 +1,20 @@
+# Redirects for URLs Astro doesn't (and shouldn't) generate directly.
+
+# Hugo emitted /en/ as a meta-refresh stub when defaultContentLanguageInSubdir
+# was false. Astro doesn't ship it; redirect any /en/* to the canonical root.
+/en/  /  301
+/en/*  /:splat  301
+
+# Hugo emitted /categories/ + /<locale>/categories/ stubs for every locale even
+# though no post defines a category. Astro no longer ships these — redirect to
+# the corresponding /tags/ index, the closest taxonomy.
+/categories/  /tags/  301
+/:locale/categories/  /:locale/tags/  301
+
+# Two French/Portuguese tags slugify slightly differently in Astro (Hugo stripped
+# the apostrophe entirely; Astro turns it into a `-`). Send the old URLs to the
+# new ones so any backlinks resolve.
+/fr/tags/traitement-dimages/  /fr/tags/traitement-d-images/  301
+/fr/tags/traitement-dimages/page/*  /fr/tags/traitement-d-images/page/:splat  301
+/pt/tags/marca-dágua/  /pt/tags/marca-d-água/  301
+/pt/tags/marca-dágua/page/*  /pt/tags/marca-d-água/page/:splat  301

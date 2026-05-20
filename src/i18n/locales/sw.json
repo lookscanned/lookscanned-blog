@@ -1,0 +1,56 @@
+{
+  "code": "sw",
+  "weight": 31,
+  "hreflang": "sw",
+  "dir": "ltr",
+  "languageName": "Kiswahili",
+  "title": "Blogu ya Look Scanned",
+  "description": "Maelezo kuhusu uundaji wa wavuti, uchakataji wa PDF, na zana zinazoheshimu faragha — kutoka kwa timu ya Look Scanned.",
+  "homeTitle": "Blogu ya Look Scanned",
+  "menu": [
+    {
+      "name": "Kumbukumbu",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Tafuta",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Lebo",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Uliopita",
+    "next_page": "Ujao",
+    "toc": "Jedwali la Yaliyomo",
+    "translations": "Tafsiri",
+    "home": "Mwanzo",
+    "edit_post": "Hariri",
+    "code_copy": "nakili",
+    "code_copied": "nakiliwa!",
+    "read_time_one": "dakika 1",
+    "read_time_other": "dakika {{ .Count }}",
+    "words_one": "neno",
+    "words_other": "maneno {{ .Count }}",
+    "browse_label": "Vinjari",
+    "connect_label": "Wasiliana",
+    "try_cta": "Jaribu Look Scanned bure",
+    "skip_to_content": "Ruka kwa maudhui",
+    "theme": "Mandhari",
+    "theme_system": "Mfumo",
+    "theme_light": "Mwanga",
+    "theme_dark": "Giza",
+    "not_found": "Ukurasa haukupatikana.",
+    "back_to_home": "Rudi nyumbani"
+  }
+}

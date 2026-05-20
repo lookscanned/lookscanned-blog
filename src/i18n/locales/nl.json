@@ -1,0 +1,56 @@
+{
+  "code": "nl",
+  "weight": 17,
+  "hreflang": "nl",
+  "dir": "ltr",
+  "languageName": "Nederlands",
+  "title": "Look Scanned Blog",
+  "description": "Notities over webontwikkeling, PDF-verwerking en privacyvriendelijke tools — van het Look Scanned-team.",
+  "homeTitle": "Look Scanned Blog",
+  "menu": [
+    {
+      "name": "Archief",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Zoeken",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Tags",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Vorige",
+    "next_page": "Volgende",
+    "toc": "Inhoudsopgave",
+    "translations": "Vertalingen",
+    "home": "Startpagina",
+    "edit_post": "Bewerk",
+    "code_copy": "kopieer",
+    "code_copied": "gekopieerd!",
+    "read_time_one": "1 min",
+    "read_time_other": "{{ .Count }} min",
+    "words_one": "woord",
+    "words_other": "{{ .Count }} woorden",
+    "browse_label": "Bladeren",
+    "connect_label": "Contact",
+    "try_cta": "Probeer Look Scanned gratis",
+    "skip_to_content": "Ga naar inhoud",
+    "theme": "Thema",
+    "theme_system": "Systeem",
+    "theme_light": "Licht",
+    "theme_dark": "Donker",
+    "not_found": "Pagina niet gevonden.",
+    "back_to_home": "Terug naar startpagina"
+  }
+}

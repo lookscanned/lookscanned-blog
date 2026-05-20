@@ -1,0 +1,56 @@
+{
+  "code": "fil",
+  "weight": 28,
+  "hreflang": "fil",
+  "dir": "ltr",
+  "languageName": "Filipino",
+  "title": "Look Scanned Blog",
+  "description": "Mga tala tungkol sa web development, pagpoproseso ng PDF, at mga tool na nagpapahalaga sa privacy — mula sa team ng Look Scanned.",
+  "homeTitle": "Look Scanned Blog",
+  "menu": [
+    {
+      "name": "Arkibo",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Paghahanap",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Mga Tag",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Nakaraan",
+    "next_page": "Susunod",
+    "toc": "Talaan ng Nilalaman",
+    "translations": "Mga Salin",
+    "home": "Tahanan",
+    "edit_post": "I-edit",
+    "code_copy": "kopyahin",
+    "code_copied": "nakopya!",
+    "read_time_one": "1 min",
+    "read_time_other": "{{ .Count }} min",
+    "words_one": "salita",
+    "words_other": "{{ .Count }} salita",
+    "browse_label": "Mag-browse",
+    "connect_label": "Kumonekta",
+    "try_cta": "Subukan ang Look Scanned nang libre",
+    "skip_to_content": "Lumaktaw sa nilalaman",
+    "theme": "Tema",
+    "theme_system": "Sistema",
+    "theme_light": "Maliwanag",
+    "theme_dark": "Madilim",
+    "not_found": "Hindi nahanap ang pahina.",
+    "back_to_home": "Bumalik sa home"
+  }
+}

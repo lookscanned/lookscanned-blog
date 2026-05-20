@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getLocale, localizedPath } from "../i18n";
+
+/*
+ * 404 page body, shared by the root /404.html (English) and every
+ * /<locale>/404.html. Cloudflare Pages walks up the directory tree
+ * looking for the nearest 404.html when a URL doesn't match a file —
+ * so /zh/totally-bogus/ will serve /zh/404.html if it exists, and
+ * fall back to /404.html otherwise. That gives us a localized 404
+ * experience without any server-side language detection.
+ */
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const meta = getLocale(locale);
+---
+
+<BaseLayout title={`404 · ${meta.title}`} locale={locale}>
+  <div class="mx-auto max-w-5xl px-6 py-24 text-center sm:py-32">
+    <h1 class="text-5xl font-medium leading-none tracking-tight text-zinc-900 sm:text-6xl dark:text-zinc-50">
+      404
+    </h1>
+    <p class="mt-6 text-zinc-600 dark:text-zinc-400">
+      {meta.ui.not_found}
+    </p>
+    <a
+      href={localizedPath(locale, "")}
+      class="mt-8 inline-block text-sm font-medium text-zinc-900 underline underline-offset-[3px] decoration-zinc-300 hover:decoration-zinc-900 dark:text-zinc-50 dark:decoration-zinc-600 dark:hover:decoration-zinc-100"
+    >{meta.ui.back_to_home} →</a>
+  </div>
+</BaseLayout>

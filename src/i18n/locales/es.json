@@ -1,0 +1,56 @@
+{
+  "code": "es",
+  "weight": 4,
+  "hreflang": "es",
+  "dir": "ltr",
+  "languageName": "Español",
+  "title": "Blog de Look Scanned",
+  "description": "Notas sobre desarrollo web, procesamiento de PDF y herramientas que respetan la privacidad — del equipo de Look Scanned.",
+  "homeTitle": "Blog de Look Scanned",
+  "menu": [
+    {
+      "name": "Archivo",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Buscar",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Etiquetas",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Anterior",
+    "next_page": "Siguiente",
+    "toc": "Tabla de Contenidos",
+    "translations": "Traducciones",
+    "home": "Inicio",
+    "edit_post": "Editar",
+    "code_copy": "copiar",
+    "code_copied": "¡copiado!",
+    "read_time_one": "1 min",
+    "read_time_other": "{{ .Count }} min",
+    "words_one": "palabra",
+    "words_other": "{{ .Count }} palabras",
+    "browse_label": "Explorar",
+    "connect_label": "Contacto",
+    "try_cta": "Prueba Look Scanned gratis",
+    "skip_to_content": "Saltar al contenido",
+    "theme": "Tema",
+    "theme_system": "Sistema",
+    "theme_light": "Claro",
+    "theme_dark": "Oscuro",
+    "not_found": "Página no encontrada.",
+    "back_to_home": "Volver al inicio"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "code": "ko",
+  "weight": 13,
+  "hreflang": "ko",
+  "dir": "ltr",
+  "languageName": "한국어",
+  "title": "Look Scanned 블로그",
+  "description": "웹 개발, PDF 처리, 프라이버시 우선 도구에 관한 Look Scanned 팀의 기록.",
+  "homeTitle": "Look Scanned 블로그",
+  "menu": [
+    {
+      "name": "아카이브",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "검색",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "태그",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "이전 페이지",
+    "next_page": "다음 페이지",
+    "toc": "목차",
+    "translations": "번역",
+    "home": "홈",
+    "edit_post": "편집",
+    "code_copy": "복사",
+    "code_copied": "복사 완료!",
+    "read_time_one": "1 분",
+    "read_time_other": "{{ .Count }} 분",
+    "words_one": "단어",
+    "words_other": "{{ .Count }} 단어",
+    "browse_label": "둘러보기",
+    "connect_label": "연결",
+    "try_cta": "Look Scanned 무료로 사용해보기",
+    "skip_to_content": "본문으로 건너뛰기",
+    "theme": "테마",
+    "theme_system": "시스템",
+    "theme_light": "라이트",
+    "theme_dark": "다크",
+    "not_found": "페이지를 찾을 수 없습니다.",
+    "back_to_home": "홈으로 돌아가기"
+  }
+}

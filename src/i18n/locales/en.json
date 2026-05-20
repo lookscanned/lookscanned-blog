@@ -1,0 +1,56 @@
+{
+  "code": "en",
+  "weight": 1,
+  "hreflang": "en",
+  "dir": "ltr",
+  "languageName": "English",
+  "title": "Look Scanned Blog",
+  "description": "Notes on web development, PDF processing, and privacy-first tools — from the team behind Look Scanned.",
+  "homeTitle": "Look Scanned Blog",
+  "menu": [
+    {
+      "name": "Archive",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Search",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Tags",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Prev",
+    "next_page": "Next",
+    "toc": "Table of Contents",
+    "translations": "Translations",
+    "home": "Home",
+    "edit_post": "Edit",
+    "code_copy": "copy",
+    "code_copied": "copied!",
+    "read_time_one": "1 min",
+    "read_time_other": "{{ .Count }} min",
+    "words_one": "word",
+    "words_other": "{{ .Count }} words",
+    "browse_label": "Browse",
+    "connect_label": "Connect",
+    "try_cta": "Try Look Scanned Free",
+    "skip_to_content": "Skip to content",
+    "theme": "Theme",
+    "theme_system": "System",
+    "theme_light": "Light",
+    "theme_dark": "Dark",
+    "not_found": "Page not found.",
+    "back_to_home": "Back to home"
+  }
+}

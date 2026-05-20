@@ -1,0 +1,56 @@
+{
+  "code": "ms",
+  "weight": 21,
+  "hreflang": "ms",
+  "dir": "ltr",
+  "languageName": "Bahasa Melayu",
+  "title": "Blog Look Scanned",
+  "description": "Catatan tentang pembangunan web, pemprosesan PDF, dan alat yang mengutamakan privasi — daripada pasukan Look Scanned.",
+  "homeTitle": "Blog Look Scanned",
+  "menu": [
+    {
+      "name": "Arkib",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Cari",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Tag",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Halaman Sebelumnya",
+    "next_page": "Halaman Seterusnya",
+    "toc": "Isi Kandungan",
+    "translations": "Terjemahan",
+    "home": "Home",
+    "edit_post": "Sunting",
+    "code_copy": "Salin",
+    "code_copied": "Disalin!",
+    "read_time_one": "1 minit",
+    "read_time_other": "{{ .Count }} minit",
+    "words_one": "word",
+    "words_other": "{{ .Count }} words",
+    "browse_label": "Layari",
+    "connect_label": "Hubungi",
+    "try_cta": "Cuba Look Scanned secara percuma",
+    "skip_to_content": "Langkau ke kandungan",
+    "theme": "Tema",
+    "theme_system": "Sistem",
+    "theme_light": "Cerah",
+    "theme_dark": "Gelap",
+    "not_found": "Halaman tidak dijumpai.",
+    "back_to_home": "Kembali ke laman utama"
+  }
+}

@@ -1,0 +1,25 @@
+---
+import { render } from "astro:content";
+import PostLayout from "../../../layouts/PostLayout.astro";
+import { getAllPosts, getPostBySlug } from "../../../lib/posts";
+import { DEFAULT_LOCALE } from "../../../i18n";
+
+export async function getStaticPaths() {
+  const all = await getAllPosts();
+  return all
+    .filter((p) => p.locale !== DEFAULT_LOCALE && !p.entry.data.draft)
+    .map((p) => ({
+      params: { locale: p.locale, slug: p.slug },
+      props: { locale: p.locale, slug: p.slug },
+    }));
+}
+
+const { locale, slug } = Astro.props;
+const post = await getPostBySlug(slug, locale);
+if (!post) throw new Error(`Missing post: ${locale}/${slug}`);
+const { Content, headings } = await render(post.entry);
+---
+
+<PostLayout post={post} body={post.entry.body ?? ""} headings={headings}>
+  <Content />
+</PostLayout>

@@ -1,0 +1,59 @@
+---
+import { getLocale } from "../i18n";
+
+interface Props {
+  locale: string;
+  current: number;
+  total: number;
+  basePath: string;
+}
+
+const { locale, current, total, basePath } = Astro.props;
+if (total <= 1) return null;
+
+const meta = getLocale(locale);
+const localeRoot = locale === "en" ? "" : `/${locale}`;
+const indexUrl = `${localeRoot}${basePath}/`.replace(/^\/\//, "/");
+
+function url(page: number): string {
+  if (page === 1) {
+    if (basePath === "") return localeRoot ? `${localeRoot}/` : "/";
+    return indexUrl;
+  }
+  return `${localeRoot}${basePath}/page/${page}/`;
+}
+
+const prev = current > 1 ? url(current - 1) : null;
+const next = current < total ? url(current + 1) : null;
+---
+
+<nav
+  class="mt-16 flex items-center justify-between border-t border-zinc-200/60 pt-6 text-sm dark:border-zinc-800/60"
+  aria-label="Pagination"
+>
+  {prev ? (
+    <a
+      href={prev}
+      rel="prev"
+      class="text-zinc-700 underline-offset-[3px] transition hover:underline dark:text-zinc-300"
+    >
+      <span class="inline-block rtl:rotate-180">←</span> {meta.ui.prev_page}
+    </a>
+  ) : (
+    <span class="text-zinc-300 dark:text-zinc-700"><span class="inline-block rtl:rotate-180">←</span> {meta.ui.prev_page}</span>
+  )}
+  <span class="tabular-nums text-zinc-500 dark:text-zinc-400">
+    {current} / {total}
+  </span>
+  {next ? (
+    <a
+      href={next}
+      rel="next"
+      class="text-zinc-700 underline-offset-[3px] transition hover:underline dark:text-zinc-300"
+    >
+      {meta.ui.next_page} <span class="inline-block rtl:rotate-180">→</span>
+    </a>
+  ) : (
+    <span class="text-zinc-300 dark:text-zinc-700">{meta.ui.next_page} <span class="inline-block rtl:rotate-180">→</span></span>
+  )}
+</nav>

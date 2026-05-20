@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getLocale, localizedPath } from "../i18n";
+import { getAllTagsByLocale } from "../lib/posts";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const meta = getLocale(locale);
+const tags = await getAllTagsByLocale(locale);
+const sorted = tags.slice().sort((a, b) => b.posts.length - a.posts.length);
+
+const menuEntry = meta.menu.find((m) => m.url === "tags");
+const heading = menuEntry?.name ?? "Tags";
+---
+
+<BaseLayout title={`${heading} · ${meta.title}`} description={meta.description} locale={locale} pageKey="tags">
+  <div class="mx-auto max-w-5xl px-6 pt-12 pb-12 sm:pt-16">
+    <h1 class="text-3xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
+      {heading}
+    </h1>
+    <p class="mt-3 text-sm text-zinc-500 dark:text-zinc-400">
+      {sorted.length} tags
+    </p>
+    <ul class="mt-12 divide-y divide-zinc-200 dark:divide-zinc-800">
+      {sorted.map((bucket) => (
+        <li>
+          <a
+            href={localizedPath(locale, `tags/${bucket.slug}`)}
+            class="group grid grid-cols-[1fr_auto] items-baseline gap-6 py-3"
+          >
+            <span class="text-lg text-zinc-800 underline-offset-[3px] group-hover:underline dark:text-zinc-200">
+              {bucket.name}
+            </span>
+            <span class="text-xs tabular-nums text-zinc-400 dark:text-zinc-600">
+              {bucket.posts.length}
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>

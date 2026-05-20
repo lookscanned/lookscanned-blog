@@ -1,0 +1,144 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import SearchDialog from "../components/SearchDialog.astro";
+import SpeculationRules from "../components/SpeculationRules.astro";
+import { DEFAULT_LOCALE, getLocale, listLocales, localizedPath } from "../i18n";
+
+interface Alternate {
+  locale: string;
+  /** URL path (no leading slash, no locale prefix). For posts: `posts/<slug>`. */
+  path: string;
+}
+
+interface Props {
+  title: string;
+  description?: string;
+  locale?: string;
+  /**
+   * Path alternates for the language switcher and hreflang tags. If omitted,
+   * `pageKey` falls back to the home page in each locale.
+   */
+  alternates?: Alternate[];
+  /** When `alternates` is missing, default each locale to this path. */
+  pageKey?: string;
+  /** Optional `<head>` JSON-LD payload (e.g. Article schema on post pages). */
+  jsonLd?: Record<string, unknown>;
+}
+
+const {
+  title,
+  description = "",
+  locale = DEFAULT_LOCALE,
+  alternates,
+  pageKey,
+  jsonLd,
+} = Astro.props;
+
+const meta = getLocale(locale);
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+const allLocales = listLocales();
+
+const altsByLocale: Record<string, Alternate> = {};
+if (alternates) {
+  for (const a of alternates) altsByLocale[a.locale] = a;
+}
+
+function pathFor(l: string): string | null {
+  if (alternates) {
+    return altsByLocale[l] ? altsByLocale[l].path : null;
+  }
+  return pageKey ?? "";
+}
+
+const altLinks = allLocales
+  .map((l) => {
+    const path = pathFor(l.code);
+    if (path === null) return null;
+    return {
+      hreflang: l.hreflang,
+      href: new URL(localizedPath(l.code, path), Astro.site).toString(),
+    };
+  })
+  .filter((x): x is { hreflang: string; href: string } => x !== null);
+
+// Build the same-page locale map for the header's language dropdown.
+const localeUrlMap: Record<string, string> = {};
+for (const l of allLocales) {
+  const path = pathFor(l.code);
+  localeUrlMap[l.code] = path === null
+    ? localizedPath(l.code, "") // language doesn't have this content; fall back to its home
+    : localizedPath(l.code, path);
+}
+---
+
+<!doctype html>
+<html lang={meta.hreflang} dir={meta.dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonicalUrl} />
+    {altLinks.map((l) => (
+      <link rel="alternate" hreflang={l.hreflang} href={l.href} />
+    ))}
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={meta.title}
+      href={locale === DEFAULT_LOCALE ? "/rss.xml" : `/${locale}/rss.xml`}
+    />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={meta.hreflang.replace("-", "_")} />
+    <meta name="twitter:card" content="summary" />
+    {jsonLd && (
+      <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    )}
+    <slot name="head" />
+    <SpeculationRules />
+    <script is:inline>
+      // Pre-paint theme apply. Three modes (matching ThemeToggle):
+      //   stored "dark"  → force dark
+      //   stored "light" → force light
+      //   anything else (incl. null / "system") → follow OS preference
+      // Must run before paint to prevent FOUC; kept inline for that reason.
+      (() => {
+        try {
+          const stored = localStorage.getItem("theme");
+          const prefers = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          const dark = stored === "dark" || (stored !== "light" && prefers);
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (_) {}
+      })();
+    </script>
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body class="min-h-svh">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-zinc-900 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white focus:outline-2 focus:outline-offset-2 focus:outline-accent-600 dark:focus:bg-zinc-100 dark:focus:text-zinc-900 dark:focus:outline-accent-400"
+    >
+      {meta.ui.skip_to_content}
+    </a>
+    <Header locale={locale} localeUrls={localeUrlMap} currentPath={Astro.url.pathname} />
+    <main id="main-content" tabindex="-1" class="focus-visible:outline-none">
+      <slot />
+    </main>
+    <Footer locale={locale} />
+    <SearchDialog locale={locale} />
+  </body>
+</html>

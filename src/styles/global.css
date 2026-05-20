@@ -1,0 +1,284 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /*
+   * Pure system stack. `system-ui` resolves to the host OS UI font (SF
+   * Pro on Apple, Segoe UI on Windows, Roboto on Android, distro
+   * default on Linux). For CJK glyphs not present in the Latin UI font,
+   * modern browsers fall back to the OS-installed CJK sans automatically
+   * — no need to enumerate PingFang / Microsoft YaHei / etc. inline.
+   */
+  --font-sans: system-ui, sans-serif;
+  --font-mono: ui-monospace, monospace;
+
+  /*
+   * Accent — a refined ink-blue, hue 252 (between true blue and indigo,
+   * away from purple). Only two surfaces use it: `::selection` and
+   * `:focus-visible`. Links / hovers stay neutral (zinc) so the page
+   * doesn't bloom with color.
+   */
+  --color-accent-50:  oklch(0.97 0.020 252);
+  --color-accent-100: oklch(0.93 0.045 252);
+  --color-accent-200: oklch(0.86 0.080 252);
+  --color-accent-300: oklch(0.75 0.110 252);
+  --color-accent-400: oklch(0.68 0.140 252);
+  --color-accent-500: oklch(0.55 0.165 252);
+  --color-accent-600: oklch(0.48 0.170 252);
+  --color-accent-700: oklch(0.41 0.160 252);
+  --color-accent-800: oklch(0.34 0.140 252);
+  --color-accent-900: oklch(0.27 0.110 252);
+}
+
+@layer base {
+  html {
+    color-scheme: light dark;
+    scroll-behavior: smooth;
+    /* Sticky navbar is ~64px; add breathing room so in-page anchor jumps
+       (TOC links, ## headings) don't slide under it. */
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+    /* Bump the root from the 16px browser default to 17px so the whole
+       design — Tailwind's rem-based text/spacing/width utilities included
+       — scales up ~6% in lockstep. */
+    font-size: 17px;
+    /* Reserve scrollbar gutter so the page width stays constant — no CLS
+       when async content (images, lazy components) pushes the page past
+       one viewport. */
+    scrollbar-gutter: stable;
+    /*
+     * Auto-fade page scrollbar via :hover / :focus-within. Firefox 128+
+     * interpolates `scrollbar-color` through the @property-registered
+     * --sb-thumb (declared at bottom of file); WebKit transitions
+     * `::-webkit-scrollbar-thumb`'s background-color in parallel.
+     */
+    scrollbar-width: thin;
+    --sb-thumb: transparent;
+    scrollbar-color: var(--sb-thumb) transparent;
+    transition: --sb-thumb 0.3s ease, scrollbar-color 0.3s ease;
+  }
+  html:hover,
+  html:focus-within {
+    --sb-thumb: var(--color-zinc-300);
+  }
+  html.dark:hover,
+  html.dark:focus-within {
+    --sb-thumb: var(--color-zinc-700);
+  }
+  html::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  html::-webkit-scrollbar-track,
+  html::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  html::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease;
+  }
+  html:hover::-webkit-scrollbar-thumb,
+  html:focus-within::-webkit-scrollbar-thumb {
+    background-color: var(--color-zinc-300);
+  }
+  html.dark:hover::-webkit-scrollbar-thumb,
+  html.dark:focus-within::-webkit-scrollbar-thumb {
+    background-color: var(--color-zinc-700);
+  }
+  html::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-zinc-400);
+  }
+  html.dark::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-zinc-600);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  /* Cross-document view transitions. Chrome/Edge 126+, Safari 18.2+;
+     Firefox falls back to plain navigation. Pairs with prefetch hints so
+     prefetched pages morph without a flash. Shared elements opt in via
+     inline `view-transition-name`:
+       - PostCard <h2> ↔ PostLayout <h1>  (key: `post-title-<slug>`) */
+  @view-transition {
+    navigation: auto;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    ::view-transition-group(*),
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+      animation: none !important;
+    }
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #ffffff;
+    color: var(--color-zinc-800);
+    font-feature-settings: "kern", "liga", "calt";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .dark body {
+    background-color: var(--color-zinc-950);
+    color: var(--color-zinc-200);
+  }
+
+  code, kbd, samp, pre {
+    font-family: var(--font-mono);
+  }
+
+  ::selection {
+    background-color: oklch(0.93 0.045 252);
+    color: var(--color-zinc-900);
+  }
+  .dark ::selection {
+    background-color: oklch(0.30 0.080 252);
+    color: var(--color-zinc-50);
+  }
+
+  :where(a, button, summary, input, select, textarea, [tabindex]):focus-visible {
+    outline: 2px solid var(--color-accent-600);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  .dark :where(a, button, summary, input, select, textarea, [tabindex]):focus-visible {
+    outline-color: var(--color-accent-400);
+  }
+}
+
+:where([dir="rtl"]) .prose {
+  text-align: start;
+}
+
+
+/*
+ * Stealth scrollbar for in-content scrollers (TOC, LangDropdown).
+ * Same auto-fade strategy as the page bar above — see that comment.
+ */
+.scroll-stealth {
+  scrollbar-width: thin;
+  --sb-thumb-stealth: transparent;
+  scrollbar-color: var(--sb-thumb-stealth) transparent;
+  transition: --sb-thumb-stealth 0.3s ease, scrollbar-color 0.3s ease;
+}
+.scroll-stealth:hover,
+.scroll-stealth:focus-within {
+  --sb-thumb-stealth: var(--color-zinc-200);
+}
+.dark .scroll-stealth:hover,
+.dark .scroll-stealth:focus-within {
+  --sb-thumb-stealth: var(--color-zinc-800);
+}
+.scroll-stealth::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+.scroll-stealth::-webkit-scrollbar-track,
+.scroll-stealth::-webkit-scrollbar-track-piece,
+.scroll-stealth::-webkit-scrollbar-corner {
+  background-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.scroll-stealth::-webkit-scrollbar-button {
+  display: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.scroll-stealth::-webkit-scrollbar-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+}
+.scroll-stealth:hover::-webkit-scrollbar-thumb,
+.scroll-stealth:focus-within::-webkit-scrollbar-thumb {
+  background-color: var(--color-zinc-200);
+}
+.dark .scroll-stealth:hover::-webkit-scrollbar-thumb,
+.dark .scroll-stealth:focus-within::-webkit-scrollbar-thumb {
+  background-color: var(--color-zinc-800);
+}
+.scroll-stealth::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-zinc-400);
+}
+.dark .scroll-stealth::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-zinc-600);
+}
+
+/*
+ * Edge-fade mask. JS toggles `data-fade-top` / `data-fade-bottom`
+ * attributes based on scroll position; the CSS variables drive a
+ * mask-image gradient that fades only the edge that actually has
+ * hidden content. When neither attr is set, the mask is fully opaque
+ * (both vars 0px), so the element renders normally.
+ */
+.fade-mask-y {
+  --fade-top: 0px;
+  --fade-bottom: 0px;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    black var(--fade-top),
+    black calc(100% - var(--fade-bottom)),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    black var(--fade-top),
+    black calc(100% - var(--fade-bottom)),
+    transparent 100%
+  );
+  transition: --fade-top 0.18s ease, --fade-bottom 0.18s ease;
+}
+.fade-mask-y[data-fade-top]    { --fade-top: 24px; }
+.fade-mask-y[data-fade-bottom] { --fade-bottom: 24px; }
+@property --fade-top    { syntax: "<length>"; initial-value: 0px; inherits: false; }
+@property --fade-bottom { syntax: "<length>"; initial-value: 0px; inherits: false; }
+
+/* Registered colors so Firefox 128+ and Chrome 121+ can interpolate
+   `scrollbar-color` smoothly when the thumb fades in / out. */
+@property --sb-thumb         { syntax: "<color>"; initial-value: transparent; inherits: false; }
+@property --sb-thumb-stealth { syntax: "<color>"; initial-value: transparent; inherits: false; }
+
+/* Shiki dual-theme code blocks */
+html.dark .astro-code,
+html.dark .astro-code span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+.prose :where(pre.astro-code) {
+  border: 1px solid var(--color-zinc-200);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  line-height: 1.6;
+  font-size: 0.875em;
+  overflow-wrap: anywhere;
+}
+html.dark .prose :where(pre.astro-code) {
+  border-color: var(--color-zinc-800);
+}
+.prose :where(pre.astro-code) :where(code) {
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-weight: inherit;
+  color: inherit;
+}

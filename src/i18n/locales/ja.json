@@ -1,0 +1,56 @@
+{
+  "code": "ja",
+  "weight": 9,
+  "hreflang": "ja",
+  "dir": "ltr",
+  "languageName": "日本語",
+  "title": "Look Scanned ブログ",
+  "description": "Web 開発、PDF 処理、プライバシー重視のツールについて — Look Scanned チームのノート。",
+  "homeTitle": "Look Scanned ブログ",
+  "menu": [
+    {
+      "name": "アーカイブ",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "検索",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "タグ",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "前へ",
+    "next_page": "次へ",
+    "toc": "目次",
+    "translations": "言語",
+    "home": "ホーム",
+    "edit_post": "編集",
+    "code_copy": "コピー",
+    "code_copied": "コピーされました!",
+    "read_time_one": "1 分",
+    "read_time_other": "{{ .Count }} 分",
+    "words_one": "文字",
+    "words_other": "{{ .Count }} 文字",
+    "browse_label": "閲覧",
+    "connect_label": "お問い合わせ",
+    "try_cta": "Look Scanned を無料で試す",
+    "skip_to_content": "コンテンツへスキップ",
+    "theme": "テーマ",
+    "theme_system": "システム",
+    "theme_light": "ライト",
+    "theme_dark": "ダーク",
+    "not_found": "ページが見つかりません。",
+    "back_to_home": "ホームに戻る"
+  }
+}

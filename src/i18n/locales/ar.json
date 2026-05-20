@@ -1,0 +1,56 @@
+{
+  "code": "ar",
+  "weight": 6,
+  "hreflang": "ar",
+  "dir": "rtl",
+  "languageName": "العربية",
+  "title": "مدونة Look Scanned",
+  "description": "ملاحظات حول تطوير الويب ومعالجة PDF والأدوات التي تحترم الخصوصية — من فريق Look Scanned.",
+  "homeTitle": "مدونة Look Scanned",
+  "menu": [
+    {
+      "name": "الأرشيف",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "بحث",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "الوسوم",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "السابق",
+    "next_page": "التالي",
+    "toc": "فهرس المحتوى",
+    "translations": "ترجمات أخرى",
+    "home": "الصفحة الرئيسية",
+    "edit_post": "Edit",
+    "code_copy": "نسخ الكود",
+    "code_copied": "تم النسخ!",
+    "read_time_one": "دقيقة واحدة",
+    "read_time_other": "دقائق {{ .Count }}",
+    "words_one": "word",
+    "words_other": "{{ .Count }} words",
+    "browse_label": "تصفح",
+    "connect_label": "تواصل",
+    "try_cta": "جرب Look Scanned مجانًا",
+    "skip_to_content": "تخطي إلى المحتوى",
+    "theme": "السمة",
+    "theme_system": "النظام",
+    "theme_light": "فاتح",
+    "theme_dark": "داكن",
+    "not_found": "الصفحة غير موجودة.",
+    "back_to_home": "العودة إلى الصفحة الرئيسية"
+  }
+}

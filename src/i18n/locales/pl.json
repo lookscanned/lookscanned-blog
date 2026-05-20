@@ -1,0 +1,56 @@
+{
+  "code": "pl",
+  "weight": 16,
+  "hreflang": "pl",
+  "dir": "ltr",
+  "languageName": "Polski",
+  "title": "Blog Look Scanned",
+  "description": "Notatki o tworzeniu stron, przetwarzaniu PDF i narzędziach szanujących prywatność — od zespołu Look Scanned.",
+  "homeTitle": "Blog Look Scanned",
+  "menu": [
+    {
+      "name": "Archiwum",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Szukaj",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Tagi",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Poprzednia",
+    "next_page": "Następna",
+    "toc": "Spis treści",
+    "translations": "Tłumaczenia",
+    "home": "Strona Główna",
+    "edit_post": "Edytuj",
+    "code_copy": "Kopiuj",
+    "code_copied": "Skopiowano!",
+    "read_time_one": "1 min",
+    "read_time_other": "{{ .Count }} min",
+    "words_one": "słowo",
+    "words_other": "{{ .Count }} słów",
+    "browse_label": "Przeglądaj",
+    "connect_label": "Kontakt",
+    "try_cta": "Wypróbuj Look Scanned za darmo",
+    "skip_to_content": "Przejdź do treści",
+    "theme": "Motyw",
+    "theme_system": "Systemowy",
+    "theme_light": "Jasny",
+    "theme_dark": "Ciemny",
+    "not_found": "Strona nie znaleziona.",
+    "back_to_home": "Powrót do strony głównej"
+  }
+}

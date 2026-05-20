@@ -1,0 +1,16 @@
+---
+import TagPage from "../../../components/TagPage.astro";
+import { getAllTagsByLocale } from "../../../lib/posts";
+
+export async function getStaticPaths() {
+  const buckets = await getAllTagsByLocale("en");
+  return buckets.map((b) => ({
+    params: { tag: b.slug },
+    props: { tag: b.name, posts: b.posts },
+  }));
+}
+
+const { tag, posts } = Astro.props;
+---
+
+<TagPage locale="en" tag={tag} posts={posts} />

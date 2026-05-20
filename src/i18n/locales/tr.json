@@ -1,0 +1,56 @@
+{
+  "code": "tr",
+  "weight": 15,
+  "hreflang": "tr",
+  "dir": "ltr",
+  "languageName": "Türkçe",
+  "title": "Look Scanned Blogu",
+  "description": "Web geliştirme, PDF işleme ve gizliliği önceleyen araçlar üzerine — Look Scanned ekibinin notları.",
+  "homeTitle": "Look Scanned Blogu",
+  "menu": [
+    {
+      "name": "Arşiv",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Ara",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Etiketler",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Önceki",
+    "next_page": "Sonraki",
+    "toc": "İçindekiler",
+    "translations": "Çeviriler",
+    "home": "Ana Sayfa",
+    "edit_post": "Düzenle",
+    "code_copy": "Kopyala",
+    "code_copied": "Kopyalandı!",
+    "read_time_one": "1 dk",
+    "read_time_other": "{{ .Count }} dk",
+    "words_one": "sözcük",
+    "words_other": "{{ .Count }} sözcük",
+    "browse_label": "Gözat",
+    "connect_label": "İletişim",
+    "try_cta": "Look Scanned'i Ücretsiz Dene",
+    "skip_to_content": "İçeriğe geç",
+    "theme": "Tema",
+    "theme_system": "Sistem",
+    "theme_light": "Açık",
+    "theme_dark": "Koyu",
+    "not_found": "Sayfa bulunamadı.",
+    "back_to_home": "Ana sayfaya dön"
+  }
+}

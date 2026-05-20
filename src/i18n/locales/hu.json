@@ -1,0 +1,56 @@
+{
+  "code": "hu",
+  "weight": 24,
+  "hreflang": "hu",
+  "dir": "ltr",
+  "languageName": "Magyar",
+  "title": "Look Scanned Blog",
+  "description": "Jegyzetek webfejlesztésről, PDF-feldolgozásról és adatvédelmet tisztelő eszközökről — a Look Scanned csapatától.",
+  "homeTitle": "Look Scanned Blog",
+  "menu": [
+    {
+      "name": "Archívum",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Keresés",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Címkék",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Előző oldal",
+    "next_page": "Következő oldal",
+    "toc": "Tartalomjegyzék",
+    "translations": "Fordítások",
+    "home": "Kezdőlap",
+    "edit_post": "Szerkesztés",
+    "code_copy": "másolás",
+    "code_copied": "másolva!",
+    "read_time_one": "1 perc",
+    "read_time_other": "{{ .Count }} perc",
+    "words_one": "szó",
+    "words_other": "{{ .Count }} szó",
+    "browse_label": "Böngészés",
+    "connect_label": "Kapcsolat",
+    "try_cta": "Próbáld ki ingyen a Look Scannedet",
+    "skip_to_content": "Ugrás a tartalomhoz",
+    "theme": "Téma",
+    "theme_system": "Rendszer",
+    "theme_light": "Világos",
+    "theme_dark": "Sötét",
+    "not_found": "Az oldal nem található.",
+    "back_to_home": "Vissza a kezdőlapra"
+  }
+}

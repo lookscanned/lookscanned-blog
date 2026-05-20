@@ -1,0 +1,56 @@
+{
+  "code": "ru",
+  "weight": 11,
+  "hreflang": "ru",
+  "dir": "ltr",
+  "languageName": "Русский",
+  "title": "Блог Look Scanned",
+  "description": "Заметки о веб-разработке, обработке PDF и инструментах, уважающих приватность — от команды Look Scanned.",
+  "homeTitle": "Блог Look Scanned",
+  "menu": [
+    {
+      "name": "Архив",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Поиск",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Теги",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Предыдущая",
+    "next_page": "Следующая",
+    "toc": "Оглавление",
+    "translations": "Переводы",
+    "home": "Главная",
+    "edit_post": "Редактировать",
+    "code_copy": "копировать",
+    "code_copied": "скопировано!",
+    "read_time_one": "1 минута",
+    "read_time_other": "{{ .Count }} минута",
+    "words_one": "1 слово",
+    "words_other": "{{ .Count }} слово",
+    "browse_label": "Обзор",
+    "connect_label": "Связаться",
+    "try_cta": "Попробовать Look Scanned бесплатно",
+    "skip_to_content": "Перейти к содержанию",
+    "theme": "Тема",
+    "theme_system": "Системная",
+    "theme_light": "Светлая",
+    "theme_dark": "Тёмная",
+    "not_found": "Страница не найдена.",
+    "back_to_home": "Вернуться на главную"
+  }
+}

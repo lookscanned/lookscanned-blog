@@ -8,14 +8,12 @@ Create a new multilingual blog post for the Look Scanned blog.
    - Post slug (e.g., `my-new-post-title`)
    - Post topic/content description in English
 
-2. **Create English version using Hugo**:
+2. **Create English version**:
    ```bash
-   hugo new content content/posts/{slug}/index.en.md
+   mkdir -p src/content/posts/{slug}
    ```
-
-3. **Write English content first**:
-   - Update the generated `index.en.md` with full content
-   - Use YAML front matter with double quotes for all strings:
+   Then write `src/content/posts/{slug}/index.en.md` with YAML front matter
+   (double-quoted strings, ISO-8601 date with timezone offset) and body:
    ```yaml
    ---
    date: "YYYY-MM-DDTHH:MM:SS+08:00"
@@ -28,7 +26,7 @@ Create a new multilingual blog post for the Look Scanned blog.
    ```
    Note: `summary` and `description` usually have the same content.
 
-4. **Create translations for all 31 other languages**:
+3. **Create translations for all 31 other languages**:
    Use the Task tool with a general-purpose agent to create translations for:
    `af, ar, bn, cs, de, el, es, fil, fr, he, hi, hu, id, it, ja, ko, ms, nl, pl, pt, ro, ru, sv, sw, th, tr, uk, ur, vi, zh, zh-tw`
 
@@ -36,21 +34,28 @@ Create a new multilingual blog post for the Look Scanned blog.
    - Translate title, summary, description, tags, and full content
    - Use native language names for tags (e.g., "扫描" for "scan" in Chinese)
    - Keep the same `date` as English version
-   - RTL languages (ar, he, ur): Keep standard markdown, Hugo handles RTL
+   - RTL languages (ar, he, ur): keep standard markdown — direction is set
+     on `<html dir>` by the Astro layout
    - Maintain consistent structure and formatting across all languages
    - Keep emojis in headings
    - Keep the call-to-action link to [lookscanned.io](https://lookscanned.io)
-   - Use double quotes in YAML front matter to handle apostrophes in languages like French
+   - Use double quotes in YAML front matter to handle apostrophes in
+     languages like French
 
-5. **Verify all 32 files exist**:
+4. **Verify all 32 files exist**:
    ```bash
-   ls content/posts/{slug}/ | wc -l
+   ls src/content/posts/{slug}/ | wc -l
    ```
    Should output `32`.
 
+5. **Smoke build** to confirm the schema validates and routes generate:
+   ```bash
+   npm run build:astro
+   ```
+
 6. **Commit using conventional format**:
    ```bash
-   git add content/posts/{slug}/ && git commit -m "post: {English Post Title}"
+   git add src/content/posts/{slug}/ && git commit -m "post: {English Post Title}"
    ```
 
 ## Language Reference
@@ -94,5 +99,5 @@ Create a new multilingual blog post for the Look Scanned blog.
 
 - This blog is about **Look Scanned**, a privacy-first browser-based PDF scanning tool
 - Content should focus on: web development, PDF processing, privacy-first tools, or Look Scanned features
-- Refer to existing posts in `content/posts/` for style and structure examples
+- Refer to existing posts in `src/content/posts/` for style and structure examples
 - All commits must use Conventional Commits format with `post:` type for blog posts

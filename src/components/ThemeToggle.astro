@@ -1,0 +1,113 @@
+---
+import { Icon } from "astro-icon/components";
+import { DEFAULT_LOCALE, getLocale } from "../i18n";
+
+/*
+ * Three-state theme toggle: System / Light / Dark.
+ *   - System mode → sun-moon icon, localStorage entry absent
+ *   - Light / Dark → sun / moon icon, explicit "theme" override
+ * Dispatches a `themechange` CustomEvent so embedded surfaces can
+ * mirror the resolved theme.
+ */
+
+interface Props {
+  locale?: string;
+}
+
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const ui = getLocale(locale).ui;
+---
+
+<details class="theme-dropdown relative" data-mode="system">
+  <summary
+    class="flex h-8 w-8 cursor-pointer list-none items-center justify-center rounded text-zinc-600 transition hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 [&::-webkit-details-marker]:hidden"
+    aria-label={ui.theme}
+    title={ui.theme}
+  >
+    <Icon name="lucide:sun-moon" class="theme-trigger-icon theme-trigger-icon-system h-[18px] w-[18px]" aria-hidden="true" />
+    <Icon name="lucide:sun"      class="theme-trigger-icon theme-trigger-icon-light h-[18px] w-[18px]"  aria-hidden="true" />
+    <Icon name="lucide:moon"     class="theme-trigger-icon theme-trigger-icon-dark h-[18px] w-[18px]"   aria-hidden="true" />
+  </summary>
+  <div
+    class="absolute end-0 z-20 mt-2 w-36 overflow-hidden rounded-md border border-zinc-200 bg-white py-1 text-sm shadow-lg dark:border-zinc-800 dark:bg-zinc-900"
+    role="menu"
+  >
+    <button type="button" data-mode="system" class="theme-option mx-1 flex w-[calc(100%-0.5rem)] items-center justify-between rounded px-3 py-1.5 text-start text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800/60 dark:hover:text-zinc-100 aria-[current=true]:bg-zinc-100 aria-[current=true]:text-zinc-900 dark:aria-[current=true]:bg-zinc-800 dark:aria-[current=true]:text-zinc-100">
+      <span class="flex items-center gap-2">
+        <Icon name="lucide:sun-moon" class="h-3.5 w-3.5" aria-hidden="true" />
+        {ui.theme_system}
+      </span>
+      <Icon name="lucide:check" class="theme-option-check h-3.5 w-3.5 opacity-0" aria-hidden="true" />
+    </button>
+    <button type="button" data-mode="light" class="theme-option mx-1 flex w-[calc(100%-0.5rem)] items-center justify-between rounded px-3 py-1.5 text-start text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800/60 dark:hover:text-zinc-100 aria-[current=true]:bg-zinc-100 aria-[current=true]:text-zinc-900 dark:aria-[current=true]:bg-zinc-800 dark:aria-[current=true]:text-zinc-100">
+      <span class="flex items-center gap-2">
+        <Icon name="lucide:sun" class="h-3.5 w-3.5" aria-hidden="true" />
+        {ui.theme_light}
+      </span>
+      <Icon name="lucide:check" class="theme-option-check h-3.5 w-3.5 opacity-0" aria-hidden="true" />
+    </button>
+    <button type="button" data-mode="dark" class="theme-option mx-1 flex w-[calc(100%-0.5rem)] items-center justify-between rounded px-3 py-1.5 text-start text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800/60 dark:hover:text-zinc-100 aria-[current=true]:bg-zinc-100 aria-[current=true]:text-zinc-900 dark:aria-[current=true]:bg-zinc-800 dark:aria-[current=true]:text-zinc-100">
+      <span class="flex items-center gap-2">
+        <Icon name="lucide:moon" class="h-3.5 w-3.5" aria-hidden="true" />
+        {ui.theme_dark}
+      </span>
+      <Icon name="lucide:check" class="theme-option-check h-3.5 w-3.5 opacity-0" aria-hidden="true" />
+    </button>
+  </div>
+</details>
+
+<style>
+  /* Hide all trigger icons by default; show the one matching the current mode. */
+  .theme-dropdown .theme-trigger-icon { display: none; }
+  .theme-dropdown[data-mode="system"] .theme-trigger-icon-system,
+  .theme-dropdown[data-mode="light"]  .theme-trigger-icon-light,
+  .theme-dropdown[data-mode="dark"]   .theme-trigger-icon-dark {
+    display: block;
+  }
+  /* Active option check mark. */
+  .theme-option[aria-current="true"] .theme-option-check { opacity: 1; }
+</style>
+
+<script>
+  (() => {
+    const root = document.querySelector<HTMLDetailsElement>(".theme-dropdown");
+    if (!root) return;
+    const options = root.querySelectorAll<HTMLButtonElement>("[data-mode]");
+    const media = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const currentMode = () => localStorage.getItem("theme") ?? "system";
+
+    const apply = () => {
+      const mode = currentMode();
+      const dark = mode === "dark" || (mode === "system" && media.matches);
+      document.documentElement.classList.toggle("dark", dark);
+      root.setAttribute("data-mode", mode);
+      options.forEach((opt) => {
+        opt.setAttribute("aria-current", opt.dataset.mode === mode ? "true" : "false");
+      });
+      document.dispatchEvent(
+        new CustomEvent("themechange", { detail: { dark, mode } }),
+      );
+    };
+
+    options.forEach((opt) => {
+      opt.addEventListener("click", () => {
+        const next = opt.dataset.mode;
+        if (next === "system") localStorage.removeItem("theme");
+        else if (next) localStorage.setItem("theme", next);
+        apply();
+        root.open = false;
+      });
+    });
+
+    media.addEventListener("change", () => {
+      if (currentMode() === "system") apply();
+    });
+
+    document.addEventListener("click", (event) => {
+      if (root.open && !root.contains(event.target as Node)) root.open = false;
+    });
+
+    apply();
+  })();
+</script>

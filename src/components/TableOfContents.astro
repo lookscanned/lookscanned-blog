@@ -1,0 +1,124 @@
+---
+import { getLocale } from "../i18n";
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+  locale: string;
+}
+
+const { headings, locale } = Astro.props;
+const meta = getLocale(locale);
+// Skip the page's H1; surface H2 / H3 only — deeper nesting tends to clutter.
+const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
+---
+
+{items.length > 0 && (
+  <nav
+    aria-label={meta.ui.toc}
+    class="flex max-h-[calc(100vh-7rem)] flex-col text-sm"
+  >
+    <p class="mb-3 shrink-0 font-medium text-zinc-900 dark:text-zinc-100">
+      {meta.ui.toc}
+    </p>
+    <ul
+      data-toc-scroll
+      class="scroll-stealth fade-mask-y min-h-0 flex-1 space-y-2 overflow-y-auto border-s border-zinc-200 dark:border-zinc-800"
+    >
+      {items.map((h) => (
+        <li class={h.depth === 3 ? "ps-8" : "ps-4"}>
+          <a
+            href={`#${h.slug}`}
+            data-toc-link={h.slug}
+            class="block py-0.5 text-zinc-500 transition data-[active]:font-medium data-[active]:text-zinc-900 dark:text-zinc-500 dark:data-[active]:text-zinc-100"
+          >
+            {h.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}
+
+<script>
+  // Edge-fade tracker. Toggles data-fade-top / data-fade-bottom on the
+  // scrollable list whenever the scroll position changes, so the
+  // .fade-mask-y CSS only dims an edge when content is actually hidden
+  // beyond it.
+  const scrollList = document.querySelector<HTMLElement>("[data-toc-scroll]");
+  if (scrollList) {
+    const update = () => {
+      const atTop = scrollList.scrollTop <= 1;
+      const atBottom =
+        scrollList.scrollTop + scrollList.clientHeight >=
+        scrollList.scrollHeight - 1;
+      scrollList.toggleAttribute("data-fade-top", !atTop);
+      scrollList.toggleAttribute("data-fade-bottom", !atBottom);
+    };
+    scrollList.addEventListener("scroll", update, { passive: true });
+    // Recompute when the viewport / TOC dimensions change.
+    new ResizeObserver(update).observe(scrollList);
+    update();
+  }
+
+  const links = document.querySelectorAll<HTMLAnchorElement>("[data-toc-link]");
+  if (links.length > 0) {
+    const targets = [...links]
+      .map((link) => document.getElementById(link.dataset.tocLink ?? ""))
+      .filter((el): el is HTMLElement => el !== null);
+
+    if (targets.length > 0) {
+      let activeId: string | null = null;
+      const motionOk = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      const setActive = (id: string) => {
+        if (id === activeId) return;
+        activeId = id;
+        links.forEach((link) => {
+          const active = link.dataset.tocLink === id;
+          link.toggleAttribute("data-active", active);
+          if (active) {
+            // `block: nearest` scrolls the nearest scrollable ancestor — the
+            // <ul> with overflow-y-auto — keeping the active link visible
+            // without pulling the main document.
+            link.scrollIntoView({
+              block: "nearest",
+              behavior: motionOk ? "smooth" : "auto",
+            });
+          }
+        });
+      };
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const candidates = entries
+            .filter((e) => e.isIntersecting)
+            .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+          if (candidates.length === 0) return;
+          setActive(candidates[0].target.id);
+        },
+        { rootMargin: "-80px 0px -70% 0px" },
+      );
+      targets.forEach((t) => observer.observe(t));
+
+      // Edge case: when the user scrolls to the very bottom of the page,
+      // no heading sits inside the IntersectionObserver's narrow band
+      // (-80px from top, 30% of viewport tall), so the active item stops
+      // updating and the TOC fails to scroll its last entry into view.
+      // Watch the scroll position and force the last heading active when
+      // we're within a few pixels of the page bottom.
+      const onScroll = () => {
+        const docHeight = document.documentElement.scrollHeight;
+        const scrolledBottom = window.scrollY + window.innerHeight;
+        if (scrolledBottom >= docHeight - 4) {
+          setActive(targets[targets.length - 1].id);
+        }
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
+    }
+  }
+</script>

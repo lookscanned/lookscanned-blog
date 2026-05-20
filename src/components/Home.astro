@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PostList from "./PostList.astro";
+import Pagination from "./Pagination.astro";
+import { getLocale } from "../i18n";
+import { getPostsByLocale } from "../lib/posts";
+import { paginateItems, PAGE_SIZE } from "../lib/paginate";
+
+interface Props {
+  locale: string;
+  page?: number;
+}
+
+const { locale, page = 1 } = Astro.props;
+const meta = getLocale(locale);
+const all = await getPostsByLocale(locale);
+const pages = paginateItems(all, PAGE_SIZE);
+const current = pages[Math.max(0, Math.min(page - 1, pages.length - 1))];
+
+const title = page > 1
+  ? `${meta.title} · ${page}/${current.total}`
+  : meta.title;
+---
+
+<BaseLayout title={title} description={meta.description} locale={locale}>
+  <div class="mx-auto max-w-5xl px-6">
+    <header class="pt-10 pb-10 sm:pt-14 sm:pb-12">
+      <h1 class="text-3xl font-medium leading-[1.15] tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
+        {meta.homeTitle}
+      </h1>
+      <p class="mt-3 text-base leading-relaxed text-pretty text-zinc-600 dark:text-zinc-400 sm:text-lg">
+        {meta.description}
+      </p>
+    </header>
+    <PostList posts={current.items} />
+    <Pagination locale={locale} current={current.page} total={current.total} basePath="" />
+  </div>
+</BaseLayout>

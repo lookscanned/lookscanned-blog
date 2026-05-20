@@ -1,0 +1,150 @@
+---
+import { Icon } from "astro-icon/components";
+import { getLocale } from "../i18n";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const meta = getLocale(locale);
+// Pull the search label from the per-locale menu so the modal header
+// reads "搜索" / "搜尋" / "البحث" / etc. natively.
+const searchLabel =
+  meta.menu.find((m) => m.url === "search")?.name ?? "Search";
+---
+
+<dialog
+  id="search-dialog"
+  aria-label={searchLabel}
+  class="m-0 w-full max-w-2xl rounded-xl border border-zinc-200 bg-white p-0 text-zinc-900 shadow-2xl backdrop:bg-zinc-900/50 backdrop:backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-100 sm:mx-auto sm:my-[8vh]"
+>
+  <div class="flex items-center justify-between border-b border-zinc-200/60 px-4 py-3 dark:border-zinc-800/60">
+    <span class="text-xs uppercase tracking-[0.18em] text-zinc-400 dark:text-zinc-600">{searchLabel}</span>
+    <button
+      id="search-dialog-close"
+      type="button"
+      class="flex h-7 w-7 items-center justify-center rounded text-zinc-500 transition hover:bg-zinc-100 hover:text-zinc-900 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+      aria-label="Close"
+    >
+      <Icon name="lucide:x" class="h-4 w-4" aria-hidden="true" />
+    </button>
+  </div>
+  <div
+    id="search-dialog-content"
+    class="max-h-[70vh] overflow-y-auto px-4 py-3"
+    data-pagefind-ui
+  ></div>
+</dialog>
+
+<style is:global>
+  /* Scope Pagefind UI inside the modal so its colors match our palette. */
+  #search-dialog .pagefind-ui {
+    --pagefind-ui-primary: var(--color-zinc-900);
+    --pagefind-ui-text: currentColor;
+    --pagefind-ui-background: transparent;
+    --pagefind-ui-border: var(--color-zinc-200);
+    --pagefind-ui-tag: var(--color-zinc-100);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 6px;
+    --pagefind-ui-image-border-radius: 4px;
+    --pagefind-ui-font: inherit;
+  }
+  html.dark #search-dialog .pagefind-ui {
+    --pagefind-ui-primary: var(--color-zinc-100);
+    --pagefind-ui-border: var(--color-zinc-800);
+    --pagefind-ui-tag: var(--color-zinc-900);
+  }
+  #search-dialog .pagefind-ui__search-input {
+    font-size: 1rem !important;
+    background: transparent !important;
+  }
+  #search-dialog .pagefind-ui__result { padding: 1rem 0 !important; }
+  #search-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+  }
+</style>
+
+<script>
+  (() => {
+    const dialog = document.getElementById("search-dialog") as HTMLDialogElement | null;
+    const closeBtn = document.getElementById("search-dialog-close");
+    const content = document.getElementById("search-dialog-content");
+    if (!dialog || !content) return;
+
+    let mounted = false;
+
+    const loadPagefind = async () => {
+      if ((window as any).PagefindUI) return;
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "/_pagefind/pagefind-ui.css";
+      document.head.appendChild(link);
+      await new Promise<void>((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = "/_pagefind/pagefind-ui.js";
+        script.onload = () => resolve();
+        script.onerror = () => reject(new Error("pagefind-ui.js failed to load"));
+        document.head.appendChild(script);
+      });
+    };
+
+    const open = async () => {
+      if (!mounted) {
+        try {
+          await loadPagefind();
+          new (window as any).PagefindUI({
+            element: "#search-dialog-content",
+            showSubResults: true,
+            resetStyles: false,
+            ranking: { termFrequency: 0.5, pageLength: 0.5 },
+            pageSize: 10,
+          });
+          mounted = true;
+        } catch {
+          content.innerHTML = '<p class="py-4 text-sm text-zinc-500">Search index unavailable. Visit <a class="underline" href="/search/">/search/</a>.</p>';
+        }
+      }
+      if (typeof dialog.showModal === "function") dialog.showModal();
+      else dialog.setAttribute("open", "");
+      requestAnimationFrame(() => {
+        dialog
+          .querySelector<HTMLInputElement>(".pagefind-ui__search-input")
+          ?.focus();
+      });
+    };
+
+    const close = () => dialog.close();
+
+    document.addEventListener("click", (event) => {
+      const t = event.target;
+      if (!(t instanceof Element)) return;
+      const trigger = t.closest("[data-search-trigger]");
+      if (!trigger) return;
+      if (
+        (event as MouseEvent).metaKey ||
+        (event as MouseEvent).ctrlKey ||
+        (event as MouseEvent).shiftKey ||
+        (event as MouseEvent).button !== 0
+      ) return;
+      event.preventDefault();
+      open();
+    });
+
+    closeBtn?.addEventListener("click", close);
+
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) close();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      const isK = event.key === "k" || event.key === "K";
+      if (isK && (event.metaKey || event.ctrlKey) && !event.shiftKey && !event.altKey) {
+        event.preventDefault();
+        open();
+      }
+      if (event.key === "Escape" && dialog.open) close();
+    });
+  })();
+</script>

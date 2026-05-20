@@ -1,0 +1,56 @@
+{
+  "code": "vi",
+  "weight": 18,
+  "hreflang": "vi",
+  "dir": "ltr",
+  "languageName": "Tiếng Việt",
+  "title": "Blog Look Scanned",
+  "description": "Ghi chú về phát triển web, xử lý PDF và công cụ ưu tiên quyền riêng tư — từ đội ngũ Look Scanned.",
+  "homeTitle": "Blog Look Scanned",
+  "menu": [
+    {
+      "name": "Lưu trữ",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Tìm kiếm",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Thẻ",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Trang trước",
+    "next_page": "Trang tiếp theo",
+    "toc": "Mục lục",
+    "translations": "Bản dịch",
+    "home": "Trang chủ",
+    "edit_post": "Chỉnh sửa",
+    "code_copy": "Sao chép",
+    "code_copied": "Đã sao chép!",
+    "read_time_one": "1 phút",
+    "read_time_other": "{{ .Count }} phút",
+    "words_one": "từ",
+    "words_other": "{{ .Count }} từ",
+    "browse_label": "Duyệt",
+    "connect_label": "Liên hệ",
+    "try_cta": "Dùng thử Look Scanned miễn phí",
+    "skip_to_content": "Bỏ qua đến nội dung",
+    "theme": "Giao diện",
+    "theme_system": "Hệ thống",
+    "theme_light": "Sáng",
+    "theme_dark": "Tối",
+    "not_found": "Không tìm thấy trang.",
+    "back_to_home": "Quay lại trang chủ"
+  }
+}

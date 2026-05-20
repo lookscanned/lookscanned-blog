@@ -1,0 +1,26 @@
+---
+// Hint the browser to prefetch in-site navigation and warm up the
+// lookscanned.io main app (since most posts link to it).
+---
+
+<script
+  is:inline
+  type="speculationrules"
+  set:html={JSON.stringify({
+    prerender: [{ where: { href_matches: "/*" }, eagerness: "moderate" }],
+    prefetch: [
+      {
+        where: {
+          or: [
+            { href_matches: "/*" },
+            { href_matches: "https://lookscanned.io" },
+          ],
+        },
+        eagerness: "immediate",
+      },
+    ],
+  })}
+/>
+<link rel="dns-prefetch" href="https://lookscanned.io/" />
+<link rel="preconnect" href="https://lookscanned.io/" crossorigin />
+<link rel="prefetch" href="https://lookscanned.io/" as="document" />

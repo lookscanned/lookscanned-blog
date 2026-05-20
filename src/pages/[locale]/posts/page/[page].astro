@@ -1,0 +1,26 @@
+---
+import SectionList from "../../../../components/SectionList.astro";
+import { LOCALES, DEFAULT_LOCALE } from "../../../../i18n";
+import { getPostsByLocale } from "../../../../lib/posts";
+import { paginateItems, PAGE_SIZE } from "../../../../lib/paginate";
+
+export async function getStaticPaths() {
+  const out = [];
+  for (const l of LOCALES) {
+    if (l.code === DEFAULT_LOCALE) continue;
+    const posts = await getPostsByLocale(l.code);
+    const pages = paginateItems(posts, PAGE_SIZE);
+    for (const p of pages) {
+      out.push({
+        params: { locale: l.code, page: String(p.page) },
+        props: { locale: l.code, page: p.page },
+      });
+    }
+  }
+  return out;
+}
+
+const { locale, page } = Astro.props;
+---
+
+<SectionList locale={locale} page={page} />

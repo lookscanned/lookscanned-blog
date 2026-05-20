@@ -1,0 +1,56 @@
+{
+  "code": "el",
+  "weight": 26,
+  "hreflang": "el",
+  "dir": "ltr",
+  "languageName": "Ελληνικά",
+  "title": "Ιστολόγιο Look Scanned",
+  "description": "Σημειώσεις για την ανάπτυξη web, την επεξεργασία PDF και εργαλεία με σεβασμό στην ιδιωτικότητα — από την ομάδα του Look Scanned.",
+  "homeTitle": "Ιστολόγιο Look Scanned",
+  "menu": [
+    {
+      "name": "Αρχείο",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Αναζήτηση",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Ετικέτες",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Προηγούμενο",
+    "next_page": "Επόμενο",
+    "toc": "Πίνακας Περιεχομένων",
+    "translations": "Μεταφράσεις",
+    "home": "Αρχική",
+    "edit_post": "Επεξεργασία",
+    "code_copy": "αντιγραφή",
+    "code_copied": "αντιγράφηκε!",
+    "read_time_one": "1 λεπτό",
+    "read_time_other": "{{ .Count }} λεπτά",
+    "words_one": "λέξη",
+    "words_other": "{{ .Count }} λέξεις",
+    "browse_label": "Περιήγηση",
+    "connect_label": "Επικοινωνία",
+    "try_cta": "Δοκιμάστε δωρεάν το Look Scanned",
+    "skip_to_content": "Μετάβαση στο περιεχόμενο",
+    "theme": "Θέμα",
+    "theme_system": "Σύστημα",
+    "theme_light": "Φωτεινό",
+    "theme_dark": "Σκοτεινό",
+    "not_found": "Η σελίδα δεν βρέθηκε.",
+    "back_to_home": "Επιστροφή στην αρχική"
+  }
+}

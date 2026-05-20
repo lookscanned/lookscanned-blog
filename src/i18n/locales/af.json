@@ -1,0 +1,56 @@
+{
+  "code": "af",
+  "weight": 32,
+  "hreflang": "af",
+  "dir": "ltr",
+  "languageName": "Afrikaans",
+  "title": "Look Scanned Blog",
+  "description": "Notas oor webontwikkeling, PDF-verwerking en privaatheidsgesentreerde gereedskap — van die Look Scanned-span.",
+  "homeTitle": "Look Scanned Blog",
+  "menu": [
+    {
+      "name": "Argief",
+      "url": "archives",
+      "weight": 5
+    },
+    {
+      "name": "Soek",
+      "url": "search",
+      "weight": 10
+    },
+    {
+      "name": "Etikette",
+      "url": "tags",
+      "weight": 15
+    },
+    {
+      "name": "Look Scanned",
+      "url": "https://lookscanned.io",
+      "weight": null
+    }
+  ],
+  "ui": {
+    "prev_page": "Vorige",
+    "next_page": "Volgende",
+    "toc": "Inhoudsopgawe",
+    "translations": "Vertalings",
+    "home": "Tuis",
+    "edit_post": "Wysig",
+    "code_copy": "kopieer",
+    "code_copied": "gekopieer!",
+    "read_time_one": "1 min",
+    "read_time_other": "{{ .Count }} min",
+    "words_one": "woord",
+    "words_other": "{{ .Count }} woorde",
+    "browse_label": "Blaai",
+    "connect_label": "Kontak",
+    "try_cta": "Probeer Look Scanned gratis",
+    "skip_to_content": "Slaan oor na inhoud",
+    "theme": "Tema",
+    "theme_system": "Stelsel",
+    "theme_light": "Lig",
+    "theme_dark": "Donker",
+    "not_found": "Bladsy nie gevind nie.",
+    "back_to_home": "Terug na tuisblad"
+  }
+}

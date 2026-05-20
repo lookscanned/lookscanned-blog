@@ -1,0 +1,110 @@
+---
+import { Icon } from "astro-icon/components";
+import { getLocale, localizedPath } from "../i18n";
+import LangDropdown from "./LangDropdown.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+
+interface Props {
+  locale: string;
+  localeUrls: Record<string, string>;
+  currentPath?: string;
+}
+
+const { locale, localeUrls, currentPath = "/" } = Astro.props;
+const meta = getLocale(locale);
+const homeUrl = localizedPath(locale, "");
+
+const sortedMenu = meta.menu
+  .slice()
+  .sort((a, b) => (a.weight ?? Infinity) - (b.weight ?? Infinity));
+
+function isExternal(url: string): boolean {
+  return /^https?:\/\//.test(url);
+}
+function resolveUrl(url: string): string {
+  if (isExternal(url)) return url;
+  return localizedPath(locale, url);
+}
+
+const archivedInFooter = new Set(["archives", "tags"]);
+const searchEntry = sortedMenu.find((m) => m.url === "search");
+const externalCta = sortedMenu.find((m) => isExternal(m.url));
+const inlineMenu = sortedMenu.filter(
+  (m) =>
+    !archivedInFooter.has(m.url) && m.url !== "search" && !isExternal(m.url),
+);
+
+const searchUrl = searchEntry ? resolveUrl(searchEntry.url) : localizedPath(locale, "search");
+const searchLabel = searchEntry?.name ?? "Search";
+const searchActive = currentPath === searchUrl;
+---
+
+<header class="sticky top-0 z-50 border-b border-zinc-200/60 bg-white/80 backdrop-blur-md dark:border-zinc-800/60 dark:bg-zinc-950/80">
+  <nav class="mx-auto flex h-16 max-w-5xl items-center justify-between gap-4 px-6">
+    <a
+      href={homeUrl}
+      class="text-base font-semibold tracking-tight text-zinc-900 transition hover:text-zinc-600 dark:text-zinc-50 dark:hover:text-zinc-300 sm:text-lg"
+      aria-label={meta.title}
+    >
+      {meta.title}
+    </a>
+    <div class="flex items-center gap-1 sm:gap-2">
+      {inlineMenu.length > 0 && (
+        <ul class="hidden items-center gap-5 pe-2 text-sm text-zinc-600 dark:text-zinc-400 sm:flex">
+          {inlineMenu.map((item) => {
+            const url = resolveUrl(item.url);
+            const active = currentPath === url;
+            return (
+              <li>
+                <a
+                  href={url}
+                  class:list={[
+                    "underline-offset-[3px] transition",
+                    active
+                      ? "text-zinc-900 dark:text-zinc-100"
+                      : "hover:text-zinc-900 hover:underline dark:hover:text-zinc-100",
+                  ]}
+                  aria-current={active ? "page" : undefined}
+                >
+                  {item.name}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+      <a
+        href={searchUrl}
+        data-search-trigger
+        class:list={[
+          "flex h-8 w-8 items-center justify-center rounded transition",
+          searchActive
+            ? "bg-zinc-100 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100"
+            : "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100",
+        ]}
+        aria-label={`${searchLabel} (⌘K)`}
+        title={`${searchLabel} (⌘K)`}
+        aria-current={searchActive ? "page" : undefined}
+      >
+        <Icon name="lucide:search" class="h-[18px] w-[18px]" aria-hidden="true" />
+      </a>
+      <LangDropdown locale={locale} localeUrls={localeUrls} />
+      <ThemeToggle locale={locale} />
+      {externalCta && (
+        <a
+          href={externalCta.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group ms-1 inline-flex h-8 items-center justify-center gap-1.5 rounded-md bg-zinc-900 px-3 text-sm font-medium text-white shadow-xs transition hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300 sm:ms-2"
+        >
+          {meta.ui.try_cta}
+          <Icon
+            name="lucide:arrow-right"
+            class="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5 rtl:rotate-180 rtl:group-hover:-translate-x-0.5"
+            aria-hidden="true"
+          />
+        </a>
+      )}
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,28 @@
+{
+  "name": "lookscanned-blog",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "build:astro": "SKIP_PAGEFIND=1 astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/rss": "^4.0.12",
+    "@astrojs/sitemap": "^3.5.0",
+    "@iconify-json/lucide": "^1.2.108",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.1.13",
+    "astro": "^5.14.1",
+    "astro-icon": "^1.1.5",
+    "pagefind": "^1.4.0",
+    "reading-time": "^1.5.0",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2"
+  }
+}

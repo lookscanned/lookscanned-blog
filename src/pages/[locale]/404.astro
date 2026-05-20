@@ -1,0 +1,10 @@
+---
+import NotFound from "../../components/NotFound.astro";
+import { localeStaticPaths } from "../../i18n";
+
+export const getStaticPaths = localeStaticPaths;
+
+const { locale } = Astro.props;
+---
+
+<NotFound locale={locale} />

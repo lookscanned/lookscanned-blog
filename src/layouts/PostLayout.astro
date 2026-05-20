@@ -1,0 +1,187 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import TableOfContents from "../components/TableOfContents.astro";
+import { getLocale, formatReadingTime, localizedPath } from "../i18n";
+import { formatDate } from "../lib/date";
+import { tagSlug } from "../lib/tags";
+import { getPostsByLocale, getTranslations, type PostMeta as PostMetaType } from "../lib/posts";
+import readingTime from "reading-time";
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  post: PostMetaType;
+  body: string;
+  headings?: Heading[];
+}
+
+const { post, body, headings = [] } = Astro.props;
+const meta = getLocale(post.locale);
+
+const translations = await getTranslations(post.dirSlug);
+const alternates = translations.map((t) => ({
+  locale: t.locale,
+  path: `posts/${t.slug}`,
+}));
+
+const samelocale = await getPostsByLocale(post.locale);
+const idx = samelocale.findIndex((p) => p.dirSlug === post.dirSlug);
+const newer = idx > 0 ? samelocale[idx - 1] : null;
+const older = idx >= 0 && idx < samelocale.length - 1 ? samelocale[idx + 1] : null;
+
+const title = `${post.entry.data.title} · ${meta.title}`;
+const description = post.entry.data.description ?? post.entry.data.summary ?? "";
+
+const rt = readingTime(body);
+const minutes = Math.max(1, Math.round(rt.minutes));
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: post.entry.data.title,
+  description,
+  datePublished: post.entry.data.date.toISOString(),
+  inLanguage: meta.hreflang,
+  mainEntityOfPage: canonicalUrl,
+  url: canonicalUrl,
+  keywords: post.entry.data.tags,
+  publisher: { "@type": "Organization", name: "Look Scanned", url: "https://lookscanned.io" },
+  author: { "@type": "Organization", name: "Look Scanned" },
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  locale={post.locale}
+  alternates={alternates}
+  jsonLd={jsonLd}
+>
+  <div class="mx-auto max-w-5xl px-6 py-12 lg:grid lg:grid-cols-[minmax(0,1fr)_240px] lg:gap-12">
+    <article class="mx-auto max-w-3xl lg:mx-0" data-pagefind-body>
+      <header class="mb-10">
+        <h1
+          class="text-3xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50"
+          style={`view-transition-name: post-title-${post.slug}`}
+        >
+          {post.entry.data.title}
+        </h1>
+        {post.entry.data.summary && (
+          <p class="mt-5 text-lg leading-relaxed text-zinc-600 text-pretty dark:text-zinc-400">
+            {post.entry.data.summary}
+          </p>
+        )}
+        <div class="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-zinc-500 dark:text-zinc-400">
+          <time datetime={post.entry.data.date.toISOString()}>
+            {formatDate(post.locale, post.entry.data.date)}
+          </time>
+          <span aria-hidden="true">·</span>
+          <span>{formatReadingTime(post.locale, minutes)}</span>
+        </div>
+      </header>
+
+      <div class:list={[
+        "prose prose-xl max-w-none",
+        "[--tw-prose-body:var(--color-zinc-800)] dark:[--tw-prose-body:var(--color-zinc-200)]",
+        "[--tw-prose-headings:var(--color-zinc-900)] dark:[--tw-prose-headings:var(--color-zinc-50)]",
+        "[--tw-prose-bold:var(--color-zinc-900)] dark:[--tw-prose-bold:var(--color-zinc-50)]",
+        // Links inherit body color — bold + underline carries the affordance, color stays out of it.
+        "[--tw-prose-links:var(--color-zinc-900)] dark:[--tw-prose-links:var(--color-zinc-50)]",
+        "[--tw-prose-hr:var(--color-zinc-200)] dark:[--tw-prose-hr:var(--color-zinc-800)]",
+        "[--tw-prose-bullets:var(--color-zinc-400)]",
+        "[--tw-prose-counters:var(--color-zinc-400)]",
+        "[--tw-prose-quotes:var(--color-zinc-700)] dark:[--tw-prose-quotes:var(--color-zinc-300)]",
+        "[--tw-prose-quote-borders:var(--color-zinc-300)] dark:[--tw-prose-quote-borders:var(--color-zinc-700)]",
+        "[--tw-prose-captions:var(--color-zinc-500)] dark:[--tw-prose-captions:var(--color-zinc-400)]",
+        "prose-headings:font-medium prose-headings:tracking-tight",
+        // Always-underlined links: zinc-300 at rest → zinc-900 on hover. No color shift.
+        "prose-a:font-medium prose-a:underline prose-a:underline-offset-[3px]",
+        "prose-a:decoration-zinc-300 hover:prose-a:decoration-zinc-900",
+        "dark:prose-a:decoration-zinc-600 dark:hover:prose-a:decoration-zinc-100",
+        "prose-code:rounded prose-code:bg-zinc-100 prose-code:px-1 prose-code:py-0.5 prose-code:font-normal prose-code:text-zinc-900",
+        "dark:prose-code:bg-zinc-800 dark:prose-code:text-zinc-100",
+        "prose-code:before:content-none prose-code:after:content-none",
+        "prose-img:rounded prose-img:my-8",
+      ]}>
+        <slot />
+      </div>
+
+      {post.entry.data.tags.length > 0 && (
+        <section class="mt-12 border-t border-zinc-200/60 pt-6 dark:border-zinc-800/60">
+          <ul class="flex flex-wrap gap-2">
+            {post.entry.data.tags.map((tag) => (
+              <li>
+                <a
+                  href={localizedPath(post.locale, `tags/${tagSlug(tag)}`)}
+                  class="inline-flex items-center rounded-full border border-zinc-200/80 bg-zinc-50 px-3 py-1 text-xs text-zinc-600 transition hover:border-zinc-300 hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-800/80 dark:bg-zinc-900/40 dark:text-zinc-400 dark:hover:border-zinc-700 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+                >{tag}</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {translations.length > 1 && (
+        <section class="mt-6 text-sm text-zinc-500 dark:text-zinc-400">
+          <span class="text-zinc-700 dark:text-zinc-300">{meta.ui.translations}:</span>
+          {" "}
+          {translations
+            .filter((t) => t.locale !== post.locale)
+            .map((t, i, arr) => (
+              <>
+                <a
+                  href={localizedPath(t.locale, `posts/${t.slug}`)}
+                  lang={t.locale}
+                  class="text-zinc-700 underline-offset-[3px] hover:underline dark:text-zinc-300"
+                >{getLocale(t.locale).languageName}</a>
+                {i < arr.length - 1 && <span>, </span>}
+              </>
+            ))}
+        </section>
+      )}
+
+      {(newer || older) && (
+        <nav class="mt-12 grid grid-cols-2 gap-6 border-t border-zinc-200/60 pt-8 dark:border-zinc-800/60">
+          <div>
+            {older && (
+              <a
+                href={localizedPath(older.locale, `posts/${older.slug}`)}
+                class="group block"
+              >
+                <div class="text-xs text-zinc-500"><span class="inline-block rtl:rotate-180">←</span> {meta.ui.prev_page}</div>
+                <div class="mt-2 line-clamp-2 text-zinc-800 underline-offset-[3px] group-hover:underline dark:text-zinc-200">
+                  {older.entry.data.title}
+                </div>
+              </a>
+            )}
+          </div>
+          <div class="text-end">
+            {newer && (
+              <a
+                href={localizedPath(newer.locale, `posts/${newer.slug}`)}
+                class="group block"
+              >
+                <div class="text-xs text-zinc-500">{meta.ui.next_page} <span class="inline-block rtl:rotate-180">→</span></div>
+                <div class="mt-2 line-clamp-2 text-zinc-800 underline-offset-[3px] group-hover:underline dark:text-zinc-200">
+                  {newer.entry.data.title}
+                </div>
+              </a>
+            )}
+          </div>
+        </nav>
+      )}
+
+    </article>
+
+    <aside class="hidden lg:block">
+      <div class="sticky top-24">
+        <TableOfContents headings={headings} locale={post.locale} />
+      </div>
+    </aside>
+  </div>
+</BaseLayout>

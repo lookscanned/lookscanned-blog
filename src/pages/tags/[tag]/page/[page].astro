@@ -1,0 +1,24 @@
+---
+import TagPage from "../../../../components/TagPage.astro";
+import { getAllTagsByLocale } from "../../../../lib/posts";
+import { paginateItems, PAGE_SIZE } from "../../../../lib/paginate";
+
+export async function getStaticPaths() {
+  const buckets = await getAllTagsByLocale("en");
+  const out = [];
+  for (const b of buckets) {
+    const pages = paginateItems(b.posts, PAGE_SIZE);
+    for (const p of pages) {
+      out.push({
+        params: { tag: b.slug, page: String(p.page) },
+        props: { tag: b.name, posts: b.posts, page: p.page },
+      });
+    }
+  }
+  return out;
+}
+
+const { tag, posts, page } = Astro.props;
+---
+
+<TagPage locale="en" tag={tag} posts={posts} page={page} />
