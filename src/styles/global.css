@@ -282,3 +282,26 @@ html.dark .prose :where(pre.astro-code) {
   font-weight: inherit;
   color: inherit;
 }
+
+/*
+ * Mobile-safe markdown tables. Wide tables (5+ columns is common in
+ * comparison posts) would otherwise push the article past 100vw and
+ * trigger horizontal page scroll. Flipping the <table> itself to
+ * `display: block` turns it into its own horizontal scroll container —
+ * no rehype wrapper needed.
+ */
+.prose :where(table) {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*
+ * Long unbroken strings (URLs, code identifiers) in prose can overflow
+ * narrow viewports. `break-word` keeps Latin readable; tables/code
+ * already handle themselves above.
+ */
+.prose :where(p, li, blockquote, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
