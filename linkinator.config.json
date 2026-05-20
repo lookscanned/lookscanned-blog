@@ -1,0 +1,10 @@
+{
+  "concurrency": 10,
+  "serverRoot": "dist",
+  "retryErrors": true,
+  "retryErrorsCount": 3,
+  "skip": [
+    "^https?://(?!localhost:)",
+    "^https?://localhost:1313"
+  ]
+}

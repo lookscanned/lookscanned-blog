@@ -31,6 +31,9 @@ jobs:
       - name: Build (Astro + Pagefind)
         run: npm run build
 
+      - name: Check links
+        run: npm run check:links
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v7
         with:

@@ -9,7 +9,8 @@
     "build:astro": "SKIP_PAGEFIND=1 astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check": "astro check"
+    "check": "astro check",
+    "check:links": "linkinator '**/*.html'"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -24,5 +25,8 @@
     "reading-time": "^1.5.0",
     "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "linkinator": "^7.6.1"
   }
 }
