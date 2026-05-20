@@ -3,20 +3,16 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import icon from "astro-icon";
+import type { RoutingMeta } from "./src/i18n";
 
-// Read the per-locale JSON files at config-load time. Vite's
-// `import.meta.glob` isn't available here (config runs before the Vite
-// pipeline), so we do plain fs. Each JSON carries `code/weight/hreflang/dir`
-// — everything the Astro i18n + sitemap integrations need.
+// Read the per-locale JSON files at config-load. Vite's `import.meta.glob`
+// isn't available here (config runs before the Vite pipeline), so we do
+// plain fs. The cast picks only the routing meta — anything else in the
+// JSON (UI strings, menu, …) is invisible to TS here, by design.
 const LOCALE_DIR = "./src/i18n/locales";
 const localeMeta = readdirSync(LOCALE_DIR)
   .filter((f) => f.endsWith(".json"))
-  .map((f) => JSON.parse(readFileSync(`${LOCALE_DIR}/${f}`, "utf8")) as {
-    code: string;
-    weight: number;
-    hreflang: string;
-    dir: "ltr" | "rtl";
-  })
+  .map((f) => JSON.parse(readFileSync(`${LOCALE_DIR}/${f}`, "utf8")) as RoutingMeta)
   .sort((a, b) => a.weight - b.weight);
 
 const DEFAULT_LOCALE = "en";

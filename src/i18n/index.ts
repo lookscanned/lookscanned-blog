@@ -35,6 +35,14 @@ export interface UIStrings {
   back_to_home: string;
 }
 
+/** Locale routing meta — the fields astro.config.ts needs at config-load. */
+export interface RoutingMeta {
+  code: string;
+  weight: number;
+  hreflang: string;
+  dir: "ltr" | "rtl";
+}
+
 export interface LocaleData {
   languageName: string;
   title: string;
@@ -43,22 +51,13 @@ export interface LocaleData {
   menu: MenuItem[];
 }
 
-export interface LocaleMeta {
-  code: string;
-  weight: number;
-  hreflang: string;
-  dir: "ltr" | "rtl";
+export interface LocaleMeta extends RoutingMeta {
   data: LocaleData;
   ui: UIStrings;
 }
 
-interface LocaleJson extends LocaleData {
-  code: string;
-  weight: number;
-  hreflang: string;
-  dir: "ltr" | "rtl";
-  ui: UIStrings;
-}
+/** Shape of each src/i18n/locales/<code>.json file: flat. */
+type LocaleJson = RoutingMeta & LocaleData & { ui: UIStrings };
 
 const modules = import.meta.glob<{ default: LocaleJson }>(
   "./locales/*.json",
