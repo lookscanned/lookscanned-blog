@@ -50,7 +50,7 @@ Create a new multilingual blog post for the Look Scanned blog.
 
 5. **Smoke build** to confirm the schema validates and routes generate:
    ```bash
-   npm run build:astro
+   pnpm build:astro
    ```
 
 6. **Commit using conventional format**:

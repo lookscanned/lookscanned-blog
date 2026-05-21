@@ -8,25 +8,27 @@ This is a multilingual Astro-based blog for Look Scanned (https://lookscanned.io
 
 ## Development Commands
 
+Package manager: **pnpm** (pinned via the `packageManager` field in `package.json`, managed by Corepack). Run `corepack enable pnpm` once to activate it.
+
 ### Local Development
 ```bash
 # Install deps (first time / after pulling)
-npm ci
+pnpm install
 
 # Start the dev server (http://localhost:4321)
-npm run dev
+pnpm dev
 
 # Type check
-npm run check
+pnpm check
 ```
 
 ### Build
 ```bash
 # Production build: Astro static output + Pagefind index
-npm run build
+pnpm build
 
 # Astro only (skip the Pagefind step — useful when iterating fast)
-npm run build:astro
+pnpm build:astro
 ```
 
 Astro emits to `dist/`. The Pagefind step writes `dist/_pagefind/`.
@@ -126,9 +128,9 @@ GitHub Actions (`.github/workflows/ci.yml`):
 - **On push to `main`**: build + deploy to Cloudflare Pages production (`https://blog.lookscanned.io`) and GitHub Pages
 
 The build job runs:
-1. `npm ci`
-2. `npm run check` (Astro type check)
-3. `npm run build` (Astro + Pagefind)
+1. `pnpm install --frozen-lockfile`
+2. `pnpm check` (Astro type check)
+3. `pnpm build` (Astro + Pagefind)
 
 ## Git Commit Conventions
 
